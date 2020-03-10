@@ -150,8 +150,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -c ./commitlint.config.js -E HUSKY_GIT_PARAMS",
-      "pre-push": "npm run test"
+      "commit-msg": "commitlint -c ./commitlint.config.js -E HUSKY_GIT_PARAMS"
     }
   },
   "standard-version": {
@@ -164,9 +163,9 @@
   "engines": {
     "node": ">=8.9.4"
   },
-  "repository": "http://git.dtstack.cn/dt-insight-front/dt-common",
+  "repository": "http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme",
   "bugs": {
-    "url": "http://git.dtstack.cn/dt-insight-front/dt-common/issues"
+    "url": "http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/issues"
   },
   "config": {
     "commitizen": {

@@ -1,9 +1,14 @@
 import * as React from 'react';
 import { Layout, Menu, Icon } from 'antd';
-const { Header, Content, Sider } = Layout;
+const { Header, Sider } = Layout;
 
 import menuList from '../consts/menu';
 import { Link, hashHistory } from 'react-router';
+import styled from 'styled-components';
+const Content = styled.div`
+    min-height: calc(100vh - 104px);;
+    width: 100%;
+`;
 
 export default class Contrainer extends React.Component<any, any> {
 
@@ -13,7 +18,6 @@ export default class Contrainer extends React.Component<any, any> {
 
     componentDidMount() {
         this.initCurrent();
-        console.log(111)
     }
 
     initCurrent = () => {

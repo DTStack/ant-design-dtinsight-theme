@@ -5,7 +5,7 @@ const a = [{filename: 'abc'}]
 
 const htmlPlugs = [];
 function loadHtmlPlugs() {
-    const appConfs = require(path.resolve(MY_PATH.APP_PATH, 'config/defaultApps'));
+    const appConfs = require(path.resolve(MY_PATH.WEB_PUBLIC, 'config/defaultApps'));
     for (var i = 0 ; i < appConfs.length; i++) {
         const app = appConfs[i];
         if (app.enable) {
