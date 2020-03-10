@@ -1,19 +1,9 @@
-# DT-Common 数栈公共模块
+# ant-design-dtinsight-theme 数栈UI主题
 
-主要包含数栈项目公共模块
+主要包含数栈项目UI主题相关文件
 
-- 用户
-- 消息
-- 角色
-- 首页
-- 主题等等
-- widgets 组件
-
-
-# 使用
-
-> npm install git+ssh://git@git.dtstack.cn:10022/dt-insight-front/dt-common.git --save
-
-或者
-
-> npm install git+ssh://git@git.dtstack.cn:10022/dt-insight-front/dt-common.git#{branch|tag} --save
+- 布局规范
+- 列表规范
+- 弹款规范
+- 字体规范
+- 颜色规范等等
