@@ -1,0 +1,17 @@
+@import './const.scss';
+
+.ant-table {
+    color: $black3;
+}
+.ant-table-thead > tr > th {
+    padding: 13px 8px;
+}
+.ant-table-thead {
+    .ant-checkbox {
+        display: none;
+    }
+}
+.ant-table-tbody > tr > td {
+    padding: 19px 8px;
+    border-bottom: 1px solid $blackDD;
+}
