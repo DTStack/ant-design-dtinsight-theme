@@ -1,0 +1,66 @@
+@import './const.less';
+
+.ant-table {
+    color: @black3;
+}
+.ant-table-thead > tr > th {
+    padding: 13px 8px;
+    border-bottom: 0px solid #fff;
+}
+.ant-table-tbody > tr > td {
+    padding: 19px 8px;
+    border-bottom: 1px solid @blackE8;
+}
+.ant-table colgroup > col.ant-table-selection-col {
+    width: 50px;
+}
+.ant-table-thead > tr > th.ant-table-selection-column {
+    padding: 13px 0px 13px 20px;
+    text-align: left;
+}
+.ant-table-tbody > tr > td.ant-table-selection-column {
+    padding: 19px 0px 19px 20px;
+    text-align: left;
+}
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+    background: @deriveColor;
+    // box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.08), 0 -8px 8px -6px rgba(0, 0, 0, 0.08);
+}
+// .ant-table-tbody > tr:hover {
+//     box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.08), 0 -8px 8px -6px rgba(0, 0, 0, 0.08);
+// }
+.ant-pagination-total-text {
+    color: #666666;
+}
+.ant-pagination.mini .ant-pagination-item {
+    border: 1px solid transparent;
+}
+.ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+.ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+    padding: 13px 8px;
+}
+.ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th.ant-table-selection-column {
+    padding: 13px 0px 13px 20px !important;
+    text-align: left;
+}
+.ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td.ant-table-selection-column {
+    padding: 13px 0px 13px 20px !important;
+    text-align: left;
+}

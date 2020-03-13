@@ -1,0 +1,39 @@
+@import './const.less';
+
+.dt-tab {
+    .ant-tabs-nav .ant-tabs-tab {
+        margin: 0px;
+        padding: 7px 20px;
+        border-top: 1px solid @blackDD;
+        border-left: 1px solid @blackDD;
+        border-bottom: 1px solid @blackDD;
+        &:last-child {
+            border-right: 1px solid @blackDD;
+        }
+        &:hover {
+            color: @black3;
+        }
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+        color: @black3;
+        font-weight: normal;
+        border-bottom: 0px solid @blackDD;
+    }
+    .ant-tabs-ink-bar {
+        top: 0px;
+        bottom: unset;
+    }
+    .ant-tabs-bar {
+        border-bottom: 0px solid #fff;
+    }
+    .ant-tabs-nav-wrap {
+        margin-bottom: 0px;
+    }
+}
+
+.ant-card-head {
+    padding: 0px 20px;
+}
+.ant-card-body {
+    padding: 20px;
+}
