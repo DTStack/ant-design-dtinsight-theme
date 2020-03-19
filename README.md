@@ -68,6 +68,32 @@ $color5: #15D275;
 $color6: #86E159;
 ```
 
+## 版本发布
+
+```bash
+# 默认分支为 master , 发布为此版本更新
+$ npm run release
+
+#【自定义】版本发布名称为 v1.0.0-test
+$ npm run release -- -r v1.0.0-test
+
+# 指定升级版本为【次】版本号
+$ npm run release -- -r minor
+
+# 指定升级版本为【主】版本号
+$ npm run release -- -r major
+
+# 指定升级版本为【修订】版本号
+$ npm run release -- -r patch
+
+# 指定发布分支
+$ npm run release -- -b branchName
+
+# 指定发布分支以及发布名称
+$ npm run release -- -b branchName -r versionName
+
+```
+
 ## 升级记录
 
 **1.0.0**

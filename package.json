@@ -8,9 +8,9 @@
   "scripts": {
     "start": "npm run color && npm run vars && webpack-dev-server --open --config config/webpack.dev.js",
     "dev": "npm run color && npm run vars && webpack-dev-server --open --config config/webpack.dev.js --env.API=dev",
-    "build": "npm run color && npm run vars && webpack --progress --config config/webpack.prod.js && npm run cname",
-    "cname": "echo www.antdtheme.com > dist/CNAME",
+    "build": "npm run color && npm run vars && webpack --progress --config config/webpack.prod.js",
     "doc": "webpack --progress --config config/webpack.doc.js",
+    "release": "./scripts/release.sh",
     "color": "node ./build/buildLess.js",
     "vars": "node ./build/buildVars.js"
   },
@@ -60,6 +60,7 @@
     "react-css-modules": "^4.7.7",
     "react-hot-loader": "^4.3.8",
     "script-ext-html-webpack-plugin": "^2.1.2",
+    "standard-version": "7.0.1",
     "style-loader": "^0.20.3",
     "url-loader": "^1.1.1",
     "webpack": "^4.25.1",
