@@ -2,6 +2,8 @@
 
 数栈UI4.0规范样式
 
+[项目预览地址](http://172.16.8.108:8989/ "项目预览地址")：http://172.16.8.108:8989/ (内网访问)
+
 ## 主要样式文件
 
 - src/stylesheet/dt-theme (样式名覆盖)
@@ -105,3 +107,4 @@ $ npm run release -- -b branchName -r versionName
 - 添加图表配色相关颜色变量
 - 添加const.scss文件，便于项目中引用样式变量
 - 修复 顶部导航菜单与侧边菜单栏差1px的样式 问题
+- 添加 standard-version 以及 CHANGELOG.md文件
