@@ -2,22 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### 1.0.1 (2020-03-20)
+## [1.2.0](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/compare/v1.3.0...v1.2.0) (2020-04-30)
 
 
 ### Features
 
-* add changelog ([4557629](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/4557629d1612df53f337f91dd57e605f0067e6c5))
-* add config ([9d28a5b](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/9d28a5bf69efc1d40ea5b76b2ce18ef9f37fcf32))
-* add previewUrl ([909590b](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/909590b6c3f83f610ffae86c1c7a933699516bef))
-* add standard-version ([27790f8](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/27790f8f9de800bd1052b249450cc13461bb3ad1))
-* cancel test ([0802d42](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/0802d42c70d789ad826f6bbc1fa77027f14c7f78))
-* init ([e3fbf4b](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/e3fbf4b7d3641789f4d8f12ab0a0cbfa0767d09d))
-* init project ([99310e7](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/99310e77958ad7ff574063652df844607033967c))
-* readme ([88169ac](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/88169acb51dd7a32a9a201142e4a72871ee30dc7))
-* update readme ([b43e8e0](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/b43e8e0327cc44c0d5d5dc3bad7013624467e3aa))
+* add changelog ([06ea20e](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/06ea20e9440178330f490b14b03babb34588bb58))
+* add develop ([1a1ef87](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/1a1ef8785f8ba528c1447fa5fee3dc7fe05ea2e2))
+* body no hidden ([375e802](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/375e80227b63006a1bc3493ba4dacce5ccc51d93))
+* header ([fb15d16](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/fb15d1650b07cafddf6b42b7673fbdfb2e145fb4))
+* modify doc ([95b4323](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/95b43233647b706e2724ee2e9c90f838f206bdd9))
+* modify README ([f408590](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/f408590c6abf6a27acfebb6e84f09c437b8f19ed))
 
 
 ### Bug Fixes
 
-* version back ([ca327f7](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/ca327f78d1baf88e3aa517d67d71acfb36951c6b))
+* markdown lint ([25c0725](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/25c072584ad526d352385b8ff06c71135f836c3e))

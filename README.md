@@ -1,110 +1,75 @@
 # DT Theme
 
-数栈UI4.0规范样式
+本项目为数栈 UI4.0 规范样式
 
-[项目预览地址](http://172.16.8.108:8989/ "项目预览地址")：http://172.16.8.108:8989/ (内网访问)
+项目预览地址：http://172.16.8.108:8989/docs/react/getting-started-cn (内网访问)
 
-## 主要样式文件
-
-- src/stylesheet/dt-theme (样式名覆盖)
-- src/theme/dt-theme.js (样式变量覆盖)
-
-## 如何在数栈应用中使用
-
-1、build/loader/css-loader.js 文件中导入dt-theme.js文件
-
-``` javascript
-const theme = require('ant-design-dtinsight-theme/src/theme/dt-theme.js')(MY_PATH.BASE_NAME);
-```
-
-2、src/root.tsx 文件中导入 src/stylesheet/dt-theme
-
-``` javascript
-import 'ant-design-dtinsight-theme/src/stylesheet/dt-theme';
-```
-
-## 可用样式变量
-
-使用方式：在scss文件中导入此项目中的const.scss文件
-
-``` scss
-@import 'ant-design-dtinsight-theme/src/stylesheet/dt-theme/const.scss';
-```
-
-变量详解：
-
-``` css
-// 全局变量
-// ==== 基础色 ====
-$primaryColor: #3F87FF; // 主色
-$hoverColor: #5C99FF; // 按钮 hover
-$clickColor: #2672F0; // 按钮 点击
-$deriveColor: #F2F9FF; // 衍生色 列表选中底色 部分tab选中底色
-
-// ==== 无相色  ====
-$black3: #333333; // 标题 主文字颜色
-$black6: #666666; // 次要信息 tab未选中颜色
-$black9: #999999; // 默认状态输入框内提示信息 按钮内icon颜色
-$blackBF: #BFBFBF; // disable 字体颜色
-$blackDD: #DDDDDD; // border颜色
-$blackE8: #E8E8E8; // 列表里分割线颜色 disable按钮底色
-$blackFA: #FAFAFA; // 灰色底色
-
-// ==== 辅助色  ====
-$red: #FF5F5C; // 错误提示文字、按钮色 运行失败提示色 必填项*颜色
-$yellow: #FFB310; // 警示提示icon 待运行等状态颜色
-$green: #16DE9A; // 成功icon 运行/发布成功状态颜色
-
-// ==== 字体大小  ====
-$font12: 12px; // 主字体大小 应用于列表内容、下拉、选择、输入框、弹窗等控件文字
-$font14: 14px; // 左侧菜单栏字体、主标题字体、弹窗标题字体大小
-$font16: 16px; // 顶部导航字体、部分需要强调标题字体大小
-$font20: 20px; // 较少使用，引用与部分大标题
-
-// ==== 图表配色  ====
-$color1: #6384F0;
-$color2: #339CFF;
-$color3: #00C3E5;
-$color4: #16DFB4;
-$color5: #15D275;
-$color6: #86E159;
-```
-
-## 版本发布
+## 目录结构
+<br/>
 
 ```bash
-# 默认分支为 master , 发布为此版本更新
-$ npm run release
 
-#【自定义】版本发布名称为 v1.0.0-test
-$ npm run release -- -r v1.0.0-test
-
-# 指定升级版本为【次】版本号
-$ npm run release -- -r minor
-
-# 指定升级版本为【主】版本号
-$ npm run release -- -r major
-
-# 指定升级版本为【修订】版本号
-$ npm run release -- -r patch
-
-# 指定发布分支
-$ npm run release -- -b branchName
-
-# 指定发布分支以及发布名称
-$ npm run release -- -b branchName -r versionName
+├── .
+├── .gitignore         // git 忽略
+├── README.md          // 文档说明
+├── bisheng.config.js  // 全局配置文件
+├── components         // 组件功能
+├── dist               // 打包后静态文件输出目录
+├── docs               // markdown 文件
+├── default.conf       // docker nignx 配置文件
+├── package.json       // 项目依赖
+└── theme              // 基于 Ant Desgin 的主题（子目录中的dt-theme为UI4.0定制样式）
 
 ```
+<br/>
 
-## 升级记录
+## 项目启动&打包
+<br/>
 
-**1.0.0**
 
-- 添加基本样式规范，包括form、table、modal、button、layout等
+- `npm install // 安装项目依赖`
 
-**1.0.1**
+- `npm run dev // 启动项目`
 
-- 添加图表配色相关颜色变量
-- 添加const.scss文件，便于项目中引用样式变量
-- 修复 顶部导航菜单与侧边菜单栏差1px的样式 问题
-- 添加 standard-version 以及 CHANGELOG.md文件
+- `npm run clean // 清除 dist 目录下的静态文件`
+
+- `npm run release // 版本发布`
+
+- `npm run changelog // 生成changelog`
+
+- `npm run build // 打包项目、静态文件生成目录为当前目录的 dist`
+
+<br/>
+
+## Nginx 配置
+<br/>
+
+```bash
+
+server {
+    listen 80;
+
+    server_name api.domain.com;
+
+    root /www/antd-bisheng-docs/dist;
+
+    location / {
+        index index.html;
+        rewrite ^/$ /docs/react/getting-started.html redirect;
+    }
+
+    error_page  500 502 503 504 404 http://api.domain.com/docs/react/getting-started.html;
+
+}
+
+```
+<br/>
+
+## 注意事项
+<br/>
+
+- 模板文件路径 `./theme/static/template.html`
+
+- 首页为空白页，需用 nginx rewrite 至指定页面
+
+- 目前仅支持中文，如需使用其他语言请自行解决

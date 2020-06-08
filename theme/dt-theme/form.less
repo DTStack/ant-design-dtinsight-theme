@@ -1,0 +1,95 @@
+@import './const.less';
+
+.ant-input {
+    border-radius: 4px;
+}
+.ant-input-lg {
+    font-size: 12px;
+}
+.ant-select-selection {
+    border-radius: 4px;
+}
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon {
+    color: @green;
+}
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon {
+    color: @green;
+}
+.ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+    background: @deriveColor;
+}
+.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+    background: @deriveColor;
+}
+li.ant-time-picker-panel-select-option-selected {
+    font-weight: normal;
+    background: @deriveColor;
+}
+.ant-time-picker-panel-select li:focus {
+    font-weight: normal;
+}
+li.ant-time-picker-panel-select-option-selected:hover {
+    background: @deriveColor;
+}
+.ant-time-picker-input {
+    border-radius: 4px;
+}
+.ant-input-number {
+    border-radius: 4px;
+}
+.ant-radio-button-wrapper {
+    padding: 0 16px;
+    color: @black6;
+}
+
+// 灰色背景 表单样式设置 对应表单控件添加样式名dt-form-shadow-bg
+.dt-form-shadow-bg {
+    &.ant-input, &.ant-input-number, .ant-input, .ant-select-selection, .ant-time-picker-input {
+        border: 1px solid transparent;
+        box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
+        &:hover, &:focus {
+            border-color: @primaryColor;
+        }
+        &:focus {
+            border-color: @primaryColor;
+            box-shadow: 0px 2px 8px 0px rgba(63,135,255,0.10);
+        }
+    }
+    &.ant-input[disabled]:hover {
+        border-color: transparent;
+    }
+    .ant-input[disabled]:hover {
+        border-color: transparent;
+    }
+    .ant-input-disabled:hover {
+        border-color: transparent;
+    }
+    &.ant-input-number-disabled:hover {
+        border-color: transparent;
+    }
+    &.ant-select-disabled .ant-select-selection:hover,
+    &.ant-select-disabled .ant-select-selection:focus,
+    &.ant-select-disabled .ant-select-selection:active {
+        border-color: transparent;
+        box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
+    }
+    .ant-time-picker-input[disabled]:hover {
+        border-color: transparent;
+    }
+}
+.has-error {
+    .dt-form-shadow-bg {
+        &.ant-input, .ant-input, &.ant-input-number, .ant-select-selection, .ant-time-picker-input {
+            &:hover, &:focus {
+                border-color: @red;
+            }
+        }
+        &.ant-input, &.ant-input-number, &.ant-time-picker-input, .ant-select-selection, .ant-input {
+            border-color: @red;
+        }
+        &.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+            border-color: @red;
+        }
+    }
+}
