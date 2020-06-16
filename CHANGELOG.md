@@ -10,6 +10,14 @@ All notable changes to this project will be documented in this file. See [standa
 * comp ([a25acb2](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/a25acb2))
 * style ([c9499b5](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/c9499b5))
 
+### [1.0.5](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/compare/v1.0.1...v1.0.5) (2020-06-16)
+
+
+### Features
+
+* comp ([a25acb2](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/a25acb2))
+* style ([c9499b5](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/c9499b5))
+
 ### 1.0.1 (2020-03-20)
 
 
