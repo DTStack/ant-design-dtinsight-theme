@@ -986,7 +986,7 @@
       {
         "name": "@zindex-badge",
         "type": "number",
-        "value": 10,
+        "value": null,
         "unit": "",
         "desc": ""
       },

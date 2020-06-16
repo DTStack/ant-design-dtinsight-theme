@@ -52,7 +52,6 @@ const columns = [
     title: 'Age',
     dataIndex: 'age',
     key: 'age',
-    width: 70,
     render: text => <a>{text}</a>,
     onFilter: (value, record) => record.age.indexOf(value) >= 0,
     sorter: (a, b) => {

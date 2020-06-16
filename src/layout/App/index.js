@@ -8,7 +8,8 @@ import Frame from 'layout/Frame';
 // import enUS from 'antd/es/locale/en_US';
 import zhCN from 'antd/es/locale/zh_CN';
 import 'moment/locale/zh-cn';
-
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/material.css';
 // import 'stylesheet/app.less';
 import 'stylesheet/dt-theme/index.less';
 

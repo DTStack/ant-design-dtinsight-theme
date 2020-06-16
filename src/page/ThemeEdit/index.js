@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Draggable from 'react-draggable';
-import { Row, Col, Breadcrumb, Menu, Layout, Switch, Radio, Form, BackTop, Button, Alert } from 'antd';
-// import ThemeCard from 'component/ThemeCard';
+import { Row, Col, Breadcrumb, Menu, Layout, Switch, Radio, Form, BackTop, Button, Alert, Icon } from 'antd';
+import ThemeCard from 'component/ThemeCard';
 import Menus from './Menus';
 import {
   ColorPreview,
@@ -56,18 +56,19 @@ class ThemeEdit extends Component {
   constructor(props) {
     super(props);
 
-    // let defaultTheme;
-    // const theme = window.location.search.split('=');
-    // if (theme[1]) {
-    //   [, defaultTheme] = theme;
-    // }
+    let defaultTheme;
+    const theme = window.location.search.split('=');
+    if (theme[1]) {
+      [, defaultTheme] = theme;
+    }
 
     this.state = {
-      // defaultTheme,
+      defaultTheme,
       size: 'default',
       disabled: false,
       darkMenu: false,
-      showBreadcrumb: true
+      showBreadcrumb: true,
+      collapsed: false
     };
   }
 
@@ -78,6 +79,12 @@ class ThemeEdit extends Component {
   handleSizeChange = (e) => {
     this.setState({ size: e.target.value });
   };
+
+  toggleCollapsed = () => {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
 
   render() {
     // const { theme } = this.props.match.params;
@@ -142,12 +149,25 @@ class ThemeEdit extends Component {
           </Row>
         </Header>
         <Layout>
-          <Sider width={200}>
+          <Sider collapsed={this.state.collapsed} style={{ marginTop: 64 }} width={200}>
+            <div
+              className="ant-slider-pos--collapsed"
+              onClick={this.toggleCollapsed}
+            >
+              <Icon
+                type={
+                  this.state.collapsed
+                    ? 'menu-unfold'
+                    : 'menu-fold'
+                }
+              />
+            </div>
             <Menus dark={darkMenu} />
           </Sider>
           <Layout
             style={{
               padding: '0 0 24px 24px',
+              marginTop: 64,
               display: 'flex',
               flexDirection: 'column'
             }}
@@ -244,9 +264,9 @@ class ThemeEdit extends Component {
             </Content>
           </Layout>
         </Layout>
-        {/* <div className="theme-card-wrapper">
+        <div className="theme-card-wrapper">
           <ThemeCard defaultTheme={this.state.defaultTheme} />
-        </div> */}
+        </div>
         {/* <Draggable
           bounds="parent"
           handle=".theme-card .ant-card-head"

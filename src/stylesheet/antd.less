@@ -1780,10 +1780,10 @@ this.tinycolor = tinycolor;
 @layout-trigger-color-light: @text-color;
 
 // z-index list, order by `z-index`
+@zindex-badge: auto;
 @zindex-table-fixed: auto;
 @zindex-affix: 10;
 @zindex-back-top: 10;
-@zindex-badge: 10;
 @zindex-picker-panel: 10;
 @zindex-popup-close: 10;
 @zindex-modal: 1000;
@@ -3555,6 +3555,7 @@ html {
     position: absolute;
     top: 8px;
     right: 16px;
+    padding: 0;
     overflow: hidden;
     font-size: @font-size-sm;
     line-height: 22px;
@@ -4550,7 +4551,7 @@ html {
     display: inline-block;
     height: @badge-height;
     transition: all 0.3s @ease-in-out;
-    > p {
+    > p.@{number-prefix-cls}-only-unit {
       height: @badge-height;
       margin: 0;
     }
@@ -5628,7 +5629,7 @@ a.@{btn-prefix-cls} {
         position: relative;
         display: block;
         min-width: 32px;
-        font-size: 14px;
+        font-size: @font-size-base;
         line-height: 22px;
         cursor: pointer;
 
@@ -6541,7 +6542,7 @@ a.@{btn-prefix-cls} {
   }
 
   &-borderless {
-    background-color: @component-background;
+    background-color: @collapse-header-bg;
     border: 0;
   }
 
@@ -6768,6 +6769,10 @@ a.@{btn-prefix-cls} {
     color: @disabled-color;
     font-size: @font-size-base;
     line-height: 1;
+  }
+
+  .@{ant-prefix}-input-disabled + &-icon {
+    cursor: not-allowed;
   }
 
   &-small &-clear,
@@ -9160,10 +9165,17 @@ form {
   // fix input with addon position. https://github.com/ant-design/ant-design/issues/8243
   :not(.@{ant-prefix}-input-group-wrapper) > .@{ant-prefix}-input-group,
   .@{ant-prefix}-input-group-wrapper {
-    position: relative;
-    top: -1px;
     display: inline-block;
     vertical-align: middle;
+  }
+
+  // https://github.com/ant-design/ant-design/issues/20616
+  &:not(.@{form-prefix-cls}-vertical) {
+    :not(.@{ant-prefix}-input-group-wrapper) > .@{ant-prefix}-input-group,
+    .@{ant-prefix}-input-group-wrapper {
+      position: relative;
+      top: -1px;
+    }
   }
 }
 
@@ -9549,6 +9561,10 @@ form {
 
   display: block;
   box-sizing: border-box;
+}
+
+.@{ant-prefix}-row + .@{ant-prefix}-row::before {
+  clear: both;
 }
 
 .@{ant-prefix}-row-flex {
@@ -10105,6 +10121,7 @@ form {
   &-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: @list-item-padding;
 
     &-content {
@@ -12729,7 +12746,6 @@ form {
   .reset-component;
 
   display: inline-block;
-  line-height: unset;
 }
 
 // 一般状态
@@ -14792,7 +14808,7 @@ span.@{radio-prefix-cls} + * {
   &.@{steps-prefix-cls}-small:not(.@{steps-prefix-cls}-dot) {
     .@{steps-prefix-cls}-item {
       &-icon {
-        margin-left: 40px;
+        margin-left: 46px;
       }
     }
   }
@@ -14968,6 +14984,39 @@ span.@{radio-prefix-cls} + * {
   .@{steps-prefix-cls}-item.@{steps-prefix-cls}-item-active::before {
     left: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .@{steps-prefix-cls}-navigation {
+    > .@{steps-prefix-cls}-item {
+      margin-right: 0 !important;
+      &::before {
+        display: none;
+      }
+      &.@{steps-prefix-cls}-item-active::before {
+        top: 0;
+        right: 0;
+        left: unset;
+        display: block;
+        width: 3px;
+        height: calc(100% - 24px);
+      }
+      &::after {
+        position: relative;
+        top: -2px;
+        left: 50%;
+        display: block;
+        width: 8px;
+        height: 8px;
+        margin-bottom: 8px;
+        text-align: center;
+        transform: rotate(135deg);
+      }
+      > .@{steps-prefix-cls}-item-container > .@{steps-prefix-cls}-item-tail {
+        visibility: hidden;
+      }
+    }
   }
 }
 
@@ -15642,15 +15691,13 @@ span.@{radio-prefix-cls} + * {
     box-shadow: @box-shadow-base;
 
     .@{ant-prefix}-dropdown-menu {
+      // https://github.com/ant-design/ant-design/issues/4916
+      // https://github.com/ant-design/ant-design/issues/19542
+      max-height: calc(100vh - 130px);
+      overflow-x: hidden;
       border: 0;
       border-radius: @border-radius-base @border-radius-base 0 0;
       box-shadow: none;
-
-      // https://github.com/ant-design/ant-design/issues/4916
-      &-without-submenu {
-        max-height: 400px;
-        overflow-x: hidden;
-      }
 
       &-item > label + span {
         padding-right: 0;
@@ -15820,7 +15867,10 @@ span.@{radio-prefix-cls} + * {
       // https://github.com/ant-design/ant-design/issues/14545
       // https://github.com/ant-design/ant-design/issues/19491
       .@{table-prefix-cls}-fixed-columns-in-body:not([colspan]) {
-        visibility: hidden;
+        color: transparent;
+        & > * {
+          visibility: hidden;
+        }
       }
     }
   }
@@ -18698,7 +18748,7 @@ span.@{radio-prefix-cls} + * {
         opacity: 1;
       }
       .anticon {
-        padding-right: 5px;
+        padding-right: 6px;
         color: rgba(0, 0, 0, 0.45);
       }
     }
@@ -18759,7 +18809,6 @@ span.@{radio-prefix-cls} + * {
 
     &-error &-card-actions {
       .anticon {
-        padding-right: 5px;
         color: @error-color;
       }
       opacity: 1;

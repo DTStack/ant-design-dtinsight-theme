@@ -5,17 +5,27 @@ const { SubMenu } = Menu;
 
 class Menus extends Component {
   render() {
-    const { dark } = this.props;
+    // const { dark } = this.props;
 
     return (
       <Menu
         mode="inline"
-        theme={dark ? 'dark' : 'light'}
+        theme={'light'}
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
       >
-        <Menu.Item key="Color"><a href="#Color">Color</a></Menu.Item>
-        <Menu.Item key="Typography"><a href="#Typography">Typography</a></Menu.Item>
+        <Menu.Item key="Color">
+          <a href="#Color">
+            <Icon type="appstore" />
+            <span>Color</span>
+          </a>
+        </Menu.Item>
+        <Menu.Item key="Typography">
+          <a href="#Typography">
+            <Icon type="laptop" />
+            <span>Typography</span>
+          </a>
+        </Menu.Item>
         {/* <SubMenu
           key="sub1"
           title={
@@ -31,9 +41,10 @@ class Menus extends Component {
           key="sub2"
           title={
             <span>
-              <Icon type="laptop" />Form
+              <Icon type="laptop" />
+              <span>Form</span>
             </span>
-              }
+          }
         >
           <Menu.Item key="Button"><a href="#Button">Button</a></Menu.Item>
           <Menu.Item key="Radio"><a href="#Radio">Radio</a></Menu.Item>
@@ -56,9 +67,10 @@ class Menus extends Component {
           key="sub3"
           title={
             <span>
-              <Icon type="build" />View
+              <Icon type="build" />
+              <span>View</span>
             </span>
-              }
+          }
         >
           <Menu.Item key="Menu"><a href="#Menu">Menu</a></Menu.Item>
           <Menu.Item key="Tabs"><a href="#Tabs">Tabs</a></Menu.Item>
@@ -79,9 +91,10 @@ class Menus extends Component {
           key="sub4"
           title={
             <span>
-              <Icon type="notification" />Hint
+              <Icon type="notification" />
+              <span>Hint</span>
             </span>
-              }
+          }
         >
           <Menu.Item key="Badge"><a href="#Badge">Badge</a></Menu.Item>
           <Menu.Item key="Alert"><a href="#Alert">Alert</a></Menu.Item>

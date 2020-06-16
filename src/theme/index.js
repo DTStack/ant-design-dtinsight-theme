@@ -23,8 +23,6 @@ Object.keys(dtThemeVars || {}).forEach((key) => {
     defaultTheme[`@${key}`] = dtThemeVars[key];
   }
 });
-console.log('defaultTheme--------------');
-console.log(defaultTheme);
 
 export default {
   default: defaultTheme,

@@ -35,7 +35,7 @@ class ThemeCard extends Component {
       vars,
       selectedTheme: themeName,
       keyword: '',
-      expanded: true
+      expanded: false
     };
 
     window.less
