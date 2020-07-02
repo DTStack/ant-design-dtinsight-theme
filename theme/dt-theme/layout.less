@@ -9,6 +9,8 @@
     right: 0;
     z-index: 1000;
     min-width: @minWidth;
+    justify-content: space-between;
+    display: flex;
     .ant-menu {
         background: #080A1A;
         color: #ABB2C2;
@@ -301,12 +303,13 @@
 
 // log 样式
 .dt-header-log-wrapper {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    > img {
+    & > img {
         height: 28px;
-        margin-top: -11px;
     }
-    .c-header__title {
+    .c-header__title, & > span {
         text-decoration: none;
         font-size: 24px;
         color: #fff;
