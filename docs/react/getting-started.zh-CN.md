@@ -21,9 +21,9 @@ title: 开发前必读
 额外的，依赖的`dt-common`包也需改为升级了 antd 的版本。
 
 > 目前 `dt-common` 与 `ant-design-dtinsight-theme` 版本对应如下：
->  - 4.0.0-alpha.1 (dt-common) -> 1.0.5 (ant-design-dtinsight-theme)
+>  - 4.0.0-alpha.3 (dt-common) -> 1.0.7 (ant-design-dtinsight-theme) (当前最新版本)
 >  - 4.0.0-alpha.2 (dt-common) -> 1.0.6 (ant-design-dtinsight-theme)
->  - 4.0.0-alpha.3 (dt-common) -> 1.0.7 (ant-design-dtinsight-theme)
+>  - 4.0.0-alpha.1 (dt-common) -> 1.0.5 (ant-design-dtinsight-theme)
 
 ##### 1、 package.json 中添加依赖
 

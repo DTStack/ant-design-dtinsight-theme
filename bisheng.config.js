@@ -26,5 +26,15 @@ module.exports = {
         // logo: 'https://coder.slowlog.cn/images/avatar.png?v=1566195794967',
         projectName: 'DTInsight-Theme',
         homeUrl: '/docs/react/getting-started-cn'
+    },
+    webpackConfig: function (config) {
+        config.module.rules.push({
+            test: /\.(eot|woff|svg|ttf|woff2|gif|appcache|webp)(\?|$)/,
+            loader: [
+                "file-loader?name=[name].[ext]",
+                "url-loader?limit=100000"
+            ]
+        });
+        return config;
     }
 };
