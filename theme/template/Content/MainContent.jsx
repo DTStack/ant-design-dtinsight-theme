@@ -7,9 +7,10 @@ import get from 'lodash/get';
 import MobileMenu from 'rc-drawer';
 import Article from './Article';
 import PrevAndNext from './PrevAndNext';
-import Footer from '../Layout/Footer';
+// import Footer from '../Layout/Footer';
 import ComponentDoc from './ComponentDoc';
-import * as utils from '../utils';
+import * as pubUtils from '../utils';
+import utils from '../../utils';
 
 const {SubMenu} = Menu;
 
@@ -39,7 +40,7 @@ function getModuleData(props) {
             ? [...props.picked.components, ...props.picked['docs/react'], ...props.picked.changelog]
             : props.picked[moduleName];
 
-    const excludedSuffix = utils.isZhCN(pathname) ? 'en-US.md' : 'zh-CN.md';
+    const excludedSuffix = pubUtils.isZhCN(pathname) ? 'en-US.md' : 'zh-CN.md';
 
     return moduleData.filter(({meta}) => !meta.filename.endsWith(excludedSuffix));
 }
@@ -52,9 +53,9 @@ function fileNameToPath(filename) {
 const getSideBarOpenKeys = nextProps => {
     const {themeConfig} = nextProps;
     const {pathname} = nextProps.location;
-    const locale = utils.isZhCN(pathname) ? 'zh-CN' : 'en-US';
+    const locale = pubUtils.isZhCN(pathname) ? 'zh-CN' : 'en-US';
     const moduleData = getModuleData(nextProps);
-    const shouldOpenKeys = utils
+    const shouldOpenKeys = pubUtils
         .getMenuItems(moduleData, locale, themeConfig.categoryOrder, themeConfig.typeOrder)
         .map(m => (m.title && m.title[locale]) || m.title);
     return shouldOpenKeys;
@@ -112,7 +113,7 @@ export default class MainContent extends Component {
             intl: {locale},
         } = this.context;
         const moduleData = getModuleData(this.props);
-        const menuItems = utils.getMenuItems(
+        const menuItems = pubUtils.getMenuItems(
             moduleData,
             locale,
             themeConfig.categoryOrder,
@@ -218,7 +219,7 @@ export default class MainContent extends Component {
 
         const child = !item.link ? (
             <Link
-                to={utils.getLocalizedPathname(
+                to={pubUtils.getLocalizedPathname(
                     /^components/.test(url) ? `${url}/` : url,
                     locale === 'zh-CN',
                 )}
@@ -267,6 +268,7 @@ export default class MainContent extends Component {
         const {isMobile} = this.context;
         const {openKeys} = this.state;
         const activeMenuItem = getActiveMenuItem(props);
+        const isDark = Boolean(utils.getCookie('theme') === 'dark')
 
         const menuItems = this.getMenuItems();
         const menuItemsForFooterNav = this.getMenuItems({
@@ -281,7 +283,7 @@ export default class MainContent extends Component {
         const menuChild = (
             <Menu
                 inlineIndent="40"
-                className="aside-container menu-site"
+                className={isDark ? "aside-container menu-site dark" : "aside-container menu-site"}
                 mode="inline"
                 style={{ borderRight: '0px solid #fff' }}
                 openKeys={openKeys}
@@ -292,7 +294,7 @@ export default class MainContent extends Component {
             </Menu>
         );
         return (
-            <div className="main-wrapper">
+            <div className="main-wrapper" style={isDark ? { backgroundColor: '#0E0E17' } : {}}>
                 <Row>
                     {isMobile ? (
                         <MobileMenu
@@ -305,12 +307,12 @@ export default class MainContent extends Component {
                     ) : (
                         <Col xxl={4} xl={5} lg={6} md={24} sm={24} xs={24} className="main-menu">
                             <Affix>
-                                <section style={{ height: '100vh', borderRight: '1px solid #e8e8e8' }} className="main-menu-inner">{menuChild}</section>
+                                <section style={{ height: '100vh', borderRight: isDark ? '1px solid #2F334D' : '1px solid #e8e8e8' }} className="main-menu-inner">{menuChild}</section>
                             </Affix>
                         </Col>
                     )}
                     <Col xxl={20} xl={19} lg={18} md={24} sm={24} xs={24}>
-                        <section className={mainContainerClass}>
+                        <section className={mainContainerClass} style={isDark ? { backgroundColor: '#0E0E17' } : {}}>
                             {props.demos ? (
                                 <ComponentDoc {...props} doc={localizedPageData} demos={props.demos}/>
                             ) : (
@@ -318,7 +320,7 @@ export default class MainContent extends Component {
                             )}
                         </section>
                         <PrevAndNext prev={prev} next={next}/>
-                        <Footer/>
+                        {/* <Footer/> */}
                     </Col>
                 </Row>
             </div>
