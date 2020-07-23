@@ -2,7 +2,7 @@ import React from 'react';
 import {injectIntl} from 'react-intl';
 import DocumentTitle from 'react-document-title';
 import PropTypes from 'prop-types';
-import Footer from '../Layout/Footer';
+// import Footer from '../Layout/Footer';
 
 // To store style which is only for Home and has conflicts with others.
 function getStyle() {
@@ -12,10 +12,8 @@ function getStyle() {
     }
     #header {
       box-shadow: none;
-      max-width: 1200px;
       width: 100%;
-      margin: 20px auto 0;
-      padding: 0 24px;
+      padding: 0 50px;
     }
     #header,
     #header .ant-select-selection,
@@ -68,7 +66,7 @@ class Home extends React.Component {
                 <div>
                     <style dangerouslySetInnerHTML={{__html: getStyle()}}/>
                     {/* eslint-disable-line */}
-                    <Footer/>
+                    {/* <Footer/> */}
                 </div>
             </DocumentTitle>
         );
