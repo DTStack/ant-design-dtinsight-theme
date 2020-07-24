@@ -1,0 +1,77 @@
+@import '../const.less';
+
+.ant-btn {
+    padding: 0px 16px;
+    border-color: @primaryColor;
+    color: @primaryColor;
+    &:hover, &:focus {
+        border-color: @hoverColor;
+        color: @hoverColor;
+    }
+    &:active, &.active {
+        color: @clickColor;
+        border-color: @clickColor;
+    }
+}
+
+.ant-btn-primary {
+    color: #fff;
+    &:hover, &:focus {
+        color: #fff;
+        border-color: @hoverColor;
+        background-color: @hoverColor;
+    }
+    &:active, &.active {
+        color: #fff;
+        background-color: @clickColor;
+        border-color: @clickColor;
+    }
+}
+
+.ant-btn-danger {
+    color: #fff;
+    border-color: @red_dark;
+    background-color: @red_dark;
+    &:hover, &:focus {
+        color: #fff;
+        background-color: #f08e89;
+        border-color: #f08e89;
+    }
+    &:active, &.active {
+        color: #fff;
+        border-color: @red_dark;
+        background-color: @red_dark;
+    }
+}
+
+.ant-btn-link {
+    border-color: transparent;
+    &:hover, &:focus {
+        border-color: transparent;
+    }
+    &:active, &.active {
+        border-color: transparent;
+    }
+}
+
+.ant-btn-link-disabled,
+.ant-btn-link.disabled,
+.ant-btn-link[disabled],
+.ant-btn-link-disabled:hover,
+.ant-btn-link.disabled:hover,
+.ant-btn-link[disabled]:hover,
+.ant-btn-link-disabled:focus,
+.ant-btn-link.disabled:focus,
+.ant-btn-link[disabled]:focus,
+.ant-btn-link-disabled:active,
+.ant-btn-link.disabled:active,
+.ant-btn-link[disabled]:active,
+.ant-btn-link-disabled.active,
+.ant-btn-link.disabled.active,
+.ant-btn-link[disabled].active {
+    color: @white4D;
+}
+
+.ant-btn-lg {
+    height: 36px;
+}
