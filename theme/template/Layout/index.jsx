@@ -13,8 +13,8 @@ import utils from '../../utils';
 // import '../../dt-theme/reset.less';
 // import '../../dt-theme/index.less';
 
-// import '../../dt-theme/default/index.less';
-import '../../dt-theme/dark/index.less';
+import '../../dt-theme/default/index.less';
+// import '../../dt-theme/dark/index.less';
 
 if (typeof window !== 'undefined' && navigator.serviceWorker) {
     navigator.serviceWorker.getRegistrations().then(registrations => {
