@@ -1,0 +1,42 @@
+@import '../const.less';
+
+// input
+.ant-input {
+    border-radius: 4px;
+    &:focus {
+        border-color: @primaryColor;
+    }
+}
+.ant-input-disabled {
+    border-color: #272A40;
+}
+.ant-input[disabled]:hover {
+    border-color: #272A40;
+}
+.ant-input-lg {
+    font-size: 12px;
+}
+.ant-input-search-icon, .ant-input-password-icon {
+    color: @white6;
+    &:hover {
+        color: @whiteBF;
+    }
+}
+
+// 浅色背景中 显示深色控件
+.dt-form-light-bg {
+    // input
+    .ant-input, &.ant-input {
+        border-color: @blue3;
+        background-color: #11111C;
+        &:focus, &:hover {
+            border-color: @primaryColor;
+        }
+    }
+    .ant-input[disabled], &.ant-input[disabled] {
+        background-color: #161723;
+        &:hover {
+            border-color: @blue3;
+        }
+    }
+}

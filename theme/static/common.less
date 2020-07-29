@@ -155,6 +155,7 @@ a {
   }
 }
 
+// demo 样式
 .demo-input-shadow,
 .demo-select-shadow,
 .demo-datepicker-shadow,
@@ -194,5 +195,25 @@ a {
   .ant-time-picker {
     margin-right: 12px;
     margin-bottom: 20px;
+  }
+}
+
+// 黑色主题下 demo 样式
+.dark {
+  .demo-input-shadow,
+  .demo-select-shadow,
+  .demo-datepicker-shadow,
+  .demo-timer-picker-shadow,
+  .demo-tree-select-shadow {
+    background-color: transparent;
+    padding: 0px;
+  }
+  .demo-input-light {
+    width: 100%;
+    padding: 20px;
+    background: #272A40;
+    input:last-child {
+      margin-top: 20px;
+    }
   }
 }

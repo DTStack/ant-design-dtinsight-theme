@@ -137,7 +137,7 @@ export default class Layout extends React.Component {
         return (
             <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
                 <ConfigProvider locale={appLocale.locale === 'zh-CN' ? zhCN : null}>
-                    <div className="page-wrapper" key={theme}>
+                    <div className={theme === 'default' ? 'page-wrapper' : 'page-wrapper dark'} key={theme}>
                         <Header theme={theme} onThemeChange={this.onThemeChange} {...restProps} />
                         {children}
                     </div>
