@@ -18,7 +18,7 @@ import { Input } from 'antd';
 ReactDOM.render(
   <div className="demo-input-light dt-form-light-bg">
     <Input placeholder="shadow input" />
-    <Input disabled placeholder="disable shadow input" />
+    <Input disabled style={{ marginTop: 20 }} placeholder="disable shadow input" />
   </div>,
   mountNode
 );

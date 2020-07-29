@@ -22,11 +22,20 @@
         color: @whiteBF;
     }
 }
+// select
+.ant-select-selection {
+    &:focus, &.active {
+        border-color: @primaryColor;
+    }
+}
+.ant-select-dropdown {
+    box-shadow:0px 2px 8px 0px rgba(6,7,10,1);
+}
 
 // 浅色背景中 显示深色控件
 .dt-form-light-bg {
     // input
-    .ant-input, &.ant-input {
+    .ant-input, &.ant-input, .ant-select-selection, &.ant-select-selection {
         border-color: @blue3;
         background-color: #11111C;
         &:focus, &:hover {
@@ -37,6 +46,26 @@
         background-color: #161723;
         &:hover {
             border-color: @blue3;
+        }
+    }
+    // select
+    &.ant-select-disabled, .ant-select-disabled {
+        .ant-select-selection {
+            background: #161723;
+            &:hover, &:focus, &.active {
+                border-color: @blue3;
+            }
+        }
+    }
+    &.ant-select-dropdown {
+        border:1px solid #272A40;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        background-color: @blue1;
+        .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+            background-color: #282C40;
+        }
+        .ant-select-dropdown-menu-item-selected {
+            background-color: #282C40;
         }
     }
 }
