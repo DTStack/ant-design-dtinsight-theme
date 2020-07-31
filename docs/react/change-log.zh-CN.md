@@ -5,7 +5,7 @@ toc: false
 timeline: true
 ---
 
-## [1.0.7](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.0.9) (020-07-31)
+## [1.0.9](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.0.9) (020-07-31)
 
 ### Fix
 
