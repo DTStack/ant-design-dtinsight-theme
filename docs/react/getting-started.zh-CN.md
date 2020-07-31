@@ -20,6 +20,12 @@ title: 开发前必读
 
 额外的，依赖的`dt-common`包也需改为升级了 antd 的版本。
 
+> 目前 `未升级dt-common` 、`升级后dt-common` 以及 `ant-design-dtinsight-theme` 版本对应如下：
+>  - 3.10.3 (未升级 dt-common) -> 4.0.0-alpha.4 (升级后 dt-common) -> 1.0.9 (ant-design-dtinsight-theme) (当前最新版本)
+>  - 3.10.2 (未升级 dt-common) -> 4.0.0-alpha.3 (升级后 dt-common) -> 1.0.7 (ant-design-dtinsight-theme)
+>  - 3.10.2 (未升级 dt-common) -> 4.0.0-alpha.2 (升级后 dt-common) -> 1.0.6 (ant-design-dtinsight-theme)
+>  - 3.10.2 (未升级 dt-common) -> 4.0.0-alpha.1 (升级后 dt-common) -> 1.0.5 (ant-design-dtinsight-theme)
+
 ##### 1、 package.json 中添加依赖
 
 ``` json
@@ -38,7 +44,7 @@ import 'ant-design-dtinsight-theme/theme/dt-theme/reset.less';
 import 'ant-design-dtinsight-theme/theme/dt-theme/index.less';
 ```
 
-**特别的** ：数栈子应用中需放弃之前那一套自定义 antd 主题的方式，需修改点如下：
+**特别的** ：数栈子应用中需放弃之前那一套自定义 antd 主题的方式（否则主题样式会被 antd 原样式覆盖），需修改点如下：
 
 - 去掉 css-loader 中关于 antd theme 的相关配置
 - 去掉 babel.config 中 antd 样式的按需引入配置
@@ -51,7 +57,7 @@ import 'ant-design-dtinsight-theme/theme/dt-theme/index.less';
 @import 'ant-design-dtinsight-theme/theme/dt-theme/const.scss';
 ```
 
-变量详解(颜色预览可查看颜色规范)：
+变量详解( **颜色预览可查看颜色规范** )：
 
 ```scss
 // 全局变量

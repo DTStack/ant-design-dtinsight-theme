@@ -1,6 +1,6 @@
 {
   "name": "ant-design-dtinsight-theme",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "This is a document of dtinsight-theme based on Ant Design.",
   "main": "index.js",
   "scripts": {
@@ -14,22 +14,24 @@
   "author": "dt-insight-front",
   "license": "ISC",
   "dependencies": {
-    "antd": "3.26.13",
+    "antd": "3.26.13"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.4.4",
     "bisheng": "^1.2.4",
     "bisheng-plugin-antd": "^1.0.1",
     "bisheng-plugin-react": "^1.0.0",
     "bisheng-plugin-toc": "^0.4.4",
-    "moment": "^2.24.0"
-  },
-  "devDependencies": {
-    "@babel/runtime": "^7.4.4",
     "cross-env": "^5.2.0",
+    "file-loader": "^6.0.0",
     "intersection-observer": "^0.7.0",
     "lz-string": "^1.4.4",
+    "moment": "^2.24.0",
     "react-copy-to-clipboard": "^5.0.1",
     "react-intl": "^2.9.0",
     "rimraf": "^2.6.3",
     "scrollama": "^2.0.0",
-    "standard-version": "7.0.1"
+    "standard-version": "7.0.1",
+    "url-loader": "^4.1.0"
   }
 }
