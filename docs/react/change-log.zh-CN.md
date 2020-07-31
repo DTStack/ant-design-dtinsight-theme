@@ -5,6 +5,19 @@ toc: false
 timeline: true
 ---
 
+## [1.0.7](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.0.9) (020-07-31)
+
+### Fix
+
+* 修复 Table 组件设置了 scroll 但内容未 overflow 时列错位问题
+* 修复 danger 类型 Button 组件设置 disabled 时的样式问题
+* 更新 package.json，移除无用 dependencies
+* 修改 侧边栏收缩图标 大小为 14px
+
+### Features
+
+* Layout 添加 自定义图标侧边导航 demo
+
 ## [1.0.7](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.0.7) (020-07-02)
 
 ### Fix
