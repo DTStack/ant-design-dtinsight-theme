@@ -9,6 +9,7 @@ import Header from './Header';
 import enLocale from '../../en-US';
 import cnLocale from '../../zh-CN';
 import utils from '../../utils';
+import '../../static/iconfont/iconfont.css';
 
 // import '../../dt-theme/reset.less';
 // import '../../dt-theme/index.less';

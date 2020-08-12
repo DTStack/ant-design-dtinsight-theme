@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/compare/v1.0.6...v1.0.7) (2020-07-02)
+
+
+### Features
+
+* herder style ([5087e42](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/5087e42b5a261b2a5f700c230fa0b7cb63187f74))
+* update version ([6fe1fd2](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/6fe1fd2f4b24beed8595b2639a3ce697d2722f1f))
+
 ### [1.0.6](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/compare/v1.0.1...v1.0.6) (2020-06-08)
 
 

@@ -1,0 +1,86 @@
+{
+  "id": "1804528",
+  "name": "data-api",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15210711",
+      "name": "文档导出",
+      "font_class": "APItiaoyong2",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "14695149",
+      "name": "表_打开",
+      "font_class": "biao_dakai",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "14695150",
+      "name": "表",
+      "font_class": "biao",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "14541484",
+      "name": "API调用",
+      "font_class": "APItiaoyong1",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "14541485",
+      "name": "我的api",
+      "font_class": "wodeapi",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "14540520",
+      "name": "角色管理",
+      "font_class": "jiaoseguanli",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "14540521",
+      "name": "成员管理",
+      "font_class": "chengyuanguanli",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "14540522",
+      "name": "项目配置",
+      "font_class": "xiangmupeizhi",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "14540523",
+      "name": "API调用",
+      "font_class": "APItiaoyong",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "14540524",
+      "name": "审批",
+      "font_class": "shenpi",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "14540525",
+      "name": "行级权限",
+      "font_class": "hangjiquanxian",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}
