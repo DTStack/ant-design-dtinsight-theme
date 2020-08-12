@@ -5,6 +5,17 @@ toc: false
 timeline: true
 ---
 
+## [1.1.0](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.1.0) (020-07-31)
+
+### Features
+
+* (待补充)
+
+### Fix
+
+* 更新 readme 线上地址
+* 修复 layout 侧边栏导航图标不对齐问题
+
 ## [1.0.9](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.0.9) (020-07-31)
 
 ### Fix
