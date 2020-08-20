@@ -35,6 +35,9 @@
 .ant-select-dropdown {
     box-shadow:0px 2px 8px 0px rgba(6,7,10,1);
 }
+.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+    background-color: @deriveColor_dark;
+}
 // checkbox
 .ant-checkbox-inner {
     background-color: #11121C;
@@ -57,6 +60,18 @@
 }
 .ant-switch-loading-icon, .ant-switch::after {
     background-color: #ffffff;
+}
+// cascader
+.ant-cascader-menu-item {
+    color: @whiteBF;
+}
+.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+    background-color: @deriveColor_dark;
+}
+// datePicker
+.ant-calendar {
+    box-shadow: 0px 2px 8px 0px rgba(6,7,10,1);
+    border: 0;
 }
 
 // 浅色背景中 显示深色控件

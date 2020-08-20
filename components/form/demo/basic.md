@@ -14,7 +14,8 @@ title:
 Basic usage example.
 
 ```jsx
-import { Form, Icon, Input, Button, Checkbox, InputNumber, Radio, Switch } from 'antd';
+import { Form, Icon, Input, Button, Checkbox, InputNumber, Radio, Switch, Cascader, Select } from 'antd';
+const { Option } = Select;
 const formItemLayout = {
   labelCol: {
     xs: { span: 24 },
@@ -37,6 +38,41 @@ class NormalLoginForm extends React.Component {
 
   render() {
     const { getFieldDecorator } = this.props.form;
+    const options = [
+      {
+        value: 'zhejiang',
+        label: '浙江',
+        children: [
+          {
+            value: 'hangzhou',
+            label: '杭州',
+            children: [
+              {
+                value: 'westLake',
+                label: '西湖',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        value: 'jiangsu',
+        label: '江苏',
+        children: [
+          {
+            value: 'nanjing',
+            label: '南京',
+            children: [
+              {
+                value: 'zhongHuaMen',
+                label: '中华门',
+              },
+            ],
+          },
+        ],
+      },
+    ];
+
     return (
       <Form {...formItemLayout} onSubmit={this.handleSubmit}>
         <Form.Item label={'用户名'}>
@@ -44,6 +80,17 @@ class NormalLoginForm extends React.Component {
             rules: [{ required: true, message: 'It is required!' }],
           })(
             <Input placeholder="Username"/>
+          )}
+        </Form.Item>
+        <Form.Item label={'角色'}>
+          {getFieldDecorator('role', {
+            rules: [{ required: true, message: 'It is required!' }],
+          })(
+            <Select placeholder="Please select">
+              <Option value="1">项目所有者</Option>
+              <Option value="2">数据分析师</Option>
+              <Option value="3">管理员</Option>
+            </Select>
           )}
         </Form.Item>
         <Form.Item label={'密码'}>
@@ -83,6 +130,13 @@ class NormalLoginForm extends React.Component {
             rules: [{ required: false, message: 'It is required!' }],
           })(
             <Switch />
+          )}
+        </Form.Item>
+        <Form.Item label={'位置'}>
+          {getFieldDecorator('location', {
+            rules: [{ required: false, message: 'It is required!' }],
+          })(
+            <Cascader options={options} placeholder="Please select" />
           )}
         </Form.Item>
         <Form.Item>
