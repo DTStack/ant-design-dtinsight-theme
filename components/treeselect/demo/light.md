@@ -1,16 +1,17 @@
 ---
-order: 1
+order: 2
 title:
-  zh-CN: 灰色背景(仅默认主题下使用)
+  zh-CN: 浅色背景(仅暗黑主题下使用)
 ---
 
 ## zh-CN
 
-灰色背景中的表单需添加投影，去掉外边框
+浅色背景上，显示深色控件
 
-仅默认主题下使用，暗黑主题下使用无效
+仅暗黑主题下使用，默认主题下使用无效
 
-- 为组件添加类名`dt-form-shadow-bg`
+- 为组件添加类名`dt-form-light-bg`
+- 设置组件属性 `dropdownClassName` 为 `dt-form-light-bg`
 
 ```jsx
 import { TreeSelect } from 'antd';
@@ -29,10 +30,10 @@ class Demo extends React.Component {
 
   render() {
     return (
-      <div className="demo-tree-select-shadow">
+      <div className="demo-tree-select-light">
           <TreeSelect
             showSearch
-            className="dt-form-shadow-bg"
+            className="dt-form-light-bg"
             style={{ width: '100%' }}
             value={this.state.value}
             dropdownStyle={{ maxHeight: 400, overflow: 'auto' }}
@@ -40,6 +41,7 @@ class Demo extends React.Component {
             allowClear
             treeDefaultExpandAll
             onChange={this.onChange}
+            dropdownClassName="dt-form-light-bg"
           >
             <TreeNode value="parent 1" title="parent 1" key="0-1">
               <TreeNode value="parent 1-0" title="parent 1-0" key="0-1-1">

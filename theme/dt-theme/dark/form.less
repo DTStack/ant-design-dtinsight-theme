@@ -73,11 +73,28 @@
     box-shadow: 0px 2px 8px 0px rgba(6,7,10,1);
     border: 0;
 }
+// tree
+.ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+    background-color: @deriveColor_dark;
+}
+.ant-select-tree-dropdown .ant-select-dropdown-search {
+    padding: 12px 12px 8px;
+    .ant-select-search__field {
+        background: #11111C;
+    }
+}
+.ant-select-tree {
+    padding: 0 12px;
+}
+// timePicker
+.ant-time-picker-panel-input {
+    background-color: transparent;
+}
 
 // 浅色背景中 显示深色控件
 .dt-form-light-bg {
     // input
-    .ant-input, &.ant-input, .ant-select-selection, &.ant-select-selection {
+    .ant-input, &.ant-input, .ant-select-selection, &.ant-select-selection, .ant-time-picker-input, &.ant-time-picker-input {
         border-color: @blue3;
         background-color: #11111C;
         &:focus, &:hover {
@@ -100,7 +117,7 @@
         }
     }
     &.ant-select-dropdown {
-        border:1px solid #272A40;
+        border: 1px solid #272A40;
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
         background-color: @blue1;
         .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
@@ -109,5 +126,27 @@
         .ant-select-dropdown-menu-item-selected {
             background-color: #282C40;
         }
+    }
+    // tree
+    .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+        background-color: #282C40;
+    }
+    &.ant-select-tree-dropdown .ant-select-dropdown-search {
+        background: transparent;
+        .ant-select-search__field {
+            background: #1D1F2E;
+            border-color: #2C3047;
+        }
+    }
+    // datePicker
+    .ant-calendar {
+        background-color: @blue1;
+    }
+    .ant-calendar-input {
+        background: @blue1;
+    }
+    // timerPicker
+    .ant-time-picker-panel-inner {
+        background-color: @blue1;
     }
 }
