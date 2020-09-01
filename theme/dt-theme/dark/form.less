@@ -94,7 +94,11 @@
 // 浅色背景中 显示深色控件
 .dt-form-light-bg {
     // input
-    .ant-input, &.ant-input, .ant-select-selection, &.ant-select-selection, .ant-time-picker-input, &.ant-time-picker-input {
+    .ant-input,&.ant-input,
+    .ant-select-selection, &.ant-select-selection,
+    .ant-time-picker-input, &.ant-time-picker-input,
+    .ant-input-number, &.ant-input-number,
+    .ant-cascader-picker, &.ant-cascader-picker {
         border-color: @blue3;
         background-color: #11111C;
         &:focus, &:hover {
@@ -148,5 +152,28 @@
     // timerPicker
     .ant-time-picker-panel-inner {
         background-color: @blue1;
+    }
+    // cascader
+    .ant-cascader-menus, &.ant-cascader-menus {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        background-color: @blue1;
+        border: 1px solid #272A40;
+        .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+            background-color: #282C40;
+        }
+    }
+    .has-error {
+        .ant-input, .ant-select-selection, .ant-input-number, .ant-time-picker-input, .ant-cascader-picker {
+            border-color: #E25F5D;
+            background-color: #11111C;
+        }
+    }
+}
+.has-error {
+    .dt-form-light-bg {
+        &.ant-input, .ant-select-selection, .ant-input-numbe, .ant-time-picker-input, .ant-cascader-picker {
+            border-color: #E25F5D;
+            background-color: #11111C;
+        }
     }
 }
