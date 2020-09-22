@@ -14,7 +14,7 @@ import '../../static/iconfont/iconfont.css';
 // import '../../dt-theme/reset.less';
 // import '../../dt-theme/index.less';
 
-// import '../../dt-theme/default/index.less';
+import '../../dt-theme/default/index.less';
 import '../../dt-theme/dark/index.less';
 
 if (typeof window !== 'undefined' && navigator.serviceWorker) {
