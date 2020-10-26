@@ -8,18 +8,18 @@
 
 ### 项目启动&打包
 
-```javascript
-`npm install // 安装项目依赖`
+```bash
+npm install // 安装项目依赖
 
-`npm run dev // 启动项目`
+npm run dev // 启动项目
 
-`npm run clean // 清除 dist 目录下的静态文件`
+npm run clean // 清除 dist 目录下的静态文件
 
-`npm run release // 版本发布`
+npm run release // 版本发布
 
-`npm run changelog // 生成changelog`
+npm run changelog // 生成changelog
 
-`npm run build // 打包项目、静态文件生成目录为当前目录的 dist`
+npm run build // 打包项目、静态文件生成目录为当前目录的 dist
 ```
 
 ## 部署
