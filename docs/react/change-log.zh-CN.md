@@ -5,7 +5,7 @@ toc: false
 timeline: true
 ---
 
-## [1.0.9](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.0.9) (020-07-31)
+## [1.0.9](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.0.9) (2020-07-31)
 
 ### Fix
 
@@ -18,7 +18,7 @@ timeline: true
 
 * Layout 添加 自定义图标侧边导航 demo
 
-## [1.0.7](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.0.7) (020-07-02)
+## [1.0.7](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.0.7) (2020-07-02)
 
 ### Fix
 

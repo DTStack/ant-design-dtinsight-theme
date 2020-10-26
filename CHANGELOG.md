@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.9](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/compare/v1.0.7...v1.0.9) (2020-07-31)
+
+
+### Features
+
+* add previously dt-common version ([97b946a](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/97b946aa56d0ac10a25103a156600b7c667a1e06))
+* add siderBar use iconfont ([722a013](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/722a0131c7b627efd9da814cebca11458584f003))
+* add webpackConfig ([acb468b](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/acb468bd83ebb125d58c6ec52f9bc5957e3a1aa3))
+* devDependencies ([d517e53](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/d517e5362a900ad4a017f7ee068e6acf5b3d368b))
+* logo wrapper style ([84616dd](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/84616ddee9dea5d69e72266d1a831661442a17ca))
+* sider icon size ([5bd6764](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/5bd676429e6b0c9f9629d1ab2329d81ea6811a4e))
+* update changelog ([35565b6](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/35565b6827fc0c32fa5586af9f82e99153dbcfd9))
+* update doc ([55b6493](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/55b649325a097677cf8313c8568bf0a44480dad0))
+* update version ([34c7fbf](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/34c7fbfacd2674bd869386d8339bac7f67ed1cbb))
+
+
+### Bug Fixes
+
+* danger btn style ([831cb01](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/831cb01d8a90832537ced9d95739e09b884c2543))
+* table overflow style ([c6f44cc](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/commit/c6f44ccf136d3f69158d765615acfe652af1acbf))
+
 ### [1.0.7](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/compare/v1.0.6...v1.0.7) (2020-07-02)
 
 
