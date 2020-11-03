@@ -10,7 +10,7 @@
     "changelog": "./scripts/changelog.sh",
     "release": "./scripts/release.sh"
   },
-  "keywords": [],
+  "keywords": ["antd-theme", "dtinsight"],
   "author": "dt-insight-front",
   "license": "ISC",
   "dependencies": {
