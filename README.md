@@ -1,26 +1,28 @@
 # ant-design-dtinsight-theme
 
-本项目基于 antd 3.x 实现数栈 UI4.0 规范样式的编写，基于 bisheng 框架实现组件样式预览。
+Engish | [Chinese](./README_zh.md)
 
-在本项目你可以：
+This project has implemented the compilation of the DTInsight UI4.0 standard style based on the Ant-Design 3.x version and realized the component style preview based on the Bisheng framework.
 
-- 查看组件预览及其相关代码实现
-- 自定义样式使用及预览
+In this project you can:
 
-## 安装
+- Preview the component and view its associated code implementation
+- Use and preview custom styles
+
+## Installation
 
 ```javascript
 npm install ant-design-dtinsight-theme --save
 
-或
+OR
 
 yarn add ant-design-dtinsight-theme
 ```
 
-## 使用
+## Usage
 
-[如何在数栈应用中使用](./docs/react/getting-started.zh-CN.md)
+[How to use it in DTInsight applications?](./docs/react/getting-started.zh-CN.md)
 
-## 变更记录
+## ChangeLog
 
-[更新日志](./docs/react/change-log.zh-CN.md)
+[Change Log](./docs/react/change-log.zh-CN.md)
