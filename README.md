@@ -21,8 +21,8 @@ yarn add ant-design-dtinsight-theme
 
 ## Usage
 
-[How to use it in DTInsight applications?](./docs/react/getting-started.zh-CN.md)
+[How to use it in DTInsight applications?](https://github.com/DTStack/ant-design-dtinsight-theme/blob/master/docs/react/getting-started.zh-CN.md)
 
 ## ChangeLog
 
-[Change Log](./docs/react/change-log.zh-CN.md)
+[Change Log](https://github.com/DTStack/ant-design-dtinsight-theme/blob/master/docs/react/change-log.zh-CN.md)

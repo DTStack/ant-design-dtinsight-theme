@@ -21,8 +21,8 @@ yarn add ant-design-dtinsight-theme
 
 ## 使用
 
-[如何在数栈应用中使用](./docs/react/getting-started.zh-CN.md)
+[如何在数栈应用中使用](https://github.com/DTStack/ant-design-dtinsight-theme/blob/master/docs/react/getting-started.zh-CN.md)
 
 ## 变更记录
 
-[更新日志](./docs/react/change-log.zh-CN.md)
+[更新日志](https://github.com/DTStack/ant-design-dtinsight-theme/blob/master/docs/react/change-log.zh-CN.md)
