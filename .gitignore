@@ -1,7 +1,0 @@
-node_modules/
-_site
-dist
-/lib
-/es
-.DS_Store
-npm-debug.log
