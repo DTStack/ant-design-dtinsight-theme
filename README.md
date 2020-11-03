@@ -2,7 +2,7 @@
 
 Engish | [Chinese](./README_zh.md)
 
-This project has implemented the compilation of the DTInsight UI4.0 standard style based on the Ant-Design 3.x version, and realized the component style preview based on the Bisheng framework.
+This project has implemented the compilation of the DTInsight UI4.0 standard style based on the Ant-Design 3.x version and realized the component style preview based on the Bisheng framework.
 
 In this project you can:
 
