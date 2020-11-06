@@ -65,7 +65,7 @@ class App extends React.Component {
         age: 32,
         address: 'Sidney No. 1 Lake Park',
         description: 'My name is Joe Black, I am 32 years old, living in Sidney No. 1 Lake Par',
-      },
+      }
     ],
     isShowData: true,
     isColumnFixed: false,
@@ -121,11 +121,11 @@ class App extends React.Component {
       <div className={!isMac && setScrollBar ? 'dt-table-fixed-contain-footer dt-table-scrollbar' : 'dt-table-fixed-contain-footer'}>
         <div style={{ marginBottom: 20 }}>
             <Switch checked={isShowData} onChange={this.handleSwitchChange.bind(this, 'isShowData')} />
-            <span style={{ margin: '0px 8px 8px' }}>是否展示数据</span>
+            <span className="demo-table-switch-desc">是否展示数据</span>
             <Switch checked={isColumnFixed} onChange={this.handleSwitchChange.bind(this, 'isColumnFixed')} />
-            <span style={{ margin: '0px 8px 8px' }}>是否存在固定列</span>
+            <span className="demo-table-switch-desc">是否存在固定列</span>
             <Switch checked={setOverflowX} onChange={this.handleSwitchChange.bind(this, 'setOverflowX')} />
-            <span style={{ margin: '0px 8px 8px' }}>设置dt-table-fixed-overflowx-auto</span>
+            <span className="demo-table-switch-desc">设置dt-table-fixed-overflowx-auto</span>
         </div>
         <Table
           columns={columns}
