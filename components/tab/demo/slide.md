@@ -40,8 +40,8 @@ class SlidingTabsDemo extends React.Component {
           <Radio.Button value="left">Vertical</Radio.Button>
         </Radio.Group>
         <Tabs defaultActiveKey="1" tabPosition={mode} style={{ height: 220 }}>
-          {[...Array.from({ length: 30 }, (v, i) => i)].map(i => (
-            <TabPane tab={`Tab-${i}`} key={i} disabled={i === 28}>
+          {[...Array(30).keys()].map(i => (
+            <TabPane tab={`Tab-${i}`} key={i}>
               Content of tab {i}
             </TabPane>
           ))}

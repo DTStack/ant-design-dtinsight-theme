@@ -87,7 +87,7 @@ class App extends React.Component {
       <div>
         <div style={{ marginBottom: 20 }}>
             <Switch checked={isShowPage} onChange={this.handleChangeShowPage} />
-            <span className="demo-table-switch-desc">是否展示分页</span>
+            <span className="demo-switch-desc">是否展示分页</span>
         </div>
         <Table
           columns={columns}
