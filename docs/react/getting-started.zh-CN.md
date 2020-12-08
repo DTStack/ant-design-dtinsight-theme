@@ -21,33 +21,53 @@ title: 开发前必读
 额外的，依赖的`dt-common`包也需改为升级了 antd 的版本。
 
 > 目前 `未升级dt-common` 、`升级后dt-common` 以及 `ant-design-dtinsight-theme` 版本对应如下：
->  - 3.10.3 (未升级 dt-common) -> 4.0.0-alpha.4 (升级后 dt-common) -> 1.0.9 (ant-design-dtinsight-theme) (当前最新版本)
->  - 3.10.2 (未升级 dt-common) -> 4.0.0-alpha.3 (升级后 dt-common) -> 1.0.7 (ant-design-dtinsight-theme)
->  - 3.10.2 (未升级 dt-common) -> 4.0.0-alpha.2 (升级后 dt-common) -> 1.0.6 (ant-design-dtinsight-theme)
->  - 3.10.2 (未升级 dt-common) -> 4.0.0-alpha.1 (升级后 dt-common) -> 1.0.5 (ant-design-dtinsight-theme)
+>  - 3.10.14 (未升级 dt-common) -> 1.0.9 (ant-design-dtinsight-theme) (当前最新版本)
+>  - 3.12.1-temp (未升级 dt-common) -> 1.0.9 (ant-design-dtinsight-theme)
+>  - 4.1.0 (升级后 dt-common) -> 1.0.9 (ant-design-dtinsight-theme)
+>  - 4.2.1-temp (升级后 dt-common) -> 1.0.9 (ant-design-dtinsight-theme)
 
 ##### 1、 package.json 中添加依赖
 
 ``` json
 {
     "dependencies": {
-        "ant-design-dtinsight-theme": "1.0.2"
+        "ant-design-dtinsight-theme": "1.0.9"
     }
 }
 ```
 
 ##### 2、 src/root.tsx 文件中导入 theme/dt-theme 中的 index.less 以及 reset.less
 
+- 其中基础版引入的方式有两种 
+
 ``` javascript
+
+// 第一种方式
 // reset.less中已经引入了antd.less，故在项目中无需再引入antd样式文件
 import 'ant-design-dtinsight-theme/theme/dt-theme/reset.less';
 import 'ant-design-dtinsight-theme/theme/dt-theme/index.less';
+
+// 第二种方式
+// index.less中已经引入了antd.less，故在项目中无需再引入antd样式文件
+import 'ant-design-dtinsight-theme/theme/dt-theme/default/index.less';
+
+```
+
+- 如需适配暗黑版样式则引入方式如下
+
+``` javascript
+
+// index.less中已经引入了antd.less，故在项目中无需再引入antd样式文件
+import 'ant-design-dtinsight-theme/theme/dt-theme/default/index.less';
+import 'ant-design-dtinsight-theme/theme/dt-theme/dark/index.less';
+
 ```
 
 **特别的** ：数栈子应用中需放弃之前那一套自定义 antd 主题的方式（否则主题样式会被 antd 原样式覆盖），需修改点如下：
 
 - 去掉 css-loader 中关于 antd theme 的相关配置
 - 去掉 babel.config 中 antd 样式的按需引入配置
+- 基础版本两种引入方式只能存在一种，其中暗黑版本还处于自测阶段，敬请期待
 
 ## 可用样式变量
 
