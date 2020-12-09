@@ -21,10 +21,8 @@ title: 开发前必读
 额外的，依赖的`dt-common`包也需改为升级了 antd 的版本。
 
 > 目前 `未升级dt-common` 、`升级后dt-common` 以及 `ant-design-dtinsight-theme` 版本对应如下：
->  - 3.10.14 (未升级 dt-common) -> 1.0.9 (ant-design-dtinsight-theme) (当前最新版本)
->  - 3.12.1-temp (未升级 dt-common) -> 1.0.9 (ant-design-dtinsight-theme)
->  - 4.1.0 (升级后 dt-common) -> 1.0.9 (ant-design-dtinsight-theme)
->  - 4.2.1-temp (升级后 dt-common) -> 1.0.9 (ant-design-dtinsight-theme)
+>  - 3.10.14 (未升级 dt-common) -> 4.1.0 (升级后 dt-common) -> 1.0.9 (ant-design-dtinsight-theme) (当前最新版本)
+>  - 3.12.1-temp (未升级 dt-common) -> 4.2.1-temp (升级后 dt-common) -> 1.0.9 (ant-design-dtinsight-theme)
 
 ##### 1、 package.json 中添加依赖
 
