@@ -16,7 +16,7 @@ title: 开发前必读
 
 本项目使用的是 antd 版本为 `3.26.13`，故在子项目使用前也需升级 antd 至相同版本。
 
-- 子应用升级指南： https://dtstack.yuque.com/clg3qc/egh9u1/vszq5d
+- 子应用升级指南： https://zhuanlan.zhihu.com/p/125652718
 
 额外的，依赖的`dt-common`包也需改为升级了 antd 的版本。
 
