@@ -9,6 +9,7 @@ import Demo from './Demo';
 import config from '../../../bisheng.config';
 
 import {ping} from '../utils';
+import utils from '../../utils';
 
 export default class ComponentDoc extends React.Component {
     static contextTypes = {
@@ -66,6 +67,7 @@ export default class ComponentDoc extends React.Component {
         } = this.context;
         const demos = Object.keys(props.demos).map(key => props.demos[key]);
         const {expandAll, showRiddleButton} = this.state;
+        const isDark = Boolean(utils.getCookie('theme') === 'dark')
 
         const isSingleCol = meta.cols === 1;
         const leftChildren = [];
@@ -101,7 +103,7 @@ export default class ComponentDoc extends React.Component {
             const localizeTitle = title[locale] || title;
             return (
                 <li key={demo.meta.id} title={localizeTitle}>
-                    <a href={`#${demo.meta.id}`}>{localizeTitle}</a>
+                    <a href={`#${demo.meta.id}`} style={isDark ? { color: '#BFBFBF' } : {}}>{localizeTitle}</a>
                 </li>
             );
         });
@@ -113,18 +115,18 @@ export default class ComponentDoc extends React.Component {
         return (
             <DocumentTitle title={`${subtitle || ''} ${title[locale] || title} - ` + config.baseConfig.projectName}>
                 <article className={articleClassName}>
-                    <Affix className="toc-affix" offsetTop={16}>
+                    <Affix className={isDark ? "dark toc-affix" : "toc-affix"} offsetTop={16}>
                         <ul id="demo-toc" className="toc">
                             {jumper}
                         </ul>
                     </Affix>
-                    <section className="markdown">
+                    <section className={isDark ? "markdown dark" : "markdown"}>
                         <h1>
                             {title[locale] || title}
                             {!subtitle ? null : <span className="subtitle">{subtitle}</span>}
                         </h1>
                         {props.utils.toReactComponent(
-                            ['section', {className: 'markdown'}].concat(getChildren(content)),
+                            ['section', {className: isDark ? 'markdown dark' : 'markdown'}].concat(getChildren(content)),
                         )}
                         <h2>
                             <FormattedMessage id="app.component.examples"/>
@@ -139,6 +141,7 @@ export default class ComponentDoc extends React.Component {
                                     type={`${expandAll ? 'appstore' : 'appstore-o'}`}
                                     className={expandTriggerClass}
                                     onClick={this.handleExpandToggle}
+                                    style={isDark ? { color: '#F2F2F2' } : {}}
                                 />
                             </Tooltip>
                         </h2>
@@ -160,7 +163,7 @@ export default class ComponentDoc extends React.Component {
                         [
                             'section',
                             {
-                                className: 'markdown api-container',
+                                className: isDark ? 'markdown dark api-container' : 'markdown api-container',
                             },
                         ].concat(getChildren(doc.api || ['placeholder'])),
                     )}

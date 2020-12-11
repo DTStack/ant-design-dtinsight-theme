@@ -23,7 +23,6 @@ module.exports = {
         javascriptEnabled: true,
     },
     baseConfig: {
-        // logo: 'https://coder.slowlog.cn/images/avatar.png?v=1566195794967',
         projectName: 'DTInsight-Theme',
         homeUrl: '/docs/react/getting-started-cn'
     },
@@ -35,6 +34,27 @@ module.exports = {
                 "url-loader?limit=100000"
             ]
         });
+        config.optimization = {
+            splitChunks: {
+                chunks: "all",
+                minSize: 30000,
+                minChunks: config.mode === 'production' ? 1 : 2,
+                maxAsyncRequests: 5,
+                maxInitialRequests: 8,
+                automaticNameDelimiter: "~",
+                name: true,
+                cacheGroups: {
+                    default: {
+                        test: /[\\/]dt-theme[\\/]default[\\/]index.less/,
+                        priority: 3
+                    },
+                    dark: {
+                        test: /[\\/]dt-theme[\\/]dark[\\/]index.less/,
+                        priority: 3
+                    }
+                }
+            }
+        };
         return config;
     }
 };

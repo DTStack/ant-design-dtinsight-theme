@@ -15,6 +15,21 @@
   border: 1px solid @site-border-color-split;
   border-radius: @border-radius-sm;
   transition: all 0.2s;
+  &.dark {
+    border-color: #2F334D;
+    .code-box-demo {
+      border-bottom-color: #2F334D;
+    }
+    .code-box-title {
+      background: rgb(14, 14, 23);
+      a, a:hover {
+        color: #BFBFBF;
+      }
+    }
+    .code-box-actions {
+      border-top-color: #2F334D;
+    }
+  }
 
   &:target {
     border: 1px solid @primary-color;
@@ -109,6 +124,8 @@
 
   .code-expand-icon {
     cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
   }
 
   .code-expand-icon-show,

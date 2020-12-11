@@ -143,6 +143,19 @@ a {
   }
 }
 
+.aside-container.dark {
+  &.ant-menu, .ant-menu {
+    background-color: rgb(14, 14, 23);
+  }
+  &.menu-site .ant-menu-item > a {
+    color: #bfbfbf;
+  }
+  &.menu-site .ant-menu-item.ant-menu-item-selected > a {
+    color: @primary-color;
+  }
+}
+
+// demo 样式
 .demo-input-shadow,
 .demo-select-shadow,
 .demo-datepicker-shadow,
@@ -157,7 +170,7 @@ a {
     margin-bottom: 20px;
   }
 }
-.demo-button-type, .demo-modal-box, .demo-notification-box {
+.demo-button-type, .demo-modal-box, .demo-notification-box, .demo-message-box {
   button {
     margin-right: 12px;
   }
@@ -165,6 +178,7 @@ a {
 .demo-select-size {
   .ant-select {
     margin-bottom: 20px;
+    margin-right: 20px;
     width: 200px;
   }
 }
@@ -183,4 +197,34 @@ a {
     margin-right: 12px;
     margin-bottom: 20px;
   }
+}
+.demo-switch-desc {
+  color: #333;
+  margin: 0px 8px 8px;
+}
+
+// 黑色主题下 demo 样式
+.dark {
+  .demo-input-shadow,
+  .demo-select-shadow,
+  .demo-datepicker-shadow,
+  .demo-timer-picker-shadow,
+  .demo-tree-select-shadow {
+    background-color: transparent;
+    padding: 0px;
+  }
+  .demo-input-light,
+  .demo-select-light,
+  .demo-datepicker-light,
+  .demo-timer-picker-light,
+  .demo-tree-select-light,
+  .demo-form-light {
+    width: 100%;
+    padding: 20px;
+    background: #1A1C29;
+  }
+  .demo-switch-desc {
+    color: #BFBFBF;
+  }
+
 }

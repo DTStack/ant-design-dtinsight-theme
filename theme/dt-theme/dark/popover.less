@@ -1,0 +1,35 @@
+@import '../const.less';
+
+.ant-popover {
+    .ant-popover-content {
+        border: 1px solid #282B40;
+        border-radius: 3px;
+        .ant-popover-inner-content {
+            padding: 16px;
+        }
+    }
+}
+
+.ant-popover-buttons {
+    text-align: left;
+    margin: 0;
+    button {
+        margin-right: 10px;
+        margin-left: 0;
+        &:last-child {
+            color: #fff;
+            border-color: @red_dark;
+            background-color: @red_dark;
+            &:hover, &:focus {
+                color: #fff;
+                background-color: #f08e89;
+                border-color: #f08e89;
+            }
+            &:active, &.active {
+                color: #fff;
+                border-color: @red_dark;
+                background-color: @red_dark;
+            }
+        }
+    }
+}

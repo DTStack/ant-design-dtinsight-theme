@@ -55,6 +55,25 @@ ul.toc > li {
     background: #fff;
   }
 }
+.toc-affix.dark {
+  .ant-affix {
+    background-color: rgb(14, 14, 23);
+  }
+  .toc {
+    border-left-color: #2F334D;
+  }
+  .toc a {
+    color: #bfbfbf;
+    border-left-color: #2F334D;
+  }
+  .toc a:hover {
+    color: @primary-color;
+  }
+  .toc a.current {
+    color: @primary-color;
+    border-color: @primary-color;
+  }
+}
 
 .toc-affix-bottom {
   position: absolute;

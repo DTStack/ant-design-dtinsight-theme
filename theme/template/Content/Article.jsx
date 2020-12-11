@@ -5,6 +5,7 @@ import DocumentTitle from 'react-document-title';
 import {getChildren} from 'jsonml.js/lib/utils';
 import {Timeline, Alert, Affix} from 'antd';
 import config from '../../../bisheng.config';
+import utils from '../../utils';
 
 export default class Article extends React.Component {
     static contextTypes = {
@@ -76,11 +77,12 @@ export default class Article extends React.Component {
         const {
             intl: {locale},
         } = this.context;
+        const isDark = Boolean(utils.getCookie('theme') === 'dark')
         const isNotTranslated = locale === 'en-US' && typeof title === 'object';
         return (
             <DocumentTitle title={`${title[locale] || title} - ` + config.baseConfig.projectName}>
                 {/* eslint-disable-next-line */}
-                <article className="markdown" onClick={this.onResourceClick}>
+                <article className={isDark ? "markdown dark" : "markdown"} onClick={this.onResourceClick}>
                     {isNotTranslated && (
                         <Alert
                             type="warning"
@@ -102,10 +104,10 @@ export default class Article extends React.Component {
                     {!description
                         ? null
                         : props.utils.toReactComponent(
-                            ['section', {className: 'markdown'}].concat(getChildren(description)),
+                            ['section', {className: isDark ? 'markdown dark' : 'markdown'}].concat(getChildren(description)),
                         )}
                     {!content.toc || content.toc.length <= 1 || meta.toc === false ? null : (
-                        <Affix className="toc-affix" offsetTop={16}>
+                        <Affix className={isDark ? "toc-affix dark" : "toc-affix"} offsetTop={16}>
                             {props.utils.toReactComponent(
                                 ['ul', {className: 'toc'}].concat(getChildren(content.toc)),
                             )}
@@ -113,14 +115,14 @@ export default class Article extends React.Component {
                     )}
                     {this.getArticle(
                         props.utils.toReactComponent(
-                            ['section', {className: 'markdown'}].concat(getChildren(content.content)),
+                            ['section', {className: isDark ? 'markdown dark' : 'markdown'}].concat(getChildren(content.content)),
                         ),
                     )}
                     {props.utils.toReactComponent(
                         [
                             'section',
                             {
-                                className: 'markdown api-container',
+                                className: isDark ? 'markdown dark api-container' : 'markdown api-container',
                             },
                         ].concat(getChildren(content.api || ['placeholder'])),
                     )}

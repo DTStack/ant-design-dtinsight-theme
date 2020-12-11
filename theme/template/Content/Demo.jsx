@@ -7,7 +7,7 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 import classNames from 'classnames';
 import LZString from 'lz-string';
 import { Icon, Tooltip } from 'antd';
-
+import utils from '../../utils';
 
 function compress(string) {
   return LZString.compressToBase64(string)
@@ -104,6 +104,7 @@ export default class Demo extends React.Component {
     const { props } = this;
     const { meta, src, content, preview, highlightedCode, style, highlightedStyle, expand } = props;
     const { copied } = state;
+    const isDark = Boolean(utils.getCookie('theme') === 'dark')
     if (!this.liveDemo) {
       this.liveDemo = meta.iframe ? (
         <BrowserFrame>
@@ -114,7 +115,7 @@ export default class Demo extends React.Component {
       );
     }
     const codeExpand = state.codeExpand || expand;
-    const codeBoxClass = classNames('code-box', {
+    const codeBoxClass = classNames(isDark ? 'code-box dark' : 'code-box', {
       expand: codeExpand,
       'code-box-debug': meta.debug,
     });
@@ -220,7 +221,7 @@ ${sourceCode.replace('mountNode', "document.getElementById('container')")}
               null
           }
         </section>
-        <section className="code-box-meta markdown">
+        <section className={isDark ? "code-box-meta markdown dark" : "code-box-meta markdown"}>
           <div className="code-box-title">
             <Tooltip title={meta.debug ? <FormattedMessage id="app.demo.debug" /> : ''}>
               <a href={`#${meta.id}`} ref={this.saveAnchor}>
@@ -257,6 +258,7 @@ ${sourceCode.replace('mountNode', "document.getElementById('container')")}
                   type="submit"
                   value="Create New Pen with Prefilled Data"
                   className="code-box-codepen"
+                  style={{ backgroundColor: '#fff', borderRadius: '50%' }}
                 />
               </Tooltip>
             </form>
@@ -276,6 +278,7 @@ ${sourceCode.replace('mountNode', "document.getElementById('container')")}
                   type="submit"
                   value="Create New Sandbox with Prefilled Data"
                   className="code-box-codesandbox"
+                  style={{ backgroundColor: '#fff', borderRadius: '50%' }}
                 />
               </Tooltip>
             </form>
@@ -288,6 +291,7 @@ ${sourceCode.replace('mountNode', "document.getElementById('container')")}
                 <Icon
                   type={state.copied && state.copyTooltipVisible ? 'check' : 'snippets'}
                   className="code-box-code-copy"
+                  style={{ backgroundColor: '#fff', borderRadius: '50%' }}
                 />
               </Tooltip>
             </CopyToClipboard>
