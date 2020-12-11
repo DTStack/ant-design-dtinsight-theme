@@ -62,7 +62,7 @@ import 'ant-design-dtinsight-theme/theme/dt-theme/dark/index.less';
 
 基础版本两种引入方式只能存在一种，其中暗黑版本还处于自测阶段，敬请期待。
 
-- 若想要实现动态切换默认和暗黑主题样式，则需要将默认主题样式和暗黑版样式都引入。具体切换主题实现请参考文档 [基于 ant-design 的网站主题切换功能的实现](https://github.com/Erindcl/theme-change-demo/blob/master/doc.md) 中的方案三。
+- 若想要实现动态切换默认和暗黑主题样式，则需要将默认主题样式和暗黑版样式都引入。具体切换主题实现请参考文档 [基于 ant-design 的网站主题切换功能的实现](https://github.com/Erindcl/antd-theme-switch-demo/blob/master/doc.md) 中的方案三。
 
 ``` javascript
 
