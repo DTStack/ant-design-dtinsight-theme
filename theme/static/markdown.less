@@ -3,6 +3,9 @@
   font-size: 14px;
   line-height: 2;
 }
+.markdown.dark {
+  color: #BFBFBF;
+}
 
 .highlight {
   line-height: 1.5;
@@ -31,6 +34,10 @@
   }
 }
 
+.markdown.dark h1 {
+  color: #F2F2F2;
+}
+
 .markdown h2 {
   font-size: 24px;
   line-height: 32px;
@@ -46,6 +53,14 @@
   color: @site-heading-color;
   font-weight: 500;
   font-family: Avenir, @font-family, sans-serif;
+}
+
+.markdown.dark h2,
+.markdown.dark h3,
+.markdown.dark h4,
+.markdown.dark h5,
+.markdown.dark h6 {
+  color: #F2F2F2;
 }
 
 .markdown h3 {
@@ -102,6 +117,11 @@
   border: 1px solid #eee;
   border-radius: 3px;
 }
+.markdown.dark code {
+  background: #222433;
+  border-color: #222433;
+  color: #ddd;
+}
 
 .markdown pre {
   font-family: 'Lucida Console', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -145,6 +165,15 @@
   padding: 16px 24px;
   text-align: left;
   border: 1px solid @site-border-color-split;
+}
+
+.markdown.dark {
+  & > table, & > table th, & > table td {
+    border-color: #2F334D;
+  }
+  blockquote {
+    border-left-color: #2F334D;
+  }
 }
 
 .markdown blockquote {
@@ -236,6 +265,13 @@
     td:nth-child(4) {
       width: 13%;
       font-size: @font-size-base - 1px;
+    }
+  }
+  &.dark {
+    table {
+      th, td {
+        border-color: #2F334D;
+      }
     }
   }
 }

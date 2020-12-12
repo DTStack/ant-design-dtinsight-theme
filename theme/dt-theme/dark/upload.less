@@ -1,0 +1,29 @@
+@import '../const.less';
+
+.ant-upload-drag {
+    background: #1D1F2E;
+    border: 1px solid #2C3047;
+    &:hover {
+        border-color: @primaryColor;
+    }
+}
+
+.ant-upload.ant-upload-select-picture-card {
+    background-color: transparent;
+    .ant-upload > .dt-upload-button {
+        font-size: 14px;
+        .anticon {
+            font-size: 20px;
+        }
+    }
+    &:hover {
+        border-color: @primaryColor;
+        .ant-upload > div {
+            color: @primaryColor;
+        }
+    }
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-error {
+    border-color: @red;
+}

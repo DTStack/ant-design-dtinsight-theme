@@ -23,7 +23,7 @@ class Footer extends React.Component {
                 <div className="bottom-bar">
                     <a target="_blank" rel="noopener noreferrer" href="http://www.beian.gov.cn">
                         {config.baseConfig.projectName}
-                    </a> © 2010 - {year}
+                    </a> © 2020 - {year}
                 </div>
             </footer>
         );

@@ -8,7 +8,9 @@ title: theme 项目开发指南
 项目目录介绍：
 
 ```bash
-├── bisheng.config.js // bisheng 文档工具基本配置
+
+ant-design-dtinsight-theme
+│
 ├── components    // Components 展示内容
 │   └── treeselect    // 单个组件 预览文件
 │       ├── demo    // 代码演示
@@ -16,32 +18,63 @@ title: theme 项目开发指南
 │       │   └── shadow.md
 │       └── index.zh-CN.md    // 组件说明文档
 ├── docs
-│   └── react    // 全局说明文档
+│   └── react   // 全局说明文档
 │       ├── change-log.zh-CN.md
 │       ├── color.zh-CN.md
+│       ├── develop.zh-CN.md
 │       ├── font.zh-CN.md
 │       └── getting-started.zh-CN.md
-└── theme    // 本站主题文档
-    └── dt-theme    // 数栈UI规范样式文件
-        ├── breadcrumb.less
-        ├── button.less
-        ├── card.less
-        ├── comm.less
-        ├── const.less
-        ├── const.scss
-        ├── form.less
-        ├── index.less
-        ├── layout.less
-        ├── modal.less
-        ├── notice.less
-        ├── reset.less
-        ├── tab.less
-        └── table.less
+├── theme   // 本站主题文档
+│   ├── dt-theme    // 数栈UI规范样式文件
+│   │   ├── dark    // 暗黑版规范样式文件
+│   │   │   ├── alert.less
+│   │   │   ├── button.less
+│   │   │   ├── card.less
+│   │   │   ├── collapse.less
+│   │   │   ├── comm.less
+│   │   │   ├── descriptions.less
+│   │   │   ├── drawer.less
+│   │   │   ├── form.less
+│   │   │   ├── index.less
+│   │   │   ├── layout.less
+│   │   │   ├── list.less
+│   │   │   ├── message.less
+│   │   │   ├── modal.less
+│   │   │   ├── notification.less
+│   │   │   ├── popover.less
+│   │   │   ├── resetDark.less
+│   │   │   ├── steps.less
+│   │   │   ├── tab.less
+│   │   │   ├── table.less
+│   │   │   ├── tree.less
+│   │   │   └── upload.less
+│   │   ├── default    // 基础版规范样式文件
+│   │   │   ├── breadcrumb.less
+│   │   │   ├── button.less
+│   │   │   ├── card.less
+│   │   │   ├── comm.less
+│   │   │   ├── form.less
+│   │   │   ├── index.less
+│   │   │   ├── layout.less
+│   │   │   ├── modal.less
+│   │   │   ├── notice.less
+│   │   │   ├── reset.less
+│   │   │   ├── tab.less
+│   │   │   └── table.less
+│   │   ├── const.less    // 全局变量文件
+│   │   ├── index.less
+│   │   └── reset.less    // 覆盖antd变量文件
+│   ├── static    //说明文档样式
+│   └── utils
+└── bisheng.config.js // bisheng 文档工具基本配置
+
 ```
+
+- 以基础版为例
 
 1、 添加样式
 
-规范样式都是放在`/theme/dt-theme`目录下的，可在对应的组件文件或添加新的文件进行样式的添加，特别的新添加的样式文件需要在`/theme/dt-theme/index.less`中导入。（自定义样式名规范见文章末尾）
+规范样式都是放在`/theme/dt-theme/default`目录下的，可在对应的组件文件或添加新的文件进行样式的添加，特别的新添加的样式文件需要在`/theme/dt-theme/default/index.less`中导入。（自定义样式名规范见文章末尾）
 
 
 2、 组件说明文档开发

@@ -2,6 +2,50 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.0.9...v1.1.0) (2020-12-12)
+
+
+### Features
+
+* add danger disabled btn style ([8a958fa](https://github.com/DTStack/ant-design-dtinsight-theme/commit/8a958fa9132daa90b8edd6e18c91c2883fdc714e))
+* add dark color specification ([66b3f5b](https://github.com/DTStack/ant-design-dtinsight-theme/commit/66b3f5b828856583dffeb1ccd286594826a10f2a))
+* add english readme ([92b4d0a](https://github.com/DTStack/ant-design-dtinsight-theme/commit/92b4d0a50829287134ff2d72fad2ac3aa62005d7))
+* add repository ([012d4ef](https://github.com/DTStack/ant-design-dtinsight-theme/commit/012d4eff114b9c3b951400e5f617a9fe1a2a8d7f))
+* alert ([445a70d](https://github.com/DTStack/ant-design-dtinsight-theme/commit/445a70d1e5b5378542733ab3c03089b9537f976a))
+* cascader and datePicker ([acd2899](https://github.com/DTStack/ant-design-dtinsight-theme/commit/acd2899827810307d773761696b5e2812352a1b8))
+* config dark theme ([6ba3537](https://github.com/DTStack/ant-design-dtinsight-theme/commit/6ba35377b6361512531bb49f39a824e972796fd3))
+* deal packages ([3acbab8](https://github.com/DTStack/ant-design-dtinsight-theme/commit/3acbab83cd055059f41f4bc19074f6fa46e3f8b8))
+* form light theme ([c6dca8c](https://github.com/DTStack/ant-design-dtinsight-theme/commit/c6dca8cb69638a8292c065eea2d539bfc50ef611))
+* import default ([08680c9](https://github.com/DTStack/ant-design-dtinsight-theme/commit/08680c930158b57218909d3136b645d780f8fa98))
+* input ([a885312](https://github.com/DTStack/ant-design-dtinsight-theme/commit/a885312b01b49219f78a1ff43e8eb5ce51e5b5fe))
+* input and select ([9d41f85](https://github.com/DTStack/ant-design-dtinsight-theme/commit/9d41f85c41bbd3a50456e9e36dc0467df3dd58c3))
+* message ([1a8e403](https://github.com/DTStack/ant-design-dtinsight-theme/commit/1a8e403591fdb3c2a166caf6b06b71981d6762ad))
+* modal style ([9ce199c](https://github.com/DTStack/ant-design-dtinsight-theme/commit/9ce199c4ac76be4304b1a17afe31b3fbc81e2477))
+* modify chinese readme ([0932559](https://github.com/DTStack/ant-design-dtinsight-theme/commit/0932559dd24c0723608fd7ed9ff3e424f0b6a996))
+* modify CONTRIBUTING ([426bdd2](https://github.com/DTStack/ant-design-dtinsight-theme/commit/426bdd2044ea3562ad089e94da8673b9eb5a7c7b))
+* modify doc and jekinsConfig ([16d3315](https://github.com/DTStack/ant-design-dtinsight-theme/commit/16d3315ade23655bf0bde9c475b38c1ca3ef21a2))
+* modify gitignore ([84a95d4](https://github.com/DTStack/ant-design-dtinsight-theme/commit/84a95d430e493896b4ac1fcd62c4089880a9d265))
+* modify README and add CONTRIBUTING ([bac913e](https://github.com/DTStack/ant-design-dtinsight-theme/commit/bac913ef205e88b4783b89f59811dae23c9699c3))
+* modify README and changeLog ([21f2db0](https://github.com/DTStack/ant-design-dtinsight-theme/commit/21f2db081ebfd132c47d81948ccf8262fc638ac4))
+* modify the doc ([9d20330](https://github.com/DTStack/ant-design-dtinsight-theme/commit/9d20330912d332738f7de462feba3c4648af04b6))
+* notification ([36ab20f](https://github.com/DTStack/ant-design-dtinsight-theme/commit/36ab20f8017ab566062344682404206f13ab4511))
+* treeSelect 、timePicker and datePicker ([d6927ea](https://github.com/DTStack/ant-design-dtinsight-theme/commit/d6927ea68887bbdf7f1430a899c450983f7de0c8))
+* update changeLog ([ab45253](https://github.com/DTStack/ant-design-dtinsight-theme/commit/ab45253847fecf0fd7fee7174ae27a83722d6c47))
+* update doc path ([ac9b8a6](https://github.com/DTStack/ant-design-dtinsight-theme/commit/ac9b8a63b6bae05eb64876250c5d132c638ad53b))
+* update getting-started.md ([bc82d9d](https://github.com/DTStack/ant-design-dtinsight-theme/commit/bc82d9dcc16efa4a48b43a4f139a23c139d6ad29))
+* **dark:** add button and modal style ([38095dd](https://github.com/DTStack/ant-design-dtinsight-theme/commit/38095dd15a7c52125f0b9614974899e705109f13))
+* **dark:** form basic ([60f54bf](https://github.com/DTStack/ant-design-dtinsight-theme/commit/60f54bfc3c4c1ff1c31d6ae73703c1209d58e3a1))
+* **dark:** switch ([09370ad](https://github.com/DTStack/ant-design-dtinsight-theme/commit/09370adb570baeafe0d414187f980bb6f6ccd772))
+* **default:** layout sider icon height ([b503266](https://github.com/DTStack/ant-design-dtinsight-theme/commit/b503266430d5ed7b962769e9bdeb733800a95bfc))
+* update readme ([f6e8ecf](https://github.com/DTStack/ant-design-dtinsight-theme/commit/f6e8ecf2d1f4a9b5d5566e129387a73e4ff7a8d7))
+* update README ([5647cd8](https://github.com/DTStack/ant-design-dtinsight-theme/commit/5647cd8ebf032bd9cd0944eba3ee3ccd0d352847))
+* update readme and nginx config ([8361440](https://github.com/DTStack/ant-design-dtinsight-theme/commit/83614404f327b7c0befe75ea3ed703175e8650c2))
+
+
+### Bug Fixes
+
+* cahnglog ([0f823bc](https://github.com/DTStack/ant-design-dtinsight-theme/commit/0f823bc821aa5541889e3eba86598a0861281c76))
+
 ### [1.0.9](http://gitlab.prod.dtstack.cn:10022/dt-insight-front/infrastructure/ant-design-dtinsight-theme/compare/v1.0.7...v1.0.9) (2020-07-31)
 
 
