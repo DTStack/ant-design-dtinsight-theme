@@ -69,7 +69,7 @@ title: 颜色规范
 | <input style="background: #FF5F5C;width: 80px; height: 26px;border: 1px solid #fff;" /> |   red      |  #FF5F5C       |  用于错误提示文字、按钮色，运行失败等指示色，必填项*颜色。
    |
 |     <input style="background: #FFB310;width: 80px; height: 26px;border: 1px solid #fff;" />  |  yellow     |   #FFB310      |  用于警示提示 icon、待运行等状态颜色      |
-|     <input style="background: #16DE9A;width: 80px; height: 26px;border: 1px solid #fff;" />    |   green      |   #16DE9A      | 用于成功 icon，运行/发布成功状态颜色 |
+|     <input style="background: #12BC6A;width: 80px; height: 26px;border: 1px solid #fff;" />    |   green      |   #12BC6A     | 用于成功 icon，运行/发布成功状态颜色 |
 
 **暗黑主题特有:**
 
