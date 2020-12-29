@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.0...v1.1.1) (2020-12-29)
+
+
+### Features
+
+* update change-log ([5706aec](https://github.com/DTStack/ant-design-dtinsight-theme/commit/5706aecb264245125a80cc2dd20693d11b56ff4d))
+
+
+### Bug Fixes
+
+* fix tab page show ([75f4028](https://github.com/DTStack/ant-design-dtinsight-theme/commit/75f4028874e38e7dd957c98f01de46ef4bf00410))
+
 ## [1.1.0](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.0.9...v1.1.0) (2020-12-12)
 
 
