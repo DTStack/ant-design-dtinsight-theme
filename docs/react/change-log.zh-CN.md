@@ -5,6 +5,12 @@ toc: false
 timeline: true
 ---
 
+## [1.1.2](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.1.2) (2020-12-29)
+
+### Features
+
+* 添加默认主题 button 组件新规范样式(图标按钮)
+
 ## [1.1.1](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.1.1) (2020-12-29)
 
 ### Fix

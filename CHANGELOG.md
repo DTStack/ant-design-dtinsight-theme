@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.1...v1.1.2) (2020-12-29)
+
+
+### Features
+
+* add btn styles ([8f56ebf](https://github.com/DTStack/ant-design-dtinsight-theme/commit/8f56ebf6582c87e639583e528fa6856f484d4b85))
+* update change-log ([fd18c91](https://github.com/DTStack/ant-design-dtinsight-theme/commit/fd18c918802c495dcc9987a2f7e516be28a5b0c3))
+* update change-log ([b15f779](https://github.com/DTStack/ant-design-dtinsight-theme/commit/b15f77991e0942c7c943cb43fcd9fe0acfa17b74))
+
 ### [1.1.1](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.0...v1.1.1) (2020-12-29)
 
 
