@@ -162,3 +162,33 @@
     border-color: @blackE8;
     color: @blackBF;
 }
+
+.dt-btn-highlight {
+    &.ant-btn:hover, &.ant-btn:focus {
+        color: @primaryColor;
+        border-color: @primaryColor;
+    }
+    &.ant-btn:active, &.ant-btn.active {
+        color: @clickColor;
+        border-color: @clickColor;
+    }
+    &.ant-btn-disabled,
+    &.ant-btn.disabled,
+    &.ant-btn[disabled],
+    &.ant-btn-disabled:hover,
+    &.ant-btn.disabled:hover,
+    &.ant-btn[disabled]:hover,
+    &.ant-btn-disabled:focus,
+    &.ant-btn.disabled:focus,
+    &.ant-btn[disabled]:focus,
+    &.ant-btn-disabled:active,
+    &.ant-btn.disabled:active,
+    &.ant-btn[disabled]:active,
+    &.ant-btn-disabled.active,
+    &.ant-btn.disabled.active,
+    &.ant-btn[disabled].active {
+        color: @blackBF;
+        background-color: @blackE8 !important;
+        border-color: @blackE8;
+    }
+}

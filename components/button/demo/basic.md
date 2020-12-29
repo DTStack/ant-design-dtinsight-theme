@@ -18,6 +18,7 @@ ReactDOM.render(
     <Button>二级按钮</Button>
     <Button ghost>幽灵按钮</Button>
     <Button type="link">文字按钮</Button>
+    <Button icon="search" className="dt-btn-highlight">图标按钮</Button>
   </div>,
   mountNode,
 );
