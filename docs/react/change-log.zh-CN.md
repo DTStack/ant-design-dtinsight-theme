@@ -5,6 +5,12 @@ toc: false
 timeline: true
 ---
 
+## [1.1.0](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.1.1) (2020-12-29)
+
+### Fix
+
+* 修复默认主题通用绿色色值
+
 ## [1.1.0](http://gitlab.prod.dtstack.cn/dt-insight-front/infrastructure/ant-design-dtinsight-theme/tree/v1.1.0) (2020-12-12)
 
 ### Features
