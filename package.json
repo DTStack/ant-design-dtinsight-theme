@@ -1,6 +1,6 @@
 {
   "name": "ant-design-dtinsight-theme",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This is a document of dtinsight-theme based on Ant Design.",
   "repository": "https://github.com/DTStack/ant-design-dtinsight-theme",
   "main": "index.js",
