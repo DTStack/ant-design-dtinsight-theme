@@ -1851,11 +1851,11 @@ html {
   line-height: 22px;
 }
 .ant-alert-success {
-  background-color: #e6fff2;
-  border: 1px solid #94ffd1;
+  background-color: #e3fcec;
+  border: 1px solid #84e3ab;
 }
 .ant-alert-success .ant-alert-icon {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 .ant-alert-info {
   background-color: #e6f7ff;
@@ -2348,7 +2348,7 @@ html {
   border-radius: 50%;
 }
 .ant-badge-status-success {
-  background-color: #16DE9A;
+  background-color: #12BC6A;
 }
 .ant-badge-status-processing {
   position: relative;
@@ -8621,7 +8621,7 @@ form:not(.ant-form-vertical) .ant-input-group-wrapper {
   margin: auto;
 }
 .has-success.has-feedback .ant-form-item-children-icon {
-  color: #16DE9A;
+  color: #12BC6A;
   -webkit-animation-name: diffZoomIn1 !important;
           animation-name: diffZoomIn1 !important;
 }
@@ -14637,7 +14637,7 @@ textarea.ant-mentions {
   pointer-events: all;
 }
 .ant-message-success .anticon {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 .ant-message-error .anticon {
   color: #FF5F5C;
@@ -14908,7 +14908,7 @@ textarea.ant-mentions {
   color: #1890ff;
 }
 .ant-modal-confirm-success .ant-modal-confirm-body > .anticon {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 .ant-notification {
   box-sizing: border-box;
@@ -14992,7 +14992,7 @@ textarea.ant-mentions {
   line-height: 24px;
 }
 .anticon.ant-notification-notice-icon-success {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 .anticon.ant-notification-notice-icon-info {
   color: #1890ff;
@@ -15953,7 +15953,7 @@ textarea.ant-pagination-options-quick-jumper input {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #16DE9A;
+  background-color: #12BC6A;
 }
 .ant-progress-text {
   display: inline-block;
@@ -15993,13 +15993,13 @@ textarea.ant-pagination-options-quick-jumper input {
   stroke: #FF5F5C;
 }
 .ant-progress-status-success .ant-progress-bg {
-  background-color: #16DE9A;
+  background-color: #12BC6A;
 }
 .ant-progress-status-success .ant-progress-text {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 .ant-progress-status-success .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
-  stroke: #16DE9A;
+  stroke: #12BC6A;
 }
 .ant-progress-circle .ant-progress-inner {
   position: relative;
@@ -16026,7 +16026,7 @@ textarea.ant-pagination-options-quick-jumper input {
   color: #FF5F5C;
 }
 .ant-progress-circle.ant-progress-status-success .ant-progress-text {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 @-webkit-keyframes ant-progress-active {
   0% {
@@ -16437,7 +16437,7 @@ span.ant-radio + * {
   padding: 48px 32px;
 }
 .ant-result-success .ant-result-icon > .anticon {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 .ant-result-error .ant-result-icon > .anticon {
   color: #FF5F5C;
@@ -20393,8 +20393,8 @@ textarea.ant-time-picker-input {
   border-color: #FF5F5C;
 }
 .ant-timeline-item-head-green {
-  color: #16DE9A;
-  border-color: #16DE9A;
+  color: #12BC6A;
+  border-color: #12BC6A;
 }
 .ant-timeline-item-head-gray {
   color: #BFBFBF;
@@ -21943,7 +21943,7 @@ span.ant-typography-ellipsis {
 .ant-typography-copy-success,
 .ant-typography-copy-success:hover,
 .ant-typography-copy-success:focus {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 .ant-typography-edit-content {
   position: relative;
@@ -22462,7 +22462,7 @@ div.ant-typography-edit-content {
   padding-left: 0;
 }
 .ant-upload-list .ant-upload-success-icon {
-  color: #16DE9A;
+  color: #12BC6A;
   font-weight: bold;
 }
 .ant-upload-list .ant-upload-animate-enter,
@@ -23493,6 +23493,35 @@ div.ant-typography-edit-content {
   border-color: #E8E8E8;
   color: #BFBFBF;
 }
+.dt-btn-highlight.ant-btn:hover,
+.dt-btn-highlight.ant-btn:focus {
+  color: #3F87FF;
+  border-color: #3F87FF;
+}
+.dt-btn-highlight.ant-btn:active,
+.dt-btn-highlight.ant-btn.active {
+  color: #2672F0;
+  border-color: #2672F0;
+}
+.dt-btn-highlight.ant-btn-disabled,
+.dt-btn-highlight.ant-btn.disabled,
+.dt-btn-highlight.ant-btn[disabled],
+.dt-btn-highlight.ant-btn-disabled:hover,
+.dt-btn-highlight.ant-btn.disabled:hover,
+.dt-btn-highlight.ant-btn[disabled]:hover,
+.dt-btn-highlight.ant-btn-disabled:focus,
+.dt-btn-highlight.ant-btn.disabled:focus,
+.dt-btn-highlight.ant-btn[disabled]:focus,
+.dt-btn-highlight.ant-btn-disabled:active,
+.dt-btn-highlight.ant-btn.disabled:active,
+.dt-btn-highlight.ant-btn[disabled]:active,
+.dt-btn-highlight.ant-btn-disabled.active,
+.dt-btn-highlight.ant-btn.disabled.active,
+.dt-btn-highlight.ant-btn[disabled].active {
+  color: #BFBFBF;
+  background-color: #E8E8E8 !important;
+  border-color: #E8E8E8;
+}
 .ant-modal-title {
   font-weight: 600;
 }
@@ -23545,10 +23574,10 @@ div.ant-typography-edit-content {
 }
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon {
-  color: #16DE9A;
+  color: #12BC6A;
 }
 .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
   background: #F2F9FF;

@@ -255,6 +255,7 @@ a {
 .demo-notification-box button,
 .demo-message-box button {
   margin-right: 12px;
+  margin-bottom: 20px;
 }
 .demo-select-size .ant-select {
   margin-bottom: 20px;
