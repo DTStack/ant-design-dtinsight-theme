@@ -254,6 +254,13 @@
                             .ant-table-body {
                                 flex:1;
                                 background-color: @blue2;
+                                /** 内部嵌套表格，数据为空的情况 */
+                                .ant-table-expanded-row .ant-table-empty {
+                                    .ant-table-placeholder {
+                                        position: relative;
+                                        top: unset
+                                    }
+                                }
                             }
                         }
                         .ant-table-fixed-left, .ant-table-fixed-right {
@@ -326,6 +333,13 @@
                             .ant-table-body {
                                 height: calc(100% - 44px); // 表格 header 高度为 44px
                                 background-color: @blue2;
+                                /** 内部嵌套表格，数据为空的情况 */
+                                .ant-table-expanded-row .ant-table-empty {
+                                    .ant-table-placeholder {
+                                        position: relative;
+                                        top: unset
+                                    }
+                                }
                             }
                         }
                         .ant-table-fixed-right, .ant-table-fixed-left {

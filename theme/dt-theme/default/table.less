@@ -232,6 +232,13 @@
                             flex-direction: column;
                             .ant-table-body {
                                 flex:1;
+                                /** 内部嵌套表格，数据为空的情况 */
+                                .ant-table-expanded-row .ant-table-empty {
+                                    .ant-table-placeholder {
+                                        position: relative;
+                                        top: unset
+                                    }
+                                }
                             }
                         }
                         .ant-table-fixed-left, .ant-table-fixed-right {
@@ -301,6 +308,13 @@
                             height: 100%;
                             .ant-table-body {
                                 height: calc(100% - 44px); // 表格 header 高度为 44px
+                                /** 内部嵌套表格，数据为空的情况 */
+                                .ant-table-expanded-row .ant-table-empty {
+                                    .ant-table-placeholder {
+                                        position: relative;
+                                        top: unset
+                                    }
+                                }
                             }
                         }
                         .ant-table-fixed-right, .ant-table-fixed-left {
