@@ -24,7 +24,7 @@ title: 颜色规范
 |---------|---------|---------|---------|
 |  <input style="background: #292D42;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $deriveColor_dark     |     #292D42    | 衍生色，列表选中底色，部分 tab 选中底色，disable 按钮底色 |
 
-## 无相色
+## 无色相
 
 **默认主题特有:**
 

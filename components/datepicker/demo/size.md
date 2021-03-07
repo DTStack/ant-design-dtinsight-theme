@@ -1,12 +1,12 @@
 ---
 order: 1
 title:
-  zh-CN: 三种大小
+  zh-CN: 两种大小
 ---
 
 ## zh-CN
 
-定义了三种尺寸（大、默认、小），高度分别为 36px、32px 和 28px。
+定义了两种尺寸（默认、小），高度分别为 32px 和 28px。
 
 ```jsx
 import { DatePicker, Radio } from 'antd';
@@ -27,7 +27,6 @@ class PickerSizesDemo extends React.Component {
     return (
       <div className="demo-datepicker-box">
         <Radio.Group value={size} onChange={this.handleSizeChange}>
-          <Radio.Button value="large">Large</Radio.Button>
           <Radio.Button value="default">Default</Radio.Button>
           <Radio.Button value="small">Small</Radio.Button>
         </Radio.Group>

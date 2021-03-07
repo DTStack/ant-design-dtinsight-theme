@@ -93,3 +93,39 @@ li.ant-time-picker-panel-select-option-selected:hover {
         }
     }
 }
+
+.dt-radio-group {
+    box-shadow: 0px 2px 8px 0px rgba(6, 14, 26, 0.08);
+    .ant-radio-button-wrapper {
+        border: 0;
+    }
+    &.ant-radio-group-solid{
+        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+            outline: unset;
+        }
+    }
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+        box-shadow: unset;
+    }
+    .ant-radio-button-wrapper:focus-within {
+        outline: unset;
+    }
+}
+
+// form 图标颜色
+.ant-select-arrow,
+.ant-calendar-picker-icon,
+.ant-time-picker-icon .ant-time-picker-clock-icon,
+.ant-time-picker-clear .ant-time-picker-clock-icon,
+.ant-time-picker-icon,
+.ant-time-picker-clear {
+    color: #999999;
+}
+
+// form 下拉 投影
+.ant-cascader-menus,
+.ant-calendar,
+.ant-select-dropdown,
+.ant-time-picker-panel-inner {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
