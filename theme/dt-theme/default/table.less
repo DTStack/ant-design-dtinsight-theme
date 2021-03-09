@@ -114,7 +114,7 @@
  }
 .ant-table-footer {
     padding: 10px 20px;
-    height: 67px;
+    height: 56px;
     display: flex;
     margin-top: -1px;
     background: #fff;
@@ -201,8 +201,8 @@
             margin: -1px 0px 0px;
             padding: 0px 20px;
             border-top: 1px solid #e8e8e8;
-            height: 67px;
-            line-height: 67px;
+            height: 56px;
+            line-height: 56px;
             text-align: right;
             position: relative;
             z-index: 10;
@@ -232,13 +232,20 @@
                             flex-direction: column;
                             .ant-table-body {
                                 flex:1;
+                                /** 内部嵌套表格，数据为空的情况 */
+                                .ant-table-expanded-row .ant-table-empty {
+                                    .ant-table-placeholder {
+                                        position: relative;
+                                        top: unset
+                                    }
+                                }
                             }
                         }
                         .ant-table-fixed-left, .ant-table-fixed-right {
                             z-index: 10;
                             height: 100%;
                             .ant-table-body-outer {
-                                height: calc(100% - 44px - 67px + 1px);
+                                height: calc(100% - 44px - 56px + 1px);
                             }
                         }
                         .ant-table-placeholder {
@@ -292,7 +299,7 @@
                 .ant-table-fixed-header {
                     // 存在数据的时候 有分页组件存在 高度需要减去分页的高度
                     &:not(:last-child) {
-                        height: calc(100% - 67px) !important;
+                        height: calc(100% - 56px) !important;
                     }
                     height: 100%; // 分页高度为 67px
                     .ant-table-content {
@@ -301,6 +308,13 @@
                             height: 100%;
                             .ant-table-body {
                                 height: calc(100% - 44px); // 表格 header 高度为 44px
+                                /** 内部嵌套表格，数据为空的情况 */
+                                .ant-table-expanded-row .ant-table-empty {
+                                    .ant-table-placeholder {
+                                        position: relative;
+                                        top: unset
+                                    }
+                                }
                             }
                         }
                         .ant-table-fixed-right, .ant-table-fixed-left {
