@@ -23100,7 +23100,7 @@ div.ant-typography-edit-content {
 }
 .ant-table-footer {
   padding: 10px 20px;
-  height: 67px;
+  height: 56px;
   display: flex;
   margin-top: -1px;
   background: #fff;
@@ -23164,8 +23164,8 @@ div.ant-typography-edit-content {
   margin: -1px 0px 0px;
   padding: 0px 20px;
   border-top: 1px solid #e8e8e8;
-  height: 67px;
-  line-height: 67px;
+  height: 56px;
+  line-height: 56px;
   text-align: right;
   position: relative;
   z-index: 10;
@@ -23202,6 +23202,12 @@ div.ant-typography-edit-content {
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body {
   flex: 1;
+  /** 内部嵌套表格，数据为空的情况 */
+}
+.dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
+.dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder {
+  position: relative;
+  top: unset;
 }
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
@@ -23214,7 +23220,7 @@ div.ant-typography-edit-content {
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer,
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer {
-  height: calc(100% - 44px - 67px + 1px);
+  height: calc(100% - 44px - 56px + 1px);
 }
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder {
@@ -23272,7 +23278,7 @@ div.ant-typography-edit-content {
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child),
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child) {
-  height: calc(100% - 67px) !important;
+  height: calc(100% - 56px) !important;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content {
@@ -23285,6 +23291,12 @@ div.ant-typography-edit-content {
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body {
   height: calc(100% - 44px);
+  /** 内部嵌套表格，数据为空的情况 */
+}
+.dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder {
+  position: relative;
+  top: unset;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
@@ -23329,6 +23341,10 @@ div.ant-typography-edit-content {
 }
 .ant-btn {
   padding: 0px 16px;
+  box-shadow: unset;
+}
+.ant-btn.ant-btn-primary {
+  text-shadow: unset;
 }
 .ant-btn.ant-btn-primary:hover,
 .ant-btn.ant-btn-primary:focus {
@@ -23525,6 +23541,9 @@ div.ant-typography-edit-content {
 .ant-modal-title {
   font-weight: 600;
 }
+.ant-modal-content {
+  box-shadow: 0px 2px 8px 0px rgba(6, 14, 26, 0.08);
+}
 .ant-modal-header {
   padding: 15px 20px;
   border-bottom: 1px solid #DDDDDD;
@@ -23677,6 +23696,35 @@ li.ant-time-picker-panel-select-option-selected:hover {
 .has-error .dt-form-shadow-bg.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
   border-color: #FF5F5C;
 }
+.dt-radio-group {
+  box-shadow: 0px 2px 8px 0px rgba(6, 14, 26, 0.08);
+}
+.dt-radio-group .ant-radio-button-wrapper {
+  border: 0;
+}
+.dt-radio-group.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+  outline: unset;
+}
+.dt-radio-group .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  box-shadow: unset;
+}
+.dt-radio-group .ant-radio-button-wrapper:focus-within {
+  outline: unset;
+}
+.ant-select-arrow,
+.ant-calendar-picker-icon,
+.ant-time-picker-icon .ant-time-picker-clock-icon,
+.ant-time-picker-clear .ant-time-picker-clock-icon,
+.ant-time-picker-icon,
+.ant-time-picker-clear {
+  color: #999999;
+}
+.ant-cascader-menus,
+.ant-calendar,
+.ant-select-dropdown,
+.ant-time-picker-panel-inner {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
 .ant-alert {
   padding: 12px 16px 12px 40px;
 }
@@ -23822,6 +23870,22 @@ li.ant-time-picker-panel-select-option-selected:hover {
 }
 .ant-card-body {
   padding: 20px;
+}
+.ant-descriptions-bordered .ant-descriptions-view {
+  border: 1px solid #DDDDDD;
+  border-bottom: unset;
+}
+.ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-row {
+  border-bottom: 1px solid #DDDDDD;
+}
+.ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-content {
+  border-right: 1px solid #DDDDDD;
+}
+.ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-label {
+  border-right: 1px solid #DDDDDD;
+}
+.ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-content:last-child {
+  border-right: none;
 }
 * {
   margin: 0;

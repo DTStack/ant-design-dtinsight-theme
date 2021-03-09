@@ -22563,6 +22563,7 @@ div.ant-typography-edit-content {
   padding: 0px 16px;
   border-color: #3F87FF;
   color: #3F87FF;
+  box-shadow: unset;
 }
 .ant-btn:hover,
 .ant-btn:focus {
@@ -22575,6 +22576,7 @@ div.ant-typography-edit-content {
   border-color: #2672F0;
 }
 .ant-btn-primary {
+  text-shadow: unset;
   color: #fff;
 }
 .ant-btn-primary:hover,
@@ -22643,6 +22645,7 @@ div.ant-typography-edit-content {
 .ant-modal-content {
   background-color: #1A1C29;
   border: 1px solid #272A40;
+  box-shadow: 0px 2px 8px 0px rgba(6, 14, 26, 0.08);
 }
 .ant-modal-header {
   padding: 15px 20px;
@@ -23102,7 +23105,7 @@ div.ant-typography-edit-content {
 }
 .ant-table-footer {
   padding: 10px 20px;
-  height: 67px;
+  height: 56px;
   display: flex;
   margin-top: -1px;
   background-color: #1D1F2E;
@@ -23178,8 +23181,8 @@ div.ant-typography-edit-content {
   width: 100%;
   margin: -1px 0px 0px;
   padding: 0px 20px;
-  height: 67px;
-  line-height: 67px;
+  height: 56px;
+  line-height: 56px;
   text-align: right;
   position: relative;
   z-index: 10;
@@ -23218,6 +23221,12 @@ div.ant-typography-edit-content {
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body {
   flex: 1;
   background-color: #1A1C29;
+  /** 内部嵌套表格，数据为空的情况 */
+}
+.dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
+.dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder {
+  position: relative;
+  top: unset;
 }
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
@@ -23230,7 +23239,7 @@ div.ant-typography-edit-content {
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer,
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer {
-  height: calc(100% - 44px - 67px + 1px);
+  height: calc(100% - 44px - 56px + 1px);
 }
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder {
@@ -23290,7 +23299,7 @@ div.ant-typography-edit-content {
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child),
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child) {
-  height: calc(100% - 67px) !important;
+  height: calc(100% - 56px) !important;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content {
@@ -23304,6 +23313,12 @@ div.ant-typography-edit-content {
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body {
   height: calc(100% - 44px);
   background-color: #1A1C29;
+  /** 内部嵌套表格，数据为空的情况 */
+}
+.dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder {
+  position: relative;
+  top: unset;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
