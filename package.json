@@ -9,7 +9,8 @@
     "build": "bisheng build",
     "clean": "rimraf dist/*",
     "changelog": "./scripts/changelog.sh",
-    "release": "./scripts/release.sh"
+    "release": "./scripts/release.sh",
+    "publish-test": "./scripts/publish.sh"
   },
   "keywords": [
     "antd-theme",
