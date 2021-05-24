@@ -16,6 +16,7 @@ import '../../static/iconfont/iconfont.css';
 
 import '../../dt-theme/default/index.less';
 import '../../dt-theme/dark/index.less';
+import '../../dt-theme/common/index.less';
 
 if (typeof window !== 'undefined' && navigator.serviceWorker) {
     navigator.serviceWorker.getRegistrations().then(registrations => {
@@ -121,6 +122,7 @@ export default class Layout extends React.Component {
         const arr = document.getElementsByTagName('link');
         for (let i = 0, len = arr.length; i < len; i++) {
             let href = arr[i].getAttribute('href');
+            if (!href.includes('common')) continue;
             if (href && href.includes(disableTheme)) {
                 arr[i].disabled = true;
             }

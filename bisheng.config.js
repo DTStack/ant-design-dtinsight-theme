@@ -37,7 +37,7 @@ module.exports = {
         config.optimization = {
             splitChunks: {
                 chunks: "all",
-                minSize: 30000,
+                minSize: 0,
                 minChunks: config.mode === 'production' ? 1 : 2,
                 maxAsyncRequests: 5,
                 maxInitialRequests: 8,
@@ -50,6 +50,10 @@ module.exports = {
                     },
                     dark: {
                         test: /[\\/]dt-theme[\\/]dark[\\/]index.less/,
+                        priority: 3
+                    },
+                    common: {
+                        test: /[\\/]dt-theme[\\/]common[\\/]index.less/,
                         priority: 3
                     }
                 }
