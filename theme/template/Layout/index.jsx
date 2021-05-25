@@ -122,11 +122,10 @@ export default class Layout extends React.Component {
         const arr = document.getElementsByTagName('link');
         for (let i = 0, len = arr.length; i < len; i++) {
             let href = arr[i].getAttribute('href');
-            if (!href.includes('common')) continue;
-            if (href && href.includes(disableTheme)) {
+            if (href && href.includes(disableTheme) && !href.includes('common')) {
                 arr[i].disabled = true;
             }
-            if (href && href.includes(currTheme)) {
+            if (href && href.includes(currTheme) && !href.includes('common')) {
                 arr[i].disabled = false;
             }
         }
