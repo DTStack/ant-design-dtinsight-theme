@@ -35,8 +35,3 @@ if [ $env ] ; then
 fi;
 
 echo "Release finished."
-
-## publish package
-npm publish
-
-echo "Publish finished."

@@ -3,6 +3,7 @@
   "version": "1.1.3",
   "description": "This is a document of dtinsight-theme based on Ant Design.",
   "repository": "https://github.com/DTStack/ant-design-dtinsight-theme",
+  "homepage": "https://github.com/DTStack/ant-design-dtinsight-theme",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development bisheng start",
@@ -10,7 +11,9 @@
     "clean": "rimraf dist/*",
     "changelog": "./scripts/changelog.sh",
     "release": "./scripts/release.sh",
-    "publish-test": "./scripts/publish.sh"
+    "publish-test": "./scripts/publish.sh",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "antd-theme",
@@ -29,6 +32,7 @@
     "bisheng-plugin-toc": "^0.4.4",
     "cross-env": "^5.2.0",
     "file-loader": "^6.0.0",
+    "gh-pages": "^3.2.0",
     "intersection-observer": "^0.7.0",
     "lz-string": "^1.4.4",
     "moment": "^2.24.0",
