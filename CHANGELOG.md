@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.2...v1.1.3) (2021-03-10)
+
+
+### Features
+
+* add keywords ([4a90346](https://github.com/DTStack/ant-design-dtinsight-theme/commit/4a90346de60b6adede02696b1332e370c466caea))
+* add repository ([099cba2](https://github.com/DTStack/ant-design-dtinsight-theme/commit/099cba2cbf75dddbf2e13088adebc082d71a4277))
+* modify gitignore ([96d8098](https://github.com/DTStack/ant-design-dtinsight-theme/commit/96d80988356e4881a4e26bb68d7adcd49493c370))
+* update dist ([df0b6a7](https://github.com/DTStack/ant-design-dtinsight-theme/commit/df0b6a73d6d5fa7e38839d29702670f6bedde98d))
+* update dist ([9b28a80](https://github.com/DTStack/ant-design-dtinsight-theme/commit/9b28a80edaf4fb8f571ffa01a2ddc8a856a6138d))
+* update doc ([1713728](https://github.com/DTStack/ant-design-dtinsight-theme/commit/1713728520eb79d135a646ee799a064678617335))
+* update readme ([e88da47](https://github.com/DTStack/ant-design-dtinsight-theme/commit/e88da47d9609bbe29094345abc8f5bd239560b85))
+
+
+### Bug Fixes
+
+* rest layout ([4b4b63b](https://github.com/DTStack/ant-design-dtinsight-theme/commit/4b4b63bcd3918e260be0ac843849f207deec3580))
+* update style problem ([46d53da](https://github.com/DTStack/ant-design-dtinsight-theme/commit/46d53dad3cc04f91088855828fae6a32427c8510))
+
 ### [1.1.2](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.1...v1.1.2) (2020-12-29)
 
 
