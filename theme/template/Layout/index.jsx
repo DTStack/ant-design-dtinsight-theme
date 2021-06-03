@@ -16,7 +16,7 @@ import '../../static/iconfont/iconfont.css';
 
 import '../../dt-theme/default/index.less';
 import '../../dt-theme/dark/index.less';
-import '../../dt-theme/common/index.less';
+import '../../dt-theme/dt-common/index.less';
 
 if (typeof window !== 'undefined' && navigator.serviceWorker) {
     navigator.serviceWorker.getRegistrations().then(registrations => {

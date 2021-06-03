@@ -12,9 +12,9 @@
       href="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png"
       type="image/x-icon"
     />
-    {% for cssFile in manifest["css"] %}
+    {% for cssFile in manifest["css"] %}{% if not cssFile.includes('dark') and not cssFile.includes('default')%}
     <link rel="stylesheet" type="text/css" href="{{ root }}{{ cssFile }}"/>
-    {% endfor %}
+    {% endif %}{% endfor %}
     <script src="https://gw.alipayobjects.com/os/lib/es6-shim/0.35.5/??es6-sham.min.js,es6-shim.min.js"></script>
     <!--[if lte IE 10]>
     <script src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
@@ -29,5 +29,8 @@
 {% for jsFile in manifest["js"] %}
 <script src="{{ root }}{{ jsFile }}"></script>
 {% endfor %}
+{% for cssFile in manifest["css"]%}{% if cssFile.includes('dark') or cssFile.includes('default') %}
+<link rel="stylesheet" type="text/css" href="{{ root }}{{ cssFile }}"/>
+{% endif %}{% endfor %}
 </body>
 </html>

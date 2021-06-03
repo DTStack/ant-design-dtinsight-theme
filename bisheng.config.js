@@ -53,7 +53,7 @@ module.exports = {
                         priority: 3
                     },
                     common: {
-                        test: /[\\/]dt-theme[\\/]common[\\/]index.less/,
+                        test: /[\\/]dt-theme[\\/]dt-common[\\/]index.less/,
                         priority: 3
                     }
                 }
