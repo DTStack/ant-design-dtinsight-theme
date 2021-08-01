@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{1189:function(e,t){e.exports={content:["article",["p","成组展示多个只读字段。"]],meta:{category:"Components",subtitle:"描述列表",type:"数据展示",title:"Descriptions",cols:1,filename:"components/descriptions/index.zh-CN.md"},toc:["ul"]}}}]);
