@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.3...v1.1.4) (2021-08-02)
+
+
+### Features
+
+* modify issues 24 in button.less ([e9b34fd](https://github.com/DTStack/ant-design-dtinsight-theme/commit/e9b34fd79265dfbd1f2aece24a71bd0f7e45e42c))
+* modify theme import src ([1bdd275](https://github.com/DTStack/ant-design-dtinsight-theme/commit/1bdd275f82d4af2973beddc9f4caf08e16466a04))
+* **package:** add commitizen ([e126528](https://github.com/DTStack/ant-design-dtinsight-theme/commit/e1265284d29319c37b8edbad921e15c1b29091c9))
+* modify issues 24 in button.less ([c6b9e2c](https://github.com/DTStack/ant-design-dtinsight-theme/commit/c6b9e2c64286753739a98d665ce84ef1cfba7782))
+
+
+### Bug Fixes
+
+* compatible import mode ([31c4e94](https://github.com/DTStack/ant-design-dtinsight-theme/commit/31c4e941d2f90928167783fb3b0333ac0f483aea))
+* handle conflict ([783b5dc](https://github.com/DTStack/ant-design-dtinsight-theme/commit/783b5dcd1f7d4c57dbb6406142bd305757761f62))
+* **package:** deploy and publish command ([cb170fa](https://github.com/DTStack/ant-design-dtinsight-theme/commit/cb170fade45ab58f1814208108db31c5e9868db6))
+
 ### [1.1.3](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.2...v1.1.3) (2021-03-10)
 
 
