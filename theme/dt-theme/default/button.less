@@ -1,10 +1,10 @@
 @import '../const.less';
 
-.ant-btn {
+.@{ant-prefix}-btn {
     padding: 0px 16px;
     box-shadow: unset;
 }
-.ant-btn.ant-btn-primary {
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary {
     text-shadow: unset;
     &:hover, &:focus {
         background-color: @hoverColor;
@@ -17,38 +17,38 @@
         border-color: @clickColor;
     }
 }
-.ant-btn.ant-btn-primary-disabled,
-.ant-btn.ant-btn-primary.disabled,
-.ant-btn.ant-btn-primary[disabled],
-.ant-btn.ant-btn-primary-disabled:hover,
-.ant-btn.ant-btn-primary.disabled:hover,
-.ant-btn.ant-btn-primary[disabled]:hover,
-.ant-btn.ant-btn-primary-disabled:focus,
-.ant-btn.ant-btn-primary.disabled:focus,
-.ant-btn.ant-btn-primary[disabled]:focus,
-.ant-btn.ant-btn-primary-disabled:active,
-.ant-btn.ant-btn-primary.disabled:active,
-.ant-btn.ant-btn-primary[disabled]:active,
-.ant-btn.ant-btn-primary-disabled.active,
-.ant-btn.ant-btn-primary.disabled.active,
-.ant-btn.ant-btn-primary[disabled].active {
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary-disabled,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary.disabled,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary[disabled],
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary-disabled:hover,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary.disabled:hover,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary[disabled]:hover,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary-disabled:focus,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary.disabled:focus,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary[disabled]:focus,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary-disabled:active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary.disabled:active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary[disabled]:active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary-disabled.active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary.disabled.active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-primary[disabled].active {
     color: @blackBF;
     background-color: @blackE8;
     border-color: @blackE8;
 }
-.ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active {
+.@{ant-prefix}-btn:hover, .@{ant-prefix}-btn:focus, .@{ant-prefix}-btn:active, .@{ant-prefix}-btn.active {
     color: @black3;
     border-color: @blackBF;
 }
-.ant-btn:active, .ant-btn.active {
+.@{ant-prefix}-btn:active, .@{ant-prefix}-btn.active {
     background: @blackFA;
 }
-.ant-btn-background-ghost {
+.@{ant-prefix}-btn-background-ghost {
     color: @primaryColor;
     border-color: @primaryColor;
     background-color: #FFFFFF !important;
 }
-.ant-btn.ant-btn-background-ghost {
+.@{ant-prefix}-btn.@{ant-prefix}-btn-background-ghost {
     &:hover, &:focus {
         background-color: @hoverColor !important;
         border-color: @hoverColor;
@@ -60,27 +60,27 @@
         color: #FFFFFF;
     }
 }
-.ant-btn-background-ghost.ant-btn-disabled,
-.ant-btn-background-ghost.ant-btn.disabled,
-.ant-btn-background-ghost.ant-btn[disabled],
-.ant-btn-background-ghost.ant-btn-disabled:hover,
-.ant-btn-background-ghost.ant-btn.disabled:hover,
-.ant-btn-background-ghost.ant-btn[disabled]:hover,
-.ant-btn-background-ghost.ant-btn-disabled:focus,
-.ant-btn-background-ghost.ant-btn.disabled:focus,
-.ant-btn-background-ghost.ant-btn[disabled]:focus,
-.ant-btn-background-ghost.ant-btn-disabled:active,
-.ant-btn-background-ghost.ant-btn.disabled:active,
-.ant-btn-background-ghost.ant-btn[disabled]:active,
-.ant-btn-background-ghost.ant-btn-disabled.active,
-.ant-btn-background-ghost.ant-btn.disabled.active,
-.ant-btn-background-ghost.ant-btn[disabled].active {
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-disabled,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn.disabled,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn[disabled],
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-disabled:hover,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn.disabled:hover,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn[disabled]:hover,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-disabled:focus,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn.disabled:focus,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn[disabled]:focus,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-disabled:active,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn.disabled:active,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn[disabled]:active,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-disabled.active,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn.disabled.active,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn[disabled].active {
     color: @blackBF;
     background-color: @blackE8 !important;
     border-color: @blackE8;
 }
 
-.ant-btn.ant-btn-link {
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link {
     &:hover, &:focus {
         background-color: transparent;
         border-color: transparent;
@@ -92,103 +92,103 @@
         color: @clickColor;
     }
 }
-.ant-btn.ant-btn-link-disabled,
-.ant-btn.ant-btn-link.disabled,
-.ant-btn.ant-btn-link[disabled],
-.ant-btn.ant-btn-link-disabled:hover,
-.ant-btn.ant-btn-link.disabled:hover,
-.ant-btn.ant-btn-link[disabled]:hover,
-.ant-btn.ant-btn-link-disabled:focus,
-.ant-btn.ant-btn-link.disabled:focus,
-.ant-btn.ant-btn-link[disabled]:focus,
-.ant-btn.ant-btn-link-disabled:active,
-.ant-btn.ant-btn-link.disabled:active,
-.ant-btn.ant-btn-link[disabled]:active,
-.ant-btn.ant-btn-link-disabled.active,
-.ant-btn.ant-btn-link.disabled.active,
-.ant-btn.ant-btn-link[disabled].active {
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link-disabled,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link.disabled,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link[disabled],
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link-disabled:hover,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link.disabled:hover,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link[disabled]:hover,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link-disabled:focus,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link.disabled:focus,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link[disabled]:focus,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link-disabled:active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link.disabled:active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link[disabled]:active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link-disabled.active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link.disabled.active,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link[disabled].active {
     color: @blackBF;
 }
-.ant-btn-danger, .ant-btn-danger.ant-btn:focus {
+.@{ant-prefix}-btn-danger, .@{ant-prefix}-btn-danger.@{ant-prefix}-btn:focus {
     background-color: @red !important;
     border-color: @red;
     color: #fff;
 }
-.ant-btn-danger.ant-btn:hover {
+.@{ant-prefix}-btn-danger.@{ant-prefix}-btn:hover {
     color: #fff;
     background-color: #ff7875 !important;
     border-color: #ff7875;
 }
-.ant-btn-danger.ant-btn:active,
-.ant-btn-danger.ant-btn.active {
+.@{ant-prefix}-btn-danger.@{ant-prefix}-btn:active,
+.@{ant-prefix}-btn-danger.@{ant-prefix}-btn.active {
     color: #fff;
     background-color: @red !important;
     border-color: @red;
 }
-.ant-btn-background-ghost.ant-btn-danger {
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-danger {
     color: @red;
     background-color: transparent !important;
     border-color: @red;
 }
-.ant-btn-background-ghost.ant-btn-danger:hover, .ant-btn-background-ghost.ant-btn-danger:focus {
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-danger:hover, .@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-danger:focus {
     color: #fff;
     background-color: #ff7875 !important;
     border-color: #ff7875;
 }
-.ant-btn-background-ghost.ant-btn-danger:active,
-.ant-btn-background-ghost.ant-btn-danger.active {
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-danger:active,
+.@{ant-prefix}-btn-background-ghost.@{ant-prefix}-btn-danger.active {
     color: #fff;
     background-color: @red !important;
     border-color: @red;
 }
-.ant-btn-lg {
+.@{ant-prefix}-btn-lg {
     height: 36px;
 }
 
-.ant-btn-danger-disabled,
-.ant-btn-danger.disabled,
-.ant-btn-danger[disabled],
-.ant-btn-danger-disabled:hover,
-.ant-btn-danger.disabled:hover,
-.ant-btn-danger[disabled]:hover,
-.ant-btn-danger-disabled:focus,
-.ant-btn-danger.disabled:focus,
-.ant-btn-danger[disabled]:focus,
-.ant-btn-danger-disabled:active,
-.ant-btn-danger.disabled:active,
-.ant-btn-danger[disabled]:active,
-.ant-btn-danger-disabled.active,
-.ant-btn-danger.disabled.active,
-.ant-btn-danger[disabled].active {
+.@{ant-prefix}-btn-danger-disabled,
+.@{ant-prefix}-btn-danger.disabled,
+.@{ant-prefix}-btn-danger[disabled],
+.@{ant-prefix}-btn-danger-disabled:hover,
+.@{ant-prefix}-btn-danger.disabled:hover,
+.@{ant-prefix}-btn-danger[disabled]:hover,
+.@{ant-prefix}-btn-danger-disabled:focus,
+.@{ant-prefix}-btn-danger.disabled:focus,
+.@{ant-prefix}-btn-danger[disabled]:focus,
+.@{ant-prefix}-btn-danger-disabled:active,
+.@{ant-prefix}-btn-danger.disabled:active,
+.@{ant-prefix}-btn-danger[disabled]:active,
+.@{ant-prefix}-btn-danger-disabled.active,
+.@{ant-prefix}-btn-danger.disabled.active,
+.@{ant-prefix}-btn-danger[disabled].active {
     background-color: @blackE8 !important;
     border-color: @blackE8;
     color: @blackBF;
 }
 
 .dt-btn-highlight {
-    &.ant-btn:hover, &.ant-btn:focus {
+    &.@{ant-prefix}-btn:hover, &.@{ant-prefix}-btn:focus {
         color: @primaryColor;
         border-color: @primaryColor;
     }
-    &.ant-btn:active, &.ant-btn.active {
+    &.@{ant-prefix}-btn:active, &.@{ant-prefix}-btn.active {
         color: @clickColor;
         border-color: @clickColor;
     }
-    &.ant-btn-disabled,
-    &.ant-btn.disabled,
-    &.ant-btn[disabled],
-    &.ant-btn-disabled:hover,
-    &.ant-btn.disabled:hover,
-    &.ant-btn[disabled]:hover,
-    &.ant-btn-disabled:focus,
-    &.ant-btn.disabled:focus,
-    &.ant-btn[disabled]:focus,
-    &.ant-btn-disabled:active,
-    &.ant-btn.disabled:active,
-    &.ant-btn[disabled]:active,
-    &.ant-btn-disabled.active,
-    &.ant-btn.disabled.active,
-    &.ant-btn[disabled].active {
+    &.@{ant-prefix}-btn-disabled,
+    &.@{ant-prefix}-btn.disabled,
+    &.@{ant-prefix}-btn[disabled],
+    &.@{ant-prefix}-btn-disabled:hover,
+    &.@{ant-prefix}-btn.disabled:hover,
+    &.@{ant-prefix}-btn[disabled]:hover,
+    &.@{ant-prefix}-btn-disabled:focus,
+    &.@{ant-prefix}-btn.disabled:focus,
+    &.@{ant-prefix}-btn[disabled]:focus,
+    &.@{ant-prefix}-btn-disabled:active,
+    &.@{ant-prefix}-btn.disabled:active,
+    &.@{ant-prefix}-btn[disabled]:active,
+    &.@{ant-prefix}-btn-disabled.active,
+    &.@{ant-prefix}-btn.disabled.active,
+    &.@{ant-prefix}-btn[disabled].active {
         color: @blackBF;
         background-color: @blackE8 !important;
         border-color: @blackE8;

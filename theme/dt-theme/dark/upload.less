@@ -1,6 +1,6 @@
 @import '../const.less';
 
-.ant-upload-drag {
+.@{ant-prefix}-upload-drag {
     background: #1D1F2E;
     border: 1px solid #2C3047;
     &:hover {
@@ -8,9 +8,9 @@
     }
 }
 
-.ant-upload.ant-upload-select-picture-card {
+.@{ant-prefix}-upload.@{ant-prefix}-upload-select-picture-card {
     background-color: transparent;
-    .ant-upload > .dt-upload-button {
+    .@{ant-prefix}-upload > .dt-upload-button {
         font-size: 14px;
         .anticon {
             font-size: 20px;
@@ -18,12 +18,12 @@
     }
     &:hover {
         border-color: @primaryColor;
-        .ant-upload > div {
+        .@{ant-prefix}-upload > div {
             color: @primaryColor;
         }
     }
 }
 
-.ant-upload-list-picture-card .ant-upload-list-item-error {
+.@{ant-prefix}-upload-list-picture-card .@{ant-prefix}-upload-list-item-error {
     border-color: @red;
 }
