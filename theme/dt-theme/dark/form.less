@@ -1,169 +1,169 @@
 @import '../const.less';
 
 // form 
-.ant-form-item-label > label {
+.@{ant-prefix}-form-item-label > label {
     color: @whiteBF;
 }
 // input
-.ant-input {
+.@{ant-prefix}-input {
     border-radius: 4px;
     &:focus {
         border-color: @primaryColor;
     }
 }
-.ant-input-disabled {
+.@{ant-prefix}-input-disabled {
     border-color: #272A40;
 }
-.ant-input[disabled]:hover {
+.@{ant-prefix}-input[disabled]:hover {
     border-color: #272A40;
 }
-.ant-input-lg {
+.@{ant-prefix}-input-lg {
     font-size: 12px;
 }
-.ant-input-search-icon, .ant-input-password-icon {
+.@{ant-prefix}-input-search-icon, .@{ant-prefix}-input-password-icon {
     color: @white6;
     &:hover {
         color: @whiteBF;
     }
 }
 // select
-.ant-select-selection {
+.@{ant-prefix}-select-selection {
     &:focus, &.active {
         border-color: @primaryColor;
     }
 }
-.ant-select-dropdown {
+.@{ant-prefix}-select-dropdown {
     box-shadow:0px 2px 8px 0px rgba(6,7,10,1);
 }
-.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+.@{ant-prefix}-select-dropdown-menu-item-active:not(.@{ant-prefix}-select-dropdown-menu-item-disabled) {
     background-color: @deriveColor_dark;
 }
 // checkbox
-.ant-checkbox-inner {
+.@{ant-prefix}-checkbox-inner {
     background-color: #11121C;
     border-color: #363B59;
 }
-.ant-checkbox + span {
+.@{ant-prefix}-checkbox + span {
     color: @whiteBF;
 }
 // radio
-.ant-radio-inner {
+.@{ant-prefix}-radio-inner {
     background-color: #11121C;
     border-color: #363B59;
 }
 // switch
-.ant-switch {
+.@{ant-prefix}-switch {
     background-color: @deriveColor_dark;
 }
-.ant-switch-checked {
+.@{ant-prefix}-switch-checked {
     background-color: @primaryColor;
 }
-.ant-switch-loading-icon, .ant-switch::after {
+.@{ant-prefix}-switch-loading-icon, .@{ant-prefix}-switch::after {
     background-color: #ffffff;
 }
 // cascader
-.ant-cascader-menu-item {
+.@{ant-prefix}-cascader-menu-item {
     color: @whiteBF;
 }
-.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+.@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled), .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled):hover {
     background-color: @deriveColor_dark;
 }
 // datePicker
-.ant-calendar {
+.@{ant-prefix}-calendar {
     box-shadow: 0px 2px 8px 0px rgba(6,7,10,1);
     border: 0;
 }
 // tree
-.ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+.@{ant-prefix}-select-tree li .@{ant-prefix}-select-tree-node-content-wrapper.@{ant-prefix}-select-tree-node-selected {
     background-color: @deriveColor_dark;
 }
-.ant-select-tree-dropdown .ant-select-dropdown-search {
+.@{ant-prefix}-select-tree-dropdown .@{ant-prefix}-select-dropdown-search {
     padding: 12px 12px 8px;
-    .ant-select-search__field {
+    .@{ant-prefix}-select-search__field {
         background: #11111C;
     }
 }
-.ant-select-tree {
+.@{ant-prefix}-select-tree {
     padding: 0 12px;
 }
 // timePicker
-.ant-time-picker-panel-input {
+.@{ant-prefix}-time-picker-panel-input {
     background-color: transparent;
 }
 
 // 浅色背景中 显示深色控件
 .dt-form-light-bg {
     // input
-    .ant-input,&.ant-input,
-    .ant-select-selection, &.ant-select-selection,
-    .ant-time-picker-input, &.ant-time-picker-input,
-    .ant-input-number, &.ant-input-number,
-    .ant-cascader-picker, &.ant-cascader-picker {
+    .@{ant-prefix}-input,&.@{ant-prefix}-input,
+    .@{ant-prefix}-select-selection, &.@{ant-prefix}-select-selection,
+    .@{ant-prefix}-time-picker-input, &.@{ant-prefix}-time-picker-input,
+    .@{ant-prefix}-input-number, &.@{ant-prefix}-input-number,
+    .@{ant-prefix}-cascader-picker, &.@{ant-prefix}-cascader-picker {
         border-color: @blue3;
         background-color: #11111C;
         &:focus, &:hover {
             border-color: @primaryColor;
         }
     }
-    .ant-input[disabled], &.ant-input[disabled] {
+    .@{ant-prefix}-input[disabled], &.@{ant-prefix}-input[disabled] {
         background-color: #161723;
         &:hover {
             border-color: @blue3;
         }
     }
     // select
-    &.ant-select-disabled, .ant-select-disabled {
-        .ant-select-selection {
+    &.@{ant-prefix}-select-disabled, .@{ant-prefix}-select-disabled {
+        .@{ant-prefix}-select-selection {
             background: #161723;
             &:hover, &:focus, &.active {
                 border-color: @blue3;
             }
         }
     }
-    &.ant-select-dropdown {
+    &.@{ant-prefix}-select-dropdown {
         border: 1px solid #272A40;
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
         background-color: @blue1;
-        .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+        .@{ant-prefix}-select-dropdown-menu-item:hover:not(.@{ant-prefix}-select-dropdown-menu-item-disabled) {
             background-color: #282C40;
         }
-        .ant-select-dropdown-menu-item-selected {
+        .@{ant-prefix}-select-dropdown-menu-item-selected {
             background-color: #282C40;
         }
     }
     // tree
-    .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+    .@{ant-prefix}-select-tree li .@{ant-prefix}-select-tree-node-content-wrapper.@{ant-prefix}-select-tree-node-selected {
         background-color: #282C40;
     }
-    &.ant-select-tree-dropdown .ant-select-dropdown-search {
+    &.@{ant-prefix}-select-tree-dropdown .@{ant-prefix}-select-dropdown-search {
         background: transparent;
-        .ant-select-search__field {
+        .@{ant-prefix}-select-search__field {
             background: #1D1F2E;
             border-color: #2C3047;
         }
     }
     // datePicker
-    .ant-calendar {
+    .@{ant-prefix}-calendar {
         background-color: @blue1;
     }
-    .ant-calendar-input {
+    .@{ant-prefix}-calendar-input {
         background: @blue1;
     }
     // timerPicker
-    .ant-time-picker-panel-inner {
+    .@{ant-prefix}-time-picker-panel-inner {
         background-color: @blue1;
     }
     // cascader
-    .ant-cascader-menus, &.ant-cascader-menus {
+    .@{ant-prefix}-cascader-menus, &.@{ant-prefix}-cascader-menus {
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
         background-color: @blue1;
         border: 1px solid #272A40;
-        .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+        .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled), .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled):hover {
             background-color: #282C40;
         }
     }
     .has-error {
-        .ant-input, .ant-select-selection, .ant-input-number, .ant-time-picker-input, .ant-cascader-picker {
+        .@{ant-prefix}-input, .@{ant-prefix}-select-selection, .@{ant-prefix}-input-number, .@{ant-prefix}-time-picker-input, .@{ant-prefix}-cascader-picker {
             border-color: #E25F5D;
             background-color: #11111C;
         }
@@ -171,7 +171,7 @@
 }
 .has-error {
     .dt-form-light-bg {
-        &.ant-input, .ant-select-selection, .ant-input-numbe, .ant-time-picker-input, .ant-cascader-picker {
+        &.@{ant-prefix}-input, .@{ant-prefix}-select-selection, .@{ant-prefix}-input-numbe, .@{ant-prefix}-time-picker-input, .@{ant-prefix}-cascader-picker {
             border-color: #E25F5D;
             background-color: #11111C;
         }

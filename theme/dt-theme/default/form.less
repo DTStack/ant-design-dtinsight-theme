@@ -1,51 +1,51 @@
 @import '../const.less';
 
-.ant-input {
+.@{ant-prefix}-input {
     border-radius: 4px;
 }
-.ant-input-lg {
+.@{ant-prefix}-input-lg {
     font-size: 12px;
 }
-.ant-select-selection {
+.@{ant-prefix}-select-selection {
     border-radius: 4px;
 }
-.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,
-.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon {
+.@{ant-prefix}-select-dropdown.@{ant-prefix}-select-dropdown--multiple .@{ant-prefix}-select-dropdown-menu-item-selected .@{ant-prefix}-select-selected-icon,
+.@{ant-prefix}-select-dropdown.@{ant-prefix}-select-dropdown--multiple .@{ant-prefix}-select-dropdown-menu-item-selected:hover .@{ant-prefix}-select-selected-icon {
     color: @green;
 }
-.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon {
+.@{ant-prefix}-select-dropdown.@{ant-prefix}-select-dropdown--multiple .@{ant-prefix}-select-dropdown-menu-item:hover .@{ant-prefix}-select-selected-icon {
     color: @green;
 }
-.ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+.@{ant-prefix}-select-tree li .@{ant-prefix}-select-tree-node-content-wrapper.@{ant-prefix}-select-tree-node-selected {
     background: @deriveColor;
 }
-.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+.@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled), .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled):hover {
     background: @deriveColor;
 }
-li.ant-time-picker-panel-select-option-selected {
+li.@{ant-prefix}-time-picker-panel-select-option-selected {
     font-weight: normal;
     background: @deriveColor;
 }
-.ant-time-picker-panel-select li:focus {
+.@{ant-prefix}-time-picker-panel-select li:focus {
     font-weight: normal;
 }
-li.ant-time-picker-panel-select-option-selected:hover {
+li.@{ant-prefix}-time-picker-panel-select-option-selected:hover {
     background: @deriveColor;
 }
-.ant-time-picker-input {
+.@{ant-prefix}-time-picker-input {
     border-radius: 4px;
 }
-.ant-input-number {
+.@{ant-prefix}-input-number {
     border-radius: 4px;
 }
-.ant-radio-button-wrapper {
+.@{ant-prefix}-radio-button-wrapper {
     padding: 0 16px;
     color: @black6;
 }
 
 // 灰色背景 表单样式设置 对应表单控件添加样式名dt-form-shadow-bg
 .dt-form-shadow-bg {
-    &.ant-input, &.ant-input-number, .ant-input, .ant-select-selection, .ant-time-picker-input {
+    &.@{ant-prefix}-input, &.@{ant-prefix}-input-number, .@{ant-prefix}-input, .@{ant-prefix}-select-selection, .@{ant-prefix}-time-picker-input {
         border: 1px solid transparent;
         box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
         &:hover, &:focus {
@@ -56,39 +56,39 @@ li.ant-time-picker-panel-select-option-selected:hover {
             box-shadow: 0px 2px 8px 0px rgba(63,135,255,0.10);
         }
     }
-    &.ant-input[disabled]:hover {
+    &.@{ant-prefix}-input[disabled]:hover {
         border-color: transparent;
     }
-    .ant-input[disabled]:hover {
+    .@{ant-prefix}-input[disabled]:hover {
         border-color: transparent;
     }
-    .ant-input-disabled:hover {
+    .@{ant-prefix}-input-disabled:hover {
         border-color: transparent;
     }
-    &.ant-input-number-disabled:hover {
+    &.@{ant-prefix}-input-number-disabled:hover {
         border-color: transparent;
     }
-    &.ant-select-disabled .ant-select-selection:hover,
-    &.ant-select-disabled .ant-select-selection:focus,
-    &.ant-select-disabled .ant-select-selection:active {
+    &.@{ant-prefix}-select-disabled .@{ant-prefix}-select-selection:hover,
+    &.@{ant-prefix}-select-disabled .@{ant-prefix}-select-selection:focus,
+    &.@{ant-prefix}-select-disabled .@{ant-prefix}-select-selection:active {
         border-color: transparent;
         box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
     }
-    .ant-time-picker-input[disabled]:hover {
+    .@{ant-prefix}-time-picker-input[disabled]:hover {
         border-color: transparent;
     }
 }
 .has-error {
     .dt-form-shadow-bg {
-        &.ant-input, .ant-input, &.ant-input-number, .ant-select-selection, .ant-time-picker-input {
+        &.@{ant-prefix}-input, .@{ant-prefix}-input, &.@{ant-prefix}-input-number, .@{ant-prefix}-select-selection, .@{ant-prefix}-time-picker-input {
             &:hover, &:focus {
                 border-color: @red;
             }
         }
-        &.ant-input, &.ant-input-number, &.ant-time-picker-input, .ant-select-selection, .ant-input {
+        &.@{ant-prefix}-input, &.@{ant-prefix}-input-number, &.@{ant-prefix}-time-picker-input, .@{ant-prefix}-select-selection, .@{ant-prefix}-input {
             border-color: @red;
         }
-        &.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+        &.@{ant-prefix}-calendar-picker:hover .@{ant-prefix}-calendar-picker-input:not(.@{ant-prefix}-input-disabled) {
             border-color: @red;
         }
     }
@@ -96,36 +96,36 @@ li.ant-time-picker-panel-select-option-selected:hover {
 
 .dt-radio-group {
     box-shadow: 0px 2px 8px 0px rgba(6, 14, 26, 0.08);
-    .ant-radio-button-wrapper {
+    .@{ant-prefix}-radio-button-wrapper {
         border: 0;
     }
-    &.ant-radio-group-solid{
-        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+    &.@{ant-prefix}-radio-group-solid{
+        .@{ant-prefix}-radio-button-wrapper-checked:not(.@{ant-prefix}-radio-button-wrapper-disabled):focus-within {
             outline: unset;
         }
     }
-    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    .@{ant-prefix}-radio-button-wrapper-checked:not(.@{ant-prefix}-radio-button-wrapper-disabled) {
         box-shadow: unset;
     }
-    .ant-radio-button-wrapper:focus-within {
+    .@{ant-prefix}-radio-button-wrapper:focus-within {
         outline: unset;
     }
 }
 
 // form 图标颜色
-.ant-select-arrow,
-.ant-calendar-picker-icon,
-.ant-time-picker-icon .ant-time-picker-clock-icon,
-.ant-time-picker-clear .ant-time-picker-clock-icon,
-.ant-time-picker-icon,
-.ant-time-picker-clear {
+.@{ant-prefix}-select-arrow,
+.@{ant-prefix}-calendar-picker-icon,
+.@{ant-prefix}-time-picker-icon .@{ant-prefix}-time-picker-clock-icon,
+.@{ant-prefix}-time-picker-clear .@{ant-prefix}-time-picker-clock-icon,
+.@{ant-prefix}-time-picker-icon,
+.@{ant-prefix}-time-picker-clear {
     color: #999999;
 }
 
 // form 下拉 投影
-.ant-cascader-menus,
-.ant-calendar,
-.ant-select-dropdown,
-.ant-time-picker-panel-inner {
+.@{ant-prefix}-cascader-menus,
+.@{ant-prefix}-calendar,
+.@{ant-prefix}-select-dropdown,
+.@{ant-prefix}-time-picker-panel-inner {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }

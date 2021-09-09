@@ -1,20 +1,20 @@
 @import '../const.less';
 
-.ant-steps {
-   .ant-steps-item-finish
-   >.ant-steps-item-container
-   >.ant-steps-item-content
-   >.ant-steps-item-title {
+.@{ant-prefix}-steps {
+   .@{ant-prefix}-steps-item-finish
+   >.@{ant-prefix}-steps-item-container
+   >.@{ant-prefix}-steps-item-content
+   >.@{ant-prefix}-steps-item-title {
         color: @white8C;
     }
-    .ant-steps-item-process
-    >.ant-steps-item-container
-    >.ant-steps-item-content
-    >.ant-steps-item-title::after {
+    .@{ant-prefix}-steps-item-process
+    >.@{ant-prefix}-steps-item-container
+    >.@{ant-prefix}-steps-item-content
+    >.@{ant-prefix}-steps-item-title::after {
         background-color: #282B46
     }
 }
 
-.ant-steps + .steps-content {
+.@{ant-prefix}-steps + .steps-content {
     border: 1px solid #282B40;
 }
