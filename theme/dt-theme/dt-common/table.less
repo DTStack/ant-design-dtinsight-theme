@@ -38,7 +38,15 @@
     & > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
-    & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+    & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
+        &:first-child {
+            padding-left: 20px;
+        }
+        &:last-child {
+            padding-right: 20px;
+        }
+        padding: 10.5px 8px;
+    }
     & > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
     & > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
     & > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
@@ -53,7 +61,7 @@
         &:last-child {
             padding-right: 20px;
         }
-        padding: 13px 8px;
+        padding: 12.5px 8px;
     }
     & > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th.ant-table-selection-column {
         padding: 13px 12px 13px 20px !important;
@@ -71,6 +79,47 @@
         &:last-child {
             padding-right: 20px;
         }
+    }
+}
+.ant-table-small {
+    border: 0;
+    & > .ant-table-content > .ant-table-body {
+        margin: 0;
+    }
+}
+.ant-table-small {
+    & > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
+    & > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+    & > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
+    & > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th,
+    & > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
+    & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
+    & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+    & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
+        &:first-child {
+            padding-left: 20px;
+        }
+        &:last-child {
+            padding-right: 20px;
+        }
+        padding: 8.5px 8px;
+        // border-bottom: 1px solid #e8e8e8
+    }
+    & > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+        &:first-child {
+            padding-left: 20px;
+        }
+        &:last-child {
+            padding-right: 20px;
+        }
+        padding: 8.5px 8px;
     }
 }
 .ant-table-thead > tr > th .ant-table-header-column .ant-table-column-sorters::before {
@@ -315,14 +364,20 @@
 // 优化固定高度表格 当数据为空时 
 
 
-//高度较小的 表格中的分页
+//size = middle的表格中的分页
 .dt-pagination-lower {
     .ant-table-pagination.ant-pagination {
         height: 44px;
         line-height: 44px;
     }
 }
-
+// size = small的表格中的分页
+.dt-pagination-small {
+    .ant-table-pagination.ant-pagination {
+        height: 36px;
+        line-height: 36px;
+    }
+}
 // 不需要最后一列的下边框 (一般在表格存在外边框时使用)
 .dt-table-last-row-noborder {
     .ant-table-tbody {
