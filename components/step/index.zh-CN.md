@@ -1,7 +1,7 @@
 ---
 category: Components
 type: 导航
-title: Steps
+title: Step
 subtitle: 步骤条
 cols: 1
 ---
