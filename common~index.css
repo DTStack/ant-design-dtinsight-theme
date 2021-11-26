@@ -22650,7 +22650,7 @@ div.ant-typography-edit-content {
   padding-right: 20px;
 }
 .ant-table-tbody > tr > td {
-  padding: 19px 8px;
+  padding: 18.5px 8px;
 }
 .ant-table-tbody > tr > td:first-child {
   padding-left: 20px;
@@ -22666,7 +22666,7 @@ div.ant-typography-edit-content {
   text-align: left;
 }
 .ant-table-tbody > tr > td.ant-table-selection-column {
-  padding: 19px 12px 19px 20px;
+  padding: 18.5px 12px 18.5px 20px;
   text-align: left;
 }
 .ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
@@ -22676,16 +22676,8 @@ div.ant-typography-edit-content {
 .ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
 .ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
 .ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
-.ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
-.ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
-.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
-.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
-  padding: 13px 8px;
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
+  padding: 10.5px 8px;
 }
 .ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th:first-child,
 .ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th:first-child,
@@ -22694,7 +22686,29 @@ div.ant-typography-edit-content {
 .ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th:first-child,
 .ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th:first-child,
 .ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:first-child,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:first-child,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:first-child {
+  padding-left: 20px;
+}
+.ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
+.ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th:last-child,
+.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
+.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th:last-child,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:last-child,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:last-child {
+  padding-right: 20px;
+}
+.ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
+.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+  padding: 12.5px 8px;
+}
 .ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td:first-child,
 .ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td:first-child,
 .ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td:first-child,
@@ -22705,14 +22719,6 @@ div.ant-typography-edit-content {
 .ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td:first-child {
   padding-left: 20px;
 }
-.ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
-.ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th:last-child,
-.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
-.ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th:last-child,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:last-child,
-.ant-table-middle > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:last-child,
 .ant-table-middle > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td:last-child,
 .ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td:last-child,
 .ant-table-middle > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td:last-child,
@@ -22738,6 +22744,72 @@ div.ant-typography-edit-content {
   padding-left: 20px;
 }
 .ant-table-middle .ant-table-tbody > tr > td:last-child {
+  padding-right: 20px;
+}
+.ant-table-small {
+  border: 0;
+}
+.ant-table-small > .ant-table-content > .ant-table-body {
+  margin: 0;
+}
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
+  padding: 8.5px 8px;
+}
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th:first-child,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th:first-child,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th:first-child,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th:first-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th:first-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th:first-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:first-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:first-child {
+  padding-left: 20px;
+}
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th:last-child,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th:last-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th:last-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:last-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th:last-child {
+  padding-right: 20px;
+}
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+  padding: 8.5px 8px;
+}
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td:first-child,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td:first-child,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td:first-child,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td:first-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td:first-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td:first-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td:first-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td:first-child {
+  padding-left: 20px;
+}
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td:last-child,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td:last-child,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td:last-child,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td:last-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td:last-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td:last-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td:last-child,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td:last-child {
   padding-right: 20px;
 }
 .ant-table-thead > tr > th .ant-table-header-column .ant-table-column-sorters::before {
@@ -22981,6 +23053,10 @@ div.ant-typography-edit-content {
 .dt-pagination-lower .ant-table-pagination.ant-pagination {
   height: 44px;
   line-height: 44px;
+}
+.dt-pagination-small .ant-table-pagination.ant-pagination {
+  height: 36px;
+  line-height: 36px;
 }
 .dt-table-last-row-noborder .ant-table-tbody > tr:last-child > td {
   border-bottom-color: rgba(0, 0, 0, 0) !important;
@@ -23417,19 +23493,29 @@ div.ant-typography-edit-content {
   border-right: none;
 }
 .ant-input {
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .ant-input-lg {
   font-size: 12px;
 }
 .ant-input-number {
-  border-radius: 4px;
+  border-radius: 2px;
+}
+.ant-time-picker-input {
+  border-radius: 2px;
+}
+.ant-select-selection {
+  border-radius: 2px;
 }
 .ant-card-head {
   padding: 0px 20px;
 }
 .ant-card-body {
   padding: 20px;
+}
+.dt-card-shadow-bg {
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.12);
+  border: unset;
 }
 .ant-notification {
   width: 360px;
