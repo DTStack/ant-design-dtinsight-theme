@@ -1,19 +1,19 @@
 ---
-order: 12
+order: 0
 title:
-  zh-CN: 标准导航步骤页
-  en-US: Navigation Steps Page
+  en-US: Basic Usage
+  zh-CN: 基本用法
 ---
 
 ## zh-CN
 
-1、固定步骤页头部、尾部。中间内容可滚动。可作为单屏导航步骤页展示使用
-- 为导航步骤页 `Card` 组件父元素或者直接在`Card`组件上添加类名 `dt-steps-card-container`
-- 计算当前导航步骤页以外的元素所占高度（如 300px）
-- 再为导航步骤页 `Card` 组件设置 `style={{ height: 'calc(100vh - 300px)' }}`，添加 `Steps` 组件分页
-- 最后设置导航步骤页的 `Steps` 组件后的第一个 `div` 元素为内容区域，第一个 `footer` 元素为操作栏
+1、固定标准导航步骤页步骤条头部、操作栏尾部。中间内容区域可滚动。可作为单屏导航步骤条页展示使用
+- 为导航步骤页的 `Card` 卡片容器的父元素或者直接在`Card`卡片容器上添加类名 `dt-steps-card-container`
+- 计算当前导航步骤页面以外的元素所占高度（如 300px）
+- 再为导航步骤页 `Card` 卡片容器设置 `style={{ height: 'calc(100vh - 300px)' }}`，添加 `Steps` 步骤条处理流程
+- 最后设置导航步骤页的 `Steps` 步骤条后的第一个 `div` 元素为内容区域，第一个 `footer` 元素为操作栏
 
-2、为导航步骤页`Card`组件添加类名 `dt-card-shadow-bg` 可增加阴影
+2、为导航步骤页`Card`卡片容器添加类名 `dt-card-shadow-bg` 可增加阴影
 
 ## en-US
 
