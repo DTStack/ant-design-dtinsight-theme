@@ -1,36 +1,17 @@
 @import '../const.less';
 
-.ant-steps {
-   .ant-steps-item-finish
-   >.ant-steps-item-container
-   >.ant-steps-item-content
-   >.ant-steps-item-title {
-        color: @white8C;
-    }
-    .ant-steps-item-process
-    >.ant-steps-item-container
-    >.ant-steps-item-content
-    >.ant-steps-item-title::after {
-        background-color: #282B46
-    }
-}
-
-.ant-steps + .steps-content {
-    border: 1px solid #282B40;
-}
-
 .dt-steps-card-container {
     .ant-card-body, &.ant-card-body {
         height: 100%;
         padding: 0px;
         .ant-steps {
             padding: 12px 20%;
-            background: rgb(14, 14, 23);
+            background: #fff;
             .ant-steps-item-icon {
                 width: 28px;
                 height: 28px;
                 margin-right: 4px;
-                background-color: #222433;
+                background-color: #eee;
                 border-color: transparent;
                 .ant-steps-icon {
                     top: -3px;
@@ -41,7 +22,7 @@
                 font-size: 14px;
                 padding-right: 12px;
                 line-height: 28px;
-                color:  @blackDD;
+                color: @white6;
             }
             .ant-steps-item-process {
                 .ant-steps-item-icon {
@@ -59,7 +40,7 @@
             }
             .ant-steps-item-finish {
                 .ant-steps-item-icon {
-                    background-color: rgb(14, 14, 23);
+                    background-color: #fff;
                     border: 1px solid @primaryColor;
                     .ant-steps-icon {
                         top: -2px;
@@ -74,13 +55,13 @@
             bottom: 56px;
             left: 0;
             right: 0;
-            background: #1A1C29;
-            border-top: 1px solid #090A0F;
-            border-bottom: 1px solid #090A0F;
+            background: @blackFA;
+            border-top: 1px solid @blackE8;
+            border-bottom: 1px solid @blackE8;
             padding: 20px;
             overflow: scroll;
             + footer {
-                background: #1A1C29;
+                background: @blackFA;
                 text-align: center;
                 line-height: 56px;
                 position: absolute;
