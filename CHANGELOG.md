@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.4...v1.1.5) (2021-12-10)
+
+
+### Features
+
+* **changelog:** update change log doc ([fcb28ca](https://github.com/DTStack/ant-design-dtinsight-theme/commit/fcb28cacfed010855dce4d2969911ef6b0b2281a))
+* fixHeight add small table ([de3a1f5](https://github.com/DTStack/ant-design-dtinsight-theme/commit/de3a1f50875dff2c1ab1685a22b8df4b42c7248c))
+* **button:** add custom icon button ([a665f16](https://github.com/DTStack/ant-design-dtinsight-theme/commit/a665f16d35d52a21ed921647ca474b55f11e4cec))
+* **steps:** add standard navigation steps page ([4e564c2](https://github.com/DTStack/ant-design-dtinsight-theme/commit/4e564c22b3ad3f10a9e12626f9829e76a0ef9479))
+* **steps:** move steps nav page to layout component ([8f62f20](https://github.com/DTStack/ant-design-dtinsight-theme/commit/8f62f207e1db7daa4dc5db2f3914c3d7ffdf1c3a))
+* add size small table ([b2c2c03](https://github.com/DTStack/ant-design-dtinsight-theme/commit/b2c2c03a5021c3ec94d707714426a9d5a9e10f72))
+* border-radius: 2px ([b06afd8](https://github.com/DTStack/ant-design-dtinsight-theme/commit/b06afd8409c474f1f6793571d0d0ffc091879537))
+* table height 57px to 56px ([70fa601](https://github.com/DTStack/ant-design-dtinsight-theme/commit/70fa60169ca67bf6c148ec90db9c941e4b3f1608))
+
+
+### Bug Fixes
+
+* add dark steps nav page ([3cd12e8](https://github.com/DTStack/ant-design-dtinsight-theme/commit/3cd12e8cac6a1ba53326448a6e3b4c7ff47d64e5))
+* handle conflicts ([7a82319](https://github.com/DTStack/ant-design-dtinsight-theme/commit/7a823197a032e92237ca9eb80d3ea4418e7112d7))
+* **table:** replace table border color ([8e02634](https://github.com/DTStack/ant-design-dtinsight-theme/commit/8e026341c3603b2662458bddf679637b9a4b4477))
+
 ### [1.1.4](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.3...v1.1.4) (2021-08-02)
 
 
