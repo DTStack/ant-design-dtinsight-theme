@@ -5,6 +5,29 @@ toc: false
 timeline: true
 ---
 
+## [1.1.5](https://github.com/DTStack/ant-design-dtinsight-theme/tree/v1.1.5) (2021-12-10)
+
+### Features
+
+* 新增标准化步骤分页
+* 新增列表高度为 36px 的表格
+* Button 组件支持中加入自定义图标
+
+### Fix
+
+* 修复 Table、Input 等组件规范样式
+
+## [1.1.4](https://github.com/DTStack/ant-design-dtinsight-theme/tree/v1.1.4) (2021-08-02)
+
+### Features
+
+* 添加规范文档和相关脚本
+* 浅色和深色主题切换优化
+
+### Fix
+
+* 修复 Button 组件规范样式
+
 ## [1.1.3](https://github.com/DTStack/ant-design-dtinsight-theme/tree/v1.1.3) (2021-03-10)
 
 ### Features
