@@ -13,6 +13,7 @@ title:
 - 再为表格设置`style={{ height: 'calc(100vh - 300px)' }}`
 - 特别的，`dt-table-fixed-base` 用于自带分页的表格
 - 底部分页通过 footer 实现的表格请使用类名 `dt-table-fixed-contain-footer`
+- 展示最小size, 设置size为 `samll`
 
 <br />
 
@@ -62,7 +63,8 @@ class App extends React.Component {
     isShowData: true,
     isColumnFixed: false,
     setOverflowX: false,
-    setScrollBar: true
+    setScrollBar: true,
+    smallSize: false
   };
 
   handleSwitchChange = (key) => {
@@ -72,7 +74,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { data, isShowData, isColumnFixed, setOverflowX } = this.state;
+    const { data, isShowData, isColumnFixed, setOverflowX, smallSize } = this.state;
     const columns = [
       { title: 'Name', fixed: isColumnFixed ? 'left' : false, dataIndex: 'name', key: 'name', width: 200 },
       { title: 'Age', dataIndex: 'age', key: 'age', width: 100 },
@@ -111,6 +113,8 @@ class App extends React.Component {
             <span className="demo-switch-desc">是否存在固定列</span>
             <Switch checked={setOverflowX} onChange={this.handleSwitchChange.bind(this, 'setOverflowX')} />
             <span className="demo-switch-desc">设置dt-table-fixed-overflowx-auto</span>
+            <Switch checked={smallSize} onChange={this.handleSwitchChange.bind(this, 'smallSize')} />
+            <span className="demo-switch-desc">展示最小size</span>
         </div>
         <Table
           columns={columns}
@@ -118,6 +122,7 @@ class App extends React.Component {
           scroll={{ y: true, x: 1300 }}
           className={!isShowData && isColumnFixed && setOverflowX ? 'dt-table-fixed-overflowx-auto' : ''}
           style={{ height: 'calc(100vh - 300px)' }}
+          size={smallSize && 'small'}
           pagination={pagination}
         />
       </div>
