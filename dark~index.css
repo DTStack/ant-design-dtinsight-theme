@@ -23962,7 +23962,7 @@ li {
   background-color: #1A1C29;
 }
 .dt-table-border {
-  border: 1px solid #272A40;
+  border: 1px solid #DDDDDD;
 }
 .ant-table-small > .ant-table-content .ant-table-placeholder,
 .ant-table-small > .ant-table-content .ant-table-row:last-child td {
