@@ -22,7 +22,7 @@
   "author": "dt-insight-front",
   "license": "ISC",
   "dependencies": {
-    "antd": "3.26.13"
+    "antd": "3.26.20"
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.4",
