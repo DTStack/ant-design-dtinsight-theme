@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'bisheng/router';
-import {Row, Col, Menu, Icon, Affix} from 'antd';
+
+import {
+    ExportOutlined,
+    LeftOutlined,
+    MenuFoldOutlined,
+    MenuUnfoldOutlined,
+    RightOutlined,
+} from '@ant-design/icons';
+
+import { Row, Col, Menu, Affix } from 'antd';
 import classNames from 'classnames';
 import get from 'lodash/get';
 import MobileMenu from 'rc-drawer';
@@ -17,9 +26,7 @@ const {SubMenu} = Menu;
 function getActiveMenuItem(props) {
     let {children} = props.params;
     children = children.indexOf('.html') > 0 ? children.replace('.html', '-cn') : children;
-    return (
-        (children && children.replace('-cn', '')) || props.location.pathname.replace(/(^\/|-cn$)/g, '')
-    );
+    return (children && children.replace('-cn', '')) || props.location.pathname.replace(/(^\/|-cn$)/g, '');
 }
 
 function getModuleData(props) {
@@ -238,7 +245,7 @@ export default class MainContent extends Component {
                 className="menu-item-link-outside"
             >
                 {before}
-                {text} <Icon type="export"/>
+                {text} <ExportOutlined />
                 {after}
             </a>
         );
@@ -272,8 +279,8 @@ export default class MainContent extends Component {
 
         const menuItems = this.getMenuItems();
         const menuItemsForFooterNav = this.getMenuItems({
-            before: <Icon className="footer-nav-icon-before" type="left"/>,
-            after: <Icon className="footer-nav-icon-after" type="right"/>,
+            before: <LeftOutlined className="footer-nav-icon-before" />,
+            after: <RightOutlined className="footer-nav-icon-after" />,
         });
         const {prev, next} = this.getFooterNav(menuItemsForFooterNav, activeMenuItem);
         const {localizedPageData} = props;
@@ -298,7 +305,7 @@ export default class MainContent extends Component {
                 <Row>
                     {isMobile ? (
                         <MobileMenu
-                            iconChild={[<Icon type="menu-unfold"/>, <Icon type="menu-fold"/>]}
+                            iconChild={[<MenuUnfoldOutlined />, <MenuFoldOutlined />]}
                             key="Mobile-menu"
                             wrapperClassName="drawer-wrapper"
                         >

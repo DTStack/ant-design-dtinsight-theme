@@ -22,7 +22,9 @@
   "author": "dt-insight-front",
   "license": "ISC",
   "dependencies": {
-    "antd": "3.26.20"
+    "@ant-design/compatible": "^1.1.0",
+    "@ant-design/icons": "^4.7.0",
+    "antd": "4.19.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.4.4",
