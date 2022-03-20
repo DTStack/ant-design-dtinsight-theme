@@ -26,6 +26,7 @@
     "@ant-design/icons": "^4.7.0",
     "@ant-design/tools": "^14.1.0",
     "antd": "4.19.2",
+    "awesome-typescript-loader": "^5.2.1",
     "child_process": "^1.0.2",
     "dayjs": "^1.11.0",
     "fs": "^0.0.1-security",
