@@ -148,7 +148,7 @@ export default class Demo extends React.Component {
       html,
       js: sourceCode
         .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'antd';/, 'const { $1 } = antd;')
-        .replace("import moment from 'moment';", '')
+        .replace("import format from 'dayjs';", '')
         .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'react-router';/, 'const { $1 } = ReactRouter;')
         .replace(
           /import\s+\{\s+(.*)\s+\}\s+from\s+'react-router-dom';/,

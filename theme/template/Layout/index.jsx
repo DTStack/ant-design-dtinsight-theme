@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { addLocaleData, IntlProvider } from 'react-intl';
-import 'moment/locale/zh-cn';
+import 'dayjs/locale/zh-cn';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import Header from './Header';

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'bisheng/router';
+import { Link } from 'bisheng/router';
 import zhCn from '../zh-CN';
 
 export default function NotFound({location}) {

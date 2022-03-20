@@ -1,12 +1,35 @@
 const path = require('path');
+// const getWebpackConfig = require('ant-design/tools/lib/getWebpackConfig');
 
+// const { webpack } = getWebpackConfig;
+// function ignoreMomentLocale(webpackConfig) {
+//     delete webpackConfig.module.noParse;
+//     webpackConfig.plugins.push(new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/));
+//   }
+  
+//   function externalMoment(config) {
+//     config.externals = config.externals || {};
+//     config.externals['react-router-dom'] = 'ReactRouterDOM';
+//     /* config.externals = Object.assign({}, config.externals, {
+//         react: 'React',
+//         'react-dom': 'ReactDOM',
+//     }); */
+//     config.externals.moment = {
+//       root: 'moment',
+//       commonjs2: 'moment',
+//       commonjs: 'moment',
+//       amd: 'moment',
+//     };
+//   }
 module.exports = {
+    target: 'node',
     source: {
         components: './components',
         docs: './docs',
     },
     output: './dist',
     theme: './theme',
+    // plugins: [new AntdDayjsWebpackPlugin()],
     htmlTemplate: path.join(__dirname, './theme/static/template.html'),
     themeConfig: {
         categoryOrder: {
@@ -27,6 +50,8 @@ module.exports = {
         homeUrl: '/docs/react/getting-started-cn'
     },
     webpackConfig: function (config) {
+        // ignoreMomentLocale(config);
+        // externalMoment(config);
         config.module.rules.push({
             test: /\.(eot|woff|svg|ttf|woff2|gif|appcache|webp)(\?|$)/,
             loader: [

@@ -14,8 +14,8 @@ title:
 - 设置组件属性 `popupClassName` 为 `dt-form-light-bg`
 
 ```jsx
-import { TimePicker } from 'antd';
-import moment from 'moment';
+import { TimePicker } from '../../index';
+import moment from 'dayjs';
 
 const dateFormat = 'YYYY-MM-DD';
 ReactDOM.render(

@@ -13,8 +13,8 @@ title:
 - 为组件添加类名`dt-form-shadow-bg`
 
 ```jsx
-import { DatePicker } from 'antd';
-import moment from 'moment';
+import { DatePicker } from '../../index';
+import moment from 'dayjs';
 
 const { MonthPicker, RangePicker } = DatePicker;
 
