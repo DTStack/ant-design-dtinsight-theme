@@ -1,3 +1,3 @@
-export { default as DatePicker } from './datePicker/dtpicker';
+export { default as DatePicker } from './datepicker/dtpicker';
 export { default as Calendar } from './calendar/calend';
-export { default as TimePicker } from './timePicker/tmpicker';
+export { default as TimePicker } from './timepicker/tmpicker';

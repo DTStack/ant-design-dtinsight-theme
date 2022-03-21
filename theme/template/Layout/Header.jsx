@@ -111,8 +111,6 @@ export default class Header extends React.Component {
                     <Col lg={10} md={10} sm={24} xs={24}>
                         <div id="search-box" style={isDark ? { borderLeftColor: '#272A40' } : {}}>
                             <AutoComplete
-                                // mode="combobox"
-                                // showSearch
                                 value={inputValue}
                                 dropdownClassName="component-select"
                                 placeholder={searchPlaceholder}
