@@ -23,8 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "antd": "4.19.2",
-    "dayjs": "^1.11.0",
-    "global": "^4.4.0"
+    "dayjs": "^1.11.0"
   },
   "devDependencies": {
     "@ant-design/compatible": "^1.1.0",
