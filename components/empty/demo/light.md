@@ -65,7 +65,7 @@ class Demo extends React.Component {
             <TreeSelect dropdownClassName="dt-form-light-bg" className="dt-form-light-bg" style={style} treeData={[]} />
 
             <h3>Cascader</h3>
-            <Cascader popupClassName="dt-form-light-bg"  className="dt-form-light-bg" style={style} options={[]} placeholder="Please select" />
+            <Cascader dropdownClassName="dt-form-light-bg"  className="dt-form-light-bg" style={style} options={[]} placeholder="Please select" />
           </div>
         </ConfigProvider>
       </div>

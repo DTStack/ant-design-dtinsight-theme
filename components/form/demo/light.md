@@ -136,7 +136,7 @@ class NormalLoginForm extends React.Component {
           {getFieldDecorator('location', {
             rules: [{ required: true, message: 'It is required!' }],
           })(
-            <Cascader popupClassName="dt-form-light-bg" options={options} placeholder="Please select" />
+            <Cascader dropdownClassName="dt-form-light-bg" options={options} placeholder="Please select" />
           )}
         </Form.Item>
         <Form.Item>
