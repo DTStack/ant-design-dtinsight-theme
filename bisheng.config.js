@@ -1,29 +1,4 @@
 const path = require('path');
-const configList = [
-    {
-    loader: 'babel-loader',
-    options: {
-        // 不采用.babelrc的配置
-        "babelrc": false,
-        "presets": [
-            ["react"],
-            ["es2015", { "modules": false }]
-        ],
-        "plugins": [
-            "syntax-dynamic-import",
-            "transform-object-rest-spread",
-            "transform-class-properties"
-        ]
-    }
-},
-{
-    test: /\.(eot|woff|svg|ttf|woff2|gif|appcache|webp)(\?|$)/,
-    loader: [
-        "file-loader?name=[name].[ext]",
-        "url-loader?limit=100000"
-    ]
-}
-]
 module.exports = {
     target: 'node',
     source: {
@@ -52,7 +27,13 @@ module.exports = {
         homeUrl: '/docs/react/getting-started-cn'
     },
     webpackConfig: function (config) {
-        config.module.rules.concat(configList);
+        config.module.rules.push({
+            test: /\.(eot|woff|svg|ttf|woff2|gif|appcache|webp)(\?|$)/,
+            loader: [
+                "file-loader?name=[name].[ext]",
+                "url-loader?limit=100000"
+            ]
+        });
         config.optimization = {
             splitChunks: {
                 chunks: "all",
