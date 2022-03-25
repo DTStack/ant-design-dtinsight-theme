@@ -12,7 +12,7 @@ title:
 
 ```jsx
 import { Layout, Menu, Icon, Dropdown } from 'antd';
-
+import { CaretDownOutlined } from '@ant-design/icons';
 const { Header, Content } = Layout;
 const SubMenu = Menu.SubMenu;
 
@@ -42,12 +42,12 @@ ReactDOM.render(
                 >
                     <SubMenu key='sub-menu-item' title={
                         <Dropdown overlay={menu} trigger={['click']} placement="bottomCenter" >
-                            <span style={{ display: 'inline-block', height: '61px' }}>
+                            <span style={{ display: 'inline-block', height: '61px' }} onClick={e => e.preventDefault()}>
                                 <span className="menu-text-ellipsis" title={'当前项目名称'} >
                                     {'当前项目名称'}
                                 </span>
                                 &nbsp;
-                                <Icon style={{ fontSize: '12px' }} type="caret-down" />
+                                <CaretDownOutlined style={{ fontSize: '12px' }} />
                             </span>
                         </Dropdown>
                     }>

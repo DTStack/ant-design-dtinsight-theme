@@ -13,6 +13,7 @@ title:
 ```jsx
 import { Layout, Menu, Icon, Dropdown } from 'antd';
 
+import { CaretDownOutlined, AppstoreOutlined, BookOutlined } from '@ant-design/icons';
 const { Header, Content, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
 
@@ -46,12 +47,12 @@ class SiderDemo extends React.Component {
                     >
                         <SubMenu key='sub-menu-item' title={
                             <Dropdown overlay={menu} trigger={['click']} placement="bottomCenter" >
-                                <span style={{ display: 'inline-block', height: '61px' }}>
+                                <span style={{ display: 'inline-block', height: '61px' }} onClick={e => e.preventDefault()}>
                                     <span className="dt-menu-text-ellipsis" title={'当前项目名称'} >
                                         {'当前项目名称'}
                                     </span>
                                     &nbsp;
-                                    <Icon style={{ fontSize: '12px' }} type="caret-down" />
+                                    <CaretDownOutlined style={{ fontSize: '12px' }} />
                                 </span>
                             </Dropdown>
                         }>
@@ -62,32 +63,30 @@ class SiderDemo extends React.Component {
                     </Menu>
                 </Header>
                 <Layout style={{ marginTop: 64 }}>
-                    <Sider className="dt-layout-sider" collapsed={collapsed}>
-                        <div className="dt-slider-top-icon" onClick={this.onCollapse}>
-                            <Icon type={collapsed ? 'menu-unfold' : 'menu-fold'} />
-                        </div>
+                    <Sider className="dt-layout-sider" collapsed={collapsed} onCollapse={this.onCollapse}>
+                        
                         <Menu
                             mode={mode}
                             defaultSelectedKeys={['1']}
                             defaultOpenKeys={['sub1']}
                         >
                             <Menu.Item key="1">
-                                <Icon type="appstore" />
+                                <AppstoreOutlined />
                                 <span>数据源管理</span>
                             </Menu.Item>
                             <Menu.Item key="2">
-                                <Icon type="appstore" />
+                                <AppstoreOutlined />
                                 <span>实体管理</span>
                             </Menu.Item>
                             <Menu.Item key="3">
-                                <Icon type="book" />
+                                <BookOutlined />
                                 <span>关系管理</span>
                             </Menu.Item>
                             <SubMenu
                                 key="4"
                                 title={
                                   <span>
-                                    <Icon type="book" />
+                                    <BookOutlined />
                                     <span>字典管理</span>
                                   </span>
                                 }

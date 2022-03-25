@@ -15,12 +15,32 @@
     .ant-menu-horizontal > .ant-menu-submenu {
         border-bottom: 3px solid #111426;
     }
+    .ant-menu-horizontal
+    {
+        .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-item-active {
+            &:after{
+                border: none;
+            }
+        }
+        .ant-menu-item{
+            &:hover{
+                &:after{
+                    border: none;
+                }
+            }
+        }
+    }
 }
 
 .dt-layout-sider {
     .ant-menu {
         &:not(.ant-menu-horizontal) .ant-menu-item-selected {
             border-left: 3px solid @primaryColor;
+        }
+        .ant-menu-horizontal .ant-menu-item-selected {
+            &:after{
+                border: none;
+            }
         }
     }
 }
