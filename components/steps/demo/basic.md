@@ -65,7 +65,7 @@ class FirstStepForm extends React.Component {
           {getFieldDecorator('password', {
             rules: [{ required: true, message: 'It is required!' }],
           })(
-            <Input type="password" placeholder="Password"/>
+            <Input.Password placeholder="Password"/>
           )}
         </Form.Item>
       </Form>
