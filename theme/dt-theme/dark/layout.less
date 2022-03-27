@@ -17,15 +17,21 @@
     }
     .ant-menu-horizontal
     {
-        .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-item-active {
+        .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-submenu-selected, .ant-menu-item-active, .ant-menu-submenu-open {
             &:after{
                 border: none;
+                transition: border-color 0s, background 0.3s;
             }
         }
-        .ant-menu-item{
+        .ant-menu-item, .ant-menu-submenu-title, .ant-menu-submenu {
+            transition: border-color 0s, background 0.3s;
+            &:after {
+                transition: border-color 0s, background 0.3s;
+            }
             &:hover{
                 &:after{
                     border: none;
+                    transition: border-color 0s, background 0.3s;
                 }
             }
         }

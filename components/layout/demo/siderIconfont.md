@@ -13,9 +13,9 @@ title:
 - 添加类名 `.dt-header-log-wrapper` 可设置 logo 以及标题样式
 
 ```jsx
-import { Layout, Menu, Icon, Dropdown } from 'antd';
+import { Layout, Menu, Dropdown } from 'antd';
 
-import { CaretDownOutlined } from '@ant-design/icons';
+import { CaretDownOutlined, EllipsisOutlined } from '@ant-design/icons';
 const { Header, Content, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
 class SiderDemo extends React.Component {
@@ -44,21 +44,24 @@ class SiderDemo extends React.Component {
                     </div>
                     <Menu
                         mode="horizontal"
-                        defaultSelectedKeys={['2']}
+                        defaultSelectedKeys={['2']} 
                     >
-                        <SubMenu key='sub-menu-item' title={
-                            <Dropdown overlay={menu} trigger={['click']} placement="bottomCenter" >
-                                <span style={{ display: 'inline-block', height: '61px' }} onClick={e => e.preventDefault()}>
-                                    <span className="dt-menu-text-ellipsis" title={'当前项目名称'} >
-                                        {'当前项目名称'}
+                        <Menu.Item key="sub-menu-item">
+                            <Dropdown overlay={menu} trigger="click" placement="bottomCenter">
+                                <span style={{ display: 'inline-block', height: '64px' }}>
+                                    <span
+                                        className="dt-menu-text-ellipsis"
+                                        title={"当前项目名称"}
+                                    >
+                                    当前项目名称
                                     </span>
-                                    &nbsp;
-                                    <CaretDownOutlined style={{ fontSize: '12px' }} />
+                                    <CaretDownOutlined
+                                        style={{ fontSize: "12px" }}
+                                    />
                                 </span>
                             </Dropdown>
-                        }>
-                        </SubMenu>
-                        <Menu.Item key="1"><a>数据源</a></Menu.Item>
+                        </Menu.Item>
+                        <Menu.Item key="1">数据源</Menu.Item>
                         <Menu.Item key="2">数据开发</Menu.Item>
                         <Menu.Item key="3">运维中心</Menu.Item>
                     </Menu>

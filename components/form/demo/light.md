@@ -14,7 +14,7 @@ title:
 - 为存在浮层的组件相关属性设置类名`dt-form-light-bg`
 
 ```jsx
-import { Form, Icon, Input, Button, Checkbox, InputNumber, Radio, Switch, Cascader, Select } from 'antd';
+import { Form, Input, Button, Checkbox, InputNumber, Radio, Switch, Cascader, Select } from 'antd';
 const { Option } = Select;
 const formItemLayout = {
   labelCol: {

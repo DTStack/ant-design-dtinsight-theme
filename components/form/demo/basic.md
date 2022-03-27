@@ -14,7 +14,7 @@ title:
 Basic usage example.
 
 ```jsx
-import { Form, Icon, Input, Button, Checkbox, InputNumber, Radio, Switch, Cascader, Select } from 'antd';
+import { Form, Input, Button, Checkbox, InputNumber, Radio, Switch, Cascader, Select } from 'antd';
 const { Option } = Select;
 const formItemLayout = {
   labelCol: {
