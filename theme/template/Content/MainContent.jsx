@@ -204,7 +204,6 @@ export default class MainContent extends Component {
     }
 
     generateMenuItem(isTop, item, {before = null, after = null}) {
-
         const {
             intl: {locale},
         } = this.context;
