@@ -42,17 +42,17 @@ class FirstStepForm extends React.Component {
   render () {
     return (
       <Form {...formItemLayout}>
-        <Form.Item label={'用户名'}>
+        <Form.Item label={'用户名'} name="username">
           <Input placeholder="Username" rules={[{ required: true, message: 'It is required!' }]}/>
         </Form.Item>
-        <Form.Item label={'角色'}>
+        <Form.Item label={'角色'} name="role">
           <Select placeholder="Please select" rules={[{ required: true, message: 'It is required!' }]}>
             <Option value="1">项目所有者</Option>
             <Option value="2">数据分析师</Option>
             <Option value="3">管理员</Option>
           </Select>
         </Form.Item>
-        <Form.Item label={'密码'}>
+        <Form.Item label={'密码'} name="password">
             <Input.Password placeholder="Password" rules={[{ required: true, message: 'It is required!' }]}/>
         </Form.Item>
       </Form>
@@ -64,10 +64,10 @@ class SecondStepForm extends React.Component {
   render () {
     return (
       <Form {...formItemLayout}>
-        <Form.Item label={'次数限制'}>
+        <Form.Item label={'次数限制'} name="count">
           <InputNumber min={1} style={{ width: '100%' }} max={10} rules={[{ required: false, message: 'It is required!' }]}/>
         </Form.Item>
-        <Form.Item label={'告警方式'}>
+        <Form.Item label={'告警方式'} name="way">
           <Checkbox.Group
           rules={[{ required: false, message: 'It is required!' }]} 
             options={[{ label: '邮件', value: '1' }, { label: '短信', value: '2' }]} />
@@ -81,14 +81,14 @@ class LastStepForm extends React.Component {
   render() {
     return (
       <Form {...formItemLayout}>
-        <Form.Item label={'存储类型'}>
+        <Form.Item label={'存储类型'} name="type">
           <Radio.Group rules={[{ required: false, message: 'It is required!' }]}>
             <Radio value={1}>orc</Radio>
             <Radio value={2}>text</Radio>
             <Radio value={3}>md</Radio>
           </Radio.Group>
         </Form.Item>
-        <Form.Item label={'开关'}>
+        <Form.Item label={'开关'} name="switch">
           <Switch rules={[{ required: false, message: 'It is required!' }]}/>
         </Form.Item>
       </Form>
