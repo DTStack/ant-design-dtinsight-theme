@@ -266,10 +266,10 @@ a {
 .demo-select-basic .ant-select {
   margin-right: 20px;
 }
-.demo-datepicker-box .ant-calendar-picker {
+.demo-datepicker-box .ant-picker {
   margin-bottom: 20px;
 }
-.demo-time-picker-box .ant-time-picker {
+.demo-time-picker-box .ant-picker {
   margin-right: 12px;
   margin-bottom: 20px;
 }
@@ -360,7 +360,7 @@ a {
   margin-top: -3px;
   width: 200px;
 }
-#search-box .ant-select-selection {
+#search-box .ant-select-selector {
   border: 0;
   box-shadow: none;
 }
@@ -377,16 +377,10 @@ a {
   border: 0;
   box-shadow: none;
 }
-#search-box input::-webkit-input-placeholder {
-  color: #a3b1bf;
-}
 #search-box input::-moz-placeholder {
   color: #a3b1bf;
 }
 #search-box input:-ms-input-placeholder {
-  color: #a3b1bf;
-}
-#search-box input::-ms-input-placeholder {
   color: #a3b1bf;
 }
 #search-box input::placeholder {
