@@ -45,7 +45,7 @@ export default class Header extends React.Component {
             inputValue: '',
         }, () => {
             router.push({ pathname: utils.getLocalizedPathname(`${value}/`, intl.locale === 'zh-CN') });
-            document.querySelector('#search-box .ant-select-search__field').blur();
+            document.querySelector('#search-box .ant-select-selection-search-input').blur();
         });
     }
 
