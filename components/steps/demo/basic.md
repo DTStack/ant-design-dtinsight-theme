@@ -21,7 +21,7 @@ Navigation steps.
 
 ```jsx
 import { Steps, Card, Button, Select, message, Form,
-  Icon, Input, Checkbox, InputNumber, Radio, Switch,
+  Input, Checkbox, InputNumber, Radio, Switch,
   Cascader } from 'antd';
 
 const { Step } = Steps;
@@ -40,33 +40,20 @@ const formItemLayout = {
 
 class FirstStepForm extends React.Component {
   render () {
-    const { getFieldDecorator } = this.props.form;
     return (
       <Form {...formItemLayout}>
-        <Form.Item label={'用户名'}>
-          {getFieldDecorator('username', {
-            rules: [{ required: true, message: 'It is required!' }],
-          })(
-            <Input placeholder="Username"/>
-          )}
+        <Form.Item label={'用户名'} name="username">
+          <Input placeholder="Username" rules={[{ required: true, message: 'It is required!' }]}/>
         </Form.Item>
-        <Form.Item label={'角色'}>
-          {getFieldDecorator('role', {
-            rules: [{ required: true, message: 'It is required!' }],
-          })(
-            <Select placeholder="Please select">
-              <Option value="1">项目所有者</Option>
-              <Option value="2">数据分析师</Option>
-              <Option value="3">管理员</Option>
-            </Select>
-          )}
+        <Form.Item label={'角色'} name="role">
+          <Select placeholder="Please select" rules={[{ required: true, message: 'It is required!' }]}>
+            <Option value="1">项目所有者</Option>
+            <Option value="2">数据分析师</Option>
+            <Option value="3">管理员</Option>
+          </Select>
         </Form.Item>
-        <Form.Item label={'密码'}>
-          {getFieldDecorator('password', {
-            rules: [{ required: true, message: 'It is required!' }],
-          })(
-            <Input.Password placeholder="Password"/>
-          )}
+        <Form.Item label={'密码'} name="password">
+            <Input.Password placeholder="Password" rules={[{ required: true, message: 'It is required!' }]}/>
         </Form.Item>
       </Form>
     )
@@ -75,22 +62,15 @@ class FirstStepForm extends React.Component {
 
 class SecondStepForm extends React.Component {
   render () {
-    const { getFieldDecorator } = this.props.form;
     return (
       <Form {...formItemLayout}>
-        <Form.Item label={'次数限制'}>
-          {getFieldDecorator('count', {
-            rules: [{ required: false, message: 'It is required!' }],
-          })(
-            <InputNumber min={1} style={{ width: '100%' }} max={10} />
-          )}
+        <Form.Item label={'次数限制'} name="count">
+          <InputNumber min={1} style={{ width: '100%' }} max={10} rules={[{ required: false, message: 'It is required!' }]}/>
         </Form.Item>
-        <Form.Item label={'告警方式'}>
-          {getFieldDecorator('way', {
-            rules: [{ required: false, message: 'It is required!' }],
-          })(
-            <Checkbox.Group options={[{ label: '邮件', value: '1' }, { label: '短信', value: '2' }]} />
-          )}
+        <Form.Item label={'告警方式'} name="way">
+          <Checkbox.Group
+          rules={[{ required: false, message: 'It is required!' }]} 
+            options={[{ label: '邮件', value: '1' }, { label: '短信', value: '2' }]} />
         </Form.Item>
       </Form>
     )
@@ -99,48 +79,35 @@ class SecondStepForm extends React.Component {
 
 class LastStepForm extends React.Component {
   render() {
-    const { getFieldDecorator } = this.props.form;
     return (
       <Form {...formItemLayout}>
-        <Form.Item label={'存储类型'}>
-          {getFieldDecorator('type', {
-            rules: [{ required: false, message: 'It is required!' }],
-          })(
-            <Radio.Group>
-              <Radio value={1}>orc</Radio>
-              <Radio value={2}>text</Radio>
-              <Radio value={3}>md</Radio>
-            </Radio.Group>
-          )}
+        <Form.Item label={'存储类型'} name="type">
+          <Radio.Group rules={[{ required: false, message: 'It is required!' }]}>
+            <Radio value={1}>orc</Radio>
+            <Radio value={2}>text</Radio>
+            <Radio value={3}>md</Radio>
+          </Radio.Group>
         </Form.Item>
-        <Form.Item label={'开关'}>
-          {getFieldDecorator('switch', {
-            rules: [{ required: false, message: 'It is required!' }],
-          })(
-            <Switch />
-          )}
+        <Form.Item label={'开关'} name="switch">
+          <Switch rules={[{ required: false, message: 'It is required!' }]}/>
         </Form.Item>
       </Form>
     );
   }
 }
 
-const FirstStep = Form.create()(FirstStepForm);
-const SecondStep = Form.create()(SecondStepForm);
-const LastStep = Form.create()(LastStepForm);
-
 const steps = [
   {
     title: 'First',
-    content: <FirstStep />,
+    content: <FirstStepForm />,
   },
   {
     title: 'Second',
-    content: <SecondStep />,
+    content: <SecondStepForm />,
   },
   {
     title: 'Last',
-    content: <LastStep />,
+    content: <LastStepForm />,
   },
 ];
 

@@ -13,14 +13,14 @@
 .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
     background: @deriveColor;
 }
-li.ant-time-picker-panel-select-option-selected {
+li.ant-picker-panel-select-option-selected {
     font-weight: normal;
     background: @deriveColor;
 }
-.ant-time-picker-panel-select li:focus {
+.ant-picker-panel-select li:focus {
     font-weight: normal;
 }
-li.ant-time-picker-panel-select-option-selected:hover {
+li.ant-picker-panel-select-option-selected:hover {
     background: @deriveColor;
 }
 .ant-radio-button-wrapper {
@@ -30,7 +30,7 @@ li.ant-time-picker-panel-select-option-selected:hover {
 
 // 灰色背景 表单样式设置 对应表单控件添加样式名dt-form-shadow-bg
 .dt-form-shadow-bg {
-    &.ant-input, &.ant-input-number, .ant-input, .ant-select-selection, .ant-time-picker-input {
+    &.ant-input, &.ant-input-number, .ant-input, .ant-select-selection, .ant-picker-input {
         border: 1px solid transparent;
         box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
         &:hover, &:focus {
@@ -59,18 +59,18 @@ li.ant-time-picker-panel-select-option-selected:hover {
         border-color: transparent;
         box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
     }
-    .ant-time-picker-input[disabled]:hover {
+    .ant-picker-input[disabled]:hover {
         border-color: transparent;
     }
 }
 .has-error {
     .dt-form-shadow-bg {
-        &.ant-input, .ant-input, &.ant-input-number, .ant-select-selection, .ant-time-picker-input {
+        &.ant-input, .ant-input, &.ant-input-number, .ant-select-selection, .ant-picker-input {
             &:hover, &:focus {
                 border-color: @red;
             }
         }
-        &.ant-input, &.ant-input-number, &.ant-time-picker-input, .ant-select-selection, .ant-input {
+        &.ant-input, &.ant-input-number, &.ant-picker-input, .ant-select-selection, .ant-input {
             border-color: @red;
         }
         &.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
@@ -100,10 +100,10 @@ li.ant-time-picker-panel-select-option-selected:hover {
 // form 图标颜色
 .ant-select-arrow,
 .ant-calendar-picker-icon,
-.ant-time-picker-icon .ant-time-picker-clock-icon,
-.ant-time-picker-clear .ant-time-picker-clock-icon,
-.ant-time-picker-icon,
-.ant-time-picker-clear {
+.ant-picker-icon .ant-picker-clock-icon,
+.ant-picker-clear .ant-picker-clock-icon,
+.ant-picker-icon,
+.ant-picker-clear {
     color: #999999;
 }
 
@@ -111,6 +111,6 @@ li.ant-time-picker-panel-select-option-selected:hover {
 .ant-cascader-menus,
 .ant-calendar,
 .ant-select-dropdown,
-.ant-time-picker-panel-inner {
+.ant-picker-panel-inner {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
