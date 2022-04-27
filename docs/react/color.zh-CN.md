@@ -24,14 +24,14 @@ title: 颜色规范
 
 | 颜色 |scss 变量名称  |色值  |说明  |
 |---------|---------|---------|---------|
-| <input style="background: #3D446E;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $navy1             |  #3D446E      |  用于标题，主文字颜色       |
-| <input style="background: #64698B;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $navy2             |  #64698B      |  用于表单标题备注说明文字颜色     |
-| <input style="background: #8B8FA8;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $navy3             |  #8B8FA8      |  用于分页器提示文字颜色     |
-| <input style="background: #B1B4C5;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $navy4             |  #B1B4C5      |  用于文本框内的提示文字颜色 |
-| <input style="background: #D8DAE2;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $navy5             |  #D8DAE2      |  用于表单边框颜色，图表线条颜色 |
-| <input style="background: #EBECF0;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $navy6             |  #EBECF0      |  用于分割线、失效按钮状态颜色 |
-| <input style="background: #F5F5F8;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $navy7             |  #F5F5F8      |  用于模块标题背景色 |
-| <input style="background: #F9F9FA;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $navy8             |  #F9F9FA      |  用于二级导航底色 |
+| <input style="background: #3D446E;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_title             |  #3D446E      |  用于标题，主文字颜色       |
+| <input style="background: #64698B;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_Desc             |  #64698B      |  用于表单标题备注说明文字颜色     |
+| <input style="background: #8B8FA8;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_pageMsg             |  #8B8FA8      |  用于分页器提示文字颜色     |
+| <input style="background: #B1B4C5;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_msg             |  #B1B4C5      |  用于文本框内的提示文字颜色 |
+| <input style="background: #D8DAE2;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_border             |  #D8DAE2      |  用于表单边框颜色，图表线条颜色 |
+| <input style="background: #EBECF0;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_readonly             |  #EBECF0      |  用于分割线、失效按钮状态颜色 |
+| <input style="background: #F5F5F8;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_titleBg             |  #F5F5F8      |  用于模块标题背景色 |
+| <input style="background: #F9F9FA;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_navBg             |  #F9F9FA      |  用于二级导航底色 |
 | <input style="background: #FFFFFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $White             |  #FFFFFF      |  一级按钮文字颜色 |
 
 ## 03.Functional Color 功能色
