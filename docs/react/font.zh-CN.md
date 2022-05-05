@@ -9,7 +9,7 @@ title: 字体规范
 
 | 系统 |中文  |英文   |
 |---------|---------|---------|
-|  Windows 系统      |  微软雅黑(Microsoft YaHei)       |  Arial  |
+|  Windows 系统      |  微软雅黑(Microsoft YaHei)        |  Arial           |
 |  MacOS/iOS 系统    |   苹方(PingFang SC)              |  Helvetica       |
 
 ## Font-style 字体样式
@@ -21,7 +21,7 @@ title: 字体规范
 |  16px              |   24px                          |  应用于顶部导航字体和部分需要强调的标题      |
 |  20px              |   28px                          |  较少使用，应用于部分大标题      |
 
-## Color and weight 颜色和自重
+## Color and weight 字重
 
 字重分为 PingFangSC-Regular 与 PingFangSC-Medium 两种。
 

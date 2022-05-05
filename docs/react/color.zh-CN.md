@@ -7,8 +7,8 @@ title: 颜色规范
 
 | 颜色 | scss 变量名称  |色值  |说明  |
 |---------|---------|---------|---------|
-| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $primaryColor      |  #1D78FF      |  用于主按钮底色，描边按钮，可操作项，tab 选中状态的底部线条，运行中的状态以及文字图标颜色    |
-| <input style="background: #0A67F2;width: 80px; height: 26px;border: 1px solid #fff;" />    |  $hoverColor         |   #0A67F2     |  Hover, 用于主按钮底色，描边按钮，可操作项，tab 选中状态的 hover 状态填充色      |
+| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $primaryColor      |  #1D78FF      | 用于主按钮底色，描边按钮，可操作项，tab 选中状态的底部线条，运行中的状态以及文字图标颜色    |
+| <input style="background: #0A67F2;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $hoverColor        |   #0A67F2     | Hover, 用于主按钮底色，描边按钮，可操作项，tab 选中状态的 hover 状态填充色      |
 | <input style="background: #2672F0;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $clickColor        |   #005CE6     | Click, 用于主按钮底色，描边按钮，可操作项，tab 选中状态的点击状态填充色 |
 | <input style="background: #BBD6FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $disabledColor     |   #BBD6FF     | Disable, 用于主按钮底色，描边按钮，可操作项的不可用状态填充色 |
 | <input style="background: #E8F1FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bg1Color          |   #E8F1FF     | Bg1, 用于小模块切换背景，提示背景 |
