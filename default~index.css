@@ -28518,6 +28518,9 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-tabs-large > .ant-tabs-nav .ant-tabs-tab {
   padding: 16px;
 }
+.ant-select .ant-select-selector {
+  border-radius: 4px !important;
+}
 * {
   margin: 0;
   padding: 0;
