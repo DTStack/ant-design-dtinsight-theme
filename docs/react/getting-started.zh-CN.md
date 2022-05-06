@@ -10,7 +10,7 @@ title: 开发前必读
 - 查看组件预览及其相关代码实现
 - 自定义样式使用及预览
 
-## 如何在数栈应用中使用
+## 快速上手
 
 ##### 0、 准备
 
@@ -72,7 +72,7 @@ import 'ant-design-dtinsight-theme/theme/dt-theme/dark/index.less';
 - 去掉 css-loader 中关于 antd theme 的相关配置
 - 去掉 babel.config 中 antd 样式的按需引入配置
 
-## 可用样式变量
+## 样式变量
 
 使用方式：在 scss 文件中导入此项目中的 const.scss 文件
 
@@ -196,3 +196,6 @@ $color16_dark: #E86651;
 // 项目中常用
 $minWidth: 1260px;
 ```
+
+## 贡献
+目前该项目还在初期阶段，如有更好地意见欢迎提 [Issue](https://github.com/DTStack/ant-design-dtinsight-theme/issues/new) 或 [Pull Request](https://github.com/DTStack/ant-design-dtinsight-theme/pulls)
