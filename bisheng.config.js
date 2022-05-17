@@ -26,7 +26,7 @@ module.exports = {
     },
     baseConfig: {
         projectName: 'DTInsight-Theme',
-        homeUrl: '/docs/react/introduce'
+        homeUrl: '/docs/react/introduce-cn'
     },
     webpackConfig: function (config) {
         config.module.rules.push({

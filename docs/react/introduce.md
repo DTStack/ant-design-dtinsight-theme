@@ -3,11 +3,11 @@ order: 0
 title: DTInsight-Theme
 ---
 
+<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/banner.png" style="width: 100%;box-shadow:none" />
+
 <p style="font-size:20px">介绍 <span style="color:#8B8FA8;font-size: 12px;margin-left:13px">基于数栈 UI 5.0 的升级，逐步沉淀出的产品设计系统</span></p>
 
 <p style="color: #3D446E">袋鼠云旗下的数栈 DTinsight 是集云原生、批流一体、湖仓一体、解耦灵活组合的特点于一身的一站式数据中台 PaaS，由于功能更新频繁，在不断更迭的过程中往往需要产品经理、开发者和设计者高效合作并做出快速响应。各个子产品中存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。在经过几个大版本的迭代中，我们沉淀出不同种类的区块级别的组件，并且在此次升级 UI 5.0 的过程中把数栈 DTinsight 的特点贯穿到我们的产品界面以及交互体验上，逐步输出一套数栈 DTinsight 独有的产品设计系统。</p>
-
-<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/banner.png" style="width: 100%" />
 
 
 <p style="font-size:20px">设计价值观 <span style="color:#8B8FA8;font-size: 12px;margin-left:13px">DTinsight - Theme 5.0 设计系统的风格关键词</span></p>
@@ -52,7 +52,7 @@ title: DTInsight-Theme
 </p>
 
 <div>
-<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/清晰明了.png" style="width: 850px; height: 468px;margin: 0 auto;display:block" />
+<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/清晰明了.png" style="width: 849px; height: 468px;margin: 0 auto;display:block" />
 </div>
 
 <p style="color:3D446E;font-size:17px"><img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/item.svg" style="height:28px;width:28px;margin-right: 7px;box-shadow:none" />高效操作</p>
@@ -62,7 +62,7 @@ title: DTInsight-Theme
 </p>
 
 <div>
-<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/高效操作.png" style="width: 850px; height: 394px;margin: 0 auto;display:block" />
+<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/高效操作.png" style="width: 849px; height: 394px;margin: 0 auto;display:block" />
 </div>
 
 <p style="color:3D446E;font-size:17px"><img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/item.svg" style="height:28px;width:28px;margin-right: 7px;box-shadow:none" />一致性</p>
@@ -72,7 +72,7 @@ title: DTInsight-Theme
 </p>
 
 <div>
-<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/一致性.png" style="width: 850px; height: 257px;margin: 0 auto;display:block" />
+<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/一致性.png" style="width: 849px; height: 257px;margin: 0 auto;display:block" />
 </div>
 
 <p style="color:3D446E;font-size:17px"><img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/item.svg" style="height:28px;width:28px;margin-right: 7px;box-shadow:none" />容错机制</p>
@@ -82,7 +82,7 @@ title: DTInsight-Theme
 </p>
 
 <div>
-<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/容错机制.png" style="width: 850px; height: 376px;margin: 0 auto;display:block" />
+<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/容错机制.png" style="width: 849px; height: 376px;margin: 0 auto;display:block" />
 </div>
 
 <p style="color:3D446E;font-size:17px"><img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/item.svg" style="height:28px;width:28px;margin-right: 7px;box-shadow:none" />灵活易用</p>
@@ -93,7 +93,7 @@ title: DTInsight-Theme
 
 
 <div>
-<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/灵活易用.png" style="width: 850px; height: 386px;margin: 0 auto;display:block" />
+<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/灵活易用.png" style="width: 849px; height: 386px;margin: 0 auto;display:block" />
 </div>
 
 <p style="color:3D446E;font-size:17px"><img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/item.svg" style="height:28px;width:28px;margin-right: 7px;box-shadow:none" />信噪比</p>
@@ -103,7 +103,7 @@ title: DTInsight-Theme
 </p>
 
 <div>
-    <img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/信噪比.png" style="width: 850px; height: 313px;margin: 0 auto;display:block" />
+    <img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/信噪比.png" style="width: 849px; height: 313px;margin: 0 auto;display:block" />
 </div>
 
 <p style="color:3D446E;font-size:17px"><img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/item.svg" style="height:28px;width:28px;margin-right: 7px;box-shadow:none" />业务优先</p>
@@ -114,5 +114,5 @@ title: DTInsight-Theme
 
 
 <div>
-<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/业务优先.png" style="width: 850px; height: 333px;margin: 0 auto;display:block" />
+<img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/业务优先.png" style="width: 849px; height: 333px;margin: 0 auto;display:block" />
 </div>
