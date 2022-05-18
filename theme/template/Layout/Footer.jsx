@@ -1,6 +1,6 @@
 import React from 'react';
 import {FormattedMessage, injectIntl} from 'react-intl';
-import {Modal, message, Row, Col, Icon} from 'antd';
+import { Modal, message, Row, Col } from 'antd';
 import {Link} from 'bisheng/router';
 import config from '../../../bisheng.config'
 

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { addLocaleData, IntlProvider } from 'react-intl';
-import 'moment/locale/zh-cn';
+import 'dayjs/locale/zh-cn';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import Header from './Header';
@@ -16,7 +16,7 @@ import '../../static/iconfont/iconfont.css';
 
 import '../../dt-theme/dt-common/index.less';
 import '../../dt-theme/default/index.less';
-import '../../dt-theme/dark/index.less';
+// import '../../dt-theme/dark/index.less';
 
 if (typeof window !== 'undefined' && navigator.serviceWorker) {
     navigator.serviceWorker.getRegistrations().then(registrations => {
@@ -66,6 +66,10 @@ export default class Layout extends React.Component {
             isMobile,
             theme: 'default'
         };
+        console.log(
+            '%c欢迎使用 ant-design-dtinsight-theme\n使用过程中如有问题欢迎联系 jingyu@dtstack.com ',
+            'color:#2517b1'
+        );
     }
 
     getChildContext() {

@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { Link } from 'bisheng/router';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import { Select, Row, Col, Radio } from 'antd';
+import { AutoComplete, Row, Col, Radio } from 'antd';
 import config from '../../../bisheng.config';
 import * as utils from '../utils';
 
-const Option = Select.Option;
+const Option = AutoComplete.Option;
 const searchEngine = 'Google';
 const searchLink = 'https://www.google.com/#q=site:ant.design+';
 
@@ -45,7 +45,7 @@ export default class Header extends React.Component {
             inputValue: '',
         }, () => {
             router.push({ pathname: utils.getLocalizedPathname(`${value}/`, intl.locale === 'zh-CN') });
-            document.querySelector('#search-box .ant-select-search__field').blur();
+            document.querySelector('#search-box .ant-select-selection-search-input').blur();
         });
     }
 
@@ -110,8 +110,7 @@ export default class Header extends React.Component {
                     </Col>
                     <Col lg={10} md={10} sm={24} xs={24}>
                         <div id="search-box" style={isDark ? { borderLeftColor: '#272A40' } : {}}>
-                            <Select
-                                mode="combobox"
+                            <AutoComplete
                                 value={inputValue}
                                 dropdownClassName="component-select"
                                 placeholder={searchPlaceholder}
@@ -125,7 +124,7 @@ export default class Header extends React.Component {
                                     <FormattedMessage id="app.header.search" />
                                 </Option>
                                 {options}
-                            </Select>
+                            </AutoComplete>
                         </div>
                         {menuMode === 'horizontal' ? menu : null}
                     </Col>

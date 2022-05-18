@@ -1,10 +1,11 @@
 const path = require('path');
-
 module.exports = {
+    target: 'node',
     source: {
         components: './components',
         docs: './docs',
     },
+    root: '/ant-design-dtinsight-theme/',
     output: './dist',
     theme: './theme',
     htmlTemplate: path.join(__dirname, './theme/static/template.html'),
@@ -59,6 +60,7 @@ module.exports = {
                 }
             }
         };
+        delete config.module.noParse;
         return config;
     }
 };

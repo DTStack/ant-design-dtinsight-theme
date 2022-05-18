@@ -9,8 +9,8 @@ title:
 定义了两种尺寸（默认、小），高度分别为 32px 和 28px。
 
 ```jsx
-import { DatePicker, Radio } from 'antd';
-
+import { Radio } from 'antd';
+import { DatePicker } from '../../index';
 const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 
 class PickerSizesDemo extends React.Component {

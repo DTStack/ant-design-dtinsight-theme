@@ -13,8 +13,8 @@ title:
 - 为组件添加类名`dt-form-shadow-bg`
 
 ```jsx
-import { TimePicker } from 'antd';
-import moment from 'moment';
+import { TimePicker } from '../../index';
+import moment from 'dayjs';
 
 const dateFormat = 'YYYY-MM-DD';
 ReactDOM.render(

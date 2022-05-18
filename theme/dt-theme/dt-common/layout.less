@@ -70,7 +70,7 @@
         .menu-item {
             display: block;
             line-height: 0;
-            color: #fff;
+            color: @white;
             cursor: pointer;
             padding: 0px 10px;
         }
@@ -88,13 +88,13 @@
             margin-right: 7px;
             margin-left: 10px;
             line-height: 30px;
-            background: #fff;
+            background: @white;
             top: -18px;
             color: #e5e5e5;
         }
 
         .user-info {
-            color: #fff;
+            color: @white;
             cursor: pointer;
         }
 
@@ -109,7 +109,7 @@
         .ant-menu-submenu {
             line-height: 50px;
             height: 50px;
-            color: #ffffff;
+            color: @white;
             text-align: center;
 
             .ant-menu-submenu-title {
@@ -124,6 +124,27 @@
         /* dropdown的上下冗余 */
         .ant-dropdown .ant-dropdown-menu{
             padding: 8px 0;
+        }
+    }
+    .ant-menu-horizontal
+    {
+        .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-submenu-selected, .ant-menu-item-active, .ant-menu-submenu-open {
+            &:after{
+                border: none;
+                transition: border-color 0s, background 0.3s;
+            }
+        }
+        .ant-menu-item, .ant-menu-submenu-title, .ant-menu-submenu{
+            transition: border-color 0s, background 0.3s;
+            &:hover{
+                &:after{
+                    border: none;
+                    transition: border-color 0s, background 0.3s;
+                }
+            }
+            &:after {
+                transition: border-color 0s, background 0.3s;
+            }
         }
     }
 }
@@ -149,7 +170,7 @@
         a {
             color: #ABB2C2;
             &:hover {
-                color: #FFFFFF;
+                color: @white;
             }
         }
         .ant-menu-item, .ant-menu-item > a {
@@ -166,6 +187,12 @@
             color: #EDF4FF;
             a, a:hover {
                 color: #EDF4FF;
+            }
+        }
+
+        .ant-menu-horizontal .ant-menu-item-selected {
+            &:after{
+                border: none;
             }
         }
         .ant-menu-submenu-selected {
@@ -212,7 +239,7 @@
         a {
             color: #ABB2C2;
             &:hover {
-                color: #FFFFFF;
+                color: @white;
             }
         }
         &:not(.ant-menu-horizontal) .ant-menu-item-selected {
@@ -283,7 +310,7 @@
 .dt-slider-top-icon {
     line-height: 40px;
     cursor: pointer;
-    color: #fff;
+    color: @white;
     text-align: center;
     font-size: 14px;
 }
@@ -307,7 +334,7 @@
     .c-header__title, & > span {
         text-decoration: none;
         font-size: 24px;
-        color: #fff;
+        color: @white;
         padding-left: 8px;
     }
 }
@@ -315,7 +342,7 @@
 // dt-common layout.scss
 .box-1, .box-2, .box-3, .box-4, .box-5 {
     box-shadow: 0 0 6px 0 rgba(0,0,0,0.10);
-    background: #FFFFFF;
+    background: @white;
     position: relative;
 }
 

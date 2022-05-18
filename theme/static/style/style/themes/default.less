@@ -38,9 +38,9 @@
 // ---
 
 // Background color for `<body>`
-@body-background: #fff;
+@body-background: @white;
 // Base background color for most components
-@component-background: #fff;
+@component-background: @white;
 @font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
   'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -129,7 +129,7 @@
 // Disabled states
 @disabled-color: fade(#000, 25%);
 @disabled-bg: @background-color-base;
-@disabled-color-dark: fade(#fff, 35%);
+@disabled-color-dark: fade(@white, 35%);
 
 // Shadow
 @shadow-color: rgba(0, 0, 0, 0.15);
@@ -151,11 +151,11 @@
 @btn-primary-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 @btn-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
 
-@btn-primary-color: #fff;
+@btn-primary-color: @white;
 @btn-primary-bg: @primary-color;
 
 @btn-default-color: @text-color;
-@btn-default-bg: #fff;
+@btn-default-bg: @white;
 @btn-default-border: @border-color-base;
 
 @btn-danger-color: @error-color;
@@ -185,7 +185,7 @@
 // Checkbox
 @checkbox-size: 16px;
 @checkbox-color: @primary-color;
-@checkbox-check-color: #fff;
+@checkbox-check-color: @white;
 @checkbox-border-width: @border-width-base;
 
 // Empty
@@ -248,12 +248,12 @@
 @layout-sider-background: @layout-header-background;
 @layout-trigger-height: 48px;
 @layout-trigger-background: #002140;
-@layout-trigger-color: #fff;
+@layout-trigger-color: @white;
 @layout-zero-trigger-width: 36px;
 @layout-zero-trigger-height: 42px;
 // Layout light theme
-@layout-sider-background-light: #fff;
-@layout-trigger-background-light: #fff;
+@layout-sider-background-light: @white;
+@layout-trigger-background-light: @white;
 @layout-trigger-color-light: @text-color;
 
 // z-index list, order by `z-index`
@@ -303,7 +303,7 @@
 @input-placeholder-color: hsv(0, 0, 75%);
 @input-color: @text-color;
 @input-border-color: @border-color-base;
-@input-bg: #fff;
+@input-bg: @white;
 @input-number-handler-active-bg: #f4f4f4;
 @input-addon-bg: @background-color-light;
 @input-hover-border-color: @primary-color;
@@ -320,7 +320,7 @@
 // Tooltip max width
 @tooltip-max-width: 250px;
 // Tooltip text color
-@tooltip-color: #fff;
+@tooltip-color: @white;
 // Tooltip background color
 @tooltip-bg: rgba(0, 0, 0, 0.75);
 // Tooltip arrow width
@@ -333,7 +333,7 @@
 // Popover
 // ---
 // Popover body background color
-@popover-bg: #fff;
+@popover-bg: @white;
 // Popover text color
 @popover-color: @text-color;
 // Popover maximum width
@@ -376,9 +376,9 @@
 // dark theme
 @menu-dark-color: @text-color-secondary-dark;
 @menu-dark-bg: @layout-header-background;
-@menu-dark-arrow-color: #fff;
+@menu-dark-arrow-color: @white;
 @menu-dark-submenu-bg: #000c17;
-@menu-dark-highlight-color: #fff;
+@menu-dark-highlight-color: @white;
 @menu-dark-item-active-bg: @primary-color;
 
 // Spin
@@ -477,7 +477,7 @@
 
 // BackTop
 // ---
-@back-top-color: #fff;
+@back-top-color: @white;
 @back-top-bg: @text-color-secondary;
 @back-top-hover-bg: @text-color;
 
@@ -490,7 +490,7 @@
 @avatar-font-size-lg: 24px;
 @avatar-font-size-sm: 14px;
 @avatar-bg: #ccc;
-@avatar-color: #fff;
+@avatar-color: @white;
 @avatar-border-radius: @border-radius-base;
 
 // Switch
@@ -547,7 +547,7 @@
 // ---
 @tree-title-height: 24px;
 @tree-child-padding: 18px;
-@tree-directory-selected-color: #fff;
+@tree-directory-selected-color: @white;
 @tree-directory-selected-bg: @primary-color;
 
 // Collapse

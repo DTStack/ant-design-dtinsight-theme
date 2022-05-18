@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import DocumentTitle from 'react-document-title';
 import {FormattedMessage} from 'react-intl';
 import classNames from 'classnames';
-import {Row, Col, Icon, Affix, Tooltip} from 'antd';
+import { Icon as LegacyIcon } from '@ant-design/compatible';
+import { Row, Col, Affix, Tooltip } from 'antd';
 import {getChildren} from 'jsonml.js/lib/utils';
 import Demo from './Demo';
 import config from '../../../bisheng.config';
@@ -137,7 +138,7 @@ export default class ComponentDoc extends React.Component {
                                     />
                                 }
                             >
-                                <Icon
+                                <LegacyIcon
                                     type={`${expandAll ? 'appstore' : 'appstore-o'}`}
                                     className={expandTriggerClass}
                                     onClick={this.handleExpandToggle}

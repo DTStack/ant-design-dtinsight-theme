@@ -14,8 +14,8 @@ title:
 - 设置组件的属性 `dropdownClassName` 为`dt-form-light-bg`
 
 ```jsx
-import { DatePicker } from 'antd';
-import moment from 'moment';
+import { DatePicker } from '../../index';
+import moment from 'dayjs';
 
 const { MonthPicker, RangePicker } = DatePicker;
 

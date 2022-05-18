@@ -9,7 +9,7 @@ title:
 最简单的用法，在浮层中可以选择或者输入日期。
 
 ```jsx
-import { DatePicker } from 'antd';
+import { DatePicker } from '../../index';
 
 const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 

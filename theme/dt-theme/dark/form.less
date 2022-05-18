@@ -55,7 +55,7 @@
     background-color: @primaryColor;
 }
 .ant-switch-loading-icon, .ant-switch::after {
-    background-color: #ffffff;
+    background-color: @white;
 }
 // cascader
 .ant-cascader-menu-item {
@@ -83,7 +83,7 @@
     padding: 0 12px;
 }
 // timePicker
-.ant-time-picker-panel-input {
+.ant-picker-panel-input {
     background-color: transparent;
 }
 
@@ -92,7 +92,7 @@
     // input
     .ant-input,&.ant-input,
     .ant-select-selection, &.ant-select-selection,
-    .ant-time-picker-input, &.ant-time-picker-input,
+    .ant-picker-input, &.ant-picker-input,
     .ant-input-number, &.ant-input-number,
     .ant-cascader-picker, &.ant-cascader-picker {
         border-color: @blue3;
@@ -146,7 +146,7 @@
         background: @blue1;
     }
     // timerPicker
-    .ant-time-picker-panel-inner {
+    .ant-picker-panel-inner {
         background-color: @blue1;
     }
     // cascader
@@ -159,7 +159,7 @@
         }
     }
     .has-error {
-        .ant-input, .ant-select-selection, .ant-input-number, .ant-time-picker-input, .ant-cascader-picker {
+        .ant-input, .ant-select-selection, .ant-input-number, .ant-picker-input, .ant-cascader-picker {
             border-color: #E25F5D;
             background-color: #11111C;
         }
@@ -167,7 +167,7 @@
 }
 .has-error {
     .dt-form-light-bg {
-        &.ant-input, .ant-select-selection, .ant-input-numbe, .ant-time-picker-input, .ant-cascader-picker {
+        &.ant-input, .ant-select-selection, .ant-input-numbe, .ant-picker-input, .ant-cascader-picker {
             border-color: #E25F5D;
             background-color: #11111C;
         }
