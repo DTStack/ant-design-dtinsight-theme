@@ -1,5 +1,15 @@
 @import '../const.less';
-
+.ant-form-item{
+    margin-bottom: @font16;
+}
+.ant-form-item-label > label {
+    &::after{
+        margin: 0 12px 0 2px;
+    }
+}
+.ant-form-item-label > label .ant-form-item-tooltip {
+    color: #B1B4C5;
+}
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon {
     color: @green;
