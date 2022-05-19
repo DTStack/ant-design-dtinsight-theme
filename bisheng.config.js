@@ -11,7 +11,7 @@ module.exports = {
     htmlTemplate: path.join(__dirname, './theme/static/template.html'),
     themeConfig: {
         categoryOrder: {
-            设计规范: 0,
+            介绍: 0,
             开发前必读: 1,
             theme项目开发指南: 2,
             颜色规范: 3,

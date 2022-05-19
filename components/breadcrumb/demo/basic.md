@@ -12,7 +12,7 @@ title:
 import { Breadcrumb } from 'antd';
 
 ReactDOM.render(
-  <Breadcrumb>
+  <Breadcrumb separator=">">
     <Breadcrumb.Item>
       <a href="">Home</a>
     </Breadcrumb.Item>
