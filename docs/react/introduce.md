@@ -3,14 +3,14 @@ order: 0
 title: 介绍
 ---
 
-<p style="color: #3D446E">袋鼠云旗下的数栈 DTinsight 是集云原生、批流一体、湖仓一体、解耦灵活组合的特点于一身的一站式数据中台 PaaS，由于功能更新频繁，在不断更迭的过程中往往需要产品经理、开发者和设计者高效合作并做出快速响应。各个子产品中存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。在经过几个大版本的迭代中，我们沉淀出不同种类的区块级别的组件，并且在此次升级 UI 5.0 的过程中把数栈 DTinsight 的特点贯穿到我们的产品界面以及交互体验上，逐步输出一套数栈 DTinsight 独有的产品设计系统。</p>
+<p style="color: #3D446E">袋鼠云旗下的数栈 DTinsight 是集云原生、批流一体、湖仓一体、解耦灵活组合的特点于一身的一站式数据中台 PaaS，由于功能更新频繁，在不断更迭的过程中往往需要产品经理、开发者和设计者高效合作并做出快速响应。各个子产品中存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。在经过几个大版本的迭代中，我们沉淀出不同种类的区块级别的组件，并且在此次升级数栈 UI 5.0 的过程中把数栈 DTinsight 的特点贯穿到我们的产品界面以及交互体验上，逐步输出一套数栈 DTinsight 独有的产品设计系统。</p>
 
 <img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/banner.png" style="width: 100%;box-shadow:none" />
 
 ### 设计价值观
 
 <p style="color: #3D446E">
-    DTinsight - Theme 5.0 基于「严谨理性」、「简约克制」、「节奏韵律」、「数字科技」的设计价值观，为解决各类设计问题为导向，打造全新数栈设计系统
+    DTinsight - Theme 2.0 基于「严谨理性」、「简约克制」、「节奏韵律」、「数字科技」的设计价值观，为解决各类设计问题为导向，打造全新数栈设计系统
 </p>
 
 <div style="display:flex;justify-content:space-between;margin-top:40px">
@@ -39,7 +39,7 @@ title: 介绍
 ### 设计原则
 
 <p style="color: #3D446E">
-    DTinsight - Theme 5.0 设计系统坚持「清晰明了」、「高效操作」、「一致性」、「容错机制」、「灵活易用」、「信噪比」、「业务优先」的设计原则
+    DTinsight - Theme 2.0 设计系统坚持「清晰明了」、「高效操作」、「一致性」、「容错机制」、「灵活易用」、「信噪比」、「业务优先」的设计原则
 </p>
 
 <p style="color:3D446E;font-size:17px;margin-bottom: 11px;margin-top:48px"><img src="https://raw.githubusercontent.com/DTStack/ant-design-dtinsight-theme/master/theme/static/img/item.svg" style="height:28px;width:28px;margin:0px 0px;margin-right: 7px;box-shadow:none" />清晰明了</p>
