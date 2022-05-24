@@ -26,3 +26,7 @@ yarn add ant-design-dtinsight-theme
 ## 变更记录
 
 [更新日志](https://github.com/DTStack/ant-design-dtinsight-theme/blob/master/docs/react/change-log.zh-CN.md)
+
+## 贡献
+
+目前该项目还在初期阶段，如有更好地意见欢迎提 [Issue](https://github.com/DTStack/ant-design-dtinsight-theme/issues/new) 或 [Pull Request](https://github.com/DTStack/ant-design-dtinsight-theme/pulls)

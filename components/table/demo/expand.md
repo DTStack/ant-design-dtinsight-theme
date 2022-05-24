@@ -24,7 +24,7 @@ const menu = (
 class App extends React.Component {
   state = { isShowData: false };
 
-  expandedRowRender = () => {
+expandedRowRender = () => {
     const columns = [
       { title: 'Date', dataIndex: 'date', key: 'date' },
       { title: 'Name', dataIndex: 'name', key: 'name' },
@@ -78,6 +78,7 @@ class App extends React.Component {
   }
 
   handleChangeShowData = (checked) => {
+    
     this.setState({
       isShowData: checked
     })
@@ -122,7 +123,7 @@ class App extends React.Component {
         style={{ height: 'calc(100vh - 600px)' }}
         scroll={{ y: true, x: 1300 }}
         columns={columns}
-        expandedRowRender={this.expandedRowRender}
+        expandable={{expandedRowRender: () => this.expandedRowRender }}
         dataSource={this.getData()}
         pagination={false}
         footer={() => {

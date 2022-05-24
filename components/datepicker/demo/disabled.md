@@ -9,8 +9,8 @@ title:
 选择框的不可用状态。
 
 ```jsx
-import { DatePicker } from 'antd';
-import moment from 'moment';
+import { DatePicker } from '../../index';
+import moment from 'dayjs';
 
 const { MonthPicker, RangePicker } = DatePicker;
 

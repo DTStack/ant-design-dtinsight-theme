@@ -14,7 +14,8 @@ title:
 Tree with connected line between nodes, turn on by `showLine`, customize the preseted icon by `switcherIcon`.
 
 ```tsx
-import { Tree, Icon, Switch } from 'antd';
+import { Tree, Switch } from 'antd';
+import { CarryOutOutlined, FormOutlined } from '@ant-design/icons';
 
 const { TreeNode } = Tree;
 
@@ -47,20 +48,20 @@ class Demo extends React.Component {
           showIcon={showIcon}
           defaultExpandedKeys={['0-0-0', '0-0-1', '0-0-2']}
         >
-          <TreeNode icon={<Icon type="carry-out" />} title="parent 1" key="0-0">
-            <TreeNode icon={<Icon type="carry-out" />} title="parent 1-0" key="0-0-0">
-              <TreeNode icon={<Icon type="carry-out" />} title="leaf" key="0-0-0-0" />
-              <TreeNode icon={<Icon type="carry-out" />} title="leaf" key="0-0-0-1" />
-              <TreeNode icon={<Icon type="carry-out" />} title="leaf" key="0-0-0-2" />
+          <TreeNode icon={<CarryOutOutlined />} title="parent 1" key="0-0">
+            <TreeNode icon={<CarryOutOutlined />} title="parent 1-0" key="0-0-0">
+              <TreeNode icon={<CarryOutOutlined />} title="leaf" key="0-0-0-0" />
+              <TreeNode icon={<CarryOutOutlined />} title="leaf" key="0-0-0-1" />
+              <TreeNode icon={<CarryOutOutlined />} title="leaf" key="0-0-0-2" />
             </TreeNode>
-            <TreeNode icon={<Icon type="carry-out" />} title="parent 1-1" key="0-0-1">
-              <TreeNode icon={<Icon type="carry-out" />} title="leaf" key="0-0-1-0" />
+            <TreeNode icon={<CarryOutOutlined />} title="parent 1-1" key="0-0-1">
+              <TreeNode icon={<CarryOutOutlined />} title="leaf" key="0-0-1-0" />
             </TreeNode>
-            <TreeNode icon={<Icon type="carry-out" />} title="parent 1-2" key="0-0-2">
-              <TreeNode icon={<Icon type="carry-out" />} title="leaf" key="0-0-2-0" />
+            <TreeNode icon={<CarryOutOutlined />} title="parent 1-2" key="0-0-2">
+              <TreeNode icon={<CarryOutOutlined />} title="leaf" key="0-0-2-0" />
               <TreeNode
-                switcherIcon={<Icon type="form" />}
-                icon={<Icon type="carry-out" />}
+                switcherIcon={<FormOutlined />}
+                icon={<CarryOutOutlined />}
                 title="leaf"
                 key="0-0-2-1"
               />

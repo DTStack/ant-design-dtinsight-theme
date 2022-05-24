@@ -10,11 +10,11 @@ title: 开发前必读
 - 查看组件预览及其相关代码实现
 - 自定义样式使用及预览
 
-## 如何在数栈应用中使用
+## 快速上手
 
 ##### 0、 准备
 
-本项目使用的是 antd 版本为 `3.26.13`，故在子项目使用前也需升级 antd 至相同版本。
+本项目使用的是 antd 版本为 `4.18.9`，故在子项目使用前也需升级 antd 至相同版本。
 
 - 子应用升级指南： https://zhuanlan.zhihu.com/p/125652718
 
@@ -25,7 +25,7 @@ title: 开发前必读
 ``` json
 {
     "dependencies": {
-        "ant-design-dtinsight-theme": "1.0.9"
+        "ant-design-dtinsight-theme": "2.0.0"
     }
 }
 ```
@@ -72,7 +72,7 @@ import 'ant-design-dtinsight-theme/theme/dt-theme/dark/index.less';
 - 去掉 css-loader 中关于 antd theme 的相关配置
 - 去掉 babel.config 中 antd 样式的按需引入配置
 
-## 可用样式变量
+## 样式变量
 
 使用方式：在 scss 文件中导入此项目中的 const.scss 文件
 
@@ -85,9 +85,12 @@ import 'ant-design-dtinsight-theme/theme/dt-theme/dark/index.less';
 ```scss
 // 共有变量
 // ==== 基础色 ====
-$primaryColor: #3F87FF; // 主色
-$hoverColor: #5C99FF; // 按钮 hover
-$clickColor: #2672F0; // 按钮 点击
+$primaryColor: #1D78FF; // 主色
+$hoverColor: #0A67F2; // 按钮 hover
+$clickColor: #005CE6; // 按钮 点击
+$disabledColor: #BBD6FF; // Disable, 用于主按钮底色，描边按钮，可操作项的不可用状态填充色
+$bg1Color: #BBD6FF; // 用于小模块切换背景，提示背景
+$bg1Color: #BBD6FF; // 用于小模块切换背景，提示背景
 // ==== 字体大小  ====
 $font12: 12px; // 主字体大小 应用于列表内容、下拉、选择、输入框、弹窗等控件文字
 $font14: 14px; // 左侧菜单栏字体、主标题字体、弹窗标题字体大小
@@ -96,33 +99,66 @@ $font20: 20px; // 较少使用，引用与部分大标题
 
 // 默认主题特有
 // ==== 基础色 ====
-$deriveColor: #F2F9FF; // 衍生色 列表选中底色 部分tab选中底色
-// ==== 无色相  ====
-$black3: #333333; // 标题 主文字颜色
-$black6: #666666; // 次要信息 tab未选中颜色
-$black9: #999999; // 默认状态输入框内提示信息 按钮内icon颜色
-$blackBF: #BFBFBF; // disable 字体颜色
-$blackDD: #DDDDDD; // border颜色
-$blackE8: #E8E8E8; // 列表里分割线颜色 disable按钮底色
-$blackFA: #FAFAFA; // 灰色底色
-// ==== 辅助色  ====
-$red: #FF5F5C; // 错误提示文字、按钮色 运行失败提示色 必填项*颜色
-$yellow: #FFB310; // 警示提示icon 待运行等状态颜色
-$green: #12BC6A; // 成功icon 运行/发布成功状态颜色
-// ==== 图表配色 1  ====
-$color01: #6384F0;
-$color02: #339CFF;
-$color03: #00C3E5;
-$color04: #16DFB4;
-$color05: #15D275;
-$color06: #86E159;
-// ==== 图表配色 2  ====
-$color11: #BA68F0;
-$color12: #6F75EE;
-$color13: #1FB1F1;
-$color14: #17C992;
-$color15: #FFA93C;
-$color16: #FF7F6B;
+$deriveColor: #DDEBFF; // 衍生色 列表选中底色 部分tab选中底色
+// ==== DTinsight navy  ====
+$black_title: #3D446E; // 标题 主文字颜色
+$black_Desc: #64698B; // 用于表单标题备注说明文字颜色
+$black_pageMsg: #8B8FA8; // 用于分页器提示文字颜色
+$black_msg: #B1B4C5; // 用于文本框内的提示文字颜色
+$black_border: #D8DAE2; // 用于表单边框颜色，图表线条颜色
+$black_readonly: #EBECF0; // 用于分割线、失效按钮状态颜色
+$black_titleBg: #F5F5F8; // 用于模块标题背景色
+$black_navBg: #F9F9FA; // 用于二级导航底色
+$white: #FFFFFF; // 一级按钮文字颜色
+// ==== Functional Color 功能色  ====
+$bule: #1D78FF; // 用于运行中状态颜色
+$green: #11D7B2; // 用于成功状态颜色
+$red: #F96C5B; // 用于失败状态、校验错误信息文字、必填项图标颜色
+$yellow: #FBB310; // 用于下线状态、警告提示颜色
+$purple: #AC9DFF; // 用于取消、冻结状态提示颜色
+// ==== Other Color 图表/插图配色  ====
+// Blue
+$bule1: #DDEBFF;
+$bule2: #5D9EFF;
+$bule3: #1D78FF;
+// Green
+$green1: #E7FBF7;
+$green2: #50E2C6;
+$green3: #11D7B2;
+// Yellow
+$yellow1: #FFF4D9;
+$yellow2: #FFC749;
+$yellow3: #FBB310;
+// Red
+$red1: #FDE9E7;
+$red2: #FFA297;
+$red3: #F96C5B;
+// Purple
+$purple1: #EAE6FF;
+$purple2: #BDB1FF;
+$purple3: #AC9DFF;
+// Cyan
+$cyan1: #E7F8FA;
+$cyan2: #88E1EB;
+$cyan3: #2CCCDF;
+// Pink
+$pink1: #FFE6EF;
+$pink2: #FFB4CE;
+$pink3: #FF82AE;
+
+// ==== 多色场景：环形、树形图表  ====
+$other1: #AC9DFF;
+$other2: #888DFF;
+$other3: #6A87FF;
+$other4: #4B81FF;
+$other5: #2D7BFF;
+$other6: #1D78FF;
+$other7: #1A94E9;
+$other8: #17A6D9;
+$other9: #15BACA;
+$other10: #11D7B2;
+
+
 
 // 黑色主题特有
 // ==== 基础色 ====
@@ -160,3 +196,6 @@ $color16_dark: #E86651;
 // 项目中常用
 $minWidth: 1260px;
 ```
+
+## 贡献
+目前该项目还在初期阶段，如有更好地意见欢迎提 [Issue](https://github.com/DTStack/ant-design-dtinsight-theme/issues/new) 或 [Pull Request](https://github.com/DTStack/ant-design-dtinsight-theme/pulls)

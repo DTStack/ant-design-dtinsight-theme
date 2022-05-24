@@ -6,7 +6,8 @@ import { FormattedMessage } from 'react-intl';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classNames from 'classnames';
 import LZString from 'lz-string';
-import { Icon, Tooltip } from 'antd';
+import { Icon as LegacyIcon } from '@ant-design/compatible';
+import { Tooltip } from 'antd';
 import utils from '../../utils';
 
 function compress(string) {
@@ -147,7 +148,7 @@ export default class Demo extends React.Component {
       html,
       js: sourceCode
         .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'antd';/, 'const { $1 } = antd;')
-        .replace("import moment from 'moment';", '')
+        .replace("import format from 'dayjs';", '')
         .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'react-router';/, 'const { $1 } = ReactRouter;')
         .replace(
           /import\s+\{\s+(.*)\s+\}\s+from\s+'react-router-dom';/,
@@ -288,7 +289,7 @@ ${sourceCode.replace('mountNode', "document.getElementById('container')")}
                 onVisibleChange={this.onCopyTooltipVisibleChange}
                 title={<FormattedMessage id={`app.demo.${copied ? 'copied' : 'copy'}`} />}
               >
-                <Icon
+                <LegacyIcon
                   type={state.copied && state.copyTooltipVisible ? 'check' : 'snippets'}
                   className="code-box-code-copy"
                   style={{ backgroundColor: '#fff', borderRadius: '50%' }}

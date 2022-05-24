@@ -5,3 +5,5 @@ _site
 /dist
 .DS_Store
 npm-debug.log
+.history
+yarn-error.log

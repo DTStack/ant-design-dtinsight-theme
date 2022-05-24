@@ -4,6 +4,7 @@ module.exports = {
   locale: 'en-US',
   data: appLocaleData,
   messages: {
+    'app.name': 'DTInsight-Theme',
     'app.header.search': 'Search...',
     'app.header.menu.home': 'Home',
     'app.header.menu.practice': 'Practice',
