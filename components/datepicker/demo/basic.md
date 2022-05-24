@@ -10,11 +10,16 @@ title:
 
 ```jsx
 import { DatePicker } from '../../index';
-
+import moment from 'moment';
 const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 
 function onChange(date, dateString) {
   console.log(date, dateString);
+}
+
+function disabledDate(current) {
+  // Can not select days before today and today
+  return current && current < moment().endOf('day');
 }
 
 ReactDOM.render(
@@ -25,7 +30,7 @@ ReactDOM.render(
     <br />
     <RangePicker onChange={onChange} />
     <br />
-    <WeekPicker onChange={onChange} placeholder="Select week" />
+    <WeekPicker disabledDate={disabledDate} onChange={onChange} placeholder="Select week" />
   </div>,
   mountNode,
 );
