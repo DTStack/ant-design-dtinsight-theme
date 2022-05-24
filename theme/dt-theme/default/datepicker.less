@@ -1,0 +1,26 @@
+// 除组件外的一些 共有样式
+@import '../const.less';
+.ant-picker-focused{
+    border-color: @clickColor !important;
+    box-shadow: none !important;
+}
+.ant-picker {
+    font-size: 12px !important;
+    padding: 6px 11px 6px !important;
+    &:hover{
+        border-color: @primaryColor !important;
+    }
+    .ant-picker-input > input{
+        font-size: 12px !important;
+        color: @black_title !important;
+    }
+}
+.ant-picker-small{
+    padding: 2px 11px 2px !important;
+}
+.ant-picker-input > input{
+    &:focus{
+        border-color: @clickColor !important;
+        border: none;
+    }
+}
