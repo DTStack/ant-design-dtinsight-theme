@@ -82,7 +82,7 @@ class NormalLoginForm extends React.Component {
         <Form.Item name="password" label={'密码'} rules={[{ required: true, message: 'It is required!' }]}>
           <Input.Password placeholder="Password"/>
         </Form.Item>
-        <Form.Item name="count" label={'次数限制'} rules={[{ required: false, message: 'It is required!' }]}>
+        <Form.Item name="count" label={'次数限制'} tooltip='Tooltip with customize icon' rules={[{ required: false, message: 'It is required!' }]}>
           <InputNumber min={1} style={{ width: '100%' }} max={10} />
         </Form.Item>
         <Form.Item name="way" label={'告警方式'} rules={[{ required: false, message: 'It is required!' }]}>

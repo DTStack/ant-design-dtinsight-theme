@@ -32,13 +32,13 @@ class PickerSizesDemo extends React.Component {
         </Radio.Group>
         <br />
         <br />
-        <DatePicker size={size} />
+        <DatePicker className="dt-ant-datepicker-basic" size={size} />
         <br />
-        <MonthPicker size={size} placeholder="Select Month" />
+        <MonthPicker className="dt-ant-datepicker-basic" size={size} placeholder="Select Month" />
         <br />
-        <RangePicker size={size} />
+        <RangePicker className="dt-ant-datepicker-basic" size={size} />
         <br />
-        <WeekPicker size={size} placeholder="Select Week" />
+        <WeekPicker className="dt-ant-datepicker-basic" size={size} placeholder="Select Week" />
       </div>
     );
   }
