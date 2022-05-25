@@ -29,12 +29,18 @@ const info = () => {
   message.info('This is a normal message');
 };
 
+const loading = () => {
+  const hide = message.loading('Action in progress..', 0);
+  setTimeout(hide, 2500);
+};
+
 ReactDOM.render(
   <div className="demo-message-box">
     <Button onClick={info}>Info</Button>
     <Button onClick={success}>Success</Button>
     <Button onClick={error}>Error</Button>
     <Button onClick={warning}>Warning</Button>
+    <Button onClick={loading}>Loading</Button>
   </div>,
   mountNode,
 );
