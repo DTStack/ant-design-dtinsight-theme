@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title: theme 项目开发指南
 ---
 

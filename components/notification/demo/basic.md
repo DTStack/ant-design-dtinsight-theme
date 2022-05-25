@@ -16,6 +16,7 @@ const openNotificationWithIcon = type => {
     message: '提示信息',
     description:
       'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
+    duration: null
   });
 };
 
