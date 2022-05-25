@@ -20,6 +20,11 @@
         color: @black_title !important;
     }
 }
+.ant-picker.ant-picker-range{
+    .ant-picker-active-bar{
+        background: @clickColor;
+    }
+}
 .ant-picker-small{
     padding: 2px 11px 2px !important;
 }
@@ -70,9 +75,6 @@
     .ant-picker-cell-in-view.ant-picker-cell-in-range::before{
         background: #E8F1FF;
     }
-    .ant-picker-range .ant-picker-active-bar{
-        background: @clickColor;
-    }
     .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner{
         background: @primaryColor;
     }
@@ -89,6 +91,16 @@
         color: @black_msg;
         &::before{
             border-bottom: solid 2px @black_pageMsg;
+        }
+    }
+    .ant-picker-cell{
+        .ant-picker-cell-inner{
+            transition: background 0.3s;
+        }
+    }
+    .ant-picker-cell-range-end.ant-picker-cell-today, .ant-picker-cell-range-start.ant-picker-cell-today{
+        .ant-picker-cell-inner{
+            color: #fff;
         }
     }
 }
