@@ -8,6 +8,8 @@ title:
 
 省市区级联。
 
+- 添加类名 dt-ant-select-outside 为级联选择框设置样式
+
 ```jsx
 import { Cascader } from 'antd';
 
@@ -51,7 +53,7 @@ function onChange(value) {
 }
 
 ReactDOM.render(
-  <Cascader options={options} onChange={onChange} placeholder="Please select" />,
+  <Cascader className="dt-ant-select-outside" options={options} onChange={onChange} placeholder="Please select" />,
   mountNode,
 );
 ```

@@ -24,13 +24,13 @@ function disabledDate(current) {
 
 ReactDOM.render(
   <div className="demo-datepicker-box">
-    <DatePicker onChange={onChange} />
+    <DatePicker onChange={onChange} className="dt-ant-datepicker-basic" />
     <br />
-    <MonthPicker onChange={onChange} placeholder="Select month" />
+    <MonthPicker onChange={onChange} placeholder="Select month" className="dt-ant-datepicker-basic" />
     <br />
-    <RangePicker onChange={onChange} />
+    <RangePicker onChange={onChange} className="dt-ant-datepicker-basic" />
     <br />
-    <WeekPicker disabledDate={disabledDate} onChange={onChange} placeholder="Select week" />
+    <WeekPicker disabledDate={disabledDate} onChange={onChange} placeholder="Select week" className="dt-ant-datepicker-basic" />
   </div>,
   mountNode,
 );
