@@ -27360,27 +27360,28 @@ div.ant-typography-edit-content.ant-typography-rtl {
   min-width: 460px !important;
 }
 .ant-modal-confirm .ant-modal-body {
-  padding: 52px 20px 20px 32px;
+  padding: 32px 24px 12px 32px;
 }
 .ant-modal-confirm-body .ant-modal-confirm-title {
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 16px;
 }
 .ant-modal-confirm-body .ant-modal-confirm-content {
-  margin-top: 12px;
-  font-size: 14px;
+  margin-top: 8px;
+  font-size: 12px;
 }
 .ant-modal-confirm .ant-modal-confirm-btns {
-  margin-top: 32px;
+  margin-top: 8px;
 }
 .ant-modal-confirm-body > .anticon {
-  font-size: 20px;
-  margin-right: 8px;
+  font-size: 16px;
+  margin-right: 10px;
 }
 .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
   margin-left: 30px;
 }
 .ant-modal-confirm .ant-modal-confirm-btns {
-  margin-top: 36px;
+  margin-top: 16px;
 }
 .dt-layout-header {
   min-width: 1260px;
@@ -27800,19 +27801,22 @@ div.ant-typography-edit-content.ant-typography-rtl {
   border-right: none;
 }
 .ant-input {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .ant-input-lg {
   font-size: 12px;
 }
 .ant-input-number {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .ant-picker-input {
   border-radius: 2px;
 }
 .ant-select-selection {
   border-radius: 2px;
+}
+.ant-radio-wrapper {
+  align-items: flex-start;
 }
 .ant-card-head {
   padding: 0px 20px;
