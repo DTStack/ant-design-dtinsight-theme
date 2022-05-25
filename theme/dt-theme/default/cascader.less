@@ -21,4 +21,13 @@
     background: @black_titleBg;
     color: @primaryColor !important;
 }
-// ant-select ant-cascader ant-select-focused ant-select-single ant-select-allow-clear ant-select-show-arrow ant-select-open
+// select
+.ant-select-dropdown{
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled){
+        background: @black_titleBg;
+    }
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+        background: @black_titleBg !important;
+        color: @primaryColor;
+    }
+}
