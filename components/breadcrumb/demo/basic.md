@@ -10,9 +10,10 @@ title:
 
 ```jsx
 import { Breadcrumb } from 'antd';
+import { RightOutlined } from '@ant-design/icons'
 
 ReactDOM.render(
-  <Breadcrumb separator=">">
+  <Breadcrumb separator={<RightOutlined />}>
     <Breadcrumb.Item>
       <a href="">Home</a>
     </Breadcrumb.Item>
