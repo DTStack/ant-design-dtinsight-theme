@@ -1,30 +1,24 @@
 ---
-order: 1
+order: 0
 title:
-  zh-CN: 浅色背景(仅暗黑主题下使用)
+  zh-CN: 垂直表单布局
+  en-US: Vertical layout usage
 ---
 
 ## zh-CN
 
-浅色背景上，显示深色控件
+垂直表单布局。
 
-仅暗黑主题下使用，默认主题下使用无效
+## en-US
 
-- 为组件添加类名`dt-form-light-bg`
-- 为存在浮层的组件相关属性设置类名`dt-form-light-bg`
+Basic usage example.
 
 ```jsx
 import { Form, Input, Button, Checkbox, InputNumber, Radio, Switch, Cascader, Select } from 'antd';
 const { Option } = Select;
 const formItemLayout = {
-  labelCol: {
-    xs: { span: 24 },
-    sm: { span: 3 },
-  },
-  wrapperCol: {
-    xs: { span: 24 },
-    sm: { span: 10 },
-  },
+  labelCol: { span: 3 },
+  wrapperCol: { span: 10 },
 };
 class NormalLoginForm extends React.Component {
   handleSubmit = values => {
@@ -68,12 +62,12 @@ class NormalLoginForm extends React.Component {
     ];
 
     return (
-      <Form name="normal_login" {...formItemLayout} className="demo-form-light dt-form-light-bg" onSubmit={this.handleSubmit}>
+      <Form name="normal_login" layout={"vertical"} {...formItemLayout} onFinish={this.handleSubmit}>
         <Form.Item name="username" label={'用户名'} rules={[{ required: true, message: 'It is required!' }]}>
           <Input placeholder="Username"/>
         </Form.Item>
         <Form.Item name="role" label={'角色'} rules={[{ required: true, message: 'It is required!' }]}>
-          <Select dropdownClassName="dt-form-light-bg" placeholder="Please select">
+          <Select placeholder="Please select">
               <Option value="1">项目所有者</Option>
               <Option value="2">数据分析师</Option>
               <Option value="3">管理员</Option>
@@ -99,7 +93,7 @@ class NormalLoginForm extends React.Component {
           <Switch />
         </Form.Item>
         <Form.Item name="location" label={'位置'} rules={[{ required: false, message: 'It is required!' }]}>
-          <Cascader dropdownClassName="dt-form-light-bg" options={options} placeholder="Please select" />
+          <Cascader options={options} placeholder="Please select" />
         </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit">

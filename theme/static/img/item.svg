@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组备份 2</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="6" r="6"></circle>
+        <filter x="-91.7%" y="-75.0%" width="283.3%" height="283.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.609624355   0 0 0 0 0.696410372   0 0 0 0 0.859352775  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="0-设计规范指南" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="设计规范指南" transform="translate(-68.000000, -1278.000000)">
+            <g id="编组-4" transform="translate(70.000000, 1279.000000)">
+                <g id="编组备份-2" transform="translate(0.000000, 5.000000)">
+                    <circle id="椭圆形" fill="#1D78FF" cx="6" cy="6" r="6"></circle>
+                    <g id="椭圆形备份" opacity="0.496084304">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
