@@ -1,34 +1,55 @@
 @import '../const.less';
 
 .ant-table-thead > tr > th {
-    padding: 13px 8px;
+    height: 44px; 
+    box-sizing: border-box;
+    padding: 13px 12px;
     border-bottom: 0px solid @white;
     &:first-child {
-        padding-left: 20px;
+        padding-left: 16px;
     }
     &:last-child {
-        padding-right: 20px;
+        padding-right: 16px;
     }
 }
 .ant-table-tbody > tr > td {
-    padding: 18.5px 8px;
+    height: 44px;
+    box-sizing: 44px;
+    padding: 13px 12px;
     &:first-child {
-        padding-left: 20px;
+        padding-left: 16px;
     }
     &:last-child {
-        padding-right: 20px;
+        padding-right: 16px;
     }
 }
 .ant-table colgroup > col.ant-table-selection-col {
-    width: 50px;
+    width: 16px;
 }
 .ant-table-thead > tr > th.ant-table-selection-column {
-    padding: 13px 12px 13px 20px;
+    padding: 12px 8px 12px 16px;
     text-align: left;
 }
+.ant-table-thead > tr > th.ant-table-selection-column + th{
+    padding: 12px 13px 12px 0px;
+}
+.ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0px;
+    height: 1.6em;
+    background-color: rgba(0, 0, 0, 0.06);
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+    content: '';
+}
 .ant-table-tbody > tr > td.ant-table-selection-column {
-    padding: 18.5px 12px 18.5px 20px;
+    padding: 12px 8px 12px 16px;
     text-align: left;
+}
+.ant-table-tbody > tr > td.ant-table-selection-column + td{
+    padding: 12px 13px 12px 0px;
 }
 .ant-table-middle {
     & > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
@@ -40,10 +61,10 @@
     & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
         &:first-child {
-            padding-left: 20px;
+            padding-left: 16px;
         }
         &:last-child {
-            padding-right: 20px;
+            padding-right: 16px;
         }
         padding: 10.5px 8px;
     }
@@ -56,33 +77,33 @@
     & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
     & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
         &:first-child {
-            padding-left: 20px;
+            padding-left: 16px;
         }
         &:last-child {
-            padding-right: 20px;
+            padding-right: 16px;
         }
         padding: 12.5px 8px;
     }
     & > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th.ant-table-selection-column {
-        padding: 13px 12px 13px 20px !important;
+        padding: 13px 12px 13px 16px !important;
         text-align: left;
     }
     & > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td.ant-table-selection-column {
-        padding: 13px 12px 13px 20px !important;
+        padding: 13px 12px 13px 16px !important;
         text-align: left;
     }
     .ant-table-tbody > tr > td {
         padding: 13px 8px;
         &:first-child {
-            padding-left: 20px;
+            padding-left: 16px;
         }
         &:last-child {
-            padding-right: 20px;
+            padding-right: 16px;
         }
     }
 }
 .ant-table-small {
-    border: 0;
+    // border: 0;
     & > .ant-table-content > .ant-table-body {
         margin: 0;
     }
@@ -96,11 +117,13 @@
     & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
+        height: 36px;
+        box-sizing: border-box;
         &:first-child {
-            padding-left: 20px;
+            padding-left: 16px;
         }
         &:last-child {
-            padding-right: 20px;
+            padding-right: 16px;
         }
         padding: 8.5px 8px;
         // border-bottom: 1px solid #e8e8e8
@@ -121,6 +144,15 @@
         }
         padding: 8.5px 8px;
     }
+}
+.ant-table-column-sorters, .ant-table-filter-column {
+    justify-content: flex-start;
+}
+.ant-table-column-sorters .ant-table-column-title, .ant-table-filter-column .ant-table-column-title {
+    flex: none;
+}
+.ant-table-column-sorter{
+    margin-left: 7px;
 }
 .ant-table-thead > tr > th .ant-table-header-column .ant-table-column-sorters::before {
     display: none;
@@ -143,8 +175,8 @@
     margin-top: -0.65em;
  }
 .ant-table-footer {
-    padding: 10px 20px;
-    height: 56px;
+    padding: 12px 16px;
+    height: 44px;
     display: flex;
     margin-top: -1px;
     z-index: 11;
@@ -169,7 +201,8 @@
 }
 
 .ant-pagination.mini .ant-pagination-total-text, .ant-pagination.mini .ant-pagination-simple-pager {
-    line-height: 26px;
+    line-height: 32px;
+    height: 32px;
 }
 
 .dt-table-scrollbar {
@@ -222,9 +255,9 @@
         > .ant-table-pagination {
             width: 100%;
             margin: -1px 0px 0px;
-            padding: 0px 20px;
-            height: 56px;
-            line-height: 56px;
+            padding: 0px 16px;
+            height: 44px;
+            line-height: 44px;
             text-align: right;
             position: relative;
             z-index: 10;
