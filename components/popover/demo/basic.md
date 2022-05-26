@@ -24,9 +24,17 @@ const content = (
 );
 
 ReactDOM.render(
-  <Popover content={content} title="Title">
-    <Button type="primary">Hover me</Button>
-  </Popover>,
+   <div>
+    <Popover content={content} title="Title" trigger="hover">
+      <Button style={{marginRight: 8}}>Hover me</Button>
+    </Popover>
+    <Popover content={content} title="Title" trigger="focus">
+      <Button style={{marginRight: 8}}>Focus me</Button>
+    </Popover>
+    <Popover content={content} title="Title" trigger="click">
+      <Button>Click me</Button>
+    </Popover>
+  </div>,
   mountNode,
 );
 ```
