@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title:
   zh-CN: 浅色背景(仅暗黑主题下使用)
 ---
