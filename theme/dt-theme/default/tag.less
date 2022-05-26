@@ -28,60 +28,65 @@
 .ant-tag-default{
     background: #F9F9FA;
     color: #3D446E;
-    span{
-        border-radius: 50%;
-        background-color: @primaryColor;
-        width: 6px;
-        height: 6px;
+    &::before{
+        content:'';
         display: inline-block;
+        width:6px;
+        height:6px;
+        background: @primaryColor;
+        border-radius: 50%;
         margin-right: 8px;
     }
 }
 .ant-tag-processing{
     background: #F9F9FA;
     color: #3D446E;
-    span{
-        border-radius: 50%;
-        background-color: #AC9DFF;
-        width: 6px;
-        height: 6px;
+    &::before{
+        content:'';
         display: inline-block;
-        margin-right: 8px;
-    }
-}
-.ant-tag-processing{
-    background: #F9F9FA;
-    color: #3D446E;
-    span{
+        width:6px;
+        height:6px;
+        background: #AC9DFF;
         border-radius: 50%;
-        background-color: #AC9DFF;
-        width: 6px;
-        height: 6px;
-        display: inline-block;
         margin-right: 8px;
     }
 }
 .ant-tag-error{
     background: #F9F9FA;
     color: #3D446E;
-    span{
-        border-radius: 50%;
-        background-color: @red;
-        width: 6px;
-        height: 6px;
+    &::before{
+        content:'';
         display: inline-block;
+        width:6px;
+        height:6px;
+        background: @red;
+        border-radius: 50%;
         margin-right: 8px;
     }
 }
 .ant-tag-warning{
     background: #F9F9FA;
     color: #3D446E;
-    span{
-        border-radius: 50%;
-        background-color: @yellow;
-        width: 6px;
-        height: 6px;
+    &::before{
+        content:'';
         display: inline-block;
+        width:6px;
+        height:6px;
+        background: @yellow;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+}
+.ant-tag-success{
+    background: #F9F9FA;
+    color: #3D446E;
+    &::before{
+        content:'';
+        display: inline-block;
+        width:6px;
+        height:6px;
+        background: #11D7B2;
+        border-radius: 50%;
         margin-right: 8px;
     }
 }
