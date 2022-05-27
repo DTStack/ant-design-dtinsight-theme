@@ -77,8 +77,8 @@ const rowSelection = {
 tableFooter =  () => (
   <Row style={{ width: '100%' }}>
     <Col span={12}>
-      <Button style={{ marginRight: 10 }} size="small" type="primary">冻结实验</Button>
-      <Button size="small">解冻实验</Button>
+      <Button style={{ marginRight: 10 }} type="primary">冻结实验</Button>
+      <Button>解冻实验</Button>
     </Col>
     <Col span={12}>
       <Pagination

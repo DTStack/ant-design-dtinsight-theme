@@ -1,0 +1,37 @@
+.ant-collapse {
+    .ant-collapse-item {
+        border-bottom: 1px solid @black_readonly;
+        .ant-collapse-header {
+            background-color: #ffffff;
+            height: 40px;
+            box-sizing: border-box;
+            padding: 0 16px;
+            line-height: 40px;
+            .ant-collapse-arrow {
+                margin-right: 12px;
+                font-size: 16px;
+                vertical-align: -4px;
+            }
+        }
+        .ant-collapse-content{
+            border-top: 1px solid @black_readonly;
+            background-color: @black_navBg;
+            min-height: 40px;
+            box-sizing: border-box;
+            line-height: 40px;
+            .ant-collapse-content-box{
+                padding: 0 16px;
+                .ant-collapse{
+                    margin-left: 40px;
+                    border: none;
+                    border-left: 1px solid @black_readonly;
+                    background-color: @black_navBg;
+                    .ant-collapse-header{
+                        background-color: @black_navBg;
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
