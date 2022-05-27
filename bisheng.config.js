@@ -11,12 +11,13 @@ module.exports = {
     htmlTemplate: path.join(__dirname, './theme/static/template.html'),
     themeConfig: {
         categoryOrder: {
-            开发前必读: 0,
-            theme项目开发指南: 1,
-            颜色规范: 2,
-            字体规范: 3,
-            Components: 4,
-            更新日志: 5
+            介绍: 0,
+            开发前必读: 1,
+            theme项目开发指南: 2,
+            颜色规范: 3,
+            字体规范: 4,
+            Components: 5,
+            更新日志: 6
         },
         typeOrder: {}
     },
@@ -25,7 +26,7 @@ module.exports = {
     },
     baseConfig: {
         projectName: 'DTInsight-Theme',
-        homeUrl: '/docs/react/getting-started-cn'
+        homeUrl: '/docs/react/introduce-cn'
     },
     webpackConfig: function (config) {
         config.module.rules.push({

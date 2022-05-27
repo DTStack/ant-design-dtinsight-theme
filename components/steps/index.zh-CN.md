@@ -1,14 +1,14 @@
 ---
 category: Components
 cols: 1
-type: 布局
+type: 导航
 title: Steps
 subtitle: 标准导航步骤页
 ---
 
 结合通用卡片容器协助进行页面标准化导航步骤页
 
-## 设计规则
+## 设计规范
 
 标准导航步骤页分为步骤条头部、内容区域、尾部操作栏。
 

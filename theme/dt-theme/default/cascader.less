@@ -1,0 +1,41 @@
+// 除组件外的一些 共有样式
+@import '../const.less';
+
+.ant-select.dt-ant-select-outside {
+    font-size: @font12;
+}
+
+.ant-select.dt-ant-select-outside:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 4px;
+}
+
+.ant-select.dt-ant-select-outside:not(.ant-select-disabled):hover .ant-select-selector {
+    border-color: @primaryColor;
+}
+
+.ant-select-focused.dt-ant-select-outside:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-color: @clickColor;
+    box-shadow: none;
+}
+
+// select
+.ant-select-dropdown {
+    .ant-cascader-menu-item:hover {
+        background: @black_titleBg;
+    }
+
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+        background: @black_titleBg;
+    }
+
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+        background: @black_titleBg;
+        color: @primaryColor;
+    }
+
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+        background: @black_titleBg;
+        color: @primaryColor;
+    }
+}
