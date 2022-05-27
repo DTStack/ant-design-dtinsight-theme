@@ -3,7 +3,7 @@
 .ant-table-thead > tr > th {
     height: 44px; 
     box-sizing: border-box;
-    padding: 13px 12px;
+    padding: 0px 16px;
     border-bottom: 0px solid @white;
     &:first-child {
         padding-left: 16px;
@@ -12,10 +12,33 @@
         padding-right: 16px;
     }
 }
+.ant-table.ant-table-small .ant-table-title, .ant-table.ant-table-small .ant-table-footer, .ant-table.ant-table-small .ant-table-thead > tr > th, .ant-table.ant-table-small .ant-table-tbody > tr > td, .ant-table.ant-table-small tfoot > tr > th, .ant-table.ant-table-small tfoot > tr > td {
+    padding: 0 16px;
+    height: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+}
+.ant-table-small .ant-table-thead > tr > th {
+    height: 36px; 
+    box-sizing: border-box;
+    padding: 0px 16px;
+}
+.ant-table-small .ant-table-tbody > tr {
+    height: 36px; 
+    line-height: 36px;
+    box-sizing: border-box;
+    padding: 0px 16px;
+}
+.ant-table-tbody > tr{
+    height: 44px;
+    box-sizing: border-box;
+    line-height: 44px;
+}
 .ant-table-tbody > tr > td {
     height: 44px;
-    box-sizing: 44px;
-    padding: 13px 12px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    line-height: 44px;
     &:first-child {
         padding-left: 16px;
     }
@@ -27,11 +50,13 @@
     width: 16px;
 }
 .ant-table-thead > tr > th.ant-table-selection-column {
-    padding: 12px 8px 12px 16px;
+    padding: 0px 8px 0px 16px;
     text-align: left;
+    line-height: 44px;
 }
 .ant-table-thead > tr > th.ant-table-selection-column + th{
-    padding: 12px 13px 12px 0px;
+    padding: 0px 8px 0px 0px;
+    line-height: 44px;
 }
 .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
     position: absolute;
@@ -39,17 +64,19 @@
     right: 0;
     width: 0px;
     height: 1.6em;
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: @black_titleBg;
     transform: translateY(-50%);
     transition: background-color 0.3s;
     content: '';
 }
 .ant-table-tbody > tr > td.ant-table-selection-column {
-    padding: 12px 8px 12px 16px;
+    padding: 0px 8px 0px 16px;
+    line-height: 44px;
     text-align: left;
 }
 .ant-table-tbody > tr > td.ant-table-selection-column + td{
-    padding: 12px 13px 12px 0px;
+    padding: 0px 8px 0px 0px;
+    line-height: 44px;
 }
 .ant-table-middle {
     & > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
@@ -125,7 +152,6 @@
         &:last-child {
             padding-right: 16px;
         }
-        padding: 8.5px 8px;
         // border-bottom: 1px solid #e8e8e8
     }
     & > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
@@ -137,12 +163,12 @@
     & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
     & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
         &:first-child {
-            padding-left: 20px;
+            padding-left: 16px;
         }
         &:last-child {
-            padding-right: 20px;
+            padding-right: 16px;
         }
-        padding: 8.5px 8px;
+        padding: 0px 16px;
     }
 }
 .ant-table-column-sorters, .ant-table-filter-column {
@@ -191,19 +217,19 @@
     }
 }
 
-.ant-pagination-total-text {
-    color: #666666;
-    line-height: 32px;
-}
-.ant-pagination.mini .ant-pagination-item {
-    border: 1px solid transparent;
-    line-height: 24px;
-}
+// .ant-pagination-total-text {
+//     color: #666666;
+//     line-height: 32px;
+// }
+// .ant-pagination.mini .ant-pagination-item {
+//     border: 1px solid transparent;
+//     line-height: 24px;
+// }
 
-.ant-pagination.mini .ant-pagination-total-text, .ant-pagination.mini .ant-pagination-simple-pager {
-    line-height: 32px;
-    height: 32px;
-}
+// .ant-pagination.mini .ant-pagination-total-text, .ant-pagination.mini .ant-pagination-simple-pager {
+//     line-height: 32px;
+//     height: 32px;
+// }
 
 .dt-table-scrollbar {
     // 正常列表 存在纵向滚动 会因为 scrollbar 导致列错位
