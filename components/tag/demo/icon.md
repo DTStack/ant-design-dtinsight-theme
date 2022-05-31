@@ -9,6 +9,8 @@ title:
 
 背景标签，图标只做示例
 
+为组件添加类名`dt-ant-tag-icon`
+
 
 ```jsx
 import { Tag } from 'antd';
@@ -19,10 +21,10 @@ import {
 
 ReactDOM.render(
   <div>
-    <Tag icon={<TwitterOutlined />} color="geekblue">
+    <Tag icon={<TwitterOutlined />} color="geekblue" className="dt-ant-tag-icon">
       Twitter
     </Tag>
-     <Tag icon={<TwitterOutlined />} color="orange">
+     <Tag icon={<TwitterOutlined />} color="orange" className="dt-ant-tag-icon">
       Twitter
     </Tag>
   </div>,
