@@ -27435,25 +27435,30 @@ div.ant-typography-edit-content.ant-typography-rtl {
 }
 .dt-layout-header {
   min-width: 1260px;
-  background: #080A1A !important;
+  background: #FFFFFF !important;
   padding: 0px 0px 0px 24px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  justify-content: space-between;
+  justify-content: flex-start;
   display: flex;
+  box-shadow: 0px 4px 4px 0px rgba(61, 68, 110, 0.04);
 }
 .dt-layout-header .ant-menu {
-  background: #080A1A;
-  color: #ABB2C2;
+  background: #FFFFFF;
+  color: #3D446E;
 }
 .dt-layout-header .ant-menu-item > a {
-  color: #ABB2C2;
+  color: #3D446E;
 }
 .dt-layout-header .ant-menu-horizontal {
   border-bottom: 0px solid transparent;
+}
+.dt-layout-header .ant-menu-horizontal .ant-menu-item {
+  border-color: #FFFFFF !important;
+  padding: 0 24px;
 }
 .dt-layout-header .ant-menu-horizontal > .ant-menu-item:hover,
 .dt-layout-header .ant-menu-horizontal > .ant-menu-submenu:hover,
@@ -27463,7 +27468,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-layout-header .ant-menu-horizontal > .ant-menu-submenu-open,
 .dt-layout-header .ant-menu-horizontal > .ant-menu-item-selected,
 .dt-layout-header .ant-menu-horizontal > .ant-menu-submenu-selected {
-  border-bottom: 3px solid #287BF7 !important;
+  border-bottom: 3px solid #1D78FF !important;
 }
 .dt-layout-header .ant-menu-horizontal > .ant-menu-item,
 .dt-layout-header .ant-menu-horizontal > .ant-menu-submenu {
@@ -27772,13 +27777,13 @@ div.ant-typography-edit-content.ant-typography-rtl {
   height: 64px;
 }
 .dt-header-log-wrapper > img {
-  height: 28px;
+  height: 40px;
 }
 .dt-header-log-wrapper .c-header__title,
 .dt-header-log-wrapper > span {
   text-decoration: none;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #3D446E;
   padding-left: 8px;
 }
 .box-1,
@@ -27890,7 +27895,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
   margin-top: 2px;
 }
 .ant-notification-notice-close {
-  top: 11px;
+  top: 19px;
   right: 12px;
 }
 .ant-notification-notice-with-icon .ant-notification-notice-message {
