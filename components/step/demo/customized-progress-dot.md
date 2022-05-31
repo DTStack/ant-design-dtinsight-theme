@@ -27,10 +27,10 @@ const customDot = (dot, { status, index }) => (
 
 ReactDOM.render(
   <Steps current={1} progressDot={customDot}>
-    <Step title="Finished" description="You can hover on the dot." />
-    <Step title="In Progress" description="You can hover on the dot." />
-    <Step title="Waiting" description="You can hover on the dot." />
-    <Step title="Waiting" description="You can hover on the dot." />
+    <Step title="Finished" />
+    <Step title="In Progress" />
+    <Step title="Waiting" />
+    <Step title="Waiting" />
   </Steps>,
   mountNode,
 );
