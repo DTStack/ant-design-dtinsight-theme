@@ -17,7 +17,7 @@ Basic drawer.
 import { Drawer, Button } from 'antd';
 
 class App extends React.Component {
-  state = { visible: false };
+  state = { visible: false, largeVisible: false };
 
   showDrawer = () => {
     this.setState({
@@ -25,24 +25,65 @@ class App extends React.Component {
     });
   };
 
+  showLargeDrawer = () => {
+    this.setState({
+      largeVisible: true,
+    });
+  }
+
+  showSmallDrawer = () => {
+    this.setState({
+      smallVisible: true,
+    });
+  }
+
   onClose = () => {
     this.setState({
       visible: false,
+      largeVisible: false,
+      smallVisible: false
     });
   };
 
   render() {
     return (
       <div>
-        <Button type="primary" onClick={this.showDrawer}>
-          Open
+        <Button type="primary" onClick={this.showSmallDrawer}>
+          Open(small)
         </Button>
+        <Button type="primary" onClick={this.showDrawer} style={{ marginLeft: 20 }}>
+          Open(defalt)
+        </Button>
+        <Button type="primary" onClick={this.showLargeDrawer} style={{ marginLeft: 20 }}>
+          Open(large)
+        </Button>
+        <Drawer
+          title="Small Drawer"
+          placement="right"
+          onClose={this.onClose}
+          visible={this.state.smallVisible}
+        >
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Drawer>
         <Drawer
           title="Basic Drawer"
           placement="right"
-          closable={false}
+          width={1000}
           onClose={this.onClose}
           visible={this.state.visible}
+        >
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Drawer>
+        <Drawer
+          title="Large Drawer"
+          placement="right"
+          width={1256}
+          onClose={this.onClose}
+          visible={this.state.largeVisible}
         >
           <p>Some contents...</p>
           <p>Some contents...</p>

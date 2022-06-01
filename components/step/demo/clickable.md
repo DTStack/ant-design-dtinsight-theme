@@ -29,17 +29,17 @@ class Demo extends React.Component {
     return (
       <>
         <Steps current={current} onChange={this.onChange}>
-          <Step title="Step 1" description="This is a description." />
-          <Step title="Step 2" description="This is a description." />
-          <Step title="Step 3" description="This is a description." />
+          <Step title="Step 1" />
+          <Step title="Step 2" />
+          <Step title="Step 3"/>
         </Steps>
 
         <Divider />
 
         <Steps current={current} onChange={this.onChange} direction="vertical">
-          <Step title="Step 1" description="This is a description." />
-          <Step title="Step 2" description="This is a description." />
-          <Step title="Step 3" description="This is a description." />
+          <Step title="Step 1" />
+          <Step title="Step 2" />
+          <Step title="Step 3" />
         </Steps>
       </>
     );

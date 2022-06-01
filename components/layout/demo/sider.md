@@ -45,21 +45,6 @@ class SiderDemo extends React.Component {
                         mode="horizontal"
                         defaultSelectedKeys={['2']}
                     >
-                        <Menu.Item key="sub-menu-item">
-                            <Dropdown overlay={menu} trigger="click" placement="bottomCenter">
-                                <span style={{ display: 'inline-block', height: '64px' }}>
-                                    <span
-                                        className="dt-menu-text-ellipsis"
-                                        title={"当前项目名称"}
-                                    >
-                                    当前项目名称
-                                    </span>
-                                    <CaretDownOutlined
-                                        style={{ fontSize: "12px" }}
-                                    />
-                                </span>
-                            </Dropdown>
-                        </Menu.Item>
                         <Menu.Item key="1">数据源</Menu.Item>
                         <Menu.Item key="2">数据开发</Menu.Item>
                         <Menu.Item key="3">运维中心</Menu.Item>
