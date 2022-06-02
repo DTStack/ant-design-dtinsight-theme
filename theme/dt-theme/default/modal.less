@@ -6,14 +6,17 @@
 .ant-modal-header {
     border-bottom: 1px solid @black_border;
     padding: 11px 24px;
+    background-color: @black_navBg;
 }
+.ant-modal-body {
+    padding: 16px 24px;
+    box-sizing: border-box;
+}   
 .ant-modal-footer {
     padding: 12px 24px;
     border-top: 0px solid @white;
 }
-.ant-modal-confirm-body .ant-modal-confirm-content {
-    color: @black_Desc;
-}
+
 .ant-modal-close-x{
     line-height: 44px;
     height: 44px;
@@ -21,4 +24,11 @@
 }
 .ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger){
     margin-left: 12px;
+}
+.ant-modal-footer .ant-btn span {
+    margin-top: 3px;
+}
+
+.ant-modal-confirm-body .ant-modal-confirm-content {
+    color: @black_Desc;
 }
