@@ -6,7 +6,7 @@ title:
 
 ## zh-CN
 
-我们为输入框定义了两种尺寸（默认、小），高度分别为 32px 和 28px。
+我们为输入框定义了两种尺寸（默认、小），高度分别为 32px 和 24px。
 
 ```jsx
 import { Input } from 'antd';
