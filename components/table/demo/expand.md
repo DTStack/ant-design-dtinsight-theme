@@ -43,6 +43,8 @@ expandedRowRender = () => {
           title: 'Action',
           dataIndex: 'operation',
           key: 'operation',
+          width: 200,
+          fixed: 'right',
           render: () => (
           <span className="table-operation">
               <a>Pause</a>
@@ -99,7 +101,7 @@ expandedRowRender = () => {
 
   render() {
     const columns = [
-      { title: 'Name', dataIndex: 'name', key: 'name' },
+      { title: 'Name', dataIndex: 'name', key: 'name', width: 200, fixed: 'left' },
       { title: 'Platform', dataIndex: 'platform', key: 'platform' },
       { title: 'Version', dataIndex: 'version', key: 'version' },
       { title: 'Upgraded', dataIndex: 'upgradeNum', key: 'upgradeNum' },
