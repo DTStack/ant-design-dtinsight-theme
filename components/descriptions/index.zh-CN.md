@@ -16,4 +16,5 @@ cols: 1
 |类名  |说明  |使用示例  |
 |---------|---------|---------|
 |.dt-descriptions-vertica-display  | 实现竖向排列   | 实现竖向排列  |
+|.dt-descriptions-custom-display  | 实现自定义展示   | 实现自定义展示  |
 

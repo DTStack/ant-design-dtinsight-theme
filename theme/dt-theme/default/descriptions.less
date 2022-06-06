@@ -1,22 +1,29 @@
 @import '../const.less';
 
 .ant-descriptions-bordered .ant-descriptions-view {
-    border: 1px solid @black_border;
+    border: 1px solid @grey_border;
     border-bottom: unset;
     .ant-descriptions-row{
-        border-bottom: 1px solid @black_border;
+        border-bottom: 1px solid @grey_border;
         height: 36px;
         box-sizing: border-box;
     }
     .ant-descriptions-item-content {
         padding: 0 12px;
-        border-right: 1px solid @black_border;
     }
     .ant-descriptions-item-label {
         padding: 0 12px;
-        border-right: 1px solid @black_border;
+        border-right: 1px solid @grey_border;
         color: @black_Desc;
+        background: @black_navBg;
     }
+}
+.ant-descriptions-bordered  th {
+    width: 12%;
+}
+
+.ant-descriptions-bordered  td {
+    width: 18%;
 }
 .dt-descriptions-vertica-display{
     .ant-descriptions-item{
@@ -29,6 +36,17 @@
         padding: 0;
         display: block;
     }
+    .ant-descriptions-item-label {
+        padding: 0;
+        display: block;
+        color: @black_pageMsg;
+    }
+}
+.ant-descriptions-item-container .ant-descriptions-item-label, 
+.ant-descriptions-item-container .ant-descriptions-item-content  {
+    line-height: 20px;
+}
+.dt-descriptions-custom-display {
     .ant-descriptions-item-label {
         padding: 0;
         display: block;
