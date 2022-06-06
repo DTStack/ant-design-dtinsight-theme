@@ -1,26 +1,25 @@
 @import '../const.less';
 
 .ant-alert-success {
-    background-color: #DFFAE6;
-    border: 1px solid #DFFAE6;
+    background-color: #E7FBF7;
+    border: 1px solid #E7FBF7;
 }
 .ant-alert-warning {
-    background-color: #FFFBE6;
-    border: 1px solid #FFFBE6;
+    background-color: #FFF4D9;
+    border: 1px solid #FFF4D9;
 }
 .ant-alert-error {
-    background-color: #FFF1F0;
-    border: 1px solid #FFF1F0;
+    background-color: #FDE9E7;
+    border: 1px solid #FDE9E7;
 }
 .ant-alert-info {
-    background-color: #EBF2FF;
-    border: 1px solid #EBF2FF;
+    background-color: #E8F1FF;
+    border: 1px solid #E8F1FF;
 }
 .ant-notification-notice-with-icon .ant-notification-notice-description {
-    color: @black_Desc;
+    color: @black_pageMsg;
 }
 .ant-message-notice-content {
-    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.10);
     height: 40px;
     font-size: 14px;
     color: @black_Desc;
@@ -29,8 +28,16 @@
     }
 }
 .dt-notification-close-btn {
-    color:#666666;
+    color: @black_pageMsg;
     &:hover{
         color:rgb(39, 39, 39);
     }
+}
+.ant-notification-notice{
+    width: 360px;
+    padding: 16px 28px 16px 16px;
+    box-shadow: 0px 5px 22px 0px rgba(61, 68, 110, 0.2);
+}
+.ant-notification-notice-with-icon .ant-notification-notice-message{
+    font-size: 14px;
 }

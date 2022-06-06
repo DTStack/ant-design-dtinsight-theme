@@ -1,7 +1,7 @@
 ---
 category: Components
 cols: 1
-type: 布局
+type: 导航
 title: Steps
 subtitle: 标准导航步骤页
 ---

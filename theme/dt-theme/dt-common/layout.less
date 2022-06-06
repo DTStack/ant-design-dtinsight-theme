@@ -2,24 +2,29 @@
 
 .dt-layout-header {
     min-width: @minWidth;
-    background: #080A1A !important;
+    background: @white !important;
     padding: 0px 0px 0px 24px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    justify-content: space-between;
+    justify-content: flex-start;
     display: flex;
+    box-shadow: 0px 4px 4px 0px rgba(61, 68, 110, 0.04);
     .ant-menu {
-        background: #080A1A;
-        color: #ABB2C2;
+        background: @white;
+        color: @black_title;
     }
     .ant-menu-item > a {
-        color: #ABB2C2;
+        color: @black_title;
     }
     .ant-menu-horizontal {
         border-bottom: 0px solid transparent;
+    }
+    .ant-menu-horizontal .ant-menu-item{
+        border-color: @white !important;
+        padding: 0 24px;
     }
     .ant-menu-horizontal > .ant-menu-item:hover,
     .ant-menu-horizontal > .ant-menu-submenu:hover,
@@ -29,7 +34,7 @@
     .ant-menu-horizontal > .ant-menu-submenu-open,
     .ant-menu-horizontal > .ant-menu-item-selected,
     .ant-menu-horizontal > .ant-menu-submenu-selected {
-        border-bottom: 3px solid #287BF7 !important;
+        border-bottom: 3px solid @primaryColor !important;
     }
     .ant-menu-horizontal > .ant-menu-item,
     .ant-menu-horizontal > .ant-menu-submenu {
@@ -329,12 +334,12 @@
     cursor: pointer;
     height: 64px;
     & > img {
-        height: 28px;
+        height: 40px;
     }
     .c-header__title, & > span {
         text-decoration: none;
         font-size: 24px;
-        color: @white;
+        color: @black_title;
         padding-left: 8px;
     }
 }

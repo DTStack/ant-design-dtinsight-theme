@@ -48,14 +48,13 @@ li.ant-picker-panel-select-option-selected:hover {
 .dt-form-shadow-bg {
     &.ant-input, &.ant-input-number, .ant-input, .ant-select-selection, .ant-picker-input {
         border: 1px solid transparent;
-        box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
-        &:hover, &:focus {
-            border-color: @primaryColor;
-        }
-        &:focus {
-            border-color: @primaryColor;
-            box-shadow: 0px 2px 8px 0px rgba(63,135,255,0.10);
-        }
+        // &:hover, &:focus {
+        //     border-color: @primaryColor;
+        // }
+        // &:focus {
+        //     border-color: @primaryColor;
+        //     box-shadow: 0px 2px 8px 0px rgba(63,135,255,0.10);
+        // }
     }
     &.ant-input[disabled]:hover {
         border-color: transparent;
@@ -131,3 +130,22 @@ li.ant-picker-panel-select-option-selected:hover {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
+// checkbox
+.ant-checkbox-group{
+    line-height: calc(@lineHeight / @font12);
+}
+.ant-checkbox{
+    top: 0.3em;
+}
+
+.ant-picker-content{
+    thead{
+        th{
+            color: @black_pageMsg;
+            font-weight: 400;
+        }
+    }
+}
+.ant-form-vertical .ant-form-item-label{
+    margin-bottom: 4px;
+}

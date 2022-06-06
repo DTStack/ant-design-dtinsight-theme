@@ -16,6 +16,7 @@ Basic usage example.
 ```jsx
 import { Collapse } from 'antd';
 
+
 const { Panel } = Collapse;
 
 function callback(key) {
@@ -29,7 +30,9 @@ const text = `
 `;
 
 ReactDOM.render(
-  <Collapse defaultActiveKey={['1']} onChange={callback}>
+  <Collapse 
+    defaultActiveKey={['1']} 
+    onChange={callback}>
     <Panel header="This is panel header 1" key="1">
       <p>{text}</p>
     </Panel>

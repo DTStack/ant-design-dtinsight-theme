@@ -68,8 +68,8 @@ class NormalLoginForm extends React.Component {
     ];
 
     return (
-      <Form name="normal_login" {...formItemLayout} className="demo-form-light dt-form-light-bg" onSubmit={this.handleSubmit}>
-        <Form.Item name="username" colon={false} label={'用户名'} rules={[{ required: true, message: 'It is required!' }]}>
+      <Form name="normal_login" {...formItemLayout} className="demo-form-light dt-form-light-bg" onSubmit={this.handleSubmit} colon={false}>
+        <Form.Item name="username" label={'用户名'} rules={[{ required: true, message: 'It is required!' }]}>
           <Input placeholder="Username"/>
         </Form.Item>
         <Form.Item name="role" colon={false} label={'角色'} rules={[{ required: true, message: 'It is required!' }]}>
