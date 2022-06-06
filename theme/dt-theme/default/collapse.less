@@ -1,4 +1,6 @@
 .ant-collapse {
+    border: 1px solid #EBECF0;
+    border-radius: 0px  ;
     .ant-collapse-item {
         border-bottom: 1px solid @black_readonly;
         .ant-collapse-header {
@@ -8,7 +10,7 @@
             padding: 0 16px;
             line-height: 40px;
             .ant-collapse-arrow {
-                margin-right: 12px;
+                margin-right: 16px;
                 font-size: 16px;
                 vertical-align: -4px;
             }
@@ -22,7 +24,7 @@
             .ant-collapse-content-box{
                 padding: 0 16px;
                 .ant-collapse{
-                    margin-left: 40px;
+                    margin-left: 24px;
                     border: none;
                     border-left: 1px solid @black_readonly;
                     background-color: @black_navBg;
@@ -30,8 +32,19 @@
                         background-color: @black_navBg;
                         border-bottom: none;
                     }
+                    .ant-collapse-item {
+                        .ant-collapse-content  {
+                            background: white;
+                            border-bottom: 0px;
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+.ant-collapse > .ant-collapse-item:last-child, .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+    border-radius: 0;
+    border-bottom: 0;
 }
