@@ -69,6 +69,15 @@
     transition: background-color 0.3s;
     content: '';
 }
+.ant-table-row-expand-icon{
+    border: solid 1px @bule;
+    &::before{
+        color: @bule;
+    }
+    &::after{
+        color: @bule;
+    }
+}
 .ant-table-tbody > tr > td.ant-table-selection-column {
     padding: 0px 8px 0px 16px;
     line-height: 44px;
@@ -77,6 +86,11 @@
 .ant-table-tbody > tr > td.ant-table-selection-column + td{
     padding: 0px 8px 0px 0px;
     line-height: 44px;
+}
+.ant-table-ping-right:not(.ant-table-has-fix-right) .ant-table-container{
+    &::after{
+        box-shadow: none;
+    }
 }
 .ant-table-middle {
     & > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
@@ -375,7 +389,7 @@
                 .ant-table-fixed-header {
                     // 存在数据的时候 有分页组件存在 高度需要减去分页的高度
                     &:not(:last-child) {
-                        height: calc(100% - 56px) !important;
+                        height: calc(100% - 44px) !important;
                     }
                     height: 100%; // 分页高度为 67px
                     .ant-table-content {

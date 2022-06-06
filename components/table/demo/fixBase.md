@@ -61,7 +61,7 @@ class App extends React.Component {
       }
     ],
     isShowData: true,
-    isColumnFixed: false,
+    isColumnFixed: true,
     setOverflowX: false,
     setScrollBar: true,
     smallSize: false
