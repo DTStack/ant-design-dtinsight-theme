@@ -27885,6 +27885,9 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-radio-wrapper {
   align-items: flex-start;
 }
+span.ant-radio + * {
+  line-height: 22px;
+}
 .dt-ant-select-dropdown-default.ant-select-dropdown {
   box-shadow: 0px 5px 22px 0px rgba(61, 68, 110, 0.2);
 }
@@ -27925,7 +27928,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-notification-close-btn {
   position: absolute;
   right: 36px;
-  top: 12px;
+  top: 18px;
   line-height: 17px;
   font-size: 13px;
   font-weight: normal;
