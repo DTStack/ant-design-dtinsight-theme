@@ -36,10 +36,18 @@
         border: 1px solid @primaryColor;
         line-height: 22px;
     }
-    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
-        height: 24px;
-        padding: 0 8px;
-        width: 33px;
+    .ant-select-single:not(.ant-select-customize-input){
+        .ant-select-arrow{
+            display: none;
+        }
+        .ant-select-selector{
+            height: 24px;
+            padding: 0 8px;
+            width: 67px;
+        }
+    }
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item{
+        padding: 0;
     }
     .ant-pagination-options{
         height: 24px;
