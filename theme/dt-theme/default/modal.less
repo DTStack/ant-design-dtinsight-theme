@@ -4,13 +4,22 @@
     font-weight: 600;
 }
 .ant-modal-header {
-    border-bottom: 1px solid @black_border;
     padding: 11px 24px;
     background-color: @black_navBg;
 }
 .ant-modal-body {
     padding: 16px 24px;
     box-sizing: border-box;
+    .ant-form{
+        .ant-form-item {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .ant-table-container table > thead > tr:first-child th:first-child {
+        padding-left: 16px;
+    }
 }   
 .ant-modal-footer {
     padding: 12px 24px;
