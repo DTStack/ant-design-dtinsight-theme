@@ -4,11 +4,14 @@
     .ant-collapse-item {
         border-bottom: 1px solid @black_readonly;
         .ant-collapse-header {
-            background-color: #ffffff;
-            height: 40px;
-            box-sizing: border-box;
+            align-items: center;
             padding: 0 16px;
+            box-sizing: border-box;
+            height: 40px;
             line-height: 40px;
+            font-size: 14px;
+            background-color: #ffffff;
+            color: @black_title;
             .ant-collapse-arrow {
                 margin-right: 16px;
                 font-size: 16px;
@@ -20,9 +23,14 @@
             background-color: @black_navBg;
             min-height: 40px;
             box-sizing: border-box;
-            line-height: 40px;
+            line-height: 20px;
+            
+            font-weight: 400;
             .ant-collapse-content-box{
-                padding: 0 16px;
+                padding: 0 0 0 16px;
+                min-height: 40px;
+                display: flex;
+                align-items: center;
                 .ant-collapse{
                     margin-left: 24px;
                     border: none;
