@@ -19,7 +19,7 @@ const { Option } = Select;
 
 ReactDOM.render(
   <div className="demo-select-shadow">
-    <Select defaultValue="lucy" className="dt-form-shadow-bg" style={{ width: 200 }}>
+    <Select defaultValue="lucy" className="dt-form-shadow-bg" dropdownClassName="dt-ant-select-dropdown-default" style={{ width: 200 }}>
       <Option value="jack">Jack</Option>
       <Option value="lucy">Lucy</Option>
       <Option value="Yiminghe">yiminghe</Option>

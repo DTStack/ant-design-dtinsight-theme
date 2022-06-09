@@ -32,7 +32,7 @@ function onSearch(val) {
 ReactDOM.render(
   <Select
     showSearch
-    style={{ width: 200 }}
+    style={{ width: 200 }} dropdownClassName="dt-ant-select-dropdown-default"
     placeholder="Select a person"
     optionFilterProp="children"
     onChange={onChange}

@@ -47,7 +47,7 @@ class App extends React.Component {
           onOk={this.handleOk}
           onCancel={this.handleCancel}
         >
-          <Form labelCol={{ span: 7 }} wrapperCol={{ span: 15 }}>
+          <Form labelCol={{ span: 7 }} layout='vertical'>
             <Form.Item label="项目标识" required>
               <Input placeholder="请输入项目标识" />
             </Form.Item>

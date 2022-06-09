@@ -72,33 +72,33 @@ class NormalLoginForm extends React.Component {
         <Form.Item name="username" label={'用户名'} rules={[{ required: true, message: 'It is required!' }]}>
           <Input placeholder="Username"/>
         </Form.Item>
-        <Form.Item name="role" label={'角色'} rules={[{ required: true, message: 'It is required!' }]}>
+        <Form.Item name="role" colon={false} label={'角色'} rules={[{ required: true, message: 'It is required!' }]}>
           <Select placeholder="Please select">
               <Option value="1">项目所有者</Option>
               <Option value="2">数据分析师</Option>
               <Option value="3">管理员</Option>
             </Select>
         </Form.Item>
-        <Form.Item name="password" label={'密码'} rules={[{ required: true, message: 'It is required!' }]}>
+        <Form.Item name="password" colon={false} label={'密码'} rules={[{ required: true, message: 'It is required!' }]}>
           <Input.Password placeholder="Password"/>
         </Form.Item>
-        <Form.Item name="count" label={'次数限制'} tooltip='Tooltip with customize icon' rules={[{ required: false, message: 'It is required!' }]}>
+        <Form.Item name="count" colon={false} label={'次数限制'} tooltip='Tooltip with customize icon' rules={[{ required: false, message: 'It is required!' }]}>
           <InputNumber min={1} style={{ width: '100%' }} max={10} />
         </Form.Item>
-        <Form.Item name="way" label={'告警方式'} rules={[{ required: false, message: 'It is required!' }]}>
+        <Form.Item name="way" colon={false} label={'告警方式'} rules={[{ required: false, message: 'It is required!' }]}>
           <Checkbox.Group options={[{ label: '邮件', value: '1' }, { label: '短信', value: '2' }]} />
         </Form.Item>
-        <Form.Item name="type" label={'存储类型'} rules={[{ required: false, message: 'It is required!' }]}>
+        <Form.Item name="type" colon={false} label={'存储类型'} rules={[{ required: false, message: 'It is required!' }]}>
           <Radio.Group>
             <Radio value={1}>orc</Radio>
             <Radio value={2}>text</Radio>
             <Radio value={3}>md</Radio>
           </Radio.Group>
         </Form.Item>
-        <Form.Item name="switch" label={'开关'} rules={[{ required: false, message: 'It is required!' }]}>
+        <Form.Item name="switch" colon={false} label={'开关'} rules={[{ required: false, message: 'It is required!' }]}>
           <Switch />
         </Form.Item>
-        <Form.Item name="location" label={'位置'} rules={[{ required: false, message: 'It is required!' }]}>
+        <Form.Item name="location" colon={false} label={'位置'} rules={[{ required: false, message: 'It is required!' }]}>
           <Cascader options={options} placeholder="Please select" />
         </Form.Item>
         <Form.Item>

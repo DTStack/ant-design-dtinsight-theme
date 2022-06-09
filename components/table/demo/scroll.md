@@ -20,7 +20,7 @@ title:
 import { Table, Divider } from 'antd';
 
 const columns = [
-  { title: 'Name', dataIndex: 'name', key: 'name', width: 200 },
+  { title: 'Name', dataIndex: 'name', key: 'name', width: 200, fixed: 'left', },
   { title: 'Age', dataIndex: 'age', key: 'age', width: 100 },
   { title: 'Address', dataIndex: 'address', key: 'address', width: 200, ellipsis: true },
   { title: 'description', dataIndex: 'description', key: 'description', width: 400 },

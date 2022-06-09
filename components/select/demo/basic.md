@@ -20,7 +20,7 @@ const { Option } = Select;
 
 ReactDOM.render(
   <div className="demo-select-basic">
-    <Select defaultValue="lucy" style={{ width: 120 }}>
+    <Select defaultValue="lucy" style={{ width: 120 }} dropdownClassName="dt-ant-select-dropdown-default">
       <Option value="jack">Jack</Option>
       <Option value="lucy">Lucy</Option>
       <Option value="disabled" disabled>
@@ -28,7 +28,7 @@ ReactDOM.render(
       </Option>
       <Option value="Yiminghe">yiminghe</Option>
     </Select>
-    <Select defaultValue="lucy" style={{ width: 120 }} disabled>
+    <Select defaultValue="lucy" style={{ width: 120 }} disabled dropdownClassName="dt-ant-select-dropdown-default">
       <Option value="lucy">Lucy</Option>
     </Select>
   </div>,

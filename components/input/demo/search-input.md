@@ -28,13 +28,6 @@ ReactDOM.render(
     <br />
     <br />
     <Search placeholder="input search text" onSearch={value => console.log(value)} enterButton />
-    <br />
-    <br />
-    <Search
-      placeholder="input search text"
-      enterButton="Search"
-      onSearch={value => console.log(value)}
-    />
   </div>,
   mountNode,
 );
