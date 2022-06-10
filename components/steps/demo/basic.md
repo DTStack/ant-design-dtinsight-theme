@@ -27,21 +27,12 @@ import { Steps, Card, Button, Select, message, Form,
 const { Step } = Steps;
 const { Option } = Select;
 
-const formItemLayout = {
-  labelCol: {
-    xs: { span: 24 },
-    sm: { span: 9 },
-  },
-  wrapperCol: {
-    xs: { span: 24 },
-    sm: { span: 10 },
-  },
-};
+const formLayout = 'vertical'
 
 class FirstStepForm extends React.Component {
   render () {
     return (
-      <Form {...formItemLayout}>
+      <Form  layout={formLayout}>
         <Form.Item label={'用户名'} name="username">
           <Input placeholder="Username" rules={[{ required: true, message: 'It is required!' }]}/>
         </Form.Item>
@@ -63,7 +54,7 @@ class FirstStepForm extends React.Component {
 class SecondStepForm extends React.Component {
   render () {
     return (
-      <Form {...formItemLayout}>
+      <Form layout={formLayout}>
         <Form.Item label={'次数限制'} name="count">
           <InputNumber min={1} style={{ width: '100%' }} max={10} rules={[{ required: false, message: 'It is required!' }]}/>
         </Form.Item>
@@ -80,7 +71,7 @@ class SecondStepForm extends React.Component {
 class LastStepForm extends React.Component {
   render() {
     return (
-      <Form {...formItemLayout}>
+      <Form layout={formLayout}>
         <Form.Item label={'存储类型'} name="type">
           <Radio.Group rules={[{ required: false, message: 'It is required!' }]}>
             <Radio value={1}>orc</Radio>
@@ -98,15 +89,15 @@ class LastStepForm extends React.Component {
 
 const steps = [
   {
-    title: 'First',
+    title: '步骤一',
     content: <FirstStepForm />,
   },
   {
-    title: 'Second',
+    title: '步骤二',
     content: <SecondStepForm />,
   },
   {
-    title: 'Last',
+    title: '步骤三',
     content: <LastStepForm />,
   },
 ];
