@@ -40,10 +40,14 @@ ReactDOM.render(
     </div>
     <div style={{ marginBottom: '16px' }}>
         <Radio.Group defaultValue="a" size="small">
-            <Radio disabled value="a">Hangzhou</Radio>
-            <Radio disabled value="b">Shanghai</Radio>
-            <Radio value="c">Beijing</Radio>
-            <Radio value="d">Chengdu</Radio>
+            <Radio disabled value="a">Beijing</Radio>
+            <Radio disabled value="b">Chengdu</Radio>
+        </Radio.Group>
+    </div>
+    <div style={{ marginBottom: '16px' }}>
+        <Radio.Group defaultValue="a" size="small">
+            <Radio value="a">Hangzhou</Radio>
+            <Radio checked value="b">Shanghai</Radio>
         </Radio.Group>
     </div>
   </div>,
