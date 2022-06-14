@@ -26,7 +26,7 @@ title:
 特别的，若添加了类名`dt-table-scrollbar`对滚动条样式进行了修改，则可以不添加该样式
 
 ```jsx
-import { Table, Divider, Switch } from 'antd';
+import { Table, Switch } from 'antd';
 
 class App extends React.Component {
   state = {
@@ -89,7 +89,6 @@ class App extends React.Component {
         render: (text, record) => (
           <span>
             <a>Invite</a>
-            <Divider type="vertical" />
             <a>Delete</a>
           </span>
         ),
