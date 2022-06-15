@@ -17,9 +17,9 @@ ReactDOM.render(
   <div className="demo-button-type">
     <Button type="primary" disabled>一级按钮</Button>
     <Button disabled>二级按钮</Button>
-    <Button ghost disabled>幽灵按钮</Button>
+    <Button ghost disabled>按钮</Button>
     <Button type="link" disabled>文字按钮</Button>
-    <Button icon={<SearchOutlined />} disabled className="dt-btn-highlight">图标按钮</Button>
+    <Button icon={<SearchOutlined />} disabled className="dt-btn-highlight"></Button>
   </div>,
   mountNode,
 );
