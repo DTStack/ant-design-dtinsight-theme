@@ -41,7 +41,7 @@ class Demo extends React.Component {
             <TreeNode value="leaf2" title="your leaf" key="random1" />
           </TreeNode>
           <TreeNode value="parent 1-1" title="parent 1-1" key="random2">
-            <TreeNode value="sss" title={<b style={{ color: '#08c' }}>sss</b>} key="random3" />
+            <TreeNode value="sss" title='sss' key="random3" />
           </TreeNode>
         </TreeNode>
       </TreeSelect>
