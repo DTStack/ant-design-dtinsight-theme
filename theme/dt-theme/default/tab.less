@@ -12,9 +12,11 @@
             color: @black_title;
         }
     }
-    .ant-tabs-nav .ant-tabs-tab-active {
-        color: @black_title;
-        border-bottom: 0px solid @black_border;
+    .ant-tabs-nav {
+        .ant-tabs-tab-active {
+            color: @black_title;
+            border-bottom: 0px solid @black_border;
+        }
     }
     .ant-tabs-bar {
         border-bottom: 0px solid @white;
@@ -23,9 +25,10 @@
 .ant-tabs-nav-wrap {
     .ant-tabs-nav-list{
         .ant-tabs-tab {
-            padding: 6px 7px;
-            margin-right: 17px;
+            padding: 8px;
+            margin-right: 24px;
             margin-left: 0;
+            line-height: 20px;
         }
 
         .anticon{
@@ -59,9 +62,13 @@
     .ant-tabs-nav-list{
         .ant-tabs-tab {
             margin-right: 0;
-            padding: 9px 8px 9px 12px;
+            padding: 9px 12px;
+            height: 40px;
+            border: 2px solid #f0f0f0;
         }
         .ant-tabs-tab-btn{
+            line-height: 22px;
+            font-size: 14px;
             color: @black_Desc;
         }
         .ant-tabs-tab-active{
@@ -79,4 +86,15 @@
 }
 .ant-tabs{
     color: @black_Desc;
+    .ant-tabs-nav-wrap-ping-bottom {
+        .ant-tabs-nav-list {
+            .ant-tabs-tab {
+                padding: 8px 12px;
+            }
+        }
+    }
+}
+
+#rc-tabs-6-tab-1:hover , #rc-tabs-6-tab-2:hover, #rc-tabs-6-tab-3:hover {
+    color: @bule;
 }

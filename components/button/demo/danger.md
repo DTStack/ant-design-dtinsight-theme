@@ -15,8 +15,7 @@ import { Button } from 'antd';
 ReactDOM.render(
   <div className="demo-button-type">
     <Button type="danger">二级按钮</Button>
-    <Button ghost type="danger">幽灵按钮</Button>
-    <Button disabled ghost type="danger">幽灵按钮</Button>
+    <Button ghost type="danger">按钮</Button>
   </div>,
   mountNode,
 );

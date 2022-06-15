@@ -6,14 +6,14 @@
         padding: 0px;
         .ant-steps {
             padding: 12px 20%;
-            background: @white;
+            background: @black_navBg;
             .ant-steps-item-icon {
                 margin-right: 4px;
-                background-color: #eee;
+                background-color: @black_border;
                 border-color: transparent;
                 .ant-steps-icon {
-                    top: -2px;
-                    color: @white6;
+                    top: -1px;
+                    color: @white;
                 }
             }
             .ant-steps-item-title {
@@ -41,23 +41,46 @@
                     background-color: @white;
                     border: 1px solid @primaryColor;
                     .ant-steps-icon {
-                        top: -2px;
+                        top: 0;
                         color: @primaryColor;
                     }
+                }
+            }
+            .ant-steps-item-wait {
+                .ant-steps-item-icon {
+                    background-color: @white;
+                    border-color: @black_msg;
+                    .ant-steps-icon {
+                        color: @black_msg;
+                    }
+                }            
+            }
+        }
+        .ant-form {
+            .ant-form-item {
+                .ant-form-item-label {
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: @black_title;
+                }
+                .ant-form-item-control-input {
+                    width: 70%;
                 }
             }
         }
         .ant-steps + div {
             position: absolute;
-            top: 52px;
+            top: 48px;
             bottom: 56px;
             left: 0;
             right: 0;
-            background: @black_navBg;
+            background: @white;
             border-top: 1px solid @black_readonly;
             border-bottom: 1px solid @black_readonly;
             padding: 20px;
-            overflow: scroll;
+            overflow: auto;
             + footer {
                 background: @black_navBg;
                 text-align: center;

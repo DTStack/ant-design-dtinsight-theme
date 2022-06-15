@@ -22,7 +22,7 @@ ReactDOM.render(
     total={85}
     showSizeChanger
     showQuickJumper
-    showTotal={total => `Total ${total} items`}
+    showTotal={total => `共条${total}数据`}
   />,
   mountNode,
 );

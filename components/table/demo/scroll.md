@@ -17,7 +17,7 @@ title:
 高度超出：固定底部操作栏和表头内容区域做滚动。
 
 ```jsx
-import { Table, Divider } from 'antd';
+import { Table } from 'antd';
 
 const columns = [
   { title: 'Name', dataIndex: 'name', key: 'name', width: 200, fixed: 'left', },
@@ -33,7 +33,6 @@ const columns = [
     render: (text, record) => (
       <span>
         <a>Invite</a>
-        <Divider type="vertical" />
         <a>Delete</a>
       </span>
     ),

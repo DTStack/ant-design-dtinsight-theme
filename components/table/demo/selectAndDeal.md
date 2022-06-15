@@ -11,7 +11,7 @@ title:
 - 添加类名 `dt-table-border` 为表格设置外边框
 
 ```jsx
-import { Table, Tag, Divider, Pagination, Row, Col, Button } from 'antd';
+import { Table, Tag, Pagination, Row, Col, Button } from 'antd';
 
 const columns = [
   {
@@ -36,7 +36,6 @@ const columns = [
     render: (text, record) => (
       <span>
         <a>Invite</a>
-        <Divider type="vertical" />
         <a>Delete</a>
       </span>
     ),

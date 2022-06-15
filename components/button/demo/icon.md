@@ -26,7 +26,7 @@ ReactDOM.render(
         <span className="anticon">
             <i className="iconfont iconAPItiaoyong"></i>
         </span>
-        幽灵按钮
+        按钮
     </Button>
     <Button className="dt-btn-highlight">
         <span className="anticon">
@@ -34,7 +34,7 @@ ReactDOM.render(
         </span>
         图标按钮
     </Button>
-    <Button icon={<ReloadOutlined />} className="dt-btn-highlight">图标按钮</Button>
+    <Button icon={<ReloadOutlined />} className="dt-btn-highlight"></Button>
   </div>,
   mountNode,
 );

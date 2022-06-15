@@ -6,7 +6,7 @@ title:
 
 ## zh-CN
 
-按钮高度分为 32px (常规尺寸)、 28px (小尺寸)两种。
+按钮高度分为 32px (常规尺寸)、 24px (小尺寸)两种。
 
 ```jsx
 import { Button } from 'antd';
