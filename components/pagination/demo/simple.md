@@ -1,8 +1,8 @@
 ---
 order: 2
 title:
-  zh-CN: 基础分页
-  en-US: Basic
+  zh-CN: 精简型
+  en-US: Simple
 ---
 
 ## zh-CN
@@ -18,7 +18,7 @@ import React from 'react';
 import { Pagination } from 'antd';
 
 ReactDOM.render(
- <Pagination simple defaultCurrent={2} total={50} />,
+ <Pagination simple defaultCurrent={2} total={50}/>,
   mountNode,
 );
 ```
