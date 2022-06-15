@@ -25,6 +25,7 @@ class NormalCheckBox extends React.Component {
         {
             label: 'Apple',
             value: 'Apple',
+            disabled: true,
         },
         {
             label: 'Pear',
@@ -33,11 +34,12 @@ class NormalCheckBox extends React.Component {
         {
             label: 'Orange',
             value: 'Orange',
+            disabled: true,
         },
     ];
 
     return (
-      <Checkbox.Group options={options} defaultValue={['Pear']} onChange={this.onChange} />
+      <Checkbox.Group options={options} defaultValue={['Pear', 'Orange']} onChange={this.onChange} />
     );
   }
 }

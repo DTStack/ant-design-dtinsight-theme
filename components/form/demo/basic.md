@@ -83,7 +83,7 @@ class NormalLoginForm extends React.Component {
           <Input.Password placeholder="Password"/>
         </Form.Item>
         <Form.Item name="count" colon={false} label={'次数限制'} tooltip='Tooltip with customize icon' rules={[{ required: false, message: 'It is required!' }]}>
-          <InputNumber min={1} style={{ width: '100%' }} max={10} />
+          <InputNumber min={1} style={{ width: '100px' }} max={10} />
         </Form.Item>
         <Form.Item name="way" colon={false} label={'告警方式'} rules={[{ required: false, message: 'It is required!' }]}>
           <Checkbox.Group options={[{ label: '邮件', value: '1' }, { label: '短信', value: '2' }]} />

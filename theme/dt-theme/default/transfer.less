@@ -1,0 +1,38 @@
+@import '../const.less';
+
+.ant-transfer-operation {
+    .ant-btn-primary {
+        color: @black_Desc;
+        border: 0;
+        background: @black_readonly;
+    }
+    .ant-btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .ant-btn-primary[disabled] {
+        color: @black_msg;
+        background: @black_titleBg;
+    }
+}
+
+.ant-transfer-list-content-item:not(.ant-transfer-list-content-item-disabled):hover {
+    background-color: @black_titleBg;
+}
+
+.ant-transfer-list-header-title {
+    font-weight: 500;
+}
+
+.dt-transfer-without-header-count {
+    .ant-transfer-list-header {
+        .ant-transfer-list-header-dropdown,.ant-transfer-list-header-selected {
+            display: none;
+        }
+        .ant-transfer-list-header-title {
+            margin-left: 4px;
+            text-align: left;
+        }
+    }
+}
