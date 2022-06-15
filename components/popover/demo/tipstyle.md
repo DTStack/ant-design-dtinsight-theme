@@ -23,15 +23,6 @@ const content = (
   </div>
 );
 
-const contentHasBtn = (
-    <div>
-        <p>content，content，content，content。</p>
-        <div>
-            <Button>按钮</Button>
-            <Button>按钮</Button>
-        </div>
-    </div>
-)
 const cancel = () => {
     console.log("cancel");
 }
