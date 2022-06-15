@@ -28,7 +28,7 @@ ReactDOM.render(
     style={{ width: '100%' }}
     placeholder="Please select"
     defaultValue={['a10', 'c12']}
-    onChange={handleChange}
+    onChange={handleChange} dropdownClassName="dt-ant-select-dropdown-default"
   >
     {children}
   </Select>,

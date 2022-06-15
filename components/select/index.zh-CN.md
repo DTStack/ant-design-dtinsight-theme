@@ -26,5 +26,6 @@ title: Select
 
 |类名  |说明  |使用示例  |
 |---------|---------|---------|
+|.dt-ant-select-dropdown-default | 默认需设置dropdownClassName为dt-ant-select-dropdown-default | UI5.0额外样式  |
 |.dt-form-shadow-bg  | 灰色背景,表单样式设置   | 灰色背景(仅默认主题下使用)   |
 |.dt-form-light-bg  | 浅色背景上，显示深色控件   | 浅色背景(仅暗黑主题下使用)   |
