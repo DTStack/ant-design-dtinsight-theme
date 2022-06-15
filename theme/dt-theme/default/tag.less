@@ -1,11 +1,11 @@
 @import '../const.less';
 .ant-tag{
-    padding: 2px 8px 2px 8px;
+    padding: 2px 12px;
     height: 24px;
     border-radius: 4px;
     border: 1px solid @black_readonly;
     box-sizing: border-box;
-    line-height: 20px;
+    line-height: 18px;
 }
 .ant-tag-close-icon{
     margin-left: 2px;
@@ -97,6 +97,14 @@
     }
 }
 .dt-ant-tag-icon{
+    line-height: 20px;
     border: none;
     border-radius: 12px;
+    svg {
+        width: 16px;
+        height:16px;
+    }
+}
+.ant-tag > .anticon + span, .ant-tag > span + .anticon {
+    margin-left: 2px;
 }
