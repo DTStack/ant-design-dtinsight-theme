@@ -28379,6 +28379,11 @@ li {
 .ant-modal-confirm-body > .anticon {
   margin-right: 14px;
 }
+.ant-modal-confirm .ant-modal-confirm-btns .ant-btn.ant-btn-dangerous {
+  background-color: #F96C5B;
+  color: #FFFFFF;
+  border-color: #F96C5B;
+}
 .ant-form-item {
   margin-bottom: 16px;
 }
@@ -28424,11 +28429,13 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-radio-button-wrapper {
   padding: 0 16px;
 }
+.ant-form-item-control .ant-radio-wrapper span.ant-radio + * {
+  margin-top: 0.1em;
+}
 .dt-form-shadow-bg.ant-input,
 .dt-form-shadow-bg.ant-input-number,
 .dt-form-shadow-bg .ant-input,
-.dt-form-shadow-bg .ant-select-selection,
-.dt-form-shadow-bg .ant-picker-input {
+.dt-form-shadow-bg .ant-select-selection {
   border: 1px solid transparent;
 }
 .dt-form-shadow-bg.ant-input[disabled]:hover {
@@ -28517,7 +28524,7 @@ li.ant-picker-panel-select-option-selected:hover {
   line-height: 20px;
 }
 .ant-form-vertical .ant-form-item-label {
-  margin-bottom: 4px;
+  margin-bottom: 0px;
 }
 .ant-alert {
   font-size: 14px;
@@ -28673,6 +28680,7 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-content {
   padding: 8px 12px;
+  line-height: 20px;
 }
 .ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-label {
   padding: 0 12px;
@@ -29227,13 +29235,32 @@ ul.ant-pagination {
   border-radius: 4px;
   width: 48px;
 }
+.ant-picker {
+  border: 1px solid #D8DAE2 !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+}
+.ant-picker .ant-picker-input > input {
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  color: #3D446E;
+}
+.ant-picker .ant-picker-input > input::-webkit-input-placeholder {
+  color: #B1B4C5;
+}
+.ant-picker-small {
+  font-size: 12px !important;
+}
+.ant-picker-small .ant-picker-input > input {
+  font-size: 12px;
+  line-height: calc(18 / 12);
+}
 .ant-picker-focused {
   border-color: #005CE6 !important;
   box-shadow: none !important;
 }
 .ant-picker.dt-ant-datepicker-basic {
   font-size: 12px;
-  padding: 6px 11px 6px;
   border-radius: 4px;
 }
 .ant-picker.dt-ant-datepicker-basic:hover {
@@ -29433,8 +29460,8 @@ ul.ant-pagination {
 .ant-checkbox-group {
   line-height: calc(32px / 12px);
 }
-.ant-checkbox {
-  top: 0.3em;
+.ant-checkbox-wrapper {
+  line-height: 20px;
 }
 .ant-drawer-content-wrapper {
   min-width: 720px;
@@ -29456,17 +29483,42 @@ ul.ant-pagination {
 .ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
   box-shadow: 0px 5px 22px 0px rgba(61, 68, 110, 0.2);
 }
-.ant-transfer-operation .ant-btn-primary {
+.ant-transfer .ant-transfer-list-header {
+  background: #F9F9FA;
+  height: 32px;
+}
+.ant-transfer .ant-transfer-list-body .ant-transfer-list-body-search-wrapper {
+  padding: 8px 16px;
+}
+.ant-transfer .ant-transfer-list-body .ant-transfer-list-body-search-wrapper .ant-input-affix-wrapper {
+  padding: 5px 11px;
+  line-height: calc(20 / 12);
+}
+.ant-transfer .ant-transfer-list-body .ant-transfer-list-content .ant-transfer-list-content-item {
+  height: 32px;
+  padding: 0px 12px;
+}
+.ant-transfer .ant-transfer-list-body .ant-transfer-list-content .ant-checkbox-wrapper {
+  line-height: calc(20 / 12);
+}
+.ant-transfer .ant-transfer-operation {
+  margin: 0 16px;
+}
+.ant-transfer .ant-transfer-operation .ant-btn-primary {
   color: #64698B;
   border: 0;
   background: #EBECF0;
 }
-.ant-transfer-operation .ant-btn {
+.ant-transfer .ant-transfer-operation .ant-btn {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  margin: 0 2px;
 }
-.ant-transfer-operation .ant-btn-primary[disabled] {
+.ant-transfer .ant-transfer-operation .ant-btn:first-child {
+  margin-bottom: 10px;
+}
+.ant-transfer .ant-transfer-operation .ant-btn-primary[disabled] {
   color: #B1B4C5;
   background: #F5F5F8;
 }
@@ -29501,6 +29553,9 @@ ul.ant-pagination {
 .ant-tree-select-dropdown .ant-select-tree .ant-select-tree-list-holder .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
   color: #1D78FF;
   background: none;
+}
+.ant-radio {
+  top: 0.1em;
 }
 * {
   margin: 0;
