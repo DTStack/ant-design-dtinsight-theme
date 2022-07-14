@@ -30,7 +30,7 @@ function showDeleteConfirm() {
   confirm({
     title: '确认要删除该大屏？',
     content: '此操作后不可逆，确认要将对应文件删除？',
-    okText: '删除',
+    okText: '移除',
     okType: 'danger',
     cancelText: '取消',
     onOk() {
