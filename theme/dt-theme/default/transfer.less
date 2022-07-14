@@ -1,21 +1,58 @@
 @import '../const.less';
 
-.ant-transfer-operation {
-    .ant-btn-primary {
-        color: @black_Desc;
-        border: 0;
-        background: @black_readonly;
+.ant-transfer {
+    .ant-transfer-list-header {
+        background: #F9F9FA;
+        height: 32px;
     }
-    .ant-btn {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
+
+    .ant-transfer-list-body {
+        .ant-transfer-list-body-search-wrapper {
+            padding: 8px 16px;
+
+            .ant-input-affix-wrapper {
+                padding: 5px 11px;
+                line-height: calc(20 / 12);
+            }
+        }
+        .ant-transfer-list-content {
+            .ant-transfer-list-content-item{
+                height: 32px;
+                padding: 0px 12px;
+            }
+            .ant-checkbox-wrapper {
+                line-height: calc(20 / 12);
+            }
+        }
     }
-    .ant-btn-primary[disabled] {
-        color: @black_msg;
-        background: @black_titleBg;
+
+    .ant-transfer-operation {
+        margin: 0 16px;
+
+        .ant-btn-primary {
+            color: @black_Desc;
+            border: 0;
+            background: @black_readonly;
+        }
+
+        .ant-btn {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0 2px;
+
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+
+        .ant-btn-primary[disabled] {
+            color: @black_msg;
+            background: @black_titleBg;
+        }
     }
 }
+
 
 .ant-transfer-list-content-item:not(.ant-transfer-list-content-item-disabled):hover {
     background-color: @black_titleBg;
@@ -27,9 +64,12 @@
 
 .dt-transfer-without-header-count {
     .ant-transfer-list-header {
-        .ant-transfer-list-header-dropdown,.ant-transfer-list-header-selected {
+
+        .ant-transfer-list-header-dropdown,
+        .ant-transfer-list-header-selected {
             display: none;
         }
+
         .ant-transfer-list-header-title {
             margin-left: 4px;
             text-align: left;
