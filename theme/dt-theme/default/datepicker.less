@@ -1,12 +1,33 @@
 // 除组件外的一些 共有样式
 @import '../const.less';
+.ant-picker{
+    border: 1px solid #D8DAE2 !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    .ant-picker-input > input{
+        font-size: 12px;
+        line-height: calc(22 / 12);
+        color: @black_title;
+        &::-webkit-input-placeholder{
+            color: #B1B4C5;
+        }
+    }
+}
+.ant-picker-small{
+    font-size: 12px !important;
+    .ant-picker-input{
+        & > input{
+            font-size: 12px;
+            line-height: calc(18 / 12);
+        }
+    }
+}
 .ant-picker-focused{
     border-color: @clickColor !important;
     box-shadow: none !important;
 }
 .ant-picker.dt-ant-datepicker-basic {
     font-size: 12px;
-    padding: 6px 11px 6px;
     border-radius: 4px;
     &:hover{
         border-color: @primaryColor;
