@@ -18,7 +18,7 @@ import { Alert } from 'antd';
 ReactDOM.render(
   <div>
     <Alert style={{ marginBottom: 20 }} message="Success Text" type="success" closable />
-    <Alert style={{ marginBottom: 20 }} message={<span>Waring Text!  <a>前去处理</a></span>} type="warning" closable />
+    <Alert style={{ marginBottom: 20 }} message={<span>Waring Text!  <a className="operate-btn">前去处理</a></span>} type="warning" closable />
     <Alert style={{ marginBottom: 20 }} message="Error Text" type="error" closable />
   </div>,
   mountNode,
