@@ -26848,9 +26848,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
   background: transparent;
   border-radius: 2px;
 }
-.ant-alert {
-  padding: 12px 16px 12px 20px;
-}
 .ant-alert.ant-alert-no-icon {
   padding: 12px 16px;
 }
@@ -26864,7 +26861,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
   right: 14px;
 }
 .ant-alert-with-description {
-  padding: 12px 16px 12px 20px;
+  padding: 12px 16px;
 }
 .ant-alert-with-description .ant-alert-icon {
   top: 13px;
@@ -26872,6 +26869,14 @@ div.ant-typography-edit-content.ant-typography-rtl {
 }
 .ant-alert-with-description .ant-alert-close-icon {
   top: 12px;
+}
+.ant-alert-with-description .ant-alert-icon {
+  font-size: 16px;
+  margin-top: 3px;
+  margin-right: 8px;
+}
+.ant-alert-content .ant-alert-message .operate-btn {
+  float: right;
 }
 .ant-btn {
   padding: 0px 16px;
@@ -28320,6 +28325,10 @@ li {
 .dt-btn-custom-icon.ant-btn .anticon + span {
   margin-left: 4px;
 }
+.ant-btn.ant-btn-sm {
+  padding: 0 8px;
+  border: none;
+}
 .demo-button-type .ant-btn-sm {
   height: 24px;
   border-radius: 2px;
@@ -28386,6 +28395,9 @@ li {
 }
 .ant-form-item {
   margin-bottom: 16px;
+}
+.ant-form-item .ant-radio {
+  top: 0.3em;
 }
 .ant-form-item-label > label {
   font-weight: 500;
@@ -28907,6 +28919,8 @@ li.ant-picker-panel-select-option-selected:hover {
   border: 1px solid #EBECF0;
   box-sizing: border-box;
   line-height: 18px;
+  display: inline-flex;
+  align-items: center;
 }
 .ant-tag-close-icon {
   margin-left: 2px;
@@ -28932,7 +28946,6 @@ li.ant-picker-panel-select-option-selected:hover {
   display: inline-block;
   width: 6px;
   height: 6px;
-  margin-bottom: 2px;
   background: #11D7B2;
   border-radius: 50%;
   margin-right: 8px;
@@ -28949,7 +28962,6 @@ li.ant-picker-panel-select-option-selected:hover {
   height: 6px;
   background: #1D78FF;
   border-radius: 50%;
-  margin-bottom: 2px;
   margin-right: 8px;
 }
 .ant-tag-processing {
@@ -28962,7 +28974,6 @@ li.ant-picker-panel-select-option-selected:hover {
   display: inline-block;
   width: 6px;
   height: 6px;
-  margin-bottom: 2px;
   background: #AC9DFF;
   border-radius: 50%;
   margin-right: 8px;
@@ -28977,7 +28988,6 @@ li.ant-picker-panel-select-option-selected:hover {
   display: inline-block;
   width: 6px;
   height: 6px;
-  margin-bottom: 2px;
   background: #F96C5B;
   border-radius: 50%;
   margin-right: 8px;
@@ -28991,7 +29001,6 @@ li.ant-picker-panel-select-option-selected:hover {
   content: '';
   display: inline-block;
   width: 6px;
-  margin-bottom: 2px;
   height: 6px;
   background: #FBB310;
   border-radius: 50%;
@@ -29060,6 +29069,15 @@ li.ant-picker-panel-select-option-selected:hover {
   border: 0px;
   margin: 0;
   min-width: 20px;
+  font-size: 16px;
+}
+.ant-pagination .ant-pagination-prev {
+  margin-left: 8px;
+  margin-right: 4px;
+}
+.ant-pagination .ant-pagination-next {
+  margin-left: 4px;
+  margin-right: 8px;
 }
 .ant-pagination .ant-pagination-item {
   min-width: 24px;
@@ -29234,6 +29252,16 @@ ul.ant-pagination {
 .ant-input-search-with-button .ant-input-group .ant-input-group-addon:last-child .ant-input-search-button {
   border-radius: 4px;
   width: 48px;
+}
+.ant-btn-icon-only {
+  width: 32px;
+  background: none;
+}
+.ant-btn-icon-only .anticon-search {
+  margin-left: 9px;
+}
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary) {
+  border-left: solid 1px #D8DAE1;
 }
 .ant-picker {
   border: 1px solid #D8DAE2 !important;
@@ -29539,6 +29567,26 @@ ul.ant-pagination {
 .ant-tree-show-line .ant-tree-indent-unit::before {
   border-right: 1px dashed #D8DAE2;
   margin-bottom: 1px;
+}
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  color: #1D78FF;
+  background: none;
+}
+.ant-tree .ant-tree-node-content-wrapper:hover {
+  background-color: #F5F5F8;
+}
+.ant-tree .ant-tree-treenode {
+  padding: 0;
+}
+.ant-tree .ant-tree-treenode .ant-tree-switcher,
+.ant-tree .ant-tree-treenode .ant-tree-checkbox {
+  line-height: 32px;
+}
+.ant-tree .ant-tree-treenode .ant-tree-checkbox {
+  margin: 8px 8px 0 0;
+}
+.ant-tree .ant-tree-treenode .ant-tree-node-content-wrapper {
+  line-height: 32px;
 }
 .ant-tree-select-dropdown .ant-select-tree .ant-select-tree-list-holder .ant-select-tree-node-content-wrapper:hover {
   background-color: #F5F5F8;
