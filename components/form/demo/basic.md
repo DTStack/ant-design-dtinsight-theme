@@ -90,9 +90,9 @@ class NormalLoginForm extends React.Component {
         </Form.Item>
         <Form.Item name="type" colon={false} label={'存储类型'} rules={[{ required: false, message: 'It is required!' }]}>
           <Radio.Group>
-            <Radio value={1}>orc</Radio>
-            <Radio value={2}>text</Radio>
-            <Radio value={3}>md</Radio>
+            <Radio value={1}>orc选项一</Radio>
+            <Radio value={2}>text选项二</Radio>
+            <Radio value={3}>md选项三</Radio>
           </Radio.Group>
         </Form.Item>
         <Form.Item name="switch" colon={false} label={'开关'} rules={[{ required: false, message: 'It is required!' }]}>
