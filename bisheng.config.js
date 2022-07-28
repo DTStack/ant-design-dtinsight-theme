@@ -1,4 +1,5 @@
 const path = require('path');
+const { list } = require('./custom-icon/list')
 module.exports = {
     target: 'node',
     source: {
@@ -42,7 +43,13 @@ module.exports = {
                 loader: 'babel-loader',
                 options: {
                     plugins: [
-                        './icon-svg-plugin.js'
+                        [
+                            './icon-svg-plugin.js',
+                            {
+                                iconDir: path.resolve('./custom-icon'),
+                                svgs: list
+                            }
+                        ]
                     ]
                 }
             },
