@@ -28282,6 +28282,10 @@ li {
   border-color: #EBECF0;
   color: #B1B4C5;
 }
+.dt-btn-highlight.ant-btn {
+  color: #1D78FF;
+  border-color: #1D78FF;
+}
 .dt-btn-highlight.ant-btn:hover,
 .dt-btn-highlight.ant-btn:focus {
   color: #1D78FF;
@@ -28442,7 +28446,7 @@ li.ant-picker-panel-select-option-selected:hover {
   padding: 0 16px;
 }
 .ant-form-item-control .ant-radio-wrapper span.ant-radio + * {
-  margin-top: 0.1em;
+  margin-top: 0.2em;
 }
 .dt-form-shadow-bg.ant-input,
 .dt-form-shadow-bg.ant-input-number,
@@ -28600,6 +28604,9 @@ li.ant-picker-panel-select-option-selected:hover {
   color: #8B8FA8;
   font-weight: 400;
   font-size: 14px;
+}
+.ant-breadcrumb a {
+  color: #8B8FA8;
 }
 .ant-breadcrumb a:hover {
   color: #1D78FF;
@@ -28913,7 +28920,7 @@ li.ant-picker-panel-select-option-selected:hover {
   padding: 16px;
 }
 .ant-tag {
-  padding: 2px 12px;
+  padding: 2px 8px;
   height: 24px;
   border-radius: 4px;
   border: 1px solid #EBECF0;
@@ -28929,6 +28936,7 @@ li.ant-picker-panel-select-option-selected:hover {
   vertical-align: -0.1625em;
 }
 .ant-tag-success {
+  padding: 2px 12px;
   background: #FFFFFF;
   color: #3D446E;
   border-radius: 14px;
@@ -28951,6 +28959,7 @@ li.ant-picker-panel-select-option-selected:hover {
   margin-right: 8px;
 }
 .ant-tag-default {
+  padding: 2px 12px;
   color: #3D446E;
   background: #FFFFFF;
   border-radius: 14px;
@@ -28965,6 +28974,7 @@ li.ant-picker-panel-select-option-selected:hover {
   margin-right: 8px;
 }
 .ant-tag-processing {
+  padding: 2px 12px;
   color: #3D446E;
   background: #FFFFFF;
   border-radius: 14px;
@@ -28979,6 +28989,7 @@ li.ant-picker-panel-select-option-selected:hover {
   margin-right: 8px;
 }
 .ant-tag-error {
+  padding: 2px 12px;
   color: #3D446E;
   background: #FFFFFF;
   border-radius: 14px;
@@ -28993,6 +29004,7 @@ li.ant-picker-panel-select-option-selected:hover {
   margin-right: 8px;
 }
 .ant-tag-warning {
+  padding: 2px 12px;
   color: #3D446E;
   background: #FFFFFF;
   border-radius: 14px;
@@ -29010,6 +29022,7 @@ li.ant-picker-panel-select-option-selected:hover {
   line-height: 20px;
   border: none;
   border-radius: 12px;
+  padding: 2px 12px;
 }
 .dt-ant-tag-icon svg {
   width: 16px;
@@ -29029,6 +29042,23 @@ li.ant-picker-panel-select-option-selected:hover {
   padding: 0;
   border-bottom: none;
   min-height: 22px;
+  font-size: 14px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  margin-bottom: 4px;
+}
+.ant-popover .ant-popover-message-title {
+  font-size: 14px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  padding-left: 25px;
+}
+.ant-popover .ant-popover-buttons .ant-btn-default {
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #D8DAE2;
+}
+.ant-popover .ant-popover-message > .anticon {
+  font-size: 17px;
+  top: 6.429px;
 }
 .ant-popover .ant-popover-inner-content {
   padding: 0;
@@ -29168,6 +29198,7 @@ ul.ant-pagination {
 }
 .ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box p {
   padding: 10px 16px 10px 0;
+  margin: 0;
 }
 .ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box .ant-collapse {
   margin-left: 24px;
@@ -29396,9 +29427,16 @@ ul.ant-pagination {
 .ant-picker-dropdown .ant-picker-cell-range-start.ant-picker-cell-today .ant-picker-cell-inner {
   color: #fff;
 }
+.ant-picker-dropdown .ant-picker-ok {
+  margin-top: 4px;
+}
 .ant-picker-dropdown .ant-picker-ok .ant-btn {
+  justify-content: center;
   width: 40px;
   height: 24px;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
 }
 .ant-select.dt-ant-select-outside {
   font-size: 12px;
@@ -29512,8 +29550,13 @@ ul.ant-pagination {
   box-shadow: 0px 5px 22px 0px rgba(61, 68, 110, 0.2);
 }
 .ant-transfer .ant-transfer-list-header {
+  padding: 0 16px;
   background: #F9F9FA;
   height: 32px;
+  line-height: 32px;
+}
+.ant-transfer .ant-transfer-list-header .ant-checkbox-wrapper {
+  line-height: 32px;
 }
 .ant-transfer .ant-transfer-list-body .ant-transfer-list-body-search-wrapper {
   padding: 8px 16px;
@@ -29524,7 +29567,7 @@ ul.ant-pagination {
 }
 .ant-transfer .ant-transfer-list-body .ant-transfer-list-content .ant-transfer-list-content-item {
   height: 32px;
-  padding: 0px 12px;
+  padding: 0px 16px;
 }
 .ant-transfer .ant-transfer-list-body .ant-transfer-list-content .ant-checkbox-wrapper {
   line-height: calc(20 / 12);
@@ -29542,6 +29585,7 @@ ul.ant-pagination {
   height: 20px;
   border-radius: 50%;
   margin: 0 2px;
+  padding: 0;
 }
 .ant-transfer .ant-transfer-operation .ant-btn:first-child {
   margin-bottom: 10px;
