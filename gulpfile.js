@@ -28,10 +28,10 @@ const generateIcons = genIcons({
     stringify: JSON.stringify,
     template: iconTemplate,
     mapToInterpolate: ({ name, content }) => ({
-        identifier: getIdentifier({ name, themeSuffix: 'Outlined' }),
+        identifier: getIdentifier({ name }),
         content
     }),
-    filename: ({ name }) => getIdentifier({ name, themeSuffix: 'Outlined' })
+    filename: ({ name }) => getIdentifier({ name })
 })
 
 const generateIconNameList = function(callback) {
