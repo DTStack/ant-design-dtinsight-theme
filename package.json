@@ -45,7 +45,8 @@
     "rimraf": "^2.6.3",
     "scrollama": "^2.0.0",
     "standard-version": "7.0.1",
-    "url-loader": "^4.1.0"
+    "url-loader": "^4.1.0",
+    "react-resizable": "^3.0.4"
   },
   "config": {
     "commitizen": {
