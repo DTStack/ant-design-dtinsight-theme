@@ -135,4 +135,16 @@
             display: flex;
         }
     }
+    .ant-picker-week-panel-row-selected .ant-picker-cell-in-view:not(last), .ant-picker-week-panel-row-selected:hover .ant-picker-cell-in-view{
+        background: #E8F1FF;
+        .ant-picker-cell-inner{
+            color: @black_title;
+        }
+        &:last-child{
+            background: @primaryColor;
+            .ant-picker-cell-inner{
+                color: @white;
+            }
+        }
+    }
 }
