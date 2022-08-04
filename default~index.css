@@ -28286,6 +28286,9 @@ li {
   color: #1D78FF;
   border-color: #1D78FF;
 }
+.dt-btn-highlight.ant-btn.ant-btn-icon-only .anticon-search {
+  margin-left: 0;
+}
 .dt-btn-highlight.ant-btn:hover,
 .dt-btn-highlight.ant-btn:focus {
   color: #1D78FF;
@@ -29193,8 +29196,8 @@ ul.ant-pagination {
 .ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box {
   padding: 0 0 0 16px;
   min-height: 40px;
-  display: flex;
-  align-items: center;
+  display: table;
+  width: 100%;
 }
 .ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box p {
   padding: 10px 16px 10px 0;
@@ -29292,7 +29295,7 @@ ul.ant-pagination {
   margin-left: 9px;
 }
 .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary) {
-  border-left: solid 1px #D8DAE1;
+  border: solid 1px #D8DAE1;
 }
 .ant-picker {
   border: 1px solid #D8DAE2 !important;
@@ -29438,6 +29441,22 @@ ul.ant-pagination {
   text-align: center;
   display: flex;
 }
+.ant-picker-dropdown .ant-picker-week-panel-row-selected .ant-picker-cell-in-view:not(last),
+.ant-picker-dropdown .ant-picker-week-panel-row-selected:hover .ant-picker-cell-in-view {
+  background: #E8F1FF;
+}
+.ant-picker-dropdown .ant-picker-week-panel-row-selected .ant-picker-cell-in-view:not(last) .ant-picker-cell-inner,
+.ant-picker-dropdown .ant-picker-week-panel-row-selected:hover .ant-picker-cell-in-view .ant-picker-cell-inner {
+  color: #3D446E;
+}
+.ant-picker-dropdown .ant-picker-week-panel-row-selected .ant-picker-cell-in-view:not(last):last-child,
+.ant-picker-dropdown .ant-picker-week-panel-row-selected:hover .ant-picker-cell-in-view:last-child {
+  background: #1D78FF;
+}
+.ant-picker-dropdown .ant-picker-week-panel-row-selected .ant-picker-cell-in-view:not(last):last-child .ant-picker-cell-inner,
+.ant-picker-dropdown .ant-picker-week-panel-row-selected:hover .ant-picker-cell-in-view:last-child .ant-picker-cell-inner {
+  color: #FFFFFF;
+}
 .ant-select.dt-ant-select-outside {
   font-size: 12px;
 }
@@ -29494,9 +29513,12 @@ ul.ant-pagination {
   height: 28px;
 }
 .ant-upload-list .ant-upload-list-item.ant-upload-list-item-list-type-text .ant-upload-list-item-info {
-  background: #F5F5F8;
+  background: none;
   border-radius: 4px;
   color: #64698B;
+}
+.ant-upload-list .ant-upload-list-item.ant-upload-list-item-list-type-text .ant-upload-list-item-info:hover {
+  background: #F5F5F8;
 }
 .ant-upload-list .ant-upload-list-item.ant-upload-list-item-list-type-text .ant-upload-list-item-info .ant-upload-text-icon {
   margin-left: 4px;
