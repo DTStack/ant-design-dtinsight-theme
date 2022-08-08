@@ -116,8 +116,8 @@
 }
 .ant-btn-danger.ant-btn:hover {
     color: @white;
-    background-color: @red2 !important;
-    border-color: @red2;
+    background-color: #ED5340 !important;
+    border-color: #ED5340;
 }
 .ant-btn-danger.ant-btn:active,
 .ant-btn-danger.ant-btn.active {
@@ -131,15 +131,21 @@
     border-color: @red;
 }
 .ant-btn-background-ghost.ant-btn-danger:hover, .ant-btn-background-ghost.ant-btn-danger:focus {
-    color: @white;
-    background-color: @red2 !important;
-    border-color: @red2;
+    color: @red;
+    border-color: @red;
+    background-color: @white !important;
 }
 .ant-btn-background-ghost.ant-btn-danger:active,
 .ant-btn-background-ghost.ant-btn-danger.active {
     color: @white;
     background-color: @red !important;
     border-color: @red;
+}
+.ant-btn.ant-btn-default.ant-btn-background-ghost.dt-btn-custom-icon:not([disabled]){
+    &:hover{
+        color: @primaryColor;
+        border-color: @primaryColor;
+    }
 }
 
 .ant-btn-danger-disabled,
@@ -237,5 +243,18 @@
         height: 14px;
         margin-left: 7px;
         margin-top: 2px;
+    }
+}
+.ant-btn.ant-btn-default:not([disabled]), .ant-btn.ant-btn-default.ant-btn-background-ghost:not([disabled]){
+    &:hover{
+        border-color: @hoverColor;
+        color: @hoverColor;
+        background-color: @white !important;
+    }
+}
+.ant-btn.ant-btn-default.dt-btn-highlight:not([disabled]){
+    &:hover{
+        color: @primaryColor;
+        border-color: @primaryColor;
     }
 }
