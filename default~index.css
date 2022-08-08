@@ -29313,6 +29313,7 @@ ul.ant-pagination {
 }
 .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary):hover {
   border: solid 1px #1D78FF;
+  color: #1D78FF;
 }
 .ant-picker {
   border: 1px solid #D8DAE2 !important;
