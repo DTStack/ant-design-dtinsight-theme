@@ -7,3 +7,4 @@ _site
 npm-debug.log
 .history
 yarn-error.log
+.idea

@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development bisheng start",
     "build": "bisheng build",
+    "gen": "rm -rf custom-icon && gulp",
     "clean": "rimraf dist/*",
     "changelog": "./scripts/changelog.sh",
     "release": "./scripts/release.sh",
@@ -29,6 +30,7 @@
     "@ant-design/compatible": "^1.1.0",
     "@ant-design/icons": "^4.7.0",
     "@babel/runtime": "^7.4.4",
+    "@rgrove/parse-xml": "2.0.2",
     "bisheng": "^1.2.4",
     "bisheng-plugin-antd": "^1.0.1",
     "bisheng-plugin-react": "^1.0.0",
@@ -38,15 +40,25 @@
     "cz-conventional-changelog": "^3.3.0",
     "file-loader": "^6.0.0",
     "gh-pages": "^3.2.0",
+    "gulp": "4.0.2",
+    "gulp-rename": "2.0.0",
     "intersection-observer": "^0.7.0",
+    "lodash.camelcase": "4.3.0",
+    "lodash.template": "4.5.0",
+    "lodash.upperfirst": "4.3.1",
     "lz-string": "^1.4.4",
+    "ramda": "0.27.0",
     "react-copy-to-clipboard": "^5.0.1",
     "react-intl": "^2.9.0",
     "rimraf": "^2.6.3",
     "scrollama": "^2.0.0",
     "standard-version": "7.0.1",
     "url-loader": "^4.1.0",
-    "react-resizable": "^3.0.4"
+    "react-resizable": "^3.0.4",
+    "svgo": "1.3.2",
+    "through2": "3.0.1",
+    "url-loader": "^4.1.0",
+    "vinyl": "2.2.0"
   },
   "config": {
     "commitizen": {

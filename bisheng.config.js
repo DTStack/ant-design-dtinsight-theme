@@ -1,4 +1,5 @@
 const path = require('path');
+const { list } = require('./custom-icon/list')
 module.exports = {
     target: 'node',
     source: {
@@ -36,6 +37,23 @@ module.exports = {
                 "url-loader?limit=100000"
             ]
         });
+        config.module.rules.push({
+            test: /\.(js)$/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    plugins: [
+                        [
+                            './icon-svg-plugin.js',
+                            {
+                                iconDir: path.resolve('./custom-icon'),
+                                svgs: list
+                            }
+                        ]
+                    ]
+                }
+            },
+        })
         config.optimization = {
             splitChunks: {
                 chunks: "all",
