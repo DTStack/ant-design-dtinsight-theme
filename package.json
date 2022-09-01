@@ -23,7 +23,7 @@
   "author": "dt-insight-front",
   "license": "ISC",
   "dependencies": {
-    "antd": "4.18.9",
+    "antd": "4.22.5",
     "dayjs": "^1.11.0"
   },
   "devDependencies": {
