@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[84],{1179:function(i,n,o){i.exports={basic:o(1285),"grid-card":o(1286),light:o(1287),tabs:o(1288)}}}]);

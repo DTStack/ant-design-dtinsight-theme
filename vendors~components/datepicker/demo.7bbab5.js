@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[88],{1187:function(s,i,o){s.exports={basic:o(1295),disabled:o(1364),light:o(1365),shadow:o(1366),size:o(1367)}}}]);
