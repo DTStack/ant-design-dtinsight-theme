@@ -25,3 +25,4 @@ subtitle: 表格
 |.dt-table-fixed-overflowx-auto  | 用于固定高度表中，当表格存在固定列且无数据时，去除固定列底部滚动条  | 固定高度表（footer 中带分页）、固定高度表（自带分页）   |
 |.dt-table-scrollbar  | 一般用于 windows 中，设置表格中滚动条的样式  | 固定高度表（footer 中带分页）   |
 |.dt-pagination-lower  | 设置表格中的分页所占高度为 44px  | 紧凑型 |
+|.dt-resizable-table  | 设置可伸缩列表格中的表头有分割线 | 无边框型 |

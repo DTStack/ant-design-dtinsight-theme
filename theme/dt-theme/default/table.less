@@ -2,52 +2,64 @@
 
 .ant-table {
     color: @black_title;
+
     .ant-table-cell {
         a {
             margin-right: 16px;
         }
+
         a:last-child {
             margin-right: 0px;
         }
     }
 }
+
 .ant-table-wrapper {
     background: @white;
 }
+
 .ant-table-thead {
     background: #FAFAFA;
 }
-.ant-table-thead > tr > th{
+
+.ant-table-thead>tr>th {
     border-bottom: 1px solid @black_readonly;
 }
-.ant-table-tbody > tr > td {
+
+.ant-table-tbody>tr>td {
     border-bottom: 1px solid @black_readonly;
 }
-.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+
+.ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.ant-table-thead>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.ant-table-tbody>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td {
     background: @black_titleBg;
 }
+
 .ant-table-middle {
-    .ant-table-thead > tr > th {
+    .ant-table-thead>tr>th {
         border-bottom: 1px solid @black_readonly;
     }
 }
+
 .ant-table-footer {
     background: @white;
+
     &::before {
         height: 1px;
         background: #e8e8e8;
     }
 }
+
 .ant-divider {
     background-color: transparent;
 }
+
 // 自带分页 样式设置
 .ant-table-wrapper {
     .ant-spin-container {
-        > .ant-table-pagination {
+        >.ant-table-pagination {
             border-top: 1px solid #e8e8e8;
         }
     }
@@ -56,8 +68,11 @@
 
 // 固定表格高度(footer实现分页）
 .dt-table-fixed-contain-footer {
-    .ant-table-wrapper, &.ant-table-wrapper {
+
+    .ant-table-wrapper,
+    &.ant-table-wrapper {
         background: @white;
+
         .ant-spin-nested-loading {
             .ant-spin-container {
                 .ant-table-fixed-header {
@@ -67,8 +82,10 @@
                         }
                     }
                 }
+
                 .ant-table-footer {
                     background: @white;
+
                     &::before {
                         height: 1px;
                         background: #e8e8e8;
@@ -81,7 +98,9 @@
 
 // 固定表格高度(自带分页）
 .dt-table-fixed-base {
-    &.ant-table-wrapper, .ant-table-wrapper {
+
+    &.ant-table-wrapper,
+    .ant-table-wrapper {
         background: @white;
     }
 }
@@ -90,38 +109,74 @@
 .dt-table-border {
     border: 1px solid @black_readonly;
 }
+
 // size为small的边框设置
-.ant-table-small > .ant-table-content .ant-table-placeholder, .ant-table-small > .ant-table-content .ant-table-row:last-child td{
+.ant-table-small>.ant-table-content .ant-table-placeholder,
+.ant-table-small>.ant-table-content .ant-table-row:last-child td {
     border-bottom: 1px solid #e8e8e8;
 }
+
 .ant-table-small {
-    & > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
-    & > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
-    & > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
-    & > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th,
-    & > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
-    & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
-    & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
-    & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
+
+    &>.ant-table-content>.ant-table-header>table>.ant-table-thead>tr>th,
+    &>.ant-table-content>.ant-table-body>table>.ant-table-thead>tr>th,
+    &>.ant-table-content>.ant-table-scroll>.ant-table-header>table>.ant-table-thead>tr>th,
+    &>.ant-table-content>.ant-table-scroll>.ant-table-body>table>.ant-table-thead>tr>th,
+    &>.ant-table-content>.ant-table-fixed-left>.ant-table-header>table>.ant-table-thead>tr>th,
+    &>.ant-table-content>.ant-table-fixed-right>.ant-table-header>table>.ant-table-thead>tr>th,
+    &>.ant-table-content>.ant-table-fixed-left>.ant-table-body-outer>.ant-table-body-inner>table>.ant-table-thead>tr>th,
+    &>.ant-table-content>.ant-table-fixed-right>.ant-table-body-outer>.ant-table-body-inner>table>.ant-table-thead>tr>th {
         border-bottom: 1px solid #e8e8e8
     }
 }
+
 // 表格筛选框样式
 .ant-table-filter-dropdown-btns {
     border-top: none;
 }
+
 .ant-dropdown-menu {
     padding-top: 8px;
 }
-.ant-dropdown-menu-item .ant-radio-wrapper .ant-radio{
+
+.ant-dropdown-menu-item .ant-radio-wrapper .ant-radio {
     top: 0.25em;
 }
+
 // 分页器 mini版高度设置
 .ant-pagination.mini {
     height: 32px;
     line-height: 32px;
 }
-.ant-table.ant-table-middle .ant-table-tbody > tr > td{
+
+.ant-table.ant-table-middle .ant-table-tbody>tr>td {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.react-resizable {
+    position: relative;
+    background-clip: padding-box;
+}
+
+.react-resizable-handle {
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    z-index: 1;
+    width: 10px;
+    height: 100%;
+    cursor: col-resize;
+}
+.ant-table-container table > thead > tr:first-child th:first-child.react-resizable {
+    border-top-left-radius: 0;
+}
+.ant-table-container table > thead > tr:first-child th:last-child{
+    border-top-right-radius: 0;
+}
+.dt-resizable-table .ant-table-container table > thead > tr:first-child th{
+    border-right: solid 1px @black_readonly;
+    &:last-child{
+        border-right: none;
+    }
 }
