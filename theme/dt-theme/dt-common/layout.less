@@ -75,13 +75,20 @@
         .menu-item {
             display: block;
             line-height: 0;
-            color: @white;
+            color: @black_msg;
             cursor: pointer;
             padding: 0px 10px;
+            &:hover {
+                color: @black_title;
+            }
         }
 
         .anticon {
+            color: @black_msg;
             font-size: 18px;
+            &:hover {
+                color: @black_title;
+            }
         }
 
         .avatar {
@@ -104,7 +111,8 @@
         }
 
         .user-name {
-            max-width: 100px;
+            color: #3D446E;
+            max-width: 200px;
             text-overflow: ellipsis;
             display: block;
             overflow: hidden;
@@ -411,7 +419,7 @@
         border-top: 1px solid #dddddd;
         border-bottom: 1px solid #dddddd;
     }
-    
+
     .m-card {
         .ant-card {
             .ant-card-head, .ant-card-body {
