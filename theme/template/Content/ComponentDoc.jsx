@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import DocumentTitle from 'react-document-title';
 import {FormattedMessage} from 'react-intl';
 import classNames from 'classnames';
-import { Icon as LegacyIcon } from '@ant-design/compatible';
+import { AppstoreOutlined } from '@ant-design/icons';
 import { Row, Col, Affix, Tooltip } from 'antd';
 import {getChildren} from 'jsonml.js/lib/utils';
 import Demo from './Demo';
@@ -138,8 +138,7 @@ export default class ComponentDoc extends React.Component {
                                     />
                                 }
                             >
-                                <LegacyIcon
-                                    type={`${expandAll ? 'appstore' : 'appstore-o'}`}
+                                <AppstoreOutlined
                                     className={expandTriggerClass}
                                     onClick={this.handleExpandToggle}
                                     style={isDark ? { color: '#F2F2F2' } : {}}
