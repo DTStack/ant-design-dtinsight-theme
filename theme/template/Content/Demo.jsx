@@ -6,7 +6,7 @@ import { FormattedMessage } from 'react-intl';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classNames from 'classnames';
 import LZString from 'lz-string';
-import { Icon as LegacyIcon } from '@ant-design/compatible';
+import { CheckOutlined, SnippetsOutlined } from '@ant-design/icons';
 import { Tooltip } from 'antd';
 import utils from '../../utils';
 
@@ -200,11 +200,11 @@ export default class Demo extends React.Component {
         },
         'index.js': {
           content: `
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'antd/dist/antd.css';
-import './index.css';
-${sourceCode.replace('mountNode', "document.getElementById('container')")}
+            import React from 'react';
+            import ReactDOM from 'react-dom';
+            import 'antd/dist/antd.css';
+            import './index.css';
+            ${sourceCode.replace('mountNode', "document.getElementById('container')")}
           `,
         },
         'index.html': {
@@ -289,11 +289,19 @@ ${sourceCode.replace('mountNode', "document.getElementById('container')")}
                 onVisibleChange={this.onCopyTooltipVisibleChange}
                 title={<FormattedMessage id={`app.demo.${copied ? 'copied' : 'copy'}`} />}
               >
-                <LegacyIcon
-                  type={state.copied && state.copyTooltipVisible ? 'check' : 'snippets'}
-                  className="code-box-code-copy"
-                  style={{ backgroundColor: '#fff', borderRadius: '50%' }}
-                />
+                {
+                  state.copied && state.copyTooltipVisible ? (
+                    <CheckOutlined
+                      className="code-box-code-copy"
+                      style={{ backgroundColor: '#fff', borderRadius: '50%' }}
+                    />
+                  ) : (
+                    <SnippetsOutlined
+                      className="code-box-code-copy"
+                      style={{ backgroundColor: '#fff', borderRadius: '50%' }}
+                    />
+                  )
+                }
               </Tooltip>
             </CopyToClipboard>
             <Tooltip
