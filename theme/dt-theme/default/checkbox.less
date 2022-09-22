@@ -4,5 +4,17 @@
     line-height: calc(@lineHeight / @font12);
 }
 .ant-checkbox-wrapper{
-    line-height: 20px;
+    height: 32px;
+    padding: 6px 0px;
+    .ant-checkbox-inner {
+        border-radius: 0px;
+        width: 15px;
+        height: 15px;
+    }
+}
+.ant-checkbox-disabled.ant-checkbox-checked .ant-checkbox-inner::after {
+    border-color: #FFFFFF;
+}
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: #0A67F2;
 }
