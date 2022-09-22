@@ -34,7 +34,7 @@ title:
 为了兼容 MAC 和 Windows，可通过 navigator.userAgent 属性获取当前操作系统信息，从而进一步判断样式的使用
 
 ```jsx
-import { Table, Pagination, Switch } from 'antd';
+import { Table, Pagination, Switch, Divider } from 'antd';
 
 class App extends React.Component {
   state = {
@@ -104,6 +104,7 @@ class App extends React.Component {
         render: (text, record) => (
           <span>
             <a>Invite</a>
+            <Divider type="vertical" />
             <a>Delete</a>
           </span>
         ),
