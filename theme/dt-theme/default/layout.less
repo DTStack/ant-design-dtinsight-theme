@@ -11,10 +11,6 @@
     .ant-menu-item-selected > a, .ant-menu-item-selected > a:hover {
         color: @primaryColor;
     }
-    .ant-menu-horizontal > .ant-menu-item,
-    .ant-menu-horizontal > .ant-menu-submenu {
-        border-bottom: 3px solid #080A1A;
-    }
     .ant-menu-horizontal
     {
         .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-submenu-selected, .ant-menu-item-active, .ant-menu-submenu-open {
@@ -41,12 +37,16 @@
 .dt-layout-sider {
     .ant-menu {
         &:not(.ant-menu-horizontal) .ant-menu-item-selected {
-            border-left: 3px solid @primaryColor;
+            border-left: 4px solid @primaryColor;
         }
         .ant-menu-horizontal .ant-menu-item-selected {
             &:after{
                 border: none;
             }
+        }
+        .ant-menu-submenu-active {
+            color: @black_title;
+            background: none;
         }
     }
 }

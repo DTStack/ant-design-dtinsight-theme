@@ -25,10 +25,9 @@
     .ant-menu-horizontal .ant-menu-item{
         border-color: @white !important;
         padding: 0 24px;
+        font-weight: 400;
     }
-    .ant-menu-horizontal > .ant-menu-item:hover,
     .ant-menu-horizontal > .ant-menu-submenu:hover,
-    .ant-menu-horizontal > .ant-menu-item-active,
     .ant-menu-horizontal > .ant-menu-submenu-active,
     .ant-menu-horizontal > .ant-menu-item-open,
     .ant-menu-horizontal > .ant-menu-submenu-open,
@@ -65,7 +64,10 @@
         margin: 0 10px;
     }
     .dt-layout-left {
+        display: flex;
+        flex: 1;
         .ant-menu-horizontal {
+            flex: 1;
             .ant-menu-item {
                 a {
                     color: #3D446E;
@@ -73,6 +75,7 @@
             }
             .ant-menu-item-selected {
                 background: #E8F1FF;
+                font-weight: 500;
                 a {
                     font-weight: 500;
                     color: #1D78FF;
@@ -83,7 +86,7 @@
                     border-bottom: 0px;
                 }
             }
-            .ant-menu-item:hover  {
+            .ant-menu-item:hover:not(.ant-menu-item-selected)  {
                 background: #F5F5F8;
             }
             .ant-menu-submenu {
@@ -203,6 +206,7 @@
         }
         .ant-menu-submenu-title:hover {
             color: @black_title;
+            background-color: @black_titleBg;
             .ant-menu-submenu-arrow {
                 color: @black_msg;
             }
@@ -213,6 +217,12 @@
             .ant-menu-submenu-arrow {
                 color: @black_msg;
             }
+        }
+    }
+    .ant-menu-submenu-selected:not(.ant-menu-submenu-inline) {
+        .ant-menu-submenu-title {
+            background-color: #E8F1FF;
+            color: @primaryColor;
         }
     }
     &.ant-layout-sider-collapsed {
@@ -230,6 +240,14 @@
     .ant-menu-inline {
         .ant-menu-submenu-selected {
             color: @black_title;
+            .ant-menu-submenu-title {
+                .ant-menu-title-content {
+                    span:nth-child(2) {
+                        color: @primaryColor;
+                        font-weight: 500;                   
+                    }
+                }
+            }
         }
     }
     .ant-menu {
@@ -239,15 +257,17 @@
         a {
             color: @black_title;
         }
-        .ant-menu-item, .ant-menu-item > a {
+        .ant-menu-title-content {
             display: flex;
             align-items: center;
         }
+        .ant-menu-item, .ant-menu-item > a {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+        }
         .ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
             font-size: 14px;
-        }
-        &:not(.ant-menu-horizontal) .ant-menu-item-selected {
-            background-color: rgba(40, 123, 247, 0.157);
         }
         .ant-menu-item-selected {
             background: #E8F1FF;
@@ -256,16 +276,13 @@
                 color: @primaryColor;
             }
         }
-        .ant-menu-item-active {
+        .ant-menu-item:hover:not(.ant-menu-item-selected, .ant-menu-submenu-selected) {
             background-color: @black_titleBg;
         }
         .ant-menu-horizontal .ant-menu-item-selected {
             &:after{
                 border: none;
             }
-        }
-        .ant-menu-item:active, .ant-menu-submenu-title:active {
-            background-color: rgba(40, 123, 247, 0.157);
         }
         &.ant-menu-inline-collapsed {
             .ant-menu-item:active, .ant-menu-submenu-title:active {
@@ -288,7 +305,7 @@
         margin-top: 0px;
         margin-bottom: 0px;
         font-size: 14px;
-        border-left: 3px solid transparent;
+        border-left: 4px solid transparent;
     }
 }
 
@@ -299,11 +316,8 @@
         a {
             color: @black_title;
         }
-        .ant-menu-item:hover  {
+        .ant-menu-item:hover:not(.ant-menu-item-selected)  {
             background: #F5F5F8;
-        }
-        &:not(.ant-menu-horizontal) .ant-menu-item-selected {
-            background-color: rgba(40, 123, 247, 0.157);
         }
         .ant-menu-item-selected {
             background: #E8F1FF;
@@ -320,9 +334,6 @@
         margin-bottom: 0px;
         font-size: 14px;
         border-left: 3px solid transparent;
-    }
-    .ant-menu-item:active, .ant-menu-submenu-title:active {
-        background-color: rgba(40, 123, 247, 0.157);
     }
 }
 
