@@ -9,37 +9,99 @@
         border-color: @hoverColor;
         color: @white;
     }
-    &:active, &.active {
+    &:active {
         color: @white;
         background-color: @clickColor;
         border-color: @clickColor;
     }
 }
-.ant-btn.ant-btn-primary-disabled,
-.ant-btn.ant-btn-primary.disabled,
-.ant-btn.ant-btn-primary[disabled],
-.ant-btn.ant-btn-primary-disabled:hover,
-.ant-btn.ant-btn-primary.disabled:hover,
-.ant-btn.ant-btn-primary[disabled]:hover,
-.ant-btn.ant-btn-primary-disabled:focus,
-.ant-btn.ant-btn-primary.disabled:focus,
-.ant-btn.ant-btn-primary[disabled]:focus,
-.ant-btn.ant-btn-primary-disabled:active,
-.ant-btn.ant-btn-primary.disabled:active,
-.ant-btn.ant-btn-primary[disabled]:active,
-.ant-btn.ant-btn-primary-disabled.active,
-.ant-btn.ant-btn-primary.disabled.active,
-.ant-btn.ant-btn-primary[disabled].active {
+.ant-btn.ant-btn-default {
+    color: @black_title;
+    border-color: @black_border;
+    &:hover, &:focus {
+        border-color: @hoverColor;
+        color: @hoverColor;
+    }
+    &:active {
+        color: @clickColor;
+        border-color: @clickColor;
+    }
+}
+.ant-btn.ant-btn-link {
+    color: @primaryColor;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    border: 0px;
+    &:hover, &:focus {
+        color: @hoverColor;
+        height: 20px;
+        line-height: 20px;
+        padding: 0;
+        border: 0px;
+    }
+    &:active {
+        color: @clickColor;
+        height: 20px;
+        line-height: 20px;
+        padding: 0;
+        border: 0px;
+    }
+}
+.ant-btn.ant-btn-link[disabled] {
+    color: @bg1Color;
+    border-color: transparent;
+    background: 0 0;
+    text-shadow: none;
+    box-shadow: none;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    border: 0px;
+    &:hover, &:focus, &:active {
+        color: @bg1Color;
+        border-color: transparent;
+        background: 0 0;
+        text-shadow: none;
+        box-shadow: none;
+        height: 20px;
+        line-height: 20px;
+        padding: 0;
+        border: 0px;    
+    }
+}
+.ant-btn-dangerous.ant-btn-primary {
+    background-color: @red;
+    &:hover, &:focus {
+        background-color: #ED5340;
+        border-color: #ED5340;
+    }
+    &:active {
+        background-color: #E03A26;
+        border-color: #E03A26;
+    }
+}
+.ant-btn-dangerous.ant-btn-default {
+    color: @red;
+    border-color: @red;
+    &:hover, &:focus {
+        color: #ED5340;
+        border-color: #ED5340;
+    }
+    &:active {
+        color: #E03A26;
+        border-color: #E03A26;
+    }
+}
+.ant-btn[disabled] {
     color: @black_msg;
     background-color: @black_readonly;
     border-color: @black_readonly;
-}
-.ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active {
-    color: @black_title;
-    border-color: @black_msg;
-}
-.ant-btn:active, .ant-btn.active {
-    background: @black_navBg;
+    &:hover, &:focus, &:active {
+        color: @black_msg;
+        background-color: @black_readonly;
+        border-color: @black_readonly;
+    }
 }
 .ant-btn-background-ghost {
     color: @primaryColor;
@@ -78,36 +140,6 @@
     color: @black_msg;
     background-color: @black_readonly !important;
     border-color: @black_readonly;
-}
-
-.ant-btn.ant-btn-link {
-    &:hover, &:focus {
-        background-color: transparent;
-        border-color: transparent;
-        color: @hoverColor;
-    }
-    &:active, &.active {
-        background-color: transparent;
-        border-color: transparent;
-        color: @clickColor;
-    }
-}
-.ant-btn.ant-btn-link-disabled,
-.ant-btn.ant-btn-link.disabled,
-.ant-btn.ant-btn-link[disabled],
-.ant-btn.ant-btn-link-disabled:hover,
-.ant-btn.ant-btn-link.disabled:hover,
-.ant-btn.ant-btn-link[disabled]:hover,
-.ant-btn.ant-btn-link-disabled:focus,
-.ant-btn.ant-btn-link.disabled:focus,
-.ant-btn.ant-btn-link[disabled]:focus,
-.ant-btn.ant-btn-link-disabled:active,
-.ant-btn.ant-btn-link.disabled:active,
-.ant-btn.ant-btn-link[disabled]:active,
-.ant-btn.ant-btn-link-disabled.active,
-.ant-btn.ant-btn-link.disabled.active,
-.ant-btn.ant-btn-link[disabled].active {
-    color: @black_msg;
 }
 .ant-btn-danger, .ant-btn-danger.ant-btn:focus {
     background-color: @red !important;
@@ -243,13 +275,6 @@
         height: 14px;
         margin-left: 7px;
         margin-top: 2px;
-    }
-}
-.ant-btn.ant-btn-default:not([disabled]), .ant-btn.ant-btn-default.ant-btn-background-ghost:not([disabled]){
-    &:hover{
-        border-color: @hoverColor;
-        color: @hoverColor;
-        background-color: @white !important;
     }
 }
 .ant-btn.ant-btn-default.dt-btn-highlight:not([disabled]){
