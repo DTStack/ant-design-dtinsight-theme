@@ -73,9 +73,18 @@
         .ant-spin-nested-loading {
             .ant-spin-container {
                 .ant-table-fixed-header {
-                    .ant-table-content {
-                        .ant-table-placeholder {
-                            color: #BFBFBF;
+                    display: flex;
+                    flex-direction: column;
+                    .ant-table-container {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        overflow-y: scroll;
+                        .ant-table-body {
+                            flex: 1;
+                            .ant-table-placeholder {
+                                color: #BFBFBF;
+                            }
                         }
                     }
                 }
