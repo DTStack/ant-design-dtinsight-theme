@@ -1,0 +1,10 @@
+dist/
+node_modules/
+bower_components/
+.cache-loader/
+.DS_Store
+.idea/
+.env
+.vscode
+.history
+*.log
