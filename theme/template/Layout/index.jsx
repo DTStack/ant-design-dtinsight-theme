@@ -66,10 +66,6 @@ export default class Layout extends React.Component {
             isMobile,
             theme: 'default'
         };
-        console.log(
-            '%c欢迎使用 ant-design-dtinsight-theme\n使用过程中如有问题欢迎联系 jingyu@dtstack.com ',
-            'color:#2517b1'
-        );
     }
 
     getChildContext() {

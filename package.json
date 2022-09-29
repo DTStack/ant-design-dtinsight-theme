@@ -24,7 +24,9 @@
   "license": "ISC",
   "dependencies": {
     "antd": "4.22.5",
-    "dayjs": "^1.11.0"
+    "dayjs": "^1.11.0",
+    "insert-css": "^2.0.0",
+    "react-resizable": "^3.0.4"
   },
   "devDependencies": {
     "@ant-design/compatible": "^1.1.0",
