@@ -15,12 +15,12 @@
         "publish": "./scripts/publish.sh",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist",
-        "prettier": "npx prettier --check ./**.{js,jsx,json,ts,tsx}",
-        "prettier:fix": "npx prettier --write ./**.{js,jsx,json,ts,tsx}",
-        "eslint": "npx eslint .",
+        "prettier": "npx prettier --check './**.{js,jsx,json,ts,tsx}'",
+        "prettier:fix": "npx prettier --write './**.{js,jsx,json,ts,tsx}'",
+        "eslint": "npx eslint . --no-error-on-unmatched-pattern",
         "eslint:fix": "npx eslint . --fix",
-        "stylelint": "npx stylelint ./**.{less,css,scss}",
-        "stylelint:fix": "npx stylelint ./**.{less,css,scss} --fix"
+        "stylelint": "npx stylelint './**/*.{less,css,scss}'",
+        "stylelint:fix": "npx stylelint './**/*.{less,css,scss}' --fix"
     },
     "keywords": [
         "antd-theme",
