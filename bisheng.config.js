@@ -1,5 +1,5 @@
 const path = require('path');
-const { list } = require('./custom-icon/list')
+const { list } = require('./custom-icon/list');
 module.exports = {
     target: 'node',
     source: {
@@ -18,24 +18,21 @@ module.exports = {
             颜色规范: 3,
             字体规范: 4,
             Components: 5,
-            更新日志: 6
+            更新日志: 6,
         },
-        typeOrder: {}
+        typeOrder: {},
     },
     lessConfig: {
         javascriptEnabled: true,
     },
     baseConfig: {
         projectName: 'DTInsight-Theme',
-        homeUrl: '/docs/react/introduce-cn'
+        homeUrl: '/docs/react/introduce-cn',
     },
     webpackConfig: function (config) {
         config.module.rules.push({
             test: /\.(eot|woff|svg|ttf|woff2|gif|appcache|webp)(\?|$)/,
-            loader: [
-                "file-loader?name=[name].[ext]",
-                "url-loader?limit=100000"
-            ]
+            loader: ['file-loader?name=[name].[ext]', 'url-loader?limit=100000'],
         });
         config.module.rules.push({
             test: /\.(js)$/,
@@ -47,39 +44,39 @@ module.exports = {
                             './icon-svg-plugin.js',
                             {
                                 iconDir: path.resolve('./custom-icon'),
-                                svgs: list
-                            }
-                        ]
-                    ]
-                }
+                                svgs: list,
+                            },
+                        ],
+                    ],
+                },
             },
-        })
+        });
         config.optimization = {
             splitChunks: {
-                chunks: "all",
+                chunks: 'all',
                 minSize: 0,
                 minChunks: config.mode === 'production' ? 1 : 2,
                 maxAsyncRequests: 5,
                 maxInitialRequests: 8,
-                automaticNameDelimiter: "~",
+                automaticNameDelimiter: '~',
                 name: true,
                 cacheGroups: {
                     default: {
                         test: /[\\/]dt-theme[\\/]default[\\/]index.less/,
-                        priority: 3
+                        priority: 3,
                     },
                     dark: {
                         test: /[\\/]dt-theme[\\/]dark[\\/]index.less/,
-                        priority: 3
+                        priority: 3,
                     },
                     common: {
                         test: /[\\/]dt-theme[\\/]dt-common[\\/]index.less/,
-                        priority: 3
-                    }
-                }
-            }
+                        priority: 3,
+                    },
+                },
+            },
         };
         delete config.module.noParse;
         return config;
-    }
+    },
 };

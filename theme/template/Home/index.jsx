@@ -1,5 +1,5 @@
 import React from 'react';
-import {injectIntl} from 'react-intl';
+import { injectIntl } from 'react-intl';
 import DocumentTitle from 'react-document-title';
 import PropTypes from 'prop-types';
 // import Footer from '../Layout/Footer';
@@ -59,11 +59,11 @@ class Home extends React.Component {
     };
 
     render() {
-        const {intl} = this.context;
+        const { intl } = this.context;
         return (
-            <DocumentTitle title={`${intl.formatMessage({id: 'app.name'})} - 使用说明`}>
+            <DocumentTitle title={`${intl.formatMessage({ id: 'app.name' })} - 使用说明`}>
                 <div>
-                    <style dangerouslySetInnerHTML={{__html: getStyle()}}/>
+                    <style dangerouslySetInnerHTML={{ __html: getStyle() }} />
                     {/* <Footer/> */}
                 </div>
             </DocumentTitle>

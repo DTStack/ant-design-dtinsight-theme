@@ -7,11 +7,9 @@
  */
 
 module.exports = {
-    'name': 'DTinsight build test',
-    'listen': 3001,
-    'root': 'dist',
-    'location': {
-    },
-    'proxyTable': {
-    }
-}
+    name: 'DTinsight build test',
+    listen: 3001,
+    root: 'dist',
+    location: {},
+    proxyTable: {},
+};
