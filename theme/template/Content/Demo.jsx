@@ -89,7 +89,6 @@ export default class Demo extends React.Component {
     });
   };
 
-  // eslint-disable-next-line
   track({ type, demo }) {
     if (!window.gtag) {
       return;

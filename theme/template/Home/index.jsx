@@ -52,7 +52,6 @@ function getStyle() {
   `;
 }
 
-/* eslint-disable react/prefer-stateless-function */
 class Home extends React.Component {
     static contextTypes = {
         intl: PropTypes.object.isRequired,
@@ -65,7 +64,6 @@ class Home extends React.Component {
             <DocumentTitle title={`${intl.formatMessage({id: 'app.name'})} - 使用说明`}>
                 <div>
                     <style dangerouslySetInnerHTML={{__html: getStyle()}}/>
-                    {/* eslint-disable-line */}
                     {/* <Footer/> */}
                 </div>
             </DocumentTitle>

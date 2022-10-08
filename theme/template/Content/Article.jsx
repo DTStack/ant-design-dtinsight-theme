@@ -81,7 +81,6 @@ export default class Article extends React.Component {
         const isNotTranslated = locale === 'en-US' && typeof title === 'object';
         return (
             <DocumentTitle title={`${title[locale] || title} - ` + config.baseConfig.projectName}>
-                {/* eslint-disable-next-line */}
                 <article className={isDark ? "markdown dark" : "markdown"} onClick={this.onResourceClick}>
                     {isNotTranslated && (
                         <Alert

@@ -21,7 +21,6 @@ const utils = {
 
     deleteAllCookies (domain, path) {
         const cookies = document.cookie.split(';');
-        // tslint:disable-next-line:prefer-for-of
         for (let i = 0; i < cookies.length; i++) {
             if (cookies[i]) {
                 this.deleteCookie(cookies[i].split('=')[0], domain, path);

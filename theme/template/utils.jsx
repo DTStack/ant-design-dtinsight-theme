@@ -64,7 +64,6 @@ export function getLocalizedPathname(path, zhCN) {
 }
 
 export function ping(callback) {
-  // eslint-disable-next-line
   const url =
     'https://private-a' +
     'lipay' +

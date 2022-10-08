@@ -184,8 +184,8 @@ export default class MainContent extends Component {
         if (this.scroller) {
             this.scroller.destroy();
         }
-        require('intersection-observer'); // eslint-disable-line
-        const scrollama = require('scrollama'); // eslint-disable-line
+        require('intersection-observer');
+        const scrollama = require('scrollama');
         this.scroller = scrollama();
         this.scroller
             .setup({
@@ -194,7 +194,7 @@ export default class MainContent extends Component {
             })
             .onStepEnter(({element}) => {
                 [].forEach.call(document.querySelectorAll('.toc-affix li a'), node => {
-                    node.className = ''; // eslint-disable-line
+                    node.className = '';
                 });
                 const currentNode = document.querySelectorAll(`.toc-affix li a[href="#${element.id}"]`)[0];
                 if (currentNode) {

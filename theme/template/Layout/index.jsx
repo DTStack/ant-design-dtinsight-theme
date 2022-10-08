@@ -25,7 +25,6 @@ if (typeof window !== 'undefined' && navigator.serviceWorker) {
 }
 
 if (typeof window !== 'undefined') {
-    /* eslint-disable global-require */
     require('../../static/style');
 
     // Expose to iframe
@@ -89,9 +88,7 @@ export default class Layout extends React.Component {
             if (typeof window.ga !== 'undefined') {
                 window.ga('send', 'pageview', loc.pathname + loc.search);
             }
-            // eslint-disable-next-line
             if (typeof window._hmt !== 'undefined') {
-                // eslint-disable-next-line
                 window._hmt.push(['_trackPageview', loc.pathname + loc.search]);
             }
         });
