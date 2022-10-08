@@ -38,4 +38,4 @@ const createTransformStreamAsync = (
 module.exports = {
     createTransformStream,
     createTransformStreamAsync,
-}
+};

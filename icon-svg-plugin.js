@@ -9,7 +9,7 @@ module.exports = function IconSvgPlugin() {
                 const dirFromOpts = state.opts.iconDir;
                 const svgs = state.opts.svgs;
 
-                const customIconDir = dirFromOpts ? dirFromOpts : defaultCustomIconDir;
+                const customIconDir = dirFromOpts || defaultCustomIconDir;
 
                 const sourceValue = path.node.source.value;
                 const base = '@ant-design/icons-svg/es/asn/';
