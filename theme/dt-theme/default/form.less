@@ -1,63 +1,78 @@
-@import '../const.less';
-.ant-form-item{
+@import "../const.less";
+
+.ant-form-item {
     margin-bottom: 16px;
-    .ant-radio{
+    .ant-radio {
         top: 0.3em;
     }
 }
+
 .ant-form-item-label > label {
     font-weight: 500;
-    &::after{
+    line-height: 20px;
+    &::after {
         margin: 0 12px 0 2px;
     }
 }
-.ant-form-vertical .ant-form-item-label{
+
+.ant-form-vertical .ant-form-item-label {
     padding: 0 0 4px;
+    margin-bottom: 0;
 }
-.ant-radio-wrapper-checked .ant-radio-disabled .ant-radio-inner{
+
+.ant-radio-wrapper-checked .ant-radio-disabled .ant-radio-inner {
     background-color: @white;
 }
+
 .ant-form-item-label > label .ant-form-item-tooltip {
     color: #B1B4C5;
 }
+
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon {
     color: @green;
 }
+
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon {
     color: @green;
 }
+
 .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
     background: @deriveColor;
 }
+
 .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
     background: @deriveColor;
 }
+
 li.ant-picker-panel-select-option-selected {
     font-weight: normal;
     background: @deriveColor;
 }
+
 .ant-picker-panel-select li:focus {
     font-weight: normal;
 }
+
 li.ant-picker-panel-select-option-selected:hover {
     background: @deriveColor;
 }
+
 .ant-radio-button-wrapper {
     padding: 0 16px;
 }
-.ant-form-item-control{
-    .ant-radio-wrapper{
-        span.ant-radio + *{
+
+.ant-form-item-control {
+    .ant-radio-wrapper {
+        span.ant-radio + * {
             margin-top: 0.2em;
         }
     }
 }
 
-
 // 灰色背景 表单样式设置 对应表单控件添加样式名dt-form-shadow-bg
 .dt-form-shadow-bg {
-    &.ant-input, &.ant-input-number, .ant-input, .ant-select-selection{
+    &.ant-input, &.ant-input-number, .ant-input, .ant-select-selection {
         border: 1px solid transparent;
         // &:hover, &:focus {
         //     border-color: @primaryColor;
@@ -83,12 +98,13 @@ li.ant-picker-panel-select-option-selected:hover {
     &.ant-select-disabled .ant-select-selection:focus,
     &.ant-select-disabled .ant-select-selection:active {
         border-color: transparent;
-        box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
+        box-shadow: 0 2px 8px 0 rgba(6, 14, 26, 0.08);
     }
     .ant-picker-input[disabled]:hover {
         border-color: transparent;
     }
 }
+
 .has-error {
     .dt-form-shadow-bg {
         &.ant-input, .ant-input, &.ant-input-number, .ant-select-selection, .ant-picker-input {
@@ -106,11 +122,11 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 
 .dt-radio-group {
-    box-shadow: 0px 2px 8px 0px rgba(6, 14, 26, 0.08);
+    box-shadow: 0 2px 8px 0 rgba(6, 14, 26, 0.08);
     .ant-radio-button-wrapper {
         border: 0;
     }
-    &.ant-radio-group-solid{
+    &.ant-radio-group-solid {
         .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
             outline: unset;
         }
@@ -138,28 +154,23 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-calendar,
 .ant-select-dropdown,
 .ant-picker-panel-inner {
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
 // checkbox
-.ant-checkbox-group{
+.ant-checkbox-group {
     line-height: calc(@lineHeight / @font12);
 }
-.ant-checkbox{
+
+.ant-checkbox {
     top: 0.25em;
 }
 
-.ant-picker-content{
-    thead{
-        th{
+.ant-picker-content {
+    thead {
+        th {
             color: @black_pageMsg;
             font-weight: 400;
         }
     }
-}
-.ant-form-item-label > label {
-    line-height: 20px;
-}
-.ant-form-vertical .ant-form-item-label{
-    margin-bottom: 0px;
 }

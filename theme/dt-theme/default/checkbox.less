@@ -1,20 +1,23 @@
-@import '../const.less';
+@import "../const.less";
 // checkbox
-.ant-checkbox-group{
+.ant-checkbox-group {
     line-height: calc(@lineHeight / @font12);
 }
-.ant-checkbox-wrapper{
+
+.ant-checkbox-wrapper {
     height: 32px;
-    padding: 6px 0px;
+    padding: 6px 0;
     .ant-checkbox-inner {
-        border-radius: 0px;
+        border-radius: 0;
         width: 15px;
         height: 15px;
     }
 }
+
 .ant-checkbox-disabled.ant-checkbox-checked .ant-checkbox-inner::after {
-    border-color: #FFFFFF;
+    border-color: #FFF;
 }
+
 .ant-checkbox-input:focus + .ant-checkbox-inner {
     border-color: #0A67F2;
 }

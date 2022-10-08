@@ -1,9 +1,9 @@
-@import '../const.less';
+@import "../const.less";
 
 .dt-layout-header {
     min-width: @minWidth;
     background: @white !important;
-    padding: 0px 0px 0px 24px;
+    padding: 0 0 0 24px;
     position: absolute;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
     z-index: 1000;
     justify-content: space-between;
     display: flex;
-    box-shadow: 0px 4px 4px 0px rgba(61, 68, 110, 0.04);
+    box-shadow: 0 4px 4px 0 rgba(61, 68, 110, 0.04);
     .ant-menu {
         background: @white;
         color: @black_title;
@@ -19,10 +19,7 @@
     .ant-menu-item > a {
         color: @black_title;
     }
-    .ant-menu-horizontal {
-        border-bottom: 0px solid transparent;
-    }
-    .ant-menu-horizontal .ant-menu-item{
+    .ant-menu-horizontal .ant-menu-item {
         border-color: @white !important;
         padding: 0 24px;
         font-weight: 400;
@@ -83,36 +80,34 @@
             }
             .ant-menu-submenu-selected {
                 .ant-menu-submenu-title {
-                    border-bottom: 0px;
+                    border-bottom: 0;
                 }
             }
-            .ant-menu-item:hover:not(.ant-menu-item-selected)  {
+            .ant-menu-item:hover:not(.ant-menu-item-selected) {
                 background: #F5F5F8;
             }
             .ant-menu-submenu {
-                border-bottom: 0px;
+                border-bottom: 0;
             }
         }
     }
-
     .menu-right {
         background: inherit;
         padding-right: 20px;
         height: 100%;
         display: flex;
         align-items: center;
-        margin: 0px;
+        margin: 0;
         .menu-item {
             display: block;
             line-height: 0;
             color: @black_msg;
             cursor: pointer;
-            padding: 0px 10px;
+            padding: 0 10px;
             &:hover {
                 color: @primaryColor;
             }
         }
-
         .anticon {
             color: @black_msg;
             font-size: 18px;
@@ -120,11 +115,10 @@
                 color: @primaryColor;
             }
         }
-
         .avatar {
             position: relative;
             display: inline-block;
-            border-radius: 50% 50%;
+            border-radius: 50%;
             width: 30px;
             height: 30px;
             margin-right: 7px;
@@ -132,14 +126,12 @@
             line-height: 30px;
             background: @white;
             top: -18px;
-            color: #e5e5e5;
+            color: #E5E5E5;
         }
-
         .user-info {
             color: @white;
             cursor: pointer;
         }
-
         .user-name {
             color: #3D446E;
             max-width: 200px;
@@ -148,16 +140,13 @@
             overflow: hidden;
             white-space: nowrap;
         }
-
         .ant-menu-submenu {
             line-height: 50px;
             height: 50px;
             color: @white;
             text-align: center;
-
             .ant-menu-submenu-title {
                 padding: 16px 0;
-
                 .anticon-setting {
                     margin-right: 0;
                 }
@@ -165,27 +154,27 @@
         }
 
         /* dropdown的上下冗余 */
-        .ant-dropdown .ant-dropdown-menu{
+        .ant-dropdown .ant-dropdown-menu {
             padding: 8px 0;
         }
     }
-    .ant-menu-horizontal
-    {
-        .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-submenu-selected, .ant-menu-item-active, .ant-menu-submenu-open {
-            &:after{
+    .ant-menu-horizontal {
+        border-bottom: 0 solid transparent;
+        .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-item-active, .ant-menu-submenu-open {
+            &::after {
                 border: none;
                 transition: border-color 0s, background 0.3s;
             }
         }
-        .ant-menu-item, .ant-menu-submenu-title, .ant-menu-submenu{
+        .ant-menu-item, .ant-menu-submenu-title, .ant-menu-submenu {
             transition: border-color 0s, background 0.3s;
-            &:hover{
-                &:after{
+            &:hover {
+                &::after {
                     border: none;
                     transition: border-color 0s, background 0.3s;
                 }
             }
-            &:after {
+            &::after {
                 transition: border-color 0s, background 0.3s;
             }
         }
@@ -276,7 +265,7 @@
             background-color: @black_titleBg;
         }
         .ant-menu-horizontal .ant-menu-item-selected {
-            &:after{
+            &::after {
                 border: none;
             }
         }
@@ -287,19 +276,19 @@
         }
     }
     .ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
-        border-right: 0px solid #3F87FF;
+        border-right: 0 solid #3F87FF;
     }
     .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
-        border: 0px solid transparent;
+        border: 0 solid transparent;
     }
     .ant-menu-vertical .ant-menu-item:not(:last-child), .ant-menu-vertical-left .ant-menu-item:not(:last-child), .ant-menu-vertical-right .ant-menu-item:not(:last-child), .ant-menu-inline .ant-menu-item:not(:last-child) {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     .ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title {
         height: 48px;
         line-height: 48px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
         font-size: 14px;
         border-left: 4px solid transparent;
     }
@@ -312,7 +301,7 @@
         a {
             color: @black_title;
         }
-        .ant-menu-item:hover:not(.ant-menu-item-selected)  {
+        .ant-menu-item:hover:not(.ant-menu-item-selected) {
             background: #F5F5F8;
         }
         .ant-menu-item-selected {
@@ -326,15 +315,15 @@
     .ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title {
         height: 48px;
         line-height: 48px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
         font-size: 14px;
         border-left: 3px solid transparent;
     }
 }
 
 // 菜单内容超出隐藏
-.dt-menu-text-ellipsis{
+.dt-menu-text-ellipsis {
     display: inline-block;
     max-width: 80px;
     text-overflow: ellipsis;
@@ -343,12 +332,12 @@
     vertical-align: top;
 }
 
-.ant-dropdown-menu-item .dropdown-content{
-    padding:6px 58px 7px 20px;
+.ant-dropdown-menu-item .dropdown-content {
+    padding: 6px 58px 7px 20px;
     font-size: 14px;
-    color: #333333;
+    color: #333;
     line-height: 27px;
-    .iconfont{
+    .iconfont {
         color: inherit;
         margin-right: 8px;
         vertical-align: -1px;
@@ -364,13 +353,13 @@
     min-height: 100px;
     right: 0;
     bottom: 0;
-    background: #f2f7fa;
+    background: #F2F7FA;
     overflow-y: auto;
     overflow-x: hidden;
     .ant-layout {
         overflow: hidden;
         height: 100%;
-        background: #f2f7fa;
+        background: #F2F7FA;
     }
 }
 
@@ -408,21 +397,22 @@
 
 // dt-common layout.scss
 .box-1, .box-2, .box-3, .box-4, .box-5 {
-    box-shadow: 0 0 6px 0 rgba(0,0,0,0.10);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
     background: @white;
     position: relative;
 }
 
-.box-pd-h{
+.box-pd-h {
     padding: 20px;
     height: 100%;
 }
+
 .box-1 {
     margin: 20px;
 }
 
 .box-2 {
-    margin: 0 20px 20px 20px;
+    margin: 0 20px 20px;
 }
 
 .box-3 {
@@ -432,48 +422,48 @@
 .box-4 {
     margin: 0 20px;
 }
+
 .box-title {
     height: 45px;
     line-height: 45px;
     font-weight: normal;
     font-size: 14px;
-    color: #333333;
+    color: #333;
     letter-spacing: 0;
     text-align: left;
     padding: 0 20px;
-
     .box-sub-title {
         font-size: 12px;
         color: rgb(153, 153, 153);
     }
 }
-.box-card {
-    padding: 0 20px 20px 20px;
 
+.box-card {
+    padding: 0 20px 20px;
     .card-title {
         height: 40px;
         line-height: 40px;
         font-size: 14px;
-        color: #333333;
+        color: #333;
         letter-spacing: 0;
         font-weight: normal;
     }
-
 }
-.flex-middle{
+
+.flex-middle {
     display: flex;
     align-items: center;
 }
+
 .m-slide-pane {
     .box-title {
         height: 35px;
         line-height: 35px;
         background: #FAFAFA;
         padding: 0 20px;
-        border-top: 1px solid #dddddd;
-        border-bottom: 1px solid #dddddd;
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
     }
-
     .m-card {
         .ant-card {
             .ant-card-head, .ant-card-body {

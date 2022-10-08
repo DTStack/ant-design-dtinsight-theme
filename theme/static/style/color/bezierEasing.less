@@ -1,3 +1,5 @@
+/* stylelint-disable number-no-trailing-zeros */
+/* stylelint-disable indentation */
 .bezierEasingMixin() {
 @functions: ~`(function() {
   var NEWTON_ITERATIONS = 4;
@@ -8,7 +10,7 @@
   var kSplineTableSize = 11;
   var kSampleStepSize = 1.0 / (kSplineTableSize - 1.0);
 
-  var float32ArraySupported = typeof Float32Array === 'function';
+  var float32ArraySupported = typeof Float32Array === "function";
 
   function A (aA1, aA2) { return 1.0 - 3.0 * aA2 + 3.0 * aA1; }
   function B (aA1, aA2) { return 3.0 * aA2 - 6.0 * aA1; }
@@ -48,7 +50,7 @@
 
   var BezierEasing = function (mX1, mY1, mX2, mY2) {
     if (!(0 <= mX1 && mX1 <= 1 && 0 <= mX2 && mX2 <= 1)) {
-      throw new Error('bezier x values must be in [0, 1] range');
+      throw new Error("bezier x values must be in [0, 1] range");
     }
 
     // Precompute samples table
@@ -100,7 +102,7 @@
 
   this.colorEasing = BezierEasing(0.26, 0.09, 0.37, 0.18);
   // less 3 requires a return
-  return '';
+  return "";
 })()`;
 }
 // It is hacky way to make this function will be compiled preferentially by less

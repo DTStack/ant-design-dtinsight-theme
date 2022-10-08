@@ -1,158 +1,150 @@
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  overflow: auto;
-}
-
-body {
-  overflow-x: hidden;
-  color: @site-text-color;
-  font-size: 14px;
-  font-family: @font-family;
-  line-height: 1.5;
-  background: #fff;
-  transition: background 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow: auto;
+    overflow-x: hidden;
+    color: @site-text-color;
+    font-size: 14px;
+    font-family: @font-family;
+    line-height: 1.5;
+    background: #FFF;
+    transition: background 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 a {
-  transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .main-wrapper {
-  position: relative;
-  padding: 40px 0 0;
-  background: #fff;
+    position: relative;
+    padding: 40px 0 0;
+    background: #FFF;
 }
 
 .main-container {
-  position: relative;
-  min-height: 500px;
-  padding: 0 170px 144px 64px;
-  overflow: hidden;
-  background: #fff;
+    position: relative;
+    min-height: 500px;
+    padding: 0 170px 144px 64px;
+    overflow: hidden;
+    background: #FFF;
 }
 
 .main-menu {
-  z-index: 1;
-
-  &-inner {
-    max-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  &:hover &-inner {
-    overflow-y: auto;
-  }
+    z-index: 1;
+    &-inner {
+        max-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    &:hover &-inner {
+        overflow-y: auto;
+    }
 }
 
 .aside-container {
-  padding-bottom: 48px;
-  font-family: Avenir, @font-family, sans-serif;
-
-  &.ant-menu-inline .ant-menu-submenu-title h4,
-  &.ant-menu-inline > .ant-menu-item,
-  &.ant-menu-inline .ant-menu-item a {
-    overflow: hidden;
-    font-size: 14px;
-    text-overflow: ellipsis;
-  }
-
-  &.ant-menu-inline .ant-menu-item-group-title {
-    padding-left: 56px;
-  }
-  .ant-menu-sub.ant-menu-inline .ant-menu-item-group-title{
-    padding-left: 56px;
-  }
-
-  a[disabled] {
-    color: #ccc;
-  }
-
-  .menu-item-link-outside {
-    position: relative;
-    .anticon {
-      position: absolute;
-      top: 16px;
-      right: -10px;
-      color: @primary-color;
-      font-size: 12px;
-      opacity: 0;
-      transition: all 0.3s;
+    padding-bottom: 48px;
+    font-family: Avenir, @font-family, sans-serif;
+    &.ant-menu-inline .ant-menu-submenu-title h4,
+    &.ant-menu-inline > .ant-menu-item,
+    &.ant-menu-inline .ant-menu-item a {
+        overflow: hidden;
+        font-size: 14px;
+        text-overflow: ellipsis;
     }
-    &:hover .anticon {
-      opacity: 1;
+    &.ant-menu-inline .ant-menu-item-group-title {
+        padding-left: 56px;
     }
-  }
+    .ant-menu-sub.ant-menu-inline .ant-menu-item-group-title {
+        padding-left: 56px;
+    }
+    a[disabled] {
+        color: #CCC;
+    }
+    .menu-item-link-outside {
+        position: relative;
+        .anticon {
+            position: absolute;
+            top: 16px;
+            right: -10px;
+            color: @primary-color;
+            font-size: 12px;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        &:hover .anticon {
+            opacity: 1;
+        }
+    }
 }
 
 .aside-container .chinese {
-  margin-left: 6px;
-  font-weight: normal;
-  font-size: 12px;
-  opacity: 0.67;
+    margin-left: 6px;
+    font-weight: normal;
+    font-size: 12px;
+    opacity: 0.67;
 }
 
 .outside-link {
-  display: inline-block;
+    display: inline-block;
 }
 
 .outside-link-icon {
-  margin-left: 5px;
-  color: #aaa;
-  font-size: 12px;
+    margin-left: 5px;
+    color: #AAA;
+    font-size: 12px;
 }
 
 // reset menu text color
 .menu-site .ant-menu-item > a {
-  color: @site-text-color;
+    color: @site-text-color;
 }
 
 .menu-site .ant-menu-item-selected > a,
 .menu-site .ant-menu-item > a:hover {
-  color: @primary-color;
+    color: @primary-color;
 }
 
 #react-content {
-  height: 100%;
-  transition: transform 0.3s @ease-in-out-circ;
+    height: 100%;
+    transition: transform 0.3s @ease-in-out-circ;
 }
+
 .page-wrapper {
-  width: 100%;
-  padding: 0;
-  overflow: hidden;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
 }
 
 .drawer-content {
-  padding: 40px 0;
+    padding: 40px 0;
 }
 
 .drawer {
-  z-index: 1029;
+    z-index: 1029;
 }
 
 #_hj_feedback_container {
-  .path1::before {
-    color: @primary-color !important;
-  }
-  .path2::before {
-    color: #fff !important;
-  }
+    .path1::before {
+        color: @primary-color !important;
+    }
+    .path2::before {
+        color: #FFF !important;
+    }
 }
 
 .aside-container.dark {
-  &.ant-menu, .ant-menu {
-    background-color: rgb(14, 14, 23);
-  }
-  &.menu-site .ant-menu-item > a {
-    color: #bfbfbf;
-  }
-  &.menu-site .ant-menu-item.ant-menu-item-selected > a {
-    color: @primary-color;
-  }
+    &.ant-menu, .ant-menu {
+        background-color: rgb(14, 14, 23);
+    }
+    &.menu-site .ant-menu-item > a {
+        color: #BFBFBF;
+    }
+    &.menu-site .ant-menu-item.ant-menu-item-selected > a {
+        color: @primary-color;
+    }
 }
 
 // demo 样式
@@ -162,72 +154,78 @@ a {
 .demo-datepicker-shadow,
 .demo-timer-picker-shadow,
 .demo-tree-select-shadow {
-  width: 100%;
-  padding: 20px;
-  background: #F2F7FA;
+    width: 100%;
+    padding: 20px;
+    background: #F2F7FA;
 }
+
 .demo-input-size {
-  > input {
-    margin-bottom: 20px;
-  }
+    > input {
+        margin-bottom: 20px;
+    }
 }
+
 .demo-button-type, .demo-modal-box, .demo-notification-box, .demo-message-box {
-  button {
-    margin-right: 12px;
-    margin-bottom: 20px;
-  }
+    button {
+        margin-right: 12px;
+        margin-bottom: 20px;
+    }
 }
+
 .demo-select-size {
-  .ant-select {
-    margin-bottom: 20px;
-    margin-right: 20px;
-    width: 200px;
-  }
+    .ant-select {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 200px;
+    }
 }
+
 .demo-select-basic {
-  .ant-select {
-    margin-right: 20px;
-  }
+    .ant-select {
+        margin-right: 20px;
+    }
 }
+
 .demo-datepicker-box {
-  .ant-picker {
-    margin-bottom: 20px;
-  }
+    .ant-picker {
+        margin-bottom: 20px;
+    }
 }
+
 .demo-time-picker-box {
-  .ant-picker {
-    margin-right: 12px;
-    margin-bottom: 20px;
-  }
+    .ant-picker {
+        margin-right: 12px;
+        margin-bottom: 20px;
+    }
 }
+
 .demo-switch-desc {
-  color: #333;
-  margin: 0px 8px 8px;
+    color: #333;
+    margin: 0 8px 8px;
 }
 
 // 黑色主题下 demo 样式
 .dark {
-  .demo-input-shadow,
-  .demo-select-shadow,
-  .demo-radio-shadow,
-  .demo-datepicker-shadow,
-  .demo-timer-picker-shadow,
-  .demo-tree-select-shadow {
-    background-color: transparent;
-    padding: 0px;
-  }
-  .demo-input-light,
-  .demo-select-light,
-  .demo-datepicker-light,
-  .demo-timer-picker-light,
-  .demo-tree-select-light,
-  .demo-form-light {
-    width: 100%;
-    padding: 20px;
-    background: #1A1C29;
-  }
-  .demo-switch-desc {
-    color: #BFBFBF;
-  }
-
+    .demo-input-shadow,
+    .demo-select-shadow,
+    .demo-radio-shadow,
+    .demo-datepicker-shadow,
+    .demo-timer-picker-shadow,
+    .demo-tree-select-shadow {
+        background-color: transparent;
+        padding: 0;
+    }
+    .demo-input-light,
+    .demo-select-light,
+    .demo-datepicker-light,
+    .demo-timer-picker-light,
+    .demo-tree-select-light,
+    .demo-form-light {
+        width: 100%;
+        padding: 20px;
+        background: #1A1C29;
+    }
+    .demo-switch-desc {
+        color: #BFBFBF;
+    }
 }
