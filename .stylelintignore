@@ -8,3 +8,5 @@ bower_components/
 .vscode
 .history
 *.log
+**/iconfont*/*
+tinyColor.less

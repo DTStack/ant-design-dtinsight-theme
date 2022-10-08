@@ -15,8 +15,8 @@
     "publish": "./scripts/publish.sh",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "lint": "npx stylelint ./**.{less,css}",
-    "lint:fix": "npx stylelint ./**.{less,css} --fix"
+    "lint": "npx stylelint ./**.{less,css,scss}",
+    "lint:fix": "npx stylelint ./**.{less,css,scss} --fix"
   },
   "keywords": [
     "antd-theme",
@@ -28,7 +28,10 @@
     "antd": "4.22.5",
     "dayjs": "^1.11.0",
     "insert-css": "^2.0.0",
-    "react-resizable": "^3.0.4"
+    "postcss": "^8.4.17",
+    "postcss-less": "^6.0.0",
+    "react-resizable": "^3.0.4",
+    "stylelint-config-recommended-less": "^1.0.4"
   },
   "devDependencies": {
     "@ant-design/compatible": "^1.1.0",
