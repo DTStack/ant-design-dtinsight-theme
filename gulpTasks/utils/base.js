@@ -41,10 +41,10 @@ const base = {
         { mergePaths: true },
         { convertShapeToPath: true },
         { sortAttrs: true },
-        { removeDimensions: true }
-    ]
+        { removeDimensions: true },
+    ],
 };
 
 module.exports = {
-    base
-}
+    base,
+};

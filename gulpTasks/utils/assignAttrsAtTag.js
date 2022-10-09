@@ -6,7 +6,7 @@ const {
     when,
     equals,
     where,
-    mergeRight
+    mergeRight,
 } = require('ramda');
 
 function assignAttrsAtTag(
@@ -16,7 +16,7 @@ function assignAttrsAtTag(
     return (options) => (asn) =>
         when(
         where({
-            tag: equals(tag)
+            tag: equals(tag),
         }),
             evolve({
                 attrs: pipe(
@@ -28,11 +28,11 @@ function assignAttrsAtTag(
                             )
                             : extraPropsOrFn
                     )
-            )
+            ),
 })
 )(asn);
 }
 
 module.exports = {
-    assignAttrsAtTag
-}
+    assignAttrsAtTag,
+};

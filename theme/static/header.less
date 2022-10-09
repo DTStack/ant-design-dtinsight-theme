@@ -1,178 +1,162 @@
 @header-height: 64px;
+
 @menu-item-border: 2px;
 
 #header {
-  position: relative;
-  z-index: 10;
-  max-width: 100%;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(240, 241, 242, 65);
-  &.home-nav-bottom {
-    background: rgba(255, 255, 255, 0.9);
-    border-bottom-color: #ebedee;
-    .search {
-      border-left-color: #ebedee;
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+    background: #FFF;
+    box-shadow: 0 2px 8px rgba(240, 241, 242, 65);
+    &.home-nav-bottom {
+        background: rgba(255, 255, 255, 0.9);
+        border-bottom-color: #EBEDEE;
+        .search {
+            border-left-color: #EBEDEE;
+        }
+        a {
+            color: @site-text-color;
+        }
     }
-    a {
-      color: @site-text-color;
+    .header-link {
+        color: @site-text-color;
     }
-  }
-
-  .header-link {
-    color: @site-text-color;
-  }
-
-  .ant-menu-item-active .header-link {
-    color: @primary-color;
-  }
+    .ant-menu-item-active .header-link {
+        color: @primary-color;
+    }
 }
 
 #logo {
-  float: left;
-  height: @header-height;
-  padding-left: 50px;
-  overflow: hidden;
-  line-height: @header-height;
-  white-space: nowrap;
-  text-decoration: none;
-  img {
-    height: 40px;
-    margin-right: 16px;
-  }
-  img + img {
-    position: relative;
-    top: 1px;
-    height: 16px;
-  }
+    float: left;
+    height: @header-height;
+    padding-left: 50px;
+    overflow: hidden;
+    line-height: @header-height;
+    white-space: nowrap;
+    text-decoration: none;
+    img {
+        height: 40px;
+        margin-right: 16px;
+    }
+    img + img {
+        position: relative;
+        top: 1px;
+        height: 16px;
+    }
 }
 
 #search-box {
-  float: left;
-  height: 22px;
-  margin: 22px auto 0;
-  padding-left: 16px;
-  line-height: 22px;
-  border-left: 1px solid @site-border-color-split;
-}
-
-#search-box {
-  border-left: 1px solid #ebedee;
-  float: left;
-  height: 22px;
-  line-height: 22px;
-  padding-left: 30px;
+    float: left;
+    height: 22px;
+    margin: 22px auto 0;
+    padding-left: 16px;
+    line-height: 22px;
+    border-left: 1px solid @site-border-color-split;
 }
 
 #search-box .ant-select {
-  font-size: 14px;
-  margin-top: -3px;
-  width: 200px;
+    font-size: 14px;
+    margin-top: -3px;
+    width: 200px;
 }
 
 #search-box .ant-select-selector {
-  border: 0;
-  box-shadow: none;
+    border: 0;
+    box-shadow: none;
 }
 
 #search-box .anticon {
-  position: relative;
-  top: 0.5px;
-  color: #ced4d9;
+    position: relative;
+    top: 0.5px;
+    color: #CED4D9;
 }
 
 #search-box input {
-  width: 200px;
-  margin-top: -5px;
-  font-size: 14px;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-
-  &::placeholder {
-    color: #a3b1bf;
-  }
+    width: 200px;
+    margin-top: -5px;
+    font-size: 14px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    &::placeholder {
+        color: #A3B1BF;
+    }
 }
 
 .header-lang-button,
 .version {
-  float: right;
-  margin-top: 20px;
-  margin-left: 16px;
+    float: right;
+    margin-top: 20px;
+    margin-left: 16px;
 }
 
 .header-lang-button {
-  margin-right: 40px;
-  color: @text-color;
-  border-color: @border-color-base;
+    margin-right: 40px;
+    color: @text-color;
+    border-color: @border-color-base;
 }
 
 #nav {
-  float: right;
-  font-size: 14px;
-  font-family: Avenir, @font-family, sans-serif;
-  border: 0;
-
-  &.ant-menu-horizontal {
-    border-bottom: none;
-
+    float: right;
+    font-size: 14px;
+    font-family: Avenir, @font-family, sans-serif;
+    border: 0;
+    &.ant-menu-horizontal {
+        border-bottom: none;
+        & > .ant-menu-item,
+        & > .ant-menu-submenu {
+            min-width: 72px;
+            height: @header-height;
+            line-height: @header-height - @menu-item-border - 2px;
+            border-top: @menu-item-border solid transparent;
+            &:hover {
+                border-top: @menu-item-border solid @primary-color;
+                border-bottom: @menu-item-border solid transparent;
+            }
+        }
+        & > .ant-menu-submenu-open {
+            border-top: @menu-item-border solid @primary-color;
+            border-bottom: @menu-item-border solid transparent;
+        }
+        & > .ant-menu-item-selected {
+            border-top: @menu-item-border solid @primary-color;
+            border-bottom: @menu-item-border solid transparent;
+            a {
+                color: @primary-color;
+            }
+        }
+    }
     & > .ant-menu-item,
     & > .ant-menu-submenu {
-      min-width: 72px;
-      height: @header-height;
-      line-height: @header-height - @menu-item-border - 2px;
-      border-top: @menu-item-border solid transparent;
-
-      &:hover {
-        border-top: @menu-item-border solid @primary-color;
-        border-bottom: @menu-item-border solid transparent;
-      }
+        text-align: center;
     }
-
-    & > .ant-menu-submenu-open {
-      border-top: @menu-item-border solid @primary-color;
-      border-bottom: @menu-item-border solid transparent;
-    }
-
-    & > .ant-menu-item-selected {
-      border-top: @menu-item-border solid @primary-color;
-      border-bottom: @menu-item-border solid transparent;
-      a {
-        color: @primary-color;
-      }
-    }
-  }
-
-  & > .ant-menu-item,
-  & > .ant-menu-submenu {
-    text-align: center;
-  }
 }
 
 .component-select {
-  &.ant-select-dropdown {
-    font-size: 14px;
-    border: 0;
-    border-radius: 0;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-  }
-  .ant-select-dropdown-menu {
-    max-height: 200px;
-  }
-  .ant-select-dropdown-menu-item {
-    border-radius: 0 !important;
-  }
-  .ant-component-decs {
-    position: absolute;
-    right: 16px;
-    color: #aaa;
-    font-size: 12px;
-  }
+    &.ant-select-dropdown {
+        font-size: 14px;
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    }
+    .ant-select-dropdown-menu {
+        max-height: 200px;
+    }
+    .ant-select-dropdown-menu-item {
+        border-radius: 0 !important;
+    }
+    .ant-component-decs {
+        position: absolute;
+        right: 16px;
+        color: #AAA;
+        font-size: 12px;
+    }
 }
 
 .theme-radio-box {
-  display: flex;
-  align-items: center;
-  height: 64px;
-  float: right;
-  margin-right: 50px;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    float: right;
+    margin-right: 50px;
 }

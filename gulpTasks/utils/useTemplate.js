@@ -9,5 +9,5 @@ const useTemplate = ({ template: tplContent, mapToInterpolate }) => {
 };
 
 module.exports = {
-    useTemplate
-}
+    useTemplate,
+};
