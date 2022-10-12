@@ -2,6 +2,10 @@
 
 Engish | [Chinese](./README_zh.md)
 
+## Docs
+- [v1.x](https://liuxy0551.github.io/ant-design-dtinsight-theme/docs/react/getting-started-cn)
+- [v2.x-beta](https://dtstack.github.io/ant-design-dtinsight-theme/docs/react/introduce-cn)
+
 This project has implemented the compilation of the DTInsight UI4.0 standard style based on the Ant-Design 3.x version and realized the component style preview based on the Bisheng framework.
 
 In this project you can:

@@ -5,6 +5,7 @@ module.exports = {
         components: './components',
         docs: './docs',
     },
+    root: '/ant-design-dtinsight-theme/',
     output: './dist',
     theme: './theme',
     htmlTemplate: path.join(__dirname, './theme/static/template.html'),
