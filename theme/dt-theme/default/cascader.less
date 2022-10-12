@@ -1,6 +1,10 @@
 // 除组件外的一些 共有样式
 @import "../const.less";
 
+.ant-select {
+    color: @black_title;
+}
+
 .ant-select.dt-ant-select-outside {
     font-size: @font12;
 }
@@ -28,6 +32,9 @@
 .ant-select-dropdown {
     padding: 0;
     box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
+    .ant-select-item:not(.ant-select-item-option-disabled) {
+        color: @black_title;
+    }
     .ant-cascader-menu-item:hover {
         background: @black_titleBg;
     }
