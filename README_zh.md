@@ -3,8 +3,8 @@
 [英文](./README.md) | 中文
 
 ## 文档
-- [v1.x](https://liuxy0551.github.io/ant-design-dtinsight-theme/components/table-cn/)
-- [v2.x-beta](https://dtstack.github.io/ant-design-dtinsight-theme/components/table-cn/)
+- [v1.x](https://liuxy0551.github.io/ant-design-dtinsight-theme/docs/react/getting-started-cn)
+- [v2.x-beta](https://dtstack.github.io/ant-design-dtinsight-theme/docs/react/introduce-cn)
 
 本项目基于 antd 3.x 实现数栈 UI4.0 规范样式的编写，基于 bisheng 框架实现组件样式预览。
 
