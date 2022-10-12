@@ -7,12 +7,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development bisheng start",
-    "build": "bisheng build",
+    "build": "rm -rf dist && bisheng build",
     "clean": "rimraf dist/*",
     "changelog": "./scripts/changelog.sh",
     "release": "./scripts/release.sh",
     "publish": "./scripts/publish.sh",
-    "predeploy": "npm run build",
+    "predeploy": "rm -rf dist && npm run build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [
