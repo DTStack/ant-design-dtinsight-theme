@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[94],{1222:function(n,o,p){n.exports={basic:p(1318)}}}]);

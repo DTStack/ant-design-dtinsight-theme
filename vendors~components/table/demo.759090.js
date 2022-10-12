@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[96],{1226:function(e,o,s){e.exports={basic:s(1325),expand:s(1326),"filter-sort":s(1327),fixBase:s(1328),fixFooter:s(1329),scroll:s(1330),selectAndDeal:s(1331),size:s(1332)}}}]);
