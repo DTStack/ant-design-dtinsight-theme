@@ -13,7 +13,6 @@
         "changelog": "./scripts/changelog.sh",
         "release": "./scripts/release.sh",
         "publish": "./scripts/publish.sh",
-        "predeploy": "rm -rf dist && npm run build",
         "deploy": "gh-pages -d dist",
         "prettier": "npx prettier --check './**.{js,jsx,json,ts,tsx}'",
         "prettier:fix": "npx prettier --write './**.{js,jsx,json,ts,tsx}'",
