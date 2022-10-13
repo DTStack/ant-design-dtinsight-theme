@@ -38,6 +38,7 @@
     "commitizen": "^4.2.4",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^3.3.0",
+    "dynamic-resolve-webpack-plugin": "^2.0.0",
     "file-loader": "^6.0.0",
     "gh-pages": "^3.2.0",
     "gulp": "4.0.2",
