@@ -27610,11 +27610,8 @@ li {
 .ant-table-tbody > tr > td {
   border-bottom: 1px solid #EBECF0;
 }
-.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
-  background: #F5F5F8;
+.ant-table-tbody > .ant-table-placeholder > .ant-table-cell {
+  border-bottom: 0;
 }
 .ant-table-middle .ant-table-thead > tr > th {
   border-bottom: 1px solid #EBECF0;
