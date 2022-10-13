@@ -29,6 +29,21 @@
     background: @black_titleBg;
 }
 
+.ant-table-tbody > .ant-table-expanded-row > .ant-table-cell {
+    padding: 0 0 0 44px;
+    background-color: @black_navBg;
+    &:hover {
+        background-color: @black_navBg !important;
+    }
+    .ant-table-wrapper {
+        background: none;
+        border-bottom: 0px;
+        .ant-table  {
+            margin: 0px;
+        }
+    }
+}
+
 .ant-table-middle {
     .ant-table-thead > tr > th {
         border-bottom: 1px solid @black_readonly;
