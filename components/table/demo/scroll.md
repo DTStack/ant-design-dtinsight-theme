@@ -75,7 +75,7 @@ const pagination = {
   current: 1,
   pageSize: 10,
   size: 'small',
-  total: 30,
+  total: 80,
   showTotal: (total) => <span>
     共<span style={{ color: '#3F87FF' }}>{total}</span>条数据，每页显示15条
   </span>

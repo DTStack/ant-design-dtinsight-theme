@@ -43,10 +43,10 @@
 }
 
 .dt-notification-close-btn {
-    color: @black_pageMsg;
+    color: @black_msg;
     top: 19px;
     &:hover {
-        color: rgb(39, 39, 39);
+        color: @black_title;
     }
 }
 
@@ -67,5 +67,11 @@
 .ant-notification {
     .ant-notification-notice-close {
         right: 16px;
+        .ant-notification-notice-close-x {
+            color: @black_msg;
+            &:hover {
+                color: @black_title;
+            }
+        }
     }
 }
