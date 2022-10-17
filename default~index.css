@@ -29306,8 +29306,8 @@ ul.ant-pagination {
 }
 .ant-checkbox-wrapper .ant-checkbox-inner {
   border-radius: 0;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
 }
 .ant-checkbox-disabled.ant-checkbox-checked .ant-checkbox-inner::after {
   border-color: #FFF;
