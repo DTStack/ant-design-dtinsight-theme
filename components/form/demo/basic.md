@@ -14,7 +14,8 @@ title:
 Basic usage example.
 
 ```jsx
-import { Form, Input, Button, Checkbox, InputNumber, Radio, Switch, Cascader, Select } from 'antd';
+import { Form, Input, Button, Checkbox, InputNumber, Radio, Switch, Cascader, Select, Tooltip } from 'antd';
+import { QuestionCircleOutlined } from '@ant-design/icons';
 const { Option } = Select;
 const formItemLayout = {
   labelCol: {
@@ -92,7 +93,14 @@ class NormalLoginForm extends React.Component {
           <Radio.Group>
             <Radio value={1}>orc选项一</Radio>
             <Radio value={2}>text选项二</Radio>
-            <Radio value={3}>md选项三</Radio>
+            <Radio value={3}>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                md选项三
+                <Tooltip title="这是选项三的 hover 提示">
+                  <QuestionCircleOutlined style={{ fontSize: 16, color: '#B1B4C5', marginLeft: 6 }} />
+                </Tooltip>
+              </div>
+            </Radio>
           </Radio.Group>
         </Form.Item>
         <Form.Item name="switch" colon={false} label={'开关'} rules={[{ required: false, message: 'It is required!' }]}>
