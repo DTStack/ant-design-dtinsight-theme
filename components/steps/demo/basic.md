@@ -56,7 +56,7 @@ const steps = [
 
 class Demo extends React.Component {
   state = {
-    current: 0,
+    current: 1,
   };
 
   next() {
