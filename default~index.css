@@ -28936,6 +28936,7 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-pagination .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
   width: auto;
+  height: 24px;
   padding: 0 8px;
 }
 .ant-pagination .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
@@ -28964,6 +28965,7 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-pagination .ant-select-single.ant-select-sm:not(.ant-select-customize-input).ant-select-show-arrow .ant-select-selection-item {
   padding-right: 0;
+  line-height: 22px;
 }
 .ant-pagination .ant-select-single .ant-select-selector .ant-select-selection-item,
 .ant-pagination .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
