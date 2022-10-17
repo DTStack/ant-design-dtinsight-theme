@@ -27241,12 +27241,18 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-layout-sider .ant-menu .ant-menu-submenu-title .anticon {
   font-size: 14px;
 }
+.dt-layout-sider .ant-menu .ant-menu-item a {
+  display: flex;
+  align-items: center;
+}
 .dt-layout-sider .ant-menu .ant-menu-item-selected {
   background: #E8F1FF;
 }
 .dt-layout-sider .ant-menu .ant-menu-item-selected a {
   font-weight: 500;
   color: #1D78FF;
+  display: flex;
+  align-items: center;
 }
 .dt-layout-sider .ant-menu .ant-menu-item:hover:not(.ant-menu-item-selected, .ant-menu-submenu-selected) {
   background-color: #F5F5F8;
