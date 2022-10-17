@@ -3,6 +3,11 @@
 
 .ant-select {
     color: @black_title;
+    .ant-select-clear {
+        &:hover {
+            color: @black_Desc;
+        }
+    }
 }
 
 .ant-select.dt-ant-select-outside {
@@ -58,6 +63,11 @@
             background: #F9F9FA;
             line-height: 20px;
             border: 1px solid #EBECF0;
+            .ant-select-selection-item-remove {
+                &:hover {
+                    color: @black_Desc;
+                }
+            }
         }
     }
 }
