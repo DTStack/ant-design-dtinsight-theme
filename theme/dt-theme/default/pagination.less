@@ -39,7 +39,7 @@
                 display: flex;
                 justify-content: flex-end;
                 flex-direction: column;
-                scale: 0.7;
+                scale: 0.6;
             }
         }
     }
@@ -91,9 +91,8 @@
             display: none;
         }
         .ant-select-selector {
-            height: 24px;
+            width: auto;
             padding: 0 8px;
-            width: 67px;
         }
     }
     .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
@@ -122,11 +121,19 @@
     .ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
         height: 22px;
     }
+    .ant-select-single.ant-select-sm:not(.ant-select-customize-input).ant-select-show-arrow .ant-select-selection-item {
+        padding-right: 0;
+    }
     .ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
         line-height: 22px;
     }
     .ant-pagination-simple .ant-pagination-simple-pager input {
         padding: 2.5px 6px 0;
+    }
+
+    // 分页下拉选项
+    .ant-select-dropdown .ant-select-item:not(.ant-select-item-option-disabled) {
+        text-align: center;
     }
 }
 
