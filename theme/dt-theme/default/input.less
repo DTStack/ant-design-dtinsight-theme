@@ -45,9 +45,25 @@
 }
 
 .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary) {
+    color: @black_msg;
     border: solid 1px #D8DAE1;
     &:hover {
         border: solid 1px @primaryColor;
         color: @primaryColor;
     }
+}
+
+// 密码输入框 icon 颜色
+.ant-input-password {
+    .ant-input-password-icon {
+        color: @black_msg;
+        &:hover {
+            color: @black_Desc;
+        }
+    }
+}
+
+// 穿梭框 icon 颜色
+.ant-input-prefix {
+    color: @black_msg;
 }
