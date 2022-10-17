@@ -254,11 +254,19 @@
         .ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
             font-size: 14px;
         }
+        .ant-menu-item {
+            a {
+                display: flex;
+                align-items: center;
+            }
+        }
         .ant-menu-item-selected {
             background: #E8F1FF;
             a {
                 font-weight: 500;
                 color: @primaryColor;
+                display: flex;
+                align-items: center;
             }
         }
         .ant-menu-item:hover:not(.ant-menu-item-selected, .ant-menu-submenu-selected) {

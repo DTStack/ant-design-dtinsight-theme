@@ -8,6 +8,14 @@
             border-left: 1px solid #EBECF0;
         }
     }
+    .ant-table-tbody {
+        .ant-table-row {
+            .ant-table-cell-with-append {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
 }
 
 .ant-table-thead {
@@ -139,6 +147,41 @@
 // 表格筛选框样式
 .ant-table-filter-dropdown-btns {
     border-top: none;
+    padding: 8px;
+    justify-content: end;
+    .ant-btn-link.ant-btn-sm {
+        margin-right: 8px;
+        color: @black_title;
+        border: 1px solid @black_border;
+        padding: 0 8px;
+        height: 28px;
+        &:hover, &:focus {
+            border: 1px solid @hoverColor;
+            color: @hoverColor;
+            padding: 0 8px;
+            height: 28px;
+        }
+        &:active {
+            color: @clickColor;
+            height: 28px;
+            padding: 0 8px;
+            border: 1px solid @clickColor;
+        }
+        &:disabled {
+            padding: 0 8px;
+            height: 28px;
+            color: @black_msg;
+            background-color: @black_readonly;
+            border: 1px solid @black_readonly;
+            &:hover, &:focus {
+                padding: 0 8px;
+                height: 28px;
+                color: @black_msg;
+                background-color: @black_readonly;
+                border: 1px solid @black_readonly;
+            }
+        }
+    }
 }
 
 .ant-dropdown-menu {
