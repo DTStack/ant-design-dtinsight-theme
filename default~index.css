@@ -26577,6 +26577,11 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-table-row-expand-icon::after {
   color: #1D78FF;
 }
+.ant-table-row-expand-icon:hover,
+.ant-table-row-expand-icon:focus,
+.ant-table-row-expand-icon:active {
+  border-color: #1D78FF;
+}
 .ant-table-tbody > tr > td.ant-table-selection-column {
   padding: 0 8px 0 16px;
   line-height: 43px;
