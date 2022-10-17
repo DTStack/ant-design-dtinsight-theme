@@ -27711,6 +27711,43 @@ li {
 }
 .ant-table-filter-dropdown-btns {
   border-top: none;
+  padding: 8px;
+  justify-content: end;
+}
+.ant-table-filter-dropdown-btns .ant-btn-link.ant-btn-sm {
+  margin-right: 8px;
+  color: #3D446E;
+  border: 1px solid #D8DAE2;
+  padding: 0 8px;
+  height: 28px;
+}
+.ant-table-filter-dropdown-btns .ant-btn-link.ant-btn-sm:hover,
+.ant-table-filter-dropdown-btns .ant-btn-link.ant-btn-sm:focus {
+  border: 1px solid #0A67F2;
+  color: #0A67F2;
+  padding: 0 8px;
+  height: 28px;
+}
+.ant-table-filter-dropdown-btns .ant-btn-link.ant-btn-sm:active {
+  color: #005CE6;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid #005CE6;
+}
+.ant-table-filter-dropdown-btns .ant-btn-link.ant-btn-sm:disabled {
+  padding: 0 8px;
+  height: 28px;
+  color: #B1B4C5;
+  background-color: #EBECF0;
+  border: 1px solid #EBECF0;
+}
+.ant-table-filter-dropdown-btns .ant-btn-link.ant-btn-sm:disabled:hover,
+.ant-table-filter-dropdown-btns .ant-btn-link.ant-btn-sm:disabled:focus {
+  padding: 0 8px;
+  height: 28px;
+  color: #B1B4C5;
+  background-color: #EBECF0;
+  border: 1px solid #EBECF0;
 }
 .ant-dropdown-menu {
   padding-top: 8px;
@@ -27752,7 +27789,7 @@ li {
   border-right: none;
 }
 .ant-btn {
-  line-height: 30px;
+  line-height: 100%;
 }
 .ant-btn.ant-btn-primary:hover,
 .ant-btn.ant-btn-primary:focus {
