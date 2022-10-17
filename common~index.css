@@ -26514,8 +26514,8 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-table.ant-table-small tfoot > tr > th,
 .ant-table.ant-table-small tfoot > tr > td {
   padding: 0 16px;
-  height: 36px;
-  line-height: 36px;
+  height: 35px;
+  line-height: 35px;
   box-sizing: border-box;
 }
 .ant-table-small .ant-table-thead > tr > th {
@@ -26532,13 +26532,11 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-table-tbody > tr {
   height: 43px;
   box-sizing: border-box;
-  line-height: 43px;
 }
 .ant-table-tbody > tr > td {
-  height: 43px;
+  height: 44px;
   box-sizing: border-box;
-  padding: 0 16px;
-  line-height: 43px;
+  padding: 6px 16px 5px;
 }
 .ant-table-tbody > tr > td:first-child {
   padding-left: 16px;
@@ -26827,7 +26825,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
   height: 100%;
   padding: 0 !important;
   box-shadow: none;
-  border: 1px solid #EBECF0;
 }
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading {
