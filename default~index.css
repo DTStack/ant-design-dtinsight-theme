@@ -29170,6 +29170,9 @@ ul.ant-pagination {
 .ant-picker.ant-picker-range .ant-picker-active-bar {
   background: #005CE6;
 }
+.ant-picker-range {
+  padding: 4px 11px;
+}
 .ant-picker.ant-picker-disabled {
   background: #EBECF0 !important;
   color: #B1B4C5 !important;
