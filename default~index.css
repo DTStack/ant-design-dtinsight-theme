@@ -28662,6 +28662,7 @@ li.ant-picker-panel-select-option-selected:hover {
   line-height: 18px;
   display: inline-flex;
   align-items: center;
+  background-color: #F9F9FA;
 }
 .ant-tag-close-icon {
   margin-left: 2px;
