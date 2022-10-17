@@ -27000,7 +27000,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-layout-header {
   min-width: 1260px;
   background: #FFFFFF !important;
-  padding: 0 0 0 24px;
   position: absolute;
   top: 0;
   left: 0;
@@ -27387,6 +27386,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
 }
 .dt-header-log-wrapper > img {
   height: 40px;
+  margin-left: 16px;
 }
 .dt-header-log-wrapper .c-header__title,
 .dt-header-log-wrapper > span {
