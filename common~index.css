@@ -26988,15 +26988,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-table-last-row-noborder .ant-table-placeholder {
   border-bottom-color: rgba(0, 0, 0, 0) !important;
 }
-.ant-modal-header {
-  padding: 15px 20px;
-}
-.ant-modal-body {
-  padding: 24px 20px 28px;
-}
-.ant-modal-footer {
-  padding: 20px;
-}
 .dt-layout-header {
   min-width: 1260px;
   background: #FFFFFF !important;
