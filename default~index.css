@@ -27584,6 +27584,13 @@ li {
   color: #3D446E;
   background: none;
 }
+.dt-layout-sider .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item .menuItem,
+.dt-layout-sider .ant-menu-inline-collapsed > .ant-menu-item .menuItem,
+.dt-layout-sider .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .menuItem {
+  max-width: 0;
+  display: inline-block;
+  opacity: 0;
+}
 .ant-menu-submenu-popup .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
   border-left: 3px solid #1D78FF;
 }
@@ -28319,6 +28326,7 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-notification-notice-with-icon .ant-notification-notice-description {
   color: #8B8FA8;
+  word-break: break-all;
 }
 .ant-message-notice-content {
   height: 40px;
@@ -29497,6 +29505,7 @@ ul.ant-pagination {
 .ant-tree.ant-tree-block-node .ant-tree-list-holder-inner .ant-tree-node-content-wrapper {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .ant-tree-select-dropdown .ant-select-tree .ant-select-tree-list-holder .ant-select-tree-node-content-wrapper {
   height: 32px;
