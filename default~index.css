@@ -27690,10 +27690,6 @@ li {
   height: 1px;
   background: #E8E8E8;
 }
-.dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination,
-.dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination {
-  height: 100%;
-}
 .dt-table-fixed-base.ant-table-wrapper,
 .dt-table-fixed-base .ant-table-wrapper {
   background: #FFFFFF;
