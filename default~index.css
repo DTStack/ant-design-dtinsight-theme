@@ -28365,7 +28365,8 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-breadcrumb {
   color: #8B8FA8;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 20px;
 }
 .ant-breadcrumb a {
   color: #8B8FA8;
