@@ -29400,9 +29400,13 @@ ul.ant-pagination {
 .ant-drawer-content-wrapper {
   max-width: 1256px;
 }
+.ant-drawer-content-wrapper .ant-drawer-body {
+  padding: 16px;
+}
 .ant-drawer-header {
   padding: 16px;
   background-color: #F9F9FA;
+  border-bottom: 1px solid #EBECF0;
 }
 .ant-drawer-header .ant-drawer-header-title {
   flex-direction: row-reverse;
