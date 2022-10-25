@@ -27693,6 +27693,7 @@ li {
 .dt-table-fixed-base.ant-table-wrapper,
 .dt-table-fixed-base .ant-table-wrapper {
   background: #FFFFFF;
+  border: 1px solid #EBECF0;
 }
 .dt-table-border {
   border: 1px solid #EBECF0;
