@@ -90,13 +90,30 @@
         border-top: 1px dashed @primaryColor;
         border-bottom: 1px dashed @primaryColor;
     }
-    .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner {
+    .ant-picker-cell-in-view.ant-picker-cell-today:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-start) .ant-picker-cell-inner {
         color: @primaryColor;
         &::before {
             border: none;
             border-bottom: 2px solid @primaryColor;
             border-radius: 0;
         }
+    }
+    .ant-picker-cell-in-view.ant-picker-cell-disabled.ant-picker-cell-today:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-start) .ant-picker-cell-inner {
+        color: inherit;
+        &::before {
+            border-bottom-color: #8B8FA8;
+        }
+    }
+    .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single).ant-picker-cell-range-hover-end::before,
+    .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single).ant-picker-cell-range-hover-start::before,
+    .ant-picker-cell-in-view.ant-picker-cell-range-start.ant-picker-cell-range-hover::before {
+        background: #E8F1FF;
+    }
+    .ant-picker-date-panel .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end .ant-picker-cell-inner::after {
+        left: 0;
+    }
+    .ant-picker-date-panel .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start .ant-picker-cell-inner::after {
+        right: 0;
     }
     .ant-picker-cell-in-view.ant-picker-cell-in-range::before {
         background: #E8F1FF;
@@ -105,6 +122,7 @@
         background: @primaryColor;
     }
     .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+        border-radius: 2px !important;
         background: @primaryColor;
     }
     .ant-picker-cell-disabled {
@@ -121,6 +139,7 @@
     }
     .ant-picker-cell {
         .ant-picker-cell-inner {
+            border-radius: 2px;
             transition: background 0.3s;
         }
     }
