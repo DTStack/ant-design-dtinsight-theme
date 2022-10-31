@@ -27612,6 +27612,10 @@ li {
   display: flex;
   align-items: center;
 }
+.ant-table .ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: #F5F5F8;
+}
 .ant-table-thead {
   background: #FAFAFA;
 }
@@ -28463,10 +28467,9 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-content {
   padding: 8px 12px;
-  line-height: 20px;
 }
 .ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-label {
-  padding: 0 12px;
+  padding: 8px 12px;
   border-right: 1px solid #EBECF0;
   color: #64698B;
   background: #F9F9FA;
