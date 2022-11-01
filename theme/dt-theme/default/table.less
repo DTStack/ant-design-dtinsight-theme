@@ -78,26 +78,6 @@
             border-top: 1px solid #E8E8E8;
         }
     }
-
-    // 固定高度无数据时，缺省图垂直居中
-    .ant-spin-nested-loading {
-        // height: 100%;
-        .ant-spin-container {
-            height: inherit;
-            .ant-table-empty {
-                height: inherit;
-                .ant-table-container {
-                    height: inherit;
-                    .ant-table-content {
-                        height: inherit;
-                        table {
-                            height: inherit;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 // 固定表格高度(footer实现分页）
@@ -135,12 +115,17 @@
     }
 }
 
-// 固定表格高度(自带分页）
-.dt-table-fixed-base {
-    &.ant-table-wrapper,
-    .ant-table-wrapper {
+// 固定表格高度(自带分页）有 border
+.dt-table-fixed-base, .dt-table-fixed-base-no-border {
+    &.ant-table-wrapper, .ant-table-wrapper {
         background: @white;
         border: 1px solid @grey_border;
+    }
+}
+// 固定表格高度(自带分页）没有 border
+.dt-table-fixed-base-no-border {
+    &.ant-table-wrapper, .ant-table-wrapper {
+        border: none;
     }
 }
 
@@ -254,5 +239,18 @@
     border-right: solid 1px @black_readonly;
     &:last-child {
         border-right: none;
+    }
+}
+
+.ant-table-container {
+    .ant-table-body {
+        .ant-table-placeholder {
+            .dtc-empty {
+                margin: 32px 0;
+                .ant-empty-image {
+                    height: 80px;
+                }
+            }
+        }
     }
 }

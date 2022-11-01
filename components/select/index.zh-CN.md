@@ -11,10 +11,10 @@ title: Select
 
 #### 默认主题
 
-- 选择器常规高度为 32px，小尺寸的高度为 24px，边框颜色 #D8DAE2，填充色 #FFFFFF，圆角4px; 
+- 选择器常规高度为 32px，小尺寸的高度为 24px，边框颜色 #D8DAE2，填充色 #FFFFFF，圆角4px;
 - 提示文字 12px,颜色 #B1B4C5，输入颜色 #3D446E；
-- hover 状态边框颜色 #1D78FF; 
-- 点击状态边框颜色 #005CE6; 
+- hover 状态边框颜色 #1D78FF;
+- 点击状态边框颜色 #005CE6;
 - 禁用状态底色 #EBECF0，禁用说明文字 #B1B4C5；
 - 错误样式边框颜色 #F96C5B；
 
@@ -26,6 +26,6 @@ title: Select
 
 |类名  |说明  |使用示例  |
 |---------|---------|---------|
-|.dt-ant-select-dropdown-default | 默认需设置dropdownClassName为dt-ant-select-dropdown-default | UI5.0额外样式  |
+|.dt-ant-select-dropdown-default | 默认需设置 dropdownClassName 为 dt-ant-select-dropdown-default | UI5.0 额外样式  |
 |.dt-form-shadow-bg  | 灰色背景,表单样式设置   | 灰色背景(仅默认主题下使用)   |
 |.dt-form-light-bg  | 浅色背景上，显示深色控件   | 浅色背景(仅暗黑主题下使用)   |

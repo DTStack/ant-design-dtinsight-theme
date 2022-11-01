@@ -94,8 +94,14 @@
     }
 }
 
-// 固定表格高度(自带分页）
-.dt-table-fixed-base {
+// 固定表格高度(自带分页）没有 border
+.dt-table-fixed-base-no-border {
+    &.ant-table-wrapper, .ant-table-wrapper {
+        border: none;
+    }
+}
+// 固定表格高度(自带分页）有 border
+.dt-table-fixed-base, .dt-table-fixed-base-no-border {
     &.ant-table-wrapper, .ant-table-wrapper {
         background: @blue2;
         .ant-spin-nested-loading {
