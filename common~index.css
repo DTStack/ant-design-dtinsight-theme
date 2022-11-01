@@ -27379,12 +27379,16 @@ div.ant-typography-edit-content.ant-typography-rtl {
   height: 40px;
   margin-left: 16px;
 }
-.dt-header-log-wrapper .c-header__title,
 .dt-header-log-wrapper > span {
   text-decoration: none;
   font-size: 24px;
   color: #3D446E;
   padding-left: 8px;
+}
+.dt-header-log-wrapper .c-header__title {
+  font-family: "Microsoft YaHei";
+  font-size: 20px;
+  font-weight: 600;
 }
 .box-1,
 .box-2,
