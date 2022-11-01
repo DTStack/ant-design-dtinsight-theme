@@ -26903,70 +26903,106 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination .pagination_total {
   color: #3F87FF;
 }
+.dt-table-fixed-base-no-border.ant-table-wrapper,
+.dt-table-fixed-base-no-border .ant-table-wrapper {
+  border: none;
+}
 .dt-table-fixed-base.ant-table-wrapper,
-.dt-table-fixed-base .ant-table-wrapper {
+.dt-table-fixed-base-no-border.ant-table-wrapper,
+.dt-table-fixed-base .ant-table-wrapper,
+.dt-table-fixed-base-no-border .ant-table-wrapper {
   height: 100%;
   padding: 0 !important;
   box-shadow: none;
   border: 1px solid #D8DAE2;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child),
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child) {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child),
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child),
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child) {
   height: calc(100% - 44px) !important;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body {
   height: calc(100% - 44px);
   /** 内部嵌套表格，数据为空的情况 */
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder {
   position: relative;
   top: unset;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left {
   height: calc(100% - 18px);
   z-index: 10;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer {
   height: calc(100% - 44px);
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer .ant-table-body-inner,
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer .ant-table-body-inner,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer .ant-table-body-inner,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer .ant-table-body-inner,
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner {
   overflow-x: hidden !important;
   overflow-y: auto !important;
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder {
   position: absolute;
   top: 45px;
   width: 100%;

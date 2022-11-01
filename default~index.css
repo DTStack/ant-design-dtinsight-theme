@@ -26902,70 +26902,106 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination .pagination_total {
   color: #3F87FF;
 }
+.dt-table-fixed-base-no-border.ant-table-wrapper,
+.dt-table-fixed-base-no-border .ant-table-wrapper {
+  border: none;
+}
 .dt-table-fixed-base.ant-table-wrapper,
-.dt-table-fixed-base .ant-table-wrapper {
+.dt-table-fixed-base-no-border.ant-table-wrapper,
+.dt-table-fixed-base .ant-table-wrapper,
+.dt-table-fixed-base-no-border .ant-table-wrapper {
   height: 100%;
   padding: 0 !important;
   box-shadow: none;
   border: 1px solid #D8DAE2;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child),
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child) {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child),
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child),
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header:not(:last-child) {
   height: calc(100% - 44px) !important;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll {
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body {
   height: calc(100% - 44px);
   /** 内部嵌套表格，数据为空的情况 */
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body .ant-table-expanded-row .ant-table-empty .ant-table-placeholder {
   position: relative;
   top: unset;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right,
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left {
   height: calc(100% - 18px);
   z-index: 10;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer,
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer {
   height: calc(100% - 44px);
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer .ant-table-body-inner,
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer .ant-table-body-inner,
 .dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer .ant-table-body-inner,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-right .ant-table-body-outer .ant-table-body-inner,
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-fixed-left .ant-table-body-outer .ant-table-body-inner {
   overflow-x: hidden !important;
   overflow-y: auto !important;
   height: 100%;
 }
 .dt-table-fixed-base.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder,
-.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder {
+.dt-table-fixed-base-no-border.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder,
+.dt-table-fixed-base .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder,
+.dt-table-fixed-base-no-border .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-content .ant-table-placeholder {
   position: absolute;
   top: 45px;
   width: 100%;
@@ -27665,21 +27701,6 @@ li {
 .ant-table-wrapper .ant-spin-container > .ant-table-pagination {
   border-top: 1px solid #E8E8E8;
 }
-.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container {
-  height: inherit;
-}
-.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-empty {
-  height: inherit;
-}
-.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container {
-  height: inherit;
-}
-.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container .ant-table-content {
-  height: inherit;
-}
-.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container .ant-table-content table {
-  height: inherit;
-}
 .dt-table-fixed-contain-footer .ant-table-wrapper,
 .dt-table-fixed-contain-footer.ant-table-wrapper {
   background: #FFFFFF;
@@ -27714,9 +27735,15 @@ li {
   background: #E8E8E8;
 }
 .dt-table-fixed-base.ant-table-wrapper,
-.dt-table-fixed-base .ant-table-wrapper {
+.dt-table-fixed-base-no-border.ant-table-wrapper,
+.dt-table-fixed-base .ant-table-wrapper,
+.dt-table-fixed-base-no-border .ant-table-wrapper {
   background: #FFFFFF;
   border: 1px solid #EBECF0;
+}
+.dt-table-fixed-base-no-border.ant-table-wrapper,
+.dt-table-fixed-base-no-border .ant-table-wrapper {
+  border: none;
 }
 .dt-table-border {
   border: 1px solid #EBECF0;
@@ -27813,6 +27840,12 @@ li {
 }
 .dt-resizable-table .ant-table-container table > thead > tr:first-child th:last-child {
   border-right: none;
+}
+.ant-table-container .ant-table-body .ant-table-placeholder .dtc-empty {
+  margin: 32px 0;
+}
+.ant-table-container .ant-table-body .ant-table-placeholder .dtc-empty .ant-empty-image {
+  height: 80px;
 }
 .ant-btn {
   line-height: 100%;
@@ -28840,6 +28873,11 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-tag > span + .anticon {
   margin-left: 2px;
 }
+.dt-tag-disabled {
+  color: #8B8FA8;
+  background-color: #D8DAE2;
+  border-color: #D8DAE2;
+}
 .ant-popover .ant-popover-inner {
   padding: 16px;
 }
@@ -29001,6 +29039,9 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 ul.ant-pagination {
   font-size: 12px;
+}
+.dt-pagination-right {
+  justify-content: flex-end;
 }
 .ant-collapse {
   border: 1px solid #EBECF0;
@@ -29431,15 +29472,21 @@ ul.ant-pagination {
   line-height: calc(32px / 12px);
 }
 .ant-checkbox-wrapper .ant-checkbox-inner {
-  border-radius: 0;
+  border-radius: 2px;
   width: 16px;
   height: 16px;
 }
-.ant-checkbox-disabled.ant-checkbox-checked .ant-checkbox-inner::after {
-  border-color: #FFF;
+.ant-checkbox-wrapper-disabled .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #D8DAE2;
+}
+.ant-checkbox-wrapper-disabled .ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: #FFFFFF;
+}
+.ant-checkbox-wrapper-disabled .ant-checkbox-disabled .ant-checkbox-inner {
+  border-color: #D8DAE2;
 }
 .ant-checkbox-input:focus + .ant-checkbox-inner {
-  border-color: #0A67F2;
+  border-color: #1D78FF;
 }
 .ant-drawer-content-wrapper {
   max-width: 1256px;
@@ -29568,6 +29615,14 @@ ul.ant-pagination {
 }
 .ant-tree-select-dropdown .ant-select-tree-list .ant-select-tree-treenode .ant-select-tree-checkbox {
   margin: 8px 8px 0 0;
+}
+.ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: #EBECF0;
+  background-color: #EBECF0;
+}
+.ant-select-disabled .ant-select-selector .ant-select-selection-overflow .ant-select-selection-item {
+  color: #8B8FA8;
+  background-color: #D8DAE2;
 }
 .ant-radio {
   top: 0.1em;
