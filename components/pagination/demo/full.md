@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 2
 title:
   zh-CN: Full完整型
   en-US: full

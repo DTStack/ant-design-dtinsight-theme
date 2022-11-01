@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title:
   zh-CN: 精简型
   en-US: Simple
@@ -18,7 +18,7 @@ import React from 'react';
 import { Pagination } from 'antd';
 
 ReactDOM.render(
- <Pagination simple defaultCurrent={2} total={50}/>,
+  <Pagination simple defaultCurrent={2} total={50}/>,
   mountNode,
 );
 ```
