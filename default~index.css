@@ -29086,17 +29086,17 @@ ul.ant-pagination {
   padding: 10px 16px 10px 0;
   margin: 0;
 }
-.ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box .ant-collapse {
+.ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box > .ant-collapse {
   margin-left: 24px;
   border: none;
   border-left: 1px solid #EBECF0;
   background-color: #F9F9FA;
 }
-.ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box .ant-collapse .ant-collapse-header {
+.ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box > .ant-collapse .ant-collapse-header {
   background-color: #F9F9FA;
   border-bottom: none;
 }
-.ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box .ant-collapse .ant-collapse-item .ant-collapse-content {
+.ant-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box > .ant-collapse .ant-collapse-item .ant-collapse-content {
   background: white;
   border-bottom: 0;
 }
@@ -29497,7 +29497,7 @@ ul.ant-pagination {
 .ant-drawer-header {
   padding: 16px;
   background-color: #F9F9FA;
-  border-bottom: 1px solid #EBECF0;
+  border-bottom: 0;
 }
 .ant-drawer-header .ant-drawer-header-title {
   flex-direction: row-reverse;
