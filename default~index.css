@@ -29627,6 +29627,9 @@ ul.ant-pagination {
 .ant-radio {
   top: 0.1em;
 }
+.ant-dropdown-menu {
+  padding: 8px 0;
+}
 .ant-dropdown-button .ant-btn-icon-only {
   background-color: #1D78FF;
 }
