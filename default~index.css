@@ -28102,12 +28102,8 @@ li {
 }
 .ant-btn.ant-btn-sm {
   padding: 0 8px;
-  border: none;
-}
-.demo-button-type .ant-btn-sm {
   height: 24px;
   border-radius: 2px;
-  line-height: 24px;
 }
 .ant-btn-icon-only {
   padding: 0;
@@ -28895,11 +28891,6 @@ li.ant-picker-panel-select-option-selected:hover {
   font-size: 12px;
   font-family: PingFangSC-Regular, "PingFang SC";
   padding-left: 25px;
-}
-.ant-popover .ant-popover-buttons .ant-btn-default {
-  background: #FFF;
-  border-radius: 2px;
-  border: 1px solid #D8DAE2;
 }
 .ant-popover .ant-popover-message > .anticon {
   font-size: 17px;
