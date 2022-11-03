@@ -47,6 +47,19 @@
             color: @black_title;
             background: none;
         }
+        &:not(.ant-menu-inline-collapsed):not(.ant-menu-sub) > .ant-menu-item {
+            padding-left: 16px !important;
+        }
+        .ant-menu-submenu-title {
+            padding-left: 16px !important;
+        }
+        .ant-menu-item .ant-menu-item-icon + span, .ant-menu-submenu-title .ant-menu-item-icon + span, .ant-menu-item .anticon + span, .ant-menu-submenu-title .anticon + span {
+            margin-left: 8px;
+        }
+        &.ant-menu-inline .ant-menu-item, 
+        &.ant-menu-inline .ant-menu-submenu-title {
+            width: 100%;
+        }
     }
     .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item,
     .ant-menu-inline-collapsed > .ant-menu-item,
@@ -57,16 +70,43 @@
             opacity: 0;
         }
     }
+    .ant-menu-inline-collapsed .ant-menu-submenu.ant-menu-submenu-vertical {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            clip-path: polygon(0px 6px, 6px 6px, 6px 0px);
+            background: #8B8FA8;
+            cursor: pointer;
+        }
+        &.ant-menu-submenu-selected::after {
+            background: @primaryColor;
+        }
+    }
 }
 
 .ant-menu-submenu-popup {
     .ant-menu {
         &:not(.ant-menu-horizontal) .ant-menu-item-selected {
-            border-left: 3px solid @primaryColor;
+            border-left: 4px solid @primaryColor;
         }
     }
     .ant-menu-item:active, .ant-menu-submenu-title:active {
-        border-left: 3px solid @primaryColor;
+        border-left: 4px solid @primaryColor;
+    }
+    .ant-menu-vertical.ant-menu-sub, .ant-menu-vertical-left.ant-menu-sub, .ant-menu-vertical-right.ant-menu-sub {
+        min-width: 100px;
+    }
+    .ant-menu-vertical .ant-menu-item {
+        padding-left: 9px;
+    }
+    .ant-menu.ant-menu-sub.ant-menu-vertical {
+        padding: 8px 0;
     }
 }
 
