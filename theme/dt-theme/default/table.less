@@ -204,6 +204,49 @@
     top: 0.25em;
 }
 
+// 在表格设置了 scroll 之类会引起滚动的属性后，表格会在第一行之前生成一行tr，类名为 ant-table-measure-row
+.ant-table-measure-row {
+    // 使用 display: none; 会导致表头不能滚动
+    visibility: collapse;
+}
+// 固定高度无数据时，缺省图距顶部 20%
+.ant-spin-nested-loading {
+    height: 100%;
+    .ant-spin-container {
+        height: inherit;
+        .ant-table-empty {
+            height: inherit;
+            .ant-table-container {
+                height: inherit;
+                .ant-table-body, .ant-table-content {
+                    height: inherit;
+                }
+                table {
+                    height: inherit;
+                    .ant-table-tbody {
+                        height: inherit;
+                        .ant-table-placeholder {
+                            height: inherit;
+                            .ant-table-cell {
+                                height: inherit;
+                                .ant-table-expanded-row-fixed {
+                                    height: inherit;
+                                }
+                                .ant-empty {
+                                    position: absolute;
+                                    top: calc(calc(100% - 44px) / 5);
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // 分页器 mini版高度设置
 .ant-pagination.mini {
     height: 32px;
@@ -242,18 +285,5 @@
     border-right: solid 1px @black_readonly;
     &:last-child {
         border-right: none;
-    }
-}
-
-.ant-table-container {
-    .ant-table-body {
-        .ant-table-placeholder {
-            .dtc-empty {
-                margin: 32px 0;
-                .ant-empty-image {
-                    height: 80px;
-                }
-            }
-        }
     }
 }
