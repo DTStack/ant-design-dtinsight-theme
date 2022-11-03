@@ -27500,9 +27500,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-input-lg {
   font-size: 12px;
 }
-.ant-input-number {
-  border-radius: 4px;
-}
 .ant-picker-input {
   border-radius: 2px;
 }
@@ -29638,6 +29635,14 @@ ul.ant-pagination {
 }
 .ant-dropdown-button .ant-btn-icon-only:active {
   background-color: #005CE6;
+}
+.ant-input-number {
+  width: 100px;
+  border-radius: 4px;
+}
+.ant-input-number:focus,
+.ant-input-number-focused {
+  border-color: #005CE6;
 }
 * {
   margin: 0;
