@@ -56,8 +56,7 @@
         .ant-menu-item .ant-menu-item-icon + span, .ant-menu-submenu-title .ant-menu-item-icon + span, .ant-menu-item .anticon + span, .ant-menu-submenu-title .anticon + span {
             margin-left: 8px;
         }
-        &.ant-menu-inline .ant-menu-item, 
-        &.ant-menu-inline .ant-menu-submenu-title {
+        &.ant-menu-inline .ant-menu-item, &.ant-menu-inline .ant-menu-submenu-title {
             width: 100%;
         }
     }
@@ -73,14 +72,14 @@
     .ant-menu-inline-collapsed .ant-menu-submenu.ant-menu-submenu-vertical {
         position: relative;
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 5px;
             right: 5px;
             display: inline-block;
             width: 6px;
             height: 6px;
-            clip-path: polygon(0px 6px, 6px 6px, 6px 0px);
+            clip-path: polygon(0 6px, 6px 6px, 6px 0);
             background: #8B8FA8;
             cursor: pointer;
         }
