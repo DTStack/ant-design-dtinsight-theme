@@ -27863,6 +27863,46 @@ li {
 .ant-dropdown-menu-item .ant-radio-wrapper .ant-radio {
   top: 0.25em;
 }
+.ant-table-measure-row {
+  visibility: collapse;
+}
+.ant-spin-nested-loading {
+  height: 100%;
+}
+.ant-spin-nested-loading .ant-spin-container {
+  height: inherit;
+}
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty {
+  height: inherit;
+}
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container {
+  height: inherit;
+}
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container .ant-table-body,
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container .ant-table-content {
+  height: inherit;
+}
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table {
+  height: inherit;
+}
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody {
+  height: inherit;
+}
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder {
+  height: inherit;
+}
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder .ant-table-cell {
+  height: inherit;
+}
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder .ant-table-cell .ant-table-expanded-row-fixed {
+  height: inherit;
+}
+.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder .ant-table-cell .ant-empty {
+  position: absolute;
+  top: calc(calc(100% - 44px) / 5);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 .ant-pagination.mini {
   height: 32px;
   line-height: 32px;
@@ -27895,12 +27935,6 @@ li {
 }
 .dt-resizable-table .ant-table-container table > thead > tr:first-child th:last-child {
   border-right: none;
-}
-.ant-table-container .ant-table-body .ant-table-placeholder .dtc-empty {
-  margin: 32px 0;
-}
-.ant-table-container .ant-table-body .ant-table-placeholder .dtc-empty .ant-empty-image {
-  height: 80px;
 }
 .ant-btn {
   line-height: 100%;
@@ -29672,6 +29706,13 @@ ul.ant-pagination {
 }
 .ant-radio {
   top: 0.1em;
+}
+.ant-radio-group .ant-radio-wrapper {
+  align-items: center;
+  line-height: 1;
+}
+.ant-radio-group .ant-radio-wrapper span.ant-radio + * {
+  padding-top: 2px;
 }
 .ant-dropdown-menu {
   padding: 8px 0;
