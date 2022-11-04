@@ -29734,6 +29734,18 @@ ul.ant-pagination {
 .ant-input-number-focused {
   border-color: #005CE6;
 }
+.ant-input-number-group-wrapper {
+  width: 208px;
+}
+.ant-input-number-group-addon {
+  padding: 5px 16px;
+  background-color: #F9F9FA;
+  font-size: 12px;
+  color: #3D446E;
+}
+.ant-input-number-group-addon .ant-select {
+  margin: -6.6px -16px;
+}
 * {
   margin: 0;
   padding: 0;
