@@ -29401,46 +29401,6 @@ li {
 .ant-dropdown-menu-item .ant-radio-wrapper .ant-radio {
   top: 0.25em;
 }
-.ant-table-measure-row {
-  visibility: collapse;
-}
-.ant-spin-nested-loading {
-  height: 100%;
-}
-.ant-spin-nested-loading .ant-spin-container {
-  height: inherit;
-}
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty {
-  height: inherit;
-}
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container {
-  height: inherit;
-}
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container .ant-table-body,
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container .ant-table-content {
-  height: inherit;
-}
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table {
-  height: inherit;
-}
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody {
-  height: inherit;
-}
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder {
-  height: inherit;
-}
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder .ant-table-cell {
-  height: inherit;
-}
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder .ant-table-cell .ant-table-expanded-row-fixed {
-  height: inherit;
-}
-.ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder .ant-table-cell .ant-empty {
-  position: absolute;
-  top: calc(calc(100% - 44px) / 5);
-  left: 50%;
-  transform: translate(-50%, 0);
-}
 .ant-pagination.mini {
   height: 32px;
   line-height: 32px;
@@ -29473,6 +29433,49 @@ li {
 }
 .dt-resizable-table .ant-table-container table > thead > tr:first-child th:last-child {
   border-right: none;
+}
+.dt-table-empty-top-20-percent .ant-table-measure-row {
+  visibility: collapse;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading {
+  height: 100%;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container {
+  height: inherit;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty {
+  height: inherit;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container {
+  height: inherit;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container .ant-table-body,
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container .ant-table-content {
+  height: inherit;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table {
+  height: inherit;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody {
+  height: inherit;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder {
+  height: inherit;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder .ant-table-cell {
+  height: inherit;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder .ant-table-cell .ant-table-expanded-row-fixed {
+  height: inherit;
+}
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder .ant-table-cell .ant-empty {
+  position: absolute;
+  top: calc(calc(100% - 44px) / 5);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.ant-table-container .ant-table-placeholder .dtc-empty {
+  margin: 32px 0;
 }
 .ant-tag {
   padding: 2px 8px;
