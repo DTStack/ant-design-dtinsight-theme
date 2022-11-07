@@ -29707,11 +29707,11 @@ ul.ant-pagination {
 .ant-radio {
   top: 0.1em;
 }
-.ant-radio-group .ant-radio-wrapper {
+.ant-radio-wrapper {
   align-items: center;
   line-height: 1;
 }
-.ant-radio-group .ant-radio-wrapper span.ant-radio + * {
+.ant-radio-wrapper span.ant-radio + * {
   padding-top: 2px;
 }
 .ant-dropdown-menu {
