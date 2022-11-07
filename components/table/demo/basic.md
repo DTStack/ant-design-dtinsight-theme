@@ -36,6 +36,7 @@ class App extends React.Component {
         title: 'Age',
         dataIndex: 'age',
         key: 'age',
+        align: 'right',
       },
       {
         title: 'Address',
@@ -90,6 +91,7 @@ class App extends React.Component {
             <span className="demo-switch-desc">是否展示分页</span>
         </div>
         <Table
+          bordered
           columns={columns}
           dataSource={data}
           pagination={isShowPage ? pagination : false}
