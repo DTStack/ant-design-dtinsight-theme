@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 7
 title:
   zh-CN: 固定高度表（自带分页）
 ---
