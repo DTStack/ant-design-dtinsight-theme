@@ -28263,7 +28263,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination {
   position: absolute;
-  right: 20px;
+  right: 0;
 }
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination .pagination_total,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination .pagination_total {
@@ -28375,10 +28375,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
   color: #BFBFBF;
   text-align: center;
   border: none;
-}
-.dt-pagination-lower .ant-table-pagination.ant-pagination {
-  height: 44px;
-  line-height: 44px;
 }
 .dt-pagination-small .ant-table-pagination.ant-pagination {
   height: 36px;
@@ -29014,12 +29010,12 @@ li {
 }
 .dt-steps-card-container .ant-card-body .ant-steps .ant-steps-item-wait .ant-steps-item-icon,
 .dt-steps-card-container.ant-card-body .ant-steps .ant-steps-item-wait .ant-steps-item-icon {
-  background-color: #fff;
-  border-color: #B1B4C5;
+  background-color: #D8DAE2;
+  border-color: transparent;
 }
 .dt-steps-card-container .ant-card-body .ant-steps .ant-steps-item-wait .ant-steps-item-icon .ant-steps-icon,
 .dt-steps-card-container.ant-card-body .ant-steps .ant-steps-item-wait .ant-steps-item-icon .ant-steps-icon {
-  color: #B1B4C5;
+  color: #fff;
 }
 .dt-steps-card-container .ant-card-body .ant-form .ant-form-item .ant-form-item-label,
 .dt-steps-card-container.ant-card-body .ant-form .ant-form-item .ant-form-item-label {
@@ -29075,10 +29071,17 @@ li {
   font-weight: 500;
 }
 .dt-steps-header .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-icon {
-  border-color: transparent;
   background-color: #D8DAE2;
+  border-color: transparent;
 }
 .dt-steps-header .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-icon .ant-steps-icon {
+  color: #fff;
+}
+.ant-steps .ant-steps-item-wait:not(.ant-steps-item-custom) .ant-steps-item-icon {
+  background-color: #D8DAE2;
+  border-color: transparent;
+}
+.ant-steps .ant-steps-item-wait:not(.ant-steps-item-custom) .ant-steps-item-icon .ant-steps-icon {
   color: #fff;
 }
 .ant-steps .ant-steps-item-icon {
@@ -29232,6 +29235,9 @@ li {
 }
 .ant-table {
   color: #3D446E;
+}
+.ant-table .ant-table-cell .ant-form-item {
+  margin-bottom: 0;
 }
 .ant-table .ant-table-cell .ant-divider-vertical {
   height: 12px;

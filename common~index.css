@@ -26897,7 +26897,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination {
   position: absolute;
-  right: 20px;
+  right: 0;
 }
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination .pagination_total,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination .pagination_total {
@@ -27009,10 +27009,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
   color: #BFBFBF;
   text-align: center;
   border: none;
-}
-.dt-pagination-lower .ant-table-pagination.ant-pagination {
-  height: 44px;
-  line-height: 44px;
 }
 .dt-pagination-small .ant-table-pagination.ant-pagination {
   height: 36px;
