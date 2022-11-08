@@ -852,6 +852,17 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-input-number-group-wrapper {
   width: 208px;
 }
+.dt-input-number-disabled .ant-input-number-disabled {
+  border-color: #EBECF0;
+}
+.dt-input-number-disabled .ant-input-number-disabled:hover {
+  border-color: #EBECF0;
+}
+.dt-input-number-disabled .ant-input-number-group-addon {
+  border-color: #D8DAE2;
+  background-color: #D8DAE2;
+  color: #8B8FA8;
+}
 .ant-input-number-group-addon {
   padding: 5px 16px;
   background-color: #F9F9FA;
@@ -860,6 +871,12 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-input-number-group-addon .ant-select {
   margin: -6.6px -16px;
+}
+.ant-input {
+  height: 32px;
+}
+.ant-input[disabled] {
+  border: 0;
 }
 .ant-input-focused {
   border-color: #005CE6 !important;
@@ -873,6 +890,7 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-input.ant-input-sm {
   padding: 2px 7px;
+  height: 24px;
 }
 .ant-input-search .ant-input-wrapper .ant-input-search-button {
   border-left: 0;
