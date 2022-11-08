@@ -1,69 +1,111 @@
-@import '../const.less';
+@import "../const.less";
 
 .ant-table {
     color: @black_title;
     .ant-table-cell {
-        a {
-            margin-right: 16px;
+        .ant-form-item {
+            margin-bottom: 0;
         }
-        a:last-child {
-            margin-right: 0px;
+        .ant-divider-vertical {
+            height: 12px;
+            border-left: 1px solid #EBECF0;
+        }
+    }
+    .ant-table-tbody {
+        .ant-table-row {
+            .ant-table-cell-with-append {
+                display: flex;
+                align-items: center;
+            }
+        }
+        & > tr.ant-table-row:hover > td, & > tr > td.ant-table-cell-row-hover {
+            background: @black_titleBg;
         }
     }
 }
-.ant-table-wrapper {
-    background: @white;
-}
+
 .ant-table-thead {
     background: #FAFAFA;
+    .ant-table-column-sorter, .ant-table-filter-trigger {
+        color: #B1B4C5;
+    }
 }
-.ant-table-thead > tr > th{
+
+.ant-table-thead > tr > th {
     border-bottom: 1px solid @black_readonly;
 }
+
 .ant-table-tbody > tr > td {
     border-bottom: 1px solid @black_readonly;
 }
-.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
-    background: @black_titleBg;
+
+.ant-table-tbody > .ant-table-placeholder > .ant-table-cell {
+    border-bottom: 0;
 }
+
+.ant-table-tbody > .ant-table-expanded-row > .ant-table-cell {
+    padding: 0 0 0 44px;
+    background-color: @black_navBg;
+    &:hover {
+        background-color: @black_navBg !important;
+    }
+    .ant-table-wrapper {
+        background: none;
+        border-bottom: 0;
+        .ant-table {
+            margin: 0;
+        }
+    }
+}
+
 .ant-table-middle {
     .ant-table-thead > tr > th {
         border-bottom: 1px solid @black_readonly;
     }
 }
+
 .ant-table-footer {
     background: @white;
     &::before {
         height: 1px;
-        background: #e8e8e8;
+        background: #E8E8E8;
     }
 }
+
 .ant-divider {
     background-color: transparent;
 }
+
 // 自带分页 样式设置
 .ant-table-wrapper {
+    background: @white;
     .ant-spin-container {
-        > .ant-table-pagination {
-            border-top: 1px solid #e8e8e8;
+        >.ant-table-pagination {
+            border-top: 1px solid #E8E8E8;
         }
     }
-
 }
 
 // 固定表格高度(footer实现分页）
 .dt-table-fixed-contain-footer {
-    .ant-table-wrapper, &.ant-table-wrapper {
+    .ant-table-wrapper,
+    &.ant-table-wrapper {
         background: @white;
         .ant-spin-nested-loading {
             .ant-spin-container {
                 .ant-table-fixed-header {
-                    .ant-table-content {
-                        .ant-table-placeholder {
-                            color: #BFBFBF;
+                    display: flex;
+                    flex-direction: column;
+                    .ant-table-container {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        overflow-y: scroll;
+                        .ant-table-body {
+                            flex: 1;
+                            .ant-table-placeholder {
+                                color: #BFBFBF;
+                            }
                         }
                     }
                 }
@@ -71,7 +113,7 @@
                     background: @white;
                     &::before {
                         height: 1px;
-                        background: #e8e8e8;
+                        background: #E8E8E8;
                     }
                 }
             }
@@ -79,10 +121,17 @@
     }
 }
 
-// 固定表格高度(自带分页）
-.dt-table-fixed-base {
+// 固定表格高度(自带分页）有 border
+.dt-table-fixed-base, .dt-table-fixed-base-no-border {
     &.ant-table-wrapper, .ant-table-wrapper {
         background: @white;
+        border: 1px solid @grey_border;
+    }
+}
+// 固定表格高度(自带分页）没有 border
+.dt-table-fixed-base-no-border {
+    &.ant-table-wrapper, .ant-table-wrapper {
+        border: none;
     }
 }
 
@@ -90,10 +139,13 @@
 .dt-table-border {
     border: 1px solid @black_readonly;
 }
+
 // size为small的边框设置
-.ant-table-small > .ant-table-content .ant-table-placeholder, .ant-table-small > .ant-table-content .ant-table-row:last-child td{
-    border-bottom: 1px solid #e8e8e8;
+.ant-table-small > .ant-table-content .ant-table-placeholder,
+.ant-table-small > .ant-table-content .ant-table-row:last-child td {
+    border-bottom: 1px solid #E8E8E8;
 }
+
 .ant-table-small {
     & > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
@@ -103,21 +155,148 @@
     & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
-        border-bottom: 1px solid #e8e8e8
+        border-bottom: 1px solid #E8E8E8;
     }
 }
+
 // 表格筛选框样式
 .ant-table-filter-dropdown-btns {
     border-top: none;
+    padding: 8px;
+    justify-content: end;
+    .ant-btn-link.ant-btn-sm {
+        margin-right: 8px;
+        color: @black_title;
+        border: 1px solid @black_border;
+        padding: 0 8px;
+        height: 28px;
+        &:hover, &:focus {
+            border: 1px solid @hoverColor;
+            color: @hoverColor;
+            padding: 0 8px;
+            height: 28px;
+        }
+        &:active {
+            color: @clickColor;
+            height: 28px;
+            padding: 0 8px;
+            border: 1px solid @clickColor;
+        }
+        &:disabled {
+            padding: 0 8px;
+            height: 28px;
+            color: @black_msg;
+            background-color: @black_readonly;
+            border: 1px solid @black_readonly;
+            &:hover, &:focus {
+                padding: 0 8px;
+                height: 28px;
+                color: @black_msg;
+                background-color: @black_readonly;
+                border: 1px solid @black_readonly;
+            }
+        }
+    }
 }
+
 .ant-dropdown-menu {
     padding-top: 8px;
 }
-.ant-dropdown-menu-item .ant-radio-wrapper .ant-radio{
+
+.ant-dropdown-menu-item .ant-radio-wrapper .ant-radio {
     top: 0.25em;
 }
+
 // 分页器 mini版高度设置
 .ant-pagination.mini {
     height: 32px;
     line-height: 32px;
+}
+
+.ant-table.ant-table-middle .ant-table-tbody > tr > td {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.react-resizable {
+    position: relative;
+    background-clip: padding-box;
+}
+
+.react-resizable-handle {
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    z-index: 1;
+    width: 10px;
+    height: 100%;
+    cursor: col-resize;
+}
+
+.ant-table-container table > thead > tr:first-child th:first-child.react-resizable {
+    border-top-left-radius: 0;
+}
+
+.ant-table-container table > thead > tr:first-child th:last-child {
+    border-top-right-radius: 0;
+}
+
+.dt-resizable-table .ant-table-container table > thead > tr:first-child th {
+    border-right: solid 1px @black_readonly;
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.dt-table-empty-top-20-percent {
+    // 在表格设置了 scroll 之类会引起滚动的属性后，表格会在第一行之前生成一行tr，类名为 ant-table-measure-row
+    .ant-table-measure-row {
+        // 使用 display: none; 会导致表头不能滚动
+        visibility: collapse;
+    }
+    // 固定高度无数据时，缺省图距顶部 20%
+    .ant-spin-nested-loading {
+        height: 100%;
+        .ant-spin-container {
+            height: inherit;
+            .ant-table-empty {
+                height: inherit;
+                .ant-table-container {
+                    height: inherit;
+                    .ant-table-body, .ant-table-content {
+                        height: inherit;
+                    }
+                    table {
+                        height: inherit;
+                        .ant-table-tbody {
+                            height: inherit;
+                            .ant-table-placeholder {
+                                height: inherit;
+                                .ant-table-cell {
+                                    height: inherit;
+                                    .ant-table-expanded-row-fixed {
+                                        height: inherit;
+                                    }
+                                    .ant-empty {
+                                        position: absolute;
+                                        top: calc(calc(100% - 44px) / 5);
+                                        left: 50%;
+                                        transform: translate(-50%, 0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-table-container {
+    .ant-table-placeholder {
+        .dtc-empty {
+            margin: 32px 0;
+        }
+    }
 }

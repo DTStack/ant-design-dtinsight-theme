@@ -12,7 +12,7 @@ title:
 - 添加类名 `dt-table-last-row-noborder` 为表格设置最后一行去掉下边框，一般在表格存在外边框时使用
 
 ```jsx
-import { Table, Switch } from 'antd';
+import { Table, Switch, Divider } from 'antd';
 
 class App extends React.Component {
   state = { isShowPage: false };
@@ -36,6 +36,7 @@ class App extends React.Component {
         title: 'Age',
         dataIndex: 'age',
         key: 'age',
+        align: 'right',
       },
       {
         title: 'Address',
@@ -48,6 +49,7 @@ class App extends React.Component {
         render: (text, record) => (
           <span>
             <a>Invite</a>
+            <Divider type="vertical" />
             <a>Delete</a>
           </span>
         ),
@@ -89,6 +91,7 @@ class App extends React.Component {
             <span className="demo-switch-desc">是否展示分页</span>
         </div>
         <Table
+          bordered
           columns={columns}
           dataSource={data}
           pagination={isShowPage ? pagination : false}

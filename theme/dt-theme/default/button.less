@@ -1,51 +1,123 @@
-@import '../const.less';
+@import "../const.less";
 
-.ant-btn{
-    line-height: 30px;
+.ant-btn {
+    line-height: 100%;
 }
+
 .ant-btn.ant-btn-primary {
     &:hover, &:focus {
         background-color: @hoverColor;
         border-color: @hoverColor;
         color: @white;
     }
-    &:active, &.active {
+    &:active {
         color: @white;
         background-color: @clickColor;
         border-color: @clickColor;
     }
 }
-.ant-btn.ant-btn-primary-disabled,
-.ant-btn.ant-btn-primary.disabled,
-.ant-btn.ant-btn-primary[disabled],
-.ant-btn.ant-btn-primary-disabled:hover,
-.ant-btn.ant-btn-primary.disabled:hover,
-.ant-btn.ant-btn-primary[disabled]:hover,
-.ant-btn.ant-btn-primary-disabled:focus,
-.ant-btn.ant-btn-primary.disabled:focus,
-.ant-btn.ant-btn-primary[disabled]:focus,
-.ant-btn.ant-btn-primary-disabled:active,
-.ant-btn.ant-btn-primary.disabled:active,
-.ant-btn.ant-btn-primary[disabled]:active,
-.ant-btn.ant-btn-primary-disabled.active,
-.ant-btn.ant-btn-primary.disabled.active,
-.ant-btn.ant-btn-primary[disabled].active {
+
+.ant-btn.ant-btn-default {
+    color: @black_title;
+    border-color: @black_border;
+    &:hover, &:focus {
+        border-color: @hoverColor;
+        color: @hoverColor;
+    }
+    &:active {
+        color: @clickColor;
+        border-color: @clickColor;
+    }
+}
+
+.ant-btn.ant-btn-link {
+    color: @primaryColor;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    border: 0;
+    &:hover, &:focus {
+        color: @hoverColor;
+        height: 20px;
+        line-height: 20px;
+        padding: 0;
+        border: 0;
+    }
+    &:active {
+        color: @clickColor;
+        height: 20px;
+        line-height: 20px;
+        padding: 0;
+        border: 0;
+    }
+}
+
+.ant-btn.ant-btn-link[disabled] {
+    color: @black_msg;
+    border-color: transparent;
+    background: 0 0;
+    background-color: transparent;
+    text-shadow: none;
+    box-shadow: none;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    border: 0;
+    &:hover, &:focus, &:active {
+        color: @black_msg;
+        border-color: transparent;
+        background: 0 0;
+        text-shadow: none;
+        box-shadow: none;
+        height: 20px;
+        line-height: 20px;
+        padding: 0;
+        border: 0;
+    }
+}
+
+.ant-btn-dangerous.ant-btn-primary {
+    background-color: @red;
+    &:hover, &:focus {
+        background-color: #ED5340;
+        border-color: #ED5340;
+    }
+    &:active {
+        background-color: #E03A26;
+        border-color: #E03A26;
+    }
+}
+
+.ant-btn-dangerous.ant-btn-default {
+    color: @red;
+    border-color: @red;
+    &:hover, &:focus {
+        color: #ED5340;
+        border-color: #ED5340;
+    }
+    &:active {
+        color: #E03A26;
+        border-color: #E03A26;
+    }
+}
+
+.ant-btn[disabled] {
     color: @black_msg;
     background-color: @black_readonly;
     border-color: @black_readonly;
+    &:hover, &:focus, &:active {
+        color: @black_msg;
+        background-color: @black_readonly;
+        border-color: @black_readonly;
+    }
 }
-.ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active {
-    color: @black_title;
-    border-color: @black_msg;
-}
-.ant-btn:active, .ant-btn.active {
-    background: @black_navBg;
-}
+
 .ant-btn-background-ghost {
     color: @primaryColor;
     border-color: @primaryColor;
     background-color: @white !important;
 }
+
 .ant-btn.ant-btn-background-ghost {
     color: @primaryColor;
     border-color: @primaryColor;
@@ -60,6 +132,7 @@
         color: @white;
     }
 }
+
 .ant-btn-background-ghost.ant-btn-disabled,
 .ant-btn-background-ghost.ant-btn.disabled,
 .ant-btn-background-ghost.ant-btn[disabled],
@@ -80,66 +153,49 @@
     border-color: @black_readonly;
 }
 
-.ant-btn.ant-btn-link {
-    &:hover, &:focus {
-        background-color: transparent;
-        border-color: transparent;
-        color: @hoverColor;
-    }
-    &:active, &.active {
-        background-color: transparent;
-        border-color: transparent;
-        color: @clickColor;
-    }
-}
-.ant-btn.ant-btn-link-disabled,
-.ant-btn.ant-btn-link.disabled,
-.ant-btn.ant-btn-link[disabled],
-.ant-btn.ant-btn-link-disabled:hover,
-.ant-btn.ant-btn-link.disabled:hover,
-.ant-btn.ant-btn-link[disabled]:hover,
-.ant-btn.ant-btn-link-disabled:focus,
-.ant-btn.ant-btn-link.disabled:focus,
-.ant-btn.ant-btn-link[disabled]:focus,
-.ant-btn.ant-btn-link-disabled:active,
-.ant-btn.ant-btn-link.disabled:active,
-.ant-btn.ant-btn-link[disabled]:active,
-.ant-btn.ant-btn-link-disabled.active,
-.ant-btn.ant-btn-link.disabled.active,
-.ant-btn.ant-btn-link[disabled].active {
-    color: @black_msg;
-}
 .ant-btn-danger, .ant-btn-danger.ant-btn:focus {
     background-color: @red !important;
     border-color: @red;
     color: @white;
 }
+
 .ant-btn-danger.ant-btn:hover {
     color: @white;
-    background-color: @red2 !important;
-    border-color: @red2;
+    background-color: #ED5340 !important;
+    border-color: #ED5340;
 }
+
 .ant-btn-danger.ant-btn:active,
 .ant-btn-danger.ant-btn.active {
     color: @white;
     background-color: @red !important;
     border-color: @red;
 }
+
 .ant-btn-background-ghost.ant-btn-danger {
     color: @red;
     background-color: transparent !important;
     border-color: @red;
 }
+
 .ant-btn-background-ghost.ant-btn-danger:hover, .ant-btn-background-ghost.ant-btn-danger:focus {
-    color: @white;
-    background-color: @red2 !important;
-    border-color: @red2;
+    color: @red;
+    border-color: @red;
+    background-color: @white !important;
 }
+
 .ant-btn-background-ghost.ant-btn-danger:active,
 .ant-btn-background-ghost.ant-btn-danger.active {
     color: @white;
     background-color: @red !important;
     border-color: @red;
+}
+
+.ant-btn.ant-btn-default.ant-btn-background-ghost.dt-btn-custom-icon:not([disabled]) {
+    &:hover {
+        color: @primaryColor;
+        border-color: @primaryColor;
+    }
 }
 
 .ant-btn-danger-disabled,
@@ -163,6 +219,11 @@
 }
 
 .dt-btn-highlight {
+    &.ant-btn.ant-btn-icon-only {
+        .anticon-search {
+            margin-left: 0;
+        }
+    }
     &.ant-btn:hover, &.ant-btn:focus {
         color: @primaryColor;
         border-color: @primaryColor;
@@ -191,6 +252,8 @@
         border-color: @black_readonly;
     }
     &.ant-btn {
+        color: @primaryColor;
+        border-color: @primaryColor;
         padding-left: 9px;
         padding-right: 9px;
         .anticon + span {
@@ -208,21 +271,30 @@
         }
     }
 }
-.demo-button-type .ant-btn-sm {
+
+.ant-btn.ant-btn-sm {
+    padding: 0 8px;
     height: 24px;
     border-radius: 2px;
-    line-height: 24px;
 }
+
 .ant-btn-icon-only {
     padding: 0;
     width: 48px;
     height: 32px;
-    background: @bule;
+    background: @blue;
     color: @white;
     .anticon-search {
         width: 14px;
         height: 14px;
         margin-left: 7px;
         margin-top: 2px;
+    }
+}
+
+.ant-btn.ant-btn-default.dt-btn-highlight:not([disabled]) {
+    &:hover {
+        color: @primaryColor;
+        border-color: @primaryColor;
     }
 }

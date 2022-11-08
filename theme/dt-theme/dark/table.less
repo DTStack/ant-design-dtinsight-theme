@@ -1,35 +1,38 @@
-@import '../const.less';
+@import "../const.less";
 
 .ant-table {
     color: @black_title;
 }
-.ant-table-wrapper {
-    background: @blue2;
-}
+
 .ant-table-thead {
     background: #222433;
 }
+
 .ant-table-tbody > tr > td {
     border-bottom: 1px solid @blue4;
     color: @whiteBF;
 }
+
 .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
 .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
 .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
 .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
     background: @deriveColor;
 }
+
 .ant-table-thead > tr > th .ant-table-header-column {
     color: @whiteBF;
 }
+
 .ant-table-footer {
     background-color: #1D1F2E;
-    border-top: 0px;
+    border-top: 0;
     &::before {
-        height: 0px;
+        height: 0;
         background: @blue3;
     }
 }
+
 .ant-divider {
     background-color: transparent;
 }
@@ -51,12 +54,12 @@
 }
 // 自带分页 样式设置
 .ant-table-wrapper {
+    background: @blue2;
     .ant-spin-container {
         > .ant-table-pagination {
             background: #1D1F2E;
         }
     }
-
 }
 
 // 固定表格高度(footer实现分页）
@@ -80,9 +83,9 @@
                 }
                 .ant-table-footer {
                     background-color: #1D1F2E;
-                    border-top: 0px;
+                    border-top: 0;
                     &::before {
-                        height: 0px;
+                        height: 0;
                         background: @blue3;
                     }
                 }
@@ -91,8 +94,14 @@
     }
 }
 
-// 固定表格高度(自带分页）
-.dt-table-fixed-base {
+// 固定表格高度(自带分页）没有 border
+.dt-table-fixed-base-no-border {
+    &.ant-table-wrapper, .ant-table-wrapper {
+        border: none;
+    }
+}
+// 固定表格高度(自带分页）有 border
+.dt-table-fixed-base, .dt-table-fixed-base-no-border {
     &.ant-table-wrapper, .ant-table-wrapper {
         background: @blue2;
         .ant-spin-nested-loading {
@@ -120,6 +129,6 @@
 }
 
 // size为small的边框设置
-.ant-table-small > .ant-table-content .ant-table-placeholder, .ant-table-small > .ant-table-content .ant-table-row:last-child td{
+.ant-table-small > .ant-table-content .ant-table-placeholder, .ant-table-small > .ant-table-content .ant-table-row:last-child td {
     border-bottom: 1px solid @blue4;
 }

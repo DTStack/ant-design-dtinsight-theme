@@ -1,5 +1,5 @@
 import React from 'react';
-import {injectIntl} from 'react-intl';
+import { injectIntl } from 'react-intl';
 import DocumentTitle from 'react-document-title';
 import PropTypes from 'prop-types';
 // import Footer from '../Layout/Footer';
@@ -52,7 +52,6 @@ function getStyle() {
   `;
 }
 
-/* eslint-disable react/prefer-stateless-function */
 class Home extends React.Component {
     static contextTypes = {
         intl: PropTypes.object.isRequired,
@@ -60,12 +59,11 @@ class Home extends React.Component {
     };
 
     render() {
-        const {intl} = this.context;
+        const { intl } = this.context;
         return (
-            <DocumentTitle title={`${intl.formatMessage({id: 'app.name'})} - 使用说明`}>
+            <DocumentTitle title={`${intl.formatMessage({ id: 'app.name' })} - 使用说明`}>
                 <div>
-                    <style dangerouslySetInnerHTML={{__html: getStyle()}}/>
-                    {/* eslint-disable-line */}
+                    <style dangerouslySetInnerHTML={{ __html: getStyle() }} />
                     {/* <Footer/> */}
                 </div>
             </DocumentTitle>

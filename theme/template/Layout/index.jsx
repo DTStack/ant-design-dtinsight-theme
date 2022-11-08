@@ -19,13 +19,12 @@ import '../../dt-theme/default/index.less';
 // import '../../dt-theme/dark/index.less';
 
 if (typeof window !== 'undefined' && navigator.serviceWorker) {
-    navigator.serviceWorker.getRegistrations().then(registrations => {
-        registrations.forEach(registration => registration.unregister());
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+        registrations.forEach((registration) => registration.unregister());
     });
 }
 
 if (typeof window !== 'undefined') {
-    /* eslint-disable global-require */
     require('../../static/style');
 
     // Expose to iframe
@@ -46,7 +45,6 @@ if (typeof window !== 'undefined') {
 
 let isMobile = false;
 
-
 export default class Layout extends React.Component {
     static contextTypes = {
         router: PropTypes.object.isRequired,
@@ -64,12 +62,8 @@ export default class Layout extends React.Component {
         this.state = {
             appLocale,
             isMobile,
-            theme: 'default'
+            theme: 'default',
         };
-        console.log(
-            '%c欢迎使用 ant-design-dtinsight-theme\n使用过程中如有问题欢迎联系 jingyu@dtstack.com ',
-            'color:#2517b1'
-        );
     }
 
     getChildContext() {
@@ -82,20 +76,18 @@ export default class Layout extends React.Component {
         let currTheme = utils.getCookie('theme');
         if (currTheme) {
             this.setState({
-                theme: currTheme
-            })
+                theme: currTheme,
+            });
         } else {
             currTheme = this.state.theme;
             utils.setCookie('theme', this.state.theme);
         }
         this.setLink(currTheme);
-        router.listen(loc => {
+        router.listen((loc) => {
             if (typeof window.ga !== 'undefined') {
                 window.ga('send', 'pageview', loc.pathname + loc.search);
             }
-            // eslint-disable-next-line
             if (typeof window._hmt !== 'undefined') {
-                // eslint-disable-next-line
                 window._hmt.push(['_trackPageview', loc.pathname + loc.search]);
             }
         });
@@ -114,12 +106,12 @@ export default class Layout extends React.Component {
 
     onThemeChange = (value) => {
         this.setState({
-            theme: value
-        })
+            theme: value,
+        });
         utils.setCookie('theme', value);
         // 设置link
         this.setLink(value);
-    }
+    };
 
     setLink = (currTheme) => {
         const disableTheme = currTheme === 'dark' ? 'default' : 'dark';
@@ -133,7 +125,7 @@ export default class Layout extends React.Component {
                 arr[i].disabled = false;
             }
         }
-    }
+    };
 
     render() {
         const { children, ...restProps } = this.props;
@@ -143,7 +135,10 @@ export default class Layout extends React.Component {
         return (
             <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
                 <ConfigProvider locale={appLocale.locale === 'zh-CN' ? zhCN : null}>
-                    <div className={theme === 'default' ? 'page-wrapper' : 'page-wrapper dark'} key={theme}>
+                    <div
+                        className={theme === 'default' ? 'page-wrapper' : 'page-wrapper dark'}
+                        key={theme}
+                    >
                         <Header theme={theme} onThemeChange={this.onThemeChange} {...restProps} />
                         {children}
                     </div>

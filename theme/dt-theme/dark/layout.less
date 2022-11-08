@@ -1,4 +1,4 @@
-@import '../const.less';
+@import "../const.less";
 
 .dt-layout-header {
     min-width: @minWidth;
@@ -15,21 +15,20 @@
     .ant-menu-horizontal > .ant-menu-submenu {
         border-bottom: 3px solid #111426;
     }
-    .ant-menu-horizontal
-    {
-        .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-submenu-selected, .ant-menu-item-active, .ant-menu-submenu-open {
-            &:after{
+    .ant-menu-horizontal {
+        .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-item-active, .ant-menu-submenu-open {
+            &::after {
                 border: none;
                 transition: border-color 0s, background 0.3s;
             }
         }
         .ant-menu-item, .ant-menu-submenu-title, .ant-menu-submenu {
             transition: border-color 0s, background 0.3s;
-            &:after {
+            &::after {
                 transition: border-color 0s, background 0.3s;
             }
-            &:hover{
-                &:after{
+            &:hover {
+                &::after {
                     border: none;
                     transition: border-color 0s, background 0.3s;
                 }
@@ -44,7 +43,7 @@
             border-left: 3px solid @primaryColor;
         }
         .ant-menu-horizontal .ant-menu-item-selected {
-            &:after{
+            &::after {
                 border: none;
             }
         }

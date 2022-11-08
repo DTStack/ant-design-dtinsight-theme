@@ -10,5 +10,5 @@ const getIdentifier = pipe(
 );
 
 module.exports = {
-    getIdentifier
-}
+    getIdentifier,
+};

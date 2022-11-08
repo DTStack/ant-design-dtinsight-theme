@@ -24,16 +24,16 @@ const OLD_ICON_NAMES = [
     'inbox',
     'shopping-cart',
     'safety',
-    'medium-workmark'
+    'medium-workmark',
 ];
 
 const adjustViewBox = assignAttrsAtTag(
     'svg',
     ({ name }) => ({
-        viewBox: includes(name, OLD_ICON_NAMES) ? '0 0 1024 1024' : '64 64 896 896'
+        viewBox: includes(name, OLD_ICON_NAMES) ? '0 0 1024 1024' : '64 64 896 896',
     })
 );
 
 module.exports = {
-    adjustViewBox
-}
+    adjustViewBox,
+};

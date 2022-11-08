@@ -24,18 +24,18 @@ $black_border: #D8DAE2; // 用于表单边框颜色，图表线条颜色
 $black_readonly: #EBECF0; // 用于分割线、失效按钮状态颜色
 $black_titleBg: #F5F5F8; // 用于模块标题背景色
 $black_navBg: #F9F9FA; // 用于二级导航底色
-$white: #FFFFFF; // 一级按钮文字颜色
+$white: #FFF; // 一级按钮文字颜色
 // ==== Functional Color 功能色  ====
-$bule: #1D78FF; // 用于运行中状态颜色
+$blue: #1D78FF; // 用于运行中状态颜色
 $green: #11D7B2; // 用于成功状态颜色
 $red: #F96C5B; // 用于失败状态、校验错误信息文字、必填项图标颜色
 $yellow: #FBB310; // 用于下线状态、警告提示颜色
 $purple: #AC9DFF; // 用于取消、冻结状态提示颜色
 // ==== Other Color 图表/插图配色  ====
 // Blue
-$bule1: #DDEBFF;
-$bule2: #5D9EFF;
-$bule3: #1D78FF;
+$blue1: #DDEBFF;
+$blue2: #5D9EFF;
+$blue3: #1D78FF;
 // Green
 $green1: #E7FBF7;
 $green2: #50E2C6;
@@ -73,8 +73,6 @@ $other8: #17A6D9;
 $other9: #15BACA;
 $other10: #11D7B2;
 
-
-
 // 黑色主题特有
 // ==== 基础色 ====
 $deriveColor_dark: #292D42; // 黑色主题：列表选中底色，部分tab选中底色，disable按钮底色
@@ -82,7 +80,7 @@ $deriveColor_dark: #292D42; // 黑色主题：列表选中底色，部分tab选�
 $whiteF2: #F2F2F2; // 最亮的白色，用于大标题、弹窗标题、选中tab文字以及图标等的高亮颜色
 $whiteBF: #BFBFBF; // 最常用主文字颜色，用于列表文字、表单文字、tab未选中等的颜色
 $white8C: #8C8C8C; // 辅助灰色，用于部分图标式按钮的颜色、次要文字颜色
-$white6: #666666; // 次级灰色，主要用于表单里提示文字的颜色等次要信息
+$white6: #666; // 次级灰色，主要用于表单里提示文字的颜色等次要信息
 $white4D: #4D4D4D; // 置灰不可点击的控件等颜色
 // ==== 蓝灰色  ====
 $blue1: #0E0E17; // 较深背景色，用于IDE,左右侧边栏未选中底色，图表底色等

@@ -1,64 +1,118 @@
-@import '../const.less';
-.ant-pagination{
+@import "../const.less";
+
+.ant-pagination {
     color: @black_title;
-    height: 24px;
-    line-height: 20px;
     font-size: 12px;
+    display: flex;
+    align-items: center;
     ul > li {
-        margin-right: 0px;
+        margin-right: 0;
         height: 24px;
         box-sizing: border-box;
     }
-    .ant-pagination-total-text{
-       line-height: 24px;
-       color: @black_Desc; 
-       margin-left: 5px;
-       height: 24px;
+    .ant-pagination-total-text {
+        line-height: 32px;
+        color: @black_Desc;
+        margin: 0;
+        height: 32px;
+        font-family: PingFangSC-Regular, "PingFang SC";
     }
-    .ant-pagination-prev, .ant-pagination-next, .ant-pagination-jump-prev, .ant-pagination-jump-next{
+    .ant-pagination-prev, .ant-pagination-next, .ant-pagination-disabled {
+        .ant-pagination-item-link {
+            color: @black_msg;
+        }
+    }
+    .ant-pagination-prev, .ant-pagination-next {
+        &:hover:not(.ant-pagination-disabled) {
+            .ant-pagination-item-link {
+                color: @primaryColor;
+            }
+        }
+    }
+    .ant-pagination-jump-prev, .ant-pagination-jump-next {
+        .ant-pagination-item-container {
+            .ant-pagination-item-ellipsis {
+                font-size: 8px;
+                line-height: normal;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                scale: 0.6;
+            }
+        }
+    }
+    .ant-pagination-prev, .ant-pagination-next, .ant-pagination-jump-prev, .ant-pagination-jump-next {
         height: 24px;
         line-height: 24px;
         min-width: 20px;
         margin: 0;
     }
     .ant-pagination-item-link {
-        border: 0px;
+        border: 0;
         margin: 0;
         min-width: 20px;
+        font-size: 16px;
     }
-    .ant-pagination-item{
+    .ant-pagination-prev {
+        margin-left: 8px;
+        margin-right: 4px;
+    }
+    .ant-pagination-next {
+        margin-left: 4px;
+        margin-right: 8px;
+    }
+    .ant-pagination-item {
         min-width: 24px;
         border: none;
         height: 24px;
         line-height: 24px;
         margin-right: 0;
+        border-radius: 2px;
+        a {
+            color: @black_title;
+        }
+        &:hover {
+            a {
+                color: @primaryColor;
+            }
+        }
     }
-    .ant-pagination-item-active{
+    .ant-pagination-item-active {
         border: 1px solid @primaryColor;
         line-height: 22px;
+        a {
+            color: @primaryColor;
+        }
     }
-    .ant-select-single:not(.ant-select-customize-input){
-        .ant-select-arrow{
+    .ant-select-single:not(.ant-select-customize-input) {
+        .ant-select-arrow {
             display: none;
         }
-        .ant-select-selector{
+        .ant-select-selector {
+            width: auto;
             height: 24px;
             padding: 0 8px;
-            width: 67px;
         }
     }
-    .ant-select-single.ant-select-show-arrow .ant-select-selection-item{
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
         padding: 0;
     }
-    .ant-pagination-options{
-        height: 24px;
-        margin-left: 4px;
+    .ant-pagination-options {
+        margin-left: 0;
+        .ant-select-selector {
+            border-color: @black_border;
+        }
+        .ant-select:not(.ant-select-disabled):hover {
+            .ant-select-selector {
+                border-color: @primaryColor;
+            }
+        }
     }
-    .ant-pagination-options-quick-jumper{
+    .ant-pagination-options-quick-jumper {
         height: 24px;
         line-height: 24px;
         color: @black_pageMsg;
-        input{
+        input {
             height: 24px;
             padding: 0 8px;
         }
@@ -66,14 +120,27 @@
     .ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
         height: 22px;
     }
-    .ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder{
+    .ant-select-single.ant-select-sm:not(.ant-select-customize-input).ant-select-show-arrow .ant-select-selection-item {
+        padding-right: 0;
+        line-height: 22px;
+    }
+    .ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
         line-height: 22px;
     }
     .ant-pagination-simple .ant-pagination-simple-pager input {
         padding: 2.5px 6px 0;
     }
+
+    // 分页下拉选项
+    .ant-select-dropdown .ant-select-item:not(.ant-select-item-option-disabled) {
+        text-align: center;
+    }
 }
 
 ul.ant-pagination {
     font-size: 12px;
+}
+
+.dt-pagination-right {
+    justify-content: flex-end;
 }

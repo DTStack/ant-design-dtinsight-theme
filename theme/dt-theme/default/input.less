@@ -1,33 +1,41 @@
-@import '../const.less';
-// Input
-.ant-input:focus{
+@import "../const.less";
+
+.ant-input {
+    height: 32px;
+}
+
+.ant-input[disabled] {
+    border: 0;
+}
+
+.ant-input-focused {
     border-color: #005CE6 !important;
     box-shadow: none;
 }
-.ant-input-focused{
-    border-color: #005CE6 !important;
-    box-shadow: none;
+
+.ant-input::-ms-input-placeholder {
+    color: #B1B4C5 !important;
 }
-.ant-input::-ms-input-placeholder{
-    color: #B1B4C5 !important;   
+
+.ant-input::-webkit-input-placeholder {
+    color: #B1B4C5 !important;
 }
-.ant-input::-webkit-input-placeholder{
-    color: #B1B4C5 !important;   
-}
-.ant-input.ant-input-sm{
+
+.ant-input.ant-input-sm {
     padding: 2px 7px;
+    height: 24px;
 }
+
 .ant-input-search .ant-input-wrapper .ant-input-search-button {
-    border-left: 0px;
+    border-left: 0;
 }
+
 .ant-input-search-with-button {
-    
     .ant-input-group .ant-input:first-child,
     .ant-input-group-addon:first-child {
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
     }
-
     .ant-input-group .ant-input-group-addon:last-child {
         left: 16px;
         .ant-input-search-button {
@@ -35,4 +43,36 @@
             width: 48px;
         }
     }
+}
+
+.ant-btn-icon-only {
+    width: 32px;
+    background: none;
+    .anticon-search {
+        margin-left: 9px;
+    }
+}
+
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary) {
+    color: @black_msg;
+    border: solid 1px #D8DAE1;
+    &:hover {
+        border: solid 1px @primaryColor;
+        color: @primaryColor;
+    }
+}
+
+// 密码输入框 icon 颜色
+.ant-input-password {
+    .ant-input-password-icon {
+        color: @black_msg;
+        &:hover {
+            color: @black_Desc;
+        }
+    }
+}
+
+// 穿梭框 icon 颜色
+.ant-input-prefix {
+    color: @black_msg;
 }

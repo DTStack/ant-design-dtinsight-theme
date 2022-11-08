@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title:
   zh-CN: 灰色背景(仅默认主题下使用)
 ---

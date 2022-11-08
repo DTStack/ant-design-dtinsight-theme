@@ -1,23 +1,23 @@
-const path = require('path')
+const path = require('path');
 
-const defaultCustomIconDir = path.resolve('./icon-svg')
+const defaultCustomIconDir = path.resolve('./icon-svg');
 
 module.exports = function IconSvgPlugin() {
     return {
         visitor: {
             ImportDeclaration(path, state) {
-                const dirFromOpts = state.opts.iconDir
-                const svgs = state.opts.svgs
+                const dirFromOpts = state.opts.iconDir;
+                const svgs = state.opts.svgs;
 
-                const customIconDir = dirFromOpts ? dirFromOpts : defaultCustomIconDir
+                const customIconDir = dirFromOpts || defaultCustomIconDir;
 
                 const sourceValue = path.node.source.value;
-                const base = '@ant-design/icons-svg/es/asn/'
-                const customSvgs = svgs.map(s => base + s)
+                const base = '@ant-design/icons-svg/es/asn/';
+                const customSvgs = svgs.map((s) => base + s);
                 if (customSvgs.includes(sourceValue)) {
-                    path.node.source.value = customIconDir + '/' + sourceValue.split(base)[1]
+                    path.node.source.value = customIconDir + '/' + sourceValue.split(base)[1];
                 }
             },
         },
     };
-}
+};

@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 9
 title:
   zh-CN: 展示每行数据更详细的信息
 ---
@@ -80,7 +80,7 @@ expandedRowRender = () => {
   }
 
   handleChangeShowData = (checked) => {
-    
+
     this.setState({
       isShowData: checked
     })

@@ -30,18 +30,10 @@ title: 开发前必读
 
 ##### 2、 src/root.tsx 文件中导入 theme/dt-theme 中样式文件
 
-- 其中基础版引入的方式有两种 
-
 ``` javascript
 
-// 第一种方式
-// reset.less中已经引入了antd.less，故在项目中无需再引入antd样式文件
-import 'ant-design-dtinsight-theme/theme/dt-theme/reset.less';
+// index.less 中已经引入了 antd.less，故在项目中无需再引入 antd 样式文件
 import 'ant-design-dtinsight-theme/theme/dt-theme/index.less';
-
-// 第二种方式
-// index.less中已经引入了antd.less，故在项目中无需再引入antd样式文件
-import 'ant-design-dtinsight-theme/theme/dt-theme/default/index.less';
 
 ```
 
@@ -54,7 +46,7 @@ import 'ant-design-dtinsight-theme/theme/dt-theme/dark/index.less';
 
 ```
 
-基础版本两种引入方式只能存在一种，其中暗黑版本还处于自测阶段，敬请期待。
+暗黑版本还处于自测阶段，敬请期待。
 
 - 若想要实现动态切换默认和暗黑主题样式，则需要将默认主题样式和暗黑版样式都引入。具体切换主题实现请参考文档 [基于 ant-design 的网站主题切换功能的实现](https://github.com/Erindcl/antd-theme-switch-demo/blob/master/doc.md) 中的方案三。
 

@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 4
 title:
   zh-CN: 内容超出范围
 ---
@@ -17,7 +17,7 @@ title:
 高度超出：固定底部操作栏和表头内容区域做滚动。
 
 ```jsx
-import { Table } from 'antd';
+import { Table, Divider } from 'antd';
 
 const columns = [
   { title: 'Name', dataIndex: 'name', key: 'name', width: 200, fixed: 'left', },
@@ -33,6 +33,7 @@ const columns = [
     render: (text, record) => (
       <span>
         <a>Invite</a>
+        <Divider type="vertical" />
         <a>Delete</a>
       </span>
     ),
@@ -74,7 +75,7 @@ const pagination = {
   current: 1,
   pageSize: 10,
   size: 'small',
-  total: 30,
+  total: 80,
   showTotal: (total) => <span>
     共<span style={{ color: '#3F87FF' }}>{total}</span>条数据，每页显示15条
   </span>

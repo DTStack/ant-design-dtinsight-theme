@@ -1,0 +1,40 @@
+@import "../const.less";
+
+.ant-input-number {
+    width: 100px;
+    border-radius: 4px;
+}
+
+.ant-input-number:focus, .ant-input-number-focused {
+    border-color: @clickColor;
+}
+
+// 前置/后置标签样式
+.ant-input-number-group-wrapper {
+    width: 208px;
+}
+
+.dt-input-number-disabled {
+    .ant-input-number-disabled {
+        border-color: @grey_border;
+        &:hover {
+            border-color: @grey_border;
+        }
+    }
+    .ant-input-number-group-addon {
+        border-color: @black_border;
+        background-color: @black_border;
+        color: @black_pageMsg;
+    }
+}
+
+.ant-input-number-group-addon {
+    padding: 5px 16px;
+    background-color: @black_navBg;
+    font-size: @font12;
+    color: @black_title;
+}
+
+.ant-input-number-group-addon .ant-select {
+    margin: -6.6px -16px;
+}

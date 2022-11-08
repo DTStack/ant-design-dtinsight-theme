@@ -17,7 +17,7 @@ const {
     applyTo,
     defaultTo,
     objOf,
-    assoc
+    assoc,
 } = require('ramda');
 const parseXML = require('@rgrove/parse-xml');
 
@@ -34,7 +34,7 @@ const svg2Definition = ({ theme, extraNodeTransformFactories, stringify }) =>
                 element2AbstractNode({
                     name,
                     theme,
-                    extraNodeTransformFactories
+                    extraNodeTransformFactories,
                 }),
                 pipe(objOf('icon'), assoc('name', name), assoc('theme', theme)),
                 defaultTo(JSON.stringify)(stringify)
@@ -58,11 +58,11 @@ function element2AbstractNode({ name, theme, extraNodeTransformFactories }) {
                                     element2AbstractNode({
                                         name,
                                         theme,
-                                        extraNodeTransformFactories
+                                        extraNodeTransformFactories,
                                     })
                                 )
                             )
-                        )
+                        ),
                     })(unless(where({ children: both(Array.isArray, pipe(length, greaterThan(__, 0))) }), deleteProp('children')))
                 )
             )
@@ -70,5 +70,5 @@ function element2AbstractNode({ name, theme, extraNodeTransformFactories }) {
 }
 
 module.exports = {
-    svg2Definition
-}
+    svg2Definition,
+};

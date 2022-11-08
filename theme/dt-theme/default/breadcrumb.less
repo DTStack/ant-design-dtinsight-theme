@@ -1,13 +1,19 @@
-@import '../const.less';
+@import "../const.less";
+
 .ant-breadcrumb {
     color: @black_pageMsg;
     font-weight: 400;
-    font-size: 14px;
-    a:hover{
-        color: @primaryColor;
+    font-size: 12px;
+    line-height: 20px;
+    a {
+        color: @black_pageMsg;
+        &:hover {
+            color: @primaryColor;
+        }
     }
 }
+
 .ant-breadcrumb-separator {
     color: @black_msg;
-    margin: 0px 4px;
+    margin: 0 4px;
 }

@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 7
 title:
   zh-CN: 固定高度表（自带分页）
 ---
@@ -26,7 +26,8 @@ title:
 特别的，若添加了类名`dt-table-scrollbar`对滚动条样式进行了修改，则可以不添加该样式
 
 ```jsx
-import { Table, Switch } from 'antd';
+import { Table, Switch, Divider } from 'antd';
+import classNames from 'classnames';
 
 class App extends React.Component {
   state = {
@@ -63,6 +64,7 @@ class App extends React.Component {
     isShowData: true,
     isColumnFixed: true,
     setOverflowX: false,
+    setNoBorder: false,
     setScrollBar: true,
     smallSize: false
   };
@@ -73,8 +75,17 @@ class App extends React.Component {
     })
   }
 
+  getTableClassName = () => {
+    const { isShowData, isColumnFixed, setOverflowX, setNoBorder } = this.state;
+    return classNames({
+      'dt-table-fixed-overflowx-auto': !isShowData && isColumnFixed && setOverflowX,
+      'dt-table-fixed-base-no-border': setNoBorder,
+      'dt-table-fixed-base': !setNoBorder,
+    });
+  }
+
   render() {
-    const { data, isShowData, isColumnFixed, setOverflowX, smallSize } = this.state;
+    const { data, isShowData, isColumnFixed, setOverflowX, setNoBorder, smallSize } = this.state;
     const columns = [
       { title: 'Name', fixed: isColumnFixed ? 'left' : false, dataIndex: 'name', key: 'name', width: 200 },
       { title: 'Age', dataIndex: 'age', key: 'age', width: 100 },
@@ -89,6 +100,7 @@ class App extends React.Component {
         render: (text, record) => (
           <span>
             <a>Invite</a>
+            <Divider type="vertical" />
             <a>Delete</a>
           </span>
         ),
@@ -112,6 +124,8 @@ class App extends React.Component {
             <span className="demo-switch-desc">是否存在固定列</span>
             <Switch checked={setOverflowX} onChange={this.handleSwitchChange.bind(this, 'setOverflowX')} />
             <span className="demo-switch-desc">设置dt-table-fixed-overflowx-auto</span>
+            <Switch checked={setNoBorder} onChange={this.handleSwitchChange.bind(this, 'setNoBorder')} />
+            <span className="demo-switch-desc">设置{setNoBorder ? 'dt-table-fixed-base-no-border' : 'dt-table-fixed-base'}</span>
             <Switch checked={smallSize} onChange={this.handleSwitchChange.bind(this, 'smallSize')} />
             <span className="demo-switch-desc">展示最小size</span>
         </div>
@@ -119,7 +133,7 @@ class App extends React.Component {
           columns={columns}
           dataSource={isShowData ? data : []}
           scroll={{ y: true, x: 1300 }}
-          className={!isShowData && isColumnFixed && setOverflowX ? 'dt-table-fixed-overflowx-auto' : ''}
+          className={this.getTableClassName()}
           style={{ height: 'calc(100vh - 300px)' }}
           size={smallSize && 'small'}
           pagination={pagination}

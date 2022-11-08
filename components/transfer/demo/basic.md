@@ -50,6 +50,7 @@ const App = () => {
     
     return (
         <Transfer
+            showSearch
             className='dt-transfer-without-header-count'
             dataSource={mockData}
             titles={['Source', 'Target']}
