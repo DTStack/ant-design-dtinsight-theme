@@ -7,7 +7,7 @@ title:
 
 ## zh-CN
 
-用于配置一些固定组合。
+用于配置一些固定组合，禁用状态请使用类名`dt-input-number-disabled`
 
 ## en-US
 
@@ -44,6 +44,7 @@ const App: React.FC = () => (
       addonBefore={<Cascader placeholder="cascader" style={{ width: 150 }} />}
       defaultValue={100}
     />
+    <InputNumber className="dt-input-number-disabled" addonBefore="+" addonAfter="$" defaultValue={100} disabled/>
   </Space>
 );
 
