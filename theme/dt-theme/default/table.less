@@ -27,7 +27,10 @@
 .ant-table-thead {
     background: #FAFAFA;
     .ant-table-column-sorter, .ant-table-filter-trigger {
-        color: #B1B4C5;
+        color: @black_msg;
+        &.active {
+            color: @primaryColor;
+        }
     }
 }
 
