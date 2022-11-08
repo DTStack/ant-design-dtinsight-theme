@@ -17,3 +17,10 @@ cover: https://gw.alipayobjects.com/zos/antfincdn/lkI2hNEDr2V/Tabs.svg
 ## 设计规范
 
 每个标签文字最多 6 个字，标签数量最多 7 个，建议出现 4 个以内。
+
+## API
+
+|类名  |说明  |使用示例  |
+|---------|---------|---------|
+|.dt-tabs-right-menu  | 右侧菜单类名，需配合type="line"和tabPosition="right"一起使用   | 右侧菜单   |
+|.dt-tabs-content-padding  | 内容内边距类名，16px  | tabs内容内边距 |
