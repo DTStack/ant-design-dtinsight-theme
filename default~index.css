@@ -28713,7 +28713,7 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .anticon {
   margin: 0 8px 0 2px;
-  line-height: 22px;
+  line-height: 20px;
   font-size: 16px;
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .anticon svg {
@@ -28722,6 +28722,7 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-content {
   margin: 8px 0 16px 27px;
   color: #8B8FA8;
+  line-height: 20px;
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-btns {
   margin: 12px 0;
