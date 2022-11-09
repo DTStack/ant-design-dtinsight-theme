@@ -91,11 +91,11 @@ class NormalLoginForm extends React.Component {
         </Form.Item>
         <Form.Item name="type" colon={false} label={'存储类型'} rules={[{ required: false, message: 'It is required!' }]}>
           <Radio.Group>
-            <Radio value={1}>orc选项一</Radio>
-            <Radio value={2}>text选项二</Radio>
+            <Radio value={1}>选项一</Radio>
+            <Radio value={2}>option2</Radio>
             <Radio value={3}>
               <div style={{ display: 'flex', alignItems: 'center' }}>
-                md选项三
+                选项三
                 <Tooltip title="这是选项三的 hover 提示">
                   <QuestionCircleOutlined style={{ fontSize: 16, color: '#B1B4C5', marginLeft: 6 }} />
                 </Tooltip>
