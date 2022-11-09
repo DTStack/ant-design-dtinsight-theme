@@ -28290,9 +28290,6 @@ li {
   font-weight: 500;
   line-height: 20px;
 }
-.ant-form-item-label > label::after {
-  margin: 0 12px 0 2px;
-}
 .ant-form-vertical .ant-form-item-label {
   padding: 0 0 4px;
   margin-bottom: 0;
@@ -28981,6 +28978,9 @@ ul.ant-pagination {
   border-color: #EBECF0;
   background-color: #EBECF0;
 }
+.ant-select-dropdown {
+  padding: 8px 0;
+}
 .ant-select-disabled .ant-select-selector .ant-select-selection-overflow .ant-select-selection-item {
   color: #8B8FA8;
   background-color: #D8DAE2;
@@ -29343,6 +29343,9 @@ ul.ant-pagination {
 .ant-table {
   color: #3D446E;
 }
+.ant-table table {
+  border-radius: 0;
+}
 .ant-table .ant-table-cell .ant-form-item {
   margin-bottom: 0;
 }
@@ -29539,6 +29542,9 @@ ul.ant-pagination {
   height: 100%;
   cursor: col-resize;
 }
+.ant-table-container table > thead > tr:first-child th:first-child {
+  border-top-left-radius: 0;
+}
 .ant-table-container table > thead > tr:first-child th:first-child.react-resizable {
   border-top-left-radius: 0;
 }
@@ -29590,6 +29596,10 @@ ul.ant-pagination {
   top: calc(calc(100% - 44px) / 5);
   left: 50%;
   transform: translate(-50%, 0);
+}
+.ant-table-container {
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .ant-table-container .ant-table-placeholder .dtc-empty {
   margin: 32px 0;
