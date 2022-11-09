@@ -28453,11 +28453,18 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-input-number-group-addon .ant-select {
   margin: -6.6px -16px;
 }
-.ant-input {
-  height: 32px;
+.ant-input,
+.ant-input-affix-wrapper {
+  padding: 5px 11px;
+  line-height: 20px;
 }
-.ant-input[disabled] {
-  border: 0;
+.ant-input[disabled],
+.ant-input-affix-wrapper-disabled {
+  border-color: transparent;
+}
+.ant-input[disabled]:hover,
+.ant-input-affix-wrapper-disabled:hover {
+  border-color: transparent;
 }
 .ant-input-focused {
   border-color: #005CE6 !important;
@@ -28470,8 +28477,7 @@ li.ant-picker-panel-select-option-selected:hover {
   color: #B1B4C5 !important;
 }
 .ant-input.ant-input-sm {
-  padding: 2px 7px;
-  height: 24px;
+  padding: 1px 11px;
 }
 .ant-input-search .ant-input-wrapper .ant-input-search-button {
   border-left: 0;
@@ -28978,6 +28984,11 @@ ul.ant-pagination {
 .ant-select-disabled .ant-select-selector .ant-select-selection-overflow .ant-select-selection-item {
   color: #8B8FA8;
   background-color: #D8DAE2;
+}
+.ant-select-multiple .ant-select-selection-item {
+  -webkit-margin-end: 4px;
+  margin-inline-end: 4px;
+  align-items: center;
 }
 .dt-steps-card-container .ant-card-body,
 .dt-steps-card-container.ant-card-body {
