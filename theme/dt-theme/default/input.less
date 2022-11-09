@@ -1,11 +1,17 @@
 @import "../const.less";
 
-.ant-input {
-    height: 32px;
+.ant-input,
+.ant-input-affix-wrapper {
+    padding: 5px 11px;
+    line-height: 20px;
 }
 
-.ant-input[disabled] {
-    border: 0;
+.ant-input[disabled],
+.ant-input-affix-wrapper-disabled {
+    border-color: transparent;
+    &:hover {
+        border-color: transparent;
+    }
 }
 
 .ant-input-focused {
@@ -22,8 +28,7 @@
 }
 
 .ant-input.ant-input-sm {
-    padding: 2px 7px;
-    height: 24px;
+    padding: 1px 11px;
 }
 
 .ant-input-search .ant-input-wrapper .ant-input-search-button {
