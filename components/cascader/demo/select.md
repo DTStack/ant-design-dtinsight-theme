@@ -14,7 +14,7 @@ import { Cascader } from 'antd';
 const options = [
   {
     value: 'zhejiang',
-    label: 'Zhejiang',
+    label: 'Zhejiang Zhejiang Zhejiang Zhejiang',
     children: [
       {
         value: 'hangzhou',
@@ -22,7 +22,7 @@ const options = [
         children: [
           {
             value: 'xihu',
-            label: 'West Lake',
+            label: 'West Lake West Lake West Lake West Lake',
           },
         ],
       },
