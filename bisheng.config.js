@@ -3,9 +3,7 @@ const { list } = require('./custom-icon/list');
 const DynamicResolvePlugin = require('dynamic-resolve-webpack-plugin').default;
 
 const targetDir = path.resolve('./custom-icon');
-const baseDir = require
-    .resolve('@ant-design/icons-svg')
-    .replace(/lib\/index\.js/, 'es/asn/');
+const baseDir = require.resolve('@ant-design/icons-svg').replace(/lib\/index\.js/, 'es/asn/');
 const scopeList = list.map((file) => path.join(baseDir, file));
 
 function dynamic(request) {
@@ -49,10 +47,7 @@ module.exports = {
     webpackConfig: function (config) {
         config.module.rules.push({
             test: /\.(eot|woff|svg|ttf|woff2|gif|appcache|webp)(\?|$)/,
-            loader: [
-                'file-loader?name=[name].[ext]',
-                'url-loader?limit=100000',
-            ],
+            loader: ['file-loader?name=[name].[ext]', 'url-loader?limit=100000'],
         });
         config.resolve.plugins ||= [];
         config.resolve.plugins.push(
