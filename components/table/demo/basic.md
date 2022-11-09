@@ -8,7 +8,6 @@ title:
 
 简单的表格，最后一列是各种操作。
 
-- 添加类名 `dt-table-border` 为表格设置外边框
 - 添加类名 `dt-table-last-row-noborder` 为表格设置最后一行去掉下边框，一般在表格存在外边框时使用
 
 ```jsx
@@ -91,11 +90,10 @@ class App extends React.Component {
             <span className="demo-switch-desc">是否展示分页</span>
         </div>
         <Table
-          bordered
           columns={columns}
           dataSource={data}
           pagination={isShowPage ? pagination : false}
-          className="dt-table-border dt-table-last-row-noborder"
+          className="dt-table-last-row-noborder"
         />
       </div>
     )

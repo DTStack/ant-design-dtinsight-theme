@@ -2,6 +2,9 @@
 
 .ant-table {
     color: @black_title;
+    table {
+        border-radius: 0;
+    }
     .ant-table-cell {
         .ant-form-item {
             margin-bottom: 0;
@@ -236,8 +239,11 @@
     cursor: col-resize;
 }
 
-.ant-table-container table > thead > tr:first-child th:first-child.react-resizable {
+.ant-table-container table > thead > tr:first-child th:first-child {
     border-top-left-radius: 0;
+    &.react-resizable {
+        border-top-left-radius: 0;
+    }
 }
 
 .ant-table-container table > thead > tr:first-child th:last-child {
@@ -297,6 +303,8 @@
 }
 
 .ant-table-container {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
     .ant-table-placeholder {
         .dtc-empty {
             margin: 32px 0;
