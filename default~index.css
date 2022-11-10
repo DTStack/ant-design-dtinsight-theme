@@ -27066,7 +27066,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
   padding-left: 8px;
 }
 .dt-layout-header .logo {
-  margin-right: 70px;
+  margin-right: 16px;
   height: 64px;
   line-height: 64px;
 }
@@ -27913,13 +27913,25 @@ li {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.ant-checkbox-group {
-  line-height: calc(32px / 12px);
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: #0A67F2;
 }
-.ant-checkbox-wrapper .ant-checkbox-inner {
+.ant-checkbox-wrapper {
+  height: 32px;
+  line-height: 32px;
+}
+.ant-checkbox-wrapper .ant-checkbox {
+  top: 0.32em;
+}
+.ant-checkbox-wrapper .ant-checkbox .ant-checkbox-inner {
   border-radius: 2px;
   width: 16px;
   height: 16px;
+}
+.ant-checkbox-wrapper .ant-checkbox + span {
+  height: 20px;
+  line-height: 20px;
 }
 .ant-checkbox-wrapper-disabled .ant-checkbox-checked .ant-checkbox-inner {
   background-color: #D8DAE2;
@@ -28393,12 +28405,6 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-select-dropdown,
 .ant-picker-panel-inner {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-}
-.ant-checkbox-group {
-  line-height: calc(32px / 12px);
-}
-.ant-checkbox {
-  top: 0.25em;
 }
 .ant-picker-content thead th {
   color: #8B8FA8;
@@ -29536,6 +29542,9 @@ ul.ant-pagination {
   color: #B1B4C5;
   background-color: #EBECF0;
   border: 1px solid #EBECF0;
+}
+.ant-table-filter-dropdown .ant-dropdown-menu-item {
+  height: 32px;
 }
 .ant-dropdown-menu {
   padding-top: 8px;
