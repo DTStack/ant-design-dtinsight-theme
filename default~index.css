@@ -27902,8 +27902,12 @@ li {
 .ant-select-multiple .ant-select-selector .ant-select-selection-item .ant-select-selection-item-remove:hover {
   color: #64698B;
 }
+.ant-cascader-dropdown {
+  padding: 0 !important;
+}
 .ant-cascader-dropdown .ant-cascader-menu {
   width: 212px;
+  padding: 8px 0;
 }
 .ant-cascader-dropdown .ant-cascader-menu .ant-cascader-menu-item-content {
   overflow: hidden;
