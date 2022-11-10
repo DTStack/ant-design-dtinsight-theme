@@ -27709,7 +27709,6 @@ li {
 .ant-btn-background-ghost {
   color: #1D78FF;
   border-color: #1D78FF;
-  background-color: #FFFFFF !important;
 }
 .ant-btn.ant-btn-background-ghost {
   color: #1D78FF;
@@ -27717,15 +27716,11 @@ li {
 }
 .ant-btn.ant-btn-background-ghost:hover,
 .ant-btn.ant-btn-background-ghost:focus {
-  background-color: #0A67F2 !important;
   border-color: #0A67F2;
-  color: #FFFFFF;
 }
 .ant-btn.ant-btn-background-ghost:active,
 .ant-btn.ant-btn-background-ghost.active {
-  background-color: #005CE6 !important;
   border-color: #005CE6;
-  color: #FFFFFF;
 }
 .ant-btn-background-ghost.ant-btn-disabled,
 .ant-btn-background-ghost.ant-btn.disabled,
@@ -27762,27 +27757,6 @@ li {
   color: #FFFFFF;
   background-color: #F96C5B !important;
   border-color: #F96C5B;
-}
-.ant-btn-background-ghost.ant-btn-danger {
-  color: #F96C5B;
-  background-color: transparent !important;
-  border-color: #F96C5B;
-}
-.ant-btn-background-ghost.ant-btn-danger:hover,
-.ant-btn-background-ghost.ant-btn-danger:focus {
-  color: #F96C5B;
-  border-color: #F96C5B;
-  background-color: #FFFFFF !important;
-}
-.ant-btn-background-ghost.ant-btn-danger:active,
-.ant-btn-background-ghost.ant-btn-danger.active {
-  color: #FFFFFF;
-  background-color: #F96C5B !important;
-  border-color: #F96C5B;
-}
-.ant-btn.ant-btn-default.ant-btn-background-ghost.dt-btn-custom-icon:not([disabled]):hover {
-  color: #1D78FF;
-  border-color: #1D78FF;
 }
 .ant-btn-danger-disabled,
 .ant-btn-danger.disabled,
@@ -29511,6 +29485,13 @@ ul.ant-pagination {
 .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
 .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
   border-bottom: 1px solid #E8E8E8;
+}
+.ant-table-filter-dropdown .ant-dropdown-menu-item .ant-dropdown-menu-title-content {
+  display: flex;
+  align-items: center;
+}
+.ant-table-filter-dropdown .ant-dropdown-menu-item .ant-dropdown-menu-title-content .ant-radio-wrapper {
+  padding-top: 0;
 }
 .ant-table-filter-dropdown-btns {
   border-top: none;

@@ -255,6 +255,13 @@ a {
   margin-right: 12px;
   margin-bottom: 20px;
 }
+.demo-button-type.ghost,
+.demo-modal-box.ghost,
+.demo-notification-box.ghost,
+.demo-message-box.ghost {
+  padding: 20px 20px 0;
+  background-color: #BEC8C8;
+}
 .demo-select-size .ant-select {
   margin-bottom: 20px;
   margin-right: 20px;
