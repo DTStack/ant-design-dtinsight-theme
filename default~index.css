@@ -27955,6 +27955,9 @@ li {
 .ant-checkbox-input:focus + .ant-checkbox-inner {
   border-color: #1D78FF;
 }
+.ant-checkbox-group-item {
+  margin-right: 16px;
+}
 .ant-collapse {
   border: 1px solid #EBECF0;
   border-radius: 0;
@@ -28751,6 +28754,14 @@ li.ant-picker-panel-select-option-selected:hover {
   font-size: 14px;
   line-height: 22px;
 }
+.ant-alert > .ant-alert-icon {
+  align-self: flex-start;
+  margin-top: 3px;
+}
+.ant-alert > .ant-alert-close-icon {
+  align-self: flex-start;
+  margin-top: 5px;
+}
 .ant-alert-success {
   background-color: #E7FBF7;
   border: 1px solid #E7FBF7;
@@ -28991,10 +29002,27 @@ ul.ant-pagination {
   color: #8B8FA8;
   background-color: #D8DAE2;
 }
+.ant-select-multiple .ant-select-selector {
+  padding: 3px 4px 0;
+}
+.ant-select-multiple .ant-select-selection-overflow-item {
+  margin-bottom: 3px;
+  margin-top: 0;
+}
 .ant-select-multiple .ant-select-selection-item {
+  height: 24px;
   -webkit-margin-end: 4px;
   margin-inline-end: 4px;
   align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.ant-select-multiple .ant-select-selection-search {
+  height: 24px;
+  padding-top: 2px;
+}
+.ant-select-multiple .ant-select-selection-item-remove {
+  color: #8B8FA8;
 }
 .dt-steps-card-container .ant-card-body,
 .dt-steps-card-container.ant-card-body {
