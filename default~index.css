@@ -28638,7 +28638,7 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-list .ant-list-item-meta-description {
   color: #64698B;
 }
-.ant-menu-submenu.ant-menu-submenu-placement-bottomLeft {
+.ant-menu-submenu.ant-menu-submenu-placement-bottomLeft.ant-menu {
   display: none;
 }
 .ant-menu-item .ant-menu-title-content svg,
