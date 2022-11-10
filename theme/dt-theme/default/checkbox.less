@@ -1,14 +1,26 @@
 @import "../const.less";
+
 // checkbox
-.ant-checkbox-group {
-    line-height: calc(@lineHeight / @font12);
+.ant-checkbox-wrapper, .ant-checkbox {
+    &:hover .ant-checkbox-inner {
+        border-color: @hoverColor;
+    }
 }
 
 .ant-checkbox-wrapper {
-    .ant-checkbox-inner {
-        border-radius: 2px;
-        width: 16px;
-        height: 16px;
+    height: @lineHeight;
+    line-height: @lineHeight;
+    .ant-checkbox {
+        top: 0.32em;
+        .ant-checkbox-inner {
+            border-radius: 2px;
+            width: 16px;
+            height: 16px;
+        }
+        & + span {
+            height: 20px;
+            line-height: 20px;
+        }
     }
 }
 

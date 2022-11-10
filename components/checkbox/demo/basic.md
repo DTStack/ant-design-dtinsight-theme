@@ -1,48 +1,27 @@
 ---
 order: 0
 title:
-  zh-CN: 基本使用
-  en-US: Basic usage
+  zh-CN: 基本用法
+  en-US: Basic
 ---
 
 ## zh-CN
 
-基本使用。
+简单的 checkbox。
 
 ## en-US
 
-Basic usage example.
+Basic usage of checkbox.
 
-```jsx
+```tsx
 import { Checkbox } from 'antd';
-class NormalCheckBox extends React.Component {
-    onChange = (checkedValues) => {
-        console.log('checked = ', checkedValues);
-    };
+import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 
-  render() {
-    const options = [
-        {
-            label: 'Apple',
-            value: 'Apple',
-            disabled: true,
-        },
-        {
-            label: 'Pear',
-            value: 'Pear',
-        },
-        {
-            label: 'Orange',
-            value: 'Orange',
-            disabled: true,
-        },
-    ];
+const onChange = (e: CheckboxChangeEvent) => {
+  console.log(`checked = ${e.target.checked}`);
+};
 
-    return (
-      <Checkbox.Group options={options} defaultValue={['Pear', 'Orange']} onChange={this.onChange} />
-    );
-  }
-}
+const App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;
 
-ReactDOM.render(<NormalCheckBox />, mountNode);
+ReactDOM.render(<App />, mountNode);
 ```
