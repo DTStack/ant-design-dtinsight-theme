@@ -17,7 +17,6 @@ ReactDOM.render(
   <div className="demo-button-type">
     <Button type="primary">一级按钮</Button>
     <Button>二级按钮</Button>
-    <Button ghost>按钮</Button>
     <Button type="link">文字按钮</Button>
     <Button icon={<SearchOutlined />}  className="dt-btn-highlight"></Button>
   </div>,
