@@ -14,14 +14,17 @@
 .ant-form-item-label > label {
     font-weight: 500;
     line-height: 20px;
-    &::after {
-        margin: 0 12px 0 2px;
-    }
 }
 
 .ant-form-vertical .ant-form-item-label {
     padding: 0 0 4px;
     margin-bottom: 0;
+}
+
+.ant-form-vertical {
+    .ant-table-cell > .ant-form-item > .ant-form-item-row {
+        flex-direction: row;
+    }
 }
 
 .ant-radio-wrapper-checked .ant-radio-disabled .ant-radio-inner {
