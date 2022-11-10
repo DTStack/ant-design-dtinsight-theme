@@ -29496,6 +29496,9 @@ ul.ant-pagination {
 .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
   border-bottom: 1px solid #E8E8E8;
 }
+.ant-table-filter-dropdown .ant-dropdown-menu-item {
+  height: 32px;
+}
 .ant-table-filter-dropdown .ant-dropdown-menu-item .ant-dropdown-menu-title-content {
   display: flex;
   align-items: center;
@@ -29542,9 +29545,6 @@ ul.ant-pagination {
   color: #B1B4C5;
   background-color: #EBECF0;
   border: 1px solid #EBECF0;
-}
-.ant-table-filter-dropdown .ant-dropdown-menu-item {
-  height: 32px;
 }
 .ant-dropdown-menu {
   padding-top: 8px;
