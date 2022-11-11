@@ -106,70 +106,84 @@
     border-bottom-color: @grey_border;
 }
 
-// 右侧菜单样式
-.ant-tabs-right.dt-tabs-right-menu {
-    .ant-tabs-nav {
-        min-width: 30px;
-        width: 30px;
-        .ant-tabs-nav-wrap {
-            .ant-tabs-nav-list {
-                .ant-tabs-tab {
-                    writing-mode: vertical-rl;
-                    text-orientation: upright;
-                    margin: 0;
-                    padding: 8px 9px;
-                    border-bottom: 1px solid @grey_border;
-                    color: @black_title;
-                    letter-spacing: 3px;
-                    &:hover:not(.ant-tabs-tab-active) {
-                        background-color: @black_titleBg;
+// 侧边菜单样式
+.ant-tabs-left,
+.ant-tabs-right {
+    &.dt-tabs-sider-menu {
+        .ant-tabs-nav {
+            min-width: 30px;
+            width: 30px;
+            .ant-tabs-nav-wrap {
+                .ant-tabs-nav-list {
+                    .ant-tabs-tab {
+                        writing-mode: vertical-rl;
+                        text-orientation: upright;
+                        margin: 0;
+                        padding: 8px 9px;
+                        border-bottom: 1px solid @grey_border;
                         color: @black_title;
-                    }
-                    .ant-tabs-tab-btn {
-                        .iconfont {
-                            margin-bottom: 3px;
-                            color: @black_msg;
-                        }
-                        &:focus {
+                        letter-spacing: 3px;
+                        &:hover:not(.ant-tabs-tab-active) {
+                            background-color: @black_titleBg;
                             color: @black_title;
                         }
-                    }
-                }
-                .ant-tabs-tab-active {
-                    box-shadow: inset -2px 0 0 0 @primaryColor;
-                    background-color: @bg1Color;
-                    color: @primaryColor;
-                    .ant-tabs-tab-btn {
-                        .iconfont {
-                            color: @primaryColor;
-                        }
-                        &:focus {
-                            color: @primaryColor;
+                        .ant-tabs-tab-btn {
+                            .iconfont {
+                                margin-bottom: 3px;
+                                color: @black_msg;
+                            }
+                            &:focus {
+                                color: @black_title;
+                            }
                         }
                     }
+                    .ant-tabs-tab-active {
+                        background-color: @bg1Color;
+                        color: @primaryColor;
+                        .ant-tabs-tab-btn {
+                            .iconfont {
+                                color: @primaryColor;
+                            }
+                            &:focus {
+                                color: @primaryColor;
+                            }
+                        }
+                    }
+                    .ant-tabs-ink-bar {
+                        background-color: transparent;
+                    }
                 }
-                .ant-tabs-ink-bar {
-                    background-color: transparent;
+            }
+            .ant-tabs-nav-operations {
+                .ant-tabs-nav-more {
+                    padding: 8px 9px;
+                    &:hover {
+                        background-color: @black_titleBg;
+                    }
                 }
             }
         }
-        .ant-tabs-nav-operations {
-            .ant-tabs-nav-more {
-                padding: 8px 9px;
-                &:hover {
-                    background-color: @black_titleBg;
+        .ant-tabs-content-holder {
+            margin: 0;
+            .ant-tabs-content {
+                height: 100%;
+                .ant-tabs-tabpane {
+                    padding: 0;
                 }
             }
         }
     }
+}
+
+.ant-tabs-right.dt-tabs-sider-menu {
+    .ant-tabs-nav {
+        .ant-tabs-tab-active {
+            box-shadow: inset -2px 0 0 0 @primaryColor;
+        }
+    }
     .ant-tabs-content-holder {
-        margin-right: 0;
         border-right-color: @grey_border;
-        .ant-tabs-content-right {
-            height: 100%;
-            .ant-tabs-tabpane {
-                padding-right: 16px;
-            }
+        .ant-tabs-content {
             .ant-tabs-tabpane-active {
                 border-left: 1px solid @grey_border;
             }
@@ -177,9 +191,25 @@
     }
 }
 
-.dt-tabs-content-padding {
+.ant-tabs-left.dt-tabs-sider-menu {
+    .ant-tabs-nav {
+        .ant-tabs-tab-active {
+            box-shadow: inset 2px 0 0 0 @primaryColor;
+        }
+    }
     .ant-tabs-content-holder {
-        .ant-tabs-content-right {
+        border-left-color: @grey_border;
+        .ant-tabs-content {
+            .ant-tabs-tabpane-active {
+                border-right: 1px solid @grey_border;
+            }
+        }
+    }
+}
+
+.ant-tabs.dt-tabs-content-padding {
+    .ant-tabs-content-holder {
+        .ant-tabs-content {
             .ant-tabs-tabpane {
                 padding: 16px;
             }
