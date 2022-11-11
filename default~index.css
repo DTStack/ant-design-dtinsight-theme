@@ -27826,9 +27826,12 @@ li {
   margin-left: 4px;
 }
 .ant-btn.ant-btn-sm {
-  padding: 0 8px;
+  padding: 0 6px;
   height: 24px;
   border-radius: 2px;
+}
+.ant-btn.ant-btn-sm .anticon-search {
+  margin-left: 0;
 }
 .ant-btn-icon-only {
   padding: 0;
@@ -28470,17 +28473,19 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-input-search .ant-input-wrapper .ant-input-search-button {
   border-left: 0;
 }
+.ant-input-wrapper .ant-input-group-addon .ant-select-focused .ant-select-selector {
+  border-color: #FAFAFA !important;
+}
+.ant-input-wrapper .ant-input-group-addon .ant-input-search-button .anticon-search {
+  margin: 2px auto 0;
+}
 .ant-input-search-with-button .ant-input-group .ant-input:first-child,
 .ant-input-search-with-button .ant-input-group-addon:first-child {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-.ant-input-search-with-button .ant-input-group .ant-input-group-addon:last-child {
-  left: 16px;
-}
 .ant-input-search-with-button .ant-input-group .ant-input-group-addon:last-child .ant-input-search-button {
-  border-radius: 4px;
-  width: 48px;
+  border-radius: 0 4px 4px 0;
 }
 .ant-btn-icon-only {
   width: 32px;
@@ -28512,12 +28517,23 @@ li.ant-picker-panel-select-option-selected:hover {
 .dt-layout-header .ant-menu {
   font-size: 16px;
 }
-.dt-layout-header .ant-menu-item > a:hover {
-  color: #1D78FF;
-}
 .dt-layout-header .ant-menu-item-selected > a,
 .dt-layout-header .ant-menu-item-selected > a:hover {
   color: #1D78FF;
+}
+.dt-layout-header .ant-menu-horizontal .ant-menu-item-selected,
+.dt-layout-header .ant-menu-horizontal .ant-menu-item-selected:hover {
+  background-color: #E8F1FF !important;
+}
+.dt-layout-header .ant-menu-horizontal .ant-menu-item-selected a:hover,
+.dt-layout-header .ant-menu-horizontal .ant-menu-item-selected:hover a:hover {
+  color: #1D78FF !important;
+}
+.dt-layout-header .ant-menu-horizontal .ant-menu-item:hover {
+  background-color: #F5F5F8;
+}
+.dt-layout-header .ant-menu-horizontal .ant-menu-item a:hover {
+  color: #3D446E;
 }
 .dt-layout-header .ant-menu-horizontal .ant-menu-submenu-selected::after,
 .dt-layout-header .ant-menu-horizontal .ant-menu-item-selected::after,
@@ -29890,6 +29906,12 @@ ul.ant-pagination {
 .ant-upload .ant-btn:hover {
   border-color: #0A67F2;
   color: #0A67F2;
+}
+.ant-upload .ant-btn-primary {
+  color: #FFFFFF;
+}
+.ant-upload .ant-btn-primary:hover {
+  color: #FFFFFF;
 }
 .ant-upload.ant-upload-select.ant-upload-select-picture-card {
   background-color: #F9F9FA;
