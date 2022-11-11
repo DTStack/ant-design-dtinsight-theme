@@ -6,7 +6,8 @@ title:
 
 ## zh-CN
 
-1、可伸缩列需要在表头中间显示分割线，需要为无边框类型表格添加类名`dt-resizable-table`，加上表头右侧分割线
+- 1、可伸缩列需要在表头中间显示分割线，需要为无边框类型表格添加类名`dt-resizable-table`，加上表头中间的分割线
+- 2、具体使用可参考下方代码
 
 ```jsx
 import { Table } from 'antd';
@@ -62,11 +63,13 @@ class App extends React.Component {
       {
         title: "Note",
         dataIndex: "note",
-        width: 100
+        width: 300
       },
       {
         title: "Action",
         key: "action",
+        width: 200,
+        fixed: "right",
         render: () => <a>Delete</a>
       }
     ],
@@ -95,20 +98,35 @@ class App extends React.Component {
     ]
   };
 
-  handleResize = (index) => (_, { size }) => {
+  // minWidth、maxWidth 可选
+  getWidth = (width) => {
+    const minWidth = 100;
+    const maxWidth = 300;
+    if (width > maxWidth) {
+      return maxWidth;
+    } else if (width < minWidth) {
+      return minWidth;
+    } else {
+      return width;
+    }
+  }
+
+  handleResize = (idx) => (_, { size }) => {
     const newColumns = [...this.state.columns];
-    newColumns[index] = { ...newColumns[index], width: size.width };
+    newColumns[idx] = { ...newColumns[idx], width: this.getWidth(size.width) };
     this.setState({
       columns: newColumns
     });
   };
 
   render() {
-    const mergeColumns = this.state.columns.map((col, index) => ({
+    // disabledIdx 可选，3 表示禁用索引为 4 的列的可拖拽功能
+    const disabledIdx = [3]
+    const mergeColumns = this.state.columns.map((col, idx) => ({
       ...col,
-      onHeaderCell: (column) => ({
+      onHeaderCell: disabledIdx.includes(idx) ? () => {} : (column) => ({
         width: column.width,
-        onResize: this.handleResize(index)
+        onResize: this.handleResize(idx)
       })
     }));
     return (
@@ -119,6 +137,7 @@ class App extends React.Component {
             cell: ResizableTitle
           }
         }}
+        scroll={{ x: 600 }}
         columns={mergeColumns}
         dataSource={this.state.data}
       />

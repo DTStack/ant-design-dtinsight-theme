@@ -35,6 +35,21 @@
     border-left: 0;
 }
 
+.ant-input-wrapper {
+    .ant-input-group-addon {
+        .ant-select-focused {
+            .ant-select-selector {
+                border-color: #FAFAFA !important;
+            }
+        }
+        .ant-input-search-button {
+            .anticon-search {
+                margin: 2px auto 0;
+            }
+        }
+    }
+}
+
 .ant-input-search-with-button {
     .ant-input-group .ant-input:first-child,
     .ant-input-group-addon:first-child {
@@ -42,10 +57,8 @@
         border-bottom-right-radius: 4px;
     }
     .ant-input-group .ant-input-group-addon:last-child {
-        left: 16px;
         .ant-input-search-button {
-            border-radius: 4px;
-            width: 48px;
+            border-radius: 0 4px 4px 0;
         }
     }
 }
