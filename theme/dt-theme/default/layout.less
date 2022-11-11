@@ -5,13 +5,27 @@
     .ant-menu {
         font-size: @font16;
     }
-    .ant-menu-item > a:hover {
-        color: @primaryColor;
-    }
     .ant-menu-item-selected > a, .ant-menu-item-selected > a:hover {
         color: @primaryColor;
     }
     .ant-menu-horizontal {
+        // 顶部菜单选中状态的背景色
+        .ant-menu-item-selected, .ant-menu-item-selected:hover {
+            background-color: @bg1Color !important;
+            a:hover {
+                color: @primaryColor !important;
+            }
+        }
+        // 顶部菜单 hover 状态的背景色
+        .ant-menu-item {
+            &:hover {
+                background-color: @black_titleBg;
+            }
+            a:hover {
+                color: @black_title;
+            }
+        }
+
         .ant-menu-submenu-selected, .ant-menu-item-selected, .ant-menu-item-active, .ant-menu-submenu-open {
             &::after {
                 border: none;
