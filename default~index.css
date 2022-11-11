@@ -29297,11 +29297,13 @@ ul.ant-pagination {
 .ant-tabs-bottom > div > .ant-tabs-nav::before {
   border-bottom-color: #EBECF0;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav {
   min-width: 30px;
   width: 30px;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab {
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
   text-orientation: upright;
@@ -29311,51 +29313,76 @@ ul.ant-pagination {
   color: #3D446E;
   letter-spacing: 3px;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab:hover:not(.ant-tabs-tab-active) {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab:hover:not(.ant-tabs-tab-active),
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab:hover:not(.ant-tabs-tab-active) {
   background-color: #F5F5F8;
   color: #3D446E;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn .iconfont {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn .iconfont,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn .iconfont {
   margin-bottom: 3px;
   color: #B1B4C5;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn:focus {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn:focus,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn:focus {
   color: #3D446E;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active {
-  box-shadow: inset -2px 0 0 0 #1D78FF;
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active {
   background-color: #E8F1FF;
   color: #1D78FF;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn .iconfont {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn .iconfont,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn .iconfont {
   color: #1D78FF;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn:focus {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn:focus,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn:focus {
   color: #1D78FF;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-ink-bar {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-ink-bar,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-ink-bar {
   background-color: transparent;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-operations .ant-tabs-nav-more {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-operations .ant-tabs-nav-more,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-operations .ant-tabs-nav-more {
   padding: 8px 9px;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-nav .ant-tabs-nav-operations .ant-tabs-nav-more:hover {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-operations .ant-tabs-nav-more:hover,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-nav-operations .ant-tabs-nav-more:hover {
   background-color: #F5F5F8;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-content-holder {
-  margin-right: 0;
-  border-right-color: #EBECF0;
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-content-holder,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-content-holder {
+  margin: 0;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-content-holder .ant-tabs-content-right {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-content-holder .ant-tabs-content,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-content-holder .ant-tabs-content {
   height: 100%;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-content-holder .ant-tabs-content-right .ant-tabs-tabpane {
-  padding-right: 16px;
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane,
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane {
+  padding: 0;
 }
-.ant-tabs-right.dt-tabs-right-menu .ant-tabs-content-holder .ant-tabs-content-right .ant-tabs-tabpane-active {
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-tab-active {
+  box-shadow: inset -2px 0 0 0 #1D78FF;
+}
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-content-holder {
+  border-right-color: #EBECF0;
+}
+.ant-tabs-right.dt-tabs-sider-menu .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane-active {
   border-left: 1px solid #EBECF0;
 }
-.dt-tabs-content-padding .ant-tabs-content-holder .ant-tabs-content-right .ant-tabs-tabpane {
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-nav .ant-tabs-tab-active {
+  box-shadow: inset 2px 0 0 0 #1D78FF;
+}
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-content-holder {
+  border-left-color: #EBECF0;
+}
+.ant-tabs-left.dt-tabs-sider-menu .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane-active {
+  border-right: 1px solid #EBECF0;
+}
+.ant-tabs.dt-tabs-content-padding .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane {
   padding: 16px;
 }
 .ant-table {
