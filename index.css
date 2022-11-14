@@ -3282,10 +3282,4 @@ ul.anticons-list li.copied::after {
     transform: rotate(4deg);
   }
 }
-.my-custom-table-class-name .ant-table-thead .ant-table-cell:nth-child(4) .ant-table-column-sorters .ant-table-column-title,
-.my-custom-table-class-name .ant-table-thead .ant-table-cell:nth-child(5) .ant-table-column-sorters .ant-table-column-title,
-.my-custom-table-class-name .ant-table-thead .ant-table-cell:nth-child(4) .ant-table-filter-column .ant-table-column-title,
-.my-custom-table-class-name .ant-table-thead .ant-table-cell:nth-child(5) .ant-table-filter-column .ant-table-column-title {
-  flex: 1;
-}
 

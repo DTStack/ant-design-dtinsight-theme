@@ -26738,10 +26738,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-table-filter-column {
   justify-content: flex-start;
 }
-.ant-table-column-sorters .ant-table-column-title,
-.ant-table-filter-column .ant-table-column-title {
-  flex: none;
-}
 .ant-table-column-sorter {
   margin-left: 7px;
 }
@@ -29674,6 +29670,14 @@ ul.ant-pagination {
 }
 .ant-table-container .ant-table-placeholder .dtc-empty {
   margin: 32px 0;
+}
+.ant-table-column-sorters .ant-table-column-title,
+.ant-table-filter-column .ant-table-column-title {
+  flex: none;
+}
+.dt-table-cell-right .ant-table-column-sorters .ant-table-column-title,
+.dt-table-cell-right .ant-table-filter-column .ant-table-column-title {
+  flex: 1;
 }
 .ant-tag {
   padding: 2px 8px;
