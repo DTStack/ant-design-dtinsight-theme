@@ -18,7 +18,7 @@ import { Radio } from 'antd';
 ReactDOM.render(
   <div className="demo-radio-shadow">
     <Radio.Group className="dt-radio-group" defaultValue="a" buttonStyle="solid">
-      <Radio.Button value="a">Hangzhou</Radio.Button>
+      <Radio.Button value="a">杭州</Radio.Button>
       <Radio.Button value="b">Shanghai</Radio.Button>
       <Radio.Button value="c">Beijing</Radio.Button>
       <Radio.Button value="d">Chengdu</Radio.Button>

@@ -1,11 +1,15 @@
-.ant-radio {
-    top: 0.1em;
-}
+@import "../const.less";
 
 .ant-radio-wrapper {
     align-items: center;
-    line-height: 1;
-    span.ant-radio + * {
-        padding-top: 2px;
+    line-height: 16px;
+    padding-top: 0.4em;
+    .ant-radio {
+        top: 0;
+    }
+    .ant-radio-disabled {
+        .ant-radio-inner::after {
+            background-color: @black_border;
+        }
     }
 }

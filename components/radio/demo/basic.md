@@ -16,7 +16,7 @@ ReactDOM.render(
   <div>
     <div style={{ marginBottom: '16px' }}>
         <Radio.Group defaultValue="a" size="large">
-            <Radio.Button value="a">Hangzhou</Radio.Button>
+            <Radio.Button value="a">杭州</Radio.Button>
             <Radio.Button disabled value="b">Shanghai</Radio.Button>
             <Radio.Button value="c">Beijing</Radio.Button>
             <Radio.Button value="d">Chengdu</Radio.Button>
@@ -24,7 +24,7 @@ ReactDOM.render(
     </div>
     <div style={{ marginBottom: '16px' }}>
         <Radio.Group defaultValue="a" size="middle">
-            <Radio.Button value="a">Hangzhou</Radio.Button>
+            <Radio.Button value="a">杭州</Radio.Button>
             <Radio.Button disabled value="b">Shanghai</Radio.Button>
             <Radio.Button value="c">Beijing</Radio.Button>
             <Radio.Button value="d">Chengdu</Radio.Button>
@@ -32,7 +32,7 @@ ReactDOM.render(
     </div>
     <div style={{ marginBottom: '16px' }}>
         <Radio.Group defaultValue="a" size="small">
-            <Radio.Button value="a">Hangzhou</Radio.Button>
+            <Radio.Button value="a">杭州</Radio.Button>
             <Radio.Button disabled value="b">Shanghai</Radio.Button>
             <Radio.Button value="c">Beijing</Radio.Button>
             <Radio.Button value="d">Chengdu</Radio.Button>
@@ -46,7 +46,7 @@ ReactDOM.render(
     </div>
     <div style={{ marginBottom: '16px' }}>
         <Radio.Group defaultValue="a" size="small">
-            <Radio value="a">Hangzhou</Radio>
+            <Radio value="a">杭州</Radio>
             <Radio checked value="b">Shanghai</Radio>
         </Radio.Group>
     </div>

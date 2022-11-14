@@ -22,5 +22,5 @@ cover: https://gw.alipayobjects.com/zos/antfincdn/lkI2hNEDr2V/Tabs.svg
 
 |类名  |说明  |使用示例  |
 |---------|---------|---------|
-|.dt-tabs-right-menu  | 右侧菜单类名，需配合type="line"和tabPosition="right"一起使用   | 右侧菜单   |
+|.dt-tabs-sider-menu  | 侧边栏菜单类名，需配合type="line"和tabPosition="right"或者"left"一起使用   | 左右侧菜单   |
 |.dt-tabs-content-padding  | 内容内边距类名，16px  | tabs内容内边距 |

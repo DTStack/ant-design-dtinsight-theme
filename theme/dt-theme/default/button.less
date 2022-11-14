@@ -115,21 +115,16 @@
 .ant-btn-background-ghost {
     color: @primaryColor;
     border-color: @primaryColor;
-    background-color: @white !important;
 }
 
 .ant-btn.ant-btn-background-ghost {
     color: @primaryColor;
     border-color: @primaryColor;
     &:hover, &:focus {
-        background-color: @hoverColor !important;
         border-color: @hoverColor;
-        color: @white;
     }
     &:active, &.active {
-        background-color: @clickColor !important;
         border-color: @clickColor;
-        color: @white;
     }
 }
 
@@ -170,32 +165,6 @@
     color: @white;
     background-color: @red !important;
     border-color: @red;
-}
-
-.ant-btn-background-ghost.ant-btn-danger {
-    color: @red;
-    background-color: transparent !important;
-    border-color: @red;
-}
-
-.ant-btn-background-ghost.ant-btn-danger:hover, .ant-btn-background-ghost.ant-btn-danger:focus {
-    color: @red;
-    border-color: @red;
-    background-color: @white !important;
-}
-
-.ant-btn-background-ghost.ant-btn-danger:active,
-.ant-btn-background-ghost.ant-btn-danger.active {
-    color: @white;
-    background-color: @red !important;
-    border-color: @red;
-}
-
-.ant-btn.ant-btn-default.ant-btn-background-ghost.dt-btn-custom-icon:not([disabled]) {
-    &:hover {
-        color: @primaryColor;
-        border-color: @primaryColor;
-    }
 }
 
 .ant-btn-danger-disabled,
@@ -273,9 +242,12 @@
 }
 
 .ant-btn.ant-btn-sm {
-    padding: 0 8px;
+    padding: 0 6px;
     height: 24px;
     border-radius: 2px;
+    .anticon-search {
+        margin-left: 0;
+    }
 }
 
 .ant-btn-icon-only {

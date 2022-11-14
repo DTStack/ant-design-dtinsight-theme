@@ -8,7 +8,7 @@ title:
 
 省市区级联。
 
-- 添加类名 dt-ant-select-outside 为级联选择框设置样式
+- 添加类名 dt-ant-select-outside 为级联选择框设置统一样式
 
 ```jsx
 import { Cascader } from 'antd';
@@ -16,7 +16,7 @@ import { Cascader } from 'antd';
 const options = [
   {
     value: 'zhejiang',
-    label: 'Zhejiang',
+    label: 'Zhejiang Zhejiang Zhejiang Zhejiang',
     children: [
       {
         value: 'hangzhou',
@@ -53,7 +53,7 @@ function onChange(value) {
 }
 
 ReactDOM.render(
-  <Cascader className="dt-ant-select-outside" options={options} onChange={onChange} placeholder="Please select" />,
+  <Cascader autoFocus className="dt-ant-select-outside" options={options} onChange={onChange} placeholder="Please select" />,
   mountNode,
 );
 ```

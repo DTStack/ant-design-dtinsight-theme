@@ -71,3 +71,16 @@
         }
     }
 }
+
+// 级联选择固定宽度
+.ant-cascader-dropdown {
+    padding: 0 !important;
+    .ant-cascader-menu {
+        width: 212px;
+        padding: 8px 0;
+        .ant-cascader-menu-item-content {
+            overflow: hidden; // 超出的文本隐藏
+            text-overflow: ellipsis; // 溢出用省略号显示
+        }
+    }
+}

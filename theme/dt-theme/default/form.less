@@ -2,9 +2,6 @@
 
 .ant-form-item {
     margin-bottom: 16px;
-    .ant-radio {
-        top: 0.3em;
-    }
     .ant-form-item-explain {
         .ant-form-item-explain-error {
             height: auto;
@@ -17,14 +14,17 @@
 .ant-form-item-label > label {
     font-weight: 500;
     line-height: 20px;
-    &::after {
-        margin: 0 12px 0 2px;
-    }
 }
 
 .ant-form-vertical .ant-form-item-label {
     padding: 0 0 4px;
     margin-bottom: 0;
+}
+
+.ant-form-vertical {
+    .ant-table-cell > .ant-form-item > .ant-form-item-row {
+        flex-direction: row;
+    }
 }
 
 .ant-radio-wrapper-checked .ant-radio-disabled .ant-radio-inner {
@@ -68,14 +68,6 @@ li.ant-picker-panel-select-option-selected:hover {
 
 .ant-radio-button-wrapper {
     padding: 0 16px;
-}
-
-.ant-form-item-control {
-    .ant-radio-wrapper {
-        span.ant-radio + * {
-            margin-top: 0.2em;
-        }
-    }
 }
 
 // 灰色背景 表单样式设置 对应表单控件添加样式名dt-form-shadow-bg
@@ -163,15 +155,6 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-select-dropdown,
 .ant-picker-panel-inner {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-}
-
-// checkbox
-.ant-checkbox-group {
-    line-height: calc(@lineHeight / @font12);
-}
-
-.ant-checkbox {
-    top: 0.25em;
 }
 
 .ant-picker-content {

@@ -20,7 +20,7 @@ import { Table } from 'antd';
 
 const columns = [
   {
-    title: 'Name',
+    title: '姓名',
     dataIndex: 'name',
     filters: [
       {
