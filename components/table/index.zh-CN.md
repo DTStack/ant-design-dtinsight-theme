@@ -27,3 +27,4 @@ subtitle: 表格
 |.dt-table-scrollbar  | 一般用于 windows 中，设置表格中滚动条的样式  | 固定高度表（footer 中带分页）   |
 |.dt-resizable-table  | 设置可伸缩列表格中的表头有分割线 | 无边框型 |
 |.dt-table-empty-top-20-percent  | 无数据时，缺省图标距顶部 20%。 | 大部分场景适用，不适用时使用默认的 margin 间距即可 |
+|.dt-table-cell-right  | 为 columns 添加该 className，与 align 属性配合使用，即可实现数据列表头和内容均居右显示 | 数据列居右 |

@@ -8,22 +8,7 @@ title:
 
 数字列内容和表头居右显示
 
-- 为 Table 添加子产品自定义的类名，在类名下按如下示例写样式，`nth-child`的值为第几列，从1开始  
-
-`
-.my-custom-table-class-name {
-    // 数字列表头居右显示
-    .ant-table-thead {
-        .ant-table-cell {
-            &:nth-child(4), &:nth-child(5) {
-                .ant-table-column-sorters .ant-table-column-title, .ant-table-filter-column .ant-table-column-title {
-                    flex: 1;
-                }
-            }
-        }
-    }
-}
-`
+- 为 columns 添加 className `dt-table-cell-right`，与 align 属性配合使用，即可实现数据列表头和内容均居右显示
 
 
 ```jsx
@@ -60,6 +45,7 @@ const columns = [
     dataIndex: 'age',
     key: 'age',
     align: 'right',
+    className: 'dt-table-cell-right',
     filters: [
       {
         text: 20,
@@ -76,6 +62,7 @@ const columns = [
     dataIndex: 'height',
     key: 'height',
     align: 'right',
+    className: 'dt-table-cell-right',
     sorter: (a, b) => a.age - b.age,
   },
   {
