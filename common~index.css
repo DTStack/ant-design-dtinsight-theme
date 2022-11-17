@@ -26452,36 +26452,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-alert-content .ant-alert-message .operate-btn {
   float: right;
 }
-.ant-btn {
-  padding: 0 16px;
-  box-shadow: unset;
-}
-.ant-btn.ant-btn-icon-only {
-  padding: 0;
-}
-.ant-btn-primary {
-  text-shadow: unset;
-}
-.ant-btn-danger {
-  color: #FFFFFF;
-  border-color: #E25F5D;
-  background-color: #E25F5D;
-}
-.ant-btn-danger:hover,
-.ant-btn-danger:focus {
-  color: #FFFFFF;
-  background-color: #F08E89;
-  border-color: #F08E89;
-}
-.ant-btn-danger:active,
-.ant-btn-danger.active {
-  color: #FFFFFF;
-  border-color: #E25F5D;
-  background-color: #E25F5D;
-}
-.ant-btn-lg {
-  height: 36px;
-}
 .dt-tab-card .ant-tabs-nav .ant-tabs-tab {
   margin: 0;
   padding: 7px 20px;
@@ -26535,7 +26505,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
   box-sizing: border-box;
 }
 .ant-table-tbody > tr > td {
-  height: 44px;
+  min-height: 44px;
   box-sizing: border-box;
   padding: 6px 16px 5px;
 }
@@ -26893,7 +26863,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination {
   position: absolute;
-  right: 20px;
+  right: 16px;
 }
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination .pagination_total,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-footer .ant-pagination .pagination_total {
@@ -27549,7 +27519,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
   right: 36px;
   top: 21px;
   line-height: 17px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   -webkit-user-select: none;
      -moz-user-select: none;
