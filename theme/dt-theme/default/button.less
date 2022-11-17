@@ -2,9 +2,12 @@
 
 .ant-btn {
     line-height: 100%;
+    padding: 0 16px;
+    box-shadow: unset;
 }
 
 .ant-btn.ant-btn-primary {
+    text-shadow: unset;
     &:hover, &:focus {
         background-color: @hoverColor;
         border-color: @hoverColor;
@@ -146,45 +149,6 @@
     color: @black_msg;
     background-color: @black_readonly !important;
     border-color: @black_readonly;
-}
-
-.ant-btn-danger, .ant-btn-danger.ant-btn:focus {
-    background-color: @red !important;
-    border-color: @red;
-    color: @white;
-}
-
-.ant-btn-danger.ant-btn:hover {
-    color: @white;
-    background-color: #ED5340 !important;
-    border-color: #ED5340;
-}
-
-.ant-btn-danger.ant-btn:active,
-.ant-btn-danger.ant-btn.active {
-    color: @white;
-    background-color: @red !important;
-    border-color: @red;
-}
-
-.ant-btn-danger-disabled,
-.ant-btn-danger.disabled,
-.ant-btn-danger[disabled],
-.ant-btn-danger-disabled:hover,
-.ant-btn-danger.disabled:hover,
-.ant-btn-danger[disabled]:hover,
-.ant-btn-danger-disabled:focus,
-.ant-btn-danger.disabled:focus,
-.ant-btn-danger[disabled]:focus,
-.ant-btn-danger-disabled:active,
-.ant-btn-danger.disabled:active,
-.ant-btn-danger[disabled]:active,
-.ant-btn-danger-disabled.active,
-.ant-btn-danger.disabled.active,
-.ant-btn-danger[disabled].active {
-    background-color: @black_readonly !important;
-    border-color: @black_readonly;
-    color: @black_msg;
 }
 
 .dt-btn-highlight {
