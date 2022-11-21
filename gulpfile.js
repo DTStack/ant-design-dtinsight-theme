@@ -35,9 +35,7 @@ const generateIconNameList = function (callback) {
     const data = fs.readdirSync(config.toDir);
     const svgs = data.map((s) => `'${s.split('.js')[0]}'`);
     const listString = svgs.join(', ');
-    const template = `const list = [${listString}]
-
-module.exports = { list }`;
+    const template = `const list = [${listString}];\n\nmodule.exports = { list };\n`;
 
     fs.writeFileSync(path.resolve(config.toDir, 'list.js'), template);
     callback();
