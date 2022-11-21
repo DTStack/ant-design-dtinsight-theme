@@ -61,6 +61,7 @@
     .ant-table-wrapper {
         background: none;
         border-bottom: 0;
+        border-left: 1px solid @grey_border;
         .ant-table {
             margin: 0;
         }
@@ -77,7 +78,7 @@
     background: @white;
     &::before {
         height: 1px;
-        background: #E8E8E8;
+        background: @grey_border;
     }
 }
 
@@ -116,13 +117,6 @@
                                 color: #BFBFBF;
                             }
                         }
-                    }
-                }
-                .ant-table-footer {
-                    background: @white;
-                    &::before {
-                        height: 1px;
-                        background: #E8E8E8;
                     }
                 }
             }

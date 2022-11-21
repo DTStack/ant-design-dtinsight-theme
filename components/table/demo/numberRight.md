@@ -141,7 +141,6 @@ tableFooter =  () => (
 ReactDOM.render(
   <div>
     <Table
-      bordered
       rowSelection={rowSelection}
       columns={columns}
       dataSource={data}
