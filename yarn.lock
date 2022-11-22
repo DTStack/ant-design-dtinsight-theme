@@ -1305,11 +1305,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@rgrove/parse-xml@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.npmmirror.com/@rgrove/parse-xml/-/parse-xml-2.0.2.tgz#163387d0a092f8be41cb0ea9ce992910870cffd9"
-  integrity sha512-lm+PREEkFLWTSO599BrVjhUIXavhPISQGpwssquFviT2qz8eWuIz0+vDDuRqOo5sPdk5NFhqFbG9wURGHm24aQ==
-
 "@stylelint/postcss-css-in-js@^0.37.2":
   version "0.37.2"
   resolved "https://registry.npmmirror.com/@stylelint/postcss-css-in-js/-/postcss-css-in-js-0.37.2.tgz#7e5a84ad181f4234a2480803422a47b8749af3d2"
