@@ -8,6 +8,7 @@
     "scripts": {
         "dev": "cross-env NODE_ENV=development bisheng start",
         "build": "rm -rf dist && bisheng build",
+        "generate": "node custom-icons/generate/index.js",
         "clean": "rimraf dist/*",
         "changelog": "./scripts/changelog.sh",
         "release": "./scripts/release.sh",

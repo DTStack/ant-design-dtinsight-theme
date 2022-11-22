@@ -1,0 +1,61 @@
+/**
+ * 将 custom-icons/iconfont-svgs 下 svg 文件的 path 拿到，写入 less 文件下
+ */
+const fs = require('fs');
+const path = require('path');
+const fileNameToClassName = require('./fileNameToClassName');
+
+const config = {
+    fromDir: path.resolve('custom-icons/iconfont-svgs'),
+    toDir: path.resolve('theme/dt-theme/default'),
+    generateFileName: 'custom-icons.less',
+};
+
+const getCssContent = (className, pathContent) => {
+    // 部分特殊的 icon 需要单独处理
+    if (className === 'anticon-plus') {
+        return `    .anticon-plus svg {
+        defs {
+            display: none;
+        }
+        path {
+            d: path("${pathContent}");
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+`;
+    }
+    return `    .${className} svg path {
+        &:first-child {
+            d: path("${pathContent}")${className.includes('dt-') ? ' !important' : ''};
+        }
+        &:not(:first-child) {
+            d: path("")${className.includes('dt-') ? ' !important' : ''};
+        }
+    }
+`;
+};
+
+fs.readdir(config.fromDir, (error, files) => {
+	if (error) {
+		console.log('fs.readdir error: ', error);
+	} else {
+        let cssContent = '';
+        files.forEach((file)=>{
+            const content = fs.readFileSync(`${config.fromDir}/${file}`, 'utf-8');
+            const pathContent = content?.split(' d="')?.[1]?.split('" />')?.[0];
+            const fileName = file.replace('.svg', '');
+            cssContent += getCssContent(fileNameToClassName[fileName] || fileName, pathContent);
+        });
+
+        fs.writeFile(`${config.toDir}/${config.generateFileName}`, `.root {\n${cssContent}}\n`, 'utf-8', (err) => {
+            if (err) {
+                console.log('fs.writeFile error: ', err);
+            } else {
+                console.log('custom icons generate success!');
+            }
+        });
+	}
+});

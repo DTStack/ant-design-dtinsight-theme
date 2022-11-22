@@ -2,5 +2,5 @@ dist/
 node_modules/
 
 *.md
-custom-icon/
+custom-icons/
 **/iconfont*/*
