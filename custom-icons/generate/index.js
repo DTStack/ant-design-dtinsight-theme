@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const fileNameToClassName = require('./fileNameToClassName');
+const getNotificationAndModalCssContent = require('./notification-modal');
 
 const config = {
     fromDir: path.resolve('custom-icons/iconfont-svgs'),
@@ -11,7 +12,7 @@ const config = {
     generateFileName: 'custom-icons.less',
 };
 
-const getCssContent = (className, pathContent) => {
+const getIconCssContent = (className, pathContent) => {
     // 部分特殊的 icon 需要单独处理
     if (className === 'anticon-plus') {
         return `    .anticon-plus svg {
@@ -39,18 +40,23 @@ const getCssContent = (className, pathContent) => {
 };
 
 fs.readdir(config.fromDir, (error, files) => {
-	if (error) {
-		console.log('fs.readdir error: ', error);
+    if (error) {
+        console.log('fs.readdir error: ', error);
 	} else {
-        let cssContent = '';
+        let iconCssContent = '';
+        const pathContentMap = {};
         files.forEach((file)=>{
             const content = fs.readFileSync(`${config.fromDir}/${file}`, 'utf-8');
             const pathContent = content?.split(' d="')?.[1]?.split('" />')?.[0];
             const fileName = file.replace('.svg', '');
-            cssContent += getCssContent(fileNameToClassName[fileName] || fileName, pathContent);
+            pathContentMap[fileName] = pathContent;
+            iconCssContent += getIconCssContent(fileNameToClassName[fileName] || fileName, pathContent);
         });
 
-        fs.writeFile(`${config.toDir}/${config.generateFileName}`, `.root {\n${cssContent}}\n`, 'utf-8', (err) => {
+        const notificationAndModalCssContent = getNotificationAndModalCssContent(pathContentMap);
+        const cssContent = `.root {\n${iconCssContent}}\n${notificationAndModalCssContent}`;
+
+        fs.writeFile(`${config.toDir}/${config.generateFileName}`, cssContent, 'utf-8', (err) => {
             if (err) {
                 console.log('fs.writeFile error: ', err);
             } else {
