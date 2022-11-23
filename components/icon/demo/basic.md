@@ -158,33 +158,12 @@ const getCustomIconItem = (name) => {
   )
 }
 
-const getIconItem = (name) => {
-  return (
-    <div className="icon-item" key={name}>
-      <div className="icon-name">
-        {
-          React.createElement(Icon[name])
-        }
-        <p>{name}</p>
-      </div>
-    </div>
-  )
-}
-
 ReactDOM.render(
   <div className="icon-demo-content">
     <h3>替换后的图标</h3>
-    <div className="icon-box root">
-      {
-        Object.keys(fileNameToClassName).map(item => getCustomIconItem(item))
-      }
-    </div>
-
-    <br /><br />
-    <h3>antd 的图标</h3>
     <div className="icon-box">
       {
-        Object.keys(fileNameToClassName).map(item => getIconItem(item))
+        Object.keys(fileNameToClassName).map(item => getCustomIconItem(item))
       }
     </div>
   </div>,

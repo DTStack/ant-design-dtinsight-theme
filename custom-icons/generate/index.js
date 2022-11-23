@@ -15,27 +15,27 @@ const config = {
 const getIconCssContent = (className, pathContent) => {
     // 部分特殊的 icon 需要单独处理
     if (className === 'anticon-plus') {
-        return `    .anticon-plus svg {
-        defs {
+        return `.anticon-plus svg {
+    defs {
+        display: none;
+    }
+    path {
+        d: path("${pathContent}");
+        &:nth-child(3) {
             display: none;
         }
-        path {
-            d: path("${pathContent}");
-            &:nth-child(3) {
-                display: none;
-            }
-        }
     }
+}\n
 `;
     }
-    return `    .${className} svg path {
-        &:first-child {
-            d: path("${pathContent}")${className.includes('dt-') ? ' !important' : ''};
-        }
-        &:not(:first-child) {
-            d: path("")${className.includes('dt-') ? ' !important' : ''};
-        }
+    return `.${className} svg path {
+    &:first-child {
+        d: path("${pathContent}")${className.includes('dt-') ? ' !important' : ''};
     }
+    &:not(:first-child) {
+        d: path("")${className.includes('dt-') ? ' !important' : ''};
+    }
+}\n
 `;
 };
 
@@ -54,7 +54,7 @@ fs.readdir(config.fromDir, (error, files) => {
         });
 
         const notificationAndModalCssContent = getNotificationAndModalCssContent(pathContentMap);
-        const cssContent = `.root {\n${iconCssContent}}\n${notificationAndModalCssContent}`;
+        const cssContent = `${iconCssContent}${notificationAndModalCssContent}`;
 
         fs.writeFile(`${config.toDir}/${config.generateFileName}`, cssContent, 'utf-8', (err) => {
             if (err) {

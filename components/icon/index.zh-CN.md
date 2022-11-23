@@ -10,7 +10,7 @@ subtitle: 图标
 
 ## 设计规范
 
-- 数栈的图标有一定圆角，比如观察对比替换图标前后的 `CloseCircleFilled` 和 `StarOutlined`。
+- 数栈的图标有一定圆角，比如观察 antd 对比替换图标的 `CloseCircleFilled` 和 `StarOutlined`。
 
 ## 何时使用
 

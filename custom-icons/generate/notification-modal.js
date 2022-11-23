@@ -4,7 +4,7 @@
 const fileNameToClassName = {
     CheckCircleFilled: 'anticon-check-circle',
     ExclamationCircleFilled: ['anticon-info-circle', 'anticon-exclamation-circle'],
-    CloseCircleFilled: 'anticon-close-circle',
+    // CloseCircleFilled: 'anticon-close-circle', // 常规样式中已有了该类名
 };
 
 const getName = (value) => {
@@ -31,8 +31,7 @@ module.exports = (pathContentMap) => {
     }`;
     });
 
-    return `
-.ant-notification, .ant-modal-root {${cssContent}
+    return `.ant-notification, .ant-modal-root {${cssContent}
 }
 `;
 };
