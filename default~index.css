@@ -27458,9 +27458,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .m-slide-pane .m-card .ant-card .ant-card-body {
   border-bottom: 0;
 }
-.ant-descriptions .ant-descriptions-item-content:last-child {
-  border-right: none;
-}
 .ant-input {
   border-radius: 4px;
 }
@@ -27475,16 +27472,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 }
 .dt-ant-select-dropdown-default.ant-select-dropdown {
   box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
-}
-.ant-card-head {
-  padding: 0 20px;
-}
-.ant-card-body {
-  padding: 20px;
-}
-.dt-card-shadow-bg {
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
-  border: unset;
 }
 .ant-notification {
   width: 360px;
@@ -27783,6 +27770,21 @@ li {
 .ant-btn.ant-btn-default.dt-btn-highlight:not([disabled]):hover {
   color: #1D78FF;
   border-color: #1D78FF;
+}
+.ant-card {
+  box-shadow: 0 2px 30px 0 #EAECF4;
+  border: 1px solid #EAF0FC;
+}
+.ant-card .ant-card-head {
+  padding: 16px;
+  border-bottom: 1px solid #EBECF0;
+}
+.ant-card .ant-card-body {
+  padding: 16px;
+}
+.dt-card-shadow-bg {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
+  border: unset;
 }
 .ant-tabs-large > .ant-tabs-nav .ant-tabs-tab {
   padding: 16px;
@@ -28141,6 +28143,11 @@ li {
 .ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-content {
   padding: 8px 12px;
 }
+.ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-content > span {
+  max-height: 119px;
+  overflow-y: auto;
+  display: block;
+}
 .ant-descriptions-bordered .ant-descriptions-view .ant-descriptions-item-label {
   padding: 8px 12px;
   border-right: 1px solid #EBECF0;
@@ -28154,10 +28161,10 @@ li {
   width: 18%;
 }
 .dt-descriptions-vertical-display .ant-descriptions-item {
-  height: 20px;
   box-sizing: border-box;
   display: block;
   margin-bottom: 8px;
+  padding: 0;
 }
 .dt-descriptions-vertical-display .ant-descriptions-item-content {
   padding: 0;

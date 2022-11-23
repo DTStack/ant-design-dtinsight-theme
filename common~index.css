@@ -27459,9 +27459,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .m-slide-pane .m-card .ant-card .ant-card-body {
   border-bottom: 0;
 }
-.ant-descriptions .ant-descriptions-item-content:last-child {
-  border-right: none;
-}
 .ant-input {
   border-radius: 4px;
 }
@@ -27476,16 +27473,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 }
 .dt-ant-select-dropdown-default.ant-select-dropdown {
   box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
-}
-.ant-card-head {
-  padding: 0 20px;
-}
-.ant-card-body {
-  padding: 20px;
-}
-.dt-card-shadow-bg {
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
-  border: unset;
 }
 .ant-notification {
   width: 360px;
