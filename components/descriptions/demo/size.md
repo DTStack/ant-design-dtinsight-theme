@@ -63,7 +63,20 @@ class Demo extends React.Component {
             <br />
             Replication factor: 3
             <br />
-            Region: East China 1<br />
+            Region: East China 1
+            <br />
+            Storage space: 101 GB
+            <br />
+            Replication factor: 31
+            <br />
+            Region: East China 11
+            <br />
+            Storage space: 13 GB
+            <br />
+            Replication factor: 3
+            <br />
+            Region: East China 21
+            <br />
           </Descriptions.Item>
         </Descriptions>
         <br />
