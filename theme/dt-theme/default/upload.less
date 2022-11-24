@@ -1,7 +1,7 @@
 @import "../const.less";
 
 .ant-upload {
-    .ant-btn {
+    .ant-btn:not([disabled]) {
         border-color: @primaryColor;
         color: @primaryColor;
         &:hover {
@@ -9,7 +9,7 @@
             color: @hoverColor;
         }
     }
-    .ant-btn-primary {
+    .ant-btn-primary:not([disabled]) {
         color: @white;
         &:hover {
             color: @white;
