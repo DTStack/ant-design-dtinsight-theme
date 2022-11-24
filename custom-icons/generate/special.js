@@ -1,9 +1,10 @@
 /**
- * notification 和 modal 的 Dom 与 className="root" 同级，所以单独处理
+ * Notification, Modal, Popover, Popconfirm 的 Dom 与 className="root" 同级，所以单独处理
  */
 const fileNameToClassName = {
     CheckCircleFilled: 'anticon-check-circle',
-    ExclamationCircleFilled: ['anticon-info-circle', 'anticon-exclamation-circle'],
+    ExclamationCircleFilled: ['anticon-info-circle'],
+    WarningFilled: 'anticon-exclamation-circle',
     // CloseCircleFilled: 'anticon-close-circle', // 常规样式中已有了该类名
 };
 
@@ -31,7 +32,7 @@ module.exports = (pathContentMap) => {
     }`;
     });
 
-    return `.ant-notification, .ant-modal-root {${cssContent}
+    return `.ant-notification, .ant-modal-root, .ant-popover {${cssContent}
 }
 `;
 };
