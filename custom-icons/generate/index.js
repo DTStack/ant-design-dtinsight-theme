@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const fileNameToClassName = require('./fileNameToClassName');
-const getNotificationAndModalCssContent = require('./notification-modal');
+const getSpecialCssContent = require('./special');
 
 const config = {
     fromDir: path.resolve('custom-icons/iconfont-svgs'),
@@ -53,8 +53,8 @@ fs.readdir(config.fromDir, (error, files) => {
             iconCssContent += getIconCssContent(fileNameToClassName[fileName] || fileName, pathContent);
         });
 
-        const notificationAndModalCssContent = getNotificationAndModalCssContent(pathContentMap);
-        const cssContent = `${iconCssContent}${notificationAndModalCssContent}`;
+        const specialCssContent = getSpecialCssContent(pathContentMap);
+        const cssContent = `// 此文件由 yarn generate 命令生成，请勿直接修改\n${iconCssContent}${specialCssContent}`;
 
         fs.writeFile(`${config.toDir}/${config.generateFileName}`, cssContent, 'utf-8', (err) => {
             if (err) {
