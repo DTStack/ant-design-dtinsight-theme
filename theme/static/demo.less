@@ -75,6 +75,35 @@
         padding: 42px 24px 50px;
         color: rgba(0, 0, 0, 0.65);
         border-bottom: 1px solid @site-border-color-split;
+        .icon-demo-content {
+            .anticon {
+                font-size: 26px;
+            }
+            .icon-box {
+                display: flex;
+                flex-wrap: wrap;
+                .icon-item {
+                    padding: 20px 0;
+                    border-radius: 4px;
+                    &:hover {
+                        background-color: #EEE;
+                    }
+                    .icon-name {
+                        width: 180px;
+                        text-align: center;
+                        cursor: pointer;
+                        p {
+                            font-size: 14px;
+                            padding: 10px 0 0;
+                            user-select: none;
+                        }
+                    }
+                    .anticon {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
     }
     iframe {
         width: 100%;
