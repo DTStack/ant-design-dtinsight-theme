@@ -28514,7 +28514,6 @@ li {
 .dt-descriptions-vertical-display .ant-descriptions-item-label {
   padding: 0;
   display: block;
-  color: #8B8FA8;
 }
 .ant-descriptions-item-container .ant-descriptions-item-label,
 .ant-descriptions-item-container .ant-descriptions-item-content {
@@ -28523,6 +28522,8 @@ li {
 .dt-descriptions-custom-display .ant-descriptions-item-label {
   padding: 0;
   display: block;
+}
+.ant-descriptions-item-label {
   color: #8B8FA8;
 }
 .ant-drawer-content-wrapper {
@@ -29900,10 +29901,10 @@ ul.ant-pagination {
 .ant-table-container table > thead > tr:first-child th:last-child {
   border-top-right-radius: 0;
 }
-.dt-resizable-table .ant-table-container table > thead > tr:first-child th {
+.dt-resizable-table .ant-table-container table > thead > tr:first-child th:not(.ant-table-selection-column) {
   border-right: solid 1px #EBECF0;
 }
-.dt-resizable-table .ant-table-container table > thead > tr:first-child th:last-child {
+.dt-resizable-table .ant-table-container table > thead > tr:first-child th:not(.ant-table-selection-column):last-child {
   border-right: none;
 }
 .dt-table-empty-top-20-percent .ant-table-measure-row {
@@ -30080,11 +30081,16 @@ ul.ant-pagination {
   background-color: #D8DAE2;
   border-color: #D8DAE2;
 }
+.ant-transfer .ant-transfer-list {
+  border: 1px solid #EBECF0;
+  border-radius: 0;
+}
 .ant-transfer .ant-transfer-list-header {
   padding: 0 16px;
   background: #F9F9FA;
   height: 32px;
   line-height: 32px;
+  border-bottom: 0;
 }
 .ant-transfer .ant-transfer-list-header .ant-checkbox-wrapper {
   line-height: 32px;
@@ -30094,14 +30100,17 @@ ul.ant-pagination {
 }
 .ant-transfer .ant-transfer-list-body .ant-transfer-list-body-search-wrapper .ant-input-affix-wrapper {
   padding: 5px 11px;
-  line-height: calc(20 / 12);
+  line-height: unset;
+}
+.ant-transfer .ant-transfer-list-body .ant-transfer-list-content .ant-transfer-list-content-item-checked {
+  background-color: transparent;
+}
+.ant-transfer .ant-transfer-list-body .ant-transfer-list-content .ant-transfer-list-content-item-checked:hover:not(.ant-transfer-list-content-item-disabled) {
+  background-color: #F5F5F8;
 }
 .ant-transfer .ant-transfer-list-body .ant-transfer-list-content .ant-transfer-list-content-item {
   height: 32px;
   padding: 0 16px;
-}
-.ant-transfer .ant-transfer-list-body .ant-transfer-list-content .ant-checkbox-wrapper {
-  line-height: calc(20 / 12);
 }
 .ant-transfer .ant-transfer-operation {
   margin: 0 16px;
@@ -30138,6 +30147,9 @@ ul.ant-pagination {
 .dt-transfer-without-header-count .ant-transfer-list-header .ant-transfer-list-header-title {
   margin-left: 4px;
   text-align: left;
+}
+.ant-transfer-list-content-item-disabled {
+  color: #3D446E;
 }
 .ant-tree-show-line .ant-tree-indent-unit::before {
   border-right: 1px dashed #D8DAE2;
@@ -30185,18 +30197,18 @@ ul.ant-pagination {
 .ant-tree-select-dropdown .ant-select-tree-list .ant-select-tree-treenode .ant-select-tree-checkbox {
   margin: 8px 8px 0 0;
 }
-.ant-upload .ant-btn {
+.ant-upload .ant-btn:not([disabled]) {
   border-color: #1D78FF;
   color: #1D78FF;
 }
-.ant-upload .ant-btn:hover {
+.ant-upload .ant-btn:not([disabled]):hover {
   border-color: #0A67F2;
   color: #0A67F2;
 }
-.ant-upload .ant-btn-primary {
+.ant-upload .ant-btn-primary:not([disabled]) {
   color: #FFFFFF;
 }
-.ant-upload .ant-btn-primary:hover {
+.ant-upload .ant-btn-primary:not([disabled]):hover {
   color: #FFFFFF;
 }
 .ant-upload.ant-upload-select.ant-upload-select-picture-card {
