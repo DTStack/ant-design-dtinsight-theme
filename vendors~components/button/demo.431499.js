@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[87],{1353:function(n,o,s){n.exports={basic:s(1501),danger:s(1502),disabled:s(1503),ghost:s(1504),icon:s(1505),size:s(1506)}}}]);

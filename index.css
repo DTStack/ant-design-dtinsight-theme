@@ -1894,6 +1894,36 @@ pre[class*="language-"] {
   color: rgba(0, 0, 0, 0.65);
   border-bottom: 1px solid #ebedf0;
 }
+.code-box-demo .icon-demo-content .anticon {
+  font-size: 26px;
+}
+.code-box-demo .icon-demo-content .icon-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.code-box-demo .icon-demo-content .icon-box .icon-item {
+  padding: 20px 0;
+  border-radius: 4px;
+}
+.code-box-demo .icon-demo-content .icon-box .icon-item:hover {
+  background-color: #EEE;
+}
+.code-box-demo .icon-demo-content .icon-box .icon-item .icon-name {
+  width: 180px;
+  text-align: center;
+  cursor: pointer;
+}
+.code-box-demo .icon-demo-content .icon-box .icon-item .icon-name p {
+  font-size: 14px;
+  padding: 10px 0 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.code-box-demo .icon-demo-content .icon-box .icon-item .anticon {
+  font-size: 26px;
+}
 .code-box iframe {
   width: 100%;
   border: 0;
