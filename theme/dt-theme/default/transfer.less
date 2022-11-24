@@ -1,11 +1,16 @@
 @import "../const.less";
 
 .ant-transfer {
+    .ant-transfer-list {
+        border: 1px solid @grey_border;
+        border-radius: 0;
+    }
     .ant-transfer-list-header {
         padding: 0 16px;
         background: #F9F9FA;
         height: 32px;
         line-height: 32px;
+        border-bottom: 0;
         .ant-checkbox-wrapper {
             line-height: 32px;
         }
@@ -15,16 +20,19 @@
             padding: 8px 16px;
             .ant-input-affix-wrapper {
                 padding: 5px 11px;
-                line-height: calc(20 / 12);
+                line-height: unset;
             }
         }
         .ant-transfer-list-content {
+            .ant-transfer-list-content-item-checked {
+                background-color: transparent;
+                &:hover:not(.ant-transfer-list-content-item-disabled) {
+                    background-color: @black_titleBg;
+                }
+            }
             .ant-transfer-list-content-item {
                 height: 32px;
                 padding: 0 16px;
-            }
-            .ant-checkbox-wrapper {
-                line-height: calc(20 / 12);
             }
         }
     }
@@ -71,4 +79,8 @@
             text-align: left;
         }
     }
+}
+
+.ant-transfer-list-content-item-disabled {
+    color: @black_title;
 }

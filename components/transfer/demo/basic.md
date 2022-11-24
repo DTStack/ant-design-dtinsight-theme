@@ -18,12 +18,13 @@ const mockData = Array.from({
     key: i.toString(),
     title: `content${i + 1}`,
     description: `description of content${i + 1}`,
+    disabled: i % 3 < 1,
 }));
 const initialTargetKeys = mockData.filter((item) => Number(item.key) > 10).map((item) => item.key);
 
 const App = () => {
     const [targetKeys, setTargetKeys] = useState(initialTargetKeys);
-    const [selectedKeys, setSelectedKeys] = useState([]);
+    const [selectedKeys, setSelectedKeys] = useState(['0']);
 
     const onChange = (nextTargetKeys, direction, moveKeys) => {
         console.log('targetKeys:', nextTargetKeys);
