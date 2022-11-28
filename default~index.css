@@ -27458,21 +27458,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .m-slide-pane .m-card .ant-card .ant-card-body {
   border-bottom: 0;
 }
-.ant-input {
-  border-radius: 4px;
-}
-.ant-input-lg {
-  font-size: 12px;
-}
-.ant-picker-input {
-  border-radius: 2px;
-}
-.ant-select-selection {
-  border-radius: 2px;
-}
-.dt-ant-select-dropdown-default.ant-select-dropdown {
-  box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
-}
 .ant-notification {
   width: 360px;
 }
@@ -27778,6 +27763,10 @@ li {
 .ant-card .ant-card-head {
   padding: 16px;
   border-bottom: 1px solid #EBECF0;
+}
+.ant-card .ant-card-head .ant-card-head-wrapper .ant-card-head-title,
+.ant-card .ant-card-head .ant-card-head-wrapper .ant-card-extra {
+  padding: 0;
 }
 .ant-card .ant-card-body {
   padding: 16px;
@@ -29004,7 +28993,7 @@ li.ant-picker-panel-select-option-selected:hover {
   width: 400px !important;
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body {
-  padding: 32px 24px 0 32px;
+  padding: 24px 24px 0;
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-title {
   color: #3D446E;
@@ -29287,6 +29276,9 @@ ul.ant-pagination {
 .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
   border-color: #EBECF0;
   background-color: #EBECF0;
+}
+.dt-ant-select-dropdown-default.ant-select-dropdown {
+  box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
 }
 .ant-select-dropdown {
   padding: 8px 0;
@@ -30189,6 +30181,9 @@ ul.ant-pagination {
   display: flex;
   align-items: center;
   overflow: hidden;
+}
+.ant-tree-select-dropdown .ant-select-tree .ant-select-tree-treenode {
+  padding: 0;
 }
 .ant-tree-select-dropdown .ant-select-tree .ant-select-tree-list-holder .ant-select-tree-node-content-wrapper {
   min-height: 32px;

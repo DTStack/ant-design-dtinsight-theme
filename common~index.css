@@ -27459,21 +27459,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .m-slide-pane .m-card .ant-card .ant-card-body {
   border-bottom: 0;
 }
-.ant-input {
-  border-radius: 4px;
-}
-.ant-input-lg {
-  font-size: 12px;
-}
-.ant-picker-input {
-  border-radius: 2px;
-}
-.ant-select-selection {
-  border-radius: 2px;
-}
-.dt-ant-select-dropdown-default.ant-select-dropdown {
-  box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
-}
 .ant-notification {
   width: 360px;
 }
