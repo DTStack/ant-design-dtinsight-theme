@@ -226,7 +226,6 @@ const App: React.FC = () => {
       </Button>
       <Table
         components={components}
-        bordered
         dataSource={dataSource}
         columns={columns as ColumnTypes}
       />
