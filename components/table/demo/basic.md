@@ -10,6 +10,9 @@ title:
 
 - 添加类名 `dt-table-last-row-noborder` 为表格设置最后一行去掉下边框，一般在表格存在外边框时使用
 
+- 添加类名 `dt-table-top-border` 为表格设置上边框
+
+
 ```jsx
 import { Table, Switch, Divider } from 'antd';
 
@@ -93,7 +96,7 @@ class App extends React.Component {
           columns={columns}
           dataSource={data}
           pagination={isShowPage ? pagination : false}
-          className="dt-table-last-row-noborder"
+          className="dt-table-last-row-noborder dt-table-top-border"
         />
       </div>
     )
