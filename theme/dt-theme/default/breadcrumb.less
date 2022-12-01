@@ -6,14 +6,22 @@
     font-size: 12px;
     line-height: 20px;
     a {
+        height: 20px;
+        line-height: 20px;
         color: @black_pageMsg;
         &:hover {
             color: @primaryColor;
+        }
+        &:active {
+            color: @clickColor;
         }
     }
 }
 
 .ant-breadcrumb-separator {
     color: @black_msg;
-    margin: 0 4px;
+    margin: 0 3px;
+    .anticon {
+        font-size: 11px;
+    }
 }
