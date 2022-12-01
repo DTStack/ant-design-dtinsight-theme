@@ -17,4 +17,12 @@ cover: https://gw.alipayobjects.com/zos/antfincdn/NqXt8DJhky/Card.svg
 
 卡片式列表的标题字体16px #3D446E 居左 Medium，副标题文本字体12px #8B8FA8 居左 Regular ;
 
-卡片背景填充#FFFFFF，边1px#EAF0FC，投影 0px 2px 30px 0px #EAECF4;圆角: 4px;
+卡片背景填充#FFFFFF，边1px#EBECF0，圆角: 4px;
+
+典型卡片边1px#EAF0FC，投影 0px 2px 30px 0px #EAECF4;
+
+## API
+
+|类名  |说明  |使用示例  |
+|---------|---------|---------|
+|.dt-card-shadow   | 设置典型卡片的边框和投影 | 典型卡片 |

@@ -106,6 +106,7 @@
     border-bottom-color: @grey_border;
 }
 
+/* ————Custom ClassName———— */
 // 侧边菜单样式
 .ant-tabs-left,
 .ant-tabs-right {
@@ -214,5 +215,13 @@
                 padding: 16px;
             }
         }
+    }
+}
+
+.dt-tabs-nav-padding-16 {
+    padding: 0 16px;
+    .ant-tabs-nav::before {
+        left: -16px;
+        right: -16px;
     }
 }
