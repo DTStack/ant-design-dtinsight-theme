@@ -9,33 +9,18 @@ title:
 
 包含标题、内容、操作区域。
 
-## en-US
-
-A basic card containing a title, content and an extra corner content. Supports two sizes: `default` and `small`.
+- 为组件添加类名`dt-card-shadow`增加典型卡片样式边1px#EAF0FC，投影 0px 2px 30px 0px #EAECF4;
 
 ```jsx
 import { Card } from 'antd';
 
 ReactDOM.render(
-  <>
-    <Card title="Default size card" extra={<a href="#">More</a>} style={{ width: 300 }}>
+    <Card title="Default size card" extra={<a href="#">More</a>} style={{ width: 300 }} className="dt-card-shadow" >
       <p>Card content</p>
       <p>Card content</p>
       <p>Card content</p>
-    </Card>
-    <Card size="small" title="Small size card" extra={<a href="#">More</a>} style={{ width: 300 }}>
-      <p>Card content</p>
-      <p>Card content</p>
-      <p>Card content</p>
-    </Card>
-  </>,
+    </Card>,
   mountNode,
 );
 ```
 
-<style>
-.code-box-demo p {
-  margin: 0;
-}
-#components-card-demo-basic .ant-card { margin-bottom: 30px; }
-</style>
