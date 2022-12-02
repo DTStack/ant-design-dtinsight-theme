@@ -6,6 +6,7 @@ module.exports = {
     CalendarOutlined: 'anticon-calendar',
     CaretDownFilled: 'anticon-caret-down',
     CaretRightFilled: 'anticon-caret-right',
+    CollapseCaretRightFilled: 'ant-collapse-arrow',
     CaretUpFilled: 'anticon-caret-up',
     CheckCircleFilled: 'dt-anticon-check-circle-fill',
     // CheckCircleFilled: 'anticon-check-circle',

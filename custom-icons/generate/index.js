@@ -26,13 +26,14 @@ const getIconCssContent = (className, pathContent) => {
     }
 }\n
 `;
+    const isImportant = className.includes('dt-') || className === 'ant-collapse-arrow';
 
     return `.${className} svg path {
     &:first-child {
-        d: path("${pathContent}")${className.includes('dt-') ? ' !important' : ''};
+        d: path("${pathContent}")${isImportant ? ' !important' : ''};
     }
     &:not(:first-child) {
-        d: path("")${className.includes('dt-') ? ' !important' : ''};
+        d: path("")${isImportant ? ' !important' : ''};
     }
 }\n
 `;
