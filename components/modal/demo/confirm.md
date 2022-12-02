@@ -6,10 +6,11 @@ title:
 
 ## zh-CN
 
-使用 `confirm()` 可以快捷地弹出确认框
+使用 `confirm()` 可以快捷地弹出确认框；添加了 `dt-modal-delete-icon` 自定义类名，用法如 Delete 示例。
 
 ```jsx
 import { Modal, Button } from 'antd';
+import { CloseCircleFilled } from '@ant-design/icons'
 
 const { confirm } = Modal;
 
@@ -33,6 +34,7 @@ function showDeleteConfirm() {
     okText: '移除',
     okType: 'danger',
     cancelText: '取消',
+    icon: <CloseCircleFilled className="dt-modal-delete-icon" />,
     onOk() {
       console.log('OK');
     },
