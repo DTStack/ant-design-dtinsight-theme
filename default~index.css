@@ -27507,10 +27507,10 @@ li {
 }
 .ant-breadcrumb-separator {
   color: #B1B4C5;
-  margin: 0 3px;
+  margin: 0 4px;
 }
 .ant-breadcrumb-separator .anticon {
-  font-size: 11px;
+  font-size: 12px;
 }
 .ant-btn {
   line-height: 100%;
