@@ -14,8 +14,7 @@ const config = {
 
 const getIconCssContent = (className, pathContent) => {
     // 部分特殊的 icon 需要单独处理
-    if (className === 'anticon-plus') {
-        return `.anticon-plus svg {
+    if (className === 'anticon-plus') return `.${className} svg {
     defs {
         display: none;
     }
@@ -27,7 +26,7 @@ const getIconCssContent = (className, pathContent) => {
     }
 }\n
 `;
-    }
+
     return `.${className} svg path {
     &:first-child {
         d: path("${pathContent}")${className.includes('dt-') ? ' !important' : ''};
@@ -54,7 +53,7 @@ fs.readdir(config.fromDir, (error, files) => {
         });
 
         const specialCssContent = getSpecialCssContent(pathContentMap);
-        const cssContent = `// 此文件由 yarn generate 命令生成，请勿直接修改\n${iconCssContent}${specialCssContent}`;
+        const cssContent = `// 此文件由 yarn generate 命令生成，请勿直接修改\n@import "../const.less";\n\n${iconCssContent}${specialCssContent}`;
 
         fs.writeFile(`${config.toDir}/${config.generateFileName}`, cssContent, 'utf-8', (err) => {
             if (err) {

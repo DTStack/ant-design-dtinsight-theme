@@ -144,9 +144,15 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-calendar-picker-icon,
 .ant-picker-icon .ant-picker-clock-icon,
 .ant-picker-clear .ant-picker-clock-icon,
-.ant-picker-icon,
-.ant-picker-clear {
+.ant-picker-icon {
     color: @black_msg;
+}
+
+.ant-picker-clear {
+    color: @black_msg !important;
+    &:hover {
+        color: @black_Desc !important;
+    }
 }
 
 // form 下拉 投影
