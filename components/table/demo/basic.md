@@ -14,7 +14,7 @@ title:
 
 
 ```jsx
-import { Table, Switch, Divider } from 'antd';
+import { Table, Switch, Divider, Input } from 'antd';
 
 class App extends React.Component {
   state = { isShowPage: false };
@@ -44,6 +44,7 @@ class App extends React.Component {
         title: 'Address',
         dataIndex: 'address',
         key: 'address',
+        render: (text) => (<Input value={text} />),
       },
       {
         title: 'Action',
