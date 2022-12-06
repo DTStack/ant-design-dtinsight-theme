@@ -50,6 +50,7 @@ module.exports = {
     SearchOutlined: 'anticon-search',
     SettingOutlined: 'anticon-setting',
     StarOutlined: 'anticon-star',
+    StarFilled: 'dt-anticon-star-fill',
     SwapOutlined: 'anticon-swap',
     SwapRightOutlined: 'anticon-swap-right',
     UpOutlined: 'anticon-up',

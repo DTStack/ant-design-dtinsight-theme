@@ -10,6 +10,7 @@ title:
 
 1、`CheckCircleFilled` 需要添加 `dt-anticon-check-circle-fill` 类名；  
 2、`ExclamationCircleFilled` 需要添加 `dt-anticon-exclamation-circle-fill` 类名；  
+3、`StarFilled` 需要添加 `dt-anticon-star-fill` 类名；  
 
 
 ```jsx
@@ -59,6 +60,7 @@ import {
   SearchOutlined,
   SettingOutlined,
   StarOutlined,
+  StarFilled,
   SwapOutlined,
   SwapRightOutlined,
   UpOutlined,
@@ -120,6 +122,7 @@ const fileNameToClassName = {
   SearchOutlined: 'anticon-search',
   SettingOutlined: 'anticon-setting',
   StarOutlined: 'anticon-star',
+  StarFilled: 'dt-anticon-star-fill',
   SwapOutlined: 'anticon-swap',
   SwapRightOutlined: 'anticon-swap-right',
   UpOutlined: 'anticon-up',
