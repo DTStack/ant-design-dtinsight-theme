@@ -6,10 +6,9 @@ title:
 
 ## zh-CN
 
-以上图标使用数栈的图标替换了 antd 的图标，使用方法按 antd 的使用建议即可。部分图标需要配合 theme 的自定义类名使用，具体使用方式可以点击上方示例即可复制代码：
+以上图标使用数栈的图标替换了 antd 的图标，使用方法按 antd 的使用建议即可。
 
-1、`CheckCircleFilled` 需要添加 `dt-anticon-check-circle-fill` 类名；  
-2、`ExclamationCircleFilled` 需要添加 `dt-anticon-exclamation-circle-fill` 类名；  
+大部分实底图标需要配合 theme 的自定义类名使用，具体使用方式可以点击上方图标示例复制代码：
 
 
 ```jsx
@@ -46,10 +45,12 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   MessageOutlined,
+  MinusCircleFilled,
   MinusCircleOutlined,
   MinusSquareOutlined,
   MoreOutlined,
   PaperClipOutlined,
+  PlusCircleFilled,
   PlusCircleOutlined,
   PlusOutlined,
   PlusSquareOutlined,
@@ -59,6 +60,7 @@ import {
   SearchOutlined,
   SettingOutlined,
   StarOutlined,
+  StarFilled,
   SwapOutlined,
   SwapRightOutlined,
   UpOutlined,
@@ -79,7 +81,6 @@ const fileNameToClassName = {
   CaretRightFilled: 'anticon-caret-right',
   CaretUpFilled: 'anticon-caret-up',
   CheckCircleFilled: 'dt-anticon-check-circle-fill',
-  // CheckCircleFilled: 'anticon-check-circle',
   CheckCircleOutlined: 'anticon-check-circle',
   CheckOutlined: 'anticon-check',
   ClockCircleOutlined: 'anticon-clock-circle',
@@ -94,7 +95,6 @@ const fileNameToClassName = {
   EditOutlined: 'anticon-edit',
   EllipsisOutlined: 'anticon-ellipsis',
   ExclamationCircleFilled: 'dt-anticon-exclamation-circle-fill',
-  // ExclamationCircleFilled: 'anticon-exclamation-circle',
   ExclamationCircleOutlined: 'anticon-exclamation-circle',
   ExportOutlined: 'anticon-export',
   EyeInvisibleOutlined: 'anticon-eye-invisible',
@@ -108,10 +108,12 @@ const fileNameToClassName = {
   MenuUnfoldOutlined: 'anticon-menu-unfold',
   MessageOutlined: 'anticon-message',
   MinusCircleOutlined: 'anticon-minus-circle',
+  MinusCircleFilled: 'dt-anticon-minus-circle-fill',
   MinusSquareOutlined: 'anticon-minus-square',
   MoreOutlined: 'anticon-more',
   PaperClipOutlined: 'anticon-paper-clip',
   PlusCircleOutlined: 'anticon-plus-circle',
+  PlusCircleFilled: 'dt-anticon-plus-circle-fill',
   PlusOutlined: 'anticon-plus',
   PlusSquareOutlined: 'anticon-plus-square',
   QuestionCircleOutlined: 'anticon-question-circle',
@@ -120,6 +122,7 @@ const fileNameToClassName = {
   SearchOutlined: 'anticon-search',
   SettingOutlined: 'anticon-setting',
   StarOutlined: 'anticon-star',
+  StarFilled: 'dt-anticon-star-fill',
   SwapOutlined: 'anticon-swap',
   SwapRightOutlined: 'anticon-swap-right',
   UpOutlined: 'anticon-up',
