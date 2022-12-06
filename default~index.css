@@ -27728,11 +27728,56 @@ li {
   width: 14px;
   height: 14px;
   margin-left: 7px;
-  margin-top: 2px;
 }
 .ant-btn.ant-btn-default.dt-btn-highlight:not([disabled]):hover {
   color: #1D78FF;
   border-color: #1D78FF;
+}
+.dt-btn-icon {
+  border: none;
+  color: #64698B !important;
+}
+.dt-btn-icon:hover {
+  color: #0A67F2 !important;
+}
+.dt-btn-icon:active {
+  color: #005CE6 !important;
+}
+.dt-btn-icon[ant-click-animating-without-extra-node]::after {
+  border: 0 none;
+  opacity: 0;
+  animation: none 0 ease 0 1 normal;
+}
+.dt-btn-icon[disabled] {
+  border: none;
+  color: #B1B4C5 !important;
+  background-color: transparent;
+}
+.dt-btn-icon[disabled]:hover {
+  background-color: transparent;
+}
+.dt-btn-icon-primary {
+  border: none;
+  color: #1D78FF !important;
+}
+.dt-btn-icon-primary:hover {
+  color: #0A67F2 !important;
+}
+.dt-btn-icon-primary:active {
+  color: #005CE6 !important;
+}
+.dt-btn-icon-primary[ant-click-animating-without-extra-node]::after {
+  border: 0 none;
+  opacity: 0;
+  animation: none 0 ease 0 1 normal;
+}
+.dt-btn-icon-primary[disabled] {
+  border: none;
+  color: #B1B4C5 !important;
+  background-color: transparent;
+}
+.dt-btn-icon-primary[disabled]:hover {
+  background-color: transparent;
 }
 .ant-card {
   border: 1px solid #EBECF0;
@@ -28089,32 +28134,44 @@ li {
 }
 .ant-notification .anticon-check-circle svg path:first-child,
 .ant-modal-root .anticon-check-circle svg path:first-child,
-.ant-popover .anticon-check-circle svg path:first-child {
+.ant-message .anticon-check-circle svg path:first-child,
+.ant-popover .anticon-check-circle svg path:first-child,
+.ant-alert .anticon-check-circle svg path:first-child {
   d: path("M512 96c229.76 0 416 186.24 416 416S741.76 928 512 928 96 741.76 96 512 282.24 96 512 96z m220.704 276.672a31.2 31.2 0 0 0-44.112 0.544l-216.32 221.648-116.704-117.44-1.984-1.84a31.2 31.2 0 0 0-42.288 45.824l139.072 139.92 2 1.856a31.2 31.2 0 0 0 42.464-2.064l238.416-244.32 1.808-2.016a31.2 31.2 0 0 0-2.352-42.112z");
 }
 .ant-notification .anticon-check-circle svg path:not(:first-child),
 .ant-modal-root .anticon-check-circle svg path:not(:first-child),
-.ant-popover .anticon-check-circle svg path:not(:first-child) {
+.ant-message .anticon-check-circle svg path:not(:first-child),
+.ant-popover .anticon-check-circle svg path:not(:first-child),
+.ant-alert .anticon-check-circle svg path:not(:first-child) {
   d: path("");
 }
 .ant-notification .anticon-info-circle svg path:first-child,
 .ant-modal-root .anticon-info-circle svg path:first-child,
-.ant-popover .anticon-info-circle svg path:first-child {
+.ant-message .anticon-info-circle svg path:first-child,
+.ant-popover .anticon-info-circle svg path:first-child,
+.ant-alert .anticon-info-circle svg path:first-child {
   d: path("M512 928C282.272 928 96 741.728 96 512 96 282.208 282.272 96 512 96s416 186.208 416 416c0 229.728-186.272 416-416 416z m0-558.688a41.6 41.6 0 1 0 0.016-83.184A41.6 41.6 0 0 0 512 369.312z m-0.048 368.528c16.48 0 29.92-12.704 31.104-28.864l0.096-2.336v-249.6a31.2 31.2 0 0 0-62.32-2.336l-0.08 2.336v249.6a31.2 31.2 0 0 0 31.2 31.2z");
 }
 .ant-notification .anticon-info-circle svg path:not(:first-child),
 .ant-modal-root .anticon-info-circle svg path:not(:first-child),
-.ant-popover .anticon-info-circle svg path:not(:first-child) {
+.ant-message .anticon-info-circle svg path:not(:first-child),
+.ant-popover .anticon-info-circle svg path:not(:first-child),
+.ant-alert .anticon-info-circle svg path:not(:first-child) {
   d: path("");
 }
 .ant-notification .anticon-exclamation-circle svg path:first-child,
 .ant-modal-root .anticon-exclamation-circle svg path:first-child,
-.ant-popover .anticon-exclamation-circle svg path:first-child {
+.ant-message .anticon-exclamation-circle svg path:first-child,
+.ant-popover .anticon-exclamation-circle svg path:first-child,
+.ant-alert .anticon-exclamation-circle svg path:first-child {
   d: path("M532.72 151.888c6.96 3.872 12.704 9.616 16.576 16.576l354.16 637.488a42.672 42.672 0 0 1-37.296 63.376H157.84a42.672 42.672 0 0 1-37.28-63.376l354.144-637.488a42.672 42.672 0 0 1 58.016-16.576z m-21.568 508.384a41.6 41.6 0 1 0 0 83.2 41.6 41.6 0 0 0 0-83.2zM551.472 464h-80l16 170.672h48l16-170.672z");
 }
 .ant-notification .anticon-exclamation-circle svg path:not(:first-child),
 .ant-modal-root .anticon-exclamation-circle svg path:not(:first-child),
-.ant-popover .anticon-exclamation-circle svg path:not(:first-child) {
+.ant-message .anticon-exclamation-circle svg path:not(:first-child),
+.ant-popover .anticon-exclamation-circle svg path:not(:first-child),
+.ant-alert .anticon-exclamation-circle svg path:not(:first-child) {
   d: path("");
 }
 .ant-select {
@@ -28284,9 +28341,9 @@ li {
   background: #F9F9FA;
 }
 .ant-picker {
-  border: 1px solid #D8DAE2 !important;
-  border-radius: 4px !important;
-  font-size: 12px !important;
+  border: 1px solid #D8DAE2;
+  border-radius: 4px;
+  font-size: 12px;
   padding: 4px 11px;
 }
 .ant-picker .ant-picker-input > input {
@@ -29074,11 +29131,10 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-message-notice-content {
   height: 40px;
-  font-size: 14px;
-  color: #64698B;
+  color: #3D446E;
 }
 .ant-message-notice-content .anticon {
-  font-size: 16px;
+  font-size: 18px;
 }
 .dt-notification-close-btn {
   color: #8B8FA8;
@@ -29261,8 +29317,8 @@ ul.ant-pagination {
   padding-left: 25px;
 }
 .ant-popover .ant-popover-message > .anticon {
-  font-size: 17px;
-  top: 4.5px;
+  font-size: 20px;
+  top: 2px;
 }
 .ant-popover .ant-popover-inner-content {
   padding: 0;
@@ -29425,7 +29481,7 @@ ul.ant-pagination {
 }
 .dt-steps-header {
   width: 100%;
-  padding: 18px 0;
+  padding: 16px 0;
   margin: 0;
   background-color: #F9F9FA;
 }
@@ -29983,6 +30039,14 @@ ul.ant-pagination {
 .dt-table-top-border {
   border-top: 1px solid #EBECF0;
 }
+.ant-table-ping-right .ant-table-cell-fix-right-first::after,
+.ant-table-ping-left .ant-table-cell-fix-left-first::after {
+  box-shadow: inset -10px 0 8px -8px rgba(29, 120, 255, 0.1);
+}
+.ant-table-ping-right .ant-table-cell-fix-right-last::after,
+.ant-table-ping-left .ant-table-cell-fix-left-last::after {
+  box-shadow: inset 10px 0 8px -8px rgba(29, 120, 255, 0.1);
+}
 .ant-tag {
   padding: 2px 8px;
   height: 24px;
@@ -30137,9 +30201,12 @@ ul.ant-pagination {
   margin: 0 16px;
 }
 .ant-transfer .ant-transfer-operation .ant-btn-primary {
-  color: #64698B;
+  color: #FFFFFF;
   border: 0;
-  background: #EBECF0;
+  background-color: #1D78FF;
+}
+.ant-transfer .ant-transfer-operation .ant-btn-primary:hover {
+  background-color: #0A67F2;
 }
 .ant-transfer .ant-transfer-operation .ant-btn {
   width: 20px;
