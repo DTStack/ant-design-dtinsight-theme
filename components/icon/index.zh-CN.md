@@ -14,5 +14,15 @@ subtitle: 图标
 
 ## 何时使用
 
-- 使用设计提供的图标替换 antd 的图标
-- 子产品不需要主动做什么，theme 统一处理；部分图标需要添加 theme 的自定义 className 配合使用，如：`CheckCircleFilled`、`ExclamationCircleFilled`、`StarFilled`。
+- 使用设计提供的图标替换 antd 的图标，子产品不需要主动做什么，theme 作了统一处理；
+- 大部分实底图标需要添加 theme 的自定义 className 配合使用，具体请查看下方 `自定义类名`。
+
+## 自定义类名
+
+|实底图标名  |自定义类名  |
+|---------|---------|
+|CheckCircleFilled  |`dt-anticon-check-circle-fill`    |
+|ExclamationCircleFilled  |`dt-anticon-exclamation-circle-fill`    |
+|StarFilled  |`dt-anticon-star-fill`    |
+|MinusCircleFilled  |`dt-anticon-minus-circle-fill`    |
+|PlusCircleFilled  |`dt-anticon-plus-circle-fill`    |
