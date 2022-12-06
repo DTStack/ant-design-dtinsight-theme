@@ -334,3 +334,14 @@
 .dt-table-top-border {
     border-top: 1px solid @black_readonly;
 }
+
+// 表格左侧固定列的阴影
+.ant-table-ping-right .ant-table-cell-fix-right-first::after,
+.ant-table-ping-left .ant-table-cell-fix-left-first::after {
+    box-shadow: inset -10px 0 8px -8px rgba(29, 120, 255, 0.1);
+}
+// 表格右侧固定列的阴影
+.ant-table-ping-right .ant-table-cell-fix-right-last::after,
+.ant-table-ping-left .ant-table-cell-fix-left-last::after {
+    box-shadow: inset 10px 0 8px -8px rgba(29, 120, 255, 0.1);
+}
