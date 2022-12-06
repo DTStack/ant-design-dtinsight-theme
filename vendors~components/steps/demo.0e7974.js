@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[115],{1365:function(n,o,p){n.exports={basic:p(1629),card:p(1630)}}}]);

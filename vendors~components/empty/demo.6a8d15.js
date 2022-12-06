@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[98],{1331:function(o,i,n){o.exports={basic:n(1566),"config-provider":n(1567),light:n(1568)}}}]);
