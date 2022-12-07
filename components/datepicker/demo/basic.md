@@ -24,7 +24,7 @@ function disabledDate(current) {
 
 ReactDOM.render(
   <div className="demo-datepicker-box">
-    <DatePicker onChange={onChange} className="dt-ant-datepicker-basic" />
+    <DatePicker allowClear onChange={onChange} className="dt-ant-datepicker-basic" />
     <br />
     <MonthPicker onChange={onChange} placeholder="Select month" className="dt-ant-datepicker-basic" />
     <br />

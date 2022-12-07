@@ -17,3 +17,5 @@ subtitle: 按钮
 |---------|---------|---------|
 |.dt-btn-highlight  | 图标按钮   | 按钮类型、 不可用状态  |
 |.dt-btn-custom-icon  | 普通按钮添加图标   | 基本用法  |
+|.dt-btn-icon-primary  | 仅图标按钮，重要操作   | 仅 Icon 按钮  |
+|.dt-btn-icon  | 仅图标按钮，次要操作   | 仅 Icon 按钮  |
