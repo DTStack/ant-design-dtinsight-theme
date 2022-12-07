@@ -26,6 +26,7 @@ subtitle: 表格
 |.dt-table-fixed-base-no-border  | 用于单屏表格的父元素或者表格本身，使得表格固定头部与尾部，中间滚动。特别的，此类名 `没有 border` 用于自带分页的表格  | 固定高度表（自带分页），没有 border   |
 |.dt-table-fixed-overflowx-auto  | 用于固定高度表中，当表格存在固定列且无数据时，去除固定列底部滚动条  | 固定高度表（footer 中带分页）、固定高度表（自带分页）   |
 |.dt-table-scrollbar  | 一般用于 windows 中，设置表格中滚动条的样式  | 固定高度表（footer 中带分页）   |
-|.dt-resizable-table  | 设置可伸缩列表格中的表头有分割线 | 无边框型 |
+|.dt-resizable-table  | 设置可伸缩列表格中的表头有分割线 | 可伸缩列 |
+|.dt-table-header-user-select-none  | 设置表头内容不可选中 | 可伸缩列 |
 |.dt-table-empty-top-20-percent  | 无数据时，缺省图标距顶部 20%。 | 大部分场景适用，不适用时使用默认的 margin 间距即可 |
 |.dt-table-cell-right  | 为 columns 添加该 className，与 align 属性配合使用，即可实现数据列表头和内容均居右显示 | 数据列居右 |

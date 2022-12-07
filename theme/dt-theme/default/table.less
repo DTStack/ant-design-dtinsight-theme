@@ -264,6 +264,19 @@
     }
 }
 
+.dt-table-header-user-select-none {
+    //  禁止用户选中表头文字
+    tr {
+        th {
+            user-select: none; /* Chrome and Opera */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+        }
+    }
+}
+
 .dt-table-empty-top-20-percent {
     // 在表格设置了 scroll 之类会引起滚动的属性后，表格会在第一行之前生成一行tr，类名为 ant-table-measure-row
     .ant-table-measure-row {
