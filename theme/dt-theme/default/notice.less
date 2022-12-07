@@ -37,11 +37,6 @@
     color: @black_pageMsg;
 }
 
-.ant-notification-notice-with-icon .ant-notification-notice-description {
-    color: @black_pageMsg;
-    word-break: break-all;
-}
-
 .ant-message-notice-content {
     height: 40px;
     font-size: 14px;
@@ -54,8 +49,28 @@
 .dt-notification-close-btn {
     color: @black_msg;
     top: 19px;
+    position: absolute;
+    right: 36px;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: normal;
+    user-select: none;
     &:hover {
         color: @black_title;
+    }
+}
+
+.ant-notification {
+    width: 360px;
+    .ant-notification-notice-close {
+        right: 16px;
+        top: 19px;
+        .ant-notification-notice-close-x {
+            color: @black_msg;
+            &:hover {
+                color: @black_title;
+            }
+        }
     }
 }
 
@@ -65,22 +80,29 @@
     box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
 }
 
+.ant-notification-notice-icon {
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 16px;
+}
+
 .ant-notification-notice-btn {
     margin-top: 12px;
 }
 
-.ant-notification-notice-with-icon .ant-notification-notice-message {
-    font-size: 14px;
-}
-
-.ant-notification {
-    .ant-notification-notice-close {
-        right: 16px;
-        .ant-notification-notice-close-x {
-            color: @black_msg;
-            &:hover {
-                color: @black_title;
-            }
-        }
+.ant-notification-notice-with-icon {
+    .ant-notification-notice-message {
+        font-size: 14px;
+        height: 22px;
+        line-height: 22px;
+        margin-left: 28px;
+        margin-bottom: 4px;
+        font-weight: 500;
+    }
+    .ant-notification-notice-description {
+        color: @black_pageMsg;
+        word-break: break-all;
+        margin-left: 28px;
+        word-wrap: break-word;
     }
 }
