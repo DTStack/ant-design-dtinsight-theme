@@ -29716,6 +29716,18 @@ ul.ant-pagination {
 .dt-resizable-table .ant-table-container table > thead > tr:first-child th:not(.ant-table-selection-column):last-child {
   border-right: none;
 }
+.dt-table-header-user-select-none tr th {
+  user-select: none;
+  /* Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+}
 .dt-table-empty-top-20-percent .ant-table-measure-row {
   visibility: collapse;
 }
