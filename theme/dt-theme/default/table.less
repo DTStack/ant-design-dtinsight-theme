@@ -28,6 +28,9 @@
             background: @black_titleBg;
         }
     }
+    colgroup > col.ant-table-selection-col {
+        width: 16px;
+    }
 }
 
 .ant-table-thead {
@@ -40,12 +43,72 @@
     }
 }
 
-.ant-table-thead > tr > th {
-    border-bottom: 1px solid @black_readonly;
+.ant-table-column-sorter {
+    margin-left: 7px;
 }
 
-.ant-table-tbody > tr > td {
+.ant-table-thead > tr > th {
+    height: 44px;
+    box-sizing: border-box;
+    padding: 0 16px;
     border-bottom: 1px solid @black_readonly;
+    &.ant-table-column-sort {
+        background: transparent;
+    }
+    .anticon-filter {
+        right: unset;
+        top: -1.8px;
+        background: transparent !important;
+    }
+    &.ant-table-selection-column {
+        padding: 0 8px 0 16px;
+        text-align: left;
+        line-height: 43px;
+        & + th {
+            padding: 0 8px 0 0;
+            line-height: 43px;
+        }
+    }
+    &:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 0;
+        height: 1.6em;
+        background-color: @black_titleBg;
+        transform: translateY(-50%);
+        transition: background-color 0.3s;
+        content: "";
+    }
+}
+
+.ant-table-tbody > tr {
+    height: 43px;
+    box-sizing: border-box;
+    & > td {
+        min-height: 44px;
+        box-sizing: border-box;
+        padding: 6px 16px 5px;
+        border-bottom: 1px solid @black_readonly;
+        &:first-child {
+            padding-left: 16px;
+        }
+        &:last-child {
+            padding-right: 16px;
+        }
+        &.ant-table-column-sort {
+            background: transparent;
+        }
+        &.ant-table-selection-column {
+            padding: 0 8px 0 16px;
+            line-height: 43px;
+            text-align: left;
+            & + td {
+                padding: 0 8px 0 0;
+                line-height: 43px;
+            }
+        }
+    }
 }
 
 .ant-table-tbody > .ant-table-placeholder > .ant-table-cell {
@@ -68,17 +131,23 @@
     }
 }
 
-.ant-table-middle {
-    .ant-table-thead > tr > th {
-        border-bottom: 1px solid @black_readonly;
-    }
-}
-
 .ant-table-footer {
     background: @white;
+    padding: 6px 16px;
+    height: 44px;
+    display: flex;
+    margin-top: -1px;
+    z-index: 11;
+    align-items: center;
+    position: relative;
     &::before {
         height: 1px;
         background: @grey_border;
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        content: "";
     }
 }
 
@@ -92,20 +161,34 @@
     .ant-spin-container {
         >.ant-table-pagination {
             border-top: 1px solid #E8E8E8;
+            width: 100%;
+            margin: -1px 0 0;
+            padding: 0 16px;
+            height: 44px;
+            line-height: 44px;
+            text-align: right;
+            position: relative;
+            z-index: 10;
+            align-items: center;
         }
     }
 }
 
 // 固定表格高度(footer实现分页）
 .dt-table-fixed-contain-footer {
-    .ant-table-wrapper,
-    &.ant-table-wrapper {
+    .ant-table-wrapper, &.ant-table-wrapper {
         background: @white;
+        height: 100%;
+        padding: 0 !important;
+        box-shadow: none;
         .ant-spin-nested-loading {
+            height: 100%;
             .ant-spin-container {
+                height: 100%;
                 .ant-table-fixed-header {
                     display: flex;
                     flex-direction: column;
+                    height: 100%;
                     .ant-table-container {
                         flex: 1;
                         display: flex;
@@ -116,6 +199,58 @@
                             .ant-table-placeholder {
                                 color: #BFBFBF;
                             }
+                        }
+                    }
+                    .ant-table-content {
+                        height: 100%;
+                        .ant-table-scroll {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            .ant-table-body {
+                                flex: 1;
+
+                                /** 内部嵌套表格，数据为空的情况 */
+                                .ant-table-expanded-row .ant-table-empty {
+                                    .ant-table-placeholder {
+                                        position: relative;
+                                        top: unset;
+                                    }
+                                }
+                            }
+                        }
+                        .ant-table-fixed-left, .ant-table-fixed-right {
+                            z-index: 10;
+                            height: 100%;
+                            .ant-table-body-outer {
+                                height: calc(100% - 44px - 56px + 1px);
+                            }
+                        }
+                        .ant-table-placeholder {
+                            position: absolute;
+                            top: 45px;
+                            width: 100%;
+                            text-align: center;
+                            border: none;
+                        }
+                    }
+                }
+                .ant-table-footer {
+                    margin-top: -1px;
+                    z-index: 11;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        top: -1px;
+                        left: 0;
+                        width: 100%;
+                        content: "";
+                    }
+                    .ant-pagination {
+                        position: absolute;
+                        right: 16px;
+                        .pagination_total {
+                            color: #3F87FF;
                         }
                     }
                 }
@@ -129,6 +264,59 @@
     &.ant-table-wrapper, .ant-table-wrapper {
         background: @white;
         border: 1px solid @grey_border;
+        padding: 0 !important;
+        box-shadow: none;
+        .ant-spin-nested-loading {
+            height: 100%;
+            .ant-spin-container {
+                height: 100%;
+                .ant-table-fixed-header {
+                    // 存在数据的时候 有分页组件存在 高度需要减去分页的高度
+                    &:not(:last-child) {
+                        height: calc(100% - 44px) !important;
+                    }
+                    height: 100%; // 分页高度为 67px
+                    .ant-table-content {
+                        height: 100%;
+                        .ant-table-scroll {
+                            height: 100%;
+                            .ant-table-body {
+                                height: calc(100% - 44px); // 表格 header 高度为 44px
+
+                                /** 内部嵌套表格，数据为空的情况 */
+                                .ant-table-expanded-row .ant-table-empty {
+                                    .ant-table-placeholder {
+                                        position: relative;
+                                        top: unset;
+                                    }
+                                }
+                            }
+                        }
+                        .ant-table-fixed-right, .ant-table-fixed-left {
+                            // height: 100%;
+                            height: calc(100% - 18px);
+                            z-index: 10;
+                            .ant-table-body-outer {
+                                height: calc(100% - 44px);
+                                .ant-table-body-inner {
+                                    overflow-x: hidden !important;
+                                    overflow-y: auto !important;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .ant-table-placeholder {
+                            position: absolute;
+                            top: 45px;
+                            width: 100%;
+                            color: #BFBFBF;
+                            text-align: center;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // 固定表格高度(自带分页）没有 border
@@ -143,6 +331,15 @@
     border: 1px solid @black_readonly;
 }
 
+.ant-table.ant-table-small {
+    .ant-table-title, .ant-table-footer, .ant-table-thead > tr > th, .ant-table-tbody > tr > td, tfoot > tr > th, tfoot > tr > td, .ant-table-tbody > tr {
+        padding: 0 16px;
+        height: 35px;
+        line-height: 35px;
+        box-sizing: border-box;
+    }
+}
+
 // size为small的边框设置
 .ant-table-small > .ant-table-content .ant-table-placeholder,
 .ant-table-small > .ant-table-content .ant-table-row:last-child td {
@@ -150,6 +347,9 @@
 }
 
 .ant-table-small {
+    & > .ant-table-content > .ant-table-body {
+        margin: 0;
+    }
     & > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
@@ -159,6 +359,43 @@
     & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
     & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
         border-bottom: 1px solid #E8E8E8;
+        height: 36px;
+        box-sizing: border-box;
+        &:first-child {
+            padding-left: 16px;
+        }
+        &:last-child {
+            padding-right: 16px;
+        }
+    }
+    & > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
+    & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+        &:first-child {
+            padding-left: 16px;
+        }
+        &:last-child {
+            padding-right: 16px;
+        }
+        padding: 0 16px;
+    }
+}
+
+.ant-table-row-expand-icon {
+    border: solid 1px @blue;
+    &::before {
+        color: @blue;
+    }
+    &::after {
+        color: @blue;
+    }
+    &:hover, &:focus, &:active {
+        border-color: @blue;
     }
 }
 
@@ -323,16 +560,15 @@
     flex: none;
 }
 
+.ant-table-column-sorters, .ant-table-filter-column {
+    justify-content: flex-start;
+}
+
 // 数字列表头居右显示
 .dt-table-cell-right {
     .ant-table-column-sorters .ant-table-column-title, .ant-table-filter-column .ant-table-column-title {
         flex: 1;
     }
-}
-
-// custom className
-.dt-table-top-border {
-    border-top: 1px solid @black_readonly;
 }
 
 // 表格左侧固定列的阴影
@@ -344,4 +580,126 @@
 .ant-table-ping-right .ant-table-cell-fix-right-last::after,
 .ant-table-ping-left .ant-table-cell-fix-left-last::after {
     box-shadow: inset 10px 0 8px -8px rgba(29, 120, 255, 0.1);
+}
+
+// size为middle UI5.0暂不支持
+// .ant-table-middle {
+//     .ant-table-thead > tr > th {
+//         border-bottom: 1px solid @black_readonly;
+//     }
+//     & > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
+//     & > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+//     & > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
+//     & > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th,
+//     & > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
+//     & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
+//     & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+//     & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
+//         &:first-child {
+//             padding-left: 16px;
+//         }
+//         &:last-child {
+//             padding-right: 16px;
+//         }
+//         padding: 10.5px 8px;
+//     }
+//     & > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
+//     & > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+//     & > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
+//     & > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
+//     & > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
+//     & > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
+//     & > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
+//     & > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+//         &:first-child {
+//             padding-left: 16px;
+//         }
+//         &:last-child {
+//             padding-right: 16px;
+//         }
+//         padding: 12.5px 8px;
+//     }
+//     & > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th.ant-table-selection-column {
+//         padding: 13px 12px 13px 16px !important;
+//         text-align: left;
+//     }
+//     & > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td.ant-table-selection-column {
+//         padding: 13px 12px 13px 16px !important;
+//         text-align: left;
+//     }
+//     .ant-table-tbody > tr > td {
+//         padding: 13px 8px;
+//         &:first-child {
+//             padding-left: 16px;
+//         }
+//         &:last-child {
+//             padding-right: 16px;
+//         }
+//     }
+// }
+
+/** ————Custom ClassName———— **/
+.dt-table-top-border {
+    border-top: 1px solid @black_readonly;
+}
+
+// size = small的表格中的分页
+.dt-pagination-small {
+    .ant-table-pagination.ant-pagination {
+        height: 36px;
+        line-height: 36px;
+    }
+}
+
+// 不需要最后一列的下边框 (一般在表格存在外边框时使用)
+.dt-table-last-row-noborder {
+    .ant-table-tbody {
+        > tr:last-child {
+            > td {
+                border-bottom-color: rgba(0, 0, 0, 0) !important;
+            }
+        }
+    }
+    .ant-table-placeholder {
+        border-bottom-color: rgba(0, 0, 0, 0) !important;
+    }
+}
+
+.dt-table-scrollbar {
+    // 正常列表 存在纵向滚动 会因为 scrollbar 导致列错位
+    // 所以需要添加 .ant-table-header 的 scrollbar 设置
+    .ant-table-body, .ant-table-body-inner, .ant-table-header {
+        &::-webkit-scrollbar {
+            width: 15px;  // 纵向滚动条宽度
+            height: 13px;   // 横向滚动条高度（不同系统存在差异，目前按照windows设定） 数值太大\太小都会导致fixed列与普通列错位
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #BFBFBF;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 2px;
+        }
+    }
+    .ant-table-header {
+        &::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+    }
+    // 修改滚动条 会导致 header 与 body的列有偏差错位 因为滚动条 占据了body一定的宽度
+    // 所以 设置 header 也存在滚动边框
+    // 但是会导致 滚动时 header右侧 会有一小部分的文字遮挡 并且会有一小截底部边框（滚动边框）
+    .ant-table-scroll {
+        .ant-table-header {
+            overflow: scroll !important;
+        }
+    }
+}
+
+// 隐藏 表格中 fixed 模块代码横向滚动条 用于固定高度表格无数据时 (未优化 windows 滚动条样式时使用
+.dt-table-fixed-overflowx-auto {
+    .ant-table-body-inner {
+        overflow-x: auto !important;
+    }
 }
