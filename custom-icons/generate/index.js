@@ -16,7 +16,6 @@ const config = {
 const getIconCssContent = (className, pathContent) => {
     // 部分特殊的 icon 需要单独处理
     if (className === 'anticon-plus') return `.${className} svg {
-    font-size: 13px;
     defs {
         display: none;
     }
