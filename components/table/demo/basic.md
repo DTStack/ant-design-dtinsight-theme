@@ -6,18 +6,24 @@ title:
 
 ## zh-CN
 
-简单的表格，最后一列是各种操作。
+1、简单的表格，最后一列是各种操作。
 
 - 添加类名 `dt-table-last-row-noborder` 为表格设置最后一行去掉下边框，一般在表格存在外边框时使用
 
 - 添加类名 `dt-table-top-border` 为表格设置上边框
+
+<br />
+
+2、纯文本换行的情况，需要为 columns 添加`.dt-table-multi-line`，参考`Name`列，每次换行增加20px的高度
+
+<br />
 
 
 ```jsx
 import { Table, Switch, Divider, Input } from 'antd';
 
 class App extends React.Component {
-  state = { isShowPage: false };
+  state = { isShowPage: false, smallSize: false };
 
   handleChangeShowPage = (checked) => {
     this.setState({
@@ -26,13 +32,14 @@ class App extends React.Component {
   }
 
   render() {
-    const { isShowPage } = this.state;
+    const { isShowPage, smallSize } = this.state;
     const columns = [
       {
         title: 'Name',
         dataIndex: 'name',
         key: 'name',
-        render: text => <a>{text}</a>,
+        width: 100,
+        className: 'dt-table-multi-line',
       },
       {
         title: 'Age',
@@ -44,7 +51,7 @@ class App extends React.Component {
         title: 'Address',
         dataIndex: 'address',
         key: 'address',
-        render: (text) => (<Input value={text} />),
+        render: (text) => (<Input value={text} size={smallSize && 'small'} />),
       },
       {
         title: 'Action',
@@ -61,7 +68,7 @@ class App extends React.Component {
     const data = [
       {
         key: '1',
-        name: 'John Brown',
+        name: 'John Brownllllllll',
         age: 32,
         address: 'New York No. 1 Lake Park',
       },
@@ -92,12 +99,15 @@ class App extends React.Component {
         <div style={{ marginBottom: 20 }}>
             <Switch checked={isShowPage} onChange={this.handleChangeShowPage} />
             <span className="demo-switch-desc">是否展示分页</span>
+            <Switch checked={smallSize}  onChange={(checked) => this.setState({smallSize: checked})} />
+            <span className="demo-switch-desc">展示最小size</span>
         </div>
         <Table
           columns={columns}
           dataSource={data}
+          size={smallSize && 'small'}
           pagination={isShowPage ? pagination : false}
-          className="dt-table-last-row-noborder dt-table-top-border"
+          className={`${smallSize ? 'dt-pagination-small' : ''} dt-table-last-row-noborder dt-table-top-border`}
         />
       </div>
     )

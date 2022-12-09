@@ -16,6 +16,12 @@
         .ant-table-column-title {
             line-height: 22px;
         }
+        // 换行类名
+        &.dt-table-multi-line {
+            padding-top: 12px;
+            padding-bottom: 11px;
+            line-height: 20px;
+        }
     }
     .ant-table-tbody {
         .ant-table-row {
@@ -83,7 +89,7 @@
 }
 
 .ant-table-tbody > tr {
-    height: 43px;
+    height: 44px;
     box-sizing: border-box;
     & > td {
         min-height: 44px;
@@ -332,11 +338,24 @@
 }
 
 .ant-table.ant-table-small {
-    .ant-table-title, .ant-table-footer, .ant-table-thead > tr > th, .ant-table-tbody > tr > td, tfoot > tr > th, tfoot > tr > td, .ant-table-tbody > tr {
-        padding: 0 16px;
-        height: 35px;
-        line-height: 35px;
+    .ant-table-thead > tr,
+    .ant-table-tbody > tr {
+        height: 36px;
+    }
+    .ant-table-title, .ant-table-footer, .ant-table-thead > tr > th, .ant-table-tbody > tr > td, tfoot > tr > th, tfoot > tr > td {
+        padding: 2px 16px 1px;
+        min-height: 36px;
+        height: auto;
+        line-height: 20px;
         box-sizing: border-box;
+    }
+    .ant-table-cell {
+        // 换行类名
+        &.dt-table-multi-line {
+            padding-top: 8px;
+            padding-bottom: 7px;
+            line-height: 20px;
+        }
     }
 }
 
