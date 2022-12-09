@@ -26439,6 +26439,10 @@ div.ant-typography-edit-content.ant-typography-rtl {
   line-height: 100%;
   box-shadow: unset;
 }
+.ant-btn .anticon-minus,
+.ant-btn .anticon-plus {
+  font-size: 13px;
+}
 .ant-btn.ant-btn-primary {
   text-shadow: unset;
 }
@@ -26935,6 +26939,12 @@ div.ant-typography-edit-content.ant-typography-rtl {
   d: path("M512 80c238.592 0 432 193.408 432 432S750.592 944 512 944 80 750.592 80 512 273.408 80 512 80z m0 64C308.752 144 144 308.752 144 512s164.752 368 368 368 368-164.752 368-368S715.248 144 512 144z m224 336a32 32 0 1 1 0 64H288a32 32 0 1 1 0-64h448z");
 }
 .anticon-minus-circle svg path:not(:first-child) {
+  d: path("");
+}
+.anticon-minus svg path:first-child {
+  d: path("M817.056 480a32 32 0 0 1 2.368 63.92l-2.384 0.096-610.016 0.224a32 32 0 0 1 0.016-64l610.016-0.224z");
+}
+.anticon-minus svg path:not(:first-child) {
   d: path("");
 }
 .anticon-minus-square svg path:first-child {
@@ -27950,14 +27960,14 @@ li.ant-picker-panel-select-option-selected:hover {
   line-height: 0;
   color: #B1B4C5;
   cursor: pointer;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 .dt-layout-header .menu-right .menu-item:hover {
   color: #1D78FF;
 }
 .dt-layout-header .menu-right .anticon {
-  color: #B1B4C5;
-  font-size: 18px;
+  color: #8B8FA8;
+  font-size: 20px;
 }
 .dt-layout-header .menu-right .anticon:hover {
   color: #1D78FF;
@@ -28451,19 +28461,18 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-title {
   color: #3D446E;
-  line-height: 22px;
+  line-height: 20px;
   font-size: 14px;
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .anticon {
   margin: 0 8px 0 2px;
-  line-height: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .anticon svg {
   vertical-align: inherit;
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-content {
-  margin: 8px 0 16px 27px;
+  margin: 8px 0 16px 30px;
   color: #8B8FA8;
   line-height: 20px;
 }
@@ -29209,6 +29218,7 @@ ul.ant-pagination {
 }
 .ant-table-column-sorter {
   margin-left: 7px;
+  display: flex;
 }
 .ant-table-thead > tr > th {
   height: 44px;
@@ -29353,7 +29363,7 @@ ul.ant-pagination {
   flex: 1;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .dt-table-fixed-contain-footer .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-container .ant-table-body,
 .dt-table-fixed-contain-footer.ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-fixed-header .ant-table-container .ant-table-body {
@@ -29849,6 +29859,9 @@ ul.ant-pagination {
 }
 .dt-table-fixed-overflowx-auto .ant-table-body-inner {
   overflow-x: auto !important;
+}
+.ant-table-column-sorter-up + .ant-table-column-sorter-down {
+  margin-top: -0.5em;
 }
 .ant-tag {
   padding: 2px 8px;
