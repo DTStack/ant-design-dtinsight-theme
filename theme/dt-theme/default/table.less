@@ -45,6 +45,7 @@
 
 .ant-table-column-sorter {
     margin-left: 7px;
+    display: flex;
 }
 
 .ant-table-thead > tr > th {
@@ -715,4 +716,9 @@
     .ant-table-body-inner {
         overflow-x: auto !important;
     }
+}
+
+// 排序图标的间距
+.ant-table-column-sorter-up + .ant-table-column-sorter-down {
+    margin-top: -0.5em;
 }
