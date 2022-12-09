@@ -37,6 +37,7 @@ module.exports = {
     MessageOutlined: 'anticon-message',
     MinusCircleOutlined: 'anticon-minus-circle',
     MinusCircleFilled: 'dt-anticon-minus-circle-fill',
+    MinusOutlined: 'anticon-minus',
     MinusSquareOutlined: 'anticon-minus-square',
     MoreOutlined: 'anticon-more',
     PaperClipOutlined: 'anticon-paper-clip',
