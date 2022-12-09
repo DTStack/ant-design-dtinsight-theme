@@ -10,13 +10,27 @@ title:
 
 ```jsx
 import { Modal, Button } from 'antd';
-import { CloseCircleFilled } from '@ant-design/icons'
+import { CloseCircleFilled, InfoCircleTwoTone } from '@ant-design/icons'
 
 const { confirm } = Modal;
 
 function showConfirm() {
   confirm({
     title: 'Do you Want to delete these items?',
+    content: 'Some descriptions',
+    onOk() {
+      console.log('OK');
+    },
+    onCancel() {
+      console.log('Cancel');
+    },
+  });
+}
+
+function showCustomConfirm() {
+  confirm({
+    title: 'Do you Want to delete these items?',
+    icon: <InfoCircleTwoTone />,
     content: 'Some descriptions',
     onOk() {
       console.log('OK');
@@ -50,6 +64,7 @@ ReactDOM.render(
     <Button onClick={showDeleteConfirm} type="dashed">
       Delete
     </Button>
+    <Button onClick={showCustomConfirm}>Custom Icon Confirm</Button>
   </div>,
   mountNode,
 );
