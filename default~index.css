@@ -29180,6 +29180,11 @@ ul.ant-pagination {
 .ant-table .ant-table-cell .ant-table-column-title {
   line-height: 22px;
 }
+.ant-table .ant-table-cell.dt-table-multi-line {
+  padding-top: 12px;
+  padding-bottom: 11px;
+  line-height: 20px;
+}
 .ant-table .ant-table-tbody .ant-table-row .ant-table-cell-with-append {
   display: flex;
   align-items: center;
@@ -29240,7 +29245,7 @@ ul.ant-pagination {
   content: "";
 }
 .ant-table-tbody > tr {
-  height: 43px;
+  height: 44px;
   box-sizing: border-box;
 }
 .ant-table-tbody > tr > td {
@@ -29532,17 +29537,26 @@ ul.ant-pagination {
 .dt-table-border {
   border: 1px solid #EBECF0;
 }
+.ant-table.ant-table-small .ant-table-thead > tr,
+.ant-table.ant-table-small .ant-table-tbody > tr {
+  height: 36px;
+}
 .ant-table.ant-table-small .ant-table-title,
 .ant-table.ant-table-small .ant-table-footer,
 .ant-table.ant-table-small .ant-table-thead > tr > th,
 .ant-table.ant-table-small .ant-table-tbody > tr > td,
 .ant-table.ant-table-small tfoot > tr > th,
-.ant-table.ant-table-small tfoot > tr > td,
-.ant-table.ant-table-small .ant-table-tbody > tr {
-  padding: 0 16px;
-  height: 35px;
-  line-height: 35px;
+.ant-table.ant-table-small tfoot > tr > td {
+  padding: 2px 16px 1px;
+  min-height: 36px;
+  height: auto;
+  line-height: 20px;
   box-sizing: border-box;
+}
+.ant-table.ant-table-small .ant-table-cell.dt-table-multi-line {
+  padding-top: 8px;
+  padding-bottom: 7px;
+  line-height: 20px;
 }
 .ant-table-small > .ant-table-content .ant-table-placeholder,
 .ant-table-small > .ant-table-content .ant-table-row:last-child td {
