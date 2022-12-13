@@ -26705,9 +26705,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .dt-btn-icon-primary[disabled]:hover {
   background-color: transparent;
 }
-.ant-card {
-  border: 1px solid #EBECF0;
-}
 .ant-card .ant-card-head {
   padding: 16px;
   border-bottom: 1px solid #EBECF0;
@@ -26718,6 +26715,9 @@ div.ant-typography-edit-content.ant-typography-rtl {
 }
 .ant-card .ant-card-body {
   padding: 16px;
+}
+.ant-card-bordered {
+  border: 1px solid #EBECF0;
 }
 .dt-card-shadow-bg {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
@@ -29023,7 +29023,7 @@ ul.ant-pagination {
   margin-left: 0;
   line-height: 20px;
 }
-.ant-tabs-nav-wrap .ant-tabs-nav-list .anticon {
+.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn .anticon {
   margin-right: 4px;
   font-size: 16px;
 }
@@ -29048,10 +29048,42 @@ ul.ant-pagination {
   padding: 9px 12px;
   height: 40px;
   border: 1px solid #EBECF0;
+  background-color: #F9F9FA;
+}
+.ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab.ant-tabs-tab-active {
+  background-color: #FFFFFF;
+}
+.ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab-remove {
+  margin-left: 12px;
+  line-height: 16px;
+  width: 16px;
+}
+.ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab-remove > .anticon-close {
+  color: #B1B4C5;
+}
+.ant-tabs-card .ant-tabs-nav-list .ant-tabs-nav-add {
+  padding: 11px;
+  line-height: 16px;
+}
+.ant-tabs-card .ant-tabs-nav-list .ant-tabs-nav-add > .anticon-plus {
+  font-size: 14px;
+  color: #B1B4C5;
 }
 .ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab-btn {
   line-height: 22px;
   font-size: 14px;
+  color: #64698B;
+}
+.ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab-btn:hover {
+  color: #0A67F2;
+}
+.ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab-btn:hover .anticon {
+  color: #64698B;
+}
+.ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab-btn:active {
+  color: #005CE6;
+}
+.ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab-btn:active .anticon {
   color: #64698B;
 }
 .ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn {
@@ -29281,6 +29313,9 @@ ul.ant-pagination {
 .ant-table-tbody > tr > td.ant-table-selection-column + td {
   padding: 0 8px 0 0;
   line-height: 43px;
+}
+.ant-table-tbody > tr.ant-table-row-selected > td.ant-table-column-sort {
+  background: #E8F5FF;
 }
 .ant-table-tbody > .ant-table-placeholder > .ant-table-cell {
   border-bottom: 0;
