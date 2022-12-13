@@ -7,10 +7,12 @@
             margin-right: 24px;
             margin-left: 0;
             line-height: 20px;
-        }
-        .anticon {
-            margin-right: 4px;
-            font-size: 16px;
+            .ant-tabs-tab-btn {
+                .anticon {
+                    margin-right: 4px;
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
@@ -45,11 +47,43 @@
             padding: 9px 12px;
             height: 40px;
             border: 1px solid @grey_border;
+            background-color: @black_navBg;
+            &.ant-tabs-tab-active {
+                background-color: @white;
+            }
+        }
+        .ant-tabs-tab-remove {
+            margin-left: 12px;
+            line-height: 16px;
+            width: 16px;
+            & > .anticon-close {
+                color: @black_msg;
+            }
+        }
+        .ant-tabs-nav-add {
+            padding: 11px;
+            line-height: 16px;
+            & > .anticon-plus {
+                font-size: 14px;
+                color: @black_msg;
+            }
         }
         .ant-tabs-tab-btn {
             line-height: 22px;
             font-size: 14px;
             color: @black_Desc;
+            &:hover {
+                color: @hoverColor;
+                .anticon {
+                    color: @black_Desc;
+                }
+            }
+            &:active {
+                color: @clickColor;
+                .anticon {
+                    color: @black_Desc;
+                }
+            }
         }
         .ant-tabs-tab-active {
             .ant-tabs-tab-btn {
