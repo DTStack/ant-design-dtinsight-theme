@@ -29827,6 +29827,9 @@ ul.ant-pagination {
   left: 50%;
   transform: translate(-50%, 0);
 }
+.dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder:hover > td {
+  background-color: inherit;
+}
 .ant-table-container {
   border-radius: 0;
 }
