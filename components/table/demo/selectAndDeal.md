@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 3
 title:
   zh-CN: 可选择可操作
 ---
@@ -11,7 +11,7 @@ title:
 - 添加类名 `dt-table-border` 为表格设置外边框
 
 ```jsx
-import { Table, Tag, Divider, Pagination, Row, Col, Button } from 'antd';
+import { Table, Tag, Pagination, Row, Col, Button, Divider } from 'antd';
 
 const columns = [
   {
@@ -77,8 +77,8 @@ const rowSelection = {
 tableFooter =  () => (
   <Row style={{ width: '100%' }}>
     <Col span={12}>
-      <Button style={{ marginRight: 10 }} size="small" type="primary">冻结实验</Button>
-      <Button size="small">解冻实验</Button>
+      <Button style={{ marginRight: 10 }} type="primary">冻结实验</Button>
+      <Button>解冻实验</Button>
     </Col>
     <Col span={12}>
       <Pagination

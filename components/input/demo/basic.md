@@ -18,7 +18,9 @@ import { Input } from 'antd';
 
 ReactDOM.render(
   <div className="demo-input-size">
-    <Input placeholder="Basic usage" />
+    <Input allowClear placeholder="Basic usage" />
+    <br />
+    <br />
     <Input disabled placeholder="disable input" />
   </div>,
   mountNode

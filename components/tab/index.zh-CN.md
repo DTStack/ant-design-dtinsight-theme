@@ -1,19 +1,27 @@
 ---
 category: Components
 subtitle: 标签页
-type: 数据展示
+type: 导航
 title: Tabs
 cols: 1
 cover: https://gw.alipayobjects.com/zos/antfincdn/lkI2hNEDr2V/Tabs.svg
 ---
 
-选项卡切换组件。
+引领整个页面的内容，用于主功能切换.
+
 
 ## 何时使用
 
 提供平级的区域将大块内容进行收纳和展现，保持界面整洁。
 
-Ant Design 依次提供了三级选项卡，分别用于不同的场景。
+## 设计规范
 
-- 卡片式的页签，提供可关闭的样式，常用于容器顶部。
-- 既可用于容器顶部，也可用于容器内部，是最通用的 Tabs。
+每个标签文字最多 6 个字，标签数量最多 7 个，建议出现 4 个以内。
+
+## API
+
+|类名  |说明  |使用示例  |
+|---------|---------|---------|
+|.dt-tabs-sider-menu  | 侧边栏菜单类名，需配合type="line"和tabPosition="right"或者"left"一起使用   | 侧边菜单   |
+|.dt-tabs-content-padding  | 内容内边距类名，16px  | 侧边菜单 |
+|.dt-tabs-nav-padding-16  | 增加左右边距16px  | 基础样式 |

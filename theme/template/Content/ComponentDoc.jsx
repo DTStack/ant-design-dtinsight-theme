@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DocumentTitle from 'react-document-title';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import {Row, Col, Icon, Affix, Tooltip} from 'antd';
-import {getChildren} from 'jsonml.js/lib/utils';
+import { AppstoreOutlined } from '@ant-design/icons';
+import { Row, Col, Affix, Tooltip } from 'antd';
+import { getChildren } from 'jsonml.js/lib/utils';
 import Demo from './Demo';
 import config from '../../../bisheng.config';
 
-import {ping} from '../utils';
+import { ping } from '../utils';
 import utils from '../../utils';
 
 export default class ComponentDoc extends React.Component {
@@ -22,7 +23,7 @@ export default class ComponentDoc extends React.Component {
     };
 
     componentDidMount() {
-        this.pingTimer = ping(status => {
+        this.pingTimer = ping((status) => {
             if (status !== 'timeout' && status !== 'error') {
                 this.setState({
                     showRiddleButton: true,
@@ -32,10 +33,10 @@ export default class ComponentDoc extends React.Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        const {location} = this.props;
-        const {location: nextLocation} = nextProps;
-        const {expandAll, showRiddleButton} = this.state;
-        const {expandAll: nextExpandAll, showRiddleButton: nextShowRiddleButton} = nextState;
+        const { location } = this.props;
+        const { location: nextLocation } = nextProps;
+        const { expandAll, showRiddleButton } = this.state;
+        const { expandAll: nextExpandAll, showRiddleButton: nextShowRiddleButton } = nextState;
 
         if (
             nextLocation.pathname === location.pathname &&
@@ -52,29 +53,29 @@ export default class ComponentDoc extends React.Component {
     }
 
     handleExpandToggle = () => {
-        const {expandAll} = this.state;
+        const { expandAll } = this.state;
         this.setState({
             expandAll: !expandAll,
         });
     };
 
     render() {
-        const {props} = this;
-        const {doc, location} = props;
-        const {content, meta} = doc;
+        const { props } = this;
+        const { doc, location } = props;
+        const { content, meta } = doc;
         const {
-            intl: {locale},
+            intl: { locale },
         } = this.context;
-        const demos = Object.keys(props.demos).map(key => props.demos[key]);
-        const {expandAll, showRiddleButton} = this.state;
-        const isDark = Boolean(utils.getCookie('theme') === 'dark')
+        const demos = Object.keys(props.demos).map((key) => props.demos[key]);
+        const { expandAll, showRiddleButton } = this.state;
+        const isDark = Boolean(utils.getCookie('theme') === 'dark');
 
         const isSingleCol = meta.cols === 1;
         const leftChildren = [];
         const rightChildren = [];
-        const showedDemo = demos.some(demo => demo.meta.only)
-            ? demos.filter(demo => demo.meta.only)
-            : demos.filter(demo => demo.preview);
+        const showedDemo = demos.some((demo) => demo.meta.only)
+            ? demos.filter((demo) => demo.meta.only)
+            : demos.filter((demo) => demo.preview);
         showedDemo
             .sort((a, b) => a.meta.order - b.meta.order)
             .forEach((demoData, index) => {
@@ -98,47 +99,57 @@ export default class ComponentDoc extends React.Component {
             'code-box-expand-trigger-active': expandAll,
         });
 
-        const jumper = showedDemo.map(demo => {
-            const {title} = demo.meta;
+        const jumper = showedDemo.map((demo) => {
+            const { title } = demo.meta;
             const localizeTitle = title[locale] || title;
             return (
                 <li key={demo.meta.id} title={localizeTitle}>
-                    <a href={`#${demo.meta.id}`} style={isDark ? { color: '#BFBFBF' } : {}}>{localizeTitle}</a>
+                    <a href={`#${demo.meta.id}`} style={isDark ? { color: '#BFBFBF' } : {}}>
+                        {localizeTitle}
+                    </a>
                 </li>
             );
         });
 
-        const {title, subtitle, filename} = meta;
+        const { title, subtitle, filename } = meta;
         const articleClassName = classNames({
             'show-riddle-button': showRiddleButton,
         });
         return (
-            <DocumentTitle title={`${subtitle || ''} ${title[locale] || title} - ` + config.baseConfig.projectName}>
+            <DocumentTitle
+                title={
+                    `${subtitle || ''} ${title[locale] || title} - ` + config.baseConfig.projectName
+                }
+            >
                 <article className={articleClassName}>
-                    <Affix className={isDark ? "dark toc-affix" : "toc-affix"} offsetTop={16}>
+                    <Affix className={isDark ? 'dark toc-affix' : 'toc-affix'} offsetTop={16}>
                         <ul id="demo-toc" className="toc">
                             {jumper}
                         </ul>
                     </Affix>
-                    <section className={isDark ? "markdown dark" : "markdown"}>
+                    <section className={isDark ? 'markdown dark' : 'markdown'}>
                         <h1>
                             {title[locale] || title}
                             {!subtitle ? null : <span className="subtitle">{subtitle}</span>}
                         </h1>
                         {props.utils.toReactComponent(
-                            ['section', {className: isDark ? 'markdown dark' : 'markdown'}].concat(getChildren(content)),
+                            [
+                                'section',
+                                { className: isDark ? 'markdown dark' : 'markdown' },
+                            ].concat(getChildren(content))
                         )}
                         <h2>
-                            <FormattedMessage id="app.component.examples"/>
+                            <FormattedMessage id="app.component.examples" />
                             <Tooltip
                                 title={
                                     <FormattedMessage
-                                        id={`app.component.examples.${expandAll ? 'collpse' : 'expand'}`}
+                                        id={`app.component.examples.${
+                                            expandAll ? 'collpse' : 'expand'
+                                        }`}
                                     />
                                 }
                             >
-                                <Icon
-                                    type={`${expandAll ? 'appstore' : 'appstore-o'}`}
+                                <AppstoreOutlined
                                     className={expandTriggerClass}
                                     onClick={this.handleExpandToggle}
                                     style={isDark ? { color: '#F2F2F2' } : {}}
@@ -163,9 +174,11 @@ export default class ComponentDoc extends React.Component {
                         [
                             'section',
                             {
-                                className: isDark ? 'markdown dark api-container' : 'markdown api-container',
+                                className: isDark
+                                    ? 'markdown dark api-container'
+                                    : 'markdown api-container',
                             },
-                        ].concat(getChildren(doc.api || ['placeholder'])),
+                        ].concat(getChildren(doc.api || ['placeholder']))
                     )}
                 </article>
             </DocumentTitle>

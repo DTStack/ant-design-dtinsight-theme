@@ -6,11 +6,11 @@ title:
 
 ## zh-CN
 
-定义了两种尺寸（默认、小），高度分别为 32px 和 28px。
+定义了两种尺寸（默认、小），高度分别为 32px 和 24px。
 
 ```jsx
-import { TimePicker } from 'antd';
-import moment from 'moment';
+import { TimePicker } from '../../index';
+import moment from 'dayjs';
 
 ReactDOM.render(
   <div className="demo-time-picker-box">

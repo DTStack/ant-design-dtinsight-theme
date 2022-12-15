@@ -1,0 +1,56 @@
+@import "../const.less";
+
+.ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-color: @grey_border;
+    background-color: @grey_border;
+}
+
+.dt-ant-select-dropdown-default.ant-select-dropdown {
+    box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
+}
+
+// 下拉菜单增加8px的上下内边距
+.ant-select-dropdown {
+    padding: 8px 0;
+}
+
+.ant-select-disabled {
+    .ant-select-selector {
+        .ant-select-selection-overflow {
+            .ant-select-selection-item {
+                color: @black_pageMsg;
+                background-color: @black_border;
+            }
+        }
+    }
+}
+
+// 多选
+.ant-select-multiple {
+    .ant-select-selector {
+        padding: 3px 4px 0;
+    }
+    .ant-select-selection-overflow-item {
+        margin-bottom: 3px;
+        margin-top: 0;
+    }
+    .ant-select-selection-item {
+        height: 24px;
+        -webkit-margin-end: 4px;
+        margin-inline-end: 4px;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: 0;
+        &-content {
+            margin-right: 2px;
+        }
+    }
+    .ant-select-selection-search {
+        height: 24px;
+        padding-top: 2px;
+    }
+    .ant-select-selection-item-remove {
+        color: #8B8FA8;
+        font-size: 12px;
+    }
+}

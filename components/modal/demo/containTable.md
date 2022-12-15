@@ -83,7 +83,7 @@ class App extends React.Component {
         </Button>
         <Modal
           title="Basic Modal"
-          width={680}
+          width={900}
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
@@ -93,7 +93,6 @@ class App extends React.Component {
             dataSource={data}
             size={'middle'}
             style={{ border: '1px solid #dddddd' }}
-            className="dt-pagination-lower"
             pagination={pagination}
           />
         </Modal>

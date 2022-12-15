@@ -9,21 +9,22 @@ title:
 选择框的不可用状态。
 
 ```jsx
-import { DatePicker } from 'antd';
-import moment from 'moment';
+import { DatePicker } from '../../index';
+import moment from 'dayjs';
 
 const { MonthPicker, RangePicker } = DatePicker;
 
 const dateFormat = 'YYYY-MM-DD';
 ReactDOM.render(
   <div className="demo-datepicker-box">
-    <DatePicker defaultValue={moment('2015-06-06', dateFormat)} disabled />
+    <DatePicker defaultValue={moment('2015-06-06', dateFormat)} disabled className="dt-ant-datepicker-basic" />
     <br />
-    <MonthPicker defaultValue={moment('2015-06', 'YYYY-MM')} disabled />
+    <MonthPicker defaultValue={moment('2015-06', 'YYYY-MM')} disabled className="dt-ant-datepicker-basic" />
     <br />
     <RangePicker
       defaultValue={[moment('2015-06-06', dateFormat), moment('2015-06-06', dateFormat)]}
       disabled
+      className="dt-ant-datepicker-basic"
     />
   </div>,
   mountNode,

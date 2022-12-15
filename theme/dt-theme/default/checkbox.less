@@ -1,0 +1,51 @@
+@import "../const.less";
+
+// checkbox
+.ant-checkbox-wrapper, .ant-checkbox {
+    &:hover .ant-checkbox-inner {
+        border-color: @hoverColor;
+    }
+}
+
+.ant-checkbox-wrapper {
+    height: @lineHeight;
+    line-height: @lineHeight;
+    .ant-checkbox {
+        top: 0.32em;
+        .ant-checkbox-inner {
+            border-radius: 2px;
+            width: 16px;
+            height: 16px;
+        }
+        & + span {
+            height: 20px;
+            line-height: 20px;
+        }
+    }
+}
+
+.ant-checkbox-wrapper-disabled {
+    // 禁用已选择的 checkbox
+    .ant-checkbox-checked {
+        .ant-checkbox-inner {
+            background-color: @black_border;
+            &::after {
+                border-color: @white;
+            }
+        }
+    }
+    // 禁用未选择的 checkbox
+    .ant-checkbox-disabled {
+        .ant-checkbox-inner {
+            border-color: @black_border;
+        }
+    }
+}
+
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: @primaryColor;
+}
+
+.ant-checkbox-group-item {
+    margin-right: 16px;
+}

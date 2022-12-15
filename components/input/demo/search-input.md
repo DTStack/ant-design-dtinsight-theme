@@ -27,14 +27,15 @@ ReactDOM.render(
     />
     <br />
     <br />
-    <Search placeholder="input search text" onSearch={value => console.log(value)} enterButton />
-    <br />
-    <br />
     <Search
+      size="small"
       placeholder="input search text"
-      enterButton="Search"
       onSearch={value => console.log(value)}
+      style={{ width: 200 }}
     />
+    <br />
+    <br />
+    <Search placeholder="input search text" onSearch={value => console.log(value)} enterButton />
   </div>,
   mountNode,
 );

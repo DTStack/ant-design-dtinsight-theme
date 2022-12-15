@@ -1,0 +1,102 @@
+@import "../const.less";
+
+.ant-input,
+.ant-input-affix-wrapper {
+    padding: 5px 11px;
+    line-height: 20px;
+}
+
+.ant-input[disabled],
+.ant-input-affix-wrapper-disabled {
+    border-color: transparent;
+    &:hover {
+        border-color: transparent;
+    }
+}
+
+.ant-input-clear-icon {
+    &:hover {
+        color: @black_Desc;
+    }
+}
+
+.ant-input-focused {
+    border-color: #005CE6 !important;
+    box-shadow: none;
+}
+
+.ant-input::-ms-input-placeholder {
+    color: #B1B4C5 !important;
+}
+
+.ant-input::-webkit-input-placeholder {
+    color: #B1B4C5 !important;
+}
+
+.ant-input.ant-input-sm {
+    padding: 1px 11px;
+}
+
+.ant-input-search .ant-input-wrapper .ant-input-search-button {
+    border-left: 0;
+}
+
+.ant-input-wrapper {
+    .ant-input-group-addon {
+        .ant-select-focused {
+            .ant-select-selector {
+                border-color: #FAFAFA !important;
+            }
+        }
+        .ant-input-search-button {
+            .anticon-search {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.ant-input-search-with-button {
+    .ant-input-group .ant-input:first-child,
+    .ant-input-group-addon:first-child {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .ant-input-group .ant-input-group-addon:last-child {
+        .ant-input-search-button {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}
+
+.ant-btn-icon-only {
+    width: 32px;
+    background: none;
+    .anticon-search {
+        margin-left: 9px;
+    }
+}
+
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary) {
+    color: @black_msg;
+    border: solid 1px #D8DAE1;
+    &:hover {
+        border: solid 1px @primaryColor;
+        color: @primaryColor;
+    }
+}
+
+// 密码输入框 icon 颜色
+.ant-input-password {
+    .ant-input-password-icon {
+        color: @black_msg;
+        &:hover {
+            color: @black_Desc;
+        }
+    }
+}
+
+// 穿梭框 icon 颜色
+.ant-input-prefix {
+    color: @black_msg;
+}

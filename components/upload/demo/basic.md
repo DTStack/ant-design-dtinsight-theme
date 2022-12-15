@@ -8,13 +8,17 @@ title:
 ## zh-CN
 
 经典款式，用户点击按钮弹出文件选择框。
+## 设计规范
+- 提示文本距离上传按钮间距8px，上传按钮样式同次要按钮Button的icon+文字按钮样式
+- 上传以后的回显部分，文件名字体12px Regular，色号#64698B，回显部分的矩形背景宽度默认264px，长度可根据场景自行调整，圆角半径4px，填充色#F5F5F8。
 
 ## en-US
 
 Classic mode. File selection dialog pops up when upload button is clicked.
 
 ```jsx
-import { Upload, message, Button, Icon } from 'antd';
+import { Upload, message, Button } from 'antd';
+import { UploadOutlined } from '@ant-design/icons';
 
 const props = {
   name: 'file',
@@ -36,9 +40,7 @@ const props = {
 
 ReactDOM.render(
   <Upload {...props}>
-    <Button>
-      <Icon type="upload" /> Click to Upload
-    </Button>
+    <Button icon={<UploadOutlined />}> Click to Upload</Button>
   </Upload>,
   mountNode,
 );

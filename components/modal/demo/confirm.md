@@ -6,16 +6,31 @@ title:
 
 ## zh-CN
 
-使用 `confirm()` 可以快捷地弹出确认框
+使用 `confirm()` 可以快捷地弹出确认框；添加了 `dt-modal-delete-icon` 自定义类名，用法如 Delete 示例。
 
 ```jsx
 import { Modal, Button } from 'antd';
+import { CloseCircleFilled, InfoCircleTwoTone } from '@ant-design/icons'
 
 const { confirm } = Modal;
 
 function showConfirm() {
   confirm({
     title: 'Do you Want to delete these items?',
+    content: 'Some descriptions',
+    onOk() {
+      console.log('OK');
+    },
+    onCancel() {
+      console.log('Cancel');
+    },
+  });
+}
+
+function showCustomConfirm() {
+  confirm({
+    title: 'Do you Want to delete these items?',
+    icon: <InfoCircleTwoTone />,
     content: 'Some descriptions',
     onOk() {
       console.log('OK');
@@ -33,6 +48,7 @@ function showDeleteConfirm() {
     okText: '删除',
     okType: 'danger',
     cancelText: '取消',
+    icon: <CloseCircleFilled className="dt-modal-delete-icon" />,
     onOk() {
       console.log('OK');
     },
@@ -48,6 +64,7 @@ ReactDOM.render(
     <Button onClick={showDeleteConfirm} type="dashed">
       Delete
     </Button>
+    <Button onClick={showCustomConfirm}>Custom Icon Confirm</Button>
   </div>,
   mountNode,
 );

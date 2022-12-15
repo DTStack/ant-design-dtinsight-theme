@@ -9,8 +9,8 @@ title:
 点击 TimePicker，然后可以在浮层中选择或者输入某一时间。
 
 ```jsx
-import { TimePicker } from 'antd';
-import moment from 'moment';
+import { TimePicker } from '../../index';
+import moment from 'dayjs';
 
 function onChange(time, timeString) {
   console.log(time, timeString);

@@ -1,53 +1,71 @@
 {
-  "name": "ant-design-dtinsight-theme",
-  "version": "1.1.5",
-  "description": "This is a document of dtinsight-theme based on Ant Design.",
-  "repository": "https://github.com/DTStack/ant-design-dtinsight-theme",
-  "homepage": "https://github.com/DTStack/ant-design-dtinsight-theme",
-  "main": "index.js",
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development bisheng start",
-    "build": "rm -rf dist && bisheng build",
-    "clean": "rimraf dist/*",
-    "changelog": "./scripts/changelog.sh",
-    "release": "./scripts/release.sh",
-    "publish": "./scripts/publish.sh",
-    "predeploy": "rm -rf dist && npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "keywords": [
-    "antd-theme",
-    "dtinsight"
-  ],
-  "author": "dt-insight-front",
-  "license": "ISC",
-  "dependencies": {
-    "antd": "3.26.13"
-  },
-  "devDependencies": {
-    "@babel/runtime": "^7.4.4",
-    "bisheng": "^1.2.4",
-    "bisheng-plugin-antd": "^1.0.1",
-    "bisheng-plugin-react": "^1.0.0",
-    "bisheng-plugin-toc": "^0.4.4",
-    "commitizen": "^4.2.4",
-    "cross-env": "^5.2.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "file-loader": "^6.0.0",
-    "gh-pages": "^3.2.0",
-    "intersection-observer": "^0.7.0",
-    "lz-string": "^1.4.4",
-    "moment": "^2.24.0",
-    "react-copy-to-clipboard": "^5.0.1",
-    "react-intl": "^2.9.0",
-    "rimraf": "^2.6.3",
-    "scrollama": "^2.0.0",
-    "standard-version": "7.0.1",
-    "url-loader": "^4.1.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
+    "name": "ant-design-dtinsight-theme",
+    "version": "2.0.0",
+    "description": "This is a document of dtinsight-theme based on Ant Design.",
+    "repository": "https://github.com/DTStack/ant-design-dtinsight-theme",
+    "homepage": "https://github.com/DTStack/ant-design-dtinsight-theme",
+    "main": "index.js",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development bisheng start",
+        "build": "rm -rf dist && bisheng build",
+        "generate": "node custom-icons/generate/index.js",
+        "clean": "rimraf dist/*",
+        "changelog": "./scripts/changelog.sh",
+        "release": "./scripts/release.sh",
+        "publish": "./scripts/publish.sh",
+        "deploy": "gh-pages -d dist",
+        "prettier": "npx prettier --check './**.{js,jsx,json,ts,tsx}'",
+        "prettier:fix": "npx prettier --write './**.{js,jsx,json,ts,tsx}'",
+        "eslint": "npx eslint . --no-error-on-unmatched-pattern",
+        "eslint:fix": "npx eslint . --fix",
+        "stylelint": "npx stylelint './**/*.{less,css,scss}'",
+        "stylelint:fix": "npx stylelint './**/*.{less,css,scss}' --fix"
+    },
+    "keywords": [
+        "antd-theme",
+        "dtinsight"
+    ],
+    "author": "dt-insight-front",
+    "license": "ISC",
+    "dependencies": {
+        "antd": "4.22.5",
+        "dayjs": "^1.11.0",
+        "insert-css": "^2.0.0",
+        "react-resizable": "^3.0.4"
+    },
+    "devDependencies": {
+        "@ant-design/compatible": "^1.1.0",
+        "@ant-design/icons": "^4.7.0",
+        "@babel/runtime": "^7.4.4",
+        "@typescript-eslint/eslint-plugin": "5.30.0",
+        "@typescript-eslint/parser": "5.30.0",
+        "bisheng": "^1.2.4",
+        "bisheng-plugin-antd": "^1.0.1",
+        "bisheng-plugin-react": "^1.0.0",
+        "bisheng-plugin-toc": "^0.4.4",
+        "commitizen": "^4.2.4",
+        "cross-env": "^5.2.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "eslint": "8.22.0",
+        "eslint-plugin-prettier": "4.2.1",
+        "file-loader": "^6.0.0",
+        "gh-pages": "^3.2.0",
+        "intersection-observer": "^0.7.0",
+        "ko-lint-config": "^2.2.15",
+        "lz-string": "^1.4.4",
+        "postcss": "^8.4.17",
+        "postcss-less": "6.0.0",
+        "react-copy-to-clipboard": "^5.0.1",
+        "react-intl": "^2.9.0",
+        "rimraf": "^2.6.3",
+        "scrollama": "^2.0.0",
+        "standard-version": "7.0.1",
+        "stylelint": "14.11.0",
+        "url-loader": "^4.1.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
     }
-  }
 }

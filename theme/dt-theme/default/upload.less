@@ -1,0 +1,71 @@
+@import "../const.less";
+
+.ant-upload {
+    .ant-btn:not([disabled]) {
+        border-color: @primaryColor;
+        color: @primaryColor;
+        &:hover {
+            border-color: @hoverColor;
+            color: @hoverColor;
+        }
+    }
+    .ant-btn-primary:not([disabled]) {
+        color: @white;
+        &:hover {
+            color: @white;
+        }
+    }
+}
+
+.ant-upload.ant-upload-select.ant-upload-select-picture-card {
+    background-color: @black_navBg;
+    &:hover {
+        .dt-upload-button {
+            color: @primaryColor;
+        }
+    }
+}
+
+.ant-upload-list {
+    .ant-upload-list-item.ant-upload-list-item-list-type-text {
+        height: 28px;
+        .ant-upload-list-item-info {
+            background: none;
+            border-radius: 4px;
+            color: @black_Desc;
+            &:hover {
+                background: @black_titleBg;
+            }
+            .ant-upload-text-icon {
+                margin-left: 4px;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+.ant-upload-picture-card-wrapper.avatar-uploader > .ant-upload {
+    width: 80px;
+    height: 80px;
+}
+
+.ant-upload.ant-upload-drag {
+    background-color: @black_navBg;
+}
+
+.dt-upload-button {
+    color: @black_msg;
+    .anticon {
+        font-size: 24px;
+    }
+}
+
+.ant-upload-list-item-info .ant-upload-text-icon .anticon {
+    font-size: 14px;
+}
+
+.ant-upload-list-item-card-actions {
+    .ant-btn-icon-only.ant-btn-sm > * {
+        font-size: 16px;
+    }
+}

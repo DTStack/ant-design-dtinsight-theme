@@ -9,7 +9,7 @@ title:
 
 基本的页面布局
 
-- 添加类名 `.dt-header-log-wrapper` 可设置 logo 以及标题样式
+- 添加类名 `.dt-header-log-wrapper` 可设置 logo、Menu 以及标题样式
 
 ```jsx
 import { Layout, Menu } from 'antd';
@@ -21,6 +21,7 @@ ReactDOM.render(
         <Layout style={{ position: "relative" }}>
             <Header className="dt-layout-header" style={{ width: "100%", minWidth: 100 }}>
                 <div className="logo dt-header-log-wrapper" style={{ float: 'left' }}>
+                    {/* <img src='/menu' /> 此处添加 munu */}
                     {/* <img src='/logo' /> 此处添加 logo */}
                     <span className='c-header__title'>DTInsight-Theme</span>
                 </div>
@@ -28,7 +29,7 @@ ReactDOM.render(
                     mode="horizontal"
                     defaultSelectedKeys={['2']}
                 >
-                    <Menu.Item key="1"><a>数据源</a></Menu.Item>
+                    <Menu.Item key="1">数据源</Menu.Item>
                     <Menu.Item key="2">数据开发</Menu.Item>
                     <Menu.Item key="3">运维中心</Menu.Item>
                 </Menu>

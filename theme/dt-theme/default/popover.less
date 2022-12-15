@@ -1,0 +1,40 @@
+@import "../const.less";
+
+.ant-popover {
+    .ant-popover-inner {
+        padding: 16px;
+        .ant-popover-buttons {
+            .ant-btn {
+                border-radius: 2px;
+            }
+        }
+    }
+    .ant-popover-title {
+        padding: 0;
+        border-bottom: none;
+        min-height: 22px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: PingFangSC-Medium, "PingFang SC";
+        margin-bottom: 4px;
+    }
+    .ant-popover-message-title {
+        color: @black_title;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, "PingFang SC";
+        padding-left: 25px;
+    }
+    .ant-popover-message {
+        & > .anticon {
+            font-size: 20px;
+            top: 2px;
+        }
+    }
+    .ant-popover-inner-content {
+        padding: 0;
+    }
+}
+
+.ant-popconfirm {
+    min-width: 200px;
+}

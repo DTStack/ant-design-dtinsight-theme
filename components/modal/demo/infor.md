@@ -45,12 +45,26 @@ function warning() {
   });
 }
 
+function onlyTitle() {
+  Modal.info({
+    title: 'This is an only title message',
+  });
+}
+
+function onlyContent() {
+  Modal.info({
+    content: 'This is an only content message. This is an only content message. This is an only content message.',
+  });
+}
+
 ReactDOM.render(
   <div className="demo-modal-box">
     <Button onClick={info}>Info</Button>
     <Button onClick={success}>Success</Button>
     <Button onClick={error}>Error</Button>
     <Button onClick={warning}>Warning</Button>
+    <Button onClick={onlyTitle}>Only title</Button>
+    <Button onClick={onlyContent}>Only content</Button>
   </div>,
   mountNode,
 );

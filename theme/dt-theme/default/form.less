@@ -1,45 +1,86 @@
-@import '../const.less';
+@import "../const.less";
+
+.ant-form-item {
+    margin-bottom: 16px;
+    .ant-form-item-explain {
+        .ant-form-item-explain-error {
+            height: auto;
+            color: @red;
+            line-height: 20px;
+        }
+    }
+}
+
+.ant-form-item-label > label {
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.ant-form-vertical .ant-form-item-label {
+    padding: 0 0 4px;
+    margin-bottom: 0;
+}
+
+.ant-form-vertical {
+    .ant-table-cell > .ant-form-item > .ant-form-item-row {
+        flex-direction: row;
+    }
+}
+
+.ant-radio-wrapper-checked .ant-radio-disabled .ant-radio-inner {
+    background-color: @white;
+}
+
+.ant-form-item-label > label .ant-form-item-tooltip {
+    color: #B1B4C5;
+    font-size: 16px;
+}
 
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon,
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon {
     color: @green;
 }
+
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover .ant-select-selected-icon {
     color: @green;
 }
+
 .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
     background: @deriveColor;
 }
+
 .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
     background: @deriveColor;
 }
-li.ant-time-picker-panel-select-option-selected {
+
+li.ant-picker-panel-select-option-selected {
     font-weight: normal;
     background: @deriveColor;
 }
-.ant-time-picker-panel-select li:focus {
+
+.ant-picker-panel-select li:focus {
     font-weight: normal;
 }
-li.ant-time-picker-panel-select-option-selected:hover {
+
+li.ant-picker-panel-select-option-selected:hover {
     background: @deriveColor;
 }
+
 .ant-radio-button-wrapper {
     padding: 0 16px;
-    color: @black6;
 }
 
 // 灰色背景 表单样式设置 对应表单控件添加样式名dt-form-shadow-bg
 .dt-form-shadow-bg {
-    &.ant-input, &.ant-input-number, .ant-input, .ant-select-selection, .ant-time-picker-input {
+    &.ant-input, &.ant-input-number, .ant-input, .ant-select-selection {
         border: 1px solid transparent;
-        box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
-        &:hover, &:focus {
-            border-color: @primaryColor;
-        }
-        &:focus {
-            border-color: @primaryColor;
-            box-shadow: 0px 2px 8px 0px rgba(63,135,255,0.10);
-        }
+        // &:hover, &:focus {
+        //     border-color: @primaryColor;
+        // }
+        // &:focus {
+        //     border-color: @primaryColor;
+        //     box-shadow: 0px 2px 8px 0px rgba(63,135,255,0.10);
+        // }
     }
     &.ant-input[disabled]:hover {
         border-color: transparent;
@@ -57,20 +98,21 @@ li.ant-time-picker-panel-select-option-selected:hover {
     &.ant-select-disabled .ant-select-selection:focus,
     &.ant-select-disabled .ant-select-selection:active {
         border-color: transparent;
-        box-shadow: 0px 2px 8px 0px rgba(6,14,26,0.08);
+        box-shadow: 0 2px 8px 0 rgba(6, 14, 26, 0.08);
     }
-    .ant-time-picker-input[disabled]:hover {
+    .ant-picker-input[disabled]:hover {
         border-color: transparent;
     }
 }
+
 .has-error {
     .dt-form-shadow-bg {
-        &.ant-input, .ant-input, &.ant-input-number, .ant-select-selection, .ant-time-picker-input {
+        &.ant-input, .ant-input, &.ant-input-number, .ant-select-selection, .ant-picker-input {
             &:hover, &:focus {
                 border-color: @red;
             }
         }
-        &.ant-input, &.ant-input-number, &.ant-time-picker-input, .ant-select-selection, .ant-input {
+        &.ant-input, &.ant-input-number, &.ant-picker-input, .ant-select-selection, .ant-input {
             border-color: @red;
         }
         &.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
@@ -80,11 +122,11 @@ li.ant-time-picker-panel-select-option-selected:hover {
 }
 
 .dt-radio-group {
-    box-shadow: 0px 2px 8px 0px rgba(6, 14, 26, 0.08);
+    box-shadow: 0 2px 8px 0 rgba(6, 14, 26, 0.08);
     .ant-radio-button-wrapper {
         border: 0;
     }
-    &.ant-radio-group-solid{
+    &.ant-radio-group-solid {
         .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
             outline: unset;
         }
@@ -100,17 +142,32 @@ li.ant-time-picker-panel-select-option-selected:hover {
 // form 图标颜色
 .ant-select-arrow,
 .ant-calendar-picker-icon,
-.ant-time-picker-icon .ant-time-picker-clock-icon,
-.ant-time-picker-clear .ant-time-picker-clock-icon,
-.ant-time-picker-icon,
-.ant-time-picker-clear {
-    color: #999999;
+.ant-picker-icon .ant-picker-clock-icon,
+.ant-picker-clear .ant-picker-clock-icon,
+.ant-picker-icon {
+    color: @black_msg;
+}
+
+.ant-picker-clear {
+    color: @black_msg !important;
+    &:hover {
+        color: @black_Desc !important;
+    }
 }
 
 // form 下拉 投影
 .ant-cascader-menus,
 .ant-calendar,
 .ant-select-dropdown,
-.ant-time-picker-panel-inner {
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+.ant-picker-panel-inner {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.ant-picker-content {
+    thead {
+        th {
+            color: @black_pageMsg;
+            font-weight: 400;
+        }
+    }
 }

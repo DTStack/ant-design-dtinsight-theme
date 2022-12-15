@@ -1,122 +1,119 @@
 ---
-order: 2
+order: 3
 title: 颜色规范
 ---
 
-## 基础色
+## 01.基础色
 
 | 颜色 | scss 变量名称  |色值  |说明  |
 |---------|---------|---------|---------|
-| <input style="background: #3F87FF;width: 80px; height: 26px;border: 1px solid #fff;" /> |   $primaryColor      |  #3F87FF       |  主色，用于一级操作按钮底色，菜单选中文字按钮色，选中 tab 的指示线和字体颜色，选中
-   |
-|     <input style="background: #5C99FF;width: 80px; height: 26px;border: 1px solid #fff;" />  |  $hoverColor     |   #5C99FF      |  hover, 用于一级按钮，文字按钮等 hover 颜色       |
-|     <input style="background: #2672F0;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $clickColor      |   #2672F0      | click, 用于一级按钮，文字按钮等点击时的颜色 |
+| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $primaryColor      |  #1D78FF      | 用于主按钮底色，描边按钮，可操作项，tab 选中状态的底部线条，运行中的状态以及文字图标颜色    |
+| <input style="background: #0A67F2;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $hoverColor        |   #0A67F2     | Hover, 用于主按钮底色，描边按钮，可操作项，tab 选中状态的 hover 状态填充色      |
+| <input style="background: #2672F0;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $clickColor        |   #005CE6     | Click, 用于主按钮底色，描边按钮，可操作项，tab 选中状态的点击状态填充色 |
+| <input style="background: #BBD6FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $disabledColor     |   #BBD6FF     | Disable, 用于主按钮底色，描边按钮，可操作项的不可用状态填充色 |
+| <input style="background: #E8F1FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bg1Color          |   #E8F1FF     | Bg1, 用于小模块切换背景，提示背景 |
+| <input style="background: #F2F7FA;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bg2Color          |   #F2F7FA     | Bg2, 用于整个页面的底色 |
 
-**默认主题特有:**
-
-| 颜色 | scss 变量名称  |色值  |说明  |
-|---------|---------|---------|---------|
-|  <input style="background: #F2F9FF;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $deriveColor     |     #F2F9FF    | 衍生色，列表选中底色，部分 tab 选中底色 |
-
-**暗黑主题特有:**
+### 1.1 衍生色
 
 | 颜色 | scss 变量名称  |色值  |说明  |
 |---------|---------|---------|---------|
-|  <input style="background: #292D42;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $deriveColor_dark     |     #292D42    | 衍生色，列表选中底色，部分 tab 选中底色，disable 按钮底色 |
+|  <input style="background: #DDEBFF;width: 80px; height: 26px;border: 1px solid #fff;" />   |    $deriveColor      |     #DDEBFF   | 衍生色，列表选中底色，部分 tab 选中底色 |
 
-## 无色相
-
-**默认主题特有:**
+## 02.DTinsight navy
 
 | 颜色 |scss 变量名称  |色值  |说明  |
 |---------|---------|---------|---------|
-| <input style="background: #333333;width: 80px; height: 26px;border: 1px solid #fff;" /> |   $black3      |  #333333       |  用于标题，主文字颜色
-   |
-|     <input style="background: #666666;width: 80px; height: 26px;border: 1px solid #fff;" />  |  $black6     |   #666666      |  用于次要信息， tab 未选中颜色      |
-|     <input style="background: #999999;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black9      |   #999999      | 默认状态输入框内提示信息，按钮内 icon 颜色 |
-|  <input style="background: #BFBFBF;width: 80px; height: 26px;border: 1px solid #fff;" /> |     $blackBF    |     #BFBFBF    | disable 字体颜色 |
-|  <input style="background: #DDDDDD;width: 80px; height: 26px;border: 1px solid #fff;" /> |     $blackDD    |     #DDDDDD    | border 颜色 |
-|  <input style="background: #E8E8E8;width: 80px; height: 26px;border: 1px solid #fff;" /> |     $blackE8    |     #E8E8E8    | 列表里分割线颜色，disable 按钮底色 |
-|  <input style="background: #FAFAFA;width: 80px; height: 26px;border: 1px solid #fff;" /> |     $blackFA    |     #FAFAFA    | 灰色底色 |
+| <input style="background: #3D446E;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_title       |  #3D446E      |  用于标题，主文字颜色       |
+| <input style="background: #64698B;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_Desc        |  #64698B      |  用于表单标题备注说明文字颜色     |
+| <input style="background: #8B8FA8;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_pageMsg     |  #8B8FA8      |  用于分页器提示文字颜色     |
+| <input style="background: #B1B4C5;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_msg         |  #B1B4C5      |  用于文本框内的提示文字颜色 |
+| <input style="background: #D8DAE2;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_border      |  #D8DAE2      |  用于表单边框颜色，图表线条颜色 |
+| <input style="background: #EBECF0;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_readonly    |  #EBECF0      |  用于分割线、失效按钮状态颜色 |
+| <input style="background: #F5F5F8;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_titleBg     |  #F5F5F8      |  用于模块标题背景色 |
+| <input style="background: #F9F9FA;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $black_navBg       |  #F9F9FA      |  用于二级导航底色 |
+| <input style="background: #FFFFFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $white             |  #FFFFFF      |  一级按钮文字颜色 |
 
-**暗黑主题特有:**
-
-| 颜色 | scss 变量名称  |色值  |说明  |
-|---------|---------|---------|---------|
-|  <input style="background: #F2F2F2;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $whiteF2     |     #F2F2F2    | 最亮的白色，用于大标题、弹窗标题、选中 tab 文字以及图标等的高亮颜色 |
-|  <input style="background: #BFBFBF;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $whiteBF     |     #BFBFBF    |   最常用主文字颜色，用于列表文字、表单文字、tab 未选中等的颜色衍生色，列表选中底色，部分 tab 选中底色，disable 按钮底色 |
-|  <input style="background: #8C8C8C;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $white8C     |     #8C8C8C    | 辅助灰色，用于部分图标式按钮的颜色、次要文字颜色 |
-|  <input style="background: #666666;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $white6     |     #666666    | 次级灰色，主要用于表单里提示文字的颜色等次要信息 |
-|  <input style="background: #4D4D4D;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $white4D     |     #4D4D4D    | 置灰不可点击的控件等颜色 |
-
-## 蓝灰色
-
-**暗黑主题特有:**
-
-| 颜色 | scss 变量名称  |色值  |说明  |
-|---------|---------|---------|---------|
-|  <input style="background: #0E0E17;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $blue1     |     #0E0E17    | 较深背景色，用于 IDE ,左右侧边栏未选中底色，图表底色等 |
-|  <input style="background: #1A1C29;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $blue2     |     #1A1C29    | 较浅背景色，用于任务列表模块底色，左右侧边栏展开底色、列表底色、表单底色等 |
-|  <input style="background: #272A40;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $blue3     |     #272A40    | 浅色分割线颜色、表单描边颜色、弹窗表头分割线颜色等 |
-|  <input style="background: #090A0F;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $blue4     |     #090A0F    | 深色分割线颜色 |
-
-## 辅助色
-
-**默认主题特有:**
+## 03.Functional Color 功能色
 
 | 颜色 |scss 变量名称  |色值  |说明  |
 |---------|---------|---------|---------|
-| <input style="background: #FF5F5C;width: 80px; height: 26px;border: 1px solid #fff;" /> |   red      |  #FF5F5C       |  用于错误提示文字、按钮色，运行失败等指示色，必填项*颜色。
-   |
-|     <input style="background: #FFB310;width: 80px; height: 26px;border: 1px solid #fff;" />  |  yellow     |   #FFB310      |  用于警示提示 icon、待运行等状态颜色      |
-|     <input style="background: #12BC6A;width: 80px; height: 26px;border: 1px solid #fff;" />    |   green      |   #12BC6A     | 用于成功 icon，运行/发布成功状态颜色 |
+| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bule              |  #1D78FF      |  用于运行中状态颜色       |
+| <input style="background: #11D7B2;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $green             |  #11D7B2      |  用于成功状态颜色     |
+| <input style="background: #F96C5B;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $red               |  #F96C5B      |  用于失败状态、校验错误信息文字、必填项图标颜色     |
+| <input style="background: #FBB310;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $yellow            |  #FBB310      |  用于下线状态、警告提示颜色 |
+| <input style="background: #AC9DFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $purple            |  #AC9DFF      |  用于取消、冻结状态提示颜色 |
 
-**暗黑主题特有:**
 
-| 颜色 | scss 变量名称  |色值  |说明  |
-|---------|---------|---------|---------|
-|  <input style="background: #E25F5D;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $red_dark     |     #E25F5D    | 用于错误提示文字、按钮色，运行失败等指示 |
-|  <input style="background: #C28C3A;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $yellow_dark     |     #C28C3A    | 用于警示提示 icon、待运行等状态颜色 |
-|  <input style="background: #00A755;width: 80px; height: 26px;border: 1px solid #fff;" /> |    $green_dark     |     #00A755    | 用于成功 icon，运行/发布成功状态颜色 |
+## 04.Other Color 图表/插图配色
 
-## 图表配色
+### 4.1 Blue
 
-#### 默认主题特有
+| 颜色 |scss 变量名称  |色值  |
+|---------|---------|---------|
+| <input style="background: #DDEBFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bule1             |  #DDEBFF      |
+| <input style="background: #5D9EFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bule2             |  #5D9EFF      |
+| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bule3             |  #1D78FF      |
 
-图表颜色没有统一的规范，根据不同场景可自行配色，保持饱和度明度肉眼看上去一致，下面配色做参考。
+### 4.2 Green
 
-参考配色 1
+| 颜色 |scss 变量名称  |色值  |
+|---------|---------|---------|
+| <input style="background: #E7FBF7;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $green1            |  #E7FBF7      |
+| <input style="background: #50E2C6;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $green2            |  #50E2C6      |
+| <input style="background: #11D7B2;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $green3            |  #11D7B2      |
 
-| 颜色 |色值  |颜色  |色值  |
-|---------|---------|---------|---------|
-| <input style="background: #6384F0;width: 80px; height: 26px;border: 1px solid #fff;" /> |   #6384F0      |  <input style="background: #339CFF;width: 80px; height: 26px;border: 1px solid #fff;" />       |  #339CFF |
-|     <input style="background: #00C3E5;width: 80px; height: 26px;border: 1px solid #fff;" />  |  #00C3E5     |   <input style="background: #16DFB4;width: 80px; height: 26px;border: 1px solid #fff;" />      |  #16DFB4      |
-|     <input style="background: #15D275;width: 80px; height: 26px;border: 1px solid #fff;" />    |   #15D275      |   <input style="background: #86E159;width: 80px; height: 26px;border: 1px solid #fff;" />      | #86E159 |
+### 4.3 Yellow
 
-参考配色 2
+| 颜色 |scss 变量名称  |色值  |
+|---------|---------|---------|
+| <input style="background: #FFF4D9;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $yellow1           |  #FFF4D9      |
+| <input style="background: #FFC749;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $yellow2           |  #FFC749      |
+| <input style="background: #FBB310;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $yellow3           |  #FBB310      |
+            
+### 4.4 Red
 
-| 颜色 |色值  |颜色  |色值  |
-|---------|---------|---------|---------|
-| <input style="background: #BA68F0;width: 80px; height: 26px;border: 1px solid #fff;" /> |   #BA68F0      |  <input style="background: #6F75EE;width: 80px; height: 26px;border: 1px solid #fff;" />       |  #6F75EE |
-|     <input style="background: #1FB1F1;width: 80px; height: 26px;border: 1px solid #fff;" />  |  #1FB1F1     |   <input style="background: #17C992;width: 80px; height: 26px;border: 1px solid #fff;" />      |  #17C992      |
-|     <input style="background: #FFA93C;width: 80px; height: 26px;border: 1px solid #fff;" />    |   #FFA93C      |   <input style="background: #FF7F6B;width: 80px; height: 26px;border: 1px solid #fff;" />      | #FF7F6B |
+| 颜色 |scss 变量名称  |色值  |
+|---------|---------|---------|
+| <input style="background: #FDE9E7;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $red1              |  #FDE9E7      |
+| <input style="background: #FFA297;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $red2              |  #FFA297      |
+| <input style="background: #F96C5B;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $red3              |  #F96C5B      |
+            
+### 4.5 Purple
 
-#### 暗黑主题特有
+| 颜色 |scss 变量名称  |色值  |
+|---------|---------|---------|
+| <input style="background: #EAE6FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $purple1           |  #EAE6FF      |
+| <input style="background: #BDB1FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $purple2           |  #BDB1FF      |
+| <input style="background: #AC9DFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $purple3           |  #AC9DFF      |
+            
+### 4.6 Cyan
 
-暗黑模式下图表配色比在亮色下明度压一些，保证识别性同时保障视觉舒适度，根据不同底色自行配色，下面配色做参考。
+| 颜色 |scss 变量名称  |色值  |
+|---------|---------|---------|
+| <input style="background: #E7F8FA;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $cyan1             |  #E7F8FA      |
+| <input style="background: #88E1EB;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $cyan2             |  #88E1EB      |
+| <input style="background: #2CCCDF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $cyan3             |  #2CCCDF      |
 
-参考配色 1
+### 4.7 Pink
 
-| 颜色 |色值  |颜色  |色值  |
-|---------|---------|---------|---------|
-| <input style="background: #5F7EE6;width: 80px; height: 26px;border: 1px solid #fff;" /> |   #5F7EE6      |  <input style="background: #3092ED;width: 80px; height: 26px;border: 1px solid #fff;" />       |  #3092ED |
-|     <input style="background: #00B9D9;width: 80px; height: 26px;border: 1px solid #fff;" />  |  #00B9D9     |   <input style="background: #1ABD9A;width: 80px; height: 26px;border: 1px solid #fff;" />      |  #1ABD9A      |
-|     <input style="background: #1DB86C;width: 80px; height: 26px;border: 1px solid #fff;" />    |   #1DB86C      |   <input style="background: #85C963;width: 80px; height: 26px;border: 1px solid #fff;" />      | #85C963 |
+| 颜色 |scss 变量名称  |色值  |
+|---------|---------|---------|
+| <input style="background: #FFE6EF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $pink1             |  #FFE6EF      |
+| <input style="background: #FFB4CE;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $pink2             |  #FFB4CE      |
+| <input style="background: #FF82AE;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $pink3             |  #FF82AE      |
 
-参考配色 2
+### 4.8 多色场景：环形、树形图表
 
-| 颜色 |色值  |颜色  |色值  |
-|---------|---------|---------|---------|
-| <input style="background: #AE61E0;width: 80px; height: 26px;border: 1px solid #fff;" /> |   #AE61E0      |  <input style="background: #6469D6;width: 80px; height: 26px;border: 1px solid #fff;" />       |  #6469D6 |
-|     <input style="background: #1C9FD9;width: 80px; height: 26px;border: 1px solid #fff;" />  |  #1C9FD9     |   <input style="background: #17C992;width: 80px; height: 26px;border: 1px solid #fff;" />      |  #17C992      |
-|     <input style="background: #DE9335;width: 80px; height: 26px;border: 1px solid #fff;" />    |   #DE9335      |   <input style="background: #E86651;width: 80px; height: 26px;border: 1px solid #fff;" />      | #E86651 |
+| 颜色 |scss 变量名称  |色值  |
+|---------|---------|---------|
+| <input style="background: #AC9DFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other1            |  #AC9DFF      |
+| <input style="background: #888DFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other2            |  #888DFF      |
+| <input style="background: #6A87FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other3            |  #6A87FF      |
+| <input style="background: #4B81FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other4            |  #4B81FF      |
+| <input style="background: #2D7BFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other5            |  #2D7BFF      |
+| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other6            |  #1D78FF      |
+| <input style="background: #1A94E9;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other7            |  #1A94E9      |
+| <input style="background: #17A6D9;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other8            |  #17A6D9      |
+| <input style="background: #15BACA;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other9            |  #15BACA      |
+| <input style="background: #11D7B2;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $other10           |  #11D7B2      |

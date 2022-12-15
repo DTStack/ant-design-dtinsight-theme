@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title: theme 项目开发指南
 ---
 
@@ -42,7 +42,7 @@ ant-design-dtinsight-theme
 │   │   │   ├── modal.less
 │   │   │   ├── notification.less
 │   │   │   ├── popover.less
-│   │   │   ├── resetDark.less
+│   │   │   ├── resetDark.less    // 覆盖antd变量文件
 │   │   │   ├── steps.less
 │   │   │   ├── tab.less
 │   │   │   ├── table.less
@@ -58,12 +58,11 @@ ant-design-dtinsight-theme
 │   │   │   ├── layout.less
 │   │   │   ├── modal.less
 │   │   │   ├── notice.less
-│   │   │   ├── reset.less
+│   │   │   ├── reset.less    // 覆盖antd变量文件
 │   │   │   ├── tab.less
 │   │   │   └── table.less
 │   │   ├── const.less    // 全局变量文件
-│   │   ├── index.less
-│   │   └── reset.less    // 覆盖antd变量文件
+│   │   └── index.less    // 入口文件
 │   ├── static    //说明文档样式
 │   └── utils
 └── bisheng.config.js // bisheng 文档工具基本配置

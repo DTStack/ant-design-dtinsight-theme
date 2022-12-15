@@ -1,71 +1,92 @@
-@import '../const.less';
+@import "../const.less";
 
 .dt-steps-card-container {
     .ant-card-body, &.ant-card-body {
         height: 100%;
-        padding: 0px;
+        padding: 0;
         .ant-steps {
             padding: 12px 20%;
-            background: #fff;
+            background: @black_navBg;
             .ant-steps-item-icon {
-                width: 28px;
-                height: 28px;
                 margin-right: 4px;
-                background-color: #eee;
+                background-color: @black_border;
                 border-color: transparent;
                 .ant-steps-icon {
-                    top: -3px;
-                    color: @white6;
+                    top: -1px;
+                    color: @white;
                 }
             }
             .ant-steps-item-title {
                 font-size: 14px;
                 padding-right: 12px;
-                line-height: 28px;
+                line-height: 24px;
                 color: @white6;
             }
             .ant-steps-item-process {
                 .ant-steps-item-icon {
                     background-color: @primaryColor;
                     .ant-steps-icon {
-                        color: #fff;
+                        color: @white;
                     }
                 }
                 .ant-steps-item-title {
-                    color: #333333;
+                    color: #333;
                     &::after {
-                        color: @blackDD;
+                        color: @black_border;
                     }
                 }
             }
             .ant-steps-item-finish {
                 .ant-steps-item-icon {
-                    background-color: #fff;
-                    border: 1px solid @primaryColor;
+                    background-color: @white;
+                    border: 1.5px solid @primaryColor;
                     .ant-steps-icon {
-                        top: -2px;
+                        top: 0;
                         color: @primaryColor;
                     }
+                }
+            }
+            .ant-steps-item-wait {
+                .ant-steps-item-icon {
+                    background-color: @black_border;
+                    border-color: transparent;
+                    .ant-steps-icon {
+                        color: @white;
+                    }
+                }
+            }
+        }
+        .ant-form {
+            .ant-form-item {
+                .ant-form-item-label {
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: @black_title;
+                }
+                .ant-form-item-control-input {
+                    width: 70%;
                 }
             }
         }
         .ant-steps + div {
             position: absolute;
-            top: 52px;
+            top: 48px;
             bottom: 56px;
             left: 0;
             right: 0;
-            background: @blackFA;
-            border-top: 1px solid @blackE8;
-            border-bottom: 1px solid @blackE8;
+            background: @white;
+            border-top: 1px solid @black_readonly;
+            border-bottom: 1px solid @black_readonly;
             padding: 20px;
-            overflow: scroll;
+            overflow: auto;
             + footer {
-                background: @blackFA;
+                background: @black_navBg;
                 text-align: center;
                 line-height: 56px;
                 position: absolute;
-                bottom: 0px;
+                bottom: 0;
                 left: 0;
                 right: 0;
                 .ant-btn {
@@ -74,4 +95,134 @@
             }
         }
     }
+}
+
+.dt-steps-header {
+    width: 100%;
+    padding: 16px 0;
+    margin: 0;
+    background-color: @black_navBg;
+    &::before, &::after {
+        content: "";
+        width: calc(calc(100% - 1000px) / 2);
+    }
+    .ant-steps-icon {
+        font-weight: 500;
+    }
+    .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-icon {
+        background-color: @black_border;
+        border-color: transparent;
+        .ant-steps-icon {
+            color: @white;
+        }
+    }
+}
+
+.ant-steps {
+    .ant-steps-item-wait:not(.ant-steps-item-custom) {
+        .ant-steps-item-icon {
+            background-color: @black_border;
+            border-color: transparent;
+            .ant-steps-icon {
+                top: -1px;
+                color: @white;
+            }
+        }
+    }
+    .ant-steps-item-icon {
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+    .ant-steps-item-title {
+        line-height: 24px;
+    }
+    .ant-steps-item-title::after {
+        top: 11px;
+        border-bottom: 1px dashed @black_border;
+    }
+    .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after {
+        background-color: @white;
+        border-color: @primaryColor;
+    }
+    .ant-steps-item-custom > .ant-steps-item-container > .ant-steps-item-icon > .ant-steps-icon {
+        height: 24px;
+        line-height: 24px;
+    }
+    .ant-steps-navigation {
+        .ant-steps-item::before {
+            background-color: @white;
+            border-bottom: 1px;
+        }
+    }
+}
+
+.ant-steps-vertical> {
+    .ant-steps-item {
+        padding-bottom: 73px;
+        margin-bottom: 3px;
+        .ant-steps-item-icon {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .ant-steps-item-title {
+            line-height: 20px;
+        }
+        .ant-steps-item-container > .ant-steps-item-tail {
+            left: 9px;
+        }
+        .ant-steps-item-container > .ant-steps-item-tail::after {
+            background-color: @white;
+            border-left: 1px dashed @black_border;
+        }
+        .ant-steps-item-finish {
+            .ant-steps-item-container > .ant-steps-item-tail::after {
+                border-color: @primaryColor;
+            }
+        }
+    }
+}
+
+.ant-steps-dot {
+    .ant-steps-item-tail {
+        top: 11px;
+        margin-left: 90px;
+        padding-right: 27px;
+    }
+    .ant-steps-item-tail::after {
+        height: 0;
+        border-bottom: 1px dashed @black_border;
+    }
+    .ant-steps-item-process {
+        .ant-steps-item-tail {
+            margin-left: 80px;
+            padding-right: 20px;
+        }
+    }
+    .ant-steps-item-process .ant-steps-icon:first-child .ant-steps-icon-dot {
+        top: 8px;
+    }
+    .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+        background-color: @white;
+        border-color: @primaryColor;
+    }
+}
+
+.ant-steps-vertical.ant-steps-dot .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail {
+    top: 14.5px;
+    left: -3px;
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    font-weight: 500;
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon .ant-steps-icon {
+    top: -1px;
+}
+
+.ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: @black_pageMsg;
 }

@@ -1,9 +1,27 @@
+@import "../const.less";
+
 .ant-breadcrumb {
-    color: #999999;
-    font-weight: 600;
-    font-size: 14px;
+    color: @black_pageMsg;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    a {
+        height: 20px;
+        line-height: 20px;
+        color: @black_pageMsg;
+        &:hover {
+            color: @primaryColor;
+        }
+        &:active {
+            color: @clickColor;
+        }
+    }
 }
+
 .ant-breadcrumb-separator {
-    color: #999999;
-    margin: 0px 6px;
+    color: @black_msg;
+    margin: 0 4px;
+    .anticon {
+        font-size: 12px;
+    }
 }

@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.5...v2.0.0) (2022-03-28)
+
+
+### Features
+
+* add ReloadOutlined in button ([c0913f7](https://github.com/DTStack/ant-design-dtinsight-theme/commit/c0913f729eb1eace5655107e7facf5cde9080f0e))
+* adjust Form rules ([305ec9f](https://github.com/DTStack/ant-design-dtinsight-theme/commit/305ec9f9ff103ae4a7cc8283226b3d8fa393a959))
+* delete useless code ([17108d9](https://github.com/DTStack/ant-design-dtinsight-theme/commit/17108d959d137b9fbc915bb6c10226fd26730aec))
+* fix form's display after level to v4 ([48bb1fa](https://github.com/DTStack/ant-design-dtinsight-theme/commit/48bb1fa47c3e85028265eb7eef6e0eaa27f3ed00))
+* modified calendar to ant-picker ([1280fe1](https://github.com/DTStack/ant-design-dtinsight-theme/commit/1280fe14d30c6a9db16e40d9c926245d7780b8f9))
+* update ([6ce5247](https://github.com/DTStack/ant-design-dtinsight-theme/commit/6ce5247d86270e6c661bea034ac49344698142d0))
+* update layout and form's style ([beb7c40](https://github.com/DTStack/ant-design-dtinsight-theme/commit/beb7c40c736e79b62d2cd3fb687e98e1de7212cc))
+* update layout's display and style after level to 4 ([6d87acc](https://github.com/DTStack/ant-design-dtinsight-theme/commit/6d87acc838df67d7bea4b5aa4427757ab8859e35))
+* update v4.0 style ([acb07e0](https://github.com/DTStack/ant-design-dtinsight-theme/commit/acb07e0064ae7753f8a4c81205de3935df80dfc4))
+* upgrade antd to v3's top ([8a8ed76](https://github.com/DTStack/ant-design-dtinsight-theme/commit/8a8ed763cf4e2de532110c3efa9deb6c5b14deb0))
+* upgrade antd to v4 ([60a2b78](https://github.com/DTStack/ant-design-dtinsight-theme/commit/60a2b78ac28707ad879e81d7eaafebacdcf980a1))
+* upgrade try ([ba49d99](https://github.com/DTStack/ant-design-dtinsight-theme/commit/ba49d991fa6b8f41ab5a5f53d3dadf0e1410dfb4))
+
+
+### Bug Fixes
+
+* add padding in ant-tabs-tab ([0a578b2](https://github.com/DTStack/ant-design-dtinsight-theme/commit/0a578b22ac6ee7dbfb6f4e42da6619adde6f43f3))
+* change popupClassName to dropdownClassName ([eb05d43](https://github.com/DTStack/ant-design-dtinsight-theme/commit/eb05d43b33a7aa1a50f062eae96e31ceeaf14216))
+* fix Input's display after level to v4 ([e0bc9b1](https://github.com/DTStack/ant-design-dtinsight-theme/commit/e0bc9b1aaf005d616c9fbd12fb6f6700117efa9a))
+* modified padding in ant-alert ([f6f42bf](https://github.com/DTStack/ant-design-dtinsight-theme/commit/f6f42bf01a61180cd75a641804c4f861bb13fe81))
+* repair button color ([9951410](https://github.com/DTStack/ant-design-dtinsight-theme/commit/9951410400d8e51b25771b8194106ff9bad5d265))
+* repair icon in empty ([acbd4f3](https://github.com/DTStack/ant-design-dtinsight-theme/commit/acbd4f393d79bb3548e67f6da61a5efd34644b6b))
+* there still exsists problem ([a7fc6b2](https://github.com/DTStack/ant-design-dtinsight-theme/commit/a7fc6b2172cba9835a8b8b77653efaa4fb1fdce4))
+
 ### [1.1.5](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v1.1.4...v1.1.5) (2021-12-10)
 
 

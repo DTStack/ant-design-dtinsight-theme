@@ -13,20 +13,20 @@ title:
 - 为组件添加类名`dt-form-shadow-bg`
 
 ```jsx
-import { DatePicker } from 'antd';
-import moment from 'moment';
+import { DatePicker } from '../../index';
+import moment from 'dayjs';
 
 const { MonthPicker, RangePicker } = DatePicker;
 
 const dateFormat = 'YYYY-MM-DD';
 ReactDOM.render(
   <div className="demo-datepicker-shadow demo-datepicker-box">
-    <DatePicker className="dt-form-shadow-bg" defaultValue={moment('2015-06-06', dateFormat)} />
+    <DatePicker className="dt-form-shadow-bg dt-ant-datepicker-basic" defaultValue={moment('2015-06-06', dateFormat)} />
     <br />
-    <MonthPicker className="dt-form-shadow-bg" defaultValue={moment('2015-06', 'YYYY-MM')} />
+    <MonthPicker className="dt-form-shadow-bg dt-ant-datepicker-basic" defaultValue={moment('2015-06', 'YYYY-MM')} />
     <br />
     <RangePicker
-      className="dt-form-shadow-bg"
+      className="dt-form-shadow-bg dt-ant-datepicker-basic"
       defaultValue={[moment('2015-06-06', dateFormat), moment('2015-06-06', dateFormat)]}
     />
   </div>,

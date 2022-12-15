@@ -8,8 +8,11 @@ title:
 ## zh-CN
 
 点击上传用户头像，并使用 `beforeUpload` 限制用户上传的图片格式和大小。
-
+## 设计规范
 * 添加类名 dt-upload-button 为上传按钮设置样式
+* 上传可点击区域默认80px x 80px ，大小根据场景可适配不同尺寸
+* 可点击区域内的文字和图标颜色均为#B1B4C5，文字字号12px Regular，图标尺寸24px X 24px
+* 默认状态下点击区域矩形框描边为虚线，虚线颜色为#D8DAE2，内部填充颜色为#F9F9FA，矩形框圆角半径4px
 
 ## en-US
 
@@ -17,7 +20,8 @@ Click to upload user's avatar, and validate size and format of picture with `bef
 
 
 ```jsx
-import { Upload, Icon, message } from 'antd';
+import { Upload,  message } from 'antd';
+import { PlusOutlined, LoadingOutlined } from '@ant-design/icons';
 
 function getBase64(img, callback) {
   const reader = new FileReader();
@@ -61,7 +65,7 @@ class Avatar extends React.Component {
   render() {
     const uploadButton = (
       <div className="dt-upload-button">
-        <Icon type={this.state.loading ? 'loading' : 'plus'} />
+        {this.state.loading ? <LoadingOutlined/> : <PlusOutlined />}
         <div>Upload</div>
       </div>
     );

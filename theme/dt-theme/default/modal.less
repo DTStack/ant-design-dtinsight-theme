@@ -1,14 +1,101 @@
-@import '../const.less';
+@import "../const.less";
 
 .ant-modal-title {
     font-weight: 600;
 }
+
 .ant-modal-header {
-    border-bottom: 1px solid @blackDD;
+    padding: 11px 24px;
+    background-color: @black_navBg;
+    border-bottom: 0;
 }
+
+.ant-modal-body {
+    padding: 16px 24px;
+    box-sizing: border-box;
+    .ant-form {
+        .ant-form-item {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .ant-table-container table > thead > tr:first-child th:first-child {
+        padding-left: 16px;
+    }
+}
+
 .ant-modal-footer {
-    border-top: 0px solid #FFFFFF;
+    padding: 12px 24px;
+    border-top: 0 solid @white;
 }
-.ant-modal-confirm-body .ant-modal-confirm-content {
-    color: @black6;
+
+.ant-modal-close-x {
+    line-height: 44px;
+    height: 44px;
+    width: 48px;
+    .anticon {
+        font-size: 18px;
+    }
+}
+
+.ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+    margin-left: 12px;
+}
+
+.ant-modal-content {
+    box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
+}
+
+.ant-modal-confirm {
+    width: 400px !important;
+    .ant-modal-content {
+        .ant-modal-body {
+            padding: 24px 24px 0;
+            .ant-modal-confirm-body {
+                .ant-modal-confirm-title {
+                    color: @black_title;
+                    line-height: 20px;
+                    font-size: 14px;
+                }
+                .anticon {
+                    margin: 0 8px 0 2px;
+                    font-size: 20px;
+                    svg {
+                        vertical-align: inherit;
+                    }
+                }
+                .ant-modal-confirm-content {
+                    margin: 8px 0 16px 30px;
+                    color: @black_pageMsg;
+                    line-height: 20px;
+                }
+            }
+            .ant-modal-confirm-btns {
+                margin: 12px 0;
+                .ant-btn + .ant-btn {
+                    margin-left: 12px;
+                }
+                .ant-btn-dangerous {
+                    background-color: @red;
+                    border-color: @red;
+                    color: @white;
+                    &:hover {
+                        background-color: #ED5340 !important;
+                        border-color: #ED5340;
+                    }
+                    &:active {
+                        background-color: #E03A26 !important;
+                        border-color: #E03A26;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-modal-confirm-confirm {
+    .ant-modal-confirm-body > .dt-modal-delete-icon {
+        color: @red;
+    }
 }

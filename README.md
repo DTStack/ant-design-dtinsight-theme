@@ -30,3 +30,7 @@ yarn add ant-design-dtinsight-theme
 ## ChangeLog
 
 [Change Log](https://github.com/DTStack/ant-design-dtinsight-theme/blob/master/docs/react/change-log.zh-CN.md)
+
+## Contribution
+
+At present, the project is still in the early stage. If you have better comments, please feel free to [Issue](https://github.com/DTStack/ant-design-dtinsight-theme/issues/new) or [Pull Request](https://github.com/DTStack/ant-design-dtinsight-theme/pulls)

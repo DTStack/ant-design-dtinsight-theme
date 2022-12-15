@@ -1,8 +1,8 @@
 import React from 'react';
-import {FormattedMessage, injectIntl} from 'react-intl';
-import {Modal, message, Row, Col, Icon} from 'antd';
-import {Link} from 'bisheng/router';
-import config from '../../../bisheng.config'
+import { FormattedMessage, injectIntl } from 'react-intl';
+import { Modal, message, Row, Col } from 'antd';
+import { Link } from 'bisheng/router';
+import config from '../../../bisheng.config';
 
 class Footer extends React.Component {
     constructor(props) {
@@ -23,7 +23,8 @@ class Footer extends React.Component {
                 <div className="bottom-bar">
                     <a target="_blank" rel="noopener noreferrer" href="http://www.beian.gov.cn">
                         {config.baseConfig.projectName}
-                    </a> © 2020 - {year}
+                    </a>{' '}
+                    © 2020 - {year}
                 </div>
             </footer>
         );

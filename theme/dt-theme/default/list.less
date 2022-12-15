@@ -1,0 +1,38 @@
+@import "../const.less";
+
+.ant-list-bordered {
+    border: 1px solid @black_readonly;
+}
+
+.ant-list {
+    .ant-list-header {
+        border-bottom: 1px solid @black_readonly;
+        padding: 16px;
+    }
+    .ant-list-item {
+        border-bottom: 1px solid @black_readonly;
+        padding: 16px;
+        .ant-card-bordered {
+            border: 1px solid @black_readonly;
+        }
+        .ant-card-head {
+            font-size: 16px;
+            padding: 0 16px;
+            border-bottom: none;
+            .ant-card-head-title {
+                padding: 16px 0 12px;
+            }
+        }
+        .ant-card-body {
+            color: @black_pageMsg;
+            padding: 5px 16px 16px;
+            font-size: 12px;
+        }
+    }
+    .ant-list-item-meta-avatar {
+        margin-right: 8px;
+    }
+    .ant-list-item-meta-description {
+        color: @black_Desc;
+    }
+}

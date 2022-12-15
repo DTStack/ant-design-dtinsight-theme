@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 6
 title:
   en-US: Filter and sorter
   zh-CN: 筛选和排序
@@ -20,7 +20,7 @@ import { Table } from 'antd';
 
 const columns = [
   {
-    title: 'Name',
+    title: '姓名',
     dataIndex: 'name',
     filters: [
       {

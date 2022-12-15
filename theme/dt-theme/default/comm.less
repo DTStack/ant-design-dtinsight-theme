@@ -1,8 +1,17 @@
 // 除组件外的一些 共有样式
-
+@import "../const.less";
 // 自定义 scrollbar 样式
 .dt-scrollbar-base {
+    &::-webkit-scrollbar {
+        width: 15px;  // 纵向滚动条宽度
+        height: 13px;   // 横向滚动条高度
+    }
     &::-webkit-scrollbar-thumb {
-        background: #bfbfbf;
+        background: @black_navBg;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 2px;
     }
 }

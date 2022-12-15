@@ -25,8 +25,16 @@ yarn add ant-design-dtinsight-theme
 
 ## 使用
 
-[如何在数栈应用中使用](https://github.com/DTStack/ant-design-dtinsight-theme/blob/master/docs/react/getting-started.zh-CN.md)
+[如何在数栈应用中使用](https://github.com/DTStack/ant-design-dtinsight-theme/blob/master/docs/react/introduce-cn.zh-CN.md)
+
+## 替换 antd 图标
+
+将 iconfont 上设计提供的 svg 文件下载放到 `custom-icons/iconfont-svgs`，antd 图标名与 className 的对应关系配置在 `fileNameToClassName.js`，`/icon/basic.md` 下的 fileNameToClassName 常量应与 `fileNameToClassName.js` 文件保持一致；部分特殊的图标需要特殊处理，因为 Dom 结构不同，查看 `getCssContent` 方法。然后执行 `yarn generate` 命令，生成 `theme/dt-theme/default/custom-icons.less` 文件
 
 ## 变更记录
 
 [更新日志](https://github.com/DTStack/ant-design-dtinsight-theme/blob/master/docs/react/change-log.zh-CN.md)
+
+## 贡献
+
+目前该项目还在初期阶段，如有更好地意见欢迎提 [Issue](https://github.com/DTStack/ant-design-dtinsight-theme/issues/new) 或 [Pull Request](https://github.com/DTStack/ant-design-dtinsight-theme/pulls)

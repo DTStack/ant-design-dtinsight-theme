@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 4
 title:
   zh-CN: 内容超出范围
 ---
@@ -20,7 +20,7 @@ title:
 import { Table, Divider } from 'antd';
 
 const columns = [
-  { title: 'Name', dataIndex: 'name', key: 'name', width: 200 },
+  { title: 'Name', dataIndex: 'name', key: 'name', width: 200, fixed: 'left', },
   { title: 'Age', dataIndex: 'age', key: 'age', width: 100 },
   { title: 'Address', dataIndex: 'address', key: 'address', width: 200, ellipsis: true },
   { title: 'description', dataIndex: 'description', key: 'description', width: 400 },
@@ -75,7 +75,7 @@ const pagination = {
   current: 1,
   pageSize: 10,
   size: 'small',
-  total: 30,
+  total: 80,
   showTotal: (total) => <span>
     共<span style={{ color: '#3F87FF' }}>{total}</span>条数据，每页显示15条
   </span>

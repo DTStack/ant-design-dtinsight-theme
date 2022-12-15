@@ -1,0 +1,87 @@
+// 除组件外的一些 共有样式
+@import "../const.less";
+
+.ant-select {
+    color: @black_title;
+    .ant-select-clear {
+        color: @black_msg;
+        &:hover {
+            color: @black_Desc;
+        }
+    }
+}
+
+.ant-select.dt-ant-select-outside {
+    font-size: @font12;
+}
+
+.ant-select.dt-ant-select-outside:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 4px;
+}
+
+.ant-select.dt-ant-select-outside:not(.ant-select-disabled):hover .ant-select-selector {
+    border-color: @primaryColor;
+}
+
+.ant-select-focused.dt-ant-select-outside:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-color: @clickColor;
+    box-shadow: none;
+}
+
+.ant-select:not(.ant-select-auto-complete) {
+    .ant-select-selection-search-input[aria-expanded="false"] {
+        opacity: 0;
+    }
+}
+
+// select
+.ant-select-dropdown {
+    padding: 0;
+    box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
+    .ant-select-item:not(.ant-select-item-option-disabled) {
+        color: @black_title;
+    }
+    .ant-cascader-menu-item:hover {
+        background: @black_titleBg;
+    }
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+        background: @black_titleBg;
+    }
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+        background: @black_titleBg;
+        color: @primaryColor;
+    }
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+        background: @black_titleBg;
+        color: @primaryColor;
+    }
+}
+
+.ant-select-multiple {
+    .ant-select-selector {
+        .ant-select-selection-item {
+            background: #F9F9FA;
+            line-height: 20px;
+            border: 1px solid #EBECF0;
+            .ant-select-selection-item-remove {
+                &:hover {
+                    color: @black_Desc;
+                }
+            }
+        }
+    }
+}
+
+// 级联选择固定宽度
+.ant-cascader-dropdown {
+    padding: 0 !important;
+    .ant-cascader-menu {
+        width: 212px;
+        padding: 8px 0;
+        .ant-cascader-menu-item-content {
+            overflow: hidden; // 超出的文本隐藏
+            text-overflow: ellipsis; // 溢出用省略号显示
+        }
+    }
+}

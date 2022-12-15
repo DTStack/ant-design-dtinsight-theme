@@ -1,0 +1,28 @@
+@import "../const.less";
+
+.ant-drawer-content-wrapper {
+    // min-width: 720px;
+    max-width: 1256px;
+    .ant-drawer-body {
+        padding: 16px;
+    }
+}
+
+.ant-drawer-header {
+    padding: 16px;
+    background-color: @black_navBg;
+    border-bottom: 0;
+    .ant-drawer-header-title {
+        flex-direction: row-reverse;
+        .ant-drawer-close {
+            margin-right: 0;
+            line-height: 20px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+    box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
+}

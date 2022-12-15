@@ -1,0 +1,129 @@
+@import "../const.less";
+
+.ant-tag {
+    padding: 2px 8px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid @black_readonly;
+    box-sizing: border-box;
+    line-height: 18px;
+    display: inline-flex;
+    align-items: center;
+    background-color: @black_navBg;
+}
+
+.ant-tag-close-icon {
+    margin-left: 4px;
+    color: @black_pageMsg;
+    font-size: 12px;
+    vertical-align: -0.1625em;
+}
+
+.ant-tag-success {
+    padding: 2px 12px;
+    background: @white;
+    color: @black_title;
+    border-radius: 14px;
+    span {
+        border-radius: 50%;
+        background-color: @green3;
+        width: 6px;
+        height: 6px;
+        display: inline-block;
+        margin-right: 8px;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: @green;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+}
+
+.ant-tag-default {
+    padding: 2px 12px;
+    color: @black_title;
+    background: @white;
+    border-radius: 14px;
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: @primaryColor;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+}
+
+.ant-tag-processing {
+    padding: 2px 12px;
+    color: @black_title;
+    background: @white;
+    border-radius: 14px;
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: @purple;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+}
+
+.ant-tag-error {
+    padding: 2px 12px;
+    color: @black_title;
+    background: @white;
+    border-radius: 14px;
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: @red;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+}
+
+.ant-tag-warning {
+    padding: 2px 12px;
+    color: @black_title;
+    background: @white;
+    border-radius: 14px;
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: @yellow;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+}
+
+.dt-ant-tag-icon {
+    line-height: 20px;
+    border: none;
+    border-radius: 12px;
+    padding: 2px 12px;
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.ant-tag > .anticon + span, .ant-tag > span + .anticon {
+    margin-left: 2px;
+}
+
+.dt-tag-disabled {
+    color: @black_pageMsg;
+    background-color: @black_border;
+    border-color: @black_border;
+}

@@ -1,6 +1,6 @@
-@import '../const.less';
+@import "../const.less";
 
-// form 
+// form
 .ant-form-item-label > label {
     color: @whiteBF;
 }
@@ -10,12 +10,15 @@
         border-color: @primaryColor;
     }
 }
+
 .ant-input-disabled {
     border-color: #272A40;
 }
+
 .ant-input[disabled]:hover {
     border-color: #272A40;
 }
+
 .ant-input-search-icon, .ant-input-password-icon {
     color: @white6;
     &:hover {
@@ -28,9 +31,11 @@
         border-color: @primaryColor;
     }
 }
+
 .ant-select-dropdown {
-    box-shadow:0px 2px 8px 0px rgba(6,7,10,1);
+    box-shadow: 0 2px 8px 0 rgba(6, 7, 10, 1);
 }
+
 .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
     background-color: @deriveColor_dark;
 }
@@ -39,6 +44,7 @@
     background-color: #11121C;
     border-color: #363B59;
 }
+
 .ant-checkbox + span {
     color: @whiteBF;
 }
@@ -51,50 +57,60 @@
 .ant-switch {
     background-color: @deriveColor_dark;
 }
+
 .ant-switch-checked {
     background-color: @primaryColor;
 }
+
 .ant-switch-loading-icon, .ant-switch::after {
-    background-color: #ffffff;
+    background-color: @white;
 }
 // cascader
 .ant-cascader-menu-item {
     color: @whiteBF;
 }
+
 .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
     background-color: @deriveColor_dark;
 }
 // datePicker
 .ant-calendar {
-    box-shadow: 0px 2px 8px 0px rgba(6,7,10,1);
+    box-shadow: 0 2px 8px 0 rgba(6, 7, 10, 1);
     border: 0;
 }
 // tree
 .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
     background-color: @deriveColor_dark;
 }
+
 .ant-select-tree-dropdown .ant-select-dropdown-search {
     padding: 12px 12px 8px;
     .ant-select-search__field {
         background: #11111C;
     }
 }
+
 .ant-select-tree {
     padding: 0 12px;
 }
 // timePicker
-.ant-time-picker-panel-input {
+.ant-picker-panel-input {
     background-color: transparent;
 }
 
 // 浅色背景中 显示深色控件
 .dt-form-light-bg {
     // input
-    .ant-input,&.ant-input,
-    .ant-select-selection, &.ant-select-selection,
-    .ant-time-picker-input, &.ant-time-picker-input,
-    .ant-input-number, &.ant-input-number,
-    .ant-cascader-picker, &.ant-cascader-picker {
+    .ant-input,
+    &.ant-input,
+    .ant-select-selection,
+    &.ant-select-selection,
+    .ant-picker-input,
+    &.ant-picker-input,
+    .ant-input-number,
+    &.ant-input-number,
+    .ant-cascader-picker,
+    &.ant-cascader-picker {
         border-color: @blue3;
         background-color: #11111C;
         &:focus, &:hover {
@@ -118,7 +134,7 @@
     }
     &.ant-select-dropdown {
         border: 1px solid #272A40;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
         background-color: @blue1;
         .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
             background-color: #282C40;
@@ -146,12 +162,12 @@
         background: @blue1;
     }
     // timerPicker
-    .ant-time-picker-panel-inner {
+    .ant-picker-panel-inner {
         background-color: @blue1;
     }
     // cascader
     .ant-cascader-menus, &.ant-cascader-menus {
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
         background-color: @blue1;
         border: 1px solid #272A40;
         .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
@@ -159,15 +175,16 @@
         }
     }
     .has-error {
-        .ant-input, .ant-select-selection, .ant-input-number, .ant-time-picker-input, .ant-cascader-picker {
+        .ant-input, .ant-select-selection, .ant-input-number, .ant-picker-input, .ant-cascader-picker {
             border-color: #E25F5D;
             background-color: #11111C;
         }
     }
 }
+
 .has-error {
     .dt-form-light-bg {
-        &.ant-input, .ant-select-selection, .ant-input-numbe, .ant-time-picker-input, .ant-cascader-picker {
+        &.ant-input, .ant-select-selection, .ant-input-numbe, .ant-picker-input, .ant-cascader-picker {
             border-color: #E25F5D;
             background-color: #11111C;
         }

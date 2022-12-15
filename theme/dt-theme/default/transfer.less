@@ -1,0 +1,89 @@
+@import "../const.less";
+
+.ant-transfer {
+    .ant-transfer-list {
+        border: 1px solid @grey_border;
+        border-radius: 0;
+    }
+    .ant-transfer-list-header {
+        padding: 0 16px;
+        background: #F9F9FA;
+        height: 32px;
+        line-height: 32px;
+        border-bottom: 0;
+        .ant-checkbox-wrapper {
+            line-height: 32px;
+        }
+    }
+    .ant-transfer-list-body {
+        .ant-transfer-list-body-search-wrapper {
+            padding: 8px 16px;
+            .ant-input-affix-wrapper {
+                padding: 5px 11px;
+                line-height: unset;
+            }
+        }
+        .ant-transfer-list-content {
+            .ant-transfer-list-content-item-checked {
+                background-color: transparent;
+                &:hover:not(.ant-transfer-list-content-item-disabled) {
+                    background-color: @black_titleBg;
+                }
+            }
+            .ant-transfer-list-content-item {
+                height: 32px;
+                padding: 0 16px;
+            }
+        }
+    }
+    .ant-transfer-operation {
+        margin: 0 16px;
+        .ant-btn-primary {
+            color: @white;
+            border: 0;
+            background-color: @blue;
+            &:hover {
+                background-color: @hoverColor;
+            }
+        }
+        .ant-btn {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0 2px;
+            padding: 0;
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+        .ant-btn-primary[disabled] {
+            color: @black_msg;
+            background: @black_titleBg;
+        }
+    }
+}
+
+.ant-transfer-list-content-item:not(.ant-transfer-list-content-item-disabled):hover {
+    background-color: @black_titleBg;
+}
+
+.ant-transfer-list-header-title {
+    font-weight: 500;
+}
+
+.dt-transfer-without-header-count {
+    .ant-transfer-list-header {
+        .ant-transfer-list-header-dropdown,
+        .ant-transfer-list-header-selected {
+            display: none;
+        }
+        .ant-transfer-list-header-title {
+            margin-left: 4px;
+            text-align: left;
+        }
+    }
+}
+
+.ant-transfer-list-content-item-disabled {
+    color: @black_title;
+}

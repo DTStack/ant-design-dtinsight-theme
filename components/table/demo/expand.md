@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 9
 title:
   zh-CN: 展示每行数据更详细的信息
 ---
@@ -24,7 +24,7 @@ const menu = (
 class App extends React.Component {
   state = { isShowData: false };
 
-  expandedRowRender = () => {
+expandedRowRender = () => {
     const columns = [
       { title: 'Date', dataIndex: 'date', key: 'date' },
       { title: 'Name', dataIndex: 'name', key: 'name' },
@@ -43,6 +43,8 @@ class App extends React.Component {
           title: 'Action',
           dataIndex: 'operation',
           key: 'operation',
+          width: 200,
+          fixed: 'right',
           render: () => (
           <span className="table-operation">
               <a>Pause</a>
@@ -78,6 +80,7 @@ class App extends React.Component {
   }
 
   handleChangeShowData = (checked) => {
+
     this.setState({
       isShowData: checked
     })
@@ -98,7 +101,7 @@ class App extends React.Component {
 
   render() {
     const columns = [
-      { title: 'Name', dataIndex: 'name', key: 'name' },
+      { title: 'Name', dataIndex: 'name', key: 'name', width: 200, fixed: 'left' },
       { title: 'Platform', dataIndex: 'platform', key: 'platform' },
       { title: 'Version', dataIndex: 'version', key: 'version' },
       { title: 'Upgraded', dataIndex: 'upgradeNum', key: 'upgradeNum' },
@@ -122,7 +125,7 @@ class App extends React.Component {
         style={{ height: 'calc(100vh - 600px)' }}
         scroll={{ y: true, x: 1300 }}
         columns={columns}
-        expandedRowRender={this.expandedRowRender}
+        expandable={{expandedRowRender: () => this.expandedRowRender }}
         dataSource={this.getData()}
         pagination={false}
         footer={() => {

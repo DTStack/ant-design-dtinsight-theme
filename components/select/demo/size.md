@@ -6,7 +6,7 @@ title:
 
 ## zh-CN
 
-我们为下拉框定义了两种尺寸（默认、小），高度分别为 32px 和 28px。
+我们为下拉框定义了两种尺寸（默认、小），高度分别为 32px 和 24px。
 
 ```jsx
 import { Select } from 'antd';
@@ -15,10 +15,10 @@ const { Option } = Select;
 
 ReactDOM.render(
   <div className="demo-select-size">
-    <Select defaultValue="default" size="default">
+    <Select defaultValue="default" size="default" dropdownClassName="dt-ant-select-dropdown-default">
       <Option value="default">default</Option>
     </Select>
-    <Select defaultValue="small" size="small">
+    <Select defaultValue="small" size="small" dropdownClassName="dt-ant-select-dropdown-default">
       <Option value="small">small</Option>
     </Select>
   </div>,

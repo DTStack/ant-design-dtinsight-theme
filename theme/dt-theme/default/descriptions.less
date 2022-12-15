@@ -1,15 +1,67 @@
-@import '../const.less';
+@import "../const.less";
 
 .ant-descriptions-bordered .ant-descriptions-view {
-    border: 1px solid @blackDD;
+    border: 1px solid @grey_border;
     border-bottom: unset;
-    .ant-descriptions-row{
-        border-bottom: 1px solid @blackDD;
+    border-radius: 0;
+    .ant-descriptions-row {
+        border-bottom: 1px solid @grey_border;
+        height: 36px;
+        box-sizing: border-box;
     }
     .ant-descriptions-item-content {
-        border-right: 1px solid @blackDD;
+        padding: 8px 12px;
+        & > span {
+            max-height: 119px;
+            overflow-y: auto;
+            display: block;
+        }
     }
     .ant-descriptions-item-label {
-        border-right: 1px solid @blackDD;
+        padding: 8px 12px;
+        border-right: 1px solid @grey_border;
+        color: @black_Desc;
+        background: @black_navBg;
     }
+}
+
+.ant-descriptions-bordered th {
+    width: 12%;
+}
+
+.ant-descriptions-bordered td {
+    width: 18%;
+}
+
+.dt-descriptions-vertical-display {
+    .ant-descriptions-item {
+        box-sizing: border-box;
+        display: block;
+        margin-bottom: 8px;
+        padding: 0;
+    }
+    .ant-descriptions-item-content {
+        padding: 0;
+        display: block;
+    }
+    .ant-descriptions-item-label {
+        padding: 0;
+        display: block;
+    }
+}
+
+.ant-descriptions-item-container .ant-descriptions-item-label,
+.ant-descriptions-item-container .ant-descriptions-item-content {
+    line-height: 20px;
+}
+
+.dt-descriptions-custom-display {
+    .ant-descriptions-item-label {
+        padding: 0;
+        display: block;
+    }
+}
+
+.ant-descriptions-item-label {
+    color: @black_pageMsg;
 }

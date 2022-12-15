@@ -6,7 +6,7 @@ title:
 
 ## zh-CN
 
-large size 的弹框， 宽度为 680px 。
+large size 的弹框， 宽度为 900px 。
 
 ```jsx
 import { Modal, Button } from 'antd';
@@ -42,7 +42,7 @@ class App extends React.Component {
         </Button>
         <Modal
           title="Basic Modal"
-          width={680}
+          width={900}
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}

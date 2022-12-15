@@ -19,12 +19,12 @@ const { Option } = Select;
 
 ReactDOM.render(
   <div className="demo-select-light">
-    <Select defaultValue="lucy" dropdownClassName="dt-form-light-bg" className="dt-form-light-bg" style={{ width: 200, marginRight: 20 }}>
+    <Select defaultValue="lucy" dropdownClassName="dt-form-light-bg dt-ant-select-dropdown-default" className="dt-form-light-bg" style={{ width: 200, marginRight: 20 }}>
       <Option value="jack">Jack</Option>
       <Option value="lucy">Lucy</Option>
       <Option value="Yiminghe">yiminghe</Option>
     </Select>
-    <Select defaultValue="disabled" disabled dropdownClassName="dt-form-light-bg" className="dt-form-light-bg" style={{ width: 200, marginTop: 20 }}>
+    <Select defaultValue="disabled" disabled dropdownClassName="dt-form-light-bg dt-ant-select-dropdown-default" className="dt-form-light-bg" style={{ width: 200, marginTop: 20 }}>
       <Option value="disabled">disabled</Option>
     </Select>
   </div>,
