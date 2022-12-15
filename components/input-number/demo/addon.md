@@ -44,7 +44,8 @@ const App: React.FC = () => (
       addonBefore={<Cascader placeholder="cascader" style={{ width: 150 }} />}
       defaultValue={100}
     />
-    <InputNumber className="dt-input-number-disabled" addonBefore="+" addonAfter="$" defaultValue={100} disabled/>
+    <InputNumber className="dt-input-number-disabled" addonBefore="+" addonAfter="$" defaultValue={100} disabled />
+    <InputNumber size="small" addonAfter="%" defaultValue={80} />
   </Space>
 );
 
