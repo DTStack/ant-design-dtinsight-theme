@@ -11,7 +11,8 @@ title:
 - 添加类名 `dt-table-border` 为表格设置外边框
 
 ```jsx
-import { Table, Tag, Pagination, Row, Col, Button, Divider } from 'antd';
+import React, { useState } from 'react';
+import { Table, Tag, Pagination, Row, Col, Button, Divider, Radio } from 'antd';
 
 const columns = [
   {
@@ -95,16 +96,35 @@ tableFooter =  () => (
   </Row>
 );
 
-ReactDOM.render(
-  <div>
-    <Table
-      rowSelection={rowSelection}
-      columns={columns}
-      dataSource={data}
-      className="dt-table-border"
-      pagination={false}
-      footer={tableFooter}
-    />
-  </div>
-  , mountNode);
+const App: React.FC = () => {
+  const [selectionType, setSelectionType] = useState<'checkbox' | 'radio'>('checkbox');
+
+  return (
+    <div>
+      <Radio.Group
+          onChange={({ target: { value } }) => {
+            setSelectionType(value);
+          }}
+          value={selectionType}
+        >
+          <Radio value="checkbox">Checkbox</Radio>
+          <Radio value="radio">radio</Radio>
+      </Radio.Group>
+      <Divider />
+      <Table
+        rowSelection={{
+          type: selectionType,
+          ...rowSelection
+        }}
+        columns={columns}
+        dataSource={data}
+        className="dt-table-border"
+        pagination={false}
+        footer={tableFooter}
+      />
+    </div>
+  )
+}
+
+ReactDOM.render(<App />, mountNode);
 ```
