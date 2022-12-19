@@ -29308,12 +29308,15 @@ ul.ant-pagination {
 }
 .ant-table-tbody > tr > td.ant-table-selection-column {
   padding: 0 8px 0 16px;
-  line-height: 43px;
+  line-height: 20px;
   text-align: left;
+}
+.ant-table-tbody > tr > td.ant-table-selection-column > .ant-radio-wrapper {
+  line-height: 20px;
 }
 .ant-table-tbody > tr > td.ant-table-selection-column + td {
   padding: 0 8px 0 0;
-  line-height: 43px;
+  line-height: 20px;
 }
 .ant-table-tbody > tr.ant-table-row-selected > td.ant-table-column-sort {
   background: #E8F5FF;
