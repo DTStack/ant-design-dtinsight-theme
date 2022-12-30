@@ -30127,6 +30127,17 @@ ul.ant-pagination {
   align-items: center;
   overflow: hidden;
 }
+.ant-tree-switcher .ant-tree-switcher-icon,
+.ant-tree-switcher .ant-select-tree-switcher-icon,
+.ant-tree-show-line .ant-tree-switcher-line-icon {
+  font-size: 14px;
+}
+span.ant-tree-switcher.ant-tree-switcher_close,
+span.ant-tree-switcher.ant-tree-switcher_open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .ant-tree-select-dropdown .ant-select-tree .ant-select-tree-treenode {
   padding: 0;
 }
