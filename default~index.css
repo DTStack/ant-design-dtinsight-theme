@@ -29227,10 +29227,6 @@ ul.ant-pagination {
   padding-bottom: 11px;
   line-height: 20px;
 }
-.ant-table .ant-table-tbody .ant-table-row .ant-table-cell-with-append {
-  display: flex;
-  align-items: center;
-}
 .ant-table .ant-table-tbody > tr.ant-table-row:hover > td,
 .ant-table .ant-table-tbody > tr > td.ant-table-cell-row-hover {
   background: #F5F5F8;
