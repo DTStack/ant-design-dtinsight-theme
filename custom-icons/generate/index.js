@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const fileNameToClassName = require('./fileNameToClassName');
 const getSpecialCssContent = require('./special');
+const getFormSpecialCssContent = require('./formSpecial');
 const getRateCssContent = require('./rate');
 
 const config = {
@@ -55,8 +56,9 @@ fs.readdir(config.fromDir, (error, files) => {
         });
 
         const specialCssContent = getSpecialCssContent(pathContentMap);
+        const formSpecialCssContent = getFormSpecialCssContent(pathContentMap);
         const rateCssContent = getRateCssContent(pathContentMap);
-        const cssContent = `// 此文件由 yarn generate 命令生成，请勿直接修改\n@import "../const.less";\n\n${iconCssContent}${specialCssContent}\n${rateCssContent}`;
+        const cssContent = `// 此文件由 yarn generate 命令生成，请勿直接修改\n@import "../const.less";\n\n${iconCssContent}${specialCssContent}\n${formSpecialCssContent}\n${rateCssContent}`;
 
         fs.writeFile(`${config.toDir}/${config.generateFileName}`, cssContent, 'utf-8', (err) => {
             if (err) {

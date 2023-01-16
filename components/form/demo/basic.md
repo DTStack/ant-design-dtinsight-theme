@@ -70,6 +70,15 @@ class NormalLoginForm extends React.Component {
 
     return (
       <Form name="normal_login" {...formItemLayout} onFinish={this.handleSubmit} colon={false}>
+        <Form.Item name="success" label="success" hasFeedback validateStatus="success">
+          <Input placeholder="success"/>
+        </Form.Item>
+        <Form.Item name="warning" label="warning" hasFeedback validateStatus="warning">
+          <Input placeholder="warning"/>
+        </Form.Item>
+        <Form.Item name="error" label="error" hasFeedback validateStatus="error">
+          <Input placeholder="error"/>
+        </Form.Item>
         <Form.Item name="username" label={'用户名'} rules={[{ required: true, message: 'It is required!' }]}>
           <Input placeholder="Username"/>
         </Form.Item>
