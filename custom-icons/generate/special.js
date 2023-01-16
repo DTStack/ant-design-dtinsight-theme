@@ -5,7 +5,6 @@ const fileNameToClassName = {
     CheckCircleFilled: 'anticon-check-circle',
     ExclamationCircleFilled: ['anticon-info-circle'],
     WarningFilled: 'anticon-exclamation-circle',
-    // CloseCircleFilled: 'anticon-close-circle', // 常规样式中已有了该类名
 };
 
 const getName = (value) => {
