@@ -5,8 +5,8 @@ const contentTmpl = './template/Content/index';
 
 function pickerGenerator(module) {
     const tester = new RegExp(`^docs/${module}`);
-    return markdownData => {
-        const {filename} = markdownData.meta;
+    return (markdownData) => {
+        const { filename } = markdownData.meta;
         if (tester.test(filename) && !/\/demo$/.test(path.dirname(filename))) {
             return {
                 meta: markdownData.meta,
@@ -25,7 +25,7 @@ module.exports = {
     },
     pick: {
         components(markdownData) {
-            const {filename} = markdownData.meta;
+            const { filename } = markdownData.meta;
             if (!/^components/.test(filename) || /[/\\]demo$/.test(path.dirname(filename))) {
                 return null;
             }
@@ -55,7 +55,7 @@ module.exports = {
     routes: {
         path: '/',
         component: './template/Layout/index',
-        indexRoute: {component: homeTmpl},
+        indexRoute: { component: homeTmpl },
         childRoutes: [
             {
                 path: 'index-cn',

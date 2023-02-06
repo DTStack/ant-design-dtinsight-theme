@@ -16,7 +16,8 @@ const config = {
 
 const getIconCssContent = (className, pathContent) => {
     // 部分特殊的 icon 需要单独处理
-    if (className === 'anticon-plus') return `.${className} svg {
+    if (className === 'anticon-plus')
+        return `.${className} svg {
     defs {
         display: none;
     }
@@ -44,15 +45,18 @@ const getIconCssContent = (className, pathContent) => {
 fs.readdir(config.fromDir, (error, files) => {
     if (error) {
         console.log('fs.readdir error: ', error);
-	} else {
+    } else {
         let iconCssContent = '';
         const pathContentMap = {};
-        files.forEach((file)=>{
+        files.forEach((file) => {
             const content = fs.readFileSync(`${config.fromDir}/${file}`, 'utf-8');
             const pathContent = content?.split(' d="')?.[1]?.split('" />')?.[0];
             const fileName = file.replace('.svg', '');
             pathContentMap[fileName] = pathContent;
-            iconCssContent += getIconCssContent(fileNameToClassName[fileName] || fileName, pathContent);
+            iconCssContent += getIconCssContent(
+                fileNameToClassName[fileName] || fileName,
+                pathContent
+            );
         });
 
         const specialCssContent = getSpecialCssContent(pathContentMap);
@@ -67,5 +71,5 @@ fs.readdir(config.fromDir, (error, files) => {
                 console.log('custom icons generate success!');
             }
         });
-	}
+    }
 });
