@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'bisheng/router';
 import zhCn from '../zh-CN';
 
-export default function NotFound({ location }) {
+export default function NotFound({ location: _location }) {
     return (
         <div id="page-404">
             <section>

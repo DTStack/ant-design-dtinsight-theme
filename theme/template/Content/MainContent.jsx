@@ -315,7 +315,10 @@ export default class MainContent extends Component {
                 <Row>
                     {isMobile ? (
                         <MobileMenu
-                            iconChild={[<MenuUnfoldOutlined />, <MenuFoldOutlined />]}
+                            iconChild={[
+                                <MenuUnfoldOutlined key="MenuUnfoldOutlined" />,
+                                <MenuFoldOutlined key="MenuFoldOutlined" />,
+                            ]}
                             key="Mobile-menu"
                             wrapperClassName="drawer-wrapper"
                         >

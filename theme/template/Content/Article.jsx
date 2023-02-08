@@ -1,6 +1,5 @@
 import React, { Children, cloneElement } from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
 import DocumentTitle from 'react-document-title';
 import { getChildren } from 'jsonml.js/lib/utils';
 import { Timeline, Alert, Affix } from 'antd';
@@ -73,7 +72,7 @@ export default class Article extends React.Component {
         const { props } = this;
         const { content } = props;
         const { meta, description } = content;
-        const { title, subtitle, filename } = meta;
+        const { title, subtitle } = meta;
         const {
             intl: { locale },
         } = this.context;

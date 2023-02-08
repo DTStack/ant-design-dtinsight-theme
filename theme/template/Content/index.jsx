@@ -1,9 +1,8 @@
 import collect from 'bisheng/collect';
 import MainContent from './MainContent';
-import * as utils from '../utils';
 
 export default collect(async (nextProps) => {
-    let { pathname } = nextProps.location;
+    const { pathname } = nextProps.location;
 
     const pageDataPath =
         pathname.indexOf('.html') > 0
@@ -13,6 +12,7 @@ export default collect(async (nextProps) => {
     const pageData = nextProps.utils.get(nextProps.data, pageDataPath);
 
     if (!pageData) {
+        // eslint-disable-next-line no-throw-literal
         throw 404;
     }
 

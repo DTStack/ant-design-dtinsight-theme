@@ -108,6 +108,7 @@ export default class Demo extends React.Component {
         const isDark = Boolean(utils.getCookie('theme') === 'dark');
         if (!this.liveDemo) {
             this.liveDemo = meta.iframe ? (
+                // eslint-disable-next-line react/jsx-no-undef, no-undef
                 <BrowserFrame>
                     <iframe src={src} height={meta.iframe} title="demo" />
                 </BrowserFrame>

@@ -1,7 +1,5 @@
 import React from 'react';
-import { FormattedMessage, injectIntl } from 'react-intl';
-import { Modal, message, Row, Col } from 'antd';
-import { Link } from 'bisheng/router';
+import { injectIntl } from 'react-intl';
 import config from '../../../bisheng.config';
 
 class Footer extends React.Component {
@@ -16,7 +14,7 @@ class Footer extends React.Component {
     }
 
     render() {
-        let year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         return (
             <footer id="footer">
