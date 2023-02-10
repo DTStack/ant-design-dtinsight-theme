@@ -111,7 +111,7 @@ export default class ComponentDoc extends React.Component {
             );
         });
 
-        const { title, subtitle, filename } = meta;
+        const { title, subtitle } = meta;
         const articleClassName = classNames({
             'show-riddle-button': showRiddleButton,
         });

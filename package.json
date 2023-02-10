@@ -14,12 +14,12 @@
         "release": "./scripts/release.sh",
         "publish": "./scripts/publish.sh",
         "deploy": "gh-pages -d dist",
-        "prettier": "npx prettier --check './**.{js,jsx,json,ts,tsx}'",
-        "prettier:fix": "npx prettier --write './**.{js,jsx,json,ts,tsx}'",
+        "prettier": "npx prettier --check '**/*.{js,jsx,json,ts,tsx}'",
+        "prettier:fix": "npx prettier --write '**/*.{js,jsx,json,ts,tsx}'",
         "eslint": "npx eslint . --no-error-on-unmatched-pattern",
         "eslint:fix": "npx eslint . --fix",
-        "stylelint": "npx stylelint './**/*.{less,css,scss}'",
-        "stylelint:fix": "npx stylelint './**/*.{less,css,scss}' --fix"
+        "stylelint": "npx stylelint '**/*.{less,css,scss}'",
+        "stylelint:fix": "npx stylelint '**/*.{less,css,scss}' --fix"
     },
     "keywords": [
         "antd-theme",
@@ -51,7 +51,7 @@
         "file-loader": "^6.0.0",
         "gh-pages": "^3.2.0",
         "intersection-observer": "^0.7.0",
-        "ko-lint-config": "^2.2.15",
+        "ko-lint-config": "^2.2.18",
         "lz-string": "^1.4.4",
         "postcss": "^8.4.17",
         "postcss-less": "6.0.0",

@@ -24,7 +24,7 @@ export default class Header extends React.Component {
     };
 
     componentDidMount() {
-        const { intl, router } = this.context;
+        const { router } = this.context;
         router.listen(this.handleHideMenu);
         const { searchInput } = this;
         document.addEventListener('keyup', (event) => {
@@ -77,7 +77,7 @@ export default class Header extends React.Component {
 
     render() {
         const { inputValue, menuMode } = this.state;
-        const { picked, theme } = this.props;
+        const { picked, theme, menu } = this.props;
         const components = picked.components;
         const locale = this.context.intl.locale;
         const isZhCN = locale === 'zh-CN';
@@ -140,7 +140,7 @@ export default class Header extends React.Component {
                                 {options}
                             </AutoComplete>
                         </div>
-                        {menuMode === 'horizontal' ? menu : null}
+                        {menuMode === 'horizontal' && menu ? menu : null}
                     </Col>
                     <Col
                         className="theme-radio-box"

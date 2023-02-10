@@ -6,7 +6,6 @@ import 'dayjs/locale/zh-cn';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import Header from './Header';
-import enLocale from '../../en-US';
 import cnLocale from '../../zh-CN';
 import utils from '../../utils';
 import '../../static/iconfont/iconfont.css';
@@ -42,7 +41,7 @@ if (typeof window !== 'undefined') {
     });
 }
 
-let isMobile = false;
+const isMobile = false;
 
 export default class Layout extends React.Component {
     static contextTypes = {
@@ -116,7 +115,7 @@ export default class Layout extends React.Component {
         const disableTheme = currTheme === 'dark' ? 'default' : 'dark';
         const arr = document.getElementsByTagName('link');
         for (let i = 0, len = arr.length; i < len; i++) {
-            let href = arr[i].getAttribute('href');
+            const href = arr[i].getAttribute('href');
             if (href && href.includes(disableTheme) && !href.includes('common')) {
                 arr[i].disabled = true;
             }
