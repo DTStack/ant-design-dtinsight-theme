@@ -7,10 +7,26 @@
             margin-right: 24px;
             margin-left: 0;
             line-height: 20px;
+            &:hover {
+                color: @primaryColor;
+                .ant-tabs-tab-btn {
+                    .anticon {
+                        color: @primaryColor;
+                    }
+                }
+            }
             .ant-tabs-tab-btn {
                 .anticon {
                     margin-right: 4px;
                     font-size: 16px;
+                    color: @black_pageMsg;
+                }
+            }
+        }
+        .ant-tabs-tab-active {
+            .ant-tabs-tab-btn {
+                .anticon {
+                    color: @primaryColor;
                 }
             }
         }
