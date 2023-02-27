@@ -107,3 +107,81 @@
 .ant-input-prefix {
     color: @black_msg;
 }
+
+.ant-input-search {
+    .ant-input-group-addon {
+        background-color: @white;
+    }
+}
+
+/* ————Custom ClassName———— */
+.dt-input-search-group-shadow.ant-input-group {
+    .ant-select-focused {
+        z-index: 0;
+    }
+    .ant-select {
+        box-shadow: 0 12px 20px 0 rgba(29, 120, 255, 0.1);
+        border-color: @white;
+        &:hover {
+            color: @primaryColor;
+            .ant-select-arrow {
+                color: @primaryColor;
+            }
+        }
+        & > .ant-select-selector {
+            height: 44px;
+            border-color: @white;
+            transition: none;
+            .ant-select-selection-item {
+                line-height: 42px;
+            }
+        }
+    }
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border-color: @white;
+        box-shadow: none;
+    }
+    .ant-input-search {
+        box-shadow: 0 12px 20px 0 rgba(29, 120, 255, 0.1);
+        .ant-input {
+            border-left: 0;
+            padding: 11px;
+            border-color: @white;
+            box-shadow: none;
+        }
+        .ant-input-wrapper {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 24px;
+                background-color: @grey_border;
+                z-index: 2;
+            }
+        }
+        .ant-input-group-addon:last-child {
+            box-shadow: none !important;
+            .ant-input-search-button:not(.ant-btn-primary) {
+                height: 44px;
+                width: 44px;
+                border-color: @white;
+            }
+        }
+    }
+}
+
+.dt-input-search-external {
+    .ant-input-group {
+        .ant-input-group-addon:last-child {
+            left: 16px;
+            .ant-input-search-button {
+                border-radius: 4px;
+                width: 48px;
+            }
+        }
+    }
+}
