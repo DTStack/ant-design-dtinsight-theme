@@ -48,9 +48,29 @@
                     }
                     .ant-collapse-item {
                         .ant-collapse-content {
-                            background: white;
+                            background-color: #FFF;
                             border-bottom: 0;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-collapse-ghost {
+    border-color: transparent;
+    .ant-collapse-item {
+        border-color: transparent;
+        .ant-collapse-content {
+            border-color: transparent;
+            background-color: transparent;
+            .ant-collapse-content-box {
+                & > .ant-collapse {
+                    border-color: transparent;
+                    background-color: transparent;
+                    .ant-collapse-header {
+                        background-color: transparent;
                     }
                 }
             }
