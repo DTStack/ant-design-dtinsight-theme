@@ -26726,6 +26726,20 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-tabs-large > .ant-tabs-nav .ant-tabs-tab {
   padding: 16px;
 }
+.ant-card-contain-tabs .ant-card-head {
+  padding: 0;
+}
+.ant-card-contain-tabs .ant-card-head-wrapper .ant-card-head-title,
+.ant-card-contain-tabs .ant-card-head-wrapper .ant-card-extra {
+  margin: 16px 16px 0;
+  line-height: 32px;
+}
+.ant-card-contain-tabs .ant-tabs-nav {
+  padding: 0 16px;
+}
+.ant-card-contain-tabs .ant-tabs-tab {
+  color: #64698B;
+}
 /* ————Custom ClassName———— */
 .dt-card-shadow {
   box-shadow: 0 2px 30px 0 #EAECF4;
@@ -27764,6 +27778,12 @@ li.ant-picker-panel-select-option-selected:hover {
   padding: 5px 11px;
   line-height: 20px;
 }
+.ant-input .ant-input-suffix .anticon-info-circle,
+.ant-input-affix-wrapper .ant-input-suffix .anticon-info-circle {
+  font-size: 13px;
+  padding: 1.5px;
+  color: #B1B4C5;
+}
 .ant-input[disabled],
 .ant-input-affix-wrapper-disabled {
   border-color: transparent;
@@ -28545,6 +28565,7 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-message-notice-content {
   height: 40px;
   color: #3D446E;
+  box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
 }
 .ant-message-notice-content .anticon {
   font-size: 18px;
@@ -29036,9 +29057,19 @@ ul.ant-pagination {
   margin-left: 0;
   line-height: 20px;
 }
+.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab:hover {
+  color: #1D78FF;
+}
+.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab:hover .ant-tabs-tab-btn .anticon {
+  color: #1D78FF;
+}
 .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn .anticon {
   margin-right: 4px;
   font-size: 16px;
+  color: #8B8FA8;
+}
+.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn .anticon {
+  color: #1D78FF;
 }
 .ant-tabs-large .ant-tabs-nav-list .ant-tabs-tab {
   padding: 18px 16px 17px !important;
@@ -29365,6 +29396,9 @@ ul.ant-pagination {
   left: 0;
   width: 100%;
   content: "";
+}
+.ant-table-footer:empty {
+  display: none;
 }
 .ant-divider {
   background-color: transparent;
