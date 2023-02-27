@@ -72,24 +72,8 @@ class TabsCard extends React.Component {
         <Card
           className="dt-card-light-bg"
           style={{ width: '100%' }}
-          title="Card title"
-          extra={<a href="#">More</a>}
-          tabList={tabList}
-          activeTabKey={this.state.key}
-          onTabChange={key => {
-            this.onTabChange(key, 'key');
-          }}
-        >
-          {contentList[this.state.key]}
-        </Card>
-        <br />
-        <br />
-        <Card
-          className="dt-card-light-bg"
-          style={{ width: '100%' }}
           tabList={tabListNoTitle}
           activeTabKey={this.state.noTitleKey}
-          tabBarExtraContent={<a href="#">More</a>}
           onTabChange={key => {
             this.onTabChange(key, 'noTitleKey');
           }}
