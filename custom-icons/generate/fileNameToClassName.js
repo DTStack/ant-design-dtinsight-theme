@@ -45,6 +45,7 @@ module.exports = {
     PlusCircleFilled: 'dt-anticon-plus-circle-fill',
     PlusOutlined: 'anticon-plus',
     PlusSquareOutlined: 'anticon-plus-square',
+    QuestionCircleFilled: 'dt-anticon-question-circle-fill',
     QuestionCircleOutlined: 'anticon-question-circle',
     ReloadOutlined: 'anticon-reload',
     RightOutlined: 'anticon-right',
