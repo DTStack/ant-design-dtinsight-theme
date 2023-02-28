@@ -1,12 +1,12 @@
 ---
-order: 2
+order: 1
 title:
-  zh-CN: 面板嵌套
+  zh-CN: ghost
 ---
 
 ## zh-CN
 
-嵌套折叠面板。
+使折叠面板透明且无边框，和下方 面板嵌套 的示例代码一致，但多了 ghost。
 
 
 ```jsx
@@ -22,9 +22,9 @@ const text = `
 `;
 
 ReactDOM.render(
-     <Collapse defaultActiveKey="1">
+     <Collapse ghost defaultActiveKey="1">
       <Panel header="This is panel header 1" key="1">
-        <Collapse defaultActiveKey="1">
+        <Collapse ghost defaultActiveKey="1">
           <Panel header="This is panel nest panel" key="1">
             <p>{text}</p>
           </Panel>

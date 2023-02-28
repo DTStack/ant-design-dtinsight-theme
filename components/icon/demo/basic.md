@@ -6,7 +6,7 @@ title:
 
 ## zh-CN
 
-以上图标使用数栈的图标替换了 antd 的图标，使用方法按 antd 的使用建议即可。
+以上图标使用数栈的图标替换了 antd 的图标，使用方法、参数按 antd 的使用建议即可。
 
 大部分实底图标需要配合 theme 的自定义类名使用，具体使用方式可以点击上方图标示例复制代码：
 
@@ -55,6 +55,7 @@ import {
   PlusCircleOutlined,
   PlusOutlined,
   PlusSquareOutlined,
+  QuestionCircleFilled,
   QuestionCircleOutlined,
   ReloadOutlined,
   RightOutlined,
@@ -118,6 +119,7 @@ const fileNameToClassName = {
   PlusCircleFilled: 'dt-anticon-plus-circle-fill',
   PlusOutlined: 'anticon-plus',
   PlusSquareOutlined: 'anticon-plus-square',
+  QuestionCircleFilled: 'dt-anticon-question-circle-fill',
   QuestionCircleOutlined: 'anticon-question-circle',
   ReloadOutlined: 'anticon-reload',
   RightOutlined: 'anticon-right',
