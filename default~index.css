@@ -27872,6 +27872,73 @@ li.ant-picker-panel-select-option-selected:hover {
 .ant-input-prefix {
   color: #B1B4C5;
 }
+.ant-input-search .ant-input-group-addon {
+  background-color: #FFFFFF;
+}
+/* ————Custom ClassName———— */
+.dt-input-search-group-shadow.ant-input-group .ant-select-focused {
+  z-index: 0;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-select {
+  box-shadow: 0 12px 20px 0 rgba(29, 120, 255, 0.1);
+  border-color: #FFFFFF;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-select:hover {
+  color: #1D78FF;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-select:hover .ant-select-arrow {
+  color: #1D78FF;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-select > .ant-select-selector {
+  height: 44px;
+  border-color: #FFFFFF;
+  transition: none;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-select > .ant-select-selector .ant-select-selection-item {
+  line-height: 42px;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: #FFFFFF;
+  box-shadow: none;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-input-search {
+  box-shadow: 0 12px 20px 0 rgba(29, 120, 255, 0.1);
+}
+.dt-input-search-group-shadow.ant-input-group .ant-input-search .ant-input {
+  border-left: 0;
+  padding: 11px;
+  border-color: #FFFFFF;
+  box-shadow: none;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-input-search .ant-input-wrapper {
+  position: relative;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-input-search .ant-input-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background-color: #EBECF0;
+  z-index: 2;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-input-search .ant-input-group-addon:last-child {
+  box-shadow: none !important;
+}
+.dt-input-search-group-shadow.ant-input-group .ant-input-search .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary) {
+  height: 44px;
+  width: 44px;
+  border-color: #FFFFFF;
+}
+.dt-input-search-external .ant-input-group .ant-input-group-addon:last-child {
+  left: 16px;
+}
+.dt-input-search-external .ant-input-group .ant-input-group-addon:last-child .ant-input-search-button {
+  border-radius: 4px;
+  width: 48px;
+}
 .dt-layout-header {
   min-width: 1260px;
   background: #FFFFFF !important;
