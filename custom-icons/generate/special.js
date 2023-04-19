@@ -33,7 +33,7 @@ module.exports = (pathContentMap) => {
     }`;
     });
 
-    return `.ant-notification, .ant-modal-root, .ant-message, .ant-popover, .ant-alert {${cssContent}
+    return `.ant-notification, .ant-modal-confirm, .ant-message, .ant-popover, .ant-alert {${cssContent}
 }
 `;
 };
