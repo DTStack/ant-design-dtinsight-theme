@@ -27103,42 +27103,42 @@ div.ant-typography-edit-content.ant-typography-rtl {
   d: path("");
 }
 .ant-notification .anticon-check-circle svg path:first-child,
-.ant-modal-root .anticon-check-circle svg path:first-child,
+.ant-modal-confirm .anticon-check-circle svg path:first-child,
 .ant-message .anticon-check-circle svg path:first-child,
 .ant-popover .anticon-check-circle svg path:first-child,
 .ant-alert .anticon-check-circle svg path:first-child {
   d: path("M512 146.375c201.9375 0 365.625 163.6875 365.625 365.625S713.9375 877.625 512 877.625 146.375 713.9375 146.375 512 310.0625 146.375 512 146.375z m193.978125 243.16875a27.421875 27.421875 0 0 0-38.7703125 0.478125l-190.125 194.8078125-102.571875-103.21875-1.74375-1.6171875a27.421875 27.421875 0 0 0-37.1671875 40.275l122.23125 122.9765625 1.7578125 1.63125a27.421875 27.421875 0 0 0 37.321875-1.8140625l209.5453125-214.734375 1.5890625-1.771875a27.421875 27.421875 0 0 0-2.0671875-37.0125z");
 }
 .ant-notification .anticon-check-circle svg path:not(:first-child),
-.ant-modal-root .anticon-check-circle svg path:not(:first-child),
+.ant-modal-confirm .anticon-check-circle svg path:not(:first-child),
 .ant-message .anticon-check-circle svg path:not(:first-child),
 .ant-popover .anticon-check-circle svg path:not(:first-child),
 .ant-alert .anticon-check-circle svg path:not(:first-child) {
   d: path("");
 }
 .ant-notification .anticon-info-circle svg path:first-child,
-.ant-modal-root .anticon-info-circle svg path:first-child,
+.ant-modal-confirm .anticon-info-circle svg path:first-child,
 .ant-message .anticon-info-circle svg path:first-child,
 .ant-popover .anticon-info-circle svg path:first-child,
 .ant-alert .anticon-info-circle svg path:first-child {
   d: path("M512 877.625C310.090625 877.625 146.375 713.909375 146.375 512 146.375 310.034375 310.090625 146.375 512 146.375s365.625 163.659375 365.625 365.625c0 201.909375-163.715625 365.625-365.625 365.625z m0-491.034375a36.5625 36.5625 0 1 0 0.0140625-73.1109375A36.5625 36.5625 0 0 0 512 386.590625z m-0.0421875 323.9015625c14.484375 0 26.296875-11.165625 27.3375-25.36875l0.084375-2.053125v-219.375a27.421875 27.421875 0 0 0-54.7734375-2.053125l-0.0703125 2.053125v219.375a27.421875 27.421875 0 0 0 27.421875 27.421875z");
 }
 .ant-notification .anticon-info-circle svg path:not(:first-child),
-.ant-modal-root .anticon-info-circle svg path:not(:first-child),
+.ant-modal-confirm .anticon-info-circle svg path:not(:first-child),
 .ant-message .anticon-info-circle svg path:not(:first-child),
 .ant-popover .anticon-info-circle svg path:not(:first-child),
 .ant-alert .anticon-info-circle svg path:not(:first-child) {
   d: path("");
 }
 .ant-notification .anticon-exclamation-circle svg path:first-child,
-.ant-modal-root .anticon-exclamation-circle svg path:first-child,
+.ant-modal-confirm .anticon-exclamation-circle svg path:first-child,
 .ant-message .anticon-exclamation-circle svg path:first-child,
 .ant-popover .anticon-exclamation-circle svg path:first-child,
 .ant-alert .anticon-exclamation-circle svg path:first-child {
   d: path("M530.2109375 195.4953125c6.1171875 3.403125 11.165625 8.4515625 14.56875 14.56875l311.2734375 560.2921875a37.5046875 37.5046875 0 0 1-32.7796875 55.7015625H200.7265625a37.5046875 37.5046875 0 0 1-32.765625-55.7015625l311.259375-560.2921875a37.5046875 37.5046875 0 0 1 50.990625-14.56875z m-18.95625 446.821875a36.5625 36.5625 0 1 0 0 73.125 36.5625 36.5625 0 0 0 0-73.125zM546.6921875 469.8125h-70.3125l14.0625 150.0046875h42.1875l14.0625-150.0046875z");
 }
 .ant-notification .anticon-exclamation-circle svg path:not(:first-child),
-.ant-modal-root .anticon-exclamation-circle svg path:not(:first-child),
+.ant-modal-confirm .anticon-exclamation-circle svg path:not(:first-child),
 .ant-message .anticon-exclamation-circle svg path:not(:first-child),
 .ant-popover .anticon-exclamation-circle svg path:not(:first-child),
 .ant-alert .anticon-exclamation-circle svg path:not(:first-child) {
