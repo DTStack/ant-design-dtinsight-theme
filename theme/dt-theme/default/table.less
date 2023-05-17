@@ -587,6 +587,15 @@
     }
 }
 
+// 无数据且左右滚动时 Empty 固定居中
+.ant-spin-nested-loading > .ant-spin-container > .ant-table-empty > .ant-table-container > .ant-table-body {
+    .ant-table-tbody > .ant-table-placeholder > .ant-table-cell > .dtc-empty > .ant-empty {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
 .ant-table-container {
     border-radius: 0;
     .ant-table-placeholder {
