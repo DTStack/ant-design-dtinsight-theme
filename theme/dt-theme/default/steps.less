@@ -165,10 +165,9 @@
             width: 20px;
             height: 20px;
             line-height: 20px;
-            margin-top: 2px;
         }
         .ant-steps-item-title {
-            line-height: 24px;
+            line-height: 20px;
         }
         .ant-steps-item-container > .ant-steps-item-tail {
             left: 9px;
@@ -187,6 +186,9 @@
     }
     .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
         border-left: 1px dashed @primaryColor;
+    }
+    &.ant-steps-small > .ant-steps-item > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+        line-height: 20px;
     }
 }
 
@@ -223,7 +225,15 @@
 .ant-steps-vertical.ant-steps-dot .ant-steps-item > .ant-steps-item-container > .ant-steps-item-tail {
     top: 14.5px;
     left: -3px;
-    padding: 28px 0 6px;
+    padding: 28px 0 10px;
+}
+
+.ant-steps-vertical.ant-steps-dot > .ant-steps-item > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    padding-top: 13px;
+}
+
+.ant-steps-vertical.ant-steps-dot > .ant-steps-item.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    padding-top: 10px;
 }
 
 .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
