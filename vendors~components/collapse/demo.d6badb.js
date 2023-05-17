@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[94],{1318:function(o,n,p){o.exports={basic:p(1465),card:p(1466),ghost:p(1467),light:p(1468)}}}]);
