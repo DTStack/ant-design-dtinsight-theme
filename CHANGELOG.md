@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v2.1.0...v2.1.1) (2023-05-17)
+
+
+### Features
+
+* .anticon-delete svg path ([fee60ad](https://github.com/DTStack/ant-design-dtinsight-theme/commit/fee60adbe6a4d792415f140608bb3878991690fa))
+* [#484](https://github.com/DTStack/ant-design-dtinsight-theme/issues/484) form item feedback icon is fill ([b81d829](https://github.com/DTStack/ant-design-dtinsight-theme/commit/b81d829fa7607ddaec71c94e7f963844559198fc))
+* [#487](https://github.com/DTStack/ant-design-dtinsight-theme/issues/487) collapse ghost ([2597d40](https://github.com/DTStack/ant-design-dtinsight-theme/commit/2597d4090c8bfd3ff063968001c7b6134883c85e))
+* [#501](https://github.com/DTStack/ant-design-dtinsight-theme/issues/501) QuestionCircleFilled ([a5b76ee](https://github.com/DTStack/ant-design-dtinsight-theme/commit/a5b76ee11bf0f71f0c8dc7fd0eb96f7a0de53d04))
+* [#512](https://github.com/DTStack/ant-design-dtinsight-theme/issues/512) loading button ([22aff03](https://github.com/DTStack/ant-design-dtinsight-theme/commit/22aff033ef0e259d6b9aa39175426ca95f95c672))
+* add Search lead example [#490](https://github.com/DTStack/ant-design-dtinsight-theme/issues/490) ([#503](https://github.com/DTStack/ant-design-dtinsight-theme/issues/503)) ([b20e3aa](https://github.com/DTStack/ant-design-dtinsight-theme/commit/b20e3aa2fccc9633c9179c7813dcda9b05bc8ff4))
+* anticon-delete size ([ffdb8a3](https://github.com/DTStack/ant-design-dtinsight-theme/commit/ffdb8a306a88e2743b20698fa1fec6b8cd06268c))
+
+
+### Bug Fixes
+
+* [#479](https://github.com/DTStack/ant-design-dtinsight-theme/issues/479) table ant-table-cell-with-append ([e429562](https://github.com/DTStack/ant-design-dtinsight-theme/commit/e4295627d6c5d01e562031cb6eb05e46944ed951))
+* [#479](https://github.com/DTStack/ant-design-dtinsight-theme/issues/479) table ant-table-cell-with-append ([#480](https://github.com/DTStack/ant-design-dtinsight-theme/issues/480)) ([9b6d6a7](https://github.com/DTStack/ant-design-dtinsight-theme/commit/9b6d6a70ecf26bc4c55cd43678b1ab6effbb7849))
+* [#496](https://github.com/DTStack/ant-design-dtinsight-theme/issues/496) replace svg path ([2998f88](https://github.com/DTStack/ant-design-dtinsight-theme/commit/2998f88ae5d963ade29011683e3438521c8435e3))
+
 ## [2.1.0](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v2.0.0...v2.1.0) (2022-12-15)
 
 
