@@ -9,6 +9,7 @@ title:
 
 - 为分页器添加类名 `dt-pagination-right` ，使得分页器居右
 
+
 ```jsx
 import React from 'react';
 import { Pagination } from 'antd';
@@ -19,7 +20,9 @@ ReactDOM.render(
     total={40}
     pageSize={5}
     defaultCurrent={1}
-    showTotal={total => `共条40数据，每页5条`}
+    showTotal={total => <span>
+        共<span className="dt-pagination-totalCount">{total}</span>条数据，每页5条
+    </span>}
   />,
   mountNode,
 );

@@ -22,7 +22,9 @@ ReactDOM.render(
     total={85}
     showSizeChanger
     showQuickJumper
-    showTotal={total => `共条${total}数据`}
+    showTotal={total => <span>
+        共<span className="dt-pagination-totalCount">{total}</span>条数据
+    </span>}
   />,
   mountNode,
 );
