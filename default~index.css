@@ -28857,6 +28857,9 @@ ul.ant-pagination {
 .dt-pagination-right {
   justify-content: flex-end;
 }
+.dt-pagination-totalCount {
+  color: #1D78FF;
+}
 .ant-popover .ant-popover-inner {
   padding: 16px;
 }
