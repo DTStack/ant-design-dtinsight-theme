@@ -44,7 +44,7 @@ const App = () => {
         size: 'small',
         total: 20,
         showTotal: (total) => <span>
-        共<span style={{ color: '#3F87FF' }}>{total}</span>条数据，每页显示15条
+        共<span className="dt-pagination-totalCount">{total}</span>条数据，每页显示15条
         </span>
     };
 

@@ -15,3 +15,4 @@ cols: 1
 |类名  |说明  |使用示例  |
 |---------|---------|---------|
 |.dt-pagination-right  | 让分页器居右 | 居右 |
+|.dt-pagination-totalCount  | 高亮总条数 | 基础分页 |
