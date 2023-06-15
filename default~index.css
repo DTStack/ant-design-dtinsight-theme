@@ -30000,10 +30000,11 @@ ul.ant-pagination {
 .dt-table-empty-top-20-percent .ant-spin-nested-loading .ant-spin-container .ant-table-empty .ant-table-container table .ant-table-tbody .ant-table-placeholder:hover > td {
   background-color: inherit;
 }
-.ant-spin-nested-loading > .ant-spin-container > .ant-table-empty > .ant-table-container > .ant-table-body .ant-table-tbody > .ant-table-placeholder > .ant-table-cell > .dtc-empty > .ant-empty {
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
+.ant-spin-nested-loading > .ant-spin-container > .ant-table-empty.ant-table-scroll-horizontal > .ant-table-container > .ant-table-body table {
+  height: 100%;
+}
+.ant-spin-nested-loading > .ant-spin-container > .ant-table-empty.ant-table-scroll-horizontal > .ant-table-container > .ant-table-body table .ant-table-tbody > .ant-table-placeholder {
+  height: 100%;
 }
 .ant-table-container {
   border-radius: 0;
