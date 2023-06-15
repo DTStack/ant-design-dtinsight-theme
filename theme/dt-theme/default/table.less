@@ -587,12 +587,13 @@
     }
 }
 
-// 无数据且左右滚动时 Empty 固定居中
-.ant-spin-nested-loading > .ant-spin-container > .ant-table-empty > .ant-table-container > .ant-table-body {
-    .ant-table-tbody > .ant-table-placeholder > .ant-table-cell > .dtc-empty > .ant-empty {
-        position: fixed;
-        left: 50%;
-        transform: translate(-50%, 0);
+// 无数据且左右滚动时 Empty 固定居中，注意需要设置 scroll 的x,y属性才能生效
+.ant-spin-nested-loading > .ant-spin-container > .ant-table-empty.ant-table-scroll-horizontal > .ant-table-container > .ant-table-body {
+    table {
+        height: 100%;
+        .ant-table-tbody > .ant-table-placeholder {
+            height: 100%;
+        }
     }
 }
 
