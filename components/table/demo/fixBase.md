@@ -134,7 +134,6 @@ class App extends React.Component {
           dataSource={isShowData ? data : []}
           scroll={{ y: true, x: 1300 }}
           className={this.getTableClassName()}
-          style={{ height: 'calc(100vh - 300px)' }}
           size={smallSize && 'small'}
           pagination={pagination}
         />
