@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 10
 title:
   zh-CN: 展示每行数据更详细的信息
 ---
