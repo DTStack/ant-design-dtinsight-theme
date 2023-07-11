@@ -8,7 +8,6 @@
 }
 
 .ant-checkbox-wrapper {
-    height: @lineHeight;
     line-height: @lineHeight;
     .ant-checkbox {
         top: 0.32em;
@@ -18,7 +17,6 @@
             height: 16px;
         }
         & + span {
-            height: 20px;
             line-height: 20px;
         }
     }
@@ -46,6 +44,9 @@
     border-color: @primaryColor;
 }
 
-.ant-checkbox-group-item {
-    margin-right: 16px;
+.ant-checkbox-group {
+    & > .ant-checkbox-wrapper {
+        margin-left: 0;
+        margin-right: 16px;
+    }
 }
