@@ -28402,6 +28402,10 @@ li.ant-picker-panel-select-option-selected:hover {
   margin-right: 8px;
   vertical-align: -1px;
 }
+.ant-dropdown-menu-item-active,
+.ant-dropdown-menu-item:hover {
+  background-color: #F5F5F8;
+}
 .dt-slider-top-icon {
   line-height: 40px;
   cursor: pointer;
