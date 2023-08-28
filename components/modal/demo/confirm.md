@@ -58,6 +58,31 @@ function showDeleteConfirm() {
   });
 }
 
+function showFooterDanger() {
+  confirm({
+    title: '确认要删除该大屏？',
+    content: '此操作后不可逆，确认要将对应文件删除？',
+    okText: '取消',
+    cancelText: '删除',
+    icon: <CloseCircleFilled className="dt-modal-delete-icon" />,
+    okType: 'primary',
+    cancelButtonProps: {
+        danger: true,
+        type: 'default',
+        style: {
+            background: '#FFFFFF',
+            color: '#F96C5B',
+        },
+    },
+    onOk() {
+      console.log('OK');
+    },
+    onCancel() {
+      console.log('Cancel');
+    },
+  });
+}
+
 ReactDOM.render(
   <div className="demo-modal-box">
     <Button onClick={showConfirm}>Confirm</Button>
@@ -65,6 +90,7 @@ ReactDOM.render(
       Delete
     </Button>
     <Button onClick={showCustomConfirm}>Custom Icon Confirm</Button>
+    <Button onClick={showFooterDanger}>Footer Danger</Button>
   </div>,
   mountNode,
 );
