@@ -80,18 +80,12 @@
                 .ant-btn + .ant-btn {
                     margin-left: 12px;
                 }
+                // #153 不应该这样加，会导致 type 为 default 的按钮也变成了 primary 的样式，目前已经不好改了，已经合到子产品的稳定版本了
+                // 解决方法：参考 showFooterDanger 的写法
                 .ant-btn-dangerous {
                     background-color: @red;
                     border-color: @red;
                     color: @white;
-                    &:hover {
-                        background-color: #ED5340 !important;
-                        border-color: #ED5340;
-                    }
-                    &:active {
-                        background-color: #E03A26 !important;
-                        border-color: #E03A26;
-                    }
                 }
             }
         }
