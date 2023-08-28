@@ -28621,14 +28621,6 @@ li.ant-picker-panel-select-option-selected:hover {
   border-color: #F96C5B;
   color: #FFFFFF;
 }
-.ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-btns .ant-btn-dangerous:hover {
-  background-color: #ED5340 !important;
-  border-color: #ED5340;
-}
-.ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-btns .ant-btn-dangerous:active {
-  background-color: #E03A26 !important;
-  border-color: #E03A26;
-}
 .ant-modal-confirm-confirm .ant-modal-confirm-body > .dt-modal-delete-icon {
   color: #F96C5B;
 }
