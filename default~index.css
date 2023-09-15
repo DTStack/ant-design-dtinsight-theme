@@ -28857,6 +28857,7 @@ ul.ant-pagination {
 }
 .ant-popover .ant-popover-inner {
   padding: 16px;
+  box-shadow: 0 5px 22px 0 rgba(61, 68, 110, 0.2);
 }
 .ant-popover .ant-popover-inner .ant-popover-buttons .ant-btn {
   border-radius: 2px;
