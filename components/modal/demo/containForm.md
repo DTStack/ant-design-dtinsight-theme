@@ -10,6 +10,7 @@ title:
 
 ```jsx
 import { Modal, Button, Form, Input, Select } from 'antd';
+import { CloseCircleFilled } from '@ant-design/icons';
 
 class App extends React.Component {
   state = { visible: false };
@@ -17,6 +18,35 @@ class App extends React.Component {
   showModal = () => {
     this.setState({
       visible: true,
+    });
+  };
+
+  showModalConfirm = () => {
+    console.log(111)
+    const options = [
+      { label: '规则1', value: 1 },
+      { label: '规则2', value: 2 },
+    ]
+    Modal.confirm({
+      title: '确认删除吗？',
+      icon: <CloseCircleFilled style={{ color: '#f96c5b' }} />,
+      content: (
+        <div>
+          <p>删除当前规则后不再校验离线的任务SQL，无法约束代码SQL的规范性。</p>
+          <p style={{ color: '#F96C5B', marginBottom: 16 }}>删除后规则信息将无法恢复，请谨慎操作！</p>
+          <Form layout="vertical" preserve={false}>
+            <Form.Item
+              label="检查规则名称"
+              name="ruleName"
+            >
+              <Select placeholder="请选择检查规则名称" options={options} />
+            </Form.Item>
+          </Form>
+        </div>
+      ),
+      okType: 'danger',
+      okText: '确认',
+      cancelText: '取消',
     });
   };
 
@@ -37,9 +67,14 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Button type="primary" onClick={this.showModal}>
-          Open Modal
-        </Button>
+        <div className="demo-modal-box">
+          <Button type="primary" onClick={this.showModal}>
+            Open Modal
+          </Button>
+          <Button type="primary" onClick={this.showModalConfirm}>
+            Contain Form By Modal.confirm
+          </Button>
+        </div>
         <Modal
           width={640}
           title="Basic Modal"
