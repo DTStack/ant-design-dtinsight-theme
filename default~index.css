@@ -28598,11 +28598,11 @@ li.ant-picker-panel-select-option-selected:hover {
   line-height: 20px;
   font-size: 14px;
 }
-.ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .anticon {
+.ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body > .anticon {
   margin: 0 8px 0 2px;
   font-size: 20px;
 }
-.ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .anticon svg {
+.ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body > .anticon svg {
   vertical-align: inherit;
 }
 .ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-content {
