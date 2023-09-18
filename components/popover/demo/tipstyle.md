@@ -43,10 +43,10 @@ ReactDOM.render(
         okText="Yes"
         cancelText="No"
     >
-        <Button>弹出框【带标题与按钮】</Button>
+        <Button style={{marginRight: 8}}>弹出框【带标题与按钮】</Button>
     </Popconfirm>
     <Popover content={content} trigger="click">
-      <Button>弹出框【不带标题】</Button>
+      <Button style={{marginRight: 8}}>弹出框【不带标题】</Button>
     </Popover>
     <Popconfirm
         title="Are you sure delete this task?"
@@ -55,7 +55,7 @@ ReactDOM.render(
         okText="Yes"
         cancelText="No"
     >
-        <Button>弹出框【不带标题但带按钮】</Button>
+        <Button style={{marginRight: 8}}>弹出框【不带标题但带按钮】</Button>
     </Popconfirm>
   </div>,
   mountNode,
