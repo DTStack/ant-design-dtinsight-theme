@@ -28548,6 +28548,7 @@ li.ant-picker-panel-select-option-selected:hover {
   top: 88px;
 }
 .ant-modal-title {
+  padding-right: 10px;
   font-weight: 600;
 }
 .ant-modal-header {
