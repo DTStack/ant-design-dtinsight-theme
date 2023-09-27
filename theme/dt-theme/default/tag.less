@@ -1,16 +1,5 @@
+/* stylelint-disable indentation */
 @import "../const.less";
-
-.ant-tag {
-    padding: 2px 8px;
-    height: 24px;
-    border-radius: 4px;
-    border: 1px solid @black_readonly;
-    box-sizing: border-box;
-    line-height: 18px;
-    display: inline-flex;
-    align-items: center;
-    background-color: @black_navBg;
-}
 
 .ant-tag-close-icon {
     margin-left: 4px;
@@ -20,17 +9,18 @@
 }
 
 .dt-ant-tag-icon {
+    padding: 2px 12px;
     line-height: 20px;
     border: none;
     border-radius: 12px;
-    padding: 2px 12px;
     svg {
         width: 16px;
         height: 16px;
     }
 }
 
-.ant-tag > .anticon + span, .ant-tag > span + .anticon {
+.ant-tag > .anticon + span,
+.ant-tag > span + .anticon {
     margin-left: 2px;
 }
 
@@ -38,4 +28,62 @@
     color: @black_pageMsg;
     background-color: @black_border;
     border-color: @black_border;
+}
+
+/** Tag 的 color 模式 */
+@tagColorBackgroundList: {
+    magenta: #FFF0F6;
+    red: #FFF1F0;
+    volcano: #FFF2E8;
+    orange: #FFF7E6;
+    gold: #FFFBE6;
+    lime: #FCFFE6;
+    green: #F6FFED;
+    cyan: #E6FFFB;
+    blue: #E6F7FF;
+    geekblue: #F0F5FF;
+    purple: #F9F0FF;
+    success: #E6FFF6;
+    processing: #E8F5FF;
+    error: #FFF4F0;
+    warning: #FFFCE6;
+}
+@tagColorBorderColorList: {
+    magenta: #FFADD2;
+    red: #FFA39E;
+    volcano: #FFBB96;
+    orange: #FFD591;
+    gold: #FFE58F;
+    lime: #EAFF8F;
+    green: #B7EB8F;
+    cyan: #87E8DE;
+    blue: #91D5FF;
+    geekblue: #ADC6FF;
+    purple: #D3ADF7;
+    success: #8DFCDD;
+    processing: #96CBFF;
+    error: #FFE0D9;
+    warning: #FFE88A;
+}
+
+.ant-tag {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    padding: 2px 8px;
+    line-height: 18px;
+    background: @black_navBg;
+    border-color: @black_readonly;
+
+    each(@tagColorBackgroundList, {
+        &.ant-tag-@{key} {
+            background: @value;
+        }
+    })
+
+    each(@tagColorBorderColorList, {
+        &.ant-tag-@{key} {
+            border-color: @value;
+        }
+    });
 }

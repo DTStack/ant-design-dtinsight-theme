@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 title:
   en-US: Icon Usage
   zh-CN: 带背景图标
