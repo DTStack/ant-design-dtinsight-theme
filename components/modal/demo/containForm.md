@@ -22,7 +22,6 @@ class App extends React.Component {
   };
 
   showModalConfirm = () => {
-    console.log(111)
     const options = [
       { label: '规则1', value: 1 },
       { label: '规则2', value: 2 },
