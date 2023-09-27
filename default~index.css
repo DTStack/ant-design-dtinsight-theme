@@ -30082,17 +30082,7 @@ ul.ant-pagination {
 .dt-row-selected > td {
   background-color: #F5F5F8;
 }
-.ant-tag {
-  padding: 2px 8px;
-  height: 24px;
-  border-radius: 4px;
-  border: 1px solid #EBECF0;
-  box-sizing: border-box;
-  line-height: 18px;
-  display: inline-flex;
-  align-items: center;
-  background-color: #F9F9FA;
-}
+/* stylelint-disable indentation */
 .ant-tag-close-icon {
   margin-left: 4px;
   color: #8B8FA8;
@@ -30100,10 +30090,10 @@ ul.ant-pagination {
   vertical-align: -0.1625em;
 }
 .dt-ant-tag-icon {
+  padding: 2px 12px;
   line-height: 20px;
   border: none;
   border-radius: 12px;
-  padding: 2px 12px;
 }
 .dt-ant-tag-icon svg {
   width: 16px;
@@ -30117,6 +30107,106 @@ ul.ant-pagination {
   color: #8B8FA8;
   background-color: #D8DAE2;
   border-color: #D8DAE2;
+}
+/** Tag 的 color 模式 */
+.ant-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 2px 8px;
+  line-height: 18px;
+  background: #F9F9FA;
+  border-color: #EBECF0;
+}
+.ant-tag.ant-tag-magenta {
+  background: #FFF0F6;
+}
+.ant-tag.ant-tag-red {
+  background: #FFF1F0;
+}
+.ant-tag.ant-tag-volcano {
+  background: #FFF2E8;
+}
+.ant-tag.ant-tag-orange {
+  background: #FFF7E6;
+}
+.ant-tag.ant-tag-gold {
+  background: #FFFBE6;
+}
+.ant-tag.ant-tag-lime {
+  background: #FCFFE6;
+}
+.ant-tag.ant-tag-green {
+  background: #F6FFED;
+}
+.ant-tag.ant-tag-cyan {
+  background: #E6FFFB;
+}
+.ant-tag.ant-tag-blue {
+  background: #E6F7FF;
+}
+.ant-tag.ant-tag-geekblue {
+  background: #F0F5FF;
+}
+.ant-tag.ant-tag-purple {
+  background: #F9F0FF;
+}
+.ant-tag.ant-tag-success {
+  background: #E6FFF6;
+}
+.ant-tag.ant-tag-processing {
+  background: #E8F5FF;
+}
+.ant-tag.ant-tag-error {
+  background: #FFF4F0;
+}
+.ant-tag.ant-tag-warning {
+  background: #FFFCE6;
+}
+.ant-tag.ant-tag-magenta {
+  border-color: #FFADD2;
+}
+.ant-tag.ant-tag-red {
+  border-color: #FFA39E;
+}
+.ant-tag.ant-tag-volcano {
+  border-color: #FFBB96;
+}
+.ant-tag.ant-tag-orange {
+  border-color: #FFD591;
+}
+.ant-tag.ant-tag-gold {
+  border-color: #FFE58F;
+}
+.ant-tag.ant-tag-lime {
+  border-color: #EAFF8F;
+}
+.ant-tag.ant-tag-green {
+  border-color: #B7EB8F;
+}
+.ant-tag.ant-tag-cyan {
+  border-color: #87E8DE;
+}
+.ant-tag.ant-tag-blue {
+  border-color: #91D5FF;
+}
+.ant-tag.ant-tag-geekblue {
+  border-color: #ADC6FF;
+}
+.ant-tag.ant-tag-purple {
+  border-color: #D3ADF7;
+}
+.ant-tag.ant-tag-success {
+  border-color: #8DFCDD;
+}
+.ant-tag.ant-tag-processing {
+  border-color: #96CBFF;
+}
+.ant-tag.ant-tag-error {
+  border-color: #FFE0D9;
+}
+.ant-tag.ant-tag-warning {
+  border-color: #FFE88A;
 }
 .ant-transfer .ant-transfer-list {
   border: 1px solid #EBECF0;
