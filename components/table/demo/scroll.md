@@ -20,14 +20,15 @@ title:
 import { Table, Divider } from 'antd';
 
 const columns = [
-  { title: 'Name', dataIndex: 'name', key: 'name', width: 200, fixed: 'left', },
-  { title: 'Age', dataIndex: 'age', key: 'age', width: 100 },
+  { title: 'Name', dataIndex: 'name', key: 'name', width: 100, fixed: 'left', },
+  { title: 'Age', dataIndex: 'age', key: 'age', width: 100, sorter: (a, b) => a.age - b.age },
   { title: 'Address', dataIndex: 'address', key: 'address', width: 200, ellipsis: true },
   { title: 'description', dataIndex: 'description', key: 'description', width: 400 },
+  { title: 'Height', dataIndex: 'height', key: 'height', width: 100, fixed: 'right', sorter: (a, b) => a.age - b.age },
   {
     title: 'Action',
     dataIndex: '',
-    width: 200,
+    width: 100,
     key: 'x',
     fixed: 'right',
     render: (text, record) => (
@@ -47,6 +48,7 @@ const data = [
     age: 32,
     address: 'New York No. 1 Lake Park New York No. 1 Lake Park',
     description: 'My name is John Brown, I am 32 years old, living in New York No. 1 Lake Park.',
+    height: 168,
   },
   {
     key: 2,
@@ -54,6 +56,7 @@ const data = [
     age: 42,
     address: 'London No. 1 Lake Park',
     description: 'My name is Jim Green, I am 42 years old, living in London No. 1 Lake Park.',
+    height: 169,
   },
   {
     key: 3,
@@ -61,6 +64,7 @@ const data = [
     age: 29,
     address: 'Jiangsu No. 1 Lake Park',
     description: 'I am 42 years old, living in London No. 1 Lake Park.',
+    height: 178,
   },
   {
     key: 4,
@@ -68,6 +72,7 @@ const data = [
     age: 32,
     address: 'Sidney No. 1 Lake Park',
     description: 'My name is Joe Black, I am 32 years old, living in Sidney No. 1 Lake Park.',
+    height: 182,
   },
 ];
 
@@ -87,7 +92,7 @@ ReactDOM.render(
     dataSource={data}
     className="dt-table-border"
     pagination={pagination}
-    scroll={{ x: 1300, y: 500 }}
+    scroll={{ x: 1800, y: 500 }}
   />,
   mountNode,
 );

@@ -50,7 +50,12 @@ fs.readdir(config.fromDir, (error, files) => {
         const pathContentMap = {};
         files.forEach((file) => {
             const content = fs.readFileSync(`${config.fromDir}/${file}`, 'utf-8');
-            const pathContent = content?.split(' d="')?.[1]?.split('" />')?.[0];
+            let pathContent = content?.split(' d="')?.[1]?.split('" />')?.[0];
+            // iconfont 下载的 svg 文件最近内容有些许变化，加上了 p-id 的标识，需要去除
+            if (pathContent.includes('" p-id=')) {
+                pathContent = pathContent?.split('" p-id=')?.[0];
+            }
+
             const fileName = file.replace('.svg', '');
             pathContentMap[fileName] = pathContent;
             iconCssContent += getIconCssContent(
@@ -62,7 +67,7 @@ fs.readdir(config.fromDir, (error, files) => {
         const specialCssContent = getSpecialCssContent(pathContentMap);
         const formSpecialCssContent = getFormSpecialCssContent(pathContentMap);
         const rateCssContent = getRateCssContent(pathContentMap);
-        const cssContent = `// 此文件由 yarn generate 命令生成，请勿直接修改\n@import "../const.less";\n\n${iconCssContent}${specialCssContent}\n${formSpecialCssContent}\n${rateCssContent}`;
+        const cssContent = `/**\n * 此文件由 yarn generate 命令生成，请勿直接修改\n*/\n@import "../const.less";\n\n${iconCssContent}${specialCssContent}\n${formSpecialCssContent}\n${rateCssContent}`;
 
         fs.writeFile(`${config.toDir}/${config.generateFileName}`, cssContent, 'utf-8', (err) => {
             if (err) {
