@@ -87,6 +87,10 @@
 
 .ant-btn-dangerous.ant-btn-primary {
     background-color: @red;
+    &.ant-btn-loading {
+        background-color: #FF4D4F;
+        border-color: #FF4D4F;
+    }
     &:hover, &:focus {
         background-color: #ED5340;
         border-color: #ED5340;
@@ -97,7 +101,7 @@
     }
 }
 
-.ant-btn-dangerous.ant-btn-default {
+.ant-btn-dangerous.ant-btn-default, .ant-btn-dangerous.ant-btn-link {
     color: @red;
     border-color: @red;
     &:hover, &:focus {
