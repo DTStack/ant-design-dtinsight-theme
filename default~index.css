@@ -26524,6 +26524,10 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-btn-dangerous.ant-btn-primary {
   background-color: #F96C5B;
 }
+.ant-btn-dangerous.ant-btn-primary.ant-btn-loading {
+  background-color: #FF4D4F;
+  border-color: #FF4D4F;
+}
 .ant-btn-dangerous.ant-btn-primary:hover,
 .ant-btn-dangerous.ant-btn-primary:focus {
   background-color: #ED5340;
@@ -26533,16 +26537,20 @@ div.ant-typography-edit-content.ant-typography-rtl {
   background-color: #E03A26;
   border-color: #E03A26;
 }
-.ant-btn-dangerous.ant-btn-default {
+.ant-btn-dangerous.ant-btn-default,
+.ant-btn-dangerous.ant-btn-link {
   color: #F96C5B;
   border-color: #F96C5B;
 }
 .ant-btn-dangerous.ant-btn-default:hover,
-.ant-btn-dangerous.ant-btn-default:focus {
+.ant-btn-dangerous.ant-btn-link:hover,
+.ant-btn-dangerous.ant-btn-default:focus,
+.ant-btn-dangerous.ant-btn-link:focus {
   color: #ED5340;
   border-color: #ED5340;
 }
-.ant-btn-dangerous.ant-btn-default:active {
+.ant-btn-dangerous.ant-btn-default:active,
+.ant-btn-dangerous.ant-btn-link:active {
   color: #E03A26;
   border-color: #E03A26;
 }
@@ -27643,6 +27651,9 @@ div.ant-typography-edit-content.ant-typography-rtl {
   font-weight: 500;
   line-height: 20px;
 }
+.ant-form-item-label > label::before {
+  margin-top: 4px;
+}
 .ant-form-vertical .ant-form-item-label {
   padding: 0 0 4px;
   margin-bottom: 0;
@@ -27862,6 +27873,8 @@ li.ant-picker-panel-select-option-selected:hover {
   margin-left: 9px;
 }
 .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary) {
+  -webkit-margin-end: -1px;
+          margin-inline-end: -1px;
   color: #B1B4C5;
   border: solid 1px #D8DAE1;
 }
@@ -28625,6 +28638,15 @@ li.ant-picker-panel-select-option-selected:hover {
   border-color: #F96C5B;
   color: #FFFFFF;
 }
+.ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-btns .ant-btn-dangerous:hover,
+.ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-btns .ant-btn-dangerous:focus {
+  background-color: #ED5340;
+  border-color: #ED5340;
+}
+.ant-modal-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-btns .ant-btn-dangerous:active {
+  background-color: #E03A26;
+  border-color: #E03A26;
+}
 .ant-modal-confirm-confirm .ant-modal-confirm-body > .dt-modal-delete-icon {
   color: #F96C5B;
 }
@@ -28634,7 +28656,7 @@ li.ant-picker-panel-select-option-selected:hover {
 }
 .ant-alert > .ant-alert-icon {
   align-self: flex-start;
-  margin-top: 3px;
+  margin-top: 1px;
 }
 .ant-alert > .ant-alert-close-icon {
   align-self: flex-start;
@@ -30408,7 +30430,7 @@ span.ant-tree-switcher.ant-tree-switcher_open {
 .ant-alert-icon {
   top: 13px;
   left: 16px;
-  font-size: 16px;
+  font-size: 20px;
 }
 .ant-alert-close-icon {
   top: 10px;
@@ -30426,8 +30448,8 @@ span.ant-tree-switcher.ant-tree-switcher_open {
 .ant-alert-with-description .ant-alert-icon {
   top: 13px;
   left: 20px;
-  font-size: 16px;
-  margin-top: 3px;
+  font-size: 20px;
+  margin-top: 1px;
   margin-right: 8px;
 }
 .ant-alert-with-description .ant-alert-close-icon {
