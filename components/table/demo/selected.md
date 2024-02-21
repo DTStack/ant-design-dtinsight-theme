@@ -86,7 +86,6 @@ const App = () => {
         }}
         columns={columns}
         dataSource={data}
-        className="my-custom-table-class-name111"
         pagination={false}
       />
       <Drawer title="Basic Drawer" 
