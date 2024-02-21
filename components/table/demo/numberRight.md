@@ -118,7 +118,7 @@ const rowSelection = {
 };
 
 tableFooter =  () => (
-  <Row style={{ width: '100%' }}>
+  <Row style={{ width: '100%', alignItems: 'center' }}>
     <Col span={12}>
       <Button style={{ marginRight: 10 }} type="primary">冻结实验</Button>
       <Button>解冻实验</Button>
@@ -144,7 +144,7 @@ ReactDOM.render(
       rowSelection={rowSelection}
       columns={columns}
       dataSource={data}
-      className="my-custom-table-class-name"
+      className="dt-table-border"
       pagination={false}
       footer={tableFooter}
     />
