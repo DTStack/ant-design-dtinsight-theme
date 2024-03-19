@@ -29207,16 +29207,16 @@ ul.ant-pagination {
   margin-left: 0;
   line-height: 20px;
 }
-.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab:hover {
-  color: #1D78FF;
-}
-.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab:hover .ant-tabs-tab-btn .anticon {
-  color: #1D78FF;
-}
 .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn .anticon {
   margin-right: 4px;
   font-size: 16px;
   color: #8B8FA8;
+}
+.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active:hover {
+  color: #1D78FF;
+}
+.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active:hover .ant-tabs-tab-btn .anticon {
+  color: #1D78FF;
 }
 .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn .anticon {
   color: #1D78FF;
