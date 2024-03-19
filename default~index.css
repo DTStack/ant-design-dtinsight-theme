@@ -27549,6 +27549,13 @@ div.ant-typography-edit-content.ant-typography-rtl {
 .ant-picker-dropdown .ant-picker-week-panel-row-selected:hover .ant-picker-cell-in-view:last-child .ant-picker-cell-inner {
   color: #FFFFFF;
 }
+.ant-picker-suffix .anticon-clock-circle,
+.ant-picker-suffix .anticon-calendar {
+  font-size: 16px;
+}
+.ant-picker-clear .anticon-close-circle {
+  font-size: 16px;
+}
 .ant-descriptions-bordered .ant-descriptions-view {
   border: 1px solid #EBECF0;
   border-bottom: unset;
