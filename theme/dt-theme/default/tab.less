@@ -252,3 +252,16 @@
         right: -16px;
     }
 }
+
+.dt-tabs-nav-no-gap {
+    .ant-tabs-nav {
+        width: calc(100% + 32px);
+        margin-top: -16px;
+        margin-left: -16px;
+        padding-left: 16px;
+        background-color: #FFF;
+        &::before {
+            border-bottom: none;
+        }
+    }
+}

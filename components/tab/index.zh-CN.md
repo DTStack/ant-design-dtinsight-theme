@@ -25,3 +25,4 @@ cover: https://gw.alipayobjects.com/zos/antfincdn/lkI2hNEDr2V/Tabs.svg
 |.dt-tabs-sider-menu  | 侧边栏菜单类名，需配合type="line"和tabPosition="right"或者"left"一起使用   | 侧边菜单   |
 |.dt-tabs-content-padding  | 内容内边距类名，16px  | 侧边菜单 |
 |.dt-tabs-nav-padding-16  | 增加左右边距16px  | 基础样式 |
+|.dt-tabs-nav-no-margin | 减少上边距/左边距16px，整体宽度增加32px | 消除间隙 |
