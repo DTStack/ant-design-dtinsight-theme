@@ -29406,6 +29406,16 @@ ul.ant-pagination {
   left: -16px;
   right: -16px;
 }
+.dt-tabs-nav-no-gap .ant-tabs-nav {
+  width: calc(100% + 32px);
+  margin-top: -16px;
+  margin-left: -16px;
+  padding-left: 16px;
+  background-color: #FFF;
+}
+.dt-tabs-nav-no-gap .ant-tabs-nav::before {
+  border-bottom: none;
+}
 .ant-table {
   color: #3D446E;
 }
