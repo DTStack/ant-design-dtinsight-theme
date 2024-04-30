@@ -28924,9 +28924,13 @@ ul.ant-pagination {
   align-items: center;
   line-height: 16px;
   padding-top: 0.4em;
+  margin-right: 14px;
 }
 .ant-radio-wrapper .ant-radio {
   top: 0;
+}
+.ant-radio-wrapper span.ant-radio + * {
+  padding: 0 10px;
 }
 .ant-radio-wrapper .ant-radio-disabled .ant-radio-inner::after {
   background-color: #D8DAE2;
@@ -30348,6 +30352,9 @@ ul.ant-pagination {
 .ant-tree .ant-tree-treenode .ant-tree-checkbox {
   margin: 8px 8px 0 0;
 }
+.ant-tree .ant-tree-treenode .ant-tree-checkbox .ant-tree-checkbox-inner {
+  border-radius: 2px;
+}
 .ant-tree .ant-tree-treenode .ant-tree-node-content-wrapper {
   line-height: 32px;
 }
@@ -30386,6 +30393,9 @@ span.ant-tree-switcher.ant-tree-switcher_open {
 }
 .ant-tree-select-dropdown .ant-select-tree-list .ant-select-tree-treenode .ant-select-tree-checkbox {
   margin: 8px 8px 0 0;
+}
+.ant-tree-select-dropdown .ant-select-tree-list .ant-select-tree-treenode .ant-select-tree-checkbox .ant-select-tree-checkbox-inner {
+  border-radius: 2px;
 }
 .ant-upload .ant-btn:not([disabled]) {
   border-color: #1D78FF;
