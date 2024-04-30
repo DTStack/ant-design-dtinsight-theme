@@ -21,13 +21,9 @@ npm run dev // 启动项目
 ```bash
 npm run release // 版本发布
 
-npm run release -- -b branchName -r versionName // 指定发布分支以及发布名称
-
 npm run changelog // 生成changelog
 
 npm run build // 打包项目、静态文件生成目录为当前目录的 dist
-
-npm run publish // 推送私有仓库依赖包
 ```
 
 #### 部署
