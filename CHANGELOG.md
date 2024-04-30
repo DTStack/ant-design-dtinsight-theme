@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v2.1.1...v2.2.0) (2024-04-30)
+
+
+### Features
+
+* [#520](https://github.com/DTStack/ant-design-dtinsight-theme/issues/520) add empty scroll table doc ([#521](https://github.com/DTStack/ant-design-dtinsight-theme/issues/521)) ([7c6cc60](https://github.com/DTStack/ant-design-dtinsight-theme/commit/7c6cc601b0d2b5e64641f9de9ae881ab1d3a0ad1))
+* **tabs:** add dt-tabs-nav-no-gap classname to clear gap ([#559](https://github.com/DTStack/ant-design-dtinsight-theme/issues/559)) ([1e37966](https://github.com/DTStack/ant-design-dtinsight-theme/commit/1e37966fb1a698843ab9ab157a4606d92f278e0d))
+
+
+### Bug Fixes
+
+* [#516](https://github.com/DTStack/ant-design-dtinsight-theme/issues/516) add dt-pagination-totalCount class ([#517](https://github.com/DTStack/ant-design-dtinsight-theme/issues/517)) ([2eacc49](https://github.com/DTStack/ant-design-dtinsight-theme/commit/2eacc492fe789db448fe3f546684391d1a2eabc9))
+* [#518](https://github.com/DTStack/ant-design-dtinsight-theme/issues/518) horizontal scroll empty table style ([#519](https://github.com/DTStack/ant-design-dtinsight-theme/issues/519)) ([c8093f6](https://github.com/DTStack/ant-design-dtinsight-theme/commit/c8093f60a81bec042de36297fea20ddd53c11822))
+* [#527](https://github.com/DTStack/ant-design-dtinsight-theme/issues/527) modal danger btn hover ([#528](https://github.com/DTStack/ant-design-dtinsight-theme/issues/528)) ([19edf97](https://github.com/DTStack/ant-design-dtinsight-theme/commit/19edf97caa311f84753377742cec1c7bc25b0b74))
+* [#530](https://github.com/DTStack/ant-design-dtinsight-theme/issues/530) .ant-modal-confirm-body > .anticon ([#532](https://github.com/DTStack/ant-design-dtinsight-theme/issues/532)) ([1cd48f5](https://github.com/DTStack/ant-design-dtinsight-theme/commit/1cd48f5c3929255a7fe37a2d9853af3ea8dee95b))
+* [#534](https://github.com/DTStack/ant-design-dtinsight-theme/issues/534) tag color ([#536](https://github.com/DTStack/ant-design-dtinsight-theme/issues/536)) ([151c13c](https://github.com/DTStack/ant-design-dtinsight-theme/commit/151c13c480e436b2950654d6efe3c946e0aa35fc))
+* [#545](https://github.com/DTStack/ant-design-dtinsight-theme/issues/545) Alert icon size ([c167c5c](https://github.com/DTStack/ant-design-dtinsight-theme/commit/c167c5c3aef78e42ff1df8afb6679bfb09f5d46d))
+* [#550](https://github.com/DTStack/ant-design-dtinsight-theme/issues/550) danger button loading ([1bddea1](https://github.com/DTStack/ant-design-dtinsight-theme/commit/1bddea1cea696b0e202024a55d8ea5c2322e9b9b))
+* [#554](https://github.com/DTStack/ant-design-dtinsight-theme/issues/554) time date picker icon size ([#555](https://github.com/DTStack/ant-design-dtinsight-theme/issues/555)) ([4e0f633](https://github.com/DTStack/ant-design-dtinsight-theme/commit/4e0f633bbeb8a4555a01f2136ea04f29d5cdb3ae))
+* **modal:** when title large hidden close icon ([#535](https://github.com/DTStack/ant-design-dtinsight-theme/issues/535)) ([dc86552](https://github.com/DTStack/ant-design-dtinsight-theme/commit/dc86552d081473497fd746b32e803d7beaf06609))
+* **tabs:** hover disable not show active ([#557](https://github.com/DTStack/ant-design-dtinsight-theme/issues/557)) ([0950f0a](https://github.com/DTStack/ant-design-dtinsight-theme/commit/0950f0ac7f463c13a3c5768f3978f0c12d8a8a83))
+
 ### [2.1.1](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v2.1.0...v2.1.1) (2023-05-17)
 
 
