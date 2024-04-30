@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'bisheng/router';
-import zhCn from '../zh-CN';
+import config from '../../bisheng.config';
 
 export default function NotFound({ location: _location }) {
     return (
@@ -9,7 +9,7 @@ export default function NotFound({ location: _location }) {
                 <h1>404</h1>
                 <p>
                     啊哦~，您要找的页面不存在。 &nbsp;&nbsp;
-                    <Link to={zhCn.messages['app.home.url']}>返回首页</Link>
+                    <Link to={config.baseConfig.homeUrl}>返回首页</Link>
                 </p>
             </section>
             <style
