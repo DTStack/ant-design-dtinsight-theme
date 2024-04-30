@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 title:
   zh-CN: 卡片式页签
   en-US: Card type tab

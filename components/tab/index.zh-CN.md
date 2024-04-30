@@ -26,3 +26,4 @@ cover: https://gw.alipayobjects.com/zos/antfincdn/lkI2hNEDr2V/Tabs.svg
 |.dt-tabs-content-padding  | 内容内边距类名，16px  | 侧边菜单 |
 |.dt-tabs-nav-padding-16  | 增加左右边距16px  | 基础样式 |
 |.dt-tabs-nav-no-margin | 减少上边距/左边距16px，整体宽度增加32px | 消除间隙 |
+|.dt-tabs-hidden-more-icon | 更多标签时，隐藏 ··· 的更多 icon | 侧边菜单 |
