@@ -9,7 +9,7 @@
             line-height: 20px;
             .ant-tabs-tab-btn {
                 .anticon {
-                    margin-right: 4px;
+                    margin: 0 4px 0 -4px;
                     font-size: 16px;
                     color: @black_pageMsg;
                 }
@@ -48,8 +48,8 @@
 }
 
 .ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
-    padding: 8px 7px;
-    margin-top: 0;
+    padding: 2px 12px;
+    margin: 6px 0;
 }
 
 .ant-tabs-left > .ant-tabs-nav .ant-tabs-ink-bar {
@@ -119,7 +119,8 @@
     .ant-tabs-nav-wrap-ping-bottom {
         .ant-tabs-nav-list {
             .ant-tabs-tab {
-                padding: 8px 12px;
+                padding: 2px 12px;
+                margin: 6px 0;
             }
         }
     }
@@ -200,6 +201,12 @@
                 }
             }
         }
+    }
+}
+
+.dt-tabs-hidden-more-icon {
+    .ant-tabs-nav-more {
+        display: none;
     }
 }
 
