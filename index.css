@@ -455,6 +455,9 @@ a {
   float: right;
   margin-right: 50px;
 }
+.theme-radio-box .ant-radio-group-outline .ant-radio-wrapper {
+  padding-top: 0;
+}
 footer {
   position: relative;
   z-index: 9;

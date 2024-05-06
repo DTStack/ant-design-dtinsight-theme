@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[126],{1221:function(a,p,c){a.exports={avatar:c(1528),basic:c(1529),drag:c(1530),"picture-card":c(1531)}}}]);
