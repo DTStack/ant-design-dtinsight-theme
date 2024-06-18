@@ -38,7 +38,7 @@ title: 颜色规范
 
 | 颜色 |scss 变量名称  |色值  |说明  |
 |---------|---------|---------|---------|
-| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bule              |  #1D78FF      |  用于运行中状态颜色       |
+| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $blue              |  #1D78FF      |  用于运行中状态颜色       |
 | <input style="background: #11D7B2;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $green             |  #11D7B2      |  用于成功状态颜色     |
 | <input style="background: #F96C5B;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $red               |  #F96C5B      |  用于失败状态、校验错误信息文字、必填项图标颜色     |
 | <input style="background: #FBB310;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $yellow            |  #FBB310      |  用于下线状态、警告提示颜色 |
@@ -51,9 +51,9 @@ title: 颜色规范
 
 | 颜色 |scss 变量名称  |色值  |
 |---------|---------|---------|
-| <input style="background: #DDEBFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bule1             |  #DDEBFF      |
-| <input style="background: #5D9EFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bule2             |  #5D9EFF      |
-| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $bule3             |  #1D78FF      |
+| <input style="background: #DDEBFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $blue1             |  #DDEBFF      |
+| <input style="background: #5D9EFF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $blue2             |  #5D9EFF      |
+| <input style="background: #1D78FF;width: 80px; height: 26px;border: 1px solid #fff;" />    |   $blue3             |  #1D78FF      |
 
 ### 4.2 Green
 

@@ -101,16 +101,16 @@ $black_titleBg: #F5F5F8; // 用于模块标题背景色
 $black_navBg: #F9F9FA; // 用于二级导航底色
 $white: #FFFFFF; // 一级按钮文字颜色
 // ==== Functional Color 功能色  ====
-$bule: #1D78FF; // 用于运行中状态颜色
+$blue: #1D78FF; // 用于运行中状态颜色
 $green: #11D7B2; // 用于成功状态颜色
 $red: #F96C5B; // 用于失败状态、校验错误信息文字、必填项图标颜色
 $yellow: #FBB310; // 用于下线状态、警告提示颜色
 $purple: #AC9DFF; // 用于取消、冻结状态提示颜色
 // ==== Other Color 图表/插图配色  ====
 // Blue
-$bule1: #DDEBFF;
-$bule2: #5D9EFF;
-$bule3: #1D78FF;
+$blue1: #DDEBFF;
+$blue2: #5D9EFF;
+$blue3: #1D78FF;
 // Green
 $green1: #E7FBF7;
 $green2: #50E2C6;
