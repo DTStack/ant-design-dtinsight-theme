@@ -15,11 +15,9 @@ cover: https://gw.alipayobjects.com/zos/antfincdn/NqXt8DJhky/Card.svg
 
 ## 设计规范
 
-卡片式列表的标题字体16px #3D446E 居左 Medium，副标题文本字体12px #8B8FA8 居左 Regular ;
-
-卡片背景填充#FFFFFF，边1px#EBECF0，圆角: 4px;
-
-典型卡片边1px#EAF0FC，投影 0px 2px 30px 0px #EAECF4;
+- 卡片式列表的标题字体 16px #3D446E 居左 Medium，副标题文本字体 12px #8B8FA8 居左 Regular；
+- 卡片背景填充 #FFFFFF，边 1px#EBECF0，圆角 4px；
+- 典型卡片边 1px/#EAF0FC，投影 0px 2px 30px 0px #EAECF4；
 
 ## API
 

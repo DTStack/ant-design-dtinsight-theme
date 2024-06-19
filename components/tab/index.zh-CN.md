@@ -16,7 +16,7 @@ cover: https://gw.alipayobjects.com/zos/antfincdn/lkI2hNEDr2V/Tabs.svg
 
 ## 设计规范
 
-每个标签文字最多 6 个字，标签数量最多 7 个，建议出现 4 个以内。
+- 每个标签文字最多 6 个字，标签数量最多 7 个，建议出现 4 个以内。
 
 ## API
 
