@@ -29218,7 +29218,7 @@ ul.ant-pagination {
   margin-left: 0;
   line-height: 20px;
 }
-.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn .anticon {
+.ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn > span > .anticon {
   margin: 0 4px 0 -4px;
   font-size: 16px;
   color: #8B8FA8;
