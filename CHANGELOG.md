@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.2](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v2.2.1...v2.2.2) (2024-07-22)
+
+
+### Bug Fixes
+
+* **steps:** [#566](https://github.com/DTStack/ant-design-dtinsight-theme/issues/566), update steps footer btns gap to 12px ([#567](https://github.com/DTStack/ant-design-dtinsight-theme/issues/567)) ([bd8fb8a](https://github.com/DTStack/ant-design-dtinsight-theme/commit/bd8fb8aac78a489a7ed9a52f1181f13d522d59d1))
+
 ### [2.2.1](https://github.com/DTStack/ant-design-dtinsight-theme/compare/v2.1.1...v2.2.1) (2024-05-06)
 
 
