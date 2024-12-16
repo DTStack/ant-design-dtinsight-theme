@@ -14,6 +14,7 @@ module.exports = {
     ClockCircleOutlined: 'anticon-clock-circle',
     CloseCircleFilled: 'anticon-close-circle',
     CloseOutlined: 'anticon-close',
+    CopyOutlined: 'anticon-copy',
     DeleteOutlined: 'anticon-delete',
     DoubleLeftOutlined: 'anticon-double-left',
     DoubleRightOutlined: 'anticon-double-right',
