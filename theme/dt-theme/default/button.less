@@ -242,16 +242,27 @@
     }
 }
 
-.ant-btn-icon-only {
-    padding: 0;
+.ant-btn.ant-btn-icon-only {
     width: 48px;
     height: 32px;
-    background: @blue;
-    color: @white;
-    .anticon-search {
-        width: 14px;
-        height: 14px;
-        margin-left: 7px;
+    >.anticon {
+        font-size: 16px;
+    }
+}
+
+.ant-btn-lg.ant-btn-icon-only {
+    width: 50px;
+    height: 34px;
+    >.anticon {
+        font-size: 18px;
+    }
+}
+
+.ant-btn-sm.ant-btn-icon-only {
+    width: 28px;
+    height: 24px;
+    >.anticon {
+        font-size: 12px;
     }
 }
 

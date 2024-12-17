@@ -36,6 +36,15 @@ ReactDOM.render(
 
     <br/>
 
+    <Button size="large" type="primary" icon={<ReloadOutlined />}></Button>
+    <Button size="middle" type="primary" icon={<ReloadOutlined />}></Button>
+    <Button size="small" type="primary" icon={<ReloadOutlined />}></Button>
+    <Button size="large" icon={<ReloadOutlined />}></Button>
+    <Button size="middle" icon={<ReloadOutlined />}></Button>
+    <Button size="small" icon={<ReloadOutlined />}></Button>
+
+    <br/>
+
     <Button className="dt-btn-custom-icon" style={{ color: "#1D78FF" }} size="large" icon={<PlusSquareOutlined />}>一级按钮</Button>
     <Button className="dt-btn-custom-icon" size="middle" icon={<PlusSquareOutlined />}>一级按钮</Button>
     <Button className="dt-btn-custom-icon" size="small" icon={<PlusSquareOutlined />}>一级按钮</Button>
