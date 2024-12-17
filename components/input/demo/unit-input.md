@@ -15,6 +15,7 @@ unit input example.
 
 ```jsx
 import { Input } from 'antd';
+import { SettingOutlined } from '@ant-design/icons';
 
 ReactDOM.render(
   <div>
@@ -23,6 +24,12 @@ ReactDOM.render(
     </div>
     <div style={{ marginTop: '16px'}}>
         <Input addonBefore="¥" placeholder="小数保留后两位"/>
+    </div>
+    <div style={{ marginTop: '16px'}}>
+        <Input addonAfter={<SettingOutlined />} defaultValue="mysite" />
+    </div>
+    <div style={{ marginTop: '16px'}}>
+        <Input addonBefore="http://" suffix=".com" defaultValue="mysite" />
     </div>
   </div>,
   mountNode
