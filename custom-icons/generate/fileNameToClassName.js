@@ -13,6 +13,7 @@ module.exports = {
     CheckOutlined: 'anticon-check',
     ClockCircleOutlined: 'anticon-clock-circle',
     CloseCircleFilled: 'anticon-close-circle',
+    CloseCircleOutlined: 'dt-anticon-close-circle-outline',
     CloseOutlined: 'anticon-close',
     CopyOutlined: 'anticon-copy',
     DeleteOutlined: 'anticon-delete',

@@ -15,7 +15,7 @@ subtitle: 图标
 ## 何时使用
 
 - 使用设计提供的图标替换 antd 的图标，子产品不需要主动做什么，theme 作了统一处理；
-- 大部分实底图标需要添加 theme 的自定义 className 配合使用，具体请查看下方 `自定义类名`。
+- 部分图标需要添加 theme 的自定义 className 配合使用，具体请查看下方 `自定义类名`。
 
 ## 自定义类名
 
@@ -27,3 +27,4 @@ subtitle: 图标
 |MinusCircleFilled  |`dt-anticon-minus-circle-fill`    |
 |PlusCircleFilled  |`dt-anticon-plus-circle-fill`    |
 |QuestionCircleFilled  |`dt-anticon-question-circle-fill`    |
+|CloseCircleOutlined  |`dt-anticon-close-circle-outline`    |
