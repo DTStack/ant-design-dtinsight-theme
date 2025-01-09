@@ -23,7 +23,9 @@ import {
   CheckOutlined,
   ClockCircleOutlined,
   CloseCircleFilled,
+  CloseCircleOutlined,
   CloseOutlined,
+  CopyOutlined,
   DeleteOutlined,
   DoubleLeftOutlined,
   DoubleRightOutlined,
@@ -73,7 +75,8 @@ import {
   ZoomOutOutlined,
 } from '@ant-design/icons';
 import * as Icon from '@ant-design/icons';
-import { message } from 'antd';
+import { Input, message } from 'antd';
+import React, { useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 const fileNameToClassName = {
@@ -87,7 +90,9 @@ const fileNameToClassName = {
   CheckOutlined: 'anticon-check',
   ClockCircleOutlined: 'anticon-clock-circle',
   CloseCircleFilled: 'anticon-close-circle',
+  CloseCircleOutlined: 'dt-anticon-close-circle-outline',
   CloseOutlined: 'anticon-close',
+  CopyOutlined: 'anticon-copy',
   DeleteOutlined: 'anticon-delete',
   DoubleLeftOutlined: 'anticon-double-left',
   DoubleRightOutlined: 'anticon-double-right',
@@ -137,43 +142,53 @@ const fileNameToClassName = {
   ZoomOutOutlined: 'anticon-zoom-out',
 }
 
-const getCopyContent = (name) => {
-  if (fileNameToClassName[name].includes('dt-')) {
-    return `<${name} className="${fileNameToClassName[name]}" />`
+const App: React.FC = () => {
+  const [searchStr, setSearchStr] = useState(undefined)
+
+  const getCopyContent = (name) => {
+    if (fileNameToClassName[name].includes('dt-')) {
+      return `<${name} className="${fileNameToClassName[name]}" />`
+    }
+    return name
   }
-  return name
-}
 
-const getCustomIconItem = (name) => {
-  const copyContent = getCopyContent(name)
+  const getCustomIconItem = (name) => {
+    const copyContent = getCopyContent(name)
+    return (
+      <div className="icon-item" key={name}>
+        <CopyToClipboard
+          text={copyContent}
+          onCopy={() => {
+            message.success(`${copyContent} 复制成功`)
+          }}
+        >
+          <div className="icon-name">
+            {
+              React.createElement(Icon[name], { className: fileNameToClassName[name] })
+            }
+            <p>{name}</p>
+          </div>
+        </CopyToClipboard>
+      </div>
+    )
+  }
+
   return (
-    <div className="icon-item" key={name}>
-      <CopyToClipboard
-        text={copyContent}
-        onCopy={() => {
-          message.success(`${copyContent} 复制成功`)
-        }}
-      >
-        <div className="icon-name">
-          {
-            React.createElement(Icon[name], { className: fileNameToClassName[name] })
-          }
-          <p>{name}</p>
-        </div>
-      </CopyToClipboard>
+    <div className="icon-demo-content">
+      <div className="title-input">
+        <h3>替换后的图标</h3>
+        <Input value={searchStr} onChange={(e) => setSearchStr(e?.target?.value)} placeholder="在此搜索图标，点击图标可复制代码" />
+      </div>
+      <div className="icon-box">
+        {
+          Object.keys(fileNameToClassName)
+            ?.filter(item => searchStr ? item?.toLowerCase()?.includes(searchStr?.toLowerCase()) : true)
+            ?.map(item => getCustomIconItem(item))
+        }
+      </div>
     </div>
-  )
-}
+  );
+};
 
-ReactDOM.render(
-  <div className="icon-demo-content">
-    <h3>替换后的图标</h3>
-    <div className="icon-box">
-      {
-        Object.keys(fileNameToClassName).map(item => getCustomIconItem(item))
-      }
-    </div>
-  </div>,
-  mountNode,
-);
+ReactDOM.render(<App />, mountNode);
 ```

@@ -43,71 +43,37 @@ class App extends React.Component {
                     <span className="demo-switch-desc">设置dt-tabs-nav-padding-16</span>
                 </div>
                 <h3 style={{ margin: '12px 0' }}>Size Large</h3>
-                <Tabs
-                    defaultActiveKey="1"
-                    size="large"
-                    onChange={this.callback}
-                    className={classname}
-                >
-                    <TabPane
-                        tab={
-                            <span>
-                                <AppleOutlined />
-                                Tab 1
-                            </span>
-                        }
-                        key="1"
-                    >
-                        Tab 1
-                    </TabPane>
-                    <TabPane
-                        tab={
-                            <span>
-                                <AndroidOutlined />
-                                Tab 2
-                            </span>
-                        }
-                        key="2"
-                    >
-                        Tab 2
-                    </TabPane>
+                <Tabs defaultActiveKey="1" size="large" onChange={this.callback} className={classname}>
+                    <TabPane tab={<span><AppleOutlined />Tab 1</span>} key="1">Tab 1</TabPane>
+                    <TabPane tab={<span><AndroidOutlined />Tab 2</span>} key="2">Tab 2</TabPane>
                 </Tabs>
-                <h3 style={{ margin: '12px 0' }}>Size Defalt</h3>
+
+                <h3 style={{ margin: '12px 0' }}>Size Default</h3>
                 <Tabs defaultActiveKey="1" onChange={this.callback} className={classname}>
-                    <TabPane
-                        tab={
-                            <span>
-                                <AppleOutlined />
-                                Tab 1
-                            </span>
-                        }
-                        key="1"
-                    >
-                        Tab 1
-                    </TabPane>
-                    <TabPane
-                        tab={
-                            <span>
-                                <AndroidOutlined />
-                                Tab 2
-                            </span>
-                        }
-                        key="2"
-                    >
-                        Tab 2
-                    </TabPane>
+                    <TabPane tab={<span><AppleOutlined />Tab 1</span>} key="1">Tab 1</TabPane>
+                    <TabPane tab={<span><AndroidOutlined />Tab 2</span>} key="2">Tab 2</TabPane>
                 </Tabs>
+
+                <h3 style={{ margin: '12px 0' }}>Size Small</h3>
+                <Tabs defaultActiveKey="1" size="small" onChange={this.callback} className={classname}>
+                    <TabPane tab={<span><AppleOutlined />Tab 1</span>} key="1">Tab 1</TabPane>
+                    <TabPane tab={<span><AndroidOutlined />Tab 2</span>} key="2">Tab 2</TabPane>
+                    <TabPane tab={<span><AndroidOutlined />Tab 3</span>} key="3">Tab 3</TabPane>
+                    <TabPane tab={<span><AndroidOutlined />Tab 4</span>} key="4">Tab 4</TabPane>
+                </Tabs>
+
+                <Tabs defaultActiveKey="1" size="small" tabPosition="left" onChange={this.callback} className={classname}>
+                    <TabPane tab={<span><AppleOutlined />Tab 1</span>} key="1">Tab 1</TabPane>
+                    <TabPane tab={<span><AndroidOutlined />Tab 2</span>} key="2">Tab 2</TabPane>
+                    <TabPane tab={<span><AndroidOutlined />Tab 3</span>} key="3">Tab 3</TabPane>
+                    <TabPane tab={<span><AndroidOutlined />Tab 4</span>} key="4">Tab 4</TabPane>
+                </Tabs>
+
                 <h3 style={{ margin: '12px 0' }}>无 Icon</h3>
                 <Tabs defaultActiveKey="1" onChange={this.callback} className={classname}>
-                    <TabPane tab="Tab 1" key="1">
-                        Content of Tab Pane 1
-                    </TabPane>
-                    <TabPane tab="Tab 2" key="2">
-                        Content of Tab Pane 2
-                    </TabPane>
-                    <TabPane tab="Tab 3" key="3">
-                        Content of Tab Pane 3
-                    </TabPane>
+                    <TabPane tab="Tab 1" key="1">Content of Tab Pane 1</TabPane>
+                    <TabPane tab="Tab 2" key="2">Content of Tab Pane 2</TabPane>
+                    <TabPane tab="Tab 3" key="3">Content of Tab Pane 3</TabPane>
                 </Tabs>
             </div>
         );

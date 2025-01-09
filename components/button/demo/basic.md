@@ -18,7 +18,8 @@ ReactDOM.render(
     <Button type="primary">一级按钮</Button>
     <Button>二级按钮</Button>
     <Button type="link">文字按钮</Button>
-    <Button icon={<SearchOutlined />}  className="dt-btn-highlight"></Button>
+    <Button icon={<SearchOutlined />} className="dt-btn-highlight"></Button>
+    <Button size="small" icon={<SearchOutlined />}></Button>
   </div>,
   mountNode,
 );

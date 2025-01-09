@@ -8,6 +8,10 @@
     }
 }
 
+.ant-btn.ant-btn-sm {
+    border-radius: 2px;
+}
+
 .ant-btn.ant-btn-primary {
     text-shadow: unset;
     &:hover, &:focus {
@@ -206,32 +210,63 @@
 }
 
 .dt-btn-custom-icon {
+    &.ant-btn > .anticon {
+        line-height: 0;
+    }
     &.ant-btn {
         padding-left: 12px;
         padding-right: 12px;
+        display: inline-flex;
+        align-items: center;
+        svg {
+            color: inherit;
+            font-size: 16px;
+        }
         .anticon + span {
             margin-left: 4px;
         }
     }
-}
-
-.ant-btn.ant-btn-sm {
-    border-radius: 2px;
-    .anticon-search {
-        margin-left: 0;
+    &.ant-btn.ant-btn-lg {
+        font-size: 16px;
+        svg {
+            font-size: 18px;
+        }
+    }
+    &.ant-btn.ant-btn-sm {
+        border-radius: 2px;
+        .anticon-search {
+            margin-left: 0;
+        }
+        svg {
+            font-size: 12px;
+        }
+    }
+    &.ant-btn-link {
+        padding: 0;
     }
 }
 
-.ant-btn-icon-only {
-    padding: 0;
+.ant-btn.ant-btn-icon-only {
     width: 48px;
     height: 32px;
-    background: @blue;
-    color: @white;
-    .anticon-search {
-        width: 14px;
-        height: 14px;
-        margin-left: 7px;
+    >.anticon {
+        font-size: 16px;
+    }
+}
+
+.ant-btn-lg.ant-btn-icon-only {
+    width: 50px;
+    height: 34px;
+    >.anticon {
+        font-size: 18px;
+    }
+}
+
+.ant-btn-sm.ant-btn-icon-only {
+    width: 28px;
+    height: 24px;
+    >.anticon {
+        font-size: 12px;
     }
 }
 
