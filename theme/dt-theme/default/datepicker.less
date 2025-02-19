@@ -16,7 +16,14 @@
     }
 }
 
-.ant-picker-small {
+.ant-picker.ant-picker-default {
+    // 需要设置同样大小，如果 clear 图标小一点的话，会无法覆盖下方的时钟、日期图标，导致 hover 时显示错位
+    .anticon {
+        font-size: 16px;
+    }
+}
+
+.ant-picker.ant-picker-small {
     font-size: 12px !important;
     padding: 2px 11px !important;
     .ant-picker-input {
@@ -24,6 +31,9 @@
             font-size: 12px;
             line-height: calc(18 / 12);
         }
+    }
+    .anticon {
+        font-size: 14px;
     }
 }
 
@@ -49,6 +59,11 @@
 }
 
 .ant-picker.ant-picker-range {
+    &.ant-picker-small {
+        .ant-picker-clear {
+            right: 11px;
+        }
+    }
     .ant-picker-active-bar {
         background: @clickColor;
     }
@@ -174,16 +189,9 @@
     }
 }
 
-// TimePicker
-.ant-picker-suffix {
-    .anticon-clock-circle, .anticon-calendar {
-        font-size: 16px;
-    }
-}
-
 .ant-picker-clear {
-    // 需要设置同样大小，如果 clear 图标小一点的话，会无法覆盖下方的时钟、日期图标，导致 hover 时显示错位
-    .anticon-close-circle {
-        font-size: 16px;
+    color: @black_msg !important;
+    &:hover {
+        color: @black_Desc !important;
     }
 }

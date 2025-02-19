@@ -16,6 +16,15 @@
                     }
                 }
             }
+            &.ant-tabs-tab-active {
+                .ant-tabs-tab-btn {
+                    > span {
+                        > .anticon {
+                            color: @blue;
+                        }
+                    }
+                }
+            }
         }
         .ant-tabs-tab-active {
             &:hover {
@@ -272,5 +281,13 @@
         &::before {
             border-bottom: none;
         }
+    }
+}
+
+// 水平 Tabs small
+.ant-tabs.ant-tabs-small {
+    .ant-tabs-tab {
+        height: 32px;
+        padding: 8px;
     }
 }
