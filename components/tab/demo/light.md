@@ -38,13 +38,13 @@ class SlidingTabsDemo extends React.Component {
           <Radio.Button value="top">Horizontal</Radio.Button>
           <Radio.Button value="left">Vertical</Radio.Button>
         </Radio.Group>
-        <Tabs defaultActiveKey="1" tabPosition={mode} style={{ height: 220 }}>
-          {[...Array(30).keys()].map(i => (
-            <TabPane tab={`Tab-${i}`} key={i}>
-              Content of tab {i}
-            </TabPane>
-          ))}
-        </Tabs>
+        <Tabs defaultActiveKey="1" tabPosition={mode} style={{ height: 220 }} items={
+          [...Array(30).keys()].map(i => ({
+            label: `Tab-${i}`,
+            key: i,
+            children: `Content of tab ${i}`,
+          }))
+        } />
       </div>
     );
   }

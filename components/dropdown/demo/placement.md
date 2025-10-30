@@ -16,45 +16,46 @@ Support 6 placements.
 ```jsx
 import { Menu, Dropdown, Button } from 'antd';
 
-const menu = (
-  <Menu>
-    <Menu.Item>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+const items = [
+  {
+    label: (<a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
         1st menu item
-      </a>
-    </Menu.Item>
-    <Menu.Item>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+      </a>),
+      key: '0',
+  },
+  {
+    label: (<a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
         2nd menu item
-      </a>
-    </Menu.Item>
-    <Menu.Item>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+      </a>),
+    key: '1',
+  },
+  {
+    label: (<a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
         3rd menu item
-      </a>
-    </Menu.Item>
-  </Menu>
-);
+      </a>),
+    key: '2',
+  }
+];
 
 ReactDOM.render(
   <div>
-    <Dropdown overlay={menu} placement="bottomLeft">
+    <Dropdown menu={{items}} placement="bottomLeft">
       <Button>bottomLeft</Button>
     </Dropdown>
-    <Dropdown overlay={menu} placement="bottomCenter">
+    <Dropdown menu={{items}} placement="bottomCenter">
       <Button>bottomCenter</Button>
     </Dropdown>
-    <Dropdown overlay={menu} placement="bottomRight">
+    <Dropdown menu={{items}} placement="bottomRight">
       <Button>bottomRight</Button>
     </Dropdown>
     <br />
-    <Dropdown overlay={menu} placement="topLeft">
+    <Dropdown menu={{items}} placement="topLeft">
       <Button>topLeft</Button>
     </Dropdown>
-    <Dropdown overlay={menu} placement="topCenter">
+    <Dropdown menu={{items}} placement="topCenter">
       <Button>topCenter</Button>
     </Dropdown>
-    <Dropdown overlay={menu} placement="topRight">
+    <Dropdown menu={{items}} placement="topRight">
       <Button>topRight</Button>
     </Dropdown>
   </div>,

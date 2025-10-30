@@ -60,7 +60,7 @@ class App extends React.Component {
           placement={this.state.placement}
           closable={false}
           onClose={this.onClose}
-          visible={this.state.visible}
+          open={this.state.visible}
         >
           <p>Some contents...</p>
           <p>Some contents...</p>

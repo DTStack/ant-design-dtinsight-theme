@@ -23,7 +23,7 @@ ReactDOM.render(
     <Select
       defaultValue="lucy"
       style={{ width: 120 }}
-      dropdownClassName="dt-ant-select-dropdown-default"
+      popupClassName="dt-ant-select-dropdown-default"
       allowClear
     >
       <Option value="jack">Jack</Option>
@@ -33,7 +33,7 @@ ReactDOM.render(
       </Option>
       <Option value="Yiminghe">yiminghe</Option>
     </Select>
-    <Select defaultValue="lucy" style={{ width: 120 }} disabled dropdownClassName="dt-ant-select-dropdown-default">
+    <Select defaultValue="lucy" style={{ width: 120 }} disabled popupClassName="dt-ant-select-dropdown-default">
       <Option value="lucy">Lucy</Option>
     </Select>
   </div>,

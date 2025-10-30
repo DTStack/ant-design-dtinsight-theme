@@ -126,7 +126,7 @@ export default class Header extends React.Component {
                         <div id="search-box" style={isDark ? { borderLeftColor: '#272A40' } : {}}>
                             <AutoComplete
                                 value={inputValue}
-                                dropdownClassName="component-select"
+                                popupClassName="component-select"
                                 placeholder={searchPlaceholder}
                                 optionLabelProp="data-label"
                                 filterOption={this.handleSelectFilter}

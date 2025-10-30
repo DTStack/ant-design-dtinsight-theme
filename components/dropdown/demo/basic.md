@@ -16,28 +16,29 @@ The most basic dropdown menu.
 import { Menu, Dropdown, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 
-const menu = (
-  <Menu>
-    <Menu.Item>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+const items = [
+  {
+    label: (<a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
         1st menu item
-      </a>
-    </Menu.Item>
-    <Menu.Item>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+      </a>),
+      key: '0',
+  },
+  {
+    label: (<a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
         2nd menu item
-      </a>
-    </Menu.Item>
-    <Menu.Item>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+      </a>),
+    key: '1',
+  },
+  {
+    label: (<a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
         3rd menu item
-      </a>
-    </Menu.Item>
-  </Menu>
-);
+      </a>),
+    key: '2',
+  }
+];
 
 ReactDOM.render(
-  <Dropdown overlay={menu}>
+  <Dropdown menu={{ items }}>
     <a onClick={e => e.preventDefault()}>
       <Space>
         Hover me

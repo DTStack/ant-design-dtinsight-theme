@@ -35,14 +35,18 @@ const TopTabsDemo = () => {
         </Menu.Item>
       </Menu>
       <div style={{ background: '#F2F7FA', padding:16 }}>
-        <Tabs defaultActiveKey="1" className={className}>
-          <TabPane tab="项目 1" key="item-1">
-            内容 1
-          </TabPane>
-          <TabPane tab="项目 2" key="item-2">
-            内容 2
-          </TabPane>
-        </Tabs>
+        <Tabs defaultActiveKey="1" className={className} items={[
+                        {
+                            label: "项目 1",
+                            key: '1',
+                            children: '内容 1',
+                        },
+                        {
+                            label:"项目 2",
+                            key: '2',
+                            children: '内容 2',
+                        }
+                    ]} />
       </div>
     </div>
   );

@@ -27,13 +27,8 @@ class SlidingTabsDemo extends React.Component {
   render() {
     return (
       <div>
-        <Tabs className="dt-tabs-hidden-more-icon" defaultActiveKey="1" tabPosition="left" style={{ height: 220 }}>
-          {[...Array(30).keys()].map(i => (
-            <TabPane tab={ i < 4 ? <span><AndroidOutlined />Tab-{i}</span> : `Tab-${i}`} key={i}>
-              Content of tab {i}
-            </TabPane>
-          ))}
-        </Tabs>
+        <Tabs className="dt-tabs-hidden-more-icon" defaultActiveKey="1" tabPosition="left" style={{ height: 220 }} items={[...Array(30).keys()].map(i => ({
+          label: i < 4 ? <span><AndroidOutlined />Tab-{i}</span> : `Tab-${i}`, key: i, children: `Content of tab ${i}`,}))} />
       </div>
     );
   }

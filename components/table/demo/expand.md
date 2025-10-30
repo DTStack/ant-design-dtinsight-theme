@@ -14,12 +14,16 @@ title:
 ```jsx
 import { Table, Badge, Menu, Dropdown, Icon, Pagination, Switch } from 'antd';
 
-const menu = (
-  <Menu>
-    <Menu.Item>Action 1</Menu.Item>
-    <Menu.Item>Action 2</Menu.Item>
-  </Menu>
-);
+const items = [
+  {
+    label: 'Action 1',
+    key: '0',
+  },
+  {
+    label: 'Action 2',
+    key: '1',
+  }
+]
 
 class App extends React.Component {
   state = { isShowData: false };
@@ -49,7 +53,7 @@ expandedRowRender = () => {
           <span className="table-operation">
               <a>Pause</a>
               <a>Stop</a>
-              <Dropdown overlay={menu}>
+              <Dropdown menu={{items}}>
               <a>
                   More <Icon type="down" />
               </a>

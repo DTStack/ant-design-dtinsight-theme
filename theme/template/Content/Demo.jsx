@@ -1,13 +1,16 @@
 /* eslint jsx-a11y/no-noninteractive-element-interactions: 0 */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
-import CopyToClipboard from 'react-copy-to-clipboard';
+
+import { Tooltip } from 'antd';
 import classNames from 'classnames';
 import LZString from 'lz-string';
+import PropTypes from 'prop-types';
+import CopyToClipboard from 'react-copy-to-clipboard';
+import { FormattedMessage } from 'react-intl';
+
 import { CheckOutlined, SnippetsOutlined } from '@ant-design/icons';
-import { Tooltip } from 'antd';
+
 import utils from '../../utils';
 
 function compress(string) {
@@ -298,8 +301,8 @@ export default class Demo extends React.Component {
                             onCopy={() => this.handleCodeCopied(meta.id)}
                         >
                             <Tooltip
-                                visible={state.copyTooltipVisible}
-                                onVisibleChange={this.onCopyTooltipVisibleChange}
+                                open={state.copyTooltipVisible}
+                                onOpenChange={this.onCopyTooltipVisibleChange}
                                 title={
                                     <FormattedMessage
                                         id={`app.demo.${copied ? 'copied' : 'copy'}`}

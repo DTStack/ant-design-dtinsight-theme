@@ -11,7 +11,7 @@ title:
 仅暗黑主题下使用，默认主题下使用无效
 
 - 为组件添加类名`dt-form-light-bg`
-- 设置组件的属性 `dropdownClassName` 为`dt-form-light-bg`
+- 设置组件的属性 `popupClassName` 为`dt-form-light-bg`
 
 ```jsx
 import { DatePicker } from '../../index';
@@ -22,13 +22,13 @@ const { MonthPicker, RangePicker } = DatePicker;
 const dateFormat = 'YYYY-MM-DD';
 ReactDOM.render(
   <div className="demo-datepicker-light demo-datepicker-box">
-    <DatePicker className="dt-form-light-bg dt-ant-datepicker-basic" dropdownClassName="dt-form-light-bg" defaultValue={moment('2015-06-06', dateFormat)} />
+    <DatePicker className="dt-form-light-bg dt-ant-datepicker-basic" popupClassName="dt-form-light-bg" defaultValue={moment('2015-06-06', dateFormat)} />
     <br />
-    <MonthPicker className="dt-form-light-bg dt-ant-datepicker-basic" dropdownClassName="dt-form-light-bg" defaultValue={moment('2015-06', 'YYYY-MM')} />
+    <MonthPicker className="dt-form-light-bg dt-ant-datepicker-basic" popupClassName="dt-form-light-bg" defaultValue={moment('2015-06', 'YYYY-MM')} />
     <br />
     <RangePicker
       className="dt-form-light-bg dt-ant-datepicker-basic"
-      dropdownClassName="dt-form-light-bg"
+      popupClassName="dt-form-light-bg"
       defaultValue={[moment('2015-06-06', dateFormat), moment('2015-06-06', dateFormat)]}
     />
   </div>,

@@ -72,13 +72,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <Tabs type="editable-card" onChange={onChange} activeKey={activeKey} onEdit={onEdit}>
-      {panes.map(pane => (
-        <TabPane tab={<span><AppleOutlined />{pane.title}</span>} key={pane.key} closable={pane.closable}>
-          {pane.content}
-        </TabPane>
-      ))}
-    </Tabs>
+    <Tabs type="editable-card" onChange={onChange} activeKey={activeKey} onEdit={onEdit} items={panes.map(pane => ({
+      key: pane.key,closable: pane.closable,children: pane.content,label: (<span><AppleOutlined />{pane.title}</span>)}))} />
   );
 };
 
