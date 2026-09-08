@@ -13,8 +13,6 @@ import { Tabs } from 'antd';
 import React, { useRef, useState } from 'react';
 import { AppleOutlined } from '@ant-design/icons';
 
-const { TabPane } = Tabs;
-
 const initialPanes = [
   { title: 'Tab 1', content: 'Content of Tab 1', key: '1' },
   { title: 'Tab 2', content: 'Content of Tab 2', key: '2' },

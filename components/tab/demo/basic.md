@@ -19,8 +19,6 @@ Large tabs are used for header areas or main function switches, and small tabs a
 import { Tabs, Switch } from 'antd';
 import { AppleOutlined, AndroidOutlined } from '@ant-design/icons';
 
-const { TabPane } = Tabs;
-
 class App extends React.Component {
     state = { classname: '' };
 

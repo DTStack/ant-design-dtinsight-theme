@@ -17,8 +17,6 @@ The Tab with Icon.
 import { Tabs } from 'antd';
 import { AppleOutlined, AndroidOutlined } from '@ant-design/icons';
 
-const { TabPane } = Tabs;
-
 ReactDOM.render(
   <Tabs defaultActiveKey="2" items={[
                         {

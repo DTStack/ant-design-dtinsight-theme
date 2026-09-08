@@ -17,8 +17,6 @@ In order to fit in more tabs, they can slide left and right (or up and down).
 import { useState } from "react";
 import { Tabs, Space, Switch, Menu } from 'antd';
 
-const { TabPane } = Tabs;
-
 const TopTabsDemo = () => {
   const [className, setClassName]= useState("");
 

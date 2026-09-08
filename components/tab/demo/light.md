@@ -15,8 +15,6 @@ Default activate first tab.
 ```jsx
 import { Tabs, Radio } from 'antd';
 
-const { TabPane } = Tabs;
-
 class SlidingTabsDemo extends React.Component {
   constructor(props) {
     super(props);

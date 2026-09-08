@@ -17,8 +17,6 @@ You can use 'dt-tabs-hidden-more-icon' to hide the more icon in the bottom left 
 import { Tabs, Radio } from 'antd';
 import { AndroidOutlined, AppleOutlined } from '@ant-design/icons';
 
-const { TabPane } = Tabs;
-
 class SlidingTabsDemo extends React.Component {
   constructor(props) {
     super(props);

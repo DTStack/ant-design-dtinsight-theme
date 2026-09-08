@@ -17,8 +17,6 @@ title:
 ```jsx
 import { Tabs, Radio } from 'antd';
 
-const { TabPane } = Tabs;
-
 class SiderMenu extends React.Component {
   constructor(props) {
     super(props);
