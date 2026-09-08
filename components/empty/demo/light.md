@@ -59,13 +59,13 @@ class Demo extends React.Component {
         <ConfigProvider renderEmpty={customize && customizeRenderEmpty}>
           <div className="config-provider">
             <h3>Select</h3>
-            <Select dropdownClassName="dt-form-light-bg" className="dt-form-light-bg" style={style} />
+            <Select popupClassName="dt-form-light-bg" className="dt-form-light-bg" style={style} />
 
             <h3>TreeSelect</h3>
-            <TreeSelect dropdownClassName="dt-form-light-bg" className="dt-form-light-bg" style={style} treeData={[]} />
+            <TreeSelect popupClassName="dt-form-light-bg" className="dt-form-light-bg" style={style} treeData={[]} />
 
             <h3>Cascader</h3>
-            <Cascader dropdownClassName="dt-form-light-bg"  className="dt-form-light-bg" style={style} options={[]} placeholder="Please select" />
+            <Cascader popupClassName="dt-form-light-bg"  className="dt-form-light-bg" style={style} options={[]} placeholder="Please select" />
           </div>
         </ConfigProvider>
       </div>

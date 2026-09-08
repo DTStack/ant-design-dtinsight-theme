@@ -17,33 +17,25 @@ The Tab with Icon.
 import { Tabs } from 'antd';
 import { AppleOutlined, AndroidOutlined } from '@ant-design/icons';
 
-const { TabPane } = Tabs;
-
 ReactDOM.render(
-  <Tabs defaultActiveKey="2">
-    <TabPane
-      tab={
-        <span>
-          <AppleOutlined />
-          Tab 1
-        </span>
-      }
-      key="1"
-    >
-      Tab 1
-    </TabPane>
-    <TabPane
-      tab={
-        <span>
-          <AndroidOutlined />
-          Tab 2
-        </span>
-      }
-      key="2"
-    >
-      Tab 2
-    </TabPane>
-  </Tabs>,
+  <Tabs defaultActiveKey="2" items={[
+                        {
+                            label: (<span>
+                                <AppleOutlined />
+                                Tab 1
+                            </span>),
+                            key: '1',
+                            children: 'Tab 1',
+                        },
+                        {
+                            label:(<span>
+                                <AndroidOutlined />
+                                Tab 2
+                            </span>),
+                            key: '2',
+                            children: 'Tab 2',
+                        }
+                    ]} />,
   mountNode,
 );
 ```

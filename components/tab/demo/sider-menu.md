@@ -17,8 +17,6 @@ title:
 ```jsx
 import { Tabs, Radio } from 'antd';
 
-const { TabPane } = Tabs;
-
 class SiderMenu extends React.Component {
   constructor(props) {
     super(props);
@@ -40,17 +38,25 @@ class SiderMenu extends React.Component {
           <Radio.Button value="right">right</Radio.Button>
           <Radio.Button value="left">left</Radio.Button>
         </Radio.Group>
-        <Tabs type="line" tabPosition={mode} className="dt-tabs-sider-menu dt-tabs-content-padding">
-          <TabPane tab="Tab1" key="1">
-            Content of Tab Pane 1
-          </TabPane>
-          <TabPane tab="Tab2" key="2">
-            Content of Tab Pane 2
-          </TabPane>
-          <TabPane tab="Tab3" key="3">
-            Content of Tab Pane 3
-          </TabPane>
-        </Tabs>
+        <Tabs type="line" tabPosition={mode} className="dt-tabs-sider-menu dt-tabs-content-padding"
+        items={[
+                        {
+                            label: 'Tab 1',
+                            key: '1',
+                            children: 'Content of Tab Pane 1',
+                        },
+                        {
+                            label:'Tab 2',
+                            key: '2',
+                            children: 'Content of Tab Pane 2',
+                        },
+                        {
+                            label:'Tab 3',
+                            key: '3',
+                            children: 'Content of Tab Pane 3',
+                        }
+                    ]}
+                />
       </div>
     );
   }

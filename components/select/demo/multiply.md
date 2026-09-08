@@ -30,7 +30,7 @@ ReactDOM.render(
       placeholder="Please select"
       defaultValue={['a10', 'c12']}
       onChange={handleChange}
-      dropdownClassName="dt-ant-select-dropdown-default"
+      popupClassName="dt-ant-select-dropdown-default"
     >
       {children}
     </Select>

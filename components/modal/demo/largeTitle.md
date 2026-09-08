@@ -43,7 +43,7 @@ class App extends React.Component {
         <Modal
           title="xixiixixixixiixxixiix超长名字嘻嘻超长名字嘻嘻超长名字嘻嘻超长名字嘻嘻超长名字嘻嘻"
           width={520}
-          visible={this.state.visible}
+          open={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
         >
