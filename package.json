@@ -27,7 +27,7 @@
     "author": "dt-insight-front",
     "license": "ISC",
     "dependencies": {
-        "antd": "4.22.5",
+        "antd": "4.24.16",
         "dayjs": "^1.11.0",
         "insert-css": "^2.0.0",
         "react-resizable": "^3.0.4"

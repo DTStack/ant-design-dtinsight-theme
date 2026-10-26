@@ -22,7 +22,7 @@ title:
 Example of creating a search box by grouping a standard input with a search button.
 
 ```jsx
-import { Input, Select } from 'antd';
+import { Input, Select, Space } from 'antd';
 
 const { Search } = Input;
 const { Option } = Select;
@@ -44,7 +44,7 @@ ReactDOM.render(
     />
     <br />
     <br />
-    <Input.Group compact>
+    <Space.Compact>
       <Select defaultValue="1" style={{ width: 110 }}>
         <Option value="1">搜索项</Option>
       </Select>
@@ -53,9 +53,9 @@ ReactDOM.render(
         onSearch={value => console.log(value)}
         style={{ width: 200 }}
       />
-    </Input.Group>
+    </Space.Compact>
     <br />
-    <Input.Group compact className="dt-input-search-group-shadow">
+    <Space.Compact className="dt-input-search-group-shadow">
       <Select defaultValue="1" style={{ width: 110 }}>
         <Option value="1">搜索项</Option>
       </Select>
@@ -64,9 +64,9 @@ ReactDOM.render(
         onSearch={value => console.log(value)}
         style={{ width: 200 }}
       />
-    </Input.Group>
+    </Space.Compact>
     <br />
-    <Input.Group compact>
+    <Space.Compact>
       <Select defaultValue="1" style={{ width: 110 }}>
         <Option value="1">搜索项</Option>
       </Select>
@@ -77,7 +77,7 @@ ReactDOM.render(
         enterButton
         style={{ width: 300 }}
       />
-    </Input.Group>
+    </Space.Compact>
   </div>,
   mountNode,
 );

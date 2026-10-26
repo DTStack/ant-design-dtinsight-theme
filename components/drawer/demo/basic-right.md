@@ -61,7 +61,7 @@ class App extends React.Component {
           title="Small Drawer"
           placement="right"
           onClose={this.onClose}
-          visible={this.state.smallVisible}
+          open={this.state.smallVisible}
         >
           <p>Some contents...</p>
           <p>Some contents...</p>
@@ -72,7 +72,7 @@ class App extends React.Component {
           placement="right"
           width={1000}
           onClose={this.onClose}
-          visible={this.state.visible}
+          open={this.state.visible}
         >
           <p>Some contents...</p>
           <p>Some contents...</p>
@@ -83,7 +83,7 @@ class App extends React.Component {
           placement="right"
           width={1256}
           onClose={this.onClose}
-          visible={this.state.largeVisible}
+          open={this.state.largeVisible}
         >
           <p>Some contents...</p>
           <p>Some contents...</p>

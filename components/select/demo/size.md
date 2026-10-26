@@ -15,10 +15,10 @@ const { Option } = Select;
 
 ReactDOM.render(
   <div className="demo-select-size">
-    <Select defaultValue="default" size="default" dropdownClassName="dt-ant-select-dropdown-default">
+    <Select defaultValue="default" size="default" popupClassName="dt-ant-select-dropdown-default">
       <Option value="default">default</Option>
     </Select>
-    <Select defaultValue="small" size="small" dropdownClassName="dt-ant-select-dropdown-default">
+    <Select defaultValue="small" size="small" popupClassName="dt-ant-select-dropdown-default">
       <Option value="small">small</Option>
     </Select>
   </div>,

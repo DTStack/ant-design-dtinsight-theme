@@ -11,7 +11,7 @@ title:
 仅暗黑主题下使用，默认主题下使用无效
 
 - 为组件添加类名`dt-form-light-bg`
-- 设置组件属性 `dropdownClassName` 为 `dt-form-light-bg`
+- 设置组件属性 `popupClassName` 为 `dt-form-light-bg`
 
 ```jsx
 import { TreeSelect } from 'antd';
@@ -41,7 +41,7 @@ class Demo extends React.Component {
             allowClear
             treeDefaultExpandAll
             onChange={this.onChange}
-            dropdownClassName="dt-form-light-bg"
+            popupClassName="dt-form-light-bg"
           >
             <TreeNode value="parent 1" title="parent 1" key="0-1">
               <TreeNode value="parent 1-0" title="parent 1-0" key="0-1-1">

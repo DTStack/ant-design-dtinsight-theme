@@ -13,8 +13,6 @@ import { Tabs } from 'antd';
 import React, { useRef, useState } from 'react';
 import { AppleOutlined } from '@ant-design/icons';
 
-const { TabPane } = Tabs;
-
 const initialPanes = [
   { title: 'Tab 1', content: 'Content of Tab 1', key: '1' },
   { title: 'Tab 2', content: 'Content of Tab 2', key: '2' },
@@ -72,13 +70,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <Tabs type="editable-card" onChange={onChange} activeKey={activeKey} onEdit={onEdit}>
-      {panes.map(pane => (
-        <TabPane tab={<span><AppleOutlined />{pane.title}</span>} key={pane.key} closable={pane.closable}>
-          {pane.content}
-        </TabPane>
-      ))}
-    </Tabs>
+    <Tabs type="editable-card" onChange={onChange} activeKey={activeKey} onEdit={onEdit} items={panes.map(pane => ({
+      key: pane.key,closable: pane.closable,children: pane.content,label: (<span><AppleOutlined />{pane.title}</span>)}))} />
   );
 };
 

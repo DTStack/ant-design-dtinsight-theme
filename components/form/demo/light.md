@@ -73,7 +73,7 @@ class NormalLoginForm extends React.Component {
           <Input placeholder="Username"/>
         </Form.Item>
         <Form.Item name="role" colon={false} label={'角色'} rules={[{ required: true, message: 'It is required!' }]}>
-          <Select dropdownClassName="dt-form-light-bg" placeholder="Please select">
+          <Select popupClassName="dt-form-light-bg" placeholder="Please select">
               <Option value="1">项目所有者</Option>
               <Option value="2">数据分析师</Option>
               <Option value="3">管理员</Option>
@@ -99,7 +99,7 @@ class NormalLoginForm extends React.Component {
           <Switch />
         </Form.Item>
         <Form.Item name="location" colon={false} label={'位置'} rules={[{ required: false, message: 'It is required!' }]}>
-          <Cascader dropdownClassName="dt-form-light-bg" options={options} placeholder="Please select" />
+          <Cascader popupClassName="dt-form-light-bg" options={options} placeholder="Please select" />
         </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit">

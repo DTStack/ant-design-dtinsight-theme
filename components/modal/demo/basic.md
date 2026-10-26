@@ -44,7 +44,7 @@ class App extends React.Component {
         <Modal
           title="Basic Modal"
           width={640}
-          visible={this.state.visible}
+          open={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
         >
